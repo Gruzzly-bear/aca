@@ -1,0 +1,625 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-5083</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-5083</h1>
+            <div class='image-header'><div class="scp-image-block block-right" style="width:300px;"><img alt="gold.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/felixouartpage/gold.jpg"/>
+<div class="scp-image-caption">
+<p>.</p>
+</div></div><div class='text-content'>Item #: SCP-5083</div>
+<div class="objclass EN">
+<div class="obj Keter">
+<div class="obj-text">Keter</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<div class="scp-image-block block-center" style="width:100%;"><img alt="run" class="image" src="http://scp-wiki.wdfiles.com/local--files/scp-5083/run"/>
+<div class="scp-image-caption">
+<p>An instance of SCP-5083-1 being chased by a crowd of people in New York. (2006)</p>
+</div>
+</div>
+<hr/>
+<table style="width: 100%;">
+<tr>
+<td style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:90%;"><strong>Assigned Site</strong></span></td>
+<td style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:90%;"><strong>Site Director</strong></span></td>
+<td style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:90%;"><strong>Research Head</strong></span></td>
+<td style="border-bottom: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:90%;"><strong>Assigned Task Force</strong></span></td>
+</tr>
+<tr>
+<td style="border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:80%;">Site-17</span></td>
+<td style="border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:80%;">T. Moose</span></td>
+<td style="border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:80%;">M. Lodge</span></td>
+<td style="text-align: center; width: 25%;"><span style="font-size:80%;">Ο-17</span></td>
+</tr>
+</table>
+<hr/>
+<h4 id="toc0"><span><strong>Special Containment Procedures:</strong></span></h4>
+<p>Foundation Satellites are to report any new radio transmissions originating from Eunike 185 to Site-17. If any messages contain coordinates, MTF Omicron-17 ("Bank Busters") is to be dispatched to that location in anticipation of an SCP-5083 event. Any messages received from Eunike 185 are to be classified to the general public. Omicron-17 should keep track of any large crowds in the vicinity but stay at least 30m away at all times before the 5083 event occurs. Personnel are not to attempt to prevent 5083 events by disrupting crowds in the area.</p>
+<p>Any 5083-1 instances detained by Omicron-17 are to be transported to Site-17 and stored in Low-Danger Humanoid Holding Wing Sub-Section 3. If the number of 5083-1 instances contained at Site-17 reaches or surpasses 15, further instances are to be hydraulically pressed for easier storage.</p>
+<p>If a 5083-1 instance is eaten, agents are to be dispatched to the consumer's home to seize newly appeared currency.</p>
+<p>Currently, 10 instances of 5083-1 are contained at Site-17, and 5 at <a href="/scp-6868">Site-228</a>. 8 of the instances are missing at least one body part.</p>
+<hr/>
+<h4 id="toc1"><span><strong>Description:</strong></span></h4>
+<p>SCP-5083 is an event that occurs 1-4 times a year in the vicinity of a group of at least 10 people. First, an instance of SCP-5083-1 will materialize next to the crowd and begin running in the opposite direction. All members of the aforementioned crowd will then gain a strong desire to consume 5083-1, and begin to chase after it. After the event, all of the affected people will become amnesic, forgetting the events since 5083-1's manifestation, and losing their desire to consume 5083-1.</p>
+<p>SCP-5083-1 is a humanoid entity composed entirely of solid gold. Despite this, they are able to animate their limbs in the same fashion as humans and have been observed to run up to speeds of 35km/h. While 5083-1's body is as durable as gold in almost all situations, its body will become soft and malleable upon any attempt to consume it. To date, no negative effects have been recorded as a result of digesting 5083-1 material.</p>
+<p>If the 5083-1 is eaten, the consumer will receive a pile of their local currency inside their home (if one of their doors or windows are unlocked) or on the roof of their home (if all entrances are locked) 10-12 hours after consumption. The currency will be worth as much as the gold making up the 5083-1's body. If the mass of the 5083-1 is consumed by multiple people then they will each receive currency proportional to the amount of 5083-1 they consumed.</p>
+<p>Unless they have undergone at least Level 3 memetic agent resistance training, any further people that see 5083-1 after initial manifestation will gain the same desires to consume them. When 5083-1 stays at least 30m away, and out of sight from, all affected individuals for at least 150 seconds, the event ends and 5083-1 is classified as 'escaped'. The Foundation is currently aware of at least 22 escaped 5083-1 instances. What happens to a 5083-1 when it 'escapes' is unknown.</p>
+<p>48 hours before each SCP-5083 event, a radio transmission will be sent from the asteroid, Eunike 185, located in the asteroid belt, with the coordinates of the event. An example of one such transmission from 2012/04/10 is as follows:</p>
+<blockquote>
+<p>ROUND 36: 11°41′13″N 106°35′47″E</p>
+</blockquote>
+<p>Interviews with SCP-5083-1 instances have failed to uncover any useful information about their existence.</p>
+<hr/>
+<p><strong>Addendum 1: Notable Incident Reports</strong></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">● Incident 1 ●</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">○ Incident 1 ○</a></div>
+<div class="collapsible-block-content">
+<hr/>
+<div style="text-align: center;">
+<h5 id="toc2"><span>Incident 1: Discovery</span></h5>
+<h5 id="toc3"><span>2002/03/11</span></h5>
+</div>
+<hr/>
+<p>Knowledge of SCP-5083's existence was first discovered on 2002/03/11 in Manchester, United Kingdom. The Incident began when SCP-5083-1 materialized nearby a large crowd in Buile Hill Park at around 7:00 AM. Two police officers nearby heard the commotion caused by the crowd and moved in to investigate.</p>
+<div class="blockquote">
+<p><em>The following is a transcript of Officer Joo-won Seo's bodycam footage and audio.</em></p>
+<hr/>
+<p><strong>[Begin Log, 7:03]</strong></p>
+<p><strong>Ethan Payne:</strong> Do you hear that?</p>
+<p><strong>Joo-won Seo:</strong> Hear what?</p>
+<p><em>From the center of the park, multiple people yelling can faintly be heard.</em></p>
+<p><strong>Ethan:</strong> We should… probably check that out.</p>
+<p><strong>Joo-won:</strong> (<em>Speaking into his radio</em>) We're hearing what sounds like some sort of violent commotion coming from Buile Hill Park. Heading in now.</p>
+<p><em>Joo-wen and Ethan run into the park towards the source of the commotion, passing several confused bystanders. The sound of multiple people yelling unintelligible phrases gets progressively louder as they get nearer to the source.</em></p>
+<p><strong>Joo-won:</strong> Over there!</p>
+<p><strong>Ethan:</strong> What in the bloody-?</p>
+<p><em>About a dozen people, all appearing to be over the age of 60, are gathered around a large tree, throwing coins and rocks into the branches while yelling various insults.</em></p>
+<p><strong>Howard Lawson:</strong><span class="fnnum">.</span><span class="fncon">All civillians were later identified using facial recognition algorithms.</span> (<em>While beating the tree trunk with a cane</em>) Get down from there you- (<em>cough</em>) tasty bastard!</p>
+<p><strong>Beatrice Corbyn:</strong> (<em>While hurling coins into the branches</em>) You can't stay up there forever! Only the Queen is immortal!</p>
+<p><em>An instance of SCP-5083-1 is in the tree, concealed by the branches.</em></p>
+<p><strong>Patrick Holden:</strong> God I want that hunk of metal…</p>
+<p><strong>SCP-5083-1:</strong> Help! Somebody help me!</p>
+<p><strong>Joo-won:</strong> Holy shit there's someone up there!</p>
+<p><strong>Ethan:</strong> I- you radio for backup! I'll go and deal with this!</p>
+<p><em>Ethan runs towards the tree and the crowd</em></p>
+<hr/>
+<p><strong>Joo-won:</strong> (<em>Speaking into his radio</em>) We need more officers down here at, uh, Buile Hill Park, straight in the middle. Right now. (<em>pauses</em>) There's a… large of group of- elderly people- around a tree, and it looks like there's someone…</p>
+<hr/>
+<p><strong>Ethan:</strong> (<em>Speaking to the crowd</em>) Everyone, get away from that tree!</p>
+<p><em>Most of the crowd ignore Ethan and continue to fixate on the tree.</em></p>
+<hr/>
+<p><strong>Joo-won:</strong> (<em>Speaking into his radio</em>) …stuck in a tree…</p>
+<hr/>
+<p><strong>Margaret Hoyles:</strong> (<em>While raising her handbag threateningly towards Ethan</em>) Back off, plonker! This one's ours!</p>
+<p><strong>Howard Lawson:</strong> Yeah! Good luck getting past us!</p>
+<p><strong>Ethan:</strong> I said get away from that tree!</p>
+<hr/>
+<p><strong>Joo-won:</strong> (<em>Speaking into his radio</em>) …No, no, there's quite a lot of them…</p>
+<hr/>
+<p><em>Ethan tries to get closer to the tree but is blocked by three members of the crowd.</em></p>
+<p><strong>Ethan:</strong> This is your last damn warning before I start making arrests!</p>
+<p><em>At this moment, an old man, identified as Steven Hitchcock, walks into the vicinity carrying a chainsaw. As he comes into view the crowd cheers and begins chanting "eat him up!".</em></p>
+<hr/>
+<p><strong>Joo-won:</strong> (<em>Speaking into his radio</em>) and one of them just- Oh my god!</p>
+<hr/>
+<p><strong>SCP-5083-1:</strong> Help, please! I don't want to die!</p>
+<p><em>Ethan steps in front of Steven and draws his taser.</em></p>
+<p><strong>Ethan:</strong> (<em>Shouting</em>) PUT DOWN THE CHAINSAW!</p>
+<p><em>Steven stops for a moment, scowling at Ethan, before switching on his chainsaw and continuing to walk towards Ethan with a grin.</em></p>
+<p><em>Howard Lawson begins running from the crowd, towards Ethan and Steven.</em></p>
+<p><strong>Joo-won:</strong> Ethan, wait-!</p>
+<p><em>Ethan fires his taser at Steven, but as he does, Howard dives in front of him. The two barbed darts impale themselves in Howard's sides. He collapses to the ground, writhing and screaming as he is electrocuted.</em></p>
+<p><strong>Ethan:</strong> FUCK!</p>
+<hr/>
+<p><em>Joo-won makes visual contact with SCP-5083-1.</em></p>
+<p><strong>Joo-won:</strong> Man, why am I… so hungry…</p>
+<hr/>
+<p><em>Steven kicks Ethan in the stomach sending him tumbling to the floor. The crowd cheers as Steven continues toward the tree.</em></p>
+<p><em>By this time, more police had arrived outside of the park, and the Foundation had become aware of the event through Police radio transmissions, and had dispatched MTF Nu-12 to deal with the situation.</em></p>
+<p><em>While Margaret Hoyles beats the incapacitated Ethan with her handbag, Steven begins sawing into the base of the tree trunk.</em></p>
+<p><strong>Stuart Leonard:</strong> Get into my stomach!</p>
+<p><strong>Steven:</strong> Timbeeeeer!</p>
+<p><em>As the tree begins to topple over, and the crowd rushes to capture SCP-5083-1, it leaps up from the treetop multiple meters into the sky. Its golden, shiny body reflects the sunlight, creating a bright flash and momentarily blinding some members of the crowd. When it lands on the ground, it immediately begins running away. After a second, the members of the crowd recover and chase after it.</em></p>
+</div>
+<p>When SCP-5083-1 exited the tree, the multitude of people watching the commotion saw SCP-5083-1 and became affected by 5083-1's compulsion.</p>
+<p>Backup police arriving on the scene also became affected and began chasing SCP-5083-1 into Manor Rd. Around this time, MTF Nu-12 ("Trashdogs") arrived on the scene and attempted to capture the anomaly while Extraction Team N-12K waited on standby. (Nu-12 were unaffected by SCP-5083-1 due to prior memetic agent resistance training.)</p>
+<div class="blockquote">
+<p><em>The following a transcript of Nu-12's audio and video log.</em></p>
+<hr/>
+<p><em>Note: All members of Nu-12 were riding on motorbikes.</em></p>
+<p><strong>[Begin Log, 7:37]</strong></p>
+<p><strong>Nu-12-1:</strong> Anomaly spotted up ahead.</p>
+<p><em>SCP-5083-1 is being chased by a crowd of about one hundred people who are swamping Claremont Rd.</em></p>
+<p><strong>Nu-12-4</strong> How are we getting past the crowd?</p>
+<p><strong>Nu-12-1:</strong> We'll go around it. Follow me.</p>
+<p><em>Nu-12 speed up and turn right onto Penelope Rd, then left onto Summer Rd and left again back onto Claremont Rd, in front of the crowd.</em></p>
+<p><strong>Nu-12-3:</strong> The fuck do we do now?</p>
+<p><strong>Nu-12-1:</strong> We grab the anomaly and run.</p>
+<p><em>As SCP-5083-1 and the crowd get closer to Nu-12, Nu-12-2 fires his Bolas gun twice at SCP-5083-1. The weights wrap around SCP-5083-1, tying its legs to each other, and its arms to its body. Nu-12-1 catches SCP-5083-1 as it falls over and straps it to the back of her vehicle, as well as concealing it with a black cloth.</em></p>
+<p><strong>Nu-12-1:</strong> GO! GO! GO!</p>
+<p><em>As Nu-12 drives away, the crowd attempts to throw various projectiles at them, such as water bottles and phones.</em></p>
+<p><em>Nu-12 rides away from the crowd for two minutes.</em></p>
+<p><strong>Nu-12-3:</strong> I think we lost 'em. No way they'll catch up to us.</p>
+<p><strong>SCP-5083-1:</strong> Who the hell are you guys?</p>
+<p><strong>Nu-12-1:</strong> Command, requesting extraction team now.</p>
+<p><strong>Command:</strong> Affirmative.</p>
+<p><em>Extraction team Nu-12K begins to fly into Nu-12's area, manifesting in their audio as helicopter blades slowly getting louder.</em></p>
+<p><strong>Nu-12-1:</strong> Hold on. I think we have a problem…</p>
+<p><em>At the end of the street, a police van is driving towards Nu-12 above the speed limit.</em></p>
+<p><strong>Nu-12-1:</strong> Move!</p>
+<p><em>At this point MTF Alpha-45 "Janitors" is dispatched in anticipation of necessary post-mission cleanup.</em></p>
+<p><em>Nu-12 begins driving down Lancaster Rd onto E Lancashire Rd (A highway). The police van continues to pursue them.</em></p>
+<p><strong>Nu-12-1:</strong> Command, we'll have to delay that extraction!</p>
+<p><strong>SCP-5083-1:</strong> Uh, <em>hellooo?!</em> You guys wanna tell me who you are?</p>
+<p><strong>Nu-12-1:</strong> Let's shake 'em!</p>
+<p><em>Nu-12 enters the traffic of Bolton Rd swerving around multiple vehicles. The police van follows, lurching to the side to swerve around a black car.</em></p>
+<p><em>Ahead, two trucks are driving side by side.</em></p>
+<p><strong>Nu-12-2:</strong> Think it's time we got outta here.</p>
+<p><em>Nu-12 -1 through -4 move into a line formation and speed up towards the trucks.</em></p>
+<p><strong>SCP-5083-1:</strong> What the fuck is happening?</p>
+<p><em>While they are still driving side-by-side, the four MTF members ride in through the narrow gap between the two trucks.</em></p>
+<p><strong>Nu-12-4:</strong> Hell yeah!</p>
+<p><strong>SCP-5083-1:</strong> Can you at least explain why those old men were trying to grab me?</p>
+<p><strong>Nu-12-1:</strong> Command, prepare for extraction. Exiting the highway at-</p>
+<p><em>There is a large explosion behind them as the police van smashes through the back of the two trucks, sending them both careening to the side. Its front appears severely damaged.</em></p>
+<p><em>At this point Foundation Drones begin scrambling all local police communications to prevent further police force from arriving.</em></p>
+<p><strong>Nu-12-1:</strong> Scratch that, Command.</p>
+<p><em>Nu-12 continues to speed down E Lancashire Rd with the police van in pursuit, both swerving around vehicle after vehicle. The police van occasionally crashes through another vehicle to keep going. Out of the right side window of the police van, a man emerges holding a pistol. He fires at Nu-12-4, hitting the side mirror of the motorbike, shattering it.</em></p>
+<p><strong>Nu-12-4:</strong> I just got fired at!</p>
+<p><strong>Nu-12-1:</strong> Copy!</p>
+<p><em>Another man emerges from the opposite side of the police van, also carrying a pistol.</em></p>
+<p><em>As Nu-12-2 swerves around a blue car, one of the armed men fires at Nu-12-2, hitting and shattering the blue car's back screen.</em></p>
+<p><strong>Nu-12-2:</strong> Crap! We need to lose these guys fast!</p>
+<p><em>Multiple bullets continue to fly past the members of Nu-12, occasionally colliding with nearby civilian vehicles.</em></p>
+<p><strong>Nu-12-1:</strong> Okay, we'll turn right here onto-</p>
+<p><em>A bullet collides with Nu-12-1's back wheel, bursting it and sending her and SCP-5083-1 tumbling sideways. SCP-5083-1 screams. Nu-12-1 is unconscious.</em></p>
+<p><strong>Nu-12-3:</strong> Nu-1, what happened? Wait- Everyone turn around now!</p>
+<p><em>Nu-12 -2, -3, and -4 realize what has happened and turn around to aid Nu-12-1, but the van has already stopped beside the vehicle. Three men exit the side vehicle, grab SCP-5083-1 and haul it into the van.</em></p>
+<p><em>As the police van turns around, Nu-12 -2, -3, and -4 swerve around Nu-12-1 and give chase. Suddenly the van begins lurching around sporadically, and SCP-5083-1 can be heard screaming inside. The van collides with multiple vehicles before coming to a full stop. Nu-12 surround the van and enter it to find six half-conscious police officers, all amnesic, and SCP-5083-1 missing.</em></p>
+</div>
+<p>Directly after the events of Incident 1, MTF Alpha-45 arrived to perform post-mission cleanup. Amnestics were given to direct witnesses and the cover story Aleph-12 "Police chase" was disseminated to the press.</p>
+<p>Following this Incident, MTF Omicron-17 was permanently assigned to the containment of SCP-5083.</p>
+</div>
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">○ Incident 1 ○</a></div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">● Incident 4 ●</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">○ Incident 4 ○</a></div>
+<div class="collapsible-block-content">
+<hr/>
+<div style="text-align: center;">
+<h5 id="toc4"><span>Incident 4: First Containment</span></h5>
+<h5 id="toc5"><span>2004/11/10</span></h5>
+</div>
+<hr/>
+<p>On 2004/11/08, the following radio transmission was received from Eunike 185:</p>
+<blockquote>
+<p>ROUND 23: 33°21'16.8"S 115°39'42.0"E</p>
+</blockquote>
+<p>MTF Omicron-17 was deployed to Jurian Bay Cemetary under the guise of cemetery workers and civilians. SCP-5083-1 materialized in the cemetery on 2004/11/10.</p>
+<div class="blockquote">
+<p><em>The following is a transcript of an excerpt from MTF Omicron-17's video and audio log.</em></p>
+<hr/>
+<p><strong>Tyson Carter:</strong> (<em>Deep breath</em>) It's difficult to express how much Blake meant to me.</p>
+<p><strong>Tyson:</strong> I've known him since I was 16. We've both changed a lot since then, but what never changed was Blake's powerful commitment to friendship.</p>
+<p><strong>Tyson:</strong> Every day at school Blake was there to greet me, and every weekend Blake was there to talk to me and…</p>
+<p><strong>Tyson:</strong> I'm not sure I'll ever have another friend like that.</p>
+<p><em>Tyson begins tearing up.</em></p>
+<p><strong>Tyson:</strong> Without Blake I really wouldn't be who I am today. So much of what I love was given to me by him.</p>
+<p><strong>Tyson:</strong> My love of fishing, my guitar and, of course, my favorite dish:</p>
+<p><em>SCP-5083-1 materializes in the crowd of funeral attendees watching the eulogy.</em></p>
+<p><strong>Tyson:</strong> Raw gold. Whenever I eat it, I think of Blake, and… I'm hungry for it now. I'm hungry for raw, uncooked gold.</p>
+<p><strong>SCP-5083-1:</strong> Where the fuck am I?</p>
+<p><strong>Tyson:</strong> Come here won't you, yellow man?</p>
+<p><strong>SCP-5083-1:</strong> What?</p>
+<p><em>The crowd gets up from their seats and begin running towards 5083-1, knocking over chairs and each other.</em></p>
+<p><em>Members of MTF Omicron-17 enter the area from all sides, converging on the gold man.</em></p>
+<p><strong>SCP-5083-1:</strong> Oh crap!</p>
+<p><em>5083-1 runs forwards towards Tyson, punches him in the face, and continues past until he reaches the coffin of Blake Mckenzie. He opens the lids, leaps inside, and closes it behind him.</em></p>
+<p><em>O-17-4 tries to pry the lid to the coffin open but 5083-1 keeps it close.</em></p>
+<p><strong>O-17-1:</strong> Just take the damn coffin!</p>
+<p><em>O-17 draws their batons and begin to fight off the crowd of funeral-goers while O-17-2 -4 -6 and -7 pick up the coffin and run towards the van.</em></p>
+<p><em>An unidentified large man breaks past the wall of O-17 and dives at the operatives carrying the coffin. The coffin is knocked to the group, sending both 5083-1 and the corpse of Blake Mckenzie spilling out.</em></p>
+<p><strong>SCP-5083-1:</strong> Fuck! Why was there a dead person in there?!</p>
+<p><em>O-17-6 tackles 5083-1 from behind while O-17-2 keeps the large man incapacitated.</em></p>
+<p><strong>SCP-5083-1:</strong> Let go of me!</p>
+<p><em>O-17-6 throws 5083-1 into the back of the O-17 transport van.</em></p>
+<p><strong>O-17-1:</strong> GO!</p>
+<p><strong>SCP-5083-1:</strong> Help!</p>
+<p><em>O-17 scrambles into the van and quickly drives away from the cemetery.</em></p>
+</div>
+<p>MTF Pi-2 "Cardboard Box" arrived two minutes later for post-mission cleanup.</p>
+</div>
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">○ Incident 4 ○</a></div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">● Incident 22 ●</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">○ Incident 22 ○</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: center;">
+<h4 id="toc6"><span>THIS FILE IS CLASSIFIED LEVEL 5 ONLY</span></h4>
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">▷ ENTER AUTHORIZATION CODE ◁</a><a href="javascript:;">▼ ACCESS GRANTED ▼</a></div>
+</div>
+<div class="colmod-content">
+<div class="code">
+<pre><code>[MEMETIC KILL AGENT NEUTRALIZED]</code></pre></div>
+<br/>
+<div style="text-align: left;">
+<hr/>
+<div style="text-align: center;">
+<h5 id="toc7"><span>Incident 22: Site-01</span></h5>
+<h5 id="toc8"><span>2015/07/14</span></h5>
+</div>
+<hr/>
+<p>On 2015/07/12, a radio transmission was received from Eunike 185:</p>
+<blockquote>
+<p>ROUND 41: ??°??′??″N ???°??′??″E</p>
+</blockquote>
+<p>Believed to be some kind of malfunction, the transmission was ignored.</p>
+<p>On 2015/07/14, an instance of SCP-5083-1 materialized in the Overwatch Command conference chamber, Site-01, during an O5 meeting.</p>
+<div class="blockquote">
+<p><em>The following is an excerpt from the transcript of O5 Session-2317-115 and contains excerpts of various Site-01 recording equipment and command systems. If you are reading this and do not have level 5 clearance, avert your eyes from the terminal and wait for assistance.</em></p>
+<hr/>
+<p><strong>O5-4:</strong> This is the fourth fracture this month. This has severely reduced our estimated time to complete <a href="/scp-7444">Operation Lifeboat</a>. As of now, we have about a month and a half, maybe less. As discussed in our previous session on this topic, anything short of full extradimensional evacuation will be insufficient.</p>
+<p><strong>O5-2:</strong> Operation Lifeboat currently has the capacity to evacuate about 10 percent of Earth's population.</p>
+<p><em>Silence for six seconds.</em></p>
+<p><strong>O5-11:</strong> Is that it? After ten fucking years that's all we can do?!</p>
+<p><strong>O5-4:</strong> Eleven, this behavior is not appropriate for an Overseer.</p>
+<p><strong>O5-11:</strong> (<em>pauses</em>) …Apologies.</p>
+<p><strong>O5-2:</strong> With massive budget transfer we can increase the capacity to about fifteen percent, but models predict this will result in at least ten major breaches over the coming month.</p>
+<p><strong>O5-1:</strong> All in favor of directing funds from the Department‌ ‌of‌ ‌External‌ ‌Affairs, Department‌ ‌of‌ ‌Personnel‌ ‌Integrity, Internal‌ ‌Security‌ ‌Department‌, Department‌ ‌of‌ ‌Parabiology, Department‌ ‌of‌ ‌Psychodentistry, Department of Fundamental Theories, Department of Sciences, Department‌ ‌of‌ ‌Analytics, Surrealistics‌ ‌Department, and sixteen other Departments to Operation Lifeboat as outlined in budget proposal 2317-114? As the proposer of said budget change, I will be abstaining.</p>
+<p><strong>O5-2:</strong> Aye.</p>
+<p><strong>O5-3:</strong> Aye.</p>
+<p><strong>O5-4:</strong> Aye.</p>
+<p><strong>O5-5:</strong> Nay.</p>
+<p><strong>O5-6:</strong> Aye.</p>
+<p><strong>O5-7:</strong> Aye…</p>
+<p><em>SCP-5083-1 materializes in the center of the conference table while O5-7 speaks.</em></p>
+<p><strong>O5-7:</strong> …Want to eat the gold man.</p>
+<p><strong>SCP-5083-1:</strong> Hey I- think I'm alive? Oh hey! Were you guys also just born-</p>
+<p><em>O5-6, O5-2, O5-10, and O5-4 immediately clamber onto the conference table towards the 5083-1. As they do, defense drones equipped in the room attempt firing at the 5083-1; their bullets create metallic clangs as they ricochet off its body. The 5083-1 attempts to run towards the door but is dropkicked by O5-10.</em></p>
+<p><strong>O5-12:</strong> (<em>Speaking to security through comms</em>) Class Z visual in…</p>
+<p><strong>O5-12:</strong> (<em>Speaking to security through comms</em>) False alarm. There is an intruder. All security personnel are now tasked with finding and apprehending the gold man.</p>
+<p><em>The rest of the Overseers climb onto the conference table, engaging in physical combat with each other for control of the 5083-1. Defense drones continue to search for weak spots in the 5083-1, firing at various joints and bodyparts. Occasionally a bullet ricochets off the 5083-1 into an O5, creating a loud screech and blinding flash of light as their protective ward absorbs the bullet's energy.</em></p>
+<p><em>27 seconds after 5083-1's materialization, seven members of MTF Alpha-1 ("Red Right Hand"), armed with memetic inoculation equipment, enter the room.</em></p>
+<p><strong>SCP-5083-1:</strong> (<em>While pinned beneath O5-11</em>) Get me out of here!</p>
+<p><strong>O5-1:</strong> (<em>To MTF Alpha-1</em>) I demand that you leave this room at once! You have no authorization to be-</p>
+<p><em>O5-1 is grabbed by Alpha-1-4 and thrown off of the conference table.</em></p>
+<p><em>While MTF Alpha-1 fight their way through the crowd, O5-4 bites into 5083-1's shoulder, amputating its right arm. The right arm is lost beneath the crowd, and 5083-1 screams as its torso, legs, heads, and left arm are consumed by the overseers. While Alpha-1 fights the rest of the overseers, O5-4, O5-13, and O5-8 fistfight over the remaining right arm. O5-4 overpowers the others, takes the arm, and places it into his Overseerial Pocket Dimension.</em></p>
+<p><em>O5-4 leaps off the table. Alpha-1-5 is guarding the north door. O5-4 runs towards Alpha-1-5, twists his face into a cognitohazardous facial expression, and continues running into corridor 81-B past the incapacitated Alpha-1-5.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-4 has locked down Conference Room Alpha.</p>
+</div>
+</div>
+</div>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-7 has unlocked Conference Room Alpha.</p>
+</div>
+</div>
+</div>
+<p><em>Alpha-1 manages to restrain O5 1, 2, 5, 8, 9, 11, and 13, however, O5 3, 5, 6, 7, 10, and 12 manage to exit Conference Room Alpha into Corridor 81-B in pursuit of O5-4.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-6 has unlocked infantry 81-A</p>
+</div>
+</div>
+</div>
+<p><em>O5 3, 5, 6, 7, 10, and 12 each remove various weapons from infantry 81-A such as switchback energy grenades, thaumatological rifles, occult pistols, and reverse matter railguns.</em></p>
+<p><em>By this time, the rest of Alpha-1 have equipped themselves with memetic inoculation equipment and are pursuing the Overseers.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-10 has activated spatial replacement transporter 812-9: [812-9 ⠀to 844-0]</p>
+</div>
+</div>
+</div>
+<p><em>O5-3, 5, 6, 7, 10, 12 exit spatial replacement transporter 844-0 into corridor 123-G. They begin firing various projectiles at O5-4 who is at the end of the hallway. There are various flashes of light and high pitch screeches as O5-4's protective ward violently absorbs the energies, and he is thrown to the floor.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-4 has set Wing H spatial reality mode to: [Spiral]</p>
+</div>
+</div>
+</div>
+<p><em>As corridor 123-G begins twisting itself into a spiral shape, the pursuing Overseers lose their lines of sight on O5-4, giving him the opportunity to get up and continue running through the now spiraling corridor.</em></p>
+<p><em>The arms of the Overseers begin twisting into spirals.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-6 has set Wing H spatial reality mode to: [Null]</p>
+</div>
+</div>
+</div>
+<p><em>When the walls of the corridor begin collapsing into void, various gaps in the spiral corridor give the pursuing Overseers lines of sight once again on O5-4. Just as O5-6 is about to fire a ballistic time-wall missile at O5-4, twelve members of Alpha-1 uncloak around the Overseers, surrounding them. O5-6 fires the missile just as they do which collides with Alpha-1-28, trapping most of the Alpha-1 members as well O5-3, 5, 6, 7, and 12 in a timeless zone.</em></p>
+<p><em>O5-4 sees this and removes the arm of 5083-1 from his Overseerial Pocket Dimension for consumption.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-10 has erased [0hr 7m 0s] from Site-01.</p>
+</div>
+</div>
+</div>
+<hr/>
+<p><em>O5-4 leaps off the table. Alpha-1-5 is guarding the north door. O5-4 runs towards Alpha-1-5, twists his face into a cognitohazardous facial expression, and continues running into corridor 81-B past the incapacitated Alpha-1-5.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-4 has locked down Conference Room Alpha.</p>
+</div>
+</div>
+</div>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-7 has unlocked Conference Room Alpha.</p>
+</div>
+</div>
+</div>
+<p><em>Alpha-1 manages to restrain O5 1, 2, 5, 8, 9, 11, and 13, however, O5 3, 5, 6, 7, 10, and 12 manage to exit Conference Room Alpha into Corridor 81-B in pursuit of O5-4.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-6 has unlocked infantry 81-A</p>
+</div>
+</div>
+</div>
+<p><em>O5 3, 5, 6, 7, 10, and 12 each remove various weapons from infantry 81-A such as zoological grenades, thaumatological pistols, occult rifles, and imaginary handguns.</em></p>
+<p><em>By this time, the rest of Alpha-1 have equipped themselves with memetic inoculation equipment and are pursuing the Overseers.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-10 has activated spatial replacement transporter 812-9: [812-9 ⠀to 844-0]</p>
+</div>
+</div>
+</div>
+<p><em>O5 3, 5, 6, 7, 10, 12 exit spatial replacement transporter 844-0 into corridor 123-G. They begin firing various projectiles at O5-4 who is at the end of the hallway. There are various flashes of light and high pitch screeches as O5-4's protective ward violently absorbs the energies, and he is thrown to the roof.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-4 has set Wing H spatial reality mode to: [Klein Bottle]</p>
+</div>
+</div>
+</div>
+<p><em>As corridor 123-G begins twisting itself into a klein bottle shape, the pursuing Overseers lose their lines of sight on O5-4, giving him the opportunity to get up and continue running through the now klein bottling corridor.</em></p>
+<p><em>The arms of the Overseers begin twisting into themselves.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-6 has set Wing H spatial reality mode to: [Null]</p>
+</div>
+</div>
+</div>
+<p><em>When the surface of the corridor begin collapsing into void, various gaps give the pursuing Overseers lines of sight once again on O5-4. Just as O5-6 is about to fire a ballistic time-wall missile at O5-4, twelve members of Alpha-1 uncloak around the Overseers, surrounding them. O5-6 fires the missile just as they do which collides with Alpha-1-28, trapping most of the Alpha-1 members as well O5-3, 5, 6, 7, and 12 in a time-empty zone.</em></p>
+<p><em>O5-4 sees this and removes the arm of 5083-1 from his Overseerial Pocket Dimension for consumption.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-10 has erased [0hr 7m 0s] from Site-01.</p>
+</div>
+</div>
+</div>
+<hr/>
+<p><em>O5-4 leaps off the table. Alpha-1-5 is guarding the north door. O5-4 runs towards Alpha-1-5, twists his face into a cognitohazardous facial expression, and continues running into corridor 81-B past the incapacitated Alpha-1-5.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-4 has locked down Conference Room Alpha.</p>
+</div>
+</div>
+</div>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-7 has unlocked Conference Room Alpha.</p>
+</div>
+</div>
+</div>
+<p><em>Alpha-1 manages to restrain O5 1, 2, 5, 8, 9, 11, and 13, however, O5 3, 5, 6, 7, 10, and 12 manage to exit Conference Room Alpha into Corridor 81-B in pursuit of O5-4.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-6 has unlocked infantry 81-A</p>
+</div>
+</div>
+</div>
+<p><em>O5 3, 5, 6, 7, 10, and 12 each remove various weapons from infantry 81-A such as chickens, bees, cows, and donkeys.</em></p>
+<p><em>By this time, the rest of Alpha-1 have equipped themselves with memetic inoculation equipment and are pursuing the Overseers.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀Site-01 Network: O5-10 has activated spatial replacement transporter 812-9: [812-9 ⠀to 844-0]</p>
+</div>
+</div>
+</div>
+<p><em>O5 3, 5, 6, 7, 10, 12 exit spatial replacement transporter 844-0 into corridor 123-G. They begin firing various projectiles at O5-4 who is at the end of the hallway. There are various flashes of light and high pitch screeches as O5-4's protective ward violently absorbs the energies, and he is thrown to the inside.</em></p>
+<div class="no-unfold">
+<div class="containercontainer">
+<div class="container">
+
+<p>⠀<span style="text-decoration: line-through;">Site-01 Network: O5-4 has set Wing H spatial reality mode to: [Inside Out]</span></p>
+</div>
+</div>
+</div>
+<p><em>Members of MTF Beta-0 ("Time Time Wranglers") materialize behind each Overseer and constrain them.</em></p>
+<p><strong>Note:</strong> The remaining arm of SCP-5083-1 was transported to Site-17 post-incident.</p>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">○ Incident 22 ○</a></div>
+</div>
+</div>
+<hr/>
+<p><strong>Addendum 2:</strong></p>
+<p>On 2020/09/19, a small envelope appeared on the floor of corridor 12, Low-Danger Humanoid Holding Wing Sub-Section 3, Site-17, next to the SCP-5083-1 containment cells.</p>
+<p>The envelope contained a letter:</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">● Show File ●</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">○ Hide File ○</a></div>
+<div class="collapsible-block-content">
+<div style="float: center; border: solid 3px #444444; background:#ffffff url(http://scp-wiki.wdfiles.com/local--files/scp-5083/love) center no-repeat; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 4px 4px rgba(0,0,0,.2);">
+<p>For all the members of Foundation,</p>
+<p>Thank you guys very much for being a part of this game for so long! I really can't believe that. When I first started this game thirty years ago I thought no one would want to play with me. I thought it would be just me and the gold mans all day long. But year after year you guys prove me wrong! Not only you guys come back to play but you teach me so much! The fact you were able to catch 15 (😲) gold mans without eating them shows to me that playing and having fun is the most important part of the game and not the reward!</p>
+<p>That's why today I have decided to officially start Gold Man season 2; This time with double the gold man, and double the fun!</p>
+<p>Can't wait to see you there!</p>
+<p>Dexter 🙂</p>
+</div>
+</div>
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">○ Hide File ○</a></div>
+</div>
+</div>
+<p>An investigation into PoI-933 "Dexter" is ongoing.</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-5083">SCP-5083</a>" by WizzBlizz, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-5083">https://scpwiki.com/scp-5083</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> Gold2<br/>
+<strong>Name:</strong> Gold texture<br/>
+<strong>Author:</strong> árticotropical<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://search.creativecommons.org/photos/643a8a36-54cf-480a-be4f-1dc38b714bbe">https://search.creativecommons.org/photos/643a8a36-54cf-480a-be4f-1dc38b714bbe</a><br/>
+<strong>Additional Notes:</strong> The rest of the image was made by me.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> run<br/>
+<strong>Name:</strong> Anarchist demonstration in Stockholm om May 1 2007 doing the traditional final rush.<br/>
+<strong>Author:</strong> Liftarn<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/Category:Running_crowds#/media/File:1maj2007.jpg">https://commons.wikimedia.org/wiki/Category:Running_crowds#/media/File:1maj2007.jpg</a><br/>
+<strong>Additional Notes:</strong> The added gold man was made by <a href="https://www.artstation.com/etienneunai">my friend.</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> love<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/wizzblizz" onclick="WIKIDOT.page.listeners.userInfo(6760712); return false;"><img alt="WizzBlizz" class="small" src="https://www.wikidot.com/avatar.php?userid=6760712&amp;amp;size=small&amp;amp;timestamp=1756043120" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6760712)"/></a><a href="http://www.wikidot.com/user:info/wizzblizz" onclick="WIKIDOT.page.listeners.userInfo(6760712); return false;">WizzBlizz</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

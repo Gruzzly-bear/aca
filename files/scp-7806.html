@@ -1,0 +1,498 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-7806</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-7806</h1>
+            <html><body><div id="page-content">
+
+<div style="display: none">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Show component code</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide component code</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc(var(--base-font-size) * (</span><span class="hl-number">266</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">))</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (min-width: 56.25</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem))</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) </span><span class="hl-number">0</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> / </span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> -webkit-sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">grid-area:</span><span class="hl-code"> side-bar</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">2.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">scroll</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-color </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                padding </span><span class="hl-number">300</span><span class="hl-code">ms linear,
+                margin </span><span class="hl-number">300</span><span class="hl-code">ms linear</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-tertiary-color, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">rtl</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-width:</span><span class="hl-code"> </span><span class="hl-string">thin</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-scroll-chaining:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+                </span><span class="hl-reserved">overscroll-behavior:</span><span class="hl-code"> contain</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(var(--swatch-primary-darker), </span><span class="hl-number">0.1</span><span class="hl-code">) /* Thumb */
+                rgba(var(--swatch-tertiary-color), </span><span class="hl-number">0.05</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-secondary-color, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">), </span><span class="hl-number">0.8</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-corner</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw + </span><span class="hl-number">100</span><span class="hl-code">vh)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-style:</span><span class="hl-code"> </span><span class="hl-string">inset</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-right:</span><span class="hl-code"> </span><span class="hl-number">2.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-primary-darker), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">1</span><span class="hl-code">rem) - var(--sidebar-width-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(</span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)  /* Thumb */
+                rgba(</span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgb(var(--swatch-primary-darker, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">) /* Thumb */
+                rgb(var(--swatch-menubg-color, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;  /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> url("https://scp-wiki.wdfiles.com/local--files/component%</span><span class="hl-number">3</span><span class="hl-code">Acollapsible-sidebar/sidebar-tab.svg")</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-attachment:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem </span><span class="hl-number">12.875</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">em</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">9</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> var(--final-header-height-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--final-header-height-on-desktop, </span><span class="hl-number">0.688</span><span class="hl-code">rem) - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> calc(var(--final-header-height-on-desktop, -</span><span class="hl-number">2.313</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--swatch-alternate-color, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> + </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.scpnet-interwiki-wrapper</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Print</span><span class="hl-code"> </span><span class="hl-identifier">Friendly</span><span class="hl-code"> </span><span class="hl-identifier">Formatting</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">Estrella</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code"> 
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="display: none;">
+<div class="scp-image-block block-right" style="width:300px;"><img alt="kneeview.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-7806/kneeview.jpg"/>
+<div class="scp-image-caption">
+<p>.</p>
+</div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><a href="https://scp-wiki.wikidot.com/this-page-intentionally-left-blank">More by Harry Blank</a></strong></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<div class="scp-image-block block-right" style="width:300px;"><img alt="AlisKnees.jpg" class="image" src="http://scp-sandbox-3.wdfiles.com/local--files/harry-blank-2/AlisKnees.jpg"/>
+<div class="scp-image-caption">
+<p>SCP-7806 Blu-Ray insert.</p>
+</div>
+</div>
+<h4 id="toc0"><span><span style="text-decoration: underline;">Special Containment Procedures</span></span></h4>
+<p>Three copies of SCP-7806 are kept in Low-Yield Storage Facility 1 at <a href="https://scp-wiki.wikidot.com/secure-facility-dossier-site-43">Site-43</a>. No attempts to acquire further copies are to be made at this time. Staff are permitted to view SCP-7806 for research purposes. Requests for recreational access must be denied, and promptly reported to the Ethics Committee.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<h4 id="toc1"><span><span style="text-decoration: underline;">Description</span></span></h4>
+<p>SCP-7806 is a Blu-Ray box set compiling episodes of <em>Ali's Knees,</em> an unaired television program purportedly dedicated to filming the knees of Swedish actress Alicia Amanda Vikander in widescreen closeup. Footage focuses on Vikander's knees exclusively. Each episode is twenty-four hours in length, and covers one full day in its protagonist's life at an unspecified date. Each copy of SCP-7806 displays Vikander's knees from a different angle. The angle will occasionally shift, and digital editing is occasionally in evidence, apparently to prevent anything other than Vikander's knees from appearing in the frame. Once the viewer has witnessed a full episode, they are required to insert the next disc into their machine to resume playback; any footage which would have been presented during the time required to perform this action will be missed. Once the full set of discs has been exhausted, the viewer is presented with a 1-800 telephone number for use in ordering the next 'season'. Each season is equivalent to one calendar month.</p>
+<p>Two attempts have been made to call the provided number. The first returned a busy signal, and the second was blocked.</p>
+<p>Due to the tight focus, video editing, and uncertain date, confirmation of the subject's identity is impossible. No concealed cameras have been discovered in Vikander's presence, and she is unaware of the existence of this program.</p>
+<h4 id="toc2"><span><span style="text-decoration: underline;">Discovery</span></span></h4>
+<p>Three copies of SCP-7806 and a 'burner' cellphone were recovered during a raid of an anomalous media shop in Lincoln, Nebraska on 8 October 2022. The phone contained text message records apparently representing the negotiations which resulted in SCP-7806's creation. A full transcript is provided below.</p>
+<div style="display: block; margin: auto; align: center; border: dashed 1px #444444; background:#f4f4f4; width: 70%; padding:10px">
+<p><span style="color: red">Mari McPhaerson calling dado! We at <a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media</a> are overjoyed to hear from you again.</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">right</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">okay</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">you are receiving dado demand for make recompense after disastrous very bad <a href="https://scp-wiki.wikidot.com/scp-6780">first deal</a>, yes</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">Can't say I agree with that characterization, fella, but we sure did get your request! I'll need a little clarification before we can proceed, though.</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">dado has already explained this</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">dado talked to the moose</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">Well that's great, and very progressive of you I might add, but you must have misunderstood our complaints directory. You should have selected "human operator." The moose operator is strictly for moose complaints. Nobody in the human complaints department speaks moose, and all I've got here is a complaint in moose-speak.</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">okay</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">weird but okay</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">dado is demand new media product of dados choosing as recompsen</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">recompnse</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">compensation</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">You want us to make <em>more</em> media for you?! Well, why didn't you say so! We're very excited to be partnering with your fine financial figure once more.</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">no</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">no partners</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">u make media, dado sell</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">no partners</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">I see.</span></p>
+<p><span style="color: red">You're asking us to produce a media program, and then sign away the rights to you?</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">yes</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">dado demands exclusive vikanders knees media project</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">You know, I think we've got just the thing? I bet you'll be really pleased with how this turns out.</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">wait</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">dado has instructions for media</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">hello</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">hello</span></p>
+</div>
+</div>
+<p>Despite the apparent commercial intent behind this conversation, and its obvious results, there is no indication that dado ever attempted to sell SCP-7806. McPhaerson eventually resumed contact to determine the reason; these records were also recovered at the scene.</p>
+<div style="display: block; margin: auto; align: center; border: dashed 1px #444444; background:#f4f4f4; width: 70%; padding:10px">
+<p><span style="color: red">Howdy, partner!</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">not partners</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">Wow. We brought a beautiful media baby into the world together, and it all meant nothing to you? That's really hurtful, man.</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">what u want</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">It's like we don't even know each other anymore. You've been so distant! For example: you never put <em>Ali's Knees</em> on the open marketplace of ideas, where it could grow and flourish into a pillar of global media. Now I have to ask — even though the thought is patently ridiculous, it's right here in the script I got from our lawyers — are you in some way dissatisfied with our product?</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">no</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">is that all</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">u there</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">Sorry, you're <em>not</em> upset about <em>Ali's Knees?</em> Not at all? Obviously the content is unimpeachable, but we thought maybe you didn't like the box art, or the title. We considered calling it <em>da Ali's Knees do,</em> but almost nobody in the office thought the gag was landing. It played well with the moose audience, though. I think.</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">whatever</span></p>
+</div>
+<div style="text-align: right;">
+<p><span style="color: blue">whatever</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">Just to be clear: you do still plan to release this program to the teeming masses, right?</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">no</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">I don't understand.</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">k</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">Alright, well, I have to come clean. Those aren't Alicia Vikander's knees at all.</span></p>
+<p><span style="color: red">They're my knees.</span></p>
+<p><span style="color: red">Are you watching? I'll move them.</span></p>
+<p><span style="color: red">I moved them.</span></p>
+<p><span style="color: red">Were you watching?</span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">dado is satisfied with arrangement</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="color: red">You're just going to sit on an entire warehouse of knee photography?</span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: right;">
+<p><span style="color: blue">dado is satisfied</span></p>
+</div>
+</div>
+<p>Call records show that the phone was also used, twice, to call the 1-800 number appearing at the end of each season of SCP-7806.</p>
+<p><strong>Update:</strong> On 13 November 2022, each copy of SCP-7806 in Foundation possession was spontaneously altered via unknown means. The program is now entitled <em>Moosonee,</em> and consists of realtime footage of the eponymous Canadian town from a static position high above the Moose River. Each episode begins with an unexplicated title card:</p>
+<div class="scp-image-block block-center" style="width:500px;"><img alt="Moosonee.jpg" class="image" src="http://scp-sandbox-3.wdfiles.com/local--files/harry-blank-2/Moosonee.jpg"/>
+<div class="scp-image-caption">
+<p>SCP-7806 title card.</p>
+</div>
+</div>
+<p>Further updates to this file are pending, as largely unsuccessful attempts to sell the first forty-seven seasons of SCP-7806 have subsequently flooded the open market.</p>
+
+<div>
+<div style="text-align: center;">
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-7806">SCP-7806</a>" by HarryBlank, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-7806">https://scpwiki.com/scp-7806</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<div style="text-align: left;">
+<p><strong>Filename:</strong> AlisKnees.jpg<br/>
+<strong>Name:</strong> Ballerina Baby Bun<br/>
+<strong>Author:</strong> John Spade<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> [<a href="https://www.flickr.com/photos/62492448@N05/7669262102">flickr</a>]</p>
+<p><strong>Filename:</strong> Moosonee.jpg<br/>
+<strong>Name:</strong> Moosonee downtown aerial<br/>
+<strong>Author:</strong> 40rev<br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source:</strong> [<a href="https://commons.wikimedia.org/w/index.php?curid=5668642">Wikimedia Commons</a>]</p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

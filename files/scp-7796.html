@@ -1,0 +1,536 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-7796</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-7796</h1>
+            <html><body><div id="page-content">
+
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><span style="text-decoration: underline;"><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media Hub</a></span></strong><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><strong><a href="https://scp-wiki.wikidot.com/grigori-karpin-s-author-page">More by Grigori Karpin</a></strong></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+<div style="display: none">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Show component code</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide component code</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc(var(--base-font-size) * (</span><span class="hl-number">266</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">))</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (min-width: 56.25</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem))</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) </span><span class="hl-number">0</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> / </span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> -webkit-sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">grid-area:</span><span class="hl-code"> side-bar</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">2.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">scroll</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-color </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                padding </span><span class="hl-number">300</span><span class="hl-code">ms linear,
+                margin </span><span class="hl-number">300</span><span class="hl-code">ms linear</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-tertiary-color, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">rtl</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-width:</span><span class="hl-code"> </span><span class="hl-string">thin</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-scroll-chaining:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+                </span><span class="hl-reserved">overscroll-behavior:</span><span class="hl-code"> contain</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(var(--swatch-primary-darker), </span><span class="hl-number">0.1</span><span class="hl-code">) /* Thumb */
+                rgba(var(--swatch-tertiary-color), </span><span class="hl-number">0.05</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-secondary-color, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">), </span><span class="hl-number">0.8</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-corner</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw + </span><span class="hl-number">100</span><span class="hl-code">vh)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-style:</span><span class="hl-code"> </span><span class="hl-string">inset</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-right:</span><span class="hl-code"> </span><span class="hl-number">2.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-primary-darker), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">1</span><span class="hl-code">rem) - var(--sidebar-width-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(</span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)  /* Thumb */
+                rgba(</span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgb(var(--swatch-primary-darker, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">) /* Thumb */
+                rgb(var(--swatch-menubg-color, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;  /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> url("https://scp-wiki.wdfiles.com/local--files/component%</span><span class="hl-number">3</span><span class="hl-code">Acollapsible-sidebar/sidebar-tab.svg")</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-attachment:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem </span><span class="hl-number">12.875</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">em</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">9</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> var(--final-header-height-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--final-header-height-on-desktop, </span><span class="hl-number">0.688</span><span class="hl-code">rem) - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> calc(var(--final-header-height-on-desktop, -</span><span class="hl-number">2.313</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--swatch-alternate-color, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> + </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.scpnet-interwiki-wrapper</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Print</span><span class="hl-code"> </span><span class="hl-identifier">Friendly</span><span class="hl-code"> </span><span class="hl-identifier">Formatting</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">Estrella</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code"> 
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="scp-image-block block-center" style="width:100%;"><img alt="VKTM%20x%20Don%20Cavatelli-1ALT" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20x%20Don%20Cavatelli-1ALT" style="width:100%;"/>
+<div class="scp-image-caption" style="width:100%;">
+<p>Don Cavatelli interviewing actor Anthony Quinn, SCP-7796, Season 15, episode 35.</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h4 id="toc0"><span><span style="text-decoration: underline;">Special Containment Procedures</span>:</span></h4>
+<p>A single set of SCP-7796 is to be archived in High-Yield Data Storage Facility 3 at Site-43. If any further additional copies of SCP-7796 are discovered, they are to be destroyed and those who are in possession of the instances are to be amnesticized.</p>
+<p>Metatron.AIC will scan online records of film archives, film discussion boards and social media platforms for any mention of SCP-7796. Such records are to be scrubbed and individuals responsible for the posts are to be amnesticized.</p>
+<h4 id="toc1"><span><span style="text-decoration: underline;">Description</span>:</span></h4>
+<p>SCP-7796 is an archived television show entitled <em>Evenings with Don Cavatelli</em>. The show was produced by GOI-5889 (“<a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media</a>”) starring <a href="/scp-5697">SCP-5697</a>,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> was modelled after late night television talk shows, and ran for seventeen seasons from 1955 to 1972.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> There is no record of SCP-7796 being broadcast on any of the major networks, despite the high quality of the set, the budget of the production, and notable guests throughout the seventeen-season run.</p>
+<p>When an individual watches an episode of SCP-7796, a soporific effect has been observed, lulling the individual into a state of sustained hypnagogia. Individuals in this state are highly suggestible, especially to the advertisement breaks which always promotes products by Vikander-Kneed Technical Media, resulting in the delusion that the GOI’s media products are the most popular media in the world.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup></p>
+<p>Other temporary anomalous effects include:</p>
+<ul>
+<li>tooth rot,</li>
+<li>myopia,</li>
+<li>anosmia,</li>
+<li>ageusia,</li>
+<li>and alopecia<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></li>
+</ul>
+<p>Recordings of SCP-7796 were discovered on 20 August, 2023, in the University of California Los Angeles’ Film &amp; Television Archive by Dr. Lillihammer during a trip wherein she was researching the entertainment industry for better understanding of VKTM’s operations. The archivists present did not acknowledge her questions about SCP-7796 and would not admit to having it. Additionally, all online records of the archive fail to mention the existence of SCP-7796. After containment and shipment to Site-43, Dr. Lillihammer confirmed that every single similar archive in the United States, England, Ireland, Scotland, and Wales, contained a complete copy of the entire run of SCP-7796. None of the archivists had any knowledge of the existence of the recordings either. Dr. Lillihammer dispatched other members of MTF-Kappa-43 (“The Mediators”) to retrieve and contain the additional copies of SCP-7796.</p>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #B6B8BB; padding:5px; margin-bottom: 10px; padding:10px">
+<div style="text-align: center;">
+<p><strong>Season 1 – Episode 63, 03-10-1955</strong></p>
+</div>
+<div class="blockquote">
+<p><em>[Cavatelli stands in front of velvet curtains with a freestanding microphone, performing his nightly monologue used to open the show. He is smoking a cigar.]</em></p>
+<p><strong>Cavatelli</strong>: Crowds have been streaming into cinemas to see the latest animated feature, Lady and the Tramp. But all I can say is there’s one scene I could have used some warning about. I don’t know about you folks, but I can’t say I’ve ever had a romantic fantasy about being chomped to death by two mutts in an alleyway.</p>
+<p><strong>Cavatelli</strong>: This is racist against Pastamericans everywhere!</p>
+<p><em>[Audience laughter is heard off camera.]</em></p>
+<p><strong>Cavatelli</strong>: Heyo! I gotta million of em, folks. Now, stick around after this break for my interview with James Dean.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> He’s here to promote his new film, Rebel without a Cause, which critics are calling an accurate portrayal of teenage angst. Personally, I call that Friday night with the kids while the missus goes to book club, amirite?</p>
+<p><em>[Applause followed by a fade to black and commercial break.]</em></p>
+<p><em>[The commercial break consists of an ad for <a href="/scp-5897">SCP-5897</a>, but overlaid onto the audio Cavatelli’s voice can be heard.]</em></p>
+<p><strong>Cavatelli</strong>: <em>[Coughing violently]</em> Fuck you, Jerry, I can smoke if I want to.</p>
+<p><strong>Cavatelli</strong>: <em>[Still coughing]</em> Because it’s my show. You’re just the producer. I’m the talent, so go produce me up a guest.</p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #B6B8BB; padding:5px; margin-bottom: 10px; padding:10px">
+<div style="text-align: center;">
+<p><strong>Season 3 – Episode 90, 15-05-1957</strong></p>
+</div>
+<div class="blockquote">
+<p><em>[Cavatelli sits opposite actor, Ronald Reagan.]</em></p>
+<p><strong>Cavatelli</strong>: So, what do you have for the folks tonight?</p>
+<p><strong>Reagan</strong>: Hey thanks, Don. I’m here tonight to promote my new film, Hellcats of the Navy.</p>
+<p><strong>Cavatelli</strong>: First thing I gotta say is that is one dumb title. Whatta you guys doing in that movie? Fighting demonic felines?</p>
+<p><em>[Cavatelli ashes his cigar into the ash tray, knocking a few embers onto the floor and Reagan’s suit leg causing it to ignite slightly along the hem.]</em></p>
+<p><strong>Reagan</strong>: <em>[Patting down his pant leg frantically.]</em> It’s about a mission against the Japanese war effort onboard a submarine and the struggle of the crew to maintain professionalism during the crisis.</p>
+<p><strong>Cavatelli</strong>: Man, I must’ve fallen asleep fifteen minutes in.</p>
+<p><em>[The audience laughs.]</em></p>
+<p><strong>Reagan</strong>: <em>[Looking up from his now extinguished pant leg.]</em> Sorry?</p>
+<p><strong>Cavatelli</strong>: I gotta tell you, Ronnie, you’re a piss poor actor.</p>
+<p><em>[Audience applause.]</em></p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #B6B8BB; padding:5px; margin-bottom: 10px; padding:10px">
+<div style="text-align: center;">
+<p><strong>Season 5 – Episode 31 , 20-03-1959</strong></p>
+</div>
+<div class="blockquote">
+<p><em>[Cavatelli stands over the body of Rod Steiger, who is bleeding and curled into a fetal position]</em></p>
+<p><strong>Cavatelli</strong>: That’s for portraying the Italian American like a fucking gangster!<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup> Not every Italian has that sorta criminal demeanor, Rod! What do you think about those of us with a pasta heritage, huh? Vaffanculo!</p>
+<p><em>[Cavatelli kicks Steiger in the stomach before turning back to the camera, wiping blood from his knuckles with a handkerchief.]</em></p>
+<p><strong>Cavatelli</strong>: Stick around folks, I’m gonna teach this chooch some manners while yous watches a very special message from our sponsors.</p>
+<p><strong>Cavatelli</strong>: Hey Jerry, get me a rubber hose, I need it for something.</p>
+<p><em>[Applause followed by a fade to black and commercial break.]</em></p>
+<p><em>[The screen brightens steadily until it is roughly 300% brighter than any cathode ray television was capable of producing. The white light fades to a rich blue, then soothing music starts.]</em></p>
+<p><strong>Mari MacPhaerson</strong>: Sick of your ordinary social media? Sick of the same old drudgery and nonsense from out of touch billionaires ruining your fun? Me too. That’s why I switched to Viber. The social media platform from Vikander-Kneed Technical Media. When enough’s enough, it’s time to Vibe.</p>
+<p><strong>Unknown male voice</strong>: <em>[Speaking rapidly.]</em> Side effects include: headaches, nausea, anal protrusions, a suffering of self-worth, dizziness, your mother’s resurrection from the netherworld, dental plaque, and many more! Ask your doctor if Viber is right for you!</p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #B6B8BB; padding:5px; margin-bottom: 10px; padding:10px">
+<div style="text-align: center;">
+<p><strong>Season 9 – Episode 147 , 23-11-1963</strong></p>
+</div>
+<div class="blockquote">
+<p><em>[Cavatelli is smoking a cigar and sitting next to his guest.]</em></p>
+<p><strong>Cavatelli</strong>: And do you think that target is still achievable?</p>
+<p><em>[The corpse of John F. Kennedy<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup> lays slumped over the other chair, face up and tilted over the back of the chair. Blood and brain matter drips from the man’s head to the stage floor.]</em></p>
+<p><strong>Cavatelli</strong>: Landing on the moon by 1970? Come on. We can barely get people up into orbit. Doesn’t that promise stink of amoral optimism in the face of the significant struggles the American people already face? Unemployment, wealth discrepancy, failure of the American Dream everywhere we look, and you want to land a couple rocket jockeys on the ball of rock that orbits the planet?</p>
+<p><em>[The corpse starts to slide down the chair.]</em></p>
+<p><strong>Cavatelli</strong>: Alright alright, no politics! Who wants to listen to that, I know! Sorry, Mr. President. I just thought as you’re the leader of the free world, politics was a subject you’d be comfortable talking about.</p>
+<p><em>[The corpse slips to the floor, its head striking the seat of the chair on the way down, causing more brain matter to slide out.]</em></p>
+<p><strong>Cavatelli</strong>: Jerry, get me a wet wipe or something, the President needs a moment to clean himself up.</p>
+<p><em>[Cavatelli ashes onto the stage floor into the ever expanding pool of blood and brain matter.]</em></p>
+<p><strong>Cavatelli</strong>: Sorry, what was that, Mr. President?</p>
+<p><strong>Cavatelli</strong>: <em>[Laughing.]</em> When you’re right, you’re right, Mr. President. The show must go on, and this <em>is</em> an entertainment show. We wouldn’t want to bore the audience with things that actually threaten their livelihoods, they have the newspaper for that! So, new subject, seen any good movies lately?</p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #B6B8BB; padding:5px; margin-bottom: 10px; padding:10px">
+<div style="text-align: center;">
+<p><strong>Season 10 – Episode 86 , 14-04-1964</strong></p>
+</div>
+<div class="blockquote">
+<p><em>[Cavatelli sits opposite folk singer, Bob Dylan.]</em></p>
+<p><strong>Cavatelli</strong>: More and more the public is responding to your music, do you have any insight into your sudden popularity?</p>
+<p><strong>Dylan</strong>: I don’t have anything to say about my music, I just write it all down, and then I sing it. What else you want from me, man?</p>
+<p><strong>Cavatelli</strong>: Well, some say that the youth are drawn to your music because of the frantic politics of our time.</p>
+<p><em>[Cavatelli puts one hand to the side of his head.]</em></p>
+<p><strong>Cavatelli</strong>: Come on Jerry, what’s the point of having a talk show if you can’t talk politics? Shut up.</p>
+<p><em>[Cavatelli lights a cigar.]</em></p>
+<p><strong>Cavatelli</strong>: Sorry about that, Mr. Dylan. Like I was saying, things are tense in America right now. Rising tensions in Southeast Asia, not to mention horrible conditions for blue-collar workers here at home.</p>
+<p><strong>Dylan</strong>: I’ll tell you what, man, it's all about talking to people. Get to know the working man, and you’ll be able to speak to him. Talking is where it’s at, man. Everything in the news is talking <em>at</em> us, not <em>with</em> us. You dig?</p>
+<p><strong>Cavatelli</strong>: Oh, I dig.</p>
+<p><strong>Dylan</strong>: I just took a road trip across America. Got in those bars, talked to them miners, other folk. Shit ain’t good out there, man. I’m just telling it like it is.</p>
+<p><strong>Cavatelli</strong>: Think you could do a song for us tonight, Mr. Dylan?</p>
+<p><strong>Dylan</strong>: Hell yeah, man. Let’s do it.</p>
+<p><em>[Dylan raises an acoustic guitar, begins to strum, and then launces into The Times are a-Changing, his newly released single. Afterwards, he puts the guitar down.]</em></p>
+<p><strong>Cavatelli</strong>: Damn, you’re a terrible singer. Can’t carry a note at all, can you?</p>
+<p><strong>Dylan</strong>: <em>[Laughing]</em> Not a bit. You like the song, Don?</p>
+<p><strong>Cavatelli</strong>: I’ll tell you when my ears stop bleeding!</p>
+<p><em>[Audience laughter.]</em></p>
+<p><strong>Cavatelli</strong>: But tell me, Mr. Dylan, what made you license out that song for the superhero movie?<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup></p>
+<p><strong>Dylan</strong>: Oh man, the money. Obviously, the money. What else is there, man? What’d you expect?</p>
+<p><strong>Cavatelli</strong>: A better movie.</p>
+<p><em>[Audience laughter.]</em></p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #B6B8BB; padding:5px; margin-bottom: 10px; padding:10px">
+<div style="text-align: center;">
+<p><strong>Season 11 – Episode 102 , 14-09-1966</strong></p>
+</div>
+<div class="blockquote">
+<p><em>[Cavatelli sits across from Ronald Reagan, who was appearing on the show as part of his 1966 California gubernatorial election campaign.]</em></p>
+<p><strong>Reagan</strong>: I think I’m a better choice for the California people, especially when compared to my opponent, Pat Brown. This administration has wasted our State’s resources, creating one of the worst deficits in our history while still raising taxes. Worse, Brown is lax on crime, refusing to crack down during the riots in Watts a few years ago, and allowing radicals to congregate on our State’s great university campuses like UC Berkeley. My opponent needs to be held accountable for his failures in the State capital. Sure, my opponents have called me a radical, accusing me of bigotry because I opposed the Civil Rights Act and supported the appeal of the Rumford Act, but I’m here to tell you that there’s not a lick of bigotry anywhere in my person. I just want a simple government to address our simple problems. I’m a political outsider, and that’s what we need in California, someone who can take his experience in the world beyond the capital and apply it to problems for those in the state that care about our success as a society.</p>
+<p><em>[Cavatelli smokes his cigar for a moment, then places it on the ashtray seated between them, and dusts off his hands theatrically.]</em></p>
+<p><strong>Cavatelli</strong>: I can think of quite a few good counters to your points here tonight, Ronnie. Point out the racially insensitive language you’re using, point to the similarities in your speeches to fascist propaganda…</p>
+<p><em>[Reagan starts to speak but Cavatelli holds up his hand.]</em></p>
+<p><strong>Cavatelli</strong>: But mostly, I just want to say you’re a shitty actor.</p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #B6B8BB; padding:5px; margin-bottom: 10px; padding:10px">
+<div style="text-align: center;">
+<p><strong>Season 16 – Episode 57 , 16-04-1971</strong></p>
+</div>
+<div class="blockquote">
+<p><em>[Cavatelli stands in front of velvet curtains with a freestanding microphone.]</em></p>
+<p><strong>Cavatelli</strong>: The 43<sup>rd</sup> Academy Awards were televised last night and Best Picture went to <em>Patton</em> over the comedic and politically conscious goldmine of <em>M*A*S*H</em>, going to show you that once again the most popular thing is often much less important than the pieces it wins over. God knows, we need a film glorifying the idiocy of the American Military Industrial Complex over commentary about our nation’s military imperialism in Southeast Asia. So, thank you Francis Ford Coppola for writing such an insightful drama about the blubbering idiocy that was George Patton. Can’t wait to see what trash you bring us next!</p>
+<p><em>[Audience laughter.]</em></p>
+<p><strong>Cavatelli</strong>: But that’s enough from me, you didn’t tune in to hear me gab, let’s welcome our first guest, shall we?</p>
+<p><em>[Audience applause.]</em></p>
+<p><strong>Cavatelli</strong>: Please welcome Francis Ford Coppola!</p>
+<p><em>[The curtains split and roll away, revealing Coppola standing there with his mouth agape. Cavatelli walks to the chairs and sits, patting the empty chair. Coppola stiffly walks to the chair to increased applause from the audience.]</em></p>
+<p><strong>Cavatelli</strong>: So, tell me, what’s it like to be a complete hack? I know, I know. Patton even compared the American political system to the Nazis, and you made sure that stayed in the movie. Good job! You’re not a buffoon, blind drunk on nationalism and in love with the myths of the American military superiority at all, are you Frank? Bravo!</p>
+<p><em>[Cavatelli blows smoke from his cigar into Coppola’s face, who blinks rapidly, coughing.]</em></p>
+<p><strong>Cavatelli</strong>: Before my producer starts bitching at me for being mean, let’s drop the pretense. I’m just playing around. Tell us something about what you’re working on next.</p>
+<p><strong>Coppola</strong>: <em>[Coughing]</em> I’m working on a screenplay based on a bestselling novel, depicting the rise and fall of a fictional organized crime family in the years after World War II named Corleone.</p>
+<p><em>[Cavatelli puts the cigar down on the ashtray, pulls out brass knuckles and affixes it to his right hand, making a fist.]</em></p>
+<p><strong>Cavatelli</strong>: Oh really? Tell me more.</p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. A sentient humanoid entity with a body seemingly made of various pastas. There is no mention of this show within the file of SCP-5697 and the entity has refused to comment.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. 2,567 individual episodes.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. The ads are anachronistic, displaying products from various eras, including shows and movies that researchers at Site-43 are certain have yet to be produced.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. The effects only appear to last as long as the individual is watching SCP-7796 episodes, with rapid reversals after observation is ceased.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Dean died two days before this episode was recorded.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Steiger starred as the title role in the March 1959 movie of Al Capone, who was a notable figure in the Chicago organized crime scene until his arrest and incarceration.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. 35<sup>th</sup> President of the United States.</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. The song was used in the opening montage of the 2009 film adaptation of the comic book of the same name.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-7796">SCP-7796</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-7796">https://scpwiki.com/scp-7796</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> Photo of Anthony Quinn as the guest on The Dick Cavett Show.<br/>
+<strong>Author:</strong> ABC Television<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Anthony_Quinn_The_Dick_Cavett_Show_1971.JPG">Image Link</a><br/>
+<strong>Note</strong>: Edited by Grigori Karpin</p>
+</blockquote>
+
+<blockquote>
+<p><strong>Filename:</strong> doncavatelli.jpg<br/>
+<strong>Name:</strong> Don Cavatelli (composite)<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wdfiles.com/local--files/scp-5697/doncavatelli.jpg">Image Link</a><br/>
+<strong>Note</strong>: Edited by HarryBlank</p>
+</blockquote>
+
+<blockquote>
+<p><strong>Author:</strong> cogdogblog<br/>
+<strong>Name:</strong> Meatball First<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/cogdog/15795383467/">flickr</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Author:</strong> matsuyuki<br/>
+<strong>Name:</strong> Spaghetti Aglio, Olio e Peperoncino<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/matsuyuki/4909744877/">flickr</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Author:</strong> Elvert Barnes<br/>
+<strong>Name:</strong> Cigar.Man.RT.Pentagon.VA.25may97<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/perspective/15065729/">flickr</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Author:</strong> Ninian Reid<br/>
+<strong>Name:</strong> Philly mobsters<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://web.archive.org/web/20190118105358/https://www.flickr.com/photos/25034321@N05/31763208956/">flickr</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

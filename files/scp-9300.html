@@ -1,0 +1,499 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-9300</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-9300</h1>
+            <div class='image-header'><img alt="tekton_drawing.jpg" class="crom-thumbnail" src="https://scp-wiki.wdfiles.com/local--files/scp-9300/tekton_drawing.jpg" style="display: none"/>
+<img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/>
+<img alt="AstralNavigator" class="small" src="https://www.wikidot.com/avatar.php?userid=9716469&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9716469)"/>
+<img alt="atypica" class="small" src="https://www.wikidot.com/avatar.php?userid=9693848&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9693848)"/>
+<img alt="Dr Angell" class="small" src="https://www.wikidot.com/avatar.php?userid=9519188&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9519188)"/>
+<img alt="FireTamer" class="small" src="https://www.wikidot.com/avatar.php?userid=9535008&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9535008)"/>
+<img alt="HaydenSaintPascal" class="small" src="https://www.wikidot.com/avatar.php?userid=9615577&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9615577)"/>
+<img alt="Jezixo" class="small" src="https://www.wikidot.com/avatar.php?userid=1621916&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=1621916)"/>
+<img alt="P4TR1CK07" class="small" src="https://www.wikidot.com/avatar.php?userid=7817017&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7817017)"/>
+<img alt="Anyar" class="small" src="https://www.wikidot.com/avatar.php?userid=5274479&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5274479)"/>
+<img alt="BAD_DATA" class="small" src="https://www.wikidot.com/avatar.php?userid=9715340&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9715340)"/>
+<img alt="cptsquid" class="small" src="https://www.wikidot.com/avatar.php?userid=9058053&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9058053)"/>
+<img alt="Enayy" class="small" src="https://www.wikidot.com/avatar.php?userid=9435947&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9435947)"/>
+<img alt="iammuffin" class="small" src="https://www.wikidot.com/avatar.php?userid=5233038&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5233038)"/>
+<img alt="penumbralchoir" class="small" src="https://www.wikidot.com/avatar.php?userid=9790345&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9790345)"/>
+<img alt="mattam" class="small" src="https://www.wikidot.com/avatar.php?userid=9530570&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9530570)"/>
+<img alt="stellyfins" class="small" src="https://www.wikidot.com/avatar.php?userid=8414632&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8414632)"/>
+<img alt="switchitea" class="small" src="https://www.wikidot.com/avatar.php?userid=9436447&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9436447)"/>
+<img alt="BlueEyedFox_" class="small" src="https://www.wikidot.com/avatar.php?userid=9005661&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9005661)"/>
+<img alt="wackdog" class="small" src="https://www.wikidot.com/avatar.php?userid=5620458&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5620458)"/></div><div class='text-content'>Item#:</span> <span class="number">SCP-9300</span></div>
+
+<div class="top-right-box">
+<div class="level">Level4</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">neutralized</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">{$secondary-class}</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">{$disruption-class}</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">{$risk-class}</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="border:solid 1px #999999; background:#000000; padding:5px; margin-bottom: 10px;">
+<div style="text-align: center;">
+<h4 id="toc0"><span>NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION</span></h4>
+<p>This file has not been updated following SCP-9300's neutralization. Dr. Hanson has been removed as the document owner due to his implication in the events of Incident-9300-1. The archived version is presented below for context until a new document owner is selected.</p>
+<p>— Maria Jones, Director, RAISA</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="scp-image-block block-center" style="width:100%;"><img alt="SCP-9000.jpg" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9300/SCP-9000.jpg"/>
+<div class="scp-image-caption">
+<p>SCP-9300, the perfect blackbody.</p>
+</div>
+</div>
+<h3 id="toc1"><span>Special Containment Procedures:</span></h3>
+<hr/>
+<p>Unauthorized approach or observation by non-Foundation personnel is strictly forbidden. Orbital Site-083 will monitor all traffic in the Barnard's Star system and prevent non-Foundation use of the hyperlane leading to Tabby's Star.</p>
+<p>United Stellar Nations databases and civilian research channels are to be continuously monitored to prevent the dissemination of information regarding the Tabby's Star system and SCP-9300’s existence or anomalous characteristics. Any detection of leaks or anomalous data requests is to be countered with amnestic measures and disinformation campaigns.</p>
+<p>Personnel are reminded that SCP-9300’s function and structure are not fully understood. Any attempt at unauthorized access, manipulation, or experimental interaction with SCP-9300 is to be immediately intercepted, and response teams are to neutralize the threat by any means necessary. All observations must be conducted remotely, and personnel are not to approach the blackbody under any circumstances.</p>
+<p>A permanent Foundation presence is to be maintained within the Tabby's Star system to operate observation stations, which are responsible for the preservation of SCP-9300-1's integrity, tracking stellar activity, and recording gravitational and energy anomalies associated with SCP-9300. Access to SCP-9300-1 is restricted to those with explicit authorization from a Level-4/9300 team lead due to its importance to the future of Foundation energy generation. The Department of Exoarchaeology is to have priority access to all archeologically significant remnants of GoI-10954.</p>
+<h3 id="toc2"><span>Description:</span></h3>
+<hr/>
+<p>SCP-9300 is a perfect blackbody located within the Tabby's Star system, approximately 1,500 light-years from Earth. A blackbody is an object that absorbs all radiation directed towards it, reflecting none of it. Typically, they will heat up as their energy increases and emit their own thermal radiation. The blackbody orbits Tabby's Star at a distance of approximately 0.83 AU<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup>.</p>
+<p>Observations indicate that, unlike other blackbodies, SCP-9300 maintains a sustained temperature of absolute zero, effectively emitting no detectable radiation across any spectrum, violating the Third Law of Thermodynamics. Its origin remains unknown, though structural and archaeological evidence from alien megastructures within the system strongly suggests it was once of significant importance to an extinct civilization that once dominated the area, a species whose technological and thaumaturgic capabilities vastly exceeded current human understanding.</p>
+<div class="borderless-image">
+<div class="scp-image-block block-right" style="width:400px;"><img alt="Dyson_Swarm_realistic_representation.webp" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9300/Dyson_Swarm_realistic_representation.webp"/>
+<div class="scp-image-caption">
+<p>SCP-9300-1, with individual swarm components visible in their orbit around the star.</p>
+</div>
+</div>
+</div>
+<p>A partially degraded Dyson swarm,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> designated SCP-9300-1, surrounds Tabby's Star. Observations indicate that solar energy harvested by SCP-9300-1 is being anomalously directed into SCP-9300, though the purpose of this transfer remains unknown. Research into accessing this energy source for Foundation use is considered high priority.</p>
+<p>The civilization that constructed SCP-9300-1 has been designated as GoI-10954, informally referred to as the "Tekton" per Department of Exoarchaeology nomenclature.</p>
+<p>All attempts to measure SCP-9300's mass, energy absorption, or internal composition have produced inconclusive or contradictory results. Its surrounding environment exhibits subtle gravitational fluctuations and minor distortions in local space-time, determined to be thaumaturgically active. Estimation based on visual observation and parallax measurements places the apparent volume of the blackbody as similar to that of Luna.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+<h3 id="toc3"><span>Discovery:</span></h3>
+<hr/>
+<p>A United Stellar Nations (USN) exploratory mission was sent to the Barnard's Star system in 2182. The research team detected evidence of a long-distance hyperlane<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> at the system's edge. An investigation was launched, discovering a connection to the Tabby's Star system, the longest hyperlane discovered to date, covering a real-space distance of nearly 1500 light-years. Due to the long history of anomalous observations of this star, the Foundation utilized a front organization to perform the initial exploration on behalf of the USN.</p>
+<p>During initial exploratory efforts, a planetary-mass debris field within the star's habitable zone was discovered orbiting a perfect blackbody, designated SCP-9300. Due to the demonstrated evidence of space infrastructure within the debris field, such as derelict orbital platforms and abandoned stations, efforts were made to detect other artificial bodies in the system, leading to a survey of Lagrange points orbiting SCP-9300. At the L1 Lagrange point, a series of waystations leading from SCP-9300 to the system's host star was discovered.</p>
+<p>Closer observation of Tabby's Star revealed a damaged but functioning Dyson swarm, SCP-9300-1. SCP-9300-1 occluded approximately 80% of the star's apparent magnitude, explaining observations over the previous centuries of non-standard behavior. Subsequent spectrographic analysis of Tabby's Star suggested its energy output was diminishing at a rate consistent with accelerated terminal decline. The precise cause remained unclear until further research demonstrated the connection to SCP-9300.</p>
+<p>The implications of a Kardashev II+<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup> civilization and evidence of system-wide thaumaturgy caused SCP-9300 research to receive priority status.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc4"><span>Addendum 1: Dyson Array and Infrastructure Glyph Analysis</span></h3>
+<hr/>
+<p>While the debris field orbiting SCP-9300 offered very little for the Department of Exoarchaeology to examine, SCP-9300-1 offered nearly endless discoveries and a glimpse into the history of the Tekton civilization.</p>
+<p>SCP-9300-1 consists of more than 12,000,000 arrays, forming an artificial corona around the stellar body. While several satellites have fallen into disrepair and a large portion of the array distribution has suffered idiopathic and irreparable damage, the comprehensive swarm continues to function, collecting Tabby's solar energy in incalculable quantities. Each 1500 km octagonal array features a single thaumaturgic glyph inscribed into its exceptionally thin, thermostable superalloy back-face.</p>
+<p>Approximately 4,000 unique glyphs have been documented, though none thus far have shown any relation to previously documented GoI-10954 languages or known thaumaturgical sigils. The Department of Applied Thaumatology is currently researching to discover the meaning and purpose of these glyphs in concert with the Department of Exoarchaeology.</p>
+<div class="blockquote">
+<div style="text-align: center;">
+<h2 id="toc5"><span>Subject:</span></h2>
+<h3 id="toc6"><span><span style="text-decoration: underline;">The Historical Implications of System-Wide Thaumaturgy</span></span></h3>
+</div>
+<p>Following the provision of the Department of Applied Thaumatology's report on the first of the sigils distributed throughout both the Dyson swarm's superstructures and their respective infrastructures, I believe it would be wise to consider the symbolic implications. More than 4,000 glyphs have been documented, many placed with deliberate purpose. On the swarm itself, the Tekton appear to have inscribed something akin to a ritual circle — one not traced in chalk or stone, but one that is only revealed when charted at a stellar scale. The scope of the Tekton's intent here is difficult to overstate.</p>
+<blockquote><span style="white-space: pre-wrap;"> </span><br/>
+<span style="font-size:large;">"Unity of Purpose" or "Duty to the Vessel"</span><br/>
+<img alt="glyph1.svg" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9300/glyph1.svg" style="filter:invert(1);" width="60%"/></blockquote>
+<p>The glyph here, meaning "Duty to the Vessel", is most often inscribed on civilian infrastructure near population centers and areas we understand to be of religious significance. I believe that these instances can be compared to our very own ideograms — symbols born from periods of significant historical importance. For instance, scrawled upon dusty windows and painted onto our largest flags, Humanity's "peace and love," born from Gerald Holtom's nuclear disarmament campaign in the 1950s, is among the most universally understood ideograms. It implies not just peace or love, but a deeper universal unity, born from an event that threatened Humanity's very existence, much like the sigil's alternate translation, "Unity of Purpose."</p>
+<p>These two translations are intriguing, in that they are not two separate meanings, but one and the same — a "Unity of Purpose in the Tekton's Duty to the Vessel." This begs the question, what is the "vessel" under which the Tekton unified?</p>
+<blockquote><span style="white-space: pre-wrap;"> </span><br/>
+<span style="font-size:large;">"Feed" or "Appease Hunger"</span><br/>
+<img alt="glyph4.svg" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9300/glyph4.svg" style="filter:invert(1);" width="60%"/></blockquote>
+<p>The "feed" sigil's exclusive placement on transmission arrays leaves little more to be interpreted. Most likely, this glyph thaumaturgically reinforces the very process of energy transmission. It should also be noted that its alternate translation as "appease hunger" suggests the transmission of energy from the swarm to SCP-9300 is not discretionary, but a deliberate act of necessity.</p>
+<p>If we are to assume that the Tekton created the swarm as part of a species-wide unifying event, it would be foolish to ignore what is implied by a disintegrated homeworld and an anomalous, planetary-sized blackbody resting in its place whilst the entirety of a star's solar output is being channeled directly into it. While I understand the Foundation's desire to inherit the legacy that the Tekton left in its wake, it would be remiss of me to blindly recommend redirecting the swarm's output at this time.</p>
+<p>However, we eagerly await the results of the study of further glyphs and what they may reveal about the purpose of this grand megastructure and its relation to the blackbody.</p>
+<p>Dr. Hanson,<br/>
+Department Head<br/>
+Department of Exoarchaeology</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc7"><span>Personal Video Memo 1:</span></h3>
+<div class="blockquote">
+<p><strong>BEGIN PLAYBACK</strong></p>
+<p><em>Dr. Hanson is visible, leaning forward to press the record button on his personal computer. He is seated at his office desk. An emblem of the research ship he is aboard, the FSS</em> Alto Clef, <em>is visible in the background.</em></p>
+<p><strong>Hanson:</strong> Where to begin? Today has been most ignominious. While finalizing my report regarding the meanings of the thaumaturgic glyphs, I find that the O5 Council has chartered the creation of an engineering task force to focus on redirecting the energy of the swarm. I had to put together a hasty warning against their latest course of action there, as it will be the fastest way to get my reservations in front of the O5s.</p>
+<p><em>He rubs his temples, and as if by instinct, reaches for a glass that's not on his desk. He looks up at the camera and sadly shakes his head.</em></p>
+<p><strong>Hanson:</strong> I suppose it makes sense they'd want to move forward without consulting Exoarchaeology. Who wants to hear about the dead from the dying?</p>
+<p><em>Hanson sighs and seems to deflate in his chair.</em></p>
+<p><strong>Hanson:</strong> I don't know why I'm working so hard at this. My team and I know this is my last job. I told them about the diagnosis at the start of the project. I'm sure they'd let me coast along, sympathy for the doomed alcoholic.</p>
+<p><em>Hanson leans forward and gives a rueful smile.</em></p>
+<p><strong>Hanson:</strong> I suppose one doesn't become a Foundation Department Head without a healthy dose of spite.</p>
+<p><strong>END PLAYBACK</strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc8"><span>Addendum 2: Review of Stellar Habitat N843 Archaeological Research</span></h3>
+<p>The initial survey of SCP-9300-1 swarm components identified several of particular interest, among them a station dubbed Habitat N843. Habitat N843 was determined to be both one of the oldest habitation modules and one of the most culturally important, akin to a capital, and therefore a good candidate for research into all post-Unification eras of GoI-10954. Like the majority of the habitation modules identified, N843 included the primary solar energy collection panel, with an inset rotating cylinder providing spin gravity to the inhabitants. The interior of the habitable drum was designed as an entire artificial ecosystem blending urban design with self-sustaining ecology. An automated system opens and closes angled apertures and mirrors to create a day/night cycle roughly equivalent to 33 hours. Notably, unlike many of the other habitation modules observed, N843 lacks dedicated food production areas, indicating its fully urban design and built-in reliance on other sources of food.</p>
+<p>Attached is a report regarding the archeological findings into the early eras of Habitat N843.</p>
+<div class="blockquote">
+<div style="text-align: center;">
+<h2 id="toc9"><span>Subject:</span></h2>
+<h3 id="toc10"><span><span style="text-decoration: underline;">Tekton Society in the early post-Unification Era</span></span></h3>
+</div>
+<p>Habitat N843 is quite the archeological treasure trove for our study of the Tekton. We can learn a lot about the cultural zeitgeist from its very design. For example, we've studied the urban planning that went into N843's cityscape. We see broad avenues with a high capacity for travellers, indicating an expectation of a high population with a need for travel within an interconnected community. Biologically, the Tekton's species had a similar size to humans, though from what we've gathered based on the remains that have survived to the present day, as well as their artwork, they possessed a quadrupedal method of locomotion, in keeping with the hypothesized higher gravity of their homeworld. Their streets reflect this, and clear intent has gone into creating an atmosphere pleasant to walk through. Thaumaturgic glyphs have been discovered that produce a particular set of scents, which we assume were pleasant to the Tekton (and the biologists studying the Tekton were happy to find such direct evidence they had chemical receptors similar to our own sense of smell).</p>
+<p>The Tekton didn't expect everyone to walk everywhere, of course, especially given the scale of the habitation module. We've found an efficient transit system embedded in the sub-layers of the cylinder. Further evidence of widespread thaumaturgy accompanies this system, with thaumaturgically cooled superconductors supporting extremely efficient maglev-style trams. Its layout has been incredibly helpful in identifying the sections of the city the Tekton found to be important. From this, we've identified some other things the culture that built this station valued. The key destinations of the transit system seem to be divided between habitation, religion, work, education, and entertainment. Built into the primary habitation districts are, as we understand them, schools for their children. We've identified other institutions equivalent to universities and colleges throughout, showing a heavy emphasis on learning and abundant opportunities for education. There's evidence of some sort of state religion as well, with shrines and constructs reminiscent of cathedrals.</p>
+<p>We see a hopeful culture building a city to emphasize the values held at the time of its building. Of course, cities for the Tekton, just like the cities of Humanity, are not stagnant things. N843's long history is of particular note because we can see the additions and changes made on top of this hopeful foundation.</p>
+<p>The earliest strata of construction are remarkable for their uniformity. Every habitation block follows a near-identical template, similar proportions, repeated orientations, and even similar decoration, the common "Unity of Purpose" symbolism showing up with great frequency, showing some further thaumaturgic significance we have yet to understand. Analysis of later expansions reveals a gradual divergence. Entire districts began to blossom with individualized styles of architecture; vaulted halls in one, sweeping terraced gardens in another. While the bones of the structure remained, each community was leaving its own mark. To my team and I, we see a culture secure enough in its unity to promote variety.</p>
+<p>The religious buildings we've identified further demonstrate the significance of "Unity" to the Tekton. Initial analysis of some of the texts we've recovered demonstrates a long history and tradition, featuring a principal deity described as the personification of Tekton unity. We find as well that there was some sort of prohibition against depicting this deity, directly referenced in the texts and clear from the lack of any such images or idols as one would otherwise expect.</p>
+<div class="borderless-image">
+<div class="scp-image-block block-right" style="width:300px;"><img alt="tekton_drawing.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-9300/tekton_drawing.jpg"/>
+<div class="scp-image-caption">
+<p>Photograph of one of the recovered drawings</p>
+</div>
+</div>
+</div>
+<p>The educational institutions of N843 are another key marker of this early age in the rise of the Tekton civilization. In one school complex, we discovered wall panels etched with stylized glyphs resembling mathematical formulae <em>and</em> narrative iconography; artwork that doubles as a preservation of what their lessons for their children may have looked like. Just like us, they seem to have used stories as a tool for teaching, sharing knowledge, and even cultural identity. A personal favorite find of mine was within the archival section of one of these schools. Some Tekton, perhaps a teacher, found it worth valuable document storage space to preserve children's drawings. Among them were simple, colorful representations of what we assume were family units. A culture capable of building such stellar wonders, and they still valued the charming and imaginative scribbles of their offspring.</p>
+<p>In their institutes of higher learning, we find evidence of a curious fact of life for the Tekton. Thaumaturgy, beyond the glyphs themselves, was ever-present. It seems that some basic knowledge of such spellcraft was expected of the average citizen. Several of their universities emphasized thaumaturgic research as much as or more than scientific research. The thaumaturgy we are familiar with requires high levels of energy, even for masters of the craft. How was this entire civilization making use of it? A question better suited for Applied Thaumatology, I suspect.</p>
+<p>Taken all together, the archeological record of this early era does not speak for a people driven only by necessity, but one intent on flourishing. The Tekton, rising from whatever crisis drove their unification, poured their ingenuity not just into survival but into education, art, celebration, and the shaping of a civic identity rooted in both duty and joy. Their avenues were wide because they expected crowds; their classrooms were rich with symbols because they expected their children to learn and carry on their legacy; their institutions focused on further progress.</p>
+<p>For all their physical differences from Humanity, the Tekton of N843 reveal themselves here as familiar, a people who believed that their unity could endure, that their culture could grow more varied even as it grew more cohesive, and that their future was worth preparing for. The Dyson swarm itself may be their greatest monument, but perhaps N843 is their most human one. A city that shows us not only what they built, but what they dreamed. How bittersweet, to see them now gone.</p>
+<p>Dr. Hanson,<br/>
+Department Head<br/>
+Department of Exoarchaeology</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc11"><span>Personal Video Memo 2:</span></h3>
+<div class="blockquote">
+<p>BEGIN PLAYBACK</p>
+<p><em>The scene shows Dr. Hanson's office aboard the</em> Alto Clef <em>once again. Dr. Hanson pours water into a glass before lowering himself into his chair. He stares at the ground momentarily before lifting his head and pulling his chair closer to the desk.</em></p>
+<p><strong>Hanson:</strong> The O5s have turned their inscrutable gaze upon my department yet again. They are pushing for access to the energy produced by SCP-9300-1, and they aren't exactly pleased with the simple fact that archeological work doesn't move at the speed of their desire. At least they have the sense not to move ahead without the all-clear from us.</p>
+<p><strong>Hanson:</strong> Now they're pushing us to discover what, exactly, SCP-9300 is. That's the conundrum they expect us to solve. We know that the Tekton were aware of it, and they sent the energy of the swarm to it. But for what purpose? The old anthropologist joke rises to mind, to simply say it has a "ritual purpose" when we don't know the answer. But given their propensity for thaumaturgy and a state religion using those glyphs, there may be something there. But the Tekton are gone; we can't just <em>ask</em> them what all this was for.</p>
+<p><em>Hanson shakes his head morosely.</em></p>
+<p><strong>Hanson:</strong> It's uncanny how similar they were — to us, I mean.</p>
+<p><em>He slides the glass to the center of the table, where he holds it with both hands, his thumbs gliding over its delicate pattern. He scoffs, staring down at his reflection in the water.</em></p>
+<p><strong>Hanson:</strong> They had great concern for their dead, it would seem. The religious sites include mausoleums. The alcoves within look positively relaxing to be in, all plush. Why do we give such comforts to the dead? What does it matter?</p>
+<p><em>He lets out a long sigh.</em></p>
+<p><strong>Hanson:</strong> Let me be clear, here. I don't <em>want</em> to die. But every report concerning the Tekton is just another reminder that it's an unavoidable outcome. I wonder if that's how they felt, at the end of it all. Did they pray for answers from this god of theirs? Do you think they lived out their final days with the curse of knowing that their lives rested on the second hand of a ticking clock?</p>
+<p><em>He lifts the glass to his lips, taking a large gulp before placing it gently on the desk once more. After a moment, his body begins to shudder with a raspy cough. After a moment, the outbreak subsides, and he struggles to catch his breath.</em></p>
+<p><strong>Hanson:</strong> If they did, they probably handled that news more gracefully than I.</p>
+<p><strong>END PLAYBACK</strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc12"><span>Addendum 3: Xenotechnological Survey of Barnard-Tabby Hyperlane Junction Chain</span></h3>
+<p>An orbital survey of SCP-9300-1 revealed yet another chain of 154 waystations that act as stepping stones to the Tabby's Star system's hyperlanes. While the vast majority of these spaceports served as refueling and transit stations, each junction contained an abundance of technological documentation and defunct technology. The Department of Exoarchaeology subsequently launched an investigation to determine the structures' significance and purpose in GoI-10954's society and their relation to the Barnard-Tabby hyperlane.</p>
+<div class="blockquote">
+<div style="text-align: center;">
+<h2 id="toc13"><span>Subject:</span></h2>
+<h3 id="toc14"><span><span style="text-decoration: underline;">The Golden Age and Xenotechnological Revolution of the Tekton Society</span></span></h3>
+</div>
+<p>The very existence of the junctions is indicative of an integral turning point in the Tekton's society. While at first, I had been under the impression that these waystations served as a route of transportation for the swarm's construction materials, I was quickly disproven. In the hangars and ports of Habitat N843, spacefaring vessels utilized only primitive thruster models compared to those stored aboard the junctions, evidence that these stations were constructed long after the completion of the Dyson swarm. These FTL-capable vessels were built to travel greater distances and with a higher efficiency than their predecessors, suggesting that the Tekton, as their civilization matured, felt it necessary to expand their empire farther and farther beyond the system's edges. While our previous surveys of the Dyson swarm indicated that its artificial ecosystems were a far more desirable frontier for settlement, its climates and ecology already engineered to suit the Tekton, much of the system's resources had gone into the creation of the swarm, and the raw materials of neighboring systems seemingly proved to be a strong motivator for expansion to at least a fraction of their society.</p>
+<p>I use the term "fraction" primarily because the "Unity of Purpose" or "Duty to the Vessel" motifs that we had observed in abundance throughout the habitation sectors of the swarm are scarce to nil aboard the junctions. The milieu of the populations that were housed in these structures, even temporarily, appeared idiosyncratic to those that resided in the swarm. From what we can understand, the Tekton in this era had begun to divide into at least two factions, one motivated by the allure of expansion and colonization, a temptation that we are all too familiar with, and the other motivated by traditional values and beliefs — a <em>fractured</em> "Unity of Purpose."</p>
+<p>As the post-Unification Era came to an end, their society seemed to forget why they had unified to begin with. Similar to what we have seen in our own society, the Tekton began to lose faith in their own institutions. A system-wide decline in resources and poor resource management showed that what was once an infallible institution was no longer. "Duty to the Vessel" soon began to appear less and less in educational texts, eventually nearly fading away altogether. Those who stepped away from the traditional values of those aboard the swarm must have realized that their civilization was coming to a plateau, and what lay ahead was only a downward slope.</p>
+<p>What is perhaps the most intriguing of our findings is that even among the traditionalists, it was well-known that their civilization would soon begin its descent. As the swarm's population increased, energy quotas followed suit. For all their technological advancements, even the fusion and antimatter reactors that powered the habitation sectors aboard the swarm struggled to keep pace. However, the entirety of the stellar output of Tabby's Star was at their fingertips for several millennia. Why, then, did they not divert power from SCP-9300 to the habitation sectors and prevent what they knew would be an energy crisis from occurring?</p>
+<p>Dr. Hanson,<br/>
+Department Head<br/>
+Department of Exoarchaeology</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc15"><span>Addendum 4: Dyson Array and Infrastructure Glyph Analysis (cont.)</span></h3>
+<hr/>
+<p>After two months, a second report from the Department of Applied Thaumatology was provided to the Department of Exoarchaeology. Attached below are Hanson's extrapolated findings.</p>
+<div class="blockquote">
+<div style="text-align: center;">
+<h2 id="toc16"><span>Subject:</span></h2>
+<h3 id="toc17"><span><span style="text-decoration: underline;">Uncovering the True Nature of the Tekton Swarm</span></span></h3>
+</div>
+<p>Our friends at the Department of Applied Thaumatology have been hard at work. While this report encompasses translations for more than a hundred glyphs, there were two that piqued my interest.</p>
+<blockquote><span style="white-space: pre-wrap;"> </span><br/>
+<span style="font-size:large;">"Danger" or "Threat"</span><br/>
+<img alt="glyph3.svg" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9300/glyph3.svg" style="filter:invert(1);" width="60%"/></blockquote>
+<blockquote><span style="white-space: pre-wrap;"> </span><br/>
+<span style="font-size:large;">"Restrict" or "Imprison"</span><br/>
+<img alt="glyph2.svg" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9300/glyph2.svg" style="filter:invert(1);" width="60%"/></blockquote>
+<p>The above glyphs are inscribed on arrays adjacent to one another with alarming frequency. While their precise purpose remains uncertain, the spatial distribution indicates a deliberate association — one that may indicate that the builders conceived of the swarm as serving not simply an energetic function nor acting as only a habitation center, but instead as a structure fulfilling some broader restrictive or preventative role. When we piece these two sigils together with those of the previous report, the swarm's purpose becomes rather clear.</p>
+<p>A "Unity of Purpose in the Tekton's Duty to the Vessel." Despite its two English translations (either a seafaring construct or a unit of containment), the term "vessel" can be simplified. It merely defines a construct that carries something within. So, we ask ourselves once more, what is the "vessel" under which the Tekton unified? One might believe that it refers to the Dyson swarm itself, as it is a vessel that once housed a significant portion of the Tekton population, but I would argue against that hypothesis.</p>
+<p>A vessel — one that requires vast amounts of energy to function. A threat — one that is imprisoned within.</p>
+<p>The swarm is a battery energizing SCP-9300 — the vessel, Thaumiel in nature.</p>
+<p>Dr. Hanson,<br/>
+Department Head<br/>
+Department of Exoarchaeology</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc18"><span>Personal Video Memo 3:</span></h3>
+<div class="blockquote">
+<p><strong>BEGIN PLAYBACK</strong></p>
+<p><em>Dr. Hanson reaches past the camera, pressing a button offscreen and powering an overhead light, lighting his office. He reclines back in his seat before beginning.</em></p>
+<p><strong>Hanson:</strong> I think it's finally become clear to me. Not the swarm or even the blackbody — there's still a lot to uncover there, I'm sure. However, throughout the entirety of this assignment, I've been asking myself why I'm trying so damn hard to figure it all out. And I think I finally understand why.</p>
+<p><em>Hanson leans forward, clasping his palms together.</em></p>
+<p><strong>Hanson:</strong> The Tekton began spiraling downwards, just as all things do, shortly after their prime. What comes up must come down, I suppose. But I think there's more to this decline than just… crashing and burning.</p>
+<p><em>There's a pause as Hanson sighs, leaning back in his chair once more, his eyes focusing on something out of frame.</em></p>
+<p><strong>Hanson:</strong> The Tekton surely had an opportunity to reverse its decline. Was their extinction truly inevitable? I think so — but only because they made it so. If SCP-9300 is their version of a Thaumiel, then they must have had some hand in what went wrong with it. Putting whatever it was in there was their doom. I see myself in them. I tore my body apart for decades until it was irreparable. I signed my own death warrant, and I believe that they did as well. But what sets us apart is…</p>
+<p><em>Hanson retrieves a print of one of the drawings recovered from the educational institution in Habitat N843. He admires the art, not looking away from it as he continues.</em></p>
+<p><strong>Hanson:</strong> … what sets us apart is what we decide to do after the news is broken to us. I want to know what they chose to do with what time they had left. I think — I hope… that they inspire me.</p>
+<p><em>Hanson drops the print onto the desk in front of him, chuckling to himself.</em></p>
+<p><strong>Hanson:</strong> Not that it'll do me any good.</p>
+<p><strong>END PLAYBACK</strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc19"><span>Addendum 5: Examination of Evidence of Conflict</span></h3>
+<p>Later archeological strata discovered on Habitat N843 show evidence of a growing disparity between the factions developing in GoI-10954 society. Evidence indicates a growing cold war over an ideological divide that eventually became open hostilities and violence. Attached is Dr. Hanson's report on this period.</p>
+<div class="blockquote">
+<div style="text-align: center;">
+<h2 id="toc20"><span>Subject:</span></h2>
+<h3 id="toc21"><span><span style="text-decoration: underline;">Twilight of the Tekton</span></span></h3>
+</div>
+<p>The later strata of N843 provide the clearest material record of how the Tekton civilization transitioned from its early unity to a more fractured state. Where earlier stages of construction and habitation emphasized learning, civic identity, and a collective devotion to the swarm, later layers reveal an increasingly desperate struggle between irreconcilable visions of the Tekton's future.</p>
+<p>Our teams recovered fragments of research archives from one of the university complexes in N843. These records describe the discovery of an experimental process capable of generating new hyperlanes. As I'm sure anyone with even a layman's understanding of modern FTL travel would realize, this was <em>monumentally</em> difficult. We have not reconstructed the process (efforts to do so are ongoing), but we <em>do</em> know that it required incredible amounts of energy. Seemingly, this surpassed the combined outputs of available antimatter and fusion reactors that the Tekton were able to bring to bear. The solution, in the eyes of many of the dissatisfied of the era, was a diversion of power from the Dyson swarm.</p>
+<p>Contemporaneous civic records show the discovery of this technology was heralded with near-religious awe. The possibility of building bridges across the stars ignited a new political movement, galvanizing all who felt that the awesome power of the megastructure was being misused. While "traditionalist" authorities insisted that all available energy continue to be devoted to SCP-9300, "expansionist" advocates argued that the swarm had secured stability for long enough; a rallying cry went out and is seen in propaganda of the era: "It is time to take our future back!"</p>
+<p>The built environment of the time shows the signs of these growing tensions. Transit tunnels were reinforced with bulkheads more suitable for military defense than civilian transit, which we have interpreted as concern on the part of the ruling Traditionalist faction for terrorist attacks. Residential sectors nearest power conduits exhibit illicit modifications to siphon away power. Popular art at the time shifted from celebrations of achievement to dreams of a future around other stars, with murals of spacefaring vessels becoming common decor. Evidence from graffiti indicates increasing polarization among the citizens of the habitat, with glyphs expressing messages of increasing vehemence against each side appearing more frequently as time progressed.</p>
+<p>Some of the final strata record the abrupt collapse of the long-standing balance of power. Government districts in N843 show widespread structural collapse and thermal damage consistent with directed-energy weapons. Particularly dangerous sections even include still-active thaumaturgic glyphs akin to mines, which trigger dangerous effects when living beings pass near them. We discovered duplicate administrative records indicating two competing "governments" existed aboard this station at the time, rivals for control.</p>
+<p>In adjacent sectors, we found further evidence of violence. One of the transit platforms near the government district showed modifications consistent with being retrofitted as a staging ground for military action. Burn marks, barricaded tunnels, and improvised strongpoints confirm that urban combat took place throughout the cylinder. While, of course, we'll never know precise casualty figures, the evidence suggests a significant loss of life.</p>
+<p>The Expansionist faction appears to have emerged victorious from this bloody time. Surviving records in the aftermath indicate a celebration of the "Opening of the Path", which we understand to be the project diverting the energy of the swarm to the hyperlane generation technology. We have strong reason to conclude that this refers to the creation of the long-distance Barnard-Tabby hyperlane. Yet one ominous question remains: why does so much evidence still exist of this urban combat? Most coup governments would clean up evidence of their insurgent origins, given time. So what prevented the Expansionists from doing so?</p>
+<p>The coup that toppled the Traditionalists was decisive. The Expansionists not only seized control of N843 but also redefined the purpose of the entire Dyson swarm. What had once been a monument to unity was transformed into the launching point of an empire that never came to be. Though the Expansionists secured victory, it would appear that the cost of that victory would prove catastrophic.</p>
+<p>Dr. Hanson,<br/>
+Department Head<br/>
+Department of Exoarchaeology</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc22"><span>Personal Video Memo 4:</span></h3>
+<div class="blockquote">
+<p><strong>BEGIN PLAYBACK</strong></p>
+<p><em>The camera opens on Dr. Hanson in his office. He is noticeably tired, his eyes bloodshot and jaundiced.</em></p>
+<p><strong>Hanson:</strong> I do believe I "get it" now. The Tekton, SCP-9300, everything.</p>
+<p><em>He grabs a stack of papers; printouts of various artifacts, glyphs, and text samples from the Tekton.</em></p>
+<p><strong>Hanson:</strong> The Tekton and I, oh, we understand each other now. I know what they did. Their story is mine in macrocosm. Doomed by the sins of their past. SCP-9300 was their fatal mistake. They never should have made it.</p>
+<p><em>He places the papers back on the desk and leans back in his chair.</em></p>
+<p><strong>Hanson:</strong> I once had an old professor back on Earth, and he'd say to us, "Archeologists are storytellers, students. From fragments of pottery and dusty burials, you speak again the tale of those long gone."</p>
+<p><em>Hanson scoffs.</em></p>
+<p><strong>Hanson:</strong> That hasn't been my experience. We're the ultimate audience, not storytellers. Our theories are always mere interpretations. Of course, those of us who are good always couch those interpretations in the data, but that doesn't change their nature. We're all simply watching the grand play that is history. And I've been a damn good audience member my whole career.</p>
+<p><em>Hanson sits up and leans in closer to his computer monitor, where his image looks back at him. The lighting shows more clearly the degree to which his skin has begun to yellow.</em></p>
+<p><strong>Hanson:</strong> I'm not dead yet, though. Maybe there's a storyteller within me still.</p>
+<p><strong>END PLAYBACK</strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc23"><span>Addendum 6: Incident 9300-1</span></h3>
+<hr/>
+<p>Approximately seven months after the discovery of the anomalous structures within the Tabby's Star system, Dr. Hanson submitted his recommendation of approval for the attempted redirection of stellar output from SCP-9300-1. At the behest of the O5 Council, and with the consensus of the Department of Applied Thaumatology and the Department of Exoarchaeology, the newly formed engineering task force, specializing in the operation of xenotechnology, MTF Lambda-15 ("The Harvesters"), was dispatched to a singular transmission array within the swarm, designated station N843-D. Even though N843-D's energy output comprised less than 0.00025% of the total production of the swarm, this amount was orders of magnitude more energy than the entire Earth received from Sol, making it a suitable candidate for the experiment. Members of both the Department of Applied Thaumatology and the Department of Exoarchaeology were present aboard the <em>Alto Clef</em> to support the technical teams due to their familiarity with the language and culture of GoI-10954.</p>
+<p>The diversion procedure required the precise application of both anomalous thaumaturgical methods and conventional, non-anomalous engineering. The full redirection from SCP-9300 was anticipated to take more than four days. Initially, the diversion of energy from SCP-9300 seemingly produced no adverse effects. After 14 hours, members of MTF Lambda-15 observing SCP-9300 reported an increase in gravitational and spatiotemporal anomalies emanating from the central blackbody. The head of the Department of Applied Thaumatology began to express concerns of SCP-9300's stability, whereas Dr. Hanson assured engineering personnel that the anomalies would be localized to the immediate area around the blackbody.</p>
+<p>After just two more hours, the entirety of SCP-9300's orbital debris field was consumed by the blackbody, as it had nearly doubled in size. Observational instruments onboard the <em>Alto Clef</em> began to malfunction, reading impossible temperatures below absolute zero, then immediately spiking to unmeasurable highs. As the apparent temperature of SCP-9300 fluctuated, it began to emit radiation across every known spectrum, flashing brightly across the entire system. Its previously spherical shape began to contort and flow like a liquid.</p>
+<p>Due to the rapid, nonstop expansion of SCP-9300 and the growing reach of its anomalous effects, the O5 Council ordered the reversal of the energy diversion process. Due to the regressive nature of the process, a complete energy redirection back to SCP-9300 would take another 16 hours. MTF Lambda-15 began the reversal, and shuttles were dispatched to assist in the evacuation of any personnel in the case that SCP-9300's expansion could not be stopped.</p>
+<p>After just two more hours, SCP-9300's expansion ceased. However, its gravitational and spatiotemporal anomalies continued to manifest, and its temperature fluctuated even more rapidly than before. Analysis of the significant amount of electromagnetic radiation produced by SCP-9300 revealed its interior to be hollow and lacking any conventional form of matter.</p>
+<p>After an additional thirty minutes, SCP-9300 exhibited luminosity comparable to a quasar, subsequently undergoing complete dissipation. An entity then emerged from the blackbody's residual radiation, corroborating Dr. Hanson's theory that SCP-9300 was Thaumiel in nature. Physically, the entity resembled a long-bodied, translucent, luminous mollusk, similar to a squid, featuring a brightly glowing core and tentacles of light. It persisted in the vicinity for ten minutes before dematerializing.</p>
+<p>The disappearance of the entity was followed by the cessation of SCP-9300’s gravitational and spatiotemporal anomalies. Subsequently, SCP-9300-1's thaumaturgic energy transference and orbital stability systems began to destabilize, leading to the immediate evacuation of Foundation personnel from N843-D.</p>
+<p>SCP-9300-1 later collapsed into Tabby's Star, and SCP-9300 was deemed neutralized.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc24"><span>Addendum 7: Within SCP-9300</span></h3>
+<div class="blockquote">
+<div style="text-align: center;">
+<h2 id="toc25"><span>Subject:</span></h2>
+<h3 id="toc26"><span>What was inside SCP-9300?</span></h3>
+</div>
+<p>Aboard one of the SCP-9300-1 modules, we discovered a Tekton museum dedicated to the homeworld. It has been our greatest source of information regarding their original planet. Buried deep within its archives, likely due to political inconvenience, we discovered ancient etched tablets of a religious nature. They describe a benevolent god and willing benefactor of the Tekton. This being’s energy provided the source of their thaumaturgy, as evidenced by the earliest examples of glyphs — forms markedly different from anything inscribed after construction on the swarm began. These earliest glyphs are structured with reciprocal meanings: exchanges of gift and counter-gift, invocation and response. Later glyphs lose this symmetry, becoming simple conduits for power.</p>
+<p>Public records show a continuation of the rhetoric of harmony and unity, using the memory of this cultural religion as a touchstone, while carefully eroding its details. Discrepancies emerge when we compare the "official" liturgies with materials preserved by another group. Scattered across the various habitats and waystations, we have uncovered the remains of a mystery cult; those who held obscure, secret knowledge in defiance of the narrative of those in power. Their tales and iconography depict chains, siphons, and conduits draining power from an imprisoned god, syncretic with the one exalted in the official religion. We must approach these records with caution, as dissidents are no less prone to bias than rulers, but the consistency of their symbolism across great distances and time suggests that they preserved at least fragments of a hidden truth.</p>
+<p>There is clear evidence of efforts taken by Tekton cultural leadership to reduce religiosity among the peoples living aboard the habitation modules. Institutions compliant with the dominant narrative were subtly supported, while heterodox ones were quietly undermined. The tools of empire — namely curation, omission, and selective patronage — were deployed to bury the origins of their growing thaumaturgical mastery.</p>
+<p>Why did they do this cover-up? We can only speculate. Perhaps they feared that open acknowledgement of their betrayal, chaining their god and feeding parasitically upon it, would have shattered their fragile unity. Or perhaps they sought to protect themselves and their legacy. They may have hoped that when their children's children reaped the consequences of their actions, their ephemeral legacy would remain untouched thanks to their attempt to shift blame onto fate and away from their willful hands.</p>
+<p>The end followed inevitably. When Expansionist movements diverted power from SCP-9300 to fuel their new hyperlane technology, the bindings and extraction mechanisms of SCP-9300 weakened. Thaumaturgical systems overloaded and collapsed across the Tekton homeworld, where it had long since been deeply integrated into all facets of its existence. Protective wards failed, rituals dissolved mid-performance, anomalous catastrophes multiplied. In desperation, the Tekton redirected power flows back to SCP-9300, but the damage was done. The thaumaturgic instability created a chain reaction that resulted in the destruction of their homeworld. Their civilization never recovered from this event; after all, their metaphorical Garden of Eden, the ecosystem for which they had evolved, was gone forever. And it was their fault.</p>
+<p>I cannot escape the parallels. The Tekton faced their end, and they chose denial. They tightened their chains, buried the truth, and tried to cling to dreams of eternal empire, even as their society and eventually entire species collapsed around them.</p>
+<p>I, too, am dying. For a time, I thought I might ignore the consequences, simply act as if life would go on, but studying the Tekton has stripped me of that illusion. Their silence did not save them. Their denial condemned them. The question before them was the same that lies before me: <em>what does one do in the face of an inevitable end?</em></p>
+<p>The Tekton answered this question by clinging to their denial until they faded out of this universe. I choose to answer differently. I choose to end a millennia-long injustice. By the time you are reading this, I have already given the go-ahead to attempt to redirect the power of SCP-9300-1. I am fully aware that this will release the entity within. I suspect the Dyson swarm will fail with the loss of its thaumaturgic processes, and I imagine I'll face severe reprimands from the O5 Council. The Foundation may endure, or it may not, but at least this once, we will have unmade an injustice, rather than preserved it.</p>
+<p>Dr. Hanson,<br/>
+A dying man who still matters.</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. "Faster Than Light"</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Astronomical Units, or the average distance from Sol to the Earth.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. A network of solar arrays placed in close orbit around a star to harvest its solar energy.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Earth's primary natural satellite, also known as "the Moon".</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. A region of space connecting two stellar systems, exploited by an FTL engine for interstellar travel.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. A civilization classification system introduced by Nikolai Kardashev. A Kardashev II civilization would be capable of harnessing all the energy produced by its parent star.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-9300">SCP-9300</a>" by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1770516228" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span>,<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/astralnavigator" onclick="WIKIDOT.page.listeners.userInfo(9716469); return false;"><img alt="AstralNavigator" class="small" src="https://www.wikidot.com/avatar.php?userid=9716469&amp;amp;size=small&amp;amp;timestamp=1770516228" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9716469)"/></a><a href="http://www.wikidot.com/user:info/astralnavigator" onclick="WIKIDOT.page.listeners.userInfo(9716469); return false;">AstralNavigator</a></span>, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-9300">https://scpwiki.com/scp-9300</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Filename:</strong> SCP-9300.png<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9300/SCP-9000.jpg">SCP Wiki</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> glyph1.svg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9300/glyph1.svg">SCP Wiki</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> glyph2.svg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9300/glyph2.svg">SCP Wiki</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> glyph3.svg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9300/glyph3.svg">SCP Wiki</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> glyph4.svg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9300/glyph4.svg">SCP Wiki</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> tekton_drawing.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/astralnavigator" onclick="WIKIDOT.page.listeners.userInfo(9716469); return false;"><img alt="AstralNavigator" class="small" src="https://www.wikidot.com/avatar.php?userid=9716469&amp;amp;size=small&amp;amp;timestamp=1768373847" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9716469)"/></a><a href="http://www.wikidot.com/user:info/astralnavigator" onclick="WIKIDOT.page.listeners.userInfo(9716469); return false;">AstralNavigator</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9300/tekton_drawing.jpg">SCP Wiki</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Dyson_Swarm_realistic_representation.webp<br/>
+<strong>Author:</strong> Віщун<br/>
+<strong>License:</strong> CC-BY-SA 4.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Dyson_Swarm_realistic_representation.png">Wikimedia Commons</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

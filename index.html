@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SCP Archive - Clearance Required</title>
+    <style>
+        :root{--bg:#121212;--panel:#1e1e1e;--accent:#d32f2f;--text:#e0e0e0}
+        body{font-family:'Segoe UI',sans-serif;background:var(--bg);color:var(--text);margin:0;height:100vh;display:flex;overflow:hidden}
+        ::-webkit-scrollbar{width:6px}
+        ::-webkit-scrollbar-thumb{background:#444;border-radius:3px}
+        a{text-decoration:none;color:inherit}
+        body{align-items:center;justify-content:center;background:radial-gradient(circle at center,#1a1a1a 0%,#000 100%)}
+        .container{width:100%;max-width:1100px;padding:40px;text-align:center}
+        h1{font-size:4rem;margin:0;color:#e0e0e0;letter-spacing:5px}
+        p{color:var(--accent);margin-bottom:50px;font-family:monospace;letter-spacing:2px;font-size:1.2rem}
+        .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:25px}
+        .card{background:var(--panel);padding:30px;border-radius:8px;border:1px solid #333;display:flex;flex-direction:column;justify-content:space-between;height:140px;transition:0.2s}
+        .card:hover{transform:translateY(-5px);border-color:var(--accent);box-shadow:0 10px 30px rgba(0,0,0,0.5)}
+        .card h3{margin:0;font-size:1.8rem;color:white}
+        .card span{font-family:monospace;color:#666;font-size:0.9rem;margin-top:auto;text-align:right}
+
+        /* LOGIN OVERLAY STYLES */
+        #gatekeeper {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: #000; z-index: 9999; display: flex;
+            flex-direction: column; justify-content: center; align-items: center;
+            font-family: monospace;
+        }
+        .login-box { border: 2px solid var(--accent); padding: 40px; background: #0a0a0a; text-align: center; }
+        .login-box h2 { color: var(--accent); letter-spacing: 5px; margin-bottom: 20px; }
+        input { 
+            background: #111; border: 1px solid #444; color: #fff; 
+            padding: 10px; width: 250px; text-align: center; font-family: monospace;
+            outline: none; margin-bottom: 20px;
+        }
+        input:focus { border-color: var(--accent); }
+        .deny-msg { color: #f00; display: none; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div id="gatekeeper">
+        <div class="login-box">
+            <h2>LEVEL 4 CLEARANCE REQUIRED</h2>
+            <input type="password" id="passInput" placeholder="ENTER ACCESS KEY">
+            <br>
+            <div id="deny" class="deny-msg">ACCESS DENIED - SECURITY NOTIFIED</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>SCP ARCHIVE</h1>
+        <p>SECURE // CONTAIN // PROTECT</p>
+        <div class="grid">
+            <a href="series_1.html" class="card"><h3>Series 1</h3><span>997 FILES</span></a>
+            <a href="series_2.html" class="card"><h3>Series 2</h3><span>996 FILES</span></a>
+            <a href="series_3.html" class="card"><h3>Series 3</h3><span>995 FILES</span></a>
+            <a href="series_4.html" class="card"><h3>Series 4</h3><span>999 FILES</span></a>
+            <a href="series_5.html" class="card"><h3>Series 5</h3><span>994 FILES</span></a>
+            <a href="series_6.html" class="card"><h3>Series 6</h3><span>989 FILES</span></a>
+            <a href="series_7.html" class="card"><h3>Series 7</h3><span>981 FILES</span></a>
+            <a href="series_8.html" class="card"><h3>Series 8</h3><span>988 FILES</span></a>
+            <a href="series_9.html" class="card"><h3>Series 9</h3><span>889 FILES</span></a>
+            <a href="series_10.html" class="card"><h3>Series 10</h3><span>378 FILES</span></a>
+            <a href="tales.html" class="card"><h3>Tales</h3><span>175 FILES</span></a>
+        </div>
+    </div>
+
+    <script>
+        const gate = document.getElementById('gatekeeper');
+        const input = document.getElementById('passInput');
+        const deny = document.getElementById('deny');
+        const KEY = "scarygary";
+
+        // Check if already logged in
+        if (sessionStorage.getItem('clearance') === 'level4') {
+            gate.style.display = 'none';
+        }
+
+        input.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                if (input.value.toLowerCase() === KEY) {
+                    sessionStorage.setItem('clearance', 'level4');
+                    gate.style.display = 'none';
+                } else {
+                    deny.style.display = 'block';
+                    input.value = '';
+                    // Shake effect
+                    input.style.borderColor = '#f00';
+                    setTimeout(() => { input.style.borderColor = '#444'; }, 500);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

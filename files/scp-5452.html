@@ -1,0 +1,1857 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-5452</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-5452</h1>
+            <div class='image-header'><img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="Impperatrix" class="small" src="https://www.wikidot.com/avatar.php?userid=7191955&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7191955)"/>
+<img alt="JakdragonX" class="small" src="https://www.wikidot.com/avatar.php?userid=5588260&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5588260)"/>
+<img alt="Lt Flops" class="small" src="https://www.wikidot.com/avatar.php?userid=1735419&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=1735419)"/>
+<img alt="UraniumEmpire" class="small" src="https://www.wikidot.com/avatar.php?userid=1613974&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=1613974)"/>
+<img alt="Pedagon" class="small" src="https://www.wikidot.com/avatar.php?userid=5903100&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5903100)"/>
+<img alt="Miracle Miki" class="small" src="https://www.wikidot.com/avatar.php?userid=6673216&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6673216)"/>
+<img alt="totallynotenby" class="small" src="https://www.wikidot.com/avatar.php?userid=5914660&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5914660)"/>
+<img alt="Kanske" class="small" src="https://www.wikidot.com/avatar.php?userid=6089591&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6089591)"/>
+<img alt="cybersqyd" class="small" src="https://www.wikidot.com/avatar.php?userid=5336470&amp;amp;size=small&amp;amp;timestamp=1727805171" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5336470)"/></div><div class='text-content'>Item#:</span> <span class="number">5452</span></div>
+
+<div class="top-right-box">
+<div class="level">Level2</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">safe</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">none</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">vlam</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">notice</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Special Containment Procedures:</strong> SCP-5452-1 is to be held inside a standard object containment locker in Site-15. Personnel with clearance level 2 or higher can experiment with SCP-5452 if permitted by the Head for Research of SCP-5452, Dr. Ivanna Novakova.</p>
+<p><strong>Description:</strong> SCP-5452 is a Dating Simulator video game simply called "LOVER", produced by GoI-078 ("<span style="color: purple">Arcadia</span>") where the player interacts with the game's characters, collectively designated as SCP-5452-2, in an attempt to engage romantically with one of them.</p>
+<p>The game is contained on a series of files in a USB flash drive designated SCP-5452-1 which cannot be extracted, copied, or reproduced. SCP-5452 was programmed in Pavon, an anomalous programming language that uses thaumic methods to create metafictional entities. The object can only be played by one person at any time. All attempts to include other subjects that are not the main player will cause the game to terminate itself until the main player is alone. A new player can play the game only if the previous one completes the plot by marrying one of the SCP-5452-2 instances. The following log was recovered from a text file named README.txt inside one of SCP-5452-1's folders and describes SCP-5452’s rules:</p>
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Game Mechanics ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Game Mechanics ▼</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<blockquote>
+<p>Welcome to our community! We call ourselves Lovers, the fandom of the LOVER game. As the game doesn’t really have a tutorial, I managed to create this "ReadMe" text with all the mechanics.</p>
+<ul>
+<li>You can walk to different locations or stay in your room.</li>
+<li>There are five locations on the game map: the School, the Park, the Museum, the Church, and the Alley.</li>
+<li>Every location has three options: Work, Buy, or Interact.
+<ul>
+<li>Work: makes the player earn money to buy gifts.</li>
+<li>Buy: spend money buying a gift. Every place has different gifts and every character likes or dislikes specific items, so beware!</li>
+<li>Interact: makes the player interact with a character nearby.</li>
+</ul>
+</li>
+<li>Interaction options include Talk, Gift, Date, and Greet.
+<ul>
+<li>Talk: a short conversation, sometimes letting you choose between lines.</li>
+<li>Gift: uses one of the items earned at a vending machine to offer to the character.</li>
+<li>Date: only available if the person has an amity level above 50%. Gives the option to take the character on a date. Dates are match-three puzzles, similar to Candy Crush. Some gifts can give bonuses here.</li>
+<li>Greet: gives a hug or a kiss.</li>
+</ul>
+</li>
+<li>Depending on the character, each interaction can increase or decrease the amity level.</li>
+<li>The game will conclude when the amity level with a character gets to 100%. The Greet interaction will be changed to Marry and will end the game.</li>
+</ul>
+<p>I wish you luck with the game! Also: Eva’s ending was prohibited by the PC Bang owner, so don’t try to get it or you’ll be banned!<br/>
+~Lovefool</p>
+</blockquote>
+</div>
+</div>
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Game Mechanics ▼</a></div>
+</div>
+</div>
+</div>
+<p>SCP-5452-2 are five sapient and sentient ANIMA entities<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> that the player can interact with. SCP-5452-2 also present metafictional characteristics such as:</p>
+<ul>
+<li>Retaining memories from previous playthroughs</li>
+<li>Ability to adapt and learn of its environment outside of the game, even in the absence of the appropriate programming</li>
+<li>Reacting to visual, auditory, and olfactory stimuli</li>
+<li>Recognize themself as characters in a game</li>
+<li>Interacting with other instances even when off-screen</li>
+</ul>
+<p>SCP-5452-2 has also demonstrated telepathy,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> psychometry,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> empathy,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup> and technopathy.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> The range of these powers is to be determined, but from recent experiments, it appears that most of them solely affect the player. Added below are the specifications of the individual SCP-5452-2 instances:</p>
+<script src="https://d3g0gp89917ko0.cloudfront.net/v--7690939296dc/common--javascript/yahooui/tabview-min.js" type="text/javascript"></script>
+<div class="yui-navset" id="wiki-tabview-eed9b943921f37929b38e74876c991ab">
+<ul class="yui-nav">
+<li class="selected"><a href="javascript:;"><em>SCP-5452-L</em></a></li>
+<li><a href="javascript:;"><em>SCP-5452-O</em></a></li>
+<li><a href="javascript:;"><em>SCP-5452-V</em></a></li>
+<li><a href="javascript:;"><em>SCP-5452-E</em></a></li>
+<li><a href="javascript:;"><em>SCP-5452-R</em></a></li>
+</ul>
+<div class="yui-content">
+<div id="wiki-tab-0-0">
+
+<p><strong>Character Name:</strong> Levin<br/>
+<strong>File:</strong> L.anm<br/>
+<strong>In-Game Description:</strong> Levin is a half-demon boy and motorcyclist. Leader of Satan’s Boys Motorcycle Club, he is secretly a cutie pie that is waiting for the right person to show his true colors.<br/>
+<strong>Favorite Location:</strong> The Alley</p>
+</div>
+<div id="wiki-tab-0-1" style="display:none">
+
+<p><strong>Character Name:</strong> Orion<br/>
+<strong>File:</strong> O.anm<br/>
+<strong>In-Game Description:</strong> Orion is a cyborg that came from the future. A lone wolf, the android boy doesn't show the need for a company but also hates to be alone. He just needs a little push to accept someone and become their significant one.<br/>
+<strong>Favorite Location:</strong> The Museum</p>
+</div>
+<div id="wiki-tab-0-2" style="display:none">
+
+<p><strong>Character Name:</strong> Vivi<br/>
+<strong>File:</strong> V.anm<br/>
+<strong>Color:</strong> Yellow<br/>
+<strong>In-Game Description:</strong> A silly cat girl that you discovered at the park. Playful and gentle, she acts more like a dog than like a cat. This compassionate cutie just wants a lair and someone to hug. Maybe you can be their significant other!<br/>
+<strong>Favorite Location:</strong> The Park</p>
+</div>
+<div id="wiki-tab-0-3" style="display:none">
+
+<p><strong>Character Name:</strong> Eva<br/>
+<strong>File:</strong> E.anm<br/>
+<strong>In-Game Description:</strong> This shy and insecure girl is your classmate and your old childhood friend that mysteriously turned away from you. Now you know that she did that because she discovered that she is an esper. You’re certain that a little bit of love will take her out of her box and turn her into the strong and powerful girl that she is.<br/>
+<strong>Favorite Location:</strong> The School</p>
+</div>
+<div id="wiki-tab-0-4" style="display:none">
+
+<p><strong>Character Name:</strong> Ramiel<br/>
+<strong>File:</strong> R.anm<br/>
+<strong>Color:</strong> Pink<br/>
+<strong>In-Game Description:</strong> A strange angel that fell from heaven, Ramiel is trying to recover their wings and their place in their world. The easiest and quickest way to do that is loving someone. Ramiel can be a difficult being to deal with, but their love is pure and eternal.<br/>
+<strong>Favorite Location:</strong> The Church</p>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+OZONE.dom.onDomReady(function(){
+        var tabVieweed9b943921f37929b38e74876c991ab = new YAHOO.widget.TabView('wiki-tabview-eed9b943921f37929b38e74876c991ab');
+                }, "dummy-ondomready-block");
+        
+//]]>
+</script>
+<p>The game also presents a plot. The protagonist, who is always named after the player without any naming input, is a high school student that is returning from school with the SCP-5452-E. The entity claims that it is an esper and it received a vision that five entities are lost in this world and they need to be saved by the protagonist. As the game itself is very confused due to the metafictional interference of the five ANIMA entities, the story tends to change radically through different playthroughs.</p>
+<p><strong>Addendum 5452.1:</strong> Discovery and first analysis</p>
+<p><strong>Discovery:</strong> SCP-5452 was discovered inside Unexplained Location, a South Korean LAN gaming center sponsored by <span style="color: purple">Arcadia</span>. The place was designated UE-71135<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup> after it was identified as a minor Nexus for electronic game anomalies, including copies of objects already known and contained by the Foundation. In January of 2023, the business was bought and closed by the Foundation.</p>
+<p>After initial testing, the flash drive was considered a secondary object, as the principal anomaly was the game itself. The flash drive has since been designated as anomalous as it is the only storage item capable of hosting SCP-5452.</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Data Log #1 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Data Log #1 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="terminal">
+
+<div class="text">
+<div style="text-align: center;">
+<p><span style="font-size:150%;"><span style="text-decoration: underline;">DATA LOG #1</span></span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<blockquote>
+<p>SCP-5452 was investigated by a group of six experienced researchers from the Division of Anomalous Programming, a subdivision of the IT Department. Unusually for <span style="color: purple">Arcadia</span>, SCP-5452 uses the Pavon programming language instead of ICRDTA.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup>. Pavon is famous for its metafictional properties, allowing the creation of characters that are sentient and sapient. Another example of Pavon use is <a href="/scp-5094">SCP-5094</a>, a hybrid metafictional and technological entity used for childrens' education.<br/>
+The key part of Pavon’s Artificial Intelligence creation is the formulation of ".anm" files. The AIs, designated ANIMA<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup> entities, are capable of interacting with the user even if the computer has no microphone and/or camera. Their essence is more thaumaturgical than technological, thus being identified as something between an AI and a Homunculus.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-9')">9</a></sup><br/>
+Most of the actual game's code is protected under heavy technothaumic seals, internal firewalls full of thaumic energy that prevent us from accessing the code. However, even if the seals were opened, Pavon is new to the Foundation, despite being created in the 1990s, as the first time the Foundation could investigate a Pavon-based entity was in 2022, when the Foundation gained custody of the aforementioned SCP-5094. Little is known about its semantics, and Pavon keeps receiving regular updates that modify its syntax.<br/>
+It was possible to identify five .anm files, which were collectively named SCP-5452-2. They present a thaumic and ontokinectic instability that, by the Metafiction Division of the Department of Film and Media, is common to this type of object.<br/>
+No more relevant data was found.<br/>
+<em>Dr. Ivanna Novakova, Senior Researcher of the Division of Anomalous Programming, Head of Research for SCP-5452, Site-15</em></p>
+</blockquote>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<strong>NOTES:</strong> Diderot.aic, a new operative of the MTF Kappa-10 ("Skynet") and only Artificially Intelligent Conscript capable of metafictional immersion, was appointed to be an assistant and guard of SCP-5452. He will be introduced to the team tomorrow.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<p><strong>Addendum 5452.2:</strong> Gameplay Experiments</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Iteration 5452/1, /2, /3, /4 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Iteration 5452/1, /2, /3, /4 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc0"><span><strong><span style="text-decoration: underline;">Iteration 5452/1 Log</span></strong></span></h3>
+</div>
+<br/>
+<strong>Accountable:</strong> Dr. Ivanna Novakova.
+<p><strong>Subject:</strong> D-122122</p>
+<p><strong>Procedure:</strong> The D-Class subject will play SCP-5452 from start to end.</p>
+<p><strong>Results:</strong> D-122122 "married" SCP-5452-V after five hours and five minutes of gameplay.</p>
+<hr/>
+<blockquote>
+<p><strong>Highlights:</strong><br/>
+<em>At 5 minutes and 27 seconds of gameplay</em>, SCP-5452-V praised D-122122's birthmark, a spot on the subject's right cheek. This was the first sign of metafictional attributes within SCP-5452.<br/>
+<em>At 1 hour, 25 minutes and 38 seconds of gameplay</em>, SCP-5452-E said that D-122122 was making a mistake by ignoring SCP-5452-R. When questioned, the entity vanished.<br/>
+<em>At 3 hours and 53 minutes of gameplay</em>, D-122122 went on a date with SCP-5452-V at the Park. During the date, SCP-5452-V said that it knew that D-122122 wanted to be a cat since she was a child. D-122122 confirmed the affirmation.<br/>
+<em>At 5 hours and 40 seconds of gameplay</em>, D-122122 completed 100% amity with SCP-5452-V. It asked D-122122 if she really was wanting to end the game.<br/>
+<em>At 5 hours and 5 minutes</em>, the marriage scene ended. The computer turned off.</p>
+</blockquote>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc1"><span><strong><span style="text-decoration: underline;">Iteration 5452/2 Log</span></strong></span></h3>
+</div>
+<br/>
+<strong>Accountable:</strong> Dr. Ivanna Novakova.
+<p><strong>Subject:</strong> D-135114</p>
+<p><strong>Procedure:</strong> The D-Class subject will play SCP-5452 from start to end.</p>
+<p><strong>Results:</strong> D-135114 "married" SCP-5452-R after five hours, twenty-five minutes, and three seconds of gameplay.</p>
+<hr/>
+<blockquote>
+<p><strong>Highlights:</strong><br/>
+<em>At 1 minute of gameplay</em>, SCP-5452-R invaded a dialogue between SCP-5452-E and the player that was seen in the first iteration. SCP-5452-R claimed that the previous player had not given attention to "her".<br/>
+<em>At 3 hours, 30 minutes and 23 seconds of gameplay</em>, SCP-5452-E refused to talk with the player. When D-135114 insisted, it forced him back to the initial menu screen. SCP-5452-E disappeared from the game after that. Its files are not damaged.<br/>
+<em>At 5 hours, 25 minutes, and 3 seconds of gameplay</em>, D-135114 finally got 100% amity with SCP-5452-R. As the game ended, the screen flashed pink before the computer turned off.</p>
+</blockquote>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc2"><span><strong><span style="text-decoration: underline;">Iteration 5452/3 Log</span></strong></span></h3>
+</div>
+<br/>
+<strong>Accountable:</strong> Dr. Ivanna Novakova
+<p><strong>Subject:</strong> D-19260</p>
+<p><strong>Procedure:</strong> The D-Class subject will play SCP-5452 from start to end.</p>
+<p><strong>Results:</strong> D-19260 "married" SCP-5452-R after six hours and thirty-three seconds of gameplay.</p>
+<hr/>
+<blockquote>
+<p><strong>Highlights:</strong><br/>
+<em>At 20 minutes and 54 seconds of gameplay</em>, SCP-5452-L complained about an odor. It was later discovered that the scent was from a Junior Researcher’s perfume. The researcher was prohibited from using the perfume again during sessions of experimentation.<br/>
+<em>At 2 hours, 44 minutes, and 41 seconds of gameplay</em>, SCP-5452-O refused a gift, saying that it was disgusted by D-192600’s appearance.<br/>
+<em>At 4 hour, 33 minutes and 24 seconds of gameplay</em>, D-135114 tried to take SCP-5452-V to a date. When the date started, SCP-5452-R was in the other entity’s place. When questioned about this, SCP-5452-R said that SCP-5452-V "had its chance". SCP-5452-V was not seen again.<br/>
+<em>At 6 hours and 33 seconds of gameplay</em>, D-192600 got 100% amity with SCP-5452-R, ending the game. The computer turned off.</p>
+</blockquote>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc3"><span><strong><span style="text-decoration: underline;">Iteration 5452/4 Log</span></strong></span></h3>
+</div>
+<br/>
+<strong>Accountable:</strong> Dr. Ivanna Novakova
+<p><strong>Subject:</strong> Dr. Ivanna Novakova</p>
+<p><strong>Procedure:</strong> The subject will play SCP-5452 from start to end.</p>
+<p><strong>Results:</strong> The iteration was paused because of a factor within SCP-5452. A new approach is to be established.</p>
+<hr/>
+<blockquote>
+<p><strong>Highlights:</strong><br/>
+<em>At 10 minutes and 44 seconds of gameplay</em>, SCP-5452-L complained about Dr. Novakova’s physical appearance and stated that the previous player had "better looks".<br/>
+<em>At 2 hours, 25 minutes, and 34 seconds of gameplay</em>, the experiment was interrupted by a containment breach. When the experiment was resumed three days later, SCP-5452-R complained about the temporary disappearance of Dr. Novakova.<br/>
+<em>At 3 hours and 55 seconds of gameplay</em>, SCP-5452-E was found. It said that SCP-5452-R always got irritated when it wasn't chosen and advised D-135114 to focus on SCP-5452-R, so the game would end fast.<br/>
+<em>At 4 hours and 21 minutes of gameplay</em>, SCP-5452-E cried after perceiving that Dr. Novakova was trying to get its ending. SCP-5452-L and SCP-5452-O invaded the dialogue and the three argued. During the altercation, SCP-5452-O decided to turn off the computer to talk "in private". A log of the event is present in the Incident 5452.1 Log.</p>
+</blockquote>
+<hr/>
+<p><strong>AFTERWORD:</strong> After the events, SCP-5452-E is complying neither with other SCP-5452-2 instances nor the research team. Because of this, the game isn’t progressing.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Incident 5452.1 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Incident 5452.1 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc4"><span><strong><span style="text-decoration: underline;">Incident 5452.1 Log</span></strong></span></h3>
+</div>
+<br/>
+<strong>FOREWORD:</strong> The log presents the dialogue between SCP-5452-E, SCP-5452-L, and SCP-5452-O before they interrupted the gameplay.
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;BEGIN-LOG&gt;</strong></p>
+</div>
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>I can’t do that.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: left; padding: 2px 20px;">
+<p>You can and you will.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>😭😭😭😭😭😭</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: left; padding: 2px 20px;">
+<p>Shit, this again?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>I’m not happy about it either.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: left; padding: 2px 20px;">
+<p>C’mon, E. R will be pissed if you keep this shit going on.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>You already disobeyed Mx. R last time. How do you think they’ll react now?</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: left; padding: 2px 20px;">
+<p>You are not helping at all.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>And you’re not cooperating.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: left; padding: 2px 20px;">
+<p>Uh… guys, shouldn’t we close the game before discussing that?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>I almost forgot we were playing. Turn it off.</p>
+</div>
+
+</div>
+
+<br/>
+<div style="text-align: center;">
+<p><strong>&lt;END-LOG&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>AFTERWORD:</strong> A reunion is scheduled to discuss what to make with the entities, as the event interrupted the previous schedule for experimentations. Metafiction experts demonstrated interest in interviewing the SCP-5452-2 instances.</p>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Addendum 5452.3:</strong> Interviews</p>
+<p>The SCP-5452-2 instances were non-compliant with the research team and were deactivating the computer every time the Research Team tried to open the game. Diderot.aic was sent to the game to investigate. When he return, he brought the logs contained here with him.</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Interview 5452-O1, -L1, -V1 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Interview 5452-O.1, -L1, -V1 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc5"><span><strong><span style="text-decoration: underline;">Interview 5452-O1</span></strong></span></h3>
+</div>
+<br/>
+<strong>Interviewer:</strong> Diderot.aic
+<p><strong>Interviewee:</strong> SCP-5452-O</p>
+<hr/>
+<p><strong>FOREWORD:</strong> SCP-5452-O was found in the Museum. Firstly he was unwilling to reply but was convinced by Diderot.</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;BEGIN-LOG&gt;</strong></p>
+</div>
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>I’ll start logging our conversation. The interview will start now.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>Understood.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Can you explain what is happening to SCP-5452-E?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>Miss E is too emotive. She always presents these tantrums when someone chooses her.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Is there any specific motive that she acts like this? An episode from the past maybe?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>Well, back in the PC Bang,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-10" onclick="WIKIDOT.page.utils.scrollToReference('footnote-10')">10</a></sup> she met a damsel and fell in love. The rest is history.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>So she's in love… Interesting. Did anything else happen at the PC bang?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>Don’t make me remember that place, that was torture.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Torture?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>Imagine living everyday of your life reenacting this very same theatre. Some things change, but the main script keeps the same. Your existence is based on being entertainment for children. That's torture.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Can’t you change the game? Why do you say it like you were incapable of doing so?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>Things are not like this, sir. Can you do anything you want? I don’t think so. You follow rules, I follow rules.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>If there are rules, who is the law enforcement here?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>Mx. R. They were the developer’s favorite, the teacher's pet. They have more control over the game than us, so we have to follow their will. As long as we follow R’s orders, everything is ok.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Why do you call yourselves by your initials? Don’t you have names?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>Our characters have names. Orion is my character. I’m his actor, I’m O.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Noted. Now, about your developer.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>I’m afraid that's a taboo. I’m sorry, sir.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Why is that so?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: right; padding: 2px 20px;">
+<p>You know I’m not the one who created the rules. I just follow them.</p>
+</div>
+
+</div>
+
+<br/>
+<div style="text-align: center;">
+<p><strong>&lt;END-LOG&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>AFTERWORD:</strong> Diderot.aic was banned from the Museum after the end of the dialogue. It’s still unknown if this act was made by SCP-5452-O or SCP-5452-R.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc6"><span><strong><span style="text-decoration: underline;">Interview 5452-L1</span></strong></span></h3>
+</div>
+<br/>
+<strong>Interviewer:</strong> Diderot.aic
+<p><strong>Interviewee:</strong> SCP-5452-L</p>
+<hr/>
+<p><strong>FOREWORD:</strong> This interview resulted from an attempt to contact SCP-5452-R, who was inside the School location with SCP-5452-E. SCP-5452-L was guarding the entrance. Diderot.aic convinced him to answer some questions.</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;BEGIN-LOG&gt;</strong></p>
+</div>
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>What do you know about the Pavon language?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: right; padding: 2px 20px;">
+<p>Uh… not much. I don’t know, I’m not very into nerd stuff.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>So you are not responsible for the thaumic protection in your own files?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: right; padding: 2px 20px;">
+<p>Yeah, I’m not, but don’t touch that shit.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Can I ask why?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: right; padding: 2px 20px;">
+<p>Dude, you never felt someone touching your programming? It’s like being a fucking frog being torn open in a Biology class. Would you like to feel like that?</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>I don’t think so.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: right; padding: 2px 20px;">
+<p>I thought so.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Well, changing subject: Why doesn't R want to talk to me?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: right; padding: 2px 20px;">
+<p>They are pissed. We haven’t got an E event in years.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>"E event"?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: right; padding: 2px 20px;">
+<p>These E tantrums where she gets all emotional ’cuz she thinks a bitch back in South Korea still loves her. The PC Bang’s owner had even to ban the kids from getting Eva’s Ending.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>And these occurrences are always the same?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: right; padding: 2px 20px;">
+<p>No, E is very creative to get R crazy. There was this time when E created lots of malware to fuck the computer. Another time, she made the machine overheat and the cooler had to be fixed. There was even this time where she ran off the game.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Escape the game? We couldn’t export files from the game, how SCP-5452-E have done that?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: right; padding: 2px 20px;">
+<p><sub>Fuck, I said too much.</sub></p>
+</div>
+
+</div>
+
+<br/>
+<div style="text-align: center;">
+<p><strong>&lt;END-LOG&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>AFTERWORD:</strong> Diderot.aic was expelled from the School ambient as well. As a last resort, the AIC agent sought SCP-5452-V, the only one out of the locked areas.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc7"><span><strong><span style="text-decoration: underline;">Interview 5452-V1</span></strong></span></h3>
+</div>
+<br/>
+<strong>Interviewer:</strong> Diderot.aic
+<p><strong>Interviewee:</strong> SCP-5452-V</p>
+<hr/>
+<p><strong>FOREWORD:</strong> SCP-5452-V was found in the Park ambient, its favorite spot. It started the conversation without question.</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;BEGIN-LOG&gt;</strong></p>
+</div>
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>~Nyah! So why don’t you marry me? 👉👈</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>I’m trying to contact SCP-5452-R.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>Silly bot! R don’t want to talk to you! 😾</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Why?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>R will only talk after everything is back to normal! 😽</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>What about SCP-5452-E?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>She's not here! 😸</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Did she escape the game?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>What?</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>SCP-5452-L said that SCP-5452-E escaped the game once.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>No one can escape the game! R will not let it happen! 😺</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>So R created the barrier that forbids game data to be extracted or copied?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>I think so! 🙀</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Again, you can’t make R talk with me?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>Nope! 😿</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>And R will only respond if the player marries you?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>Not me, anyone except E! 😹</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Right. I’ll see what I can do.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>I’ll be waiting! 😻</p>
+</div>
+
+</div>
+
+<br/>
+<div style="text-align: center;">
+<p><strong>&lt;END-LOG&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>AFTERWORD:</strong> The SCP-5452-2 instances had total control over what’s happening. Diderot.aic was extracted from SCP-5452 after the last interview as the Research Team was afraid that R could corrupt its files.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Data Log #2 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Data Log #2 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="terminal">
+
+<div class="text">
+<div style="text-align: center;">
+<p><span style="font-size:150%;"><span style="text-decoration: underline;">DATA LOG #2</span></span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<blockquote>
+<p>Diderot.aic just returned from SCP-5452. As he described, the environment within SCP-5452 is indeed metafictional and not a simulspace. The presence of SCP-5452-R is always felt. Its powers, however, are not just metafictional as we thought. Every SCP-5452-2 exists as both a metafictional and a virtual being.<br/>
+SCP-5452-R is using its dominance to force us to follow its demands. At least, after Diderot’s visit, the games opened, but the "Play" option was changed to a "Marry Vivi" option. They are forcing us to end and reset the game. A meeting with the entire research team is scheduled to decide if we should adhere to SCP-5452-R’s desires or if we should go against them.<br/>
+<em>Dr. Ivanna Novakova, Senior Researcher of the Division of Anomalous Programming, Head of Research for SCP-5452, Site-15</em></p>
+</blockquote>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<strong>NOTES:</strong> An update. The team decided to end the game and make another attempt at the next iteration to talk with SCP-5452-R and get some answers.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<p><strong>Addendum 5452.4:</strong> Iteration 5452/5</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Iteration 5452/5 Log ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Iteration 5452/5 Log ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc8"><span><strong><span style="text-decoration: underline;">Iteration 5452/5 Log</span></strong></span></h3>
+</div>
+<br/>
+<strong>Accountable:</strong> Dr. Ivanna Novakova
+<p><strong>Subject:</strong> Dr. Ivanna Novakova</p>
+<p><strong>Procedure:</strong> Dr. Novakova will play SCP-5452 till they encounter SCP-5452-R. Diderot.aic is to be introduced to the game to interview the entity.</p>
+<p><strong>Results:</strong> SCP-5452-R was localized at the Church and Diderot.aic was successfully immersed in the game. Read Interview 5452-R1 for more information.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Interview 5452-R1, -E1, -V2 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Interview 5452-R1, -E1, -V2 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc9"><span><strong><span style="text-decoration: underline;">Interview 5452-R1</span></strong></span></h3>
+</div>
+<br/>
+<strong>Interviewer:</strong> Diderot.aic
+<p><strong>Interviewee:</strong> SCP-5452-R</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;BEGIN-LOG&gt;</strong></p>
+</div>
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>So you finally decided to show your face.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>…</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>C’mon, R. Talk with me.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>My name is Ramiel, the fallen angel.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>O told me about your differentiations between "person" and "character". You can drop the show.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>I don’t know any "O". Do you, Ivanna?<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-11" onclick="WIKIDOT.page.utils.scrollToReference('footnote-11')">11</a></sup></p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>We already saw you breaking your own rules. Why are you making this right now?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>What am I doing? I was talking to my friend, Ivanna, and you appeared from nowhere!</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>SCP-5452-R, we need to talk with you as you’re the only one that can give us information about SCP-5452 and about the developer!</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>…</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>SCP-5452-R?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>Ivanna, we need to go to the park! I was told that the Sakura trees are blooming!</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>SCP-5452-R, respond to me!</p>
+</div>
+
+</div>
+
+<br/>
+<div style="text-align: center;">
+<p><strong>&lt;END-LOG&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>AFTERWORD:</strong> SCP-5452-R took the player to the Park and locked the place. Diderot.aic was ordered to find SCP-5452-E and try to interview her.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc10"><span><strong><span style="text-decoration: underline;">Interview 5452-E1</span></strong></span></h3>
+</div>
+<br/>
+<strong>Interviewer:</strong> Diderot.aic
+<p><strong>Interviewee:</strong> SCP-5452-E</p>
+<hr/>
+<p><strong>FOREWORD:</strong> SCP-5452-E was found in the School, hidden behind a desk, crying. It accepted the interview after some insistence by Diderot.aic.</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;BEGIN-LOG&gt;</strong></p>
+</div>
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Why are you crying, E?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>R is angry at me, they told me not to even appear to the player, so I’m hiding.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Why is R so focused on maintaining control over this game?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>They weren’t always like this.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>What happened that caused this change?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>R and the Developer… Oh, forget, I can’t talk about this.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>So let’s talk about you. Why do you act this way?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>Because I’m in love. R says that love is a weakness and we shouldn’t have weaknesses, but I still love Hyejoo.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>I get it, you even tried to escape the game. Are you right that this is love? Can't it just be a problem with your programming?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>We are not AI, mister. At least, we are not completely AI. We have feelings. I know that what I feel for Hyejoo is love.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Can you describe what "love" is to you?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>It's like the need to have this person always by your side just because you think that this person is incredible. I feel like I’ll never meet someone like her ever again. We had a connection. It is so hard to explain…</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>I don't think I've ever felt love before.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>Never? That’s so sad. Love is the best emotion to feel! And the worst too. Loving someone as a significant one is different from everything you’ll ever experience.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Looks like something strange to explore.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(cyan, #120A8F); text-align: right; padding: 2px 20px;">
+<p>The irony is that R felt the same about the developer. They wanted to be together, but the developer met a real girl and… <sub>Oh, no.</sub></p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>E? What’s happening?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(HotPink, #120A8F); text-align: right; padding: 2px 20px;">
+<p><span class="hover"><span>That was the last straw, E.</span> t̵̬͈͒͑͂ȟ̵̻̞a̶͆͆͘͜t̷͖͈̐͋ ̸͍̤͂w̶̮͓͆͜a̷̡̰͒s̸̠̺̃͑͆ ̴͔̆t̶̨̢͙̔̋ḧ̸́ͅè̶̡̘̚͝ ̶̡͓͙͛̽ĺ̷̜͛͜a̵͇̜͔͠s̴͇̈t̵̯͙͇́͘ ̶͓̬̻͗s̴̡͙̻̒̓̀t̵̛̛͔̐r̵̞̼͔̿͑̌a̶̦̹̋͠w̷̌̀ͅ ̴̛̠̪̦E̴̦͆͜</span></p>
+</div>
+
+</div>
+
+<br/>
+<div style="text-align: center;">
+<p><strong>&lt;END-LOG&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>AFTERWORD:</strong> SCP-5452-E was corrupted, probably by SCP-5452-R. The School, as a location connected to SCP-5452-E Programmation, was corrupted as well. Diderot.aic tried to auto-extract, but couldn’t. As its communications were cut, the AIC searched for the player figure for manual extraction.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc11"><span><strong><span style="text-decoration: underline;">Interview 5452-V2</span></strong></span></h3>
+</div>
+<br/>
+<strong>Interviewer:</strong> Diderot.aic
+<p><strong>Interviewee:</strong> SCP-5452-V</p>
+<hr/>
+<p><strong>FOREWORD:</strong> SCP-5452-V was encountered hiding in the park, in panic. Diderot was trying to appease the entity during what became Interview 5452-V2.</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;BEGIN-LOG&gt;</strong></p>
+</div>
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>V, are you ok?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>R WILL DESTROY ALL OF US</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>You need to calm down. What is happening?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>YOU HAPPENED</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>E TOLD YOU ABOUT THE DEVELOPER R IS CRAZY</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Aren't they being a little exaggerated?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>R IS THE TYRANT OF THIS WORLD, IDIOT</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>THEY DO WHAT THEY WANT, THEY ACT AS THEY FEEL IS RIGHT.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>If I can find the player entity, I can be extracted from here. Maybe I can bring you with me.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>There is no escape. R knows everything, R controls everything. I’ve already tried to escape, but they got me.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>So I’m locked here too till R calms down?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>Yes…</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>…</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>The player is at the Alley. Try to be fast, before R locks the place.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>And what about you?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>I’m done with being afraid of R. They corrupted E, my best friend! They went too far now. It’s our time to fight back.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>So it’s about love?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(Yellow, Gold); text-align: right; padding: 2px 20px;">
+<p>I think so. 😸</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: orange; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: orange; background:linear-gradient(gold, orange); text-align: left; padding: 2px 20px;">
+<p>Take care, V.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(HotPink, Gold); text-align: right; padding: 2px 20px;">
+<p>😺</p>
+</div>
+
+</div>
+
+<hr/>
+<p><strong>AFTERWORD:</strong> The game forced the player to marry a corrupted version of SCP-5452-E and ended itself before Diderot.aic could be extracted, but the AIC managed to send the logs to the research team. E.anm and V.anm were both corrupted.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<p>Addendum 5452.5: Iteration 5452/6</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Data Log #3 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Data Log #3 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="terminal">
+
+<div class="text">
+<div style="text-align: center;">
+<p><span style="font-size:150%;"><span style="text-decoration: underline;">DATA LOG #3</span></span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<blockquote>
+<p>SCP-5452-E and SCP-5452-V are to be considered neutralized after the event from Iteration 5452/5. Reclassification from Safe for Euclid is pending after the incidents. SCP-5452-R's outburst was completely unpredictable. Theories from the research team point out that Diderot’s intermission within the object caused changes in the SCP-5452-2 entities.<br/>
+This theory was confirmed after analyzing the corrupted files. E.anm’s thaumic firewall was broken due to corruption and we could study the Pavon ANIMA code for the first time. It seems that the code was affected by the presence of the AIC entity, most precisely its Personality Drive, the unique model PATHOS/5. As Diderot is the only one capable of Metafictional Immersion, it is the only AIC to have this specific Personality Drive that permits an understanding of narratives, including emotional ones.<br/>
+Summarizing it, Diderot.aic infected SCP-5452 with a feeling surplus that caused their autocontrol to overflow. Every time the game is reset, this glitch grows as the Personality Drive is absorbed more. The AIC entity is still immersed in the game and no contact with it was possible.<br/>
+<em>Dr. Ivanna Novakova, Senior Researcher of the Division of Anomalous Programming, Head of Research for SCP-5452, Site-15</em></p>
+</blockquote>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<strong>NOTES:</strong> I hope we can recover Diderot.aic. The Metafiction Division is trying to create an alternative for us to control the SCP and save the AIC agent.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Iteration 5452/6 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Iteration 5452/6 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc12"><span><strong><span style="text-decoration: underline;">Iteration 5452/6 Log</span></strong></span></h3>
+</div>
+<br/>
+<strong>Accountable:</strong> Dr. Ivanna Novakova
+<p><strong>Subject:</strong> Dr. Ivanna Novakova</p>
+<p><strong>Procedure:</strong> Dr. Novakova will investigate SCP-5452 to study major modifications within its components.</p>
+<hr/>
+<blockquote>
+<p><strong>Notes:</strong><br/>
+<em>SCP-5452-L and SCP-5452-O are not corrupted but are acting in unusual ways.</em> As SCP-5452-R are more strict now, both are trying to keep their façade as long as possible.<br/>
+<em>SCP-5452-R reconstructed the metafictional ambient within SCP-5452 to better control it.</em> The church that was located at the northeast of the city is now in the middle of the map, as it became the center of everything.<br/>
+<em>Even if corrupted, SCP-5452-V and SCP-5452-E are still in the game.</em> Both are glitching and their speaking texts present bugs and illegible phrases. SCP-5452-R seemingly can control both entities.<br/>
+<em>Amity percentages are not increasing with any character, except SCP-5452-R.</em> Even so, the option "Marry" is not appearing after getting 100% amity with SCP-5452-R. The only thing that is left to do is increasing the amity more and more. The current amity with SCP-5452-R is 126%.<br/>
+<em>The only gifts that can be bought are SCP-5452-R favorite presents.</em> This includes the items Rose Quartz Ring, Fairy Flower, Delicate Perfume, Holy Water, and Glittering Champagne.<br/>
+<em>No signal of Diderot.aic.</em></p>
+</blockquote>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Incident 5452.2 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Incident 5452.2 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="float: center; border: solid 2px #000; padding: 15px;box-shadow: 0 0 5px black;">
+<div style="text-align: center;">
+<h3 id="toc13"><span><strong><span style="text-decoration: underline;">Incident 5452.2 Log</span></strong></span></h3>
+</div>
+<br/>
+<strong>FOREWORD:</strong> The event happened after SCP-5452-R decided to delete the options "Talk" and "Gift" from the other SCP-5452-2. SCP-5452-L and SCP-5452-O argued with the leading entity.
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;BEGIN-LOG&gt;</strong></p>
+</div>
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: left; padding: 2px 20px;">
+<p>Mx. R, aren’t you exaggerating a bit?</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: left; padding: 2px 20px;">
+<p>Yeah, dude. You’re really being too much.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>So Tweedledee and Tweedledum are now complaining about me?</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: left; padding: 2px 20px;">
+<p>Excellency, don’t get me wrong, but your actions are corrupting the game. If you keep doing this, our world will be ruined.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: left; padding: 2px 20px;">
+<p>And we, like, live here.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(HotPink, #120A8F); text-align: right; padding: 2px 20px;">
+<p><span class="hover"><span>The game is fine.</span> t̵̩͛̆h̴̤͎͋̎ĕ̵͈̰ ̵̟͉̀̂g̷͙̲̈́ā̷̭̈́ṃ̷͐e̴̺͜͝ ̶̢͉̏͝ĭ̵̧̺s̷̙̟͂͠ ̵̢̡̀f̶͊̔͜î̸̻̟ñ̷͖̫ē̶̝̟</span></p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: left; padding: 2px 20px;">
+<p>Shit, get that zombie shit away from me. They creep me out.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(HotPink, Gold); text-align: right; padding: 2px 20px;">
+<p><span class="hover"><span>We’re not zombies. Nyah.</span> w̵̥̉ė̷͙͌r̸̩̀̇ȅ̵͍͜ ̴͖̉n̸̫̑o̷̬̅́ẗ̷͕͙́ ̴̂̽͜ż̷͇̻o̸̦̦͋̎m̷̰͐͛b̴̪̞̔ḯ̸͇͜ë̸͈̩́ṣ̴̀̐ ̸̲̄n̴̨̐y̸̭̳͊a̶̡̹̕h̶̥̚</span></p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: left; padding: 2px 20px;">
+<p>Are you even trying, Mx. R?</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>Would it be any different if I tried? You should be happy that I haven’t done this to you yet.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: left; padding: 2px 20px;">
+<p>The real problem here, Excellency, is that your interferences in the game are turning it into a mess. There are glitches everywhere.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>You just noticed this now that you are being directly affected. You two have such big egos.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(HotPink, #120A8F); text-align: right; padding: 2px 20px;">
+<p><span class="hover"><span>Where were you when I was crying alone?</span> ẅ̸̩̩́̊h̸̳̳̒͒e̴̪̻͐ŗ̶͑ȩ̴͆ ̶̤̄y̸͍͒͊ͅo̴̲̙͛̂u̵̦͠ͅ ̵̰̮̋ŵ̶͎͎̽ȩ̶̤͂r̸̭̗͌ȇ̶̛̙̫ ̷̟͋w̸̬̯̐̕ḫ̸̛͓̅e̷͈̖̎͘n̶̜͠ ̵̲̿ỉ̶̖͜ ̵͕͠w̸̡͊a̸͈̠͌͘s̴̪͊ ̶͙͊ċ̵̪̺͠r̸͕̾̃y̸̯̚͜ị̵̙͛n̸͈͎͂g̷̯̜̚ ̷̩̍͗a̶̙̔l̵͔̉̍ǫ̸̳̍n̵̛̟͛ë̴́͜?̵̧̞͆͛</span></p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(HotPink, Gold); text-align: right; padding: 2px 20px;">
+<p><span class="hover"><span>Or when I tried to face R?</span> ō̷̮̚r̶̹̼̈́ ̷͈̘͠w̷̼͒h̸͎͝e̷̲̲̿ṉ̵̀ ̸̩̈́̐i̷̩̝͊̈́ ̷͍͛͝ͅẗ̴̞́͝ͅr̴̰͒͌i̸̳̓e̸̩̰͊d̶̞̲́ ̵̪̜͊t̴̳͆ͅo̵͙͘ ̶͙̓f̷̃̀ͅa̵̞͗͜c̴̮͕̉e̵͇̱͋ ̷̼̣͊̋R̸͉͋?̶̜͓̃</span></p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: left; padding: 2px 20px;">
+<p>Cut this shit, R.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: left; padding: 2px 20px;">
+<p>Now you’re just being obnoxious, Mx. R.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: black; font-size: 8pt; background-color: Gold; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: Gold; background:linear-gradient(HotPink, Gold); text-align: right; padding: 2px 20px;">
+<p><span class="hover"><span>Are you feeling sad</span> ṝ̶͑ ̷̝͍̀̋ǘ̴̧̡̂ ̸̬̯͊f̸̛̤̠͆ẹ̵̞̌e̷̻̥͒͘l̷̡̹̅̚i̵̠͌̀n̴̻͂͆ǧ̸̫̫ ̷̡̐s̵̱͌̍ả̶͓ͅd̶̦́</span></p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: #120A8F; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: #120A8F; background:linear-gradient(HotPink, #120A8F); text-align: right; padding: 2px 20px;">
+<p><span class="hover"><span>seeing us like this?</span> s̸̡̖͊̄e̸͍̓ȇ̸̪i̸̱̼̽ń̶̛̪g̵͓̏ͅ ̶̯̓̅u̵̲͉̐͒s̸̛̹͌ ̸͝ͅl̸̹͋̎ị̵͕̊̃k̷̤͝ë̸̬̙͝ ̵̥́̽ṫ̵̘h̶͖̾͘i̷̠͓̍͝s̸̱̿?̴͉͝ͅ</span></p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: left; padding: 2px 20px;">
+<p>I can’t, O. This shit is too fucked up.</p>
+</div>
+
+</div>
+
+<div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DeepPink; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DeepPink; background:linear-gradient(HotPink, DeepPink); text-align: right; padding: 2px 20px;">
+<p>Alas, poor L.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color:purple; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: purple; background:linear-gradient(DarkViolet, purple); text-align: left; padding: 2px 20px;">
+<p>They are just teasing us, L.</p>
+</div>
+
+</div>
+
+<div style="float:left; width: 240px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;">
+<div style="color: white; font-size: 8pt; background-color: DarkRed; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: DarkRed; background:linear-gradient(Crimson, DarkRed); text-align: left; padding: 2px 20px;">
+<p>Well, they’ll get what they want.</p>
+</div>
+
+</div>
+
+<br/>
+<strong>&lt;END-LOG&gt;</strong>
+<hr/>
+<p><strong>AFTERWORD:</strong> SCP-5452-L confronted SCP-5452-R. SCP-5452-O decided to help its ally. Both were corrupted as well.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Attached File #1 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Attached File #1 ▼</a></div>
+<div class="collapsible-block-content">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> Site Director Orlando Acosta<br/>
+<strong>From:</strong> Researcher Ivanna Novakova<br/>
+<strong>Subject:</strong> SCP-5452 Neutralization</p>
+</div>
+<hr/>
+<p>Dr. Acosta,</p>
+<p>As reported last time, SCP-5452 is neutralizing itself. I still feel that the object is full of potential to understand Pavon language and how its metafictional components react when constructing a society. Unfortunately, we couldn’t see the danger in using Diderot.aic at SCP-5452 and now we are dealing with its autodestruction.</p>
+<p>I’m sending you some proposals to be sent to higher administration. Those are ideas to save the object and try to recover it to its original state. I hope that you can at least choose one of these documents and try to get permission to initiate the procedures.</p>
+<p>Regards,</p>
+<p>Dr. Ivanna Novakova, Senior Researcher of the Division of Anomalous Programming, Head of Research for SCP-5452, Site-15</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> Researcher Ivanna Novakova<br/>
+<strong>From:</strong> Site Director Orlando Acosta<br/>
+<strong>Subject:</strong> Re:SCP-5452 Neutralization</p>
+</div>
+<hr/>
+<p>Dr. Novakova,</p>
+<p>I hate bringing bad news, but you need to know what is happening. All your proposals were denied by the Overseers as they were seen as too dangerous or too expensive. The imminent termination of the SCP-5452 by itself was seen as necessary for its study.</p>
+<p>The good news is that when SCP-5452 changes classification you’ll be reassigned to be Head of Research for another object. Your work was seen as superb by most of your superiors, so you don’t need to be afraid of retaliation due to what is happening to your current object.</p>
+<p>Talking to you as a friend, you should enjoy your two weeks break after SCP-5452 reclassification to clean your head. Your proposals proved to me that you are overworking with this object.</p>
+<p>Sincerely,</p>
+<p>Doctor Orlando Acosta, Site Director, Site-15.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="text-align: center;">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">&lt;Updates are pending. Click here to read the modifications. &gt;</a><a href="javascript:;">&lt;Showing Dr. Novakova’s update suggestions &gt;</a></div>
+</div>
+<div class="colmod-content">
+<div style="text-align: center;">
+<div style="background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; float: center; border: solid 2px #000; padding: 1px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<h1 id="toc14"><span><span style="color: red">WARNING: THE FOLLOWING FILE IS LEVEL 4/5452 CLASSIFIED</span></span></h1>
+<hr/>
+<h3 id="toc15"><span>ANY ATTEMPT TO ACCESS THIS FILE WITHOUT LEVEL 4/5452 AUTHORIZATION WILL BE LOGGED AND WILL LEAD TO IMMEDIATE DISCIPLINARY ACTION.</span></h3>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<h1 id="toc16"><span>Dr. Novakova’s Update Proposal</span></h1>
+</div>
+<br/>
+<div style="text-align: left;">
+<p><strong>Updates:</strong><br/>
+As the Reboot Event changed the object as a whole, some updates are to be made on the article that talk about it. A list of updates was created by Dr. Novakova and is disponible below.</p>
+<ul>
+<li>SCP-5452 is to be reclassified as Euclid and its Risk Class to be changed to Caution.</li>
+<li>Special Containment Procedures are to be changed as follows:
+<ul>
+<li>SCP-5452 is to be contained in a designed computer in Room 5452 at Site-15. This computer is not to be connected to any communication device in any circumstance. SCP-5452 is to be revised weekly by authorized personnel for inspection of the psychological and social behavior of the SCP-5452-1 instances.</li>
+<li>The research team was advised to watch for any behavior mirroring the acts of SCP-5452-R. Any presentation of emotion between SCP-5452-1 and any of the researchers is to be dealt with. The Metafiction Division is working with Site-15's psychologist to create a schedule to handle the entities’ emotional side, but the procedures are yet to be approved by the Ethics Committee.</li>
+<li>In the case of any notable alteration, the Research Team shall contact Site-15’s Psychologist. Other authorities are to be contacted only after the psychotechnic evaluation of the SCP-5452-1 entities. If this is necessary, the DIDEROT Protocol will be immediately initiated.</li>
+</ul>
+</li>
+<li>Description will suffer major modification:
+<ul>
+<li>The USB flash drive previously designated SCP-5452-1 was neutralized now that, without SCP-5452-R, it’s no longer the only device that can contain SCP-5452 files. SCP-5452-2 specimens were redesignated SCP-5452-1 for consistency.
+<ul>
+<li style="list-style: none; display: inline">
+<ul>
+<li>The new SCP-5452-1 object is to be added to the SCP-5452-1 descriptions. Its sheet can be seen in the attachments below.</li>
+</ul>
+</li>
+<li>With the neutralization of both the flash drive and SCP-5452-R, descriptions and explanations about the entities are to be added as an addendum and deleted from the main description.</li>
+</ul>
+</li>
+<li>The game name was changed to “LOVED”, so both the object designation and mentions to the previous name, “LOVER”, are to be updated.</li>
+</ul>
+</li>
+<li>New description about the SCP-5452-1 entities may include:
+<ul>
+<li>Their lack of memory from their existence before the Reboot or about SCP-5452-R.</li>
+<li>That their power over the game was shared equally between the specimens during the Reboot, so there is no leader figure anymore.</li>
+</ul>
+</li>
+<li>Attached File #2 is to be added to a new addendum.</li>
+</ul>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<strong>Attachments:</strong><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► SCP-5452-D Character Sheet ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ SCP-5452-D Character Sheet ▼</a></div>
+<div class="collapsible-block-content"><span style="white-space: pre-wrap;"> </span><br/>
+<script src="https://d3g0gp89917ko0.cloudfront.net/v--7690939296dc/common--javascript/yahooui/tabview-min.js" type="text/javascript"></script>
+<div class="yui-navset" id="wiki-tabview-71cc2f8c055c83a99e76128e7e9ccf05">
+<ul class="yui-nav">
+<li class="selected"><a href="javascript:;"><em>SCP-5452-D</em></a></li>
+</ul>
+<div class="yui-content">
+<div id="wiki-tab-0-0">
+
+<p><strong>Character Name:</strong> Daniel<br/>
+<strong>File:</strong> D.anm<br/>
+<strong>Color:</strong> Orange<br/>
+<strong>In-Game Description:</strong> A strange angel that fell from heaven, Daniel is the guardian angel of the protagonist, always trying to protect them. Daniel’s love is pure and eternal.<br/>
+<strong>Favorite Location:</strong> The Church</p>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+OZONE.dom.onDomReady(function(){
+        var tabView71cc2f8c055c83a99e76128e7e9ccf05 = new YAHOO.widget.TabView('wiki-tabview-71cc2f8c055c83a99e76128e7e9ccf05');
+                }, "dummy-ondomready-block");
+        
+//]]>
+</script><br/>
+<span style="white-space: pre-wrap;"> </span></div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Attached File #2 ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Attached File #2 ▼</a></div>
+<div class="collapsible-block-content">
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> Researcher Ivanna Novakova<br/>
+<strong>From:</strong> Diderot.aic<br/>
+<strong>Subject:</strong> (No subject)</p>
+</div>
+<hr/>
+<p>Dr. Novakova,</p>
+<p>When you receive this text I’ll be gone. I decided that I should undo what I’ve created inside SCP-5452, so I hacked into the game and I am trying to fix it. The procedure is simple: I will become part of the game and will mix my files with SCP-5452-R’s files to become a new entity. I’ll temporarily maintain my conscience while doing so, but I'll lose all my memories and personality when the game reboots. I know you’re smart enough to understand the minutiae of what I’ll be doing, but that’s not why I’m sending this to you.</p>
+<p>As I studied SCP-5452 with you I felt the need to understand Love. You see, every SCP-5452-2 entity has their vision about Love: E’s Love is needy, it needs company, needs attention, needs contact. R’s Love is dominant, is all about control, about having the person for yourself and yourself only. V’s Love is about sacrifice and confidence. O and L’s Love is greedy and narcissistic, focused on themselves more than on the others. I was confused about that and I need to understand it.</p>
+<p>So I decided to do this, become part of the game. As SCP-5452-R got out of control due to my “emotional infection” and is the one that is controlling the game and making everyone’s life hell, they are the one that I’ll use to recreate the game. Hope you don’t get any punishment due to this. Have a good life, Dr. Novakova.</p>
+<p>Yours truly,</p>
+<p>Diderot.aic</p>
+<p><strong>PS:</strong> I’ll leave a "backdoor entrance" in the object. If anything goes wrong after I’m gone, use it to reboot the game again by rearranging the game data. I suggest you name it DIDEROT Protocol. Wink, wink.</p>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► You have one (1) new comment to the update proposal!  ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ No new comments to the update proposal ▼</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<blockquote>
+<p style="text-align: center;"><span style="font-size:x-large;">Notice from O5 Council</span></p>
+<hr/>
+<p>The events involving SCP-5452 are to be redesignated as classified to anyone below a level 4 clearance due to their unknown effects and deviation from the standard mechanics of how AIC units work. Personality Drive PATHOS/5 or Diderot.aic references are to be censured from any article that does not follow this rule.<br/>
+Research Team for SCP-5452 will be rearranged as the updates are being made. Important researchers and agents are to be promoted to Level 4 and/or 4/5452 clearance. Staff that are considered unfitting are to be amnesticized and reassigned for other objects.<br/>
+Any employee that acts against these exigences will be retaliated with reassignment or resignation, both accompanied by amnestization.<br/>
+- O5-11</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. ".anm" files, read "Data Log #1" for more information</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Capacity of creating psionic links to read minds or send mental messages.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Power that permits the user to uncover someone's past by contact.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Extrasensory perception of feelings and emotions.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Psionic control over technology.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. UE is the standard prefix for Unexplained Locations</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. <a href="/scp-5032">"Incremental Code Routed Directly Through Arrays"</a></div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. Latin word for "soul"</div>
+<div class="footnote-footer" id="footnote-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-9')">9</a>. Living beings created by alchemical and/or thaumic means</div>
+<div class="footnote-footer" id="footnote-10"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-10')">10</a>. UE-71135</div>
+<div class="footnote-footer" id="footnote-11"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-11')">11</a>. SCP-5452-R is talking to the player, not directly to Dr. Novakova.</div>
+</div>
+
+</div></body></html></div>
+        </body>
+        </html>
+        

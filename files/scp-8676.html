@@ -1,0 +1,893 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-8676</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-8676</h1>
+            <div class='image-header'><img alt="IamtheKyleKnight" class="small" src="https://www.wikidot.com/avatar.php?userid=7327238&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7327238)"/>
+<img alt="Azerzia" class="small" src="https://www.wikidot.com/avatar.php?userid=7840411&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7840411)"/>
+<img alt="Dr Alex Moon" class="small" src="https://www.wikidot.com/avatar.php?userid=8673725&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8673725)"/>
+<img alt="Almighty Bungus" class="small" src="https://www.wikidot.com/avatar.php?userid=9719273&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9719273)"/>
+<img alt="AdjectiveNoun" class="small" src="https://www.wikidot.com/avatar.php?userid=6769158&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6769158)"/>
+<img alt="Amperand" class="small" src="https://www.wikidot.com/avatar.php?userid=9697086&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9697086)"/>
+<img alt="Anyar" class="small" src="https://www.wikidot.com/avatar.php?userid=5274479&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5274479)"/>
+<img alt="Woedenaz" class="small" src="https://www.wikidot.com/avatar.php?userid=1404096&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=1404096)"/></div><div class='text-content'>Item#:</span> <span class="number">8676</span></div>
+
+<div class="top-right-box">
+<div class="level">Level4</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">euclid</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">efla</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">vlam</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">vital</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="desktop-aim">
+<div class="w-container">
+<div class="cell-container">
+<div class="w-cell">
+<p><strong>Assigned Site</strong></p>
+<hr/>
+<p><a href="https://scp-wiki.wikidot.com/facilities-complete-list#toc5">Site-47</a></p>
+</div>
+<div class="w-cell">
+<p><strong>Site Director</strong></p>
+<hr/>
+<p>Director Christa Chambers</p>
+</div>
+<div class="w-cell">
+<p><strong>Research Head</strong></p>
+<hr/>
+<p>Dr. Austin Walton</p>
+</div>
+<div class="w-cell">
+<p><strong>Assigned MTF</strong></p>
+<hr/>
+<p>N/A</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-aim">
+<div class="w-container">
+<div class="cell-container">
+<div class="w-cell">
+<p><strong>Assigned Site</strong></p>
+<hr/>
+<p><a href="https://scp-wiki.wikidot.com/facilities-complete-list#toc5">Site-47</a></p>
+</div>
+<div class="w-cell">
+<p><strong>Site Director</strong></p>
+<hr/>
+<p>Director Christa Chambers</p>
+</div>
+<div class="w-cell">
+<p><strong>Research Head</strong></p>
+<hr/>
+<p>Dr. Austin Walton</p>
+</div>
+</div>
+<div class="cell-container">
+<div class="w-cell" style="max-width: 100%">
+<p><strong>Assigned MTF</strong></p>
+<hr/>
+<p>N/A</p>
+</div>
+</div>
+</div>
+</div>
+<div class="scp-image-block block-center" style="width:100%;"><img alt="symbols.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/fragment:scp-8676-0/symbols.jpg"/>
+<div class="scp-image-caption">
+<p>Multiple instances of SCP-8676-1.</p>
+</div>
+</div>
+<p><br/></p>
+<div class="blbf-main">
+<div class="blbf-name-1 blbf-same-color">
+<p>SCP-8676 is contained within a standard humanoid containment chamber in Site-47, which is outfitted with 1 Scranton Reality Anchors (SRA) consistent with containment of Class II ontokinetic entities. It is to be fed on a thrice-daily basis with a Class-B1 diet. <span style="text-decoration: line-through;">SCP-8676 is allowed to engage in social activities during designated periods.</span> SCP-8676 is to be restrained and sedated when not following protocol or displaying aggressive behavior. It may only be visited by Head Researcher Austin Walton. <span style="text-decoration: line-through;">and Researcher William Knox.</span></p>
+<p>SCP-8676 is not to come into contact with marking equipment such as pencils, pens, or chalks. The usage of marking equipment in testing must be approved by the Head Researcher.</p>
+<p>SCP-8676's sleeping pattern must be controlled through designated time periods to maximize results from testing and operations.</p>
+</div>
+</div>
+<p><br/></p>
+<div class="blbf-main">
+<div class="blbf-name-2 blbf-same-color">
+<div class="scp-image-block block-right" style="width:40%;"><img alt="female.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/fragment:scp-8676-0/female.png"/>
+<div class="scp-image-caption">
+<p>SCP-8676 (2024)</p>
+</div>
+</div>
+<p>SCP-8676 is Angela Acosta, a 24-year-old female humanoid of average height. It possesses dark brown hair and brown eyes. SCP-8676 was born in Lisbon, Portugal, and is of Portuguese descent.</p>
+<p>SCP-8676 is an ontokinetic<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-1')">1</a></sup> entity capable of exhibiting Class II reality-bending properties,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-2')">2</a></sup> but the activation of these capabilities is limited.</p>
+<p>SCP-8676's anomalous properties activate when it draws symbols using tools such as pencils, markers, and even liquids such as paint. The symbols are designated as SCP-8676-1 and can vary in shape and style. These symbols are unidentified, but some instances have shown ties to culture, mythology, and folklore. When making an instance of SCP-8676-1, SCP-8676's internal Hume<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-3')">3</a></sup> levels rise to 60-80.</p>
+<div class="scp-image-block block-left" style="width:30%;"><img alt="flower.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/fragment:scp-8676-0/flower.jpg"/>
+<div class="scp-image-caption">
+<p>SCP-8676 freezing flowers using an instance of SCP-8676-1.</p>
+</div>
+</div>
+<p>Once SCP-8676 has finished making an instance of SCP-8676-1, a low to medium severity change in reality will occur. Past examples of this include:</p>
+<ul>
+<li>Accelerating plant growth.</li>
+<li>Altering information on books and electronic software.</li>
+<li>Allowing a Junior Researcher's voice to be heard from his ID photo.</li>
+<li>Producing an equestrian statue entirely out of beryllium bronze.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-4')">4</a></sup></li>
+<li>Influencing a lightning bolt to strike an armored vehicle.</li>
+</ul>
+<p>These changes may last in an instant or for a prolonged period. SCP-8676 cannot directly control the changes it can make or know what the changes are capable of.</p>
+
+<div class="scp-image-block block-right" style="width:40%;"><img alt="brain1.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/fragment:scp-8676-0/brain1.jpg"/>
+<div class="scp-image-caption">
+<p>SCP-8676's brain activity during dreaming.</p>
+</div>
+</div>
+<p>SCP-8676's knowledge of these symbols comes from dreaming. Analysis of SCP-8676's limbic system and visual cortex reveals that these become more active than standard brain activity. Additionally, minor Hume, EVE<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-5')">5</a></sup>, and Akiva radiation<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-6')">6</a></sup> readings can be detected. After dreaming, SCP-8676 possesses knowledge of a single instance of SCP-8676-1. When questioned, SCP-8676 is unable to comprehend the dream clearly but suggests that there is an underlying significance or purpose that influences the symbol's capacity to alter reality. However, one constant point is that it always completely sees the instance of SCP-8676-1 when dreaming.</p>
+</div>
+</div>
+<p><br/></p>
+<div class="blbf-main">
+<div class="blbf-name-3 blbf-same-color">
+<p>SCP-8676 was discovered on 10/06/2025 by UIU agents investigating a hot spot of anomalous individuals who were all taken into custody by Foundation agents.</p>
+<div class="no-addendum">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">[ACCESS INTERVIEW LOG]</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">[CLOSE INTERVIEW LOG]</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p style="text-align: center;"><span style="font-size:150%;"><strong>INTERVIEW LOG</strong></span></p>
+<p><strong>Date:</strong> 11/06/2025</p>
+<p><strong>Interviewed:</strong> SCP-8676</p>
+<p><strong>Interviewers:</strong> Head Researcher Austin Walton and Researcher William Knox</p>
+<hr/>
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[BEGIN LOG]</strong></span></p>
+<p><em>(SCP-8676 stares at Dr. Walton and Dr. Knox as they enter it's containment cell and sit down in their respective chairs. SCP-8676 remains silent and looks at the folding table between them.)</em></p>
+<p><strong>Dr. Walton:</strong> Good morning, SCP-8676. My name is Dr. Walton, and <em>(Gestures towards Dr. Knox.)</em> this is Dr. Knox. We're terribly sorry for these unfortunate circumstances. We just need your cooperation.</p>
+<p><em>(SCP-8676 stares at the two researchers.)</em></p>
+<p><strong>Dr. Knox:</strong> We're here to help you. Why don't you tell us your name for starters?</p>
+<p><strong>SCP-8676:</strong> My name is Angela. Angela Acosta.</p>
+<p><strong>Dr. Walton:</strong> That's great, no-</p>
+<p><strong>SCP-8676:</strong> Who are you people? Why am I here?? I didn't do anything wrong.</p>
+<p><strong>Dr. Walton:</strong> Are you currently aware of your anomalous properties?</p>
+<p><strong>SCP-8676:</strong> My what?</p>
+<p><strong>Dr. Walton:</strong> You are here because you possess extraordinary abilities.</p>
+<p><strong>SCP-8676:</strong> Look I didn't do anything wrong okay! Please just let me go.</p>
+<p><strong>Dr. Knox:</strong> Don't worry, we're not going to. We're just here to help you.</p>
+<p><strong>SCP-8676:</strong> Help me with what?! I just want to go home with my friends. Where did you take them?</p>
+<p><strong>Dr. Walton:</strong> Your friends are safe. I assure you all we want to do is to learn your anomalous ability and help you. We're doing that to the rest of your friends as well.</p>
+<p><strong>Dr. Knox:</strong> It would be great if you would just cooperate with us okay?</p>
+<p><em>(SCP-8676 sighs and calms down.)</em></p>
+<p><strong>SCP-8676:</strong> Okay.</p>
+<p><strong>Dr. Walton:</strong> Great, now when did you first discover your ability?</p>
+<p><em>(SCP-8676 wraps it's fingers on it's mouth and thinks.)</em></p>
+<p><strong>SCP-8676:</strong> Well, it first appeared when I was 17. I was sleeping, and then I had this dream that I really couldn't understand. There were flashes of different colors, and I saw different buildings and people.</p>
+<p><strong>Dr. Walton:</strong> What else did you see?</p>
+<p><strong>SCP-8676:</strong> I couldn't make out anything at all, but one thing that stood out to me that I could remember vividly was a symbol. After that, I went to the beach with my family while flashes of that dream and symbol were lingering in my mind. I had to go away a bit from my family since it was overwhelming me, I kept seeing it. I didn't know what to do so I just… picked up a stick and drew the symbol on the sand.</p>
+<p><strong>Dr. Walton:</strong> What happened afterward?</p>
+<p><strong>SCP-8676:</strong> The sand around me rose and formed itself into a weird statue. It was definitely- not human. Then after that, some water from the waves rose too and formed itself to be some sort of… flying creature? I don't know how to describe it.</p>
+<p><strong>Dr. Knox:</strong> Don't worry, just carry on.</p>
+<p><strong>SCP-8676:</strong> There were 3 of those things, they circled around the weird statue for a while. I was shocked about it, but my sister found out and was even more shocked. She was going to tell my parents and show this to them but they couldn't reach in time since it already like… <em>(Scratches its head.)</em> lost it's magic? Both the sand and water stuff just dropped and went back to normal.</p>
+<p><strong>Dr. Walton:</strong> Has this been going on with you to this day?</p>
+<p><strong>SCP-8676:</strong> Kind of- after that incident at the beach, I didn't have any of that happening again until I turned 18. That was when I permanently had it. It's not as bad as before, I can quite hold myself down for a while but… I eventually do need to draw it. It's always going to be in the back of my head.</p>
+<p><strong>Dr. Walton:</strong> And your dreams?</p>
+<p><strong>SCP-8676:</strong> I always had them.</p>
+<p><strong>Dr. Walton:</strong> Fascinating.</p>
+<p><strong>SCP-8676:</strong> Now I've done everything you asked, can you please just let me see my friends and go?</p>
+<p><strong>Dr. Knox:</strong> I'm sorry. I'm afraid-</p>
+<p><strong>Dr. Walton:</strong> We can't let that happen.</p>
+<p><strong>SCP-8676:</strong> <em>(Slams both of its hands on the table.)</em> What?! Why do you want to keep us?? We're just trying to live, we're not harming anyone!</p>
+<p><strong>Dr. Walton:</strong> <em>(Points his finger at SCP-8676.)</em> That's exactly my point- you don't fully understand what you're capable of yet and you think you're ready to live your life? Much less being grouped up together with other anomalies such as yourself? You'll bring disaster. People will be harmed, maybe even die. We're providing you with protection and care, so that we may understand you better and keep innocents safe- I'm sure you actually harmed someone before right? Like SCP-███3? I hear that's why poor Antony has a prosthetic arm.</p>
+<p><em>(SCP-8676 stares at Dr. Walton in silence.)</em></p>
+<p><strong>Dr. Knox:</strong> Ahem. I think that's quite enough sir.</p>
+<p><em>(Dr. Walton stands up and adjusts his tie.)</em></p>
+<p><strong>Dr. Walton:</strong> I think we are done here. Wrap this up, Dr. Knox.</p>
+<p><em>(Dr. Walton exits the cell.)</em></p>
+<p>…</p>
+<p><em>(Dr. Knox sighs and walks up to SCP-8676.)</em></p>
+<p><strong>Dr. Knox:</strong> <em>(Tries to put his hand on it's shoulder but SCP-8676 backs away.)</em> …Look. I'm sorry about that. You and your friends are safe here. Don't worry.</p>
+<p><em>(Dr. Knox walks to the cell door and looks at SCP-8676 and giving it a wave before exiting the cell.)</em></p>
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[END LOG]</strong></span></p>
+<hr/>
+<p><strong>Closing Statement:</strong> SCP-8676 has provided significant information about its anomalous properties, which hold significant value thus, further analysis will be conducted in preparation for testing.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br/></p>
+<div class="blbf-main">
+<div class="blbf-name-4 blbf-same-color">
+<p>The nature of SCP-8676's anomalous properties presented an opportunity to benefit the Foundation's operations. Testing was proposed to place SCP-8676 in a state of unconsciousness through general anesthesia and then using experimental neurotechnology MORPHNOS<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-7')">7</a></sup> to induce constructed dreams in SCP-8676's brain that handle dreaming. SCP-8676 will then be placed into a suitable chamber to demonstrate its abilities and assess whether the changes MORPHNOS made were successful or not. A Scranton Reality Anchor will be placed to control SCP-8676's abilities if the changes are unsuccessful.</p>
+<p>Below is a condensed log of initial testing.</p>
+<div class="no-addendum">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">[ACCESS TESTING LOG]</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">[CLOSE TESTING LOG]</a></div>
+<div class="collapsible-block-content">
+<table class="wiki-content-table">
+<tr>
+<th><span style="color:#FFFFFF;">DESIRED RESULT</span></th>
+<th><span style="color:#FFFFFF;">RESULTS</span></th>
+</tr>
+<tr>
+<td style="text-align: center;">An improved method for mass-producing effective and safe amnestics.</td>
+<td style="text-align: center;">Created spike-like shapes from the ceiling, which is made out of the same material, with droplets coming out of the tip. Analysis of these droplets reveals an inferior compound of a liquid amnestic.</td>
+</tr>
+<tr>
+<td style="text-align: center;">An improved method for mass-producing effective and safe mnestics.</td>
+<td style="text-align: center;">Created a Greek marble fountain with a Partridge on the top. Analysis of the water from the fountain reveals that it is suitable for consumption. Drinking the water grants knowledge of a single name, which is: "Mnemosyne".<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-8')">8</a></sup></td>
+</tr>
+<tr>
+<td style="text-align: center;">A more effective method for protection against memetic effects.</td>
+<td style="text-align: center;">Created a hardbound leather book in which the texts within the pages could not be comprehended. Analysis of the surface of the book reveals traces of the flu, but it was not found to be transmittable.</td>
+</tr>
+<tr>
+<td style="text-align: center;">A more effective method for protection against infohazard effects.</td>
+<td style="text-align: center;">Nearly erased SCP-8676's digital and physical files.</td>
+</tr>
+<tr>
+<td style="text-align: center;">A more effective method for protection against cognitohazard effects.</td>
+<td style="text-align: center;">Created an adult male silicon doll that is missing its eyes, ears, nose, and jaw. Additionally, the entire surface of the doll is covered in lacerations.</td>
+</tr>
+<tr>
+<td style="text-align: center;">An improved method for delivering Geas.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-9')">9</a></sup></td>
+<td style="text-align: center;">Director Christa Chambers's voice was heard reciting the <a href="https://scp-wiki.wikidot.com/about-the-scp-foundation">Foundation's mission statement</a> from all Foundation logos, digital and physical.</td>
+</tr>
+<tr>
+<td style="text-align: center;">An improved method for mass-producing effective synthetic oriykalkos.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-10" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-10')">10</a></sup></td>
+<td style="text-align: center;">The testing chamber began flooding slowly while various metallic crystals slowly formed around the testing chamber's machinery.</td>
+</tr>
+<tr>
+<td style="text-align: center;">An efficient way to suppress lambda waves.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-11" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-11')">11</a></sup></td>
+<td style="text-align: center;">Enhanced various telepathic anomalies across Site-47.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Establish a Way<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-12" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-12')">12</a></sup> for Foundation utilization.</td>
+<td style="text-align: center;">Created a Way that did not require a Knock<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-13" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-13')">13</a></sup>, but led to Site-47's employee longue.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Enhance PANOPTICON<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-14" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-14')">14</a></sup> to enable it to effectively identify and monitor anomalous individuals and communities.</td>
+<td style="text-align: center;">Projected screens that displayed what was happening to various humanoid anomalies within Site-47, which are known accomplices of SCP-8676.</td>
+</tr>
+</table>
+<p>Although the results from initial testing were unsuccessful, it's proven that MORPHNOS is capable of influencing the outcomes of the instances of SCP-8676-1. More time is required to refine MORPHNOS and adjust it to perform efficiently in the next set of tests.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br/></p>
+<div class="blbf-main">
+<div class="blbf-name-5 blbf-same-color">
+<p>Researcher William Knox has been assigned to speak with SCP-8676 weekly due to it being more communicable and willing to cooperate.</p>
+<div class="no-addendum">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">[ACCESS INTERVIEW LOG]</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">[CLOSE INTERVIEW LOG]</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p style="text-align: center;"><span style="font-size:150%;"><strong>INTERVIEW LOG</strong></span></p>
+<p><strong>Date:</strong> 29/06/2025</p>
+<p><strong>Interviewed:</strong> SCP-8676</p>
+<p><strong>Interviewer:</strong> Researcher William Knox</p>
+<hr/>
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[BEGIN LOG]</strong></span></p>
+<p><em>(SCP-8676 is seen reading a science fiction novel which was from the employee lounge. SCP-8676 has been previously been granted various approved literature. Dr. Knox is seen entering SCP-8676's cell.)</em></p>
+<p><strong>Dr. Knox:</strong> <em>(Waves at SCP-8676.)</em> Good afternoon, SCP-8676.</p>
+<p><strong>SCP-8676:</strong> <em>(Stops reading and slowly waves back at Dr. Knox.)</em> Oh hey William. What brings you here? Is there going to be another test?</p>
+<p><strong>Dr. Knox:</strong> Oh no no no, Im here to uh- just talk to you.</p>
+<p><strong>SCP-8676:</strong> <em>(Places it's hand on it's cheek.)</em> Oh? Really?</p>
+<p><strong>Dr. Knox:</strong> Yeah, they thought it would be good if someone were to talk to you.</p>
+<p><strong>SCP-8676:</strong> Okay. Well, as long as I won't see Austin's stupid face- then I'm happy.</p>
+<p><strong>Dr. Knox:</strong> <em>(Puts his finger on his mouth.)</em> Shhhhhhhhh, don't say that.</p>
+<p><strong>SCP-8676:</strong> <em>(Chuckles and covers it's mouth.)</em> Oh cmon William! You really are scared of him. I see it in your eyes you know? He's just your dumb co-worker, you have to-</p>
+<p><strong>Dr. Knox:</strong> <em>(Gestures his hand to signal silence.)</em> 8676. Please stop.</p>
+<p><strong>SCP-8676:</strong> <em>(Raises both of its hands up.)</em> Alright, alright. Jeez William, you're so harsh. And won't you ever call me by my real name?</p>
+<p><strong>Dr. Knox:</strong> <em>(Sighs.)</em> I'm sorry for that-</p>
+<p><strong>SCP-8676:</strong> Don't be. It's okay.</p>
+<p><strong>Dr. Knox:</strong> …You know we call you because of p-</p>
+<p><strong>SCP-8676:</strong> Procedure. Yeah, I know William. It's just- It would be nice to hear you say my name.</p>
+<p><strong>Dr. Knox:</strong> I'm sorry-</p>
+<p><strong>SCP-8676:</strong> Hey. It's really okay. Don't worry. That was just something I've been- you know what nevermind. Let's just get along what you're supposed to do here in the first place.</p>
+<p><strong>Dr. Knox:</strong> …Alright.</p>
+<p><strong>SCP-8676:</strong> Y'know, considering that you're a researcher and shit, I thought this would be more professional or something.</p>
+<p><strong>Dr. Knox:</strong> Well, it is my first time being assigned to an humanoid anomaly.</p>
+<p><strong>SCP-8676:</strong> Jeez, we're not even called "humans", just "humanoid anomalies" huh?</p>
+<p><strong>Dr. Knox:</strong> …Yeah.</p>
+<p>…</p>
+<p><strong>Dr. Knox:</strong> Anyways, I'll just continue. <em>(Reads his notepad.)</em> So, how are you?</p>
+<p><strong>SCP-8676:</strong> …I'm doing okay.</p>
+<p><strong>Dr. Knox:</strong> What do you think of your time here in the Foundation?</p>
+<p><strong>SCP-8676:</strong> I guess- it's okay. I have my own room- cell, <em>(Gestures towards it's belongings.)</em> stuff I need, I get to see your <em>(Points at Dr. Knox.)</em> pretty face everyday and I can occasionally get to see my friends. <em>(Looks on the floor)</em> Although I really wish I could see them more. I miss them.</p>
+<p><strong>Dr. Knox:</strong> I see. Well, I'll try to arrange that.</p>
+<p><strong>SCP-8676:</strong> <em>(Looks at Dr. Knox and smiles.)</em> Thank you William.</p>
+<p><strong>Dr. Knox:</strong> Is there anything else you want to say?</p>
+<p><strong>SCP-8676:</strong> Well…</p>
+<p>…</p>
+<p><strong>SCP-8676:</strong> …I don't want to do any more tests. I mean, I know you guys are helping me control it. And I'm glad that I'm not accidentally hurting anybody anymore, especially to people I care about. But, at the same time… <em>(Holds both of it's shoulders.)</em> I know I'm being exploited. I know I'm just being used to create whatever you want. I know I can't do anything about it, so I'll just let it happen. It beats the alternative. But I just want to say, it feels really horrible William. <em>(Covers it's head with both arms.)</em> I'm being forced to sleep- my dreams are being controlled, and then this just repeats. It's just not natural. I mean, I know any of this isn't natural but I just wished some things could change.</p>
+<p><strong>Dr. Knox</strong> I… I know that it's b-</p>
+<p><em>(The cell doors slides open, Dr. Walton enters.)</em></p>
+<p><strong>Dr. Walton:</strong> Dr. Knox. I've been looking everywhere for you. What are you doing here?</p>
+<p><strong>Dr. Knox:</strong> Sir- I'm just checking on SCP-8676.</p>
+<p><strong>Dr. Walton:</strong> Enough of that, we must discuss. <em>(Walks up to Dr. Knox.)</em> We realize that we are wasting time and must push through with our plans. <em>(Grabs Dr. Knox by the shoulder and moves him to the exit.)</em> Time is of the essence.</p>
+<p><em>(Dr. Walton tries to face at SCP-8676 but fails. SCP-8676 waves at Dr. Knox before the cell doors slide shut.)</em></p>
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[END LOG]</strong></span></p>
+<hr/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br/></p>
+<div class="blbf-main">
+<div class="blbf-name-6 blbf-same-color">
+<p>On 08/07/2025, after a series of prolonged tests, MORPHNOS successfully influenced SCP-8676 to create a single piece of effective synthetic oriykalkos. The following day, an incident occurred as the specialist team prepared to mass-produce various items that would support Foundation operations.</p>
+<div class="no-addendum">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">[ACCESS VIDEO LOG]</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">[CLOSE VIDEO LOG]</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p style="text-align: center;"><span style="font-size:150%;"><strong>VIDEO LOG</strong></span></p>
+<p><strong>Date:</strong> 08/07/2025</p>
+<p><strong>Event:</strong> Testing of SCP-8676</p>
+<p><strong>Location:</strong> Site-47, SCP-8676's cell</p>
+<hr/>
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[BEGIN LOG]</strong></span></p>
+<p><em>(SCP-8676 is seen trying to stack various books into a tower before it all breaks apart as Dr. Walton, Dr. Knox and the specialist team carrying MORPHNOS enter its cell.)</em></p>
+<p><strong>Dr. Walton:</strong> Good evening, SCP-8676.</p>
+<p><strong>SCP-8676:</strong> Ugh.</p>
+<p><strong>Dr. Walton:</strong> You know the procedure 8676. Get along with it.</p>
+<p><em>(SCP-8676 walks over to Dr. Walton with a clenched fist.)</em></p>
+<p><strong>Dr. Walton:</strong> <em>(Crosses both of his arms.)</em> That's far enough 8676. Now get on your bed and do not test me. <em>(Gestures at security assigned to SCP-8676.)</em></p>
+<p><strong>SCP-8676:</strong> Walton, fuck you. I'm really just so sick of you. I'm tired of being used. After the last time you used me, I can see that all of you are awfully happy since I figured you got what you were looking for. I want this to fucking end.</p>
+<p><strong>Dr. Walton:</strong> That simply cannot happen. Cease this outburst now.</p>
+<p><strong>SCP-8676:</strong> I just don't want to be hooked up on that <em>(Points at MORPHNOS.)</em> thing anymore! All the other tests were okay, but you forced me to sleep for 12 fucking hours on the last test! Like, what is wrong with you people!? That machine is messing with my dreams and sleep, do you know how horrible I feel each time? I hate you and the fucking Foundation!</p>
+<p><strong>Dr. Walton:</strong> 8676. Do not make me-</p>
+<p><strong>Dr. Knox:</strong> Sir, let's just hook it up to-</p>
+<p><strong>Dr. Walton:</strong> Dr. Knox. Please, do not interrupt me.</p>
+<p><em>(Dr. Knox nods.)</em></p>
+<p><strong>Dr. Walton:</strong> As I was saying 8676-</p>
+<p><strong>SCP-8676:</strong> Save it asshat. <em>(Gets on its bed.)</em> Just do it. At least I'll have some peace for the next 12 hours.</p>
+<p><strong>Dr. Walton:</strong> Hmm. Very well. <em>(Signals the specialist team to begin operations.)</em></p>
+<p><em>(The specialist team carries MORPHNOS to SCP-8676 and hooks it up to the anomaly. SCP-8676 closes its eyes as it begins being administered to sleep. MORPHNOS successfully finishes being set up as Dr. Walton, Dr. Knox, and the rest of the specialist team begin the operation. 10 hours have passed by as Dr. Knox notices unusual brain activity in the monitor.)</em></p>
+<p><strong>Dr. Knox:</strong> Sir, there's something strange happening.</p>
+<p><strong>Dr. Walton:</strong> What is it, Dr. Knox?</p>
+<p><strong>Dr. Knox:</strong> There seem to be no readings of any Akiva radiation. As well as… <em>(Looks at a different part on the monitor.)</em> fear and anxiety readings are increasing gradually.</p>
+<p><strong>Dr. Walton:</strong> No signs of any Akiva radiation? That is strange. But I am sure we are getting the rest of those readings from 8676's outburst hours ago. Hmm. I suppose it is frightened of the consequences for its outburst earlier. It frankly should be scared.</p>
+<p><em>(Dr. Knox remains silent and widens his eyes at Dr. Walton.)</em></p>
+<p><strong>Dr. Walton:</strong> Carry on monitoring it, Dr. Knox.</p>
+<p><strong>Dr. Knox:</strong> <em>(Turns back to the monitor and exhales heavily.)</em> Understood.</p>
+<p><em>(35 minutes has passed by as SCP-8676's body begins sweating and heart rate increasing.)</em></p>
+<p><strong>Dr. Knox:</strong> What? Sir, 8676's heart rate is increasing. And the rest of the readings are going wrong. Some of them are changing rapidly. Should we abort and check on the issue?</p>
+<p><strong>Dr. Walton:</strong> No! Do not abort Dr. Knox, we simply administer-</p>
+<p><em>(SCP-8676's body begins shaking violently and nosebleeds. Tears can be seen moving down from SCP-8676's eyelids.)</em></p>
+<p><strong>Dr. Knox:</strong> Walton! We need to abort!</p>
+<p><strong>Dr. Walton:</strong> Don't you dare Dr. Knox! We are so close to finishing the operation!</p>
+<p><strong>Dr. Knox:</strong> But she's having a seizure! We need to abort now!</p>
+<p><strong>Dr. Walton:</strong> I am getting the specialist team to address this, we absolutely do not need to- <em>(Dr. Knox visibly becomes more distressed and pushes Dr. Walton aside and goes over to SCP-8676 quickly)</em> Knox! What the hell is wrong with you?!</p>
+<p><strong>Dr. Knox:</strong> I don't care you hear me! I need to stop this now!</p>
+<p><strong>Dr. Walton:</strong> Knox, get your hands off now!</p>
+<p><em>(Dr. Knox shuts down MORPHNOS and removes it entirely from SCP-8676. SCP-8676 stops moving violently as Dr. Knox holds both of its shoulders.)</em></p>
+<p><strong>Dr. Knox:</strong> <em>(shaking SCP-8676.)</em> Angela! Angela!</p>
+<p><em>(SCP-8676 slowly begins to open their eyes.)</em></p>
+<p><strong>Dr. Knox:</strong> Oh thank god! Are you okay?</p>
+<p><strong>SCP-8676:</strong> I- <em>(Sobs.)</em> Wi… William?</p>
+<p><strong>Dr. Knox:</strong> Yeah. It's me, Angela.</p>
+<p><strong>SCP-8676:</strong> <em>(Cries.)</em> William… I- I don't- <em>(Hugs Dr. Knox and cries on him.)</em> Oh god it was horrible… It was so horrible, everything hurts. Oh, fuck's sake my nose- <em>(Looks at Dr. Knox's coat which was now stained with blood.)</em> It's all over you. I'm sorry.</p>
+<p><strong>Dr. Knox:</strong> No no- It's okay. You're safe now.</p>
+<p><strong>SCP-8676:</strong> William, I don't want to sleep again, please. I'm scared. I- I don't know what's happening to me now. It hurts…</p>
+<p><strong>Dr. Knox:</strong> Angela, don't worry okay? I'll call for some help-</p>
+<p><strong>SCP-8676:</strong> <em>(Holds Dr. Knox tighter.)</em> No! Please stay. Please.</p>
+<p>…</p>
+<p><strong>Dr. Knox:</strong> Okay. <em>(Looks at Dr. Walton and signals with his head to acquire assistance from staff.)</em></p>
+<p><em>(Moments later, staff had taken SCP-8676 to and treat it to full recovery. Dr. Walton and Dr. Austin remain in SCP-8676's cell. )</em></p>
+<p><strong>Dr. Walton:</strong> Unbelievable.</p>
+<p><strong>Dr. Knox:</strong> What the hell is your problem, Walton?</p>
+<p><strong>Dr. Walton:</strong> What you did there. That's what.</p>
+<p><strong>Dr. Knox:</strong> So you wanted to let her get hurt even more?</p>
+<p><strong>Dr. Walton:</strong> It. William. It. <em>(Points at Dr. Knox.)</em> Never forget.</p>
+<p><strong>Dr. Knox:</strong> <em>(Gets closer to Dr. Walton and looks at him.)</em> They're still a person. I did what was necessary, and the right thing to do.</p>
+<p><strong>Dr. Walton:</strong> We were close William! Close to finishing the procedure! So what if it got hurt a little? We can always treat it.</p>
+<p><strong>Dr. Knox:</strong> <em>(Presses his finger in Dr. Walton's chest.)</em> Over my dead body Austin. <em>(Clenches his fists)</em> I was not going to let her suffer more.</p>
+<p><strong>Dr. Walton:</strong> Did you forget who you work for? <em>(Presses his finger on Dr. Knox's chest.)</em> What you're supposed to work for? For the people William! We secure, contain, and protect! And we will use everything to achieve that! These animals like 8676- they're just anomalies! We will use them in every shape or form to protect ourselves! To achieve a safer world!</p>
+<p><strong>Dr. Knox:</strong> <em>(His hands starts shaking but stops it.)</em> …Austin, this discussion is over. 8676 will make a full recovery and cannot undergo any more operations until it is assured that it is safe. <em>(Puts his hand on Dr. Walton's shoulder and points at him with his other hand and whispers.)</em> …She will be safe. You will not harm her on my watch.</p>
+<p><strong>Dr. Walton:</strong> <em>(Composes himself.)</em> Very well then.</p>
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[END LOG]</strong></span></p>
+<hr/></div>
+</div>
+</div>
+</div>
+</div>
+<p>After SCP-8676 had recovered, it was given 42 hours to recuperate and undergo a full analysis to understand why the incident had occurred. Brain scans indicate that SCP-8676 has been experiencing an anomalous nightmare, which is caused by escalating stress levels. The areas of the brain responsible for processing emotions such as fear and negative emotions, as well as memory and emotional regulation, show increased activity compared to those of typical humans. It is believed that SCP-8676's over-exposure to MORPHNOS induced these anomalous nightmares and weakened SCP-8676 physically.</p>
+<div class="scp-image-block block-center" style="width:400px;"><img alt="brain2.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/fragment:scp-8676-0/brain2.jpg"/>
+<div class="scp-image-caption">
+<p><span style="text-decoration: line-through;">SCP-8676's brain activity after the incident.</span><br/>
+Having Trouble Dreaming Angela?</p>
+</div>
+</div>
+<hr/>
+<p>A solution has been developed by the Special Technology Applications Group (STAG) and the Department of Ontokinetics that can help stabilize SCP-8676's long-term exposure to MORPHNOS by implementing various paratechnologies suited to address its issues. However, before the specialist team could initiate this, SCP-8676 was found to have inflicted self-injury and then used its blood to make an instance of SCP-8676-1. The instance of SCP-8676-1 created caused an earthquake of magnitude 5.3 within Site-47. SCP-8676 has been restrained in its cell and administered sedatives. Additionally, a Scranton Reality Anchor has been fitted to its cell.</p>
+<hr/>
+<p>On 28/06/2025, Researcher William Knox was discovered to have been bringing an earlier portable version of MORPHNOS, a black marker, and a piece of paper to SCP-8676's cell. Dr. Knox had used MORPHNOS on SCP-8676 while it was sleeping.</p>
+<div class="no-addendum">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">[ACCESS VIDEO LOG]</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">[CLOSE VIDEO LOG]</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p style="text-align: center;"><span style="font-size:150%;"><strong>VIDEO LOG</strong></span></p>
+<p><strong>Date:</strong> 12/07/2025</p>
+<p><strong>Event:</strong> Attempted Containment Breach</p>
+<p><strong>Location:</strong> Site-47, SCP-8676's cell</p>
+<hr/>
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[BEGIN LOG]</strong></span></p>
+<p><em>(Dr. Knox enters SCP-8676's cell while carrying an early portable version of MORPHNOS. SCP-8676 is seen sleeping in its restraints.)</em></p>
+<p><strong>Dr. Knox:</strong> Okay. Don't mess up. She'll be fine.</p>
+<p><em>(Dr. Knox walks over to SCP-8676 and removes its restrains, begins setting up MORPHNOS, and attaching it to SCP-8676.)</em></p>
+<p><strong>Dr. Knox:</strong> <em>(Places his hand on SCP-8676's right cheek.)</em> I'm gonna get you out of here. <em>(Gives a kiss on SCP-8676's forehead and holds her arm.)</em></p>
+<p><em>(Dr. Knox remains vigilant waiting for MORPHNOS to finish its operation. An hour has passed by and the process has finished, Dr. Knox now wakes up SCP-8676.)</em></p>
+<p><strong>Dr. Knox:</strong> <em>(Shakes SCP-8676.)</em> Angela. Wake up. C'mon, wake up Angela.</p>
+<p><strong>SCP-8676:</strong> <em>(Wakes up.)</em> Huh? Wh- Oh, William?</p>
+<p><strong>Dr. Knox:</strong> <em>(Smiles.)</em> Hey Angela.</p>
+<p><strong>SCP-8676:</strong> <em>(Yawns.)</em> What are you doing here? <em>(Looks down its body.)</em> I'm not restrained anymore?</p>
+<p><strong>Dr. Knox:</strong> Listen-</p>
+<p><strong>SCP-8676:</strong> <em>(Notices MORPHNOS.)</em> What the hell?!</p>
+<p><strong>Dr. Knox:</strong> <em>(Puts his finger on SCP-8676's lips.)</em> Shhhhhhh, be quiet Angela and I mean it.</p>
+<p><strong>SCP-8676:</strong> William… What did you do to me? Were you using me?</p>
+<p><strong>Dr. Knox:</strong> Angela, no. I would never do that. God, I never wanted you to go through any of this at all. I'm trying to get you out of here.</p>
+<p><strong>SCP-8676:</strong> What? How?</p>
+<p><strong>Dr. Knox:</strong> I rigged up this lesser version of MORPHNOS to induce a dream that will help you escape. This thing is very limited, but it should do the job.</p>
+<p><strong>SCP-8676:</strong> Wait… are you sure this will work?</p>
+<p><strong>Dr. Knox:</strong> Pretty sure. I'm certain of it.</p>
+<p><strong>SCP-8676:</strong> Yeah. I think- I can see the symbol. But how am I even going to draw it?</p>
+<p><strong>Dr. Knox:</strong> <em>(Reaches in his pocket for his marker and a folded piece of paper.)</em> Here you go.</p>
+<p><strong>SCP-8676:</strong> William I… I don't know what to say. You're risking so much here, how did you even manage to do this?</p>
+<p><strong>Dr. Knox:</strong> I had to pull some strings, it was difficult but it worked. Now it's time to stop them from hurting you, Angela. When you bleed yourself to try and escape, I knew that I had to do something.</p>
+<p><strong>SCP-8676:</strong> Why are you doing all of this? Why are you not like the rest of the Foundation?</p>
+<p><strong>Dr. Knox:</strong> Never in my time of working here that I got to clearly see the messed up shit like this. We make lots of compromises, I know that. But this is insane. We're supposed to be cold, not cruel. But all that's being proven is that cold is cruel. This is not what I signed up for and believed in. It's clear to me that there's corruption here on this site.</p>
+<p><strong>SCP-8676:</strong> Are you certain that's not the majority of the Foundation?</p>
+<p><strong>Dr. Knox:</strong> …I don't know. I try to believe that it's not all like this. But, I know that this can't go on any longer. The people here don't bother voicing out the clear problems at all. I don't think they care. And that just… <em>(Clenches both of his fists.)</em> makes me really fucking angry. I honestly want to beat them to a pulp because they don't care about the innocent lives they're ruining… the ethics committee doesn't do jack shit… I've been silenced multiple times… and don't get me started on fucking Walton.</p>
+<p><em>(SCP-8676 looks at him in shock.)</em></p>
+<p><strong>Dr. Knox:</strong> Oh uh- I'm sorry for being so violent. I guess I just kept all of this in me. I'm um- a little problematic kind of person.</p>
+<p><strong>SCP-8676:</strong> I can see that. But, listen William… why me?</p>
+<p><strong>Dr. Knox:</strong> <em>(Sighs.)</em> I just- I felt really horrible just seeing you going through all of this. You remind me of someone that I used to know and- they left me too early. You reminded me of her and… you deserve to be treated like a person and live your life. The Foundation can go to hell. I want you to escape Angela, even if it means going through something horrible.</p>
+<p><strong>SCP-8676:</strong> I- that really means a lot to me, William. I frankly thought all of you people in the lab coats were massive jerks, but you <em>(Points at Dr. Knox.)</em> really are the exception.</p>
+<p><em>(Both of them chuckle.)</em></p>
+<p><strong>Dr. Knox:</strong> Alright, now you really need to get out of here.</p>
+<p><strong>SCP-8676:</strong> Hold on, my friends aren't coming, right?</p>
+<p><strong>Dr. Knox:</strong> I'm sorry but I couldn't find another way.</p>
+<p><strong>SCP-8676:</strong> Oh no. <em>(Pauses and looks at the floor.)</em> …I'm sorry, I should be thankful. You're helping me escape this place. I really appreciate everything that you have done William. But I'm- I'm going to miss them a lot.</p>
+<p><strong>Dr. Knox:</strong> Don't worry. It's okay, just… be careful okay? Just live your life. Be happy Angela.</p>
+<p><strong>SCP-8676:</strong> I hope you'll be okay William. I'm going to miss you too. <em>(Grabs the marker and folded paper.)</em></p>
+<p><em>(SCP-8676 begins drawing the instance of <span style="color:red">SCP-8676-1</span> as Dr. Knox watches it closely, occasionally watching the cell door and back to SCP-8676.)</em></p>
+<p><strong>SCP-8676:</strong> Well, I think I'm finished-</p>
+<p><em>(The entirety of Site-47 is instantly covered in red light. Personnel everywhere have begun panicking and Site security teams are being deployed to search for the source of the event.)</em></p>
+
+<p><strong>Dr. Knox</strong> Shit! What the fuck?!</p>
+<p><strong>SCP-8676:</strong> Oh my god! William what's happening?</p>
+<p><strong>Dr. Knox:</strong> I don't know! Why is this fucking happening-</p>
+<p><em>(the cell doors slide open as Site security enter)</em></p>
+<p><strong>SCP-8676:</strong> God dammit! <em>(Moves in front of Dr. Knox to cover him.)</em> Get the hell away from him! Don't you dare- <em>(A guard punches its stomach and carries it.)</em> Ough… Fuck… <em>(Carries SCP-8676 back to its bed and restrains it.)</em></p>
+<p><strong>Dr. Knox:</strong> <em>(Reaches out to SCP-8676.)</em> No! Angela! Fuck you! I'm going to fucking killlll you! <em>(Attempts to punch a guard but gets blocked.)</em> You're dead! You fucking hear me- <em>(Gets punched in the face by another guard and falls to the floor.)</em></p>
+<p><em>(Dr. Knox gets handcuffed and dragged away from SCP-8676's cell.)</em></p>
+<p><strong>Dr. Knox:</strong> Oh god… Angela- please don't- <em>(Gets punched in the face again and Dr. Knox's nose starts bleeding.)</em></p>
+<p><strong>SCP-8676:</strong> <em>(Finally comes to its senses and notices Dr. Knox being dragged away.)</em> Wait! Please stop! <em>(Begins crying.)</em> Don't put me back- <em>(Gets silenced by a guard's mouth as he administers sedatives to SCP-8676.)</em></p>
+<p><em>(The guard dragging Dr. Knox right outside the cell stops before Dr. Walton who finally came to visit.)</em></p>
+<p><strong>Dr. Walton:</strong> <em>(Shakes his head.)</em> Oh William. I'm very disappointed with that stunt you pulled. <em>(Gets close to Dr. Knox's face and holds his bloody chin.)</em> You have disappointed me for the last time, Dr. Knox. You're done. 8676 will be ready to continue its operations soon. <em>(Signals the guard to continue taking Dr. Knox away.)</em></p>
+<p><em>(Dr. Walton looks at SCP-8676 and walks away.)</em></p>
+<p><strong>SCP-8676:</strong> <em>(Tries to keep its eyelids open.)</em> N- no… please…</p>
+<p><em>(SCP-8676 finally closes its eyes and sleeps.)</em></p>
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[END LOG]</strong></span></p>
+<hr/>
+<div class="scp-image-block block-center" style="width:70%;"><img alt="symbol.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/fragment:scp-8676-0/symbol.jpg"/>
+<div class="scp-image-caption">
+<p><span style="text-decoration: line-through;">The instance of SCP-8676-1 detailed in the log has been confiscated.</span><br/>
+Save Her William.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>After the incident, Researcher William Knox faced punishment; his position was demoted to Junior Researcher, and he is now primarily assigned to <a href="/scp-1492">SCP-1492</a> and various other anomalies. SCP-8676 will now continue undergoing the operation, and its privileges have been revoked.</p>
+</div>
+</div>
+<p><br/></p>
+<div class="blbf-main">
+<div class="blbf-name-7 blbf-same-color">
+<p>After the incident, Researcher William Knox has been continuously displaying unusual behavior working on Site-47 ever since he was exposed to the instance of SCP-8676-1. He disappeared shortly on 31/07/2025. A team was dispatched to search for Dr. Knox, starting with his residence, where they found signs of a fight, a deceased male,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-811276-15" onclick="WIKIDOT.page.utils.scrollToReference('footnote-811276-15')">15</a></sup> and various amounts of notes and video logs. The following video is taken from Dr. Knox's phone. No other relevant content was found.</p>
+<p>Below is a condensed log of the contents found.</p>
+<div class="no-addendum">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">[ACCESS DOCUMENT]</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">[CLOSE DOCUMENT]</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px; background:#850005">
+<div style="text-align: center;">
+<p><span style="font-size:large;">I hate the Foundation.</span></p>
+</div>
+<p>They've ruined everything. Ruined my plans to save her. Angela. She's not supposed to be locked in there like some animal. She's just another person. She deserves the right to live and the freedom to decide for herself. Now god knows what will happen to her. Turned to some machine to feed those power-hungry bastards. I want to scream just thinking about it. It's like I'm trapped, just like all the other people that the Foundation contained. I lost everything. Everyone laughs behind my back, and I've been put to fucking shame. I just want to escape all of this. I regret everything.</p>
+</div>
+<p><br/></p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px; background:#850005">
+<p>It's been a few days now, and everything is just the same shit. It's tiring. I often find myself so disconnected from reality that I have trouble responding to other co-workers who are talking to me. They think I'm a freak, but they're worse. I think they're just vermin.</p>
+<p>Whenever I'm on break, I hear Angela's voice across these dull walls. She calls to me, begging me to save her and blaming me for everything. I don't think she can ever forgive me. I don't want to hear her anymore. I just want to forget.</p>
+<p>I sometimes see Austin around, and I don't think he's human. I see through all of that human skin and flesh, and all I see underneath is the Devil taunting me. When he sees me, he smiles. Smiles knowing that I know every person trapped here won't get to love, be happy, and see their true life beyond those cell doors. He must die.</p>
+</div>
+<p><br/></p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px; background:#850005">
+<p>I don't know what's going on with me lately. I've been hearing whispers when I try to sleep at night. My heart feels like it's burning whenever I'm in Site-47. I've accidentally lashed out at the people in the employee lounge. Just yesterday, I started punching the restroom stall door just because I saw Walton. I'm getting worried. I thought I had stopped this long ago. Why is it all suddenly coming back slowly?</p>
+</div>
+<p><br/></p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px; background:#850005">
+<p>Everyone is disgusting. I can't stand their constant bickering. I just want to rip out their vocal cords and happily watch them choke on their blood. They had the nerve to suspend me again. I did not do anything wrong. This is proof of why I am always sick and tired of trying to live amongst everyone here. Day by day, I try to resist the urge to pluck the eyes out of Samantha, feed Danilo with his intestine, rip Austin to shreds, or even snap the neck of that irritating man I see outside my home every day. I am sick of them all. Sick of human beings. They are a disease that must be consumed to kill it.</p>
+<div style="text-align: center;">
+<p><span style="font-size:large;">A chance to hunger. And I will feast.</span></p>
+</div>
+</div>
+<p><br/></p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[BEGIN VIDEO RECORDING]</strong></span></p>
+<p><em>(A man of average size is tied up in a chair and attempts to scream but is unable to because of the gag in his mouth.<br/>
+Various tools rest on a table which is seen on the left side of the camera. <span style="color:orange">Dr. Knox is seen entering the camera's right-side field of view. His eyes appear to be bloodshot.</span> The man restrained is sweating and crying.)</em></p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">Heh. <em>(grabs a hammer and points it at the man.)</em> You must be really scared huh Conley?</span></p>
+<p>(the man hyperventilates and quickly nods)//</p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">I am really glad you gave me this opportunity Conley. <em>(Smiles.)</em> You have no idea how much I needed this.</span></p>
+<p><span style="color:orange"><em>(Dr. Knox walks up to the man and places both of his hands on the man's cheeks. Dr. Knox smiles as the man shakes in fear. He removes the man's gag.)</em></span></p>
+<p><strong>Mr. Graham:</strong> Fuck man! Please don't kill me! Just tell me what you want! I don't have that much but don't kill me, please!</p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">Oh Conley. I have no desire for that. Did you know what I saw in the alleyway yesterday?</span></p>
+<p><strong>Mr. Graham:</strong> What? I- I don't know! Look- <span style="color:orange"><em>(Dr. Knox quickly grabs a box cutter and stabs the man's right thigh.)</em></span> Fuck! God- godammit! Augh fucking shit!</p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">Do not lie to me, Conley. Say it.</span></p>
+<p><strong>Mr. Graham:</strong> Alright alright! Fine! I was fucking some bitch who messed up my ride! But I didn't harm them or anything- <span style="color:orange"><em>(Gets punched in the face by Dr. Knox.)</em></span> Ah fuck! You know what fuck you, man! I'm going to fucking kill you!</p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">Heheh. <em>(smiles)</em> There it is.</span></p>
+<p><strong>Mr. Graham:</strong> What the fuck is your problem? You're going to be a dead man!</p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">My problem is you, Conley. I think you're vermin. Filth. I see scum like you every day. Your kind rape and kill while the innocent victims just die? That's what has been itching me. You're not normal… you're simply a disgusting anomaly. You're not meant to live at all, you're a parasite.</span></p>
+<p><strong>Mr. Graham:</strong> You better fucking let me go! I'm going to call my guys and rip you to fucking pieces! We'll feed your family to the dogs!</p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">In another time, I was meant to contain horrors like you. Instead, I've come to the realization that it is simply pointless. <em>(Grabs a hammer and breaks the man's knee as he screams in response.)</em></span></p>
+<p><strong>Mr. Graham:</strong> You're fucking insane!</p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">I'm not. My idea is more effective honestly. And frankly, I enjoy the thought of it. <em>(Grabs a kitchen knife and cuts off the man's ear as Dr. Knox smiles listening to his screams.)</em> Oh yeah, I really do.</span></p>
+<p><strong>Mr. Graham:</strong> Look don't fucking kill me! I can turn myself in or I could give you everything I own! I don't want to fucking die, please!</p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">Oh I'm afraid that can't happen. <em>(He begins pressing both of his thumbs in the man's eyes as he continues screaming in pain.)</em> Now just close your eyes… <em>(Grabs a hand saw and quickly slices the man's throat.)</em> and die for me. <em>(Laughs maliciously.)</em> Ohhh yes.</span></p>
+<p><span style="color:orange"><em>(The man quickly begins bleeding out and chokes on his own blood while Dr. Knox watches intensely and smiles.)</em></span></p>
+<p><strong>Dr. Knox:</strong> <span style="color:orange">Now, you die. You will sleep. And you wil- will…</span> <em>(Closes his eyes.)</em> hah… what? I- <em>(Drops the hand saw.)</em> What was I- <em>(Places his hands on his head.)</em> What happened? What did I- <em>(Looks at the dead body.)</em> Oh no what the fuck?! Shit shit! <em>(Walks back to the wall.)</em> What did I do?! Oh god no! Noo! <em>(Falls down on the floor and looks at his bloody hands.)</em> What's happening to me? Why?!</p>
+<p><span style="color:red"><em>(A voice is heard.)</em></span></p>
+<p><span style="color:red"><strong>???:</strong> You saved him, William.</span></p>
+<p><strong>Dr. Knox:</strong> What? Who said that?</p>
+<p><span style="color:red"><strong>???:</strong> You said it yourself, they cannot be contained. You took matters into your own hands.</span></p>
+<p><strong>Dr. Knox:</strong> <em>(Stands up.)</em> I said show yourself! <em>(grabs a hammer)</em> Don't make me do this.</p>
+<p><span style="color:red"><strong>???:</strong> Heh. You were always the fucked up one.</span></p>
+<p><strong>Dr. Knox:</strong> Show yourself! Get out! I will-</p>
+<p><em>(Dr. Knox drops the hammer as he watches <span style="color:red">another duplicate of himself step out of the corner's shadow. This duplicate of himself is wearing red sunglasses, gloves, boots, a red long sleeve, and a black coat.</span>)</em></p>
+<p><strong>Dr. Knox:</strong> <em>(Quickly picks up the hammer again to protect himself.)</em> Wh- who are you?</p>
+<p><span style="color:red"><strong>???:</strong> <em>(Smiles.)</em> It's me. I've been with you since the very beginning. But now, <em>(Reaches his right hand out to Dr. Knox.)</em> I'm here to help you in your time of sorrow.</span></p>
+<p><strong>Dr. Knox:</strong> I don't understand, how is this possible?</p>
+<p><span style="color:red"><strong>???:</strong> I am the fuel that makes up who you truly are. I am the very cancer in the back of your head that you depend on. I am the Demon that won't let you sleep at night.</span></p>
+<p><strong>Dr. Knox:</strong> You cannot be serious.</p>
+<p><span style="color:red"><strong>???:</strong> Hmm, <em>(Punches Dr. Knox in the liver and throws him to the wall.)</em> how about that?</span></p>
+<p><strong>Dr. Knox:</strong> Augh, stop! Please!</p>
+<p><span style="color:red"><strong>???:</strong> <em>(Dr. Knox attempts to strike at the entity but it proceeds to break Dr. Knox's hand and begins to choke him.)</em> Every other part of you is weak William. I am the only sliver of proof of your strength. Submit. Now.</span></p>
+<p><em>((Dr. Knox grabs the nearby hand saw on the floor and strikes at the <span style="color:red">entity's neck, leaving the tool stuck as its blood pours everywhere.</span>)</em></p>
+<p><span style="color:red"><strong>???:</strong> <em>(Lets go of Dr. Knox and examines the injury.)</em> Haha! That's what I want to fucking see! <em>(Looks back at Dr. Knox as it removes the hand saw and begins absorbing the blood back and healing the wound.)</em> We've had this same dance many many times William. And each time, we grow stronger.</span></p>
+<p><strong>Dr. Knox:</strong> <em>(Stands up and holds his broken arm.)</em> What do you want with me?</p>
+<p><span style="color:red"><strong>???:</strong> To only help you of course. <em>(Presses its finger on Dr. Knox's chest.)</em> I know what you want in your heart. You want to save her. You want her.</span></p>
+<p><strong>Dr. Knox:</strong> I- But, it's not just her! It's the people trapped there!</p>
+<p><span style="color:red"><strong>???:</strong> Haha, sure William. You just want Angela all to yourself. I admit, she has a nice pair of tits. It makes sense why you want to fuck her so badly. I know you want her to worship you, please your fantasies, and offer her body to you. You just want to own her. But hey- <em>(Smiles.)</em> I'll jolt those things down too!</span></p>
+<p><strong>Dr. Knox:</strong> Fuck you! I'm going to tear your fucking face! <em>(Throws the hammer at the <span style="color:red">entity which catches it, then throws it at Dr. Knox's knee</span>, breaking it and falling to the floor.)</em></p>
+<p><span style="color:red"><strong>???:</strong> <em>(Laughs maliciously.)</em> While this is really funny to see, you need to start fucking listening to me. <em>(Grabs Dr. Knox and lifts him up, pushing him to an empty chair.)</em></span></p>
+<p><strong>Dr. Knox:</strong> <span style="color:red"><em>(Notices his leg and broken hand has healed.)</em></span> What the fuck? How did you-</p>
+<p><span style="color:red"><strong>???:</strong> I can help you save her and the others. All I ask… <em>(Grabs the knife and throws it perfectly on Mr. Graham's head.)</em> is for you to kill for me. You know what I mean. You know exactly what we want.</span></p>
+<p><strong>Dr. Knox:</strong> I- I can't do that! This is fucking insane! I'm not going to kill anyone! There are good people in Site-47! They have families!</p>
+<p><span style="color:red"><strong>???:</strong> You cannot deny me William. For you are denying yourself. And you know in your heart, that this is what you need.</span></p>
+<p><strong>Dr. Knox:</strong> I… I don't know.</p>
+<p><span style="color:red"><strong>???:</strong> <em>(Extends his hand to Dr. Knox.)</em> Obey my commands William, and you will have what you desire. I will make you The Savior. Kill in my name, and you will have her.</span></p>
+<p><strong>Dr. Knox:</strong> I… <em>(Looks at the <span style="color:red">entity's hand and grabs it</span>)</em> <span style="color:orange">accept.</span> Only for her.</p>
+<p><span style="color:red"><strong>???:</strong> <em>(Smiles.)</em> Excellent. Stand ready for my instructions soon.</span></p>
+<p><span style="color:red"><em>(The entity disappears into the corner's shadow.)</em></span></p>
+<p><em>(Dr. Knox stands up from the chair and observes everything that has happened in the room. He looks at the corpse and then at his <span style="color:orange">hands.</span>)</em></p>
+<p style="text-align: center;"><span style="font-size:150%;"><strong>[END VIDEO RECORDING]</strong></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br/></p>
+<div class="blbf-main">
+<div class="blbf-name-8 blbf-same-color">
+<p>On 02/08/2025, personnel discovered a digital message from an unidentified source in Site-47's network.</p>
+<p><br/></p>
+<div class="scp-image-block block-center" style="width:40%;"><img alt="symbol2.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/fragment:scp-8676-0/symbol2.png"/>
+<div class="scp-image-caption">
+<p>Are You Ready Foundation?</p>
+</div>
+</div>
+</div>
+</div>
+<p><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/></p>
+<div class="danke agent">
+<p>| End of document reached.<br/>
+| <a href="https://scp-wiki.wikidot.com/scp-8676/offset/1">&gt; Access latest file revision?</a></p>
+</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-811276-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-1')">1</a>. Reality bending.</div>
+<div class="footnote-footer" id="footnote-811276-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-2')">2</a>. At times may exhibit Class III reality-bending properties.</div>
+<div class="footnote-footer" id="footnote-811276-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-3')">3</a>. The strength of reality in a given area. For further reading, see <a class="newpage" href="/an-faq-or-what-the-hell-is-a-hume">An FAQ; Or, What The Hell Is A Hume?</a></div>
+<div class="footnote-footer" id="footnote-811276-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-4')">4</a>. An alloy of copper and beryllium that is frequently used in anomalous devices.</div>
+<div class="footnote-footer" id="footnote-811276-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-5')">5</a>. Mysterious energy emitted from living beings and sapient anomalies that can power thaumatology. For further reading, see this <a href="https://scp-wiki.wikidot.com/goc-supplemental-arad">lecture.</a></div>
+<div class="footnote-footer" id="footnote-811276-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-6')">6</a>. An anomalous field that fluctuates based on human belief and divine intervention. For further reading , see <a href="/akiva-counter-operating-instructions">Akiva Counter Operating Instructions</a>.</div>
+<div class="footnote-footer" id="footnote-811276-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-7')">7</a>. Originally developed by Dr. Aurelio Walker on behalf of the Department of Somniumistics a year ago.</div>
+<div class="footnote-footer" id="footnote-811276-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-8')">8</a>. The Greek Titan goddess of memory.</div>
+<div class="footnote-footer" id="footnote-811276-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-9')">9</a>. The use of memetic agents to force a person to obey a set of rules or guidelines. For further reading, see this <a href="https://scp-wiki.wikidot.com/operation-llewyn-dark">document.</a></div>
+<div class="footnote-footer" id="footnote-811276-10"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-10')">10</a>. A crystalline substance originating from Atlantis, capable of storing extreme amounts of digital data and electrical/thaumaturgical energy. For further reading, see this <a href="https://scp-wiki.wikidot.com/scp-6500/offset/2">document.</a></div>
+<div class="footnote-footer" id="footnote-811276-11"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-11')">11</a>. A form of specialized telepathic energy used by a variety of anomalies.</div>
+<div class="footnote-footer" id="footnote-811276-12"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-12')">12</a>. An anomalous connection between two locations, enabling rapid travel between them regardless of distance. For further reading, see this <a href="https://scp-wiki.wikidot.com/another-goddamn-magic-system">document.</a></div>
+<div class="footnote-footer" id="footnote-811276-13"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-13')">13</a>. An action or requirement that enables the opening of a Way. For further reading, see this <a href="https://scp-wiki.wikidot.com/wanderers-library-hub">document.</a></div>
+<div class="footnote-footer" id="footnote-811276-14"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-14')">14</a>. A global surveillance network developed to detect and monitor anomalous phenomena across the globe. For further reading, see this <a href="https://scp-wiki.wikidot.com/scp-5900">document.</a></div>
+<div class="footnote-footer" id="footnote-811276-15"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-811276-15')">15</a>. Identified as Conley Graham. A 32-year-old male of American descent. Previously worked as a janitor.</div>
+</div>
+</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-8676">SCP-8676</a>" by IamtheKyleKnight, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-8676">https://scpwiki.com/scp-8676</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Filename:</strong> fire.jpg<br/>
+<strong>Name:</strong> Burning Fire Background Texture<br/>
+<strong>Author:</strong> Image Catalog<br/>
+<strong>License:</strong> CC0 1.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/80a7a120-334e-4661-81ec-f04fffbbb9ab?q=burned&amp;p=46">https://openverse.org/image/80a7a120-334e-4661-81ec-f04fffbbb9ab?q=burned&amp;p=46</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> flowers.jpg<br/>
+<strong>Name:</strong> the dream of spring<br/>
+<strong>Author:</strong> Cornelia Kopp<br/>
+<strong>License:</strong> CC-BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/9ba22b1f-7631-4fa9-b554-cc05d2fe0640?q=dreams&amp;p=20">https://openverse.org/image/9ba22b1f-7631-4fa9-b554-cc05d2fe0640?q=dreams&amp;p=20</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> female.png<br/>
+<strong>Name:</strong> 25 April, 2015 - Girl with a red carnation<br/>
+<strong>Author:</strong> pedrosimoes7<br/>
+<strong>License:</strong> CC-BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/100234df-c477-470f-8182-a770930fcc1a?q=portuguese+woman&amp;p=52">https://openverse.org/image/100234df-c477-470f-8182-a770930fcc1a?q=portuguese+woman&amp;p=52</a><br/>
+<strong>Additional Notes:</strong> Modified so that the face is redacted.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> symbols.jpg<br/>
+<strong>Name:</strong> Symbols Drawing<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/iamthekyleknight" onclick="WIKIDOT.page.listeners.userInfo(7327238); return false;"><img alt="IamtheKyleKnight" class="small" src="https://www.wikidot.com/avatar.php?userid=7327238&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7327238)"/></a><a href="http://www.wikidot.com/user:info/iamthekyleknight" onclick="WIKIDOT.page.listeners.userInfo(7327238); return false;">IamtheKyleKnight</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/scp-8676/offset/0">SCP Foundation Wiki</a><br/>
+<strong>Additional Notes:</strong> I made this.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> brain1.jpg<br/>
+<strong>Name:</strong> MRI Scan<br/>
+<strong>Author:</strong> National Institutes of Health (NIH)<br/>
+<strong>License:</strong> Public Domain Mark 1.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/e659b181-323b-4f58-8e9a-1792d1846b69?q=brain+scan&amp;p=38">https://openverse.org/image/e659b181-323b-4f58-8e9a-1792d1846b69?q=brain+scan&amp;p=38</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> flower.jpg<br/>
+<strong>Name:</strong> Rose Red; Frost White<br/>
+<strong>Author:</strong> wit<br/>
+<strong>License:</strong> CC-BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/c3baefa6-7722-4f90-b8e9-bc714e3d47ed?q=frost&amp;p=60">https://openverse.org/image/c3baefa6-7722-4f90-b8e9-bc714e3d47ed?q=frost&amp;p=60</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> brain2.jpg<br/>
+<strong>Name:</strong> MRI Scan<br/>
+<strong>Author:</strong> National Institutes of Health (NIH)<br/>
+<strong>License:</strong> Public Domain Mark 1.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/951ab7cb-896d-4c38-a126-196874aab19b?q=brain+scan&amp;p=37">https://openverse.org/image/951ab7cb-896d-4c38-a126-196874aab19b?q=brain+scan&amp;p=37</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> hallway.png<br/>
+<strong>Name:</strong> NSLS-II (National Synchrotron Light Source-II), Brookhaven National Laboratory, Upton, NY<br/>
+<strong>Author:</strong> Oleg.<br/>
+<strong>License:</strong> CC-BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/e62bf02e-0866-4fab-b47f-ea5fa00cdbeb?q=Facility+hallway&amp;p=65">https://openverse.org/image/e62bf02e-0866-4fab-b47f-ea5fa00cdbeb?q=Facility+hallway&amp;p=65</a><br/>
+<strong>Additional Notes:</strong> Modified heavily by giving it a red filter.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> symbol.jpg<br/>
+<strong>Name:</strong> Symbol Drawing<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/iamthekyleknight" onclick="WIKIDOT.page.listeners.userInfo(7327238); return false;"><img alt="IamtheKyleKnight" class="small" src="https://www.wikidot.com/avatar.php?userid=7327238&amp;amp;size=small&amp;amp;timestamp=1765172230" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7327238)"/></a><a href="http://www.wikidot.com/user:info/iamthekyleknight" onclick="WIKIDOT.page.listeners.userInfo(7327238); return false;">IamtheKyleKnight</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/scp-8676/offset/0">SCP Foundation Wiki</a><br/>
+<strong>Additional Notes:</strong> I made this.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> symbol2.png<br/>
+<strong>Name:</strong> SCP Foundation (emblem)<br/>
+<strong>Author:</strong> The original SC697 @P logo was designed by far2, SCP on a free asset from Adobe Illustrator's 'Mad Science' asset library, which in turn was based on the electrostatic discharge warning symbol. The first high-resolution PNG version of the logo was made by Aelanna, based on the original SCP logo.<br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/86185b00-077c-4c6c-9528-01b93cc3e135?q=SCP&amp;p=2">https://openverse.org/image/86185b00-077c-4c6c-9528-01b93cc3e135?q=SCP&amp;p=2</a><br/>
+<strong>Additional Notes:</strong> Drew over the Foundation logo.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> scientists.png<br/>
+<strong>Name:</strong> Army scientists energize battery research<br/>
+<strong>Author:</strong> U.S. Army Combat Capabilities Development Command<br/>
+<strong>License:</strong> CC-BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/799cb9db-5d26-47eb-aeca-79bfff04794c?q=scientist&amp;p=41">https://openverse.org/image/799cb9db-5d26-47eb-aeca-79bfff04794c?q=scientist&amp;p=41</a><br/>
+<strong>Additional Notes:</strong> Modified so that both faces are redacted.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> clipboard.jpg<br/>
+<strong>Name:</strong> 159/365+1 Clipboard<br/>
+<strong>Author:</strong> DaveCrosby<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/d3022616-86fd-418f-876e-1a40b8e7e9d0?q=clipboard&amp;p=3">https://openverse.org/image/d3022616-86fd-418f-876e-1a40b8e7e9d0?q=clipboard&amp;p=3</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> blood1.jpg<br/>
+<strong>Name:</strong> No More Blood For Oil<br/>
+<strong>Author:</strong> andres.moreno<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/ea447fc0-0ce2-4b92-8352-04dbd4ca5ecf?q=Blood&amp;p=194">https://openverse.org/image/ea447fc0-0ce2-4b92-8352-04dbd4ca5ecf?q=Blood&amp;p=194</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> blood2.png<br/>
+<strong>Name:</strong> Blood in the Sink<br/>
+<strong>Author:</strong> BenGrantham<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/4eaecd8e-c0d1-431b-b4c4-b33bcd0ff81e?q=Blood&amp;p=65">https://openverse.org/image/4eaecd8e-c0d1-431b-b4c4-b33bcd0ff81e?q=Blood&amp;p=65</a><br/>
+<strong>Additional Notes:</strong> Added a black box.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> sun.jpg<br/>
+<strong>Name:</strong> Sun<br/>
+<strong>Author:</strong> Bruno_Caimi<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/baf1e3f4-2df7-4e41-bd82-6d5a78626f24?q=sun&amp;p=34">https://openverse.org/image/baf1e3f4-2df7-4e41-bd82-6d5a78626f24?q=sun&amp;p=34</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

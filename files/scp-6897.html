@@ -1,0 +1,517 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-6897</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-6897</h1>
+            <html><body><div id="page-content">
+
+<div style="display: none">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Show component code</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide component code</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc(var(--base-font-size) * (</span><span class="hl-number">266</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">))</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (min-width: 56.25</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem))</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) </span><span class="hl-number">0</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> / </span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> -webkit-sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">grid-area:</span><span class="hl-code"> side-bar</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">2.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">scroll</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-color </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                padding </span><span class="hl-number">300</span><span class="hl-code">ms linear,
+                margin </span><span class="hl-number">300</span><span class="hl-code">ms linear</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-tertiary-color, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">rtl</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-width:</span><span class="hl-code"> </span><span class="hl-string">thin</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-scroll-chaining:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+                </span><span class="hl-reserved">overscroll-behavior:</span><span class="hl-code"> contain</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(var(--swatch-primary-darker), </span><span class="hl-number">0.1</span><span class="hl-code">) /* Thumb */
+                rgba(var(--swatch-tertiary-color), </span><span class="hl-number">0.05</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-secondary-color, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">), </span><span class="hl-number">0.8</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-corner</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw + </span><span class="hl-number">100</span><span class="hl-code">vh)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-style:</span><span class="hl-code"> </span><span class="hl-string">inset</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-right:</span><span class="hl-code"> </span><span class="hl-number">2.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-primary-darker), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">1</span><span class="hl-code">rem) - var(--sidebar-width-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(</span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)  /* Thumb */
+                rgba(</span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgb(var(--swatch-primary-darker, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">) /* Thumb */
+                rgb(var(--swatch-menubg-color, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;  /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> url("https://scp-wiki.wdfiles.com/local--files/component%</span><span class="hl-number">3</span><span class="hl-code">Acollapsible-sidebar/sidebar-tab.svg")</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-attachment:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem </span><span class="hl-number">12.875</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">em</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">9</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> var(--final-header-height-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--final-header-height-on-desktop, </span><span class="hl-number">0.688</span><span class="hl-code">rem) - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> calc(var(--final-header-height-on-desktop, -</span><span class="hl-number">2.313</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--swatch-alternate-color, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> + </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.scpnet-interwiki-wrapper</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Print</span><span class="hl-code"> </span><span class="hl-identifier">Friendly</span><span class="hl-code"> </span><span class="hl-identifier">Formatting</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">Estrella</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code"> 
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><a href="https://scp-wiki.wikidot.com/grigori-karpin-s-author-page">More by Grigori Karpin</a></strong></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<div class="scp-image-block block-right" style="width:400px;"><img alt="VKTM%20-%20Office%20Building" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20-%20Office%20Building"/>
+<div class="scp-image-caption">
+<p>The building containing SCP-6897.</p>
+</div>
+</div>
+<h4 id="toc0"><span><span style="text-decoration: underline;">Special Containment Procedures</span></span></h4>
+<p>The building containing SCP-6897 has been purchased by the Foundation through the <a href="https://scp-wiki.wikidot.com/secure-facility-dossier-site-106">Department of Procurement and Liquidation</a>. Businesses previously renting office space in the building have been evicted or provided lease buyouts, and the building itself has been closed to the public.</p>
+<p>The O5 Council is considering utilizing the property as a provisional Site, but until such a decision is made, the building is to appear condemned to the public.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<h4 id="toc1"><span><span style="text-decoration: underline;">Description</span></span></h4>
+<p>SCP-6897 is an extradimensional space connected to a door in a nondescript office building in Irvine, California. This door is composed of particle board and covered in a false walnut veneer. The density of the door is 78 grams per cm<sup>3</sup>.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> Despite this, the door does not resist opening, and does not put the resultant strain on the frame and hinges one would expect from such density. The door is locked with a 16-digit combination electronic mechanism with 26 keys. The keys feature variations on logos from Fortune 500 companies instead of letters, numbers or symbols. One of the logos is that of <strong><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media</a></strong> (GOI-5889).</p>
+<p>Entrance to SCP-6897 is impossible without either the code or an individual already within the anomaly opening the door.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> SCP-6897 resembles a non-anomalous professional building with cubicles, internal offices, and conference rooms. The boundaries of SCP-6897 have not been established to any specificity, as they cannot be observed on footage retrieved from visitors.</p>
+<p>Individuals who enter SCP-6897 have noted that light and gravity do not follow the usual physical laws.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> The sounds of fax machines, old modems, crackling fires, warped gong strikes, and low murmuring can be heard in every known area of SCP-6897. No source for these sounds has been identified.</p>
+<p>To date, only two civilians have accessed the anomaly prior to the Foundation’s discovery, and both have shown complete resistance to amnestics. To maintain the Veil, these individuals have been held in a detainment center maintained by Foundation security services pending processing by the Ethics Committee.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+<p><strong>Discovery:</strong></p>
+<p>In late 2021, several reports to the Irvine Police Department noted the sound around the building was abnormally reduced.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> After more than ten such reports, the local precinct tasked two police officers with investigating.</p>
+<div style="border:solid 1px #000000; color:#000000; border-radius: 10px; background:#E7EBED; padding:5px; margin-bottom: 10px; padding:10px; font-family: 'Palatino Linotype'">
+<p><em>The following is a transcript of a recording dated 12 November, 2021 from the two responding officers’ body cameras. Both the officers and their cameras were later taken into Foundation custody.</em></p>
+<div class="blockquote">
+<p><em>[The two police officers – Grimes and Hernandez – exit their vehicle and approach the building containing SCP-6897.]</em></p>
+<p><strong>Officer Grimes:</strong> <em>[Activating her radio.]</em> Central, Officer 843 and 758 reporting. We’re at 1611 Bristol responding to the… noise complaint, I guess?</p>
+<p><strong>Central:</strong> Roger.</p>
+<p><strong>Grimes:</strong> I’m sorry. Can you repeat the complaints again?</p>
+<p><strong>Central:</strong> Uh, basically we’ve got various versions of “the area around the building is too quiet” but that doesn't make a lot of sense to me. Thing is the last one was from the captain’s wi–</p>
+<p><strong>Grimes:</strong> Forget it, Central. I know what they meant.</p>
+<p><em>[Grimes and Hernandez look up as a commercial airliner flies low overhead on takeoff. There is very little noise on the recording.]</em></p>
+<p><strong>Hernandez:</strong> What the fuck?</p>
+<p><strong>Grimes:</strong> I don’t know.</p>
+<p><strong>Hernandez:</strong> How you wanna handle this? Probably just a trick of acoustics.</p>
+<p><strong>Grimes:</strong> Must be <em>some</em> trick… I don’t know. We got sent out here, something is clearly happening. Least we can do is ask around the office.</p>
+<p><em>[Hernandez nods and heads towards the entrance. He stares up at the sky for a moment as he holds the door for Grimes and then, after shaking his head, follows her in.]</em></p>
+<p><strong><em>[The following thirty minutes is redacted for brevity. The two officers ask at each of the offices in the building – consisting of medical practices, xray techs, labs, and several financial advisors – receiving no significant answers. Those asked noted the reduction in sound from the aircraft, which was said to be audible within the building prior to the last thirty days. No further information was given.]</em></strong></p>
+<p><em>[The officers approach the elevator bank on the second floor.]</em></p>
+<p><strong>Grimes:</strong> Alright, let’s get out of here.</p>
+<p><strong>Hernandez:</strong> But we haven’t checked with anyone on the third floor.</p>
+<p><em>[Grimes sighs and nods, hitting the button for the third floor in the elevator.]</em></p>
+<p><em>The doors open on a long hallway. The shape of the hallway does not match the exterior dimensions of the building – the elevators are opposite a glass embankment looking out on the parking lot, but this floor plan stretches out into space that should be outside the boundaries of the structure. Neither officer notices. At the end of the dim hallway, nearly fifty meters long, is a single doorway illuminated by recessed lighting directly above the frame on the ceiling. Both officers proceed slowly down the corridor. Just as Grimes is about to knock on the door, it is opened quickly and a bright light shines through. Both officers shield their eyes due to the change in the light levels.]</em></p>
+<p><strong>Unknown:</strong> Oh, thank goodness, we’ve been waiting for you. Come in! Come in!</p>
+<p><em>[A female figure stands in front of the bright light, only seen in silhouette.]</em></p>
+<p><strong>Grimes:</strong> Ma’am, we’re here to investi–</p>
+<p><strong>Unknown:</strong> Yes yes, forget all that, come in already!</p>
+<p><em>[Both officers enter through the open door and their body cameras adjust to the light levels revealing an office of nondescript design. The walls visible are clearly internal walls, not the exterior of the building. No visible windows appear on camera at any point.]</em></p>
+<p><strong>Grimes:</strong> Ma’am, we need to ask you a few ques–</p>
+<p><em>[Grimes stops speaking as the woman comes into the camera’s view. The woman is dressed in a tailored, charcoal pant suit in three inch heels and with a ruffled blouse. She is also wearing her hair in a bob style over a bandage wrapped around her head, covering her eyes. Trails of blood seep from where the eye orbits would be placed, soaking through the bandage, and dripping down onto her suit jacket and blouse.]</em></p>
+<p><strong>Hernandez:</strong> Ma’am, do you need medical assistance? We can have an ambulance here within minutes.</p>
+<p><strong>Unknown:</strong> Why?</p>
+<p><strong>Hernandez:</strong> Because of your eyes. You’re bleeding pretty profusely from your eyes.</p>
+<p><strong>Unknown:</strong> Oh I don’t have eyes, so never you worry! Now, my name is Mari MacPhaerson and we’ve been waiting for you! Need to keep to a schedule when you’re producing media<sup>TM</sup>.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup></p>
+<p><strong>Grimes:</strong> <em>[Clears her throat]</em> I’m sorry, what media?</p>
+<p><strong>MacPhaerson:</strong> Why, this media!</p>
+<p><em>[She waves her arm, beckoning towards the office and the many individuals working in cubicles. Each individual, some appearing human and others not<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup> stand up from their cubicles and smile towards the officers. Digital effects are suddenly added to the footage: an unfolding pennant and fireworks, and then words play across the screen, perfectly framed. The footage loses its grain and aspect ratio and appears at 4k resolution.]</em></p>
+
+<p><strong>Grimes:</strong> Oh fuck. Why can I see that?</p>
+<p><strong>MacPhaerson:</strong> Well, recently, a lot of our fans have been asking for some behind-the-scenes action. Find out how the sausage is made, don’t ya know? And we thought, what better way than a guerrilla documentary? Flashy edits, some special effects, and a whole lot of that special attention only Vikander-Kneed can show a piece of media.</p>
+<p><strong>Grimes:</strong> No, I meant why can I see this over my eyes?</p>
+<p><strong>MacPhaerson:</strong> I wouldn't want to say, dear. We don't practice discrimination on the basis of disability, or career choice.</p>
+<p><strong>Grimes:</strong> What do you mean?</p>
+<p><strong>MacPhaerson:</strong> Let's get on with the tour!</p>
+<p><em>[The two officers and MacPhaerson are abruptly transported to somewhere else in the building. Grimes falls to her knees and vomits. MacPhaerson does not indicate she has noticed, simply staring directly into Hernandez’ body camera.]</em></p>
+<p><strong>MacPhaerson:</strong> First stop, creative! As you know, we at Vikander-Kneed Technical Media are trying to bring about the Better Tomorrow<sup>TM</sup> through better media! And that all starts with creative.</p>
+<p><em>[Hernandez begins to sway, but as MacPhaerson turns away, she holds one hand up to his shoulder to steady him.]</em></p>
+<p><strong>MacPhaerson:</strong> What you see before you is the heart and soul of VKTM creative: The T.H.I.N.K T.A.N.K.</p>
+<p><em>[MacPhaerson turns back to Hernandez’ body camera, crouches slightly and holds a hand up to her mouth before whispering.]</em></p>
+<p><strong>MacPhaerson:</strong> I’d tell you what the acronym is for, but then I’d have to kill you.</p>
+<p><em>[She levels her bleeding orbits at the camera for nearly a full minute. Grimes continues to retch. Finally, MacPhaerson sighs and stands straight, turning towards Grimes.]</em></p>
+<p><strong>MacPhaerson:</strong> Dear, are you planning on doing that for much longer? It’s just horribly disgusting and not in the way we usually like our media to involve.</p>
+<p><em>[MacPhaerson pats the back of the officer’s head a few times and then indicates the cubicles in front of her. When Hernandez bends to help Grimes up, MacPhaerson snaps her fingers and Hernandez is physically dragged towards her, perfectly framing her in front of the cubicles. Grimes has regained her feet and walks toward them, pulling out her night stick.]</em></p>
+<p><strong>MacPhaerson:</strong> The thing you have to understand when you consider where media comes from, is inspiration. But that’s elusive, isn’t it? Where do all our best ideas come from? It’s one of the age old dilemmas for the artist. Well, we’ve solved that problem with T.H.I.N.K T.A.N.K.</p>
+<p><em>[Grimes raises her hand to strike the woman and MacPhaerson extends her arm, catching the night stick and pulling it away in a smooth motion. Grimes is physically pulled from her feet by the motion and thrown to the ground. MacPhaerson hands the night stick to a PA who has appeared from behind a cubicle.]</em></p>
+<p><strong>MacPhaerson:</strong> Now here we see the first archival picture of the inaugural T.H.I.N.K T.A.N.K.!</p>
+<p><em>[Grimes is suddenly on her feet and placed in front of a framed picture.]</em></p>
+
+<p><strong>MacPhaerson:</strong> Requiescat in pace.</p>
+<p><em>[MacPhaerson turns and indicates the cubicles in front of her.]</em></p>
+<p><strong>MacPhaerson:</strong> But as you can see, we’ve improved a lot over the years!</p>
+<p><em>[Hernandez turns, panning across the cubicles. Seated in front of computers, their legs bound in chains and their necks restrained to the chair in iron bands, sit four individuals. They are editing footage, writing scripts, drawing and recording dialogue, respectively.]</em></p>
+<p><strong>Hernandez:</strong> Hey, you can’t keep these people locked up!</p>
+<p><em>[Hernandez reaches for his gun, but finds the holster empty. A PA quickly walks around the corner of a cubicle, holding two berretta pistols. Hernandez turns to look at Grimes and sees her holster is empty as well.]</em></p>
+<p><strong>MacPhaerson:</strong> What do you mean? They love it here! They live creatively fulfilling jobs making the brilliant media Vikander-Kneed distributes.</p>
+<p><strong>Hernandez:</strong> But they’re chained up!</p>
+<p><strong>MacPhaerson:</strong> That’s the dedication to their art.</p>
+<p><strong>Hernandez:</strong> There’s an iron bar around their throats!</p>
+<p><strong>MacPhaerson:</strong> They know what they did.</p>
+<p><strong>Grimes:</strong> <em>[Walking up beside Hernandez]</em> Hey, some of them look familiar.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup></p>
+<p><strong>MacPhaerson:</strong> No idea what you mean. Now let’s keep moving, we have a schedule to keep!</p>
+<p><em>[The three are suddenly in a cafeteria. Grimes sways on her feet, covering her mouth, but does not fall. Hernandez steadies his partner, as MacPhaerson stands over a table of food. Two PAs are rushing to set it as she waves them away. Neither of the PAs have mouths or ears.]</em></p>
+<p><strong>MacPhaerson:</strong> Hungry?</p>
+<p><strong>Hernandez:</strong> No, we’re not hungry, whatever you’re doing is making her sick and I don’t feel great either. We came here to ask some questions and you’ve revealed any number of felonies, we’re going to have to arr–</p>
+<p><strong>MacPhaerson:</strong> Here at Vikander-Kneed, we like to keep our employees well fed. There’s a full kitchen and three chefs on staff. Anything you could want, we’ve got.</p>
+<p><strong>Hernandez:</strong> We don’t care, we’re here to talk about the noise complaints.</p>
+<p><strong>MacPhaerson:</strong> So, today we’ve got Thai. Pad see ew, it looks like. Mmmmm, love that black bean sauce.</p>
+<p><strong>Grimes:</strong> Did you hear him? The noise complaints. Do you know anything about them?</p>
+<p><strong>MacPhaerson:</strong> Why would anyone complain about less noise? That’s ridiculous.</p>
+<p><strong>Grimes:</strong> Oh, so you do know something about it.</p>
+<p><strong>MacPhaerson:</strong> Of course, I do. We had to do something about the noise, it was completely ruining our recordings.</p>
+<p><strong>Grimes:</strong> What? How could you have had anything to do with it?</p>
+<p><em>[MacPhaerson touches her nose with her index finger and turns back to the food.]</em></p>
+<p><strong>MacPhaerson:</strong> The secret to good media is keeping your staff fed and happy, and never letting them go home.</p>
+<p><em>[She laughs.]</em></p>
+<p><strong>MacPhaerson:</strong> Oh my god, your faces. I’m kidding! They don’t have homes.</p>
+<p><em>[She sits down with a plate of pad see ew and begins to eat slowly. The two police officers say nothing but stand in such a way as to perfectly frame her against the backdrop of a giant Vikander-Kneed Technical Media logo painted on the wall. MacPhaerson continues to eat silently for twenty-four minutes and four seconds.]</em></p>
+<p><em>[MacPhaerson gets up and wipes her mouth with a napkin. She turns to the two officers.]</em></p>
+<p><strong>MacPhaerson:</strong> You’re sure you don’t want any?</p>
+<p><em>[Suddenly, the two officers are moving again – prior to this the body cameras were steady, indicating no movement.]</em></p>
+<p><strong>Grimes:</strong> Yes, we’re su– hey! How did you do that? I couldn’t move the whole time you were eating, just had to fucking watch.</p>
+<p><strong>MacPhaerson:</strong> Such language! Guess we’ll edit that out in post. Not very professional camera operators, if I say so.</p>
+<p><strong>Hernandez:</strong> We’re not camera operators, we’re co–</p>
+<p><strong>MacPhaerson:</strong> <em>[Placing a finger on his mouth]</em> Hush, we don’t like labels here. Now, on with the show!</p>
+<p><em>[She leads them out into corridor with several different conference rooms to either side, each filled with various humanoid entities having heated discussions.]</em></p>
+<p><strong>MacPhaerson:</strong> Somewhere along the line, Vikander-Kneed’s fans have gotten the idea that we have some sort of political messaging. And I just want to state for the record: hogwash! We’re just a media company, trying to spread good content like any other!</p>
+<p><em>[Behind MacPhaerson, in one of the conference rooms, a male individual with glowing eyes and smoke coming out from underneath his shirt writes in bold letters on a whiteboard: CORPORATIONS ARE EVIL.]</em></p>
+<p><em>[MacPhaerson turns, looks into the room and then grabs a black curtain draped along the corridor, pulling it so it obscures the meeting room.]</em></p>
+<p><em>[Printed on the curtains is white text stating: “All views expressed by participants in the conference room do not reflect the opinions of Vikander-Kneed Technical Media. The views expressed are based on the individuals’ personal perspective, and neither Vikander-Kneed nor their affiliates are liable for any statements made within the confines of the conference room.”]</em></p>
+<p><strong>MacPhaerson:</strong> Much better. Next stop: the Mail Room! Exciting!</p>
+<p><em>[The two officers follow MacPhaerson down the corridor and enter the mail room.]</em></p>
+<p><strong>MacPhaerson:</strong> This is where the magic happens. Every piece of media we produce, we ship out through here.</p>
+<p><strong>Grimes:</strong> You don’t <a href="https://scp-wiki.wikidot.com/scp-5698">have a warehouse?</a></p>
+<p><strong>Hernandez:</strong> You don’t <a href="https://scp-wiki.wikidot.com/scp-5571">distribute digitally?</a></p>
+<p><strong>MacPhaerson:</strong> I didn’t understand a single word either of you just said.</p>
+<p><em>[MacPhaerson approaches a young woman bent over a rolling cart brimming over with physical media, including VHS tapes, CDs, cassette tapes, and floppy discs.]</em></p>
+<p><strong>Hernandez:</strong> Are you kidding with this?</p>
+<p><strong>MacPhaerson:</strong> <em>[She turns back to the officer, shrugging.]</em> Which part?</p>
+<p><strong>Grimes:</strong> Are those floppy discs?</p>
+<p><strong>MacPhaerson:</strong> I don’t know the technical details, I’m with PR.</p>
+<p><em>[MacPhaerson moves back over the young woman.]</em></p>
+<p><strong>MacPhaerson:</strong> Tell the nice folks at home what you do here every day.</p>
+<p><em>[The young woman looks into the camera, opens her mouth, and the recording is suddenly overlaid with the sound of a garbage disposal.]</em></p>
+<p><strong>MacPhaerson:</strong> Oh, how fun! And do you enjoy it?</p>
+<p><em>[The young woman nods and opens her mouth, this time the sound of hundreds of flying insects can be heard on the recording.]</em></p>
+<p><strong>MacPhaerson:</strong> Well, that’s great. How long have you worked here?</p>
+<p><strong>Unknown woman:</strong> Six months.</p>
+<p><strong>MacPhaerson:</strong> Sorry?</p>
+<p><strong>Unknown woman:</strong> I said I’ve worked here six months.</p>
+<p><strong>MacPhaerson:</strong> Didn’t catch that.</p>
+<p><em>[The young woman sighs, hangs her head and opens her mouth. The sound of a train tracks being driven over is heard.]</em></p>
+<p><strong>MacPhaerson:</strong> Well, that’s wonderful. I hope you stay with us for years and years!</p>
+<p><em>[MacPhaerson turns back around and guides the two police officers out of the mail room. She leads them to the front door of SCP-6897 and opens it, showing the long dark hallway.]</em></p>
+<p><em>[Both officers are returned their weapons by the production assistant. MacPhaerson stands at the door, leaning on it and holding it open in one hand.]</em></p>
+<p><strong>MacPhaerson:</strong> I just want to thank you both, it’s been very helpful. We’ve gotten a lot of good footage. I hope all of Vikander-Kneed’s many many fans are satisfied with this behind the scenes documentary!</p>
+<p><strong>Grimes:</strong> I just…</p>
+<p><strong>MacPhaerson:</strong> Yes?</p>
+<p><strong>Grimes:</strong> I don’t know what the hell just happened, but were you serious about being responsible for dulling the sound of the planes outside?</p>
+<p><strong>MacPhaerson:</strong> Yes, of course. Why would I lie?</p>
+<p><strong>Grimes:</strong> Okay. Can you stop that? It’s causing people a lot of disorientation and we keep getting complaints.</p>
+<p><strong>MacPhaerson:</strong> Absolutely not.</p>
+<p><em>[The door slams shut.]</em></p>
+</div>
+</div>
+<p>After the investigating officers reported the above events, embedded Foundation agents alerted their handlers. Both officers were detained and interviewed by Dr. Lillihammer of Site-43, given that Site’s <em>de facto</em> jurisdiction over anomalies connected to GOI-5889 (“<strong><a href="https://scp-wiki.wikidot.com/Vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media</a></strong>”). Noting the officers’ complete immunity to amnestics – and believing this to be a side effect of visiting SCP-6897 – Dr. Lillihammer suggested both be detained indefinitely as neither would be of any use to the Foundation.</p>
+<p>Further access to SCP-6897 has proven entirely impossible, including unsuccessful attempts at demolishing portions of the building's exterior and several failed breaches using explosive ordinance. Following these attempts, Dr. Lillihammer knocked on the door to SCP-6897. After several minutes a note was slid under the door which has been reproduced below:<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-9')">9</a></sup></p>
+<div style="border:solid 1px #000000; color:#000000; border-radius: 10px; background:#E7EBED; padding:5px; margin-bottom: 10px; padding:10px; font-family: 'Palatino Linotype'">
+
+<blockquote>
+<p><strong>Update</strong>: The office was not, in fact, open.</p>
+</blockquote>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. The usual density of particle board tops out at .8 g/cm<sup>3</sup>.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Foundation engineers attempted to breach the door to SCP-6897 with shaped explosive charges after conventional means were exhausted, which also failed.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Light observed within the anomaly has no apparent source, instead seeming to hover around points of interest in an ambient manner. Objects – such as paper and pens – have been observed to float from one cubicle to another, and individuals note the absence of gravity in stairwells and elevator shafts – the latter containing no elevators and coated in rubber protective material allowing an individual to traverse up or down the shaft via handholds.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Such detainment centers are maintained to preserve the Veil when amnestics are ineffective, and the individual is not a viable target of recruitment due to lack of beneficial skills.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. The office building lies directly under the path of a nearby airport’s runway, producing significant decibels every time a commercial airliner takes off.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Recording did not actually register the phrase “TM” but invariably, transcripts have included it and the notation cannot be deleted for unknown reasons.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. A male individual with a metal snout shaped like an anteater's, a female individual with a digital clock instead of a mouth and bright blue skin, and a moose with three television screens instead of a head are but a few of those seen on camera.</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. Facial recognition has identified the four individuals to a 85% certainty as Joss Whedon, Harvey Weinstein, Roman Polanski, and Bryan Singer.</div>
+<div class="footnote-footer" id="footnote-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-9')">9</a>. Despite the obvious laser printing evinced by the document, radiocarbon dating has established its production in 1905 (within a +/- 7 year margin of error).</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-6897">SCP-6897</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-6897">https://scpwiki.com/scp-6897</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> Office building<br/>
+<strong>Author:</strong> Laurie Avocado<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/auntylaurie/16396792480/">https://www.flickr.com/photos/auntylaurie/16396792480/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Empty Cubicles<br/>
+<strong>Author:</strong> Oregon Dept. of Transportation<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/oregondot/49717469056/">https://www.flickr.com/photos/oregondot/49717469056/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Dublin Prison<br/>
+<strong>Author:</strong> Tony Hisgett<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/hisgett/221947325/">https://www.flickr.com/photos/hisgett/221947325/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> World map 3d<br/>
+<strong>Author:</strong> KCP4911<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/29712230@N08/2861478881/">https://www.flickr.com/photos/29712230@N08/2861478881/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: vintage paper texture<br/>
+<strong>Author</strong>: pinkorchid_too (Sandra)<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://ccsearch-dev.creativecommons.org/photos/6a5196e8-3810-4017-bd26-84f0d08b797c">link</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

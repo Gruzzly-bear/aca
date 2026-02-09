@@ -1,0 +1,505 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-6602</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-6602</h1>
+            <html><body><div id="page-content">
+
+<div style="display: none">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Show component code</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide component code</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc(var(--base-font-size) * (</span><span class="hl-number">266</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">))</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (min-width: 56.25</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem))</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) </span><span class="hl-number">0</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> / </span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> -webkit-sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">grid-area:</span><span class="hl-code"> side-bar</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">2.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">scroll</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-color </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                padding </span><span class="hl-number">300</span><span class="hl-code">ms linear,
+                margin </span><span class="hl-number">300</span><span class="hl-code">ms linear</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-tertiary-color, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">rtl</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-width:</span><span class="hl-code"> </span><span class="hl-string">thin</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-scroll-chaining:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+                </span><span class="hl-reserved">overscroll-behavior:</span><span class="hl-code"> contain</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(var(--swatch-primary-darker), </span><span class="hl-number">0.1</span><span class="hl-code">) /* Thumb */
+                rgba(var(--swatch-tertiary-color), </span><span class="hl-number">0.05</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-secondary-color, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">), </span><span class="hl-number">0.8</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-corner</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw + </span><span class="hl-number">100</span><span class="hl-code">vh)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-style:</span><span class="hl-code"> </span><span class="hl-string">inset</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-right:</span><span class="hl-code"> </span><span class="hl-number">2.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-primary-darker), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">1</span><span class="hl-code">rem) - var(--sidebar-width-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(</span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)  /* Thumb */
+                rgba(</span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgb(var(--swatch-primary-darker, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">) /* Thumb */
+                rgb(var(--swatch-menubg-color, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;  /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> url("https://scp-wiki.wdfiles.com/local--files/component%</span><span class="hl-number">3</span><span class="hl-code">Acollapsible-sidebar/sidebar-tab.svg")</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-attachment:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem </span><span class="hl-number">12.875</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">em</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">9</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> var(--final-header-height-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--final-header-height-on-desktop, </span><span class="hl-number">0.688</span><span class="hl-code">rem) - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> calc(var(--final-header-height-on-desktop, -</span><span class="hl-number">2.313</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--swatch-alternate-color, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> + </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.scpnet-interwiki-wrapper</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Print</span><span class="hl-code"> </span><span class="hl-identifier">Friendly</span><span class="hl-code"> </span><span class="hl-identifier">Formatting</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">Estrella</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code"> 
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><a href="https://scp-wiki.wikidot.com/grigori-karpin-s-author-page">More by this author</a></strong></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<hr/>
+<div class="scp-image-block block-right" style="width:400px;"><img alt="Mausoleum%20Interior" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/Mausoleum%20Interior"/>
+<div class="scp-image-caption">
+<p>Interior of St. Simeon’s Mausoleum in Friedberg, Germany.</p>
+</div>
+</div>
+<h4 id="toc0"><span><span style="text-decoration: underline;">Special Containment Procedures</span>:</span></h4>
+<p>METATRON.aic is to keep watch on police reports from Friedberg for any incidents matching the descriptions of SCP-6602. The grounds are to continue in their normal fashion, free for civilian visitation.</p>
+<p>Foundation personnel are never to enter the grounds of St. Simeon’s.</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<h4 id="toc1"><span><span style="text-decoration: underline;">Description</span>:</span></h4>
+<p>SCP-6602 represents a series of anomalous events which occurred in and around St. Simeon’s Cemetery and Mausoleum, which is just outside of Friedberg, Germany.</p>
+<p>SCP-6602’s anomalous qualities include ontokinetic shifts of local baseline reality, compulsive cognitohazards, atemporal progression of time, and geospatial manipulation.</p>
+<p><strong>Discovery</strong>: Foundation agents were alerted to the presence of an anomaly in the vicinity of the graveyard on 25 May, 2021. Several teenagers from the Dorheim district of Friedberg had announced on social media that they were going to host a party at the graveyard on midnight of 25 May, 2021; none of those who appeared at St. Simeon’s ever returned home. Local police investigated after several parents made reports of their missing children, but the officers who entered the grounds reported they were unable to navigate through the mausoleum. No further information was made available, but embedded agents in the <em>Bundespolizei</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> reported the disappearances to command.</p>
+<p>Agents from Site-91 were dispatched to investigate.</p>
+<div style="border: solid 5px #000000; padding: 1px 15px; background:#E5E5E2; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<div class="blockquote">
+<div style="text-align: center;">
+<p><strong>Retrieved body-cam footage from Foundation personnel.</strong></p>
+</div>
+<p><strong>Personnel Present</strong>: <em>Agents Gamma and Phi.</em></p>
+<hr/>
+<p><em>[Agents Gamma and Phi enter the mausoleum. Phi says something to Gamma; his lips are visible moving on camera, but no sound is recorded. Gamma responds, indicating the agents are communicating. Despite this, sound is heard on recording, including the footsteps of the agents Gammaing down the hall.]</em></p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="Mausoleum%20stained%20glass-1" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/Mausoleum%20stained%20glass-1"/>
+<div class="scp-image-caption">
+<p>Stained glass found within St. Simeon’s.</p>
+</div>
+</div>
+<p><em>[Agent Gamma stops only a few feet into the mausoleum, standing in front of a stained glass mural on the wall between individual crypt spaces.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> She points at it and says something to the other agent.]</em></p>
+<p><em>[Agent Phi examines the surrounding crypts and their brass placards. The names on the placards are readable when first visible on camera, but then the letters boil away – the surface of the brass bubbles like the surface of boiling water and the letters vanish in what appears to be steam. Neither agent appears to notice the anomaly, not even when Agent Phi’s fingers are touching the boiling metal. His fingers smoke and char from the heat, but the agent exhibits no reaction.]</em></p>
+<div style="text-align: center;">
+<p><strong><em>Approximately four minutes are lost to corruption of the digital file.</em></strong></p>
+</div>
+<p><em>[Agent Gamma stands in front of another stained glass mural. Her eyes narrow and she leans forward. She closes her eyes and touches the mural. A moment later Agent Gamma recoils, stepping away from the mural.]</em></p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="Mausoleum%20stained%20glass-2%28a%29" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/Mausoleum%20stained%20glass-2%28a%29"/>
+<div class="scp-image-caption">
+<p>Stained glass found within St. Simeon’s.</p>
+</div>
+</div>
+<p><em>[Gamma falls to her knees and places her hands on the marble flooring. Agent Phi reaches down to help her up but the flooring splashes around his foot as if the material was liquid. He tries to step backward but both agents fall through the surface.]</em></p>
+<p><em>[Darkness is all that is visible on the footage for the first fifteen seconds. Then a faint green illumination grows from off camera until both agents are visible, falling through the air. A bell is ringing faintly. Both agents are conscious and flailing as they fall.]</em></p>
+<p><em>[The ringing grows in volume (included below), and the agents’ descent slows until they are deposited to a graveyard which resembles the grounds of St. Simeon’s.]</em></p>
+<p><iframe allowtransparency="true" class="html-block-iframe" frameborder="0" src="/scp-6602/html/4a93570b4e58fe0e6c2edfdcf817f5dffde60cfc-11098729151336059899"></iframe></p>
+<p><em>[A group of figures is standing around an open grave, their physical presences masked under cognitohazard, visible as silhouettes. A soft rain begins. The green light intensifies, filtered through the mist.]</em></p>
+<div style="text-align: center;">
+<p><strong><em>Approximately three minutes are lost to corruption of the digital file.</em></strong></p>
+</div>
+<p><em>[Agent Gamma looks down into the open grave. There is an alabaster coffin within. The coffin grows, the material stretching up and out until it is a wall of the mausoleum of St. Simeon’s. Centered within the wall is another stained glass mural.]</em></p>
+<div class="scp-image-block block-right" style="width:200px;"><img alt="Mausoleum%20stained%20glass-3" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/Mausoleum%20stained%20glass-3"/>
+<div class="scp-image-caption">
+<p>Stained glass depicting Agent Phi in 19<sup>th</sup> century garb and hair style.</p>
+</div>
+</div>
+<p><em>[The bells fade and the green light gradually diminishes, replaced with sunlight and fluorescent fixtures. Agent Phi stares at the stained glass. Agent Gamma places her hand on his shoulder but Phi shrugs himself free. He turns to the other agent and starts talking animatedly. He throws his hands in the air and starts towards the exit. Agent Gamma follows behind him. He turns the corner which should lead to an exit, but finds another hallway of the mausoleum, stretching on for hundreds of meters.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup>]</em></p>
+<p><em>[Agent Phi kicks a nearby bench. He turns to see Agent Gamma speaking. She is pointing to the placards. The names are glowing, the letters rearranging continuously. Phi touches the nearest nameplate and finally notices his fingertips are burned. His scream is audible on the recording. He falls against the crypt spaces, sliding down the wall while cradling his burnt hand.]</em></p>
+<p><em>[Gamma kneels before him and extracts a medkit from her pack. She sprays an antiseptic/anesthetic chemical on Phi’s fingers. Tears squeeze through Phi’s closed eyes. The bells begin ringing again. Gamma stands and looks down the hall, her camera picking up movement from the marble of the walls, as the crypt seals begin stretching out. Her attention is on the end of the hall, which is replaced with green light again shining through the mist which is filling the hall.]</em></p>
+<p><em>[The sound of stone grinding distracts Gamma, as she turns to her left and stares at the wall, seeing the marble slabs stretch and part, revealing a new stained glass mural.]</em></p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="Mausoleum%20stained%20glass-4%28a%29" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/Mausoleum%20stained%20glass-4%28a%29"/>
+<div class="scp-image-caption">
+<p>Stained glass found within St. Simeon’s.</p>
+</div>
+</div>
+<p><em>[Gamma takes a step closer to the mural but is overtaken by the mist and green light. For approximately one minute, nothing is visible save the light.]</em></p>
+<p><em>[As the light fades, both agents are within a small room made of marble, roughly three meters square. Gamma turns and checks on Phi, who is still cradling his hand and has apparently not noticed their changed surroundings. A door materializes in one wall of the chamber, also made from marble and two figures enter. One figure is impossible to identify, as they are an animate silhouette similar to those seen around the open grave. The other figure is a young girl, appearing to be in her late teens. The marble floors stretch and take the shape of a table with two seats opposite one another. The figures take seats.]</em></p>
+<p><em>[The green light rises in intensity until both agents shield their eyes, and the cameras cannot adjust to the luminance. As the light fades, the chamber has changed again – this time appearing as a small bedroom with a single bed situated under a window. The girl observed in the previous manifestation sits on the bed, her knees pressed against her chest, her head turned towards the window. Sobbing can be heard between the peals of the bells.]</em></p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="Mausoleum%20stained%20glass-5%28a%29" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/Mausoleum%20stained%20glass-5%28a%29"/>
+<div class="scp-image-caption">
+<p>Stained glass witnessed during ontokinetic event.</p>
+</div>
+</div>
+<p><em>[On the ceiling is a circular stained glass mural, depicting apparently religious figures.]</em></p>
+<p><em>[The religious figures emerge from the glass, manifest wings reminiscent of depictions of angels, and float down towards the girl. They take turns reaching into the girl’s head and pulling small green motes of light free then returning to the glass. The sobbing intensifies but otherwise the figure does not react to the angels’ actions. As the angels continue to pull motes of green light from her head, the girl slowly becomes obscured in shadows until she too is a silhouette. The last angel pulls a mote from the figure’s head and the light it is holding grows to blinding levels, obscuring the footage.]</em></p>
+<div style="text-align: center;">
+<p><em><strong>Approximately two minutes are lost to digital corruption.</strong></em></p>
+</div>
+<p><em>[The agents are in a new space, larger than before but still constructed of marble. There is an old-fashioned covered well directly in front of them. A silhouette figure approaches the well.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup>]</em></p>
+<p><em>[The figure drops a bucket – also made of marble – into the well and then hauls it up. The figure looks into the bucket and shakes it. The figure upturns the bucket but it is empty. The bucket is tossed back into the well and hauled out again, and again it is empty. The figure stamps its foot and tries again.]</em></p>
+<p><em>[The small stained glass angels from the previous manifestation peer from around the inside of the lip of the well. Each time the figure draws the bucket back up, the angels tip the vessel so green glowing water flows out. The figure never notices this occurring.]</em></p>
+<p><em>[This continues ten more times – the bucket is empty each time – until finally, the figure throws the bucket to the ground and clutches its head. A bright green light from the inside of the well grows in intensity until the scene is no longer discernible.]</em></p>
+<div style="text-align: center;">
+<p><em><strong>Approximately one minute is lost to digital corruption.</strong></em></p>
+</div>
+<p><em>[Agents Gamma and Phi are within another chamber, resembling a hospital room. A silhouetted figure sits on a hospital bed, similar to the girl with knees pressed against their chest. The figure stares at the wall. Sitting next to the bed is another figure holding a clipboard. The figure on the chair is speaking but although audible, the speech is not decipherable. The silhouette on the bed begins to scream.]</em></p>
+<p><em>[Agent Gamma reaches for the screaming figure, but Phi pulls her away and towards an open door. They emerge into the mausoleum, now returned to its original dimensions. The four teenagers who had disappeared at the outset of the investigation are huddled on the floor. One is weeping. They notice the agents and begin speaking and gesturing in a panicked manner, but their voices are not heard. The bells begin to lower in volume until they are silent.]</em></p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="Mausoleum%20stained%20glass-6%28b%29" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/Mausoleum%20stained%20glass-6%28b%29"/>
+<div class="scp-image-caption">
+<p>Final stained glass mural witnessed by Agent Gamma.</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<em>[Agents Gamma and Phi gather the youths and begin proceeding towards the exit. Gamma stops before a final stained glass mural depicting herself, although much younger and dressed in armor and with angel wings.]</em></p>
+<p><em>[The agents lead the four civilians out of the mausoleum and across the grounds of the St. Simeon’s. Foundation medical workers wait for the agents and civilians just beyond the border of the property. Agent Gamma turns to look back at the mausoleum. On the footage, a bright green light is seen from the entryway, emerging from within the building. It fades slowly.]</em><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/></p>
+<div style="text-align: center;">
+<p><strong><em>End Log</em></strong></p>
+</div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+Agents Phi and Gamma entered St. Simeon’s grounds at 08:30 and returned at 08:32. The footage recovered from their bodycams shows a timestamp of twenty-nine minutes and fifty-four seconds.
+<p>All further attempts to investigate by Foundation personnel resulted in similar manifestations as recorded by Agents Gamma and Phi. Scanning the footage allowed for facial recognition analysis. Records retrieved for the girl seen during the ontokinetic event match one Anna Müller, born 13 April, 1992 and died only months before the outset of the investigation.</p>
+<p>Foundation records note that Müller had witnessed an anomalous event when she was nineteen years old and was administered amnestics, along with her whole family. Two years later there is another notation stating that she needed a second administration of amnestics due to reemergent memories. This happened again when she was twenty-four and twenty-eight years old.</p>
+<p>The following obituary<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> was found in a local newspaper:</p>
+<blockquote>
+<p>With heavy hearts, the Müller family regrets to announce the passing of Anna Müller on 6 June, 2021. She was so very young, and so very loved, but her battle with depression took her too early. Her dry wit, her passion for art, her generous spirit, and her love for her family will be dearly missed.</p>
+<p>Funeral services will be held on 10 June, 2021 at St. Simeon’s Cemetery in Friedberg.</p>
+</blockquote>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+Since the initial discovery, the ontokinetic events at the cemetery only occur when Foundation personnel are on the grounds. Based on these facts, it was deemed acceptable to allow the cemetery to operate as per normal. Civilians were allowed continued access once reporting police and the four teenagers were amnesticized and released.</p>
+<p>Several months after discovery, police reports concerning St. Simeon’s noted two civilian complaints of a “haunting” with the sound of ringing bells and bright green lights within the mausoleum. The Ethics Committee is currently deliberating whether amnesticization is appropriate.</p>
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. German Federal Police.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Where people are buried above ground in a mausoleum.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Roughly three times the length of the mausoleum in reality.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Surmised to be the same young girl as previously witnessed.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Translated from German.</div>
+</div>
+<hr/>
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-6602">SCP-6602</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-6602">https://scpwiki.com/scp-6602</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> The Grace Hotel<br/>
+<strong>Author:</strong> Doug Beckers<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/dougbeckers/4843346282/">https://www.flickr.com/photos/dougbeckers/4843346282/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Stained Glass at Bristol Cathedral<br/>
+<strong>Author:</strong> Heather Cowper<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/heatheronhertravels/2333465874/">https://www.flickr.com/photos/heatheronhertravels/2333465874/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span> and <span class="printuser"><a href="http://www.wikidot.com/user:info/ananomalouswriter" onclick="WIKIDOT.page.listeners.userInfo(5184766); return false;">AnAnomalousWriter</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Detail Stained Glass at St Thomas<br/>
+<strong>Author:</strong> Jules &amp; Jenny<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/jpguffogg/12619583284/">https://www.flickr.com/photos/jpguffogg/12619583284/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Stained glass window in Cullingworth Church<br/>
+<strong>Author:</strong> Tim Green<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> flickr.com/photos/atoach/7874405602/<br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Stained Glass<br/>
+<strong>Author:</strong> John K Thorne<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/seattlecamera/23556326620/">https://www.flickr.com/photos/seattlecamera/23556326620/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Stained Glass Window<br/>
+<strong>Author:</strong> Paul J Everett<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/paul_everett82/1992058557/">https://www.flickr.com/photos/paul_everett82/1992058557/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span> and <span class="printuser"><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;">HarryBlank</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Mausoleum interior<br/>
+<strong>Author:</strong> jondoeforty1<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/jondoeforty1/5159794099/">https://www.flickr.com/photos/jondoeforty1/5159794099/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Bytom_Assumption_church_bell_ringing_2021.ogg<br/>
+<strong>Author:</strong> Adrian Tync<br/>
+<strong>License:</strong> CC BY-SA 4.0<br/>
+<strong>Source:</strong> <a href="https://commons.wikimedia.org/wiki/File:Bytom_Assumption_church_bell_ringing_2021.ogg">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Foundation Emblem<br/>
+<strong>Author</strong>: Aelanna<br/>
+<strong>License</strong>: CC BY-SA 3.0<br/>
+<strong>Source</strong>: <a href="https://en.wikipedia.org/wiki/SCP_Foundation#/media/File:SCP_Foundation_(emblem).svg">LINK</a><br/>
+<strong>Additional Notes</strong>: Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span> and used in several of the above images.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+</div></body></html>
+        </body>
+        </html>
+        

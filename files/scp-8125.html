@@ -1,0 +1,579 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-8125</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-8125</h1>
+            <html><body><div id="page-content">
+
+<div class="preview">
+<p>A shifting narrative-based Nexus struggles to survive, stranded in a young, weak timeline. Finding a host, the parasitic Nexus invades, imprinting on baseline reality, manifesting fragments of tales held within.</p>
+</div>
+
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=1&amp;theme=https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css&amp;css={$css}" style="display: none"></iframe></p>
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=2&amp;theme=https://cdn.scpwiki.com/theme/en/basalt/basalt-bedrock-min.css&amp;css={$css}" style="display: none"></iframe></p>
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=3&amp;theme=https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/1&amp;css={$css}" style="display: none"></iframe></p>
+<div style="display: none">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">relative</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> rgba(</span><span class="hl-number">176</span><span class="hl-code">,</span><span class="hl-number">16</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.7</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+ 
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">),</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.12</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.wiki-content-table</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumtitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.maintitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">x-large</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addenda-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">;
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">; 
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.object-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">align-self:</span><span class="hl-code"> flex-end</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.title-style</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">underline</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div-empty</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.computed</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.computed</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Computed </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-special">:before</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Raw </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.codebox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-code">,  </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">.75</span><span class="hl-string">em</span><span class="hl-code">; 
+        </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+        </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> gainsboro</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-reserved">background-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> unset</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<p>This SCP contains 3 pages (This current page and 2 offsets)</p>
+<p>These offsets are 1.2k, 1.7k, and 3k words respectively.</p>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+<div class="infotext"><span style="font-size:80%;"><span style="color: #757575">⚠ Important article information ^</span></span></div>
+<div class="list-pages-box"> <div class="list-pages-item">
+<div style="border:solid 1px #999999; padding:5px; margin-bottom: 10px; background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/RAISA_LIGHTLOGO.png) center no-repeat; float: center; background-size: 50%; background-color: #f2f2c2;">
+<div style="text-align: center;">
+<h4><span>NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION</span></h4>
+<hr/>
+<p>Due to the ongoing risk of an LK-Class "Lifted Veil" scenario, this nexus has been upgraded to SCP status. All information relating to Nx-23 has been collated in this document for immediate investigation.</p>
+<p>Upon creation of new containment procedures and the semi-complete investigation into the phenomena involved with Nx-23, an SCP document will be created to replace/organize the information stored here.</p>
+<p>— Maria Jones, Director, RAISA</p>
+</div>
+</div>
+<div class="desktop-aim">
+<div class="w-container">
+<div class="cell-container-image" style='background-image: url("http://scp-wiki.wikidot.com/local--files/scp-8125/DunwichFinal.svg"), url("http://scp-wiki.wikidot.com/local--files/scp-8125/xlvlfourc.png"); background-size: 57px, contain; background-position: 50%, 50%'>
+<div class="s-cell">
+<p><strong>LOCATION #:</strong> NX-23</p>
+</div>
+<div class="s-cell" style="text-align: right;">
+<p><strong>LEVEL-</strong><span style="font-weight: bold; text-transform: uppercase;">02/Restricted</span></p>
+</div>
+<div class="s-cell">
+<p><strong>AREA CLASS:</strong> DUNWICH<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-737255-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-737255-1')">1</a></sup></p>
+</div>
+<div class="s-cell" style="text-align: right;">
+<p><strong>POPULATION:</strong> UNKNOWN</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-aim">
+<div class="w-container">
+<div class="cell-container-image" style='background-image: url("http://scp-wiki.wikidot.com/local--files/scp-8125/DunwichFinal.svg"), url("http://scp-wiki.wikidot.com/local--files/component:advanced-information-methodology/mlvlfour.svg"); background-size: 50px, contain; background-position: 50% 50%, 50%'>
+<div class="s-cell" style="margin-top: -10px; padding-bottom: 20px">
+<p><strong>LOI #:</strong> NX-23</p>
+</div>
+<div class="s-cell" style="text-align: right; margin-top: -10px; padding-bottom: 20px">
+<p><strong>LEVEL-</strong><span style="font-weight: bold; text-transform: uppercase;">02/Re</span></p>
+</div>
+<div class="s-cell">
+<p><strong>AREA CLASS:</strong><br/>
+DUNWICH</p>
+</div>
+<div class="s-cell" style="text-align: right;">
+<p><strong>POPULATION:</strong> UNKNOWN</p>
+</div>
+</div>
+</div>
+</div>
+<div class="box imagebox">
+<div class="scp-image-block block-center" style="width:100%;"><img alt="Offset1PhotoCompressed.jpg" class="image" src="http://scp-wiki.wikidot.com/local--files/scp-8125/Offset1PhotoCompressed.jpg"/>
+<div class="scp-image-caption">
+<p>A photo taken of Nx-23's interior following a minor reality shift.</p>
+</div>
+</div>
+</div>
+<div class="desktop-aim">
+<div class="w-container">
+<div class="cell-container">
+<div class="w-cell">
+<p><strong>Assigned Site</strong></p>
+<hr/>
+<p>Site-12</p>
+</div>
+<div class="w-cell">
+<p><strong>Site Director</strong></p>
+<hr/>
+<p>Dr Durrani</p>
+</div>
+<div class="w-cell">
+<p><strong>Research Head</strong></p>
+<hr/>
+<p>Dr Michaels</p>
+</div>
+<div class="w-cell">
+<p><strong>Assigned MTF</strong></p>
+<hr/>
+<p>MTF Xi-5 (“Newton's Bullies”)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-aim">
+<div class="w-container">
+<div class="cell-container">
+<div class="w-cell">
+<p><strong>Assigned Site</strong></p>
+<hr/>
+<p>Site-12</p>
+</div>
+<div class="w-cell">
+<p><strong>Site Director</strong></p>
+<hr/>
+<p>Dr Durrani</p>
+</div>
+<div class="w-cell">
+<p><strong>Research Head</strong></p>
+<hr/>
+<p>Dr Michaels</p>
+</div>
+</div>
+<div class="cell-container">
+<div class="w-cell" style="max-width: 100%">
+<p><strong>Assigned MTF</strong></p>
+<hr/>
+<p>MTF Xi-5 (“Newton's Bullies”)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div style="text-align: center;">
+<h4><span><strong><span style="text-decoration: underline;">Nexus Interaction Protocol</span></strong></span></h4>
+</div>
+<hr/>
+<p><span style="text-decoration: line-through;">Following several D-Class deaths during the first two excursions, no Foundation personnel are to attempt manned exploration of Nx-23. Exploration of Nx-23 is to be made via a remotely piloted drone with video transmission capabilities.</span></p>
+<p><span style="text-decoration: line-through;">Any attempts to interfere with Nx-23's storylines are to be immediately halted due to potential loss of equipment. In the case of a known narrative appearing, limited interaction with non-Prime, story-related entities are allowed. Interaction with unknown non-story-related entities is prohibited due to the potential of an unknown Prime entity.</span></p>
+<p>Due to the repeated destruction of any entity sent in to investigate Nx-23, exploration is paused. Dr Michaels is currently exploring alternative observation methods to prevent unnecessary loss.</p>
+<p>Contact with the Serpent's Hand is to be maintained for both internal updates on the Wanderer's Library and to prevent accidental incursions into Nx-23. All thaumaturgic seals placed on Nx-23 ways are to be maintained in cooperation with Hand thaumaturges.</p>
+</div>
+
+<div class="box">
+<div style="text-align: center;">
+<h4><span><strong><span style="text-decoration: underline;">Description</span></strong></span></h4>
+</div>
+<hr/>
+<p>Nx-23 is the designation for an extremely unstable extradimensional space exhibiting characteristics of numerous fictional works. This space is prone to rapid unexpected reality/narrative shifts in which one or more narratives are substituted for a different work, often altering the space's terrain and the appearance of entities within. The entities in this space will not react to the change and respond with confusion when questioned about their previous nature.</p>
+<p>Nx-23 will always contain at least one population centre from one of the current active narratives, located in the apparent centre of the extradimensional space. These locations always contain a significant amount of permanent residents with active shops and governing bodies. The entities within this area are able to be interacted with, though express confusion and amnesia when asked about some aspects of their past.</p>
+<p>Whilst slightly conflicting elements within Nx-23 can coexist, these discrepancies will not affect the overall plot of any involved narrative. Investigating these inconsistencies will result in the observer struggling to retain any information about the related feature; particularly egregious physical shifts result in the feature appearing blurred and indistinguishable.</p>
+<p>These concurrent narratives within Nx-23 typically share a similar general setting, though combinations of sci-fi, alt-history, and fantasy have all been noted to appear at once. These disparate narratives typically shift rapidly, reverting to a less divergent set of genres within hours.</p>
+<p>Each narrative within Nx-23 typically has one Prime entity. Prime entities are characters of which the story revolves around. Interfering with these entities (and the related story) is possible, though any attempt to alter the course of a main narrative has failed. These failed attempts mostly result in the nexus rerouting the Prime entity, or the related story, around any introduced obstacle. If the nexus is unable to fix the plot, a narrative shift occurs instantly.</p>
+<p>It has been noted that most non-Prime sections of a story can be altered, as long as it doesn't interfere with the Prime narrative. These side plots are often different to the known work of fiction regardless of outside interference, typically incorporating either characters, events or plots from the other active narratives within the nexus. Currently, no links between the known works of fiction discovered within Nx-23 have been found.</p>
+</div>
+
+<div class="box">
+<div style="text-align: center;">
+<h4><span><strong><span style="text-decoration: underline;">Nexus History</span></strong></span></h4>
+</div>
+<hr/>
+<p>Nx-23 was first discovered following work on the new Chronology division wing<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-737255-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-737255-2')">2</a></sup> within Site-12's Central-Southern Facility. Upon completion and activation of all required machinery, Chronology division researchers noticed an unusually high local tachyon count. Initially suspected to be originating from the new acroamatic abatement facility nearby, an investigation located a Way in a recently excavated area of the Facility.</p>
+<p>Following the discovery of this Way at Site-12, two other sites<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-737255-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-737255-3')">3</a></sup> also reported the existence of Ways linking to Nx-23. Originally believed to be manifesting at random, these Ways were all located in close proximity to a stable Wanderer's Library entrance. Due to this proximity, many Ways were initially unnoticed by monitoring equipment in nearby sites. An immediate follow-up inspection of all Wanderer's Library Ways revealed a further nine European sites reporting manifestations of Nx-23 Ways, with investigations in other continents ongoing. Reports from contacts within the Serpent's Hand suggest no abnormalities with the Wanderer's Libary itself.</p>
+<p>A consensus from the Chronology Division staff suggests that the presence of tachyons within Site-12 means that the extradimensional space housing Nx-23 formed relatively recently<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-737255-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-737255-4')">4</a></sup>. This assessment is unconfirmed and awaiting further investigation from the Temporal Anomalies Department as of this document's last update. Speculation into the cause of Nx-23's rapid manifestation and Way creation is ongoing due to worries about Nx-23's stability and the potential egress of anomalous entities from the extradimensional space.</p>
+<p>Over a period of three weeks following the containment of all discovered Ways, several unmanned expeditions into Nx-23 were launched. These excursions were halted after this period due to a lack of useful knowledge gained and the loss of numerous expeditionary drones.</p>
+</div>
+
+<div class="box">
+<div style="text-align: center;">
+<h4><span><strong><span style="text-decoration: underline;">Notable Events</span></strong></span></h4>
+</div>
+<hr/>
+<table style="margin: 0 10px 0 0;">
+<tr>
+<th style="border: 1px solid silver; background-color: #96182B;">Expedition</th>
+<th style="border: 1px solid silver">Notable Event Summary</th>
+</tr>
+<tr>
+<td colspan="2" style="padding:3px; border: 0px solid silver">
+
+</td>
+</tr>
+<tr>
+<td rowspan="3" style="border: 1px solid silver">Unmanned Expedition NX23-004</td>
+<td style="border: 1px solid silver">The surroundings are mostly obscured by a heavy mist, the camera shunts forward but stops suddenly as a rhythmic thudding gets audibly louder. A woman in a long black cape appears from the fog, floating in the middle of a ring of several horseshoes and being propelled forward by unknown means, disappearing back into the fog shortly after.</td>
+</tr>
+<tr>
+<td style="border: 1px solid silver">The drone is located in a large settlement covered in ash. A large figure with several metal spikes protruding from his body appears to be talking to a smaller entity in an apron with a tray. The phrase "cut me own thyroid" is heard as the large figure takes something from the tray, collapsing shortly after.</td>
+</tr>
+<tr>
+<td style="border: 1px solid silver">Several figures are noted hovering in the sky. These figures appear to be utilizing high-speed coins for combat purposes, though none appear to have taken any notice of the large red dragon flying just below them. As the camera pans downwards, three figures can be seen standing on a rooftop. One of the three figures is nude, on one leg and holding a bow.</td>
+</tr>
+<tr>
+<td colspan="2" style="padding:3px; border: 0px solid silver">
+
+</td>
+</tr>
+<tr>
+<td rowspan="1" style="border: 1px solid silver">Unmanned Expedition NX23-007</td>
+<td style="border: 1px solid silver">The camera heads into a futuristic glass city, the buildings and people within the city begin to warp and become fuzzy. This effect continues for 10 minutes until the buildings slowly reappear, though now as small homes with modern American architecture. The nearby entities appear to have also morphed, now resembling a group of young children. As the camera tracks the group, one of the children observed is shown to be able to manifest flames from his hands. In the background of the footage, a large barn is seen to fall from the sky, passing through a large clear surface.</td>
+</tr>
+<tr>
+<td colspan="2" style="padding:3px; border: 0px solid silver">
+
+</td>
+</tr>
+<tr>
+<td rowspan="1" style="border: 1px solid silver">Unmanned Expedition NX23-012</td>
+<td style="border: 1px solid silver">The camera exits a large wooded area. Just ahead is a large settlement with several wooden ships floating overhead. As the camera slowly pans, a large chain can be seen, leading up towards a landmass suspended in midair. Atop this landmass is an oddly shaped imposing building, with towers sprouting from all available surfaces. This view is abruptly cut when the camera starts shaking. The ground ahead of the camera appears to shake, though with a strange blur. A whirring sound ensues as the camera jerkily tips forward towards a newly opened fissure in the ground. The feed then cuts out.</td>
+</tr>
+</table>
+</div>
+
+<div style="border:solid 1px #999999; padding:5px; margin-bottom: 10px; background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/RAISA_LIGHTLOGO.png) center no-repeat; float: center; background-size: 50%; background-color: #f2f2c2;">
+<div style="text-align: center;">
+<h4><span>NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION</span></h4>
+<hr/>
+<p>The above documentation is out of date. Please view the <a href="https://scp-wiki.wikidot.com/scp-8125/offset/1">updated version of this file.</a></p>
+<p>— Jane Berry, Senior Clerk, RAISA</p>
+</div>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-737255-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-737255-1')">1</a>. A Class-4 Nexus. The Nexus is almost entirely cut off from the non-anomalous world. Special measures may be required to keep personnel safe.</div>
+<div class="footnote-footer" id="footnote-737255-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-737255-2')">2</a>. Sector 4.</div>
+<div class="footnote-footer" id="footnote-737255-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-737255-3')">3</a>. Site-06 and Site-44</div>
+<div class="footnote-footer" id="footnote-737255-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-737255-4')">4</a>. Many extradimensional spaces are timelines in their own right, acting as a sub-timeline within our own. When these new timelines are created, tachyons are produced. Whilst difficult to detect the resulting tachyons upon creation, typically Ways into baseline reality will also appear, from which tachyons can be detected through.</div>
+</div>
+</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-8125">SCP-8125</a>" by Dr Moned, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-8125">https://scpwiki.com/scp-8125</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Filename:</strong> DunwichFinal.svg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;"><img alt="Dr Moned" class="small" src="https://www.wikidot.com/avatar.php?userid=5596963&amp;amp;size=small&amp;amp;timestamp=1758087994" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5596963)"/></a><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;">Dr Moned</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/8000contestdrmoned">https://scp-wiki.wikidot.com/8000contestdrmoned</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> FirstProblemNoticed2.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;"><img alt="Dr Moned" class="small" src="https://www.wikidot.com/avatar.php?userid=5596963&amp;amp;size=small&amp;amp;timestamp=1758087994" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5596963)"/></a><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;">Dr Moned</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/8000contestdrmoned">https://scp-wiki.wikidot.com/8000contestdrmoned</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> GleipnirAdjusted.svg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;"><img alt="Dr Moned" class="small" src="https://www.wikidot.com/avatar.php?userid=5596963&amp;amp;size=small&amp;amp;timestamp=1758087994" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5596963)"/></a><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;">Dr Moned</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/8000contestdrmoned">https://scp-wiki.wikidot.com/8000contestdrmoned</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Gleipnir.svg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;"><img alt="Dr Moned" class="small" src="https://www.wikidot.com/avatar.php?userid=5596963&amp;amp;size=small&amp;amp;timestamp=1758087994" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5596963)"/></a><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;">Dr Moned</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/8000contestdrmoned">https://scp-wiki.wikidot.com/8000contestdrmoned</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Offset1PhotoCompressed.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;"><img alt="Dr Moned" class="small" src="https://www.wikidot.com/avatar.php?userid=5596963&amp;amp;size=small&amp;amp;timestamp=1758087994" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5596963)"/></a><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;">Dr Moned</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/8000contestdrmoned">https://scp-wiki.wikidot.com/8000contestdrmoned</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> xlvlfourc.png<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;"><img alt="Dr Moned" class="small" src="https://www.wikidot.com/avatar.php?userid=5596963&amp;amp;size=small&amp;amp;timestamp=1758087994" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5596963)"/></a><a href="http://www.wikidot.com/user:info/dr-moned" onclick="WIKIDOT.page.listeners.userInfo(5596963); return false;">Dr Moned</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/8000contestdrmoned">https://scp-wiki.wikidot.com/8000contestdrmoned</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

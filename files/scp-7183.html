@@ -1,0 +1,742 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-7183</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-7183</h1>
+            <html><body><div id="page-content">
+
+
+<p><em>You wake up in a brightly lit room. It's stark white and empty, save for the bed you're laying in and a door across from you.</em></p>
+<p><em>You get up, out of the clinically dressed bed you were laying in, and stumble towards the door. Moving around feels strange, like your bones have rusted at the joints.</em></p>
+<p><em>You open the door to find another white room. At its center is a table with a pile of cassette tapes and a cassette player sitting on top of it. Alongside the table is a chair, and behind it a cabinet with a handful of assorted books beside another, markedly locked, door.</em></p>
+<p><em>You grab the chair. As you set it down, it makes a sharp clack that pierces through the silence.</em></p>
+<p><em>You sit down.</em></p>
+<p><em>You notice that there is a note sitting on the table. It's held in place at its corner by the cassette player.</em></p>
+<div class="blockquote">
+<p>Good morning.</p>
+<p>You might be confused, but I ask you trust that all your questions will be answered in time.</p>
+<p>In front of you is a series of numbered tapes. If you listen to them in order, they will tell you everything you need to know.</p>
+<p>I know you'll make the right decision.</p>
+<p>-Marcus Xanders</p>
+</div>
+<hr/>
+<div style="text-align: center;">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Cassette Tape '1'</a><a href="javascript:;">Where am I?</a></div>
+</div>
+<div class="colmod-content">
+<div style="text-align: left;">
+<div class="blockquote">
+<p><strong>Click- Vrr…</strong></p>
+<p>…</p>
+<p>&lt;A voice clears its throat, then after a moment, begins to speak.&gt;</p>
+<p>Tape 1. Special Containment Procedures.</p>
+<p>…</p>
+<p>You are SCP-7183.</p>
+<p>You are what we call a "Keter" anomaly. That means at any point you could leave this room and we would have to figure out a different way to contain you.</p>
+<p>Due to some extenuating circumstances that will soon become clear, I believe this would be quite difficult.</p>
+<p>…</p>
+<p>At present, our means of containing you are simple. So simple in fact, that you are enacting them right now. By listening to these tapes and staying in this room we can ensure you pose no threat to the general population.</p>
+<p>Knowing this, please keep listening.</p>
+<p>…</p>
+<p>Thus concludes tape 1.</p>
+<p>…</p>
+<p><strong>Click</strong></p>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+<div style="text-align: center;">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Cassette Tape '2'</a><a href="javascript:;">What am I?</a></div>
+</div>
+<div class="colmod-content">
+<div style="text-align: left;">
+<div class="blockquote">
+<p><strong>Click- Vrr…</strong></p>
+<p>…</p>
+<p>Tape 2. Description.</p>
+<p>…</p>
+<p>You are what we call a "Reality Bender." This means you have a significantly greater influence over the fabric of reality when compared to others. In your case, this ability manifests not in shaping matter or changing physics, but altering human beings.</p>
+<p>…</p>
+<p>When you come in contact with another person, anomalous or otherwise, they are immediately transformed into an approximation of yourself. This transformation isn't 1 to 1, per se. Most individuals have been observed to maintain their age, gender, and skillset from before they were exposed to your anomalous effect, but they will always shift to match your personality, general physicality at their age, and will inherit your anomalous properties.</p>
+<p>Historically, you have shown little control over this effect. Due to this, it is likely that any contact with other human beings will result in an NK-class "End of Individuality" scenario, or put simply, total replacement of the world population with yourself.</p>
+<p>…</p>
+<p>Notably, there are two individuals that are entirely immune to your anomalous effect. One of those being me, the person talking to you right now, and the other being my wife. The current hypothesis why is that we're your parents.</p>
+<p>Your name, the one we gave you, is "Patricia."</p>
+<p>…</p>
+<p>Thus concludes tape 2.</p>
+<p>…</p>
+<p><strong>Click</strong></p>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+<div style="text-align: center;">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Cassette Tape '3'</a><a href="javascript:;">Who am I?</a></div>
+</div>
+<div class="colmod-content">
+<div style="text-align: left;">
+<div class="blockquote">
+<p><strong>Click- Vrr…</strong></p>
+<p>…</p>
+<p>Tape 3. Description Continued.</p>
+<p>…</p>
+<p>Your mother had been working for the Foundation for a few years before you were born, so it wasn't unusual for us to be apart for days, maybe weeks, or even months. When she finally started maternity leave we could barely figure out how to use the time.</p>
+<p>Walks through the park, sharing meals, and going shopping together. Time spent talking, or even silence in each others company. I think back on them as some of the best days of my life, all leading up to you.</p>
+<p>…</p>
+<p>It was a beautiful day. A Monday like no other, untainted by calls from work or fast approaching deadlines. I was in the kitchen making a cheese sandwich for your mother, as she was very fond of at the time, when she shouted for me to call an ambulance.</p>
+<p>Soon we were in the maternity ward, room 183 just on the corner. I held your mother's hand as the nurse talked her through the birth. She was always much stronger than me, composed in almost any situation, but she squeezed my hand so firmly, so tightly that whole time. For her, for what little I could do, I sat through the whole thing.</p>
+<p>…</p>
+<p>When the nurse handed you to your mother I could see her long forged mask melt away. She cried as you did and for as long as you did, holding you so gently all the while. Soon you calmed down and she did too. You looked at me and laughed. She looked at me and laughed. It was the same laugh, bubbly and melodic. I'm smiling now just thinking about it.</p>
+<p>Something clicked in that moment. I knew I would do anything to make you happy, that you deserved the world, that the moments where I would make you laugh like that were worth more than any wealth, power, or status.</p>
+<p>I told your mother as I drove us back home.</p>
+<p>She told me she wanted to leave her job at the Foundation.</p>
+<p>I thought it would be a good idea.<br/>
+…</p>
+<p>Thus concludes tape 3.</p>
+<p>…</p>
+<p><strong>Click</strong></p>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+<div style="text-align: center;">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Cassette Tape '4'</a><a href="javascript:;">What did I do?</a></div>
+</div>
+<div class="colmod-content">
+<div style="text-align: left;">
+<div class="blockquote">
+<p><strong>Click- Vrr…</strong></p>
+<p>…</p>
+<p>Tape 4. Discovery.</p>
+<p>…</p>
+<p>You grew up so quickly, but your mother saw less of it than she would have liked. She had tried to arrange a transfer out of her position, to switch to a regular job, but the options always fell short of what we needed. Every option would mean sacrificing something, something we couldn't give you. It stung how I couldn't help more, not with what little I was making at the time.</p>
+<p>What I could do was be there for you.</p>
+<p>…</p>
+<p>The first time it happened, you were in elementary school. I got a call somewhere around lunch from your teacher, and it was incredibly hectic. She couldn't get a cohesive idea across, insisting that I come quick, that you had done something, that she didn't know what to do.</p>
+<p>When I got there there were lots of "you", all playing different games, some together, some alone. It was like a panorama picture of scenes I recognized from you playing your games at home. It was all you, but it wasn't all you.</p>
+<p>I thought it would be good to call Ave- sorry… I tried to call your mother. I didn't know a lot about her job at the time, but from what little she was allowed to tell me, "weird" stuff was her purview. I left a message telling her exactly what I saw. That there were lots of you that weren't exactly you, and that I was going to figure out which one was actually you and leave.</p>
+<p>You all looked eerily similar, but I knew within my heart that among the Patricks and Patricias I would find <em>you</em>. Luckily I was one who dressed you each morning, so I went over to you and told you it was time to go home.</p>
+<p>You didn't want to. You couldn't tell why something was wrong.</p>
+<p>I had to be more forceful than I'd like to admit.</p>
+<p>You said that "you just wanted to play all the games."</p>
+<p>I told you that you'd been bad.</p>
+<p>And we left.</p>
+<p>…</p>
+<p>I don't know what happened to all those other "you"s. Even now, I don't have the clearance to read that incident log. But not too soon after the event we were forced to move, relocated to housing near where your mother worked.</p>
+<p>I can guess what happened to them.</p>
+<p>You can too.</p>
+<p>…</p>
+<p>Thus concludes tape 4.</p>
+<p>…</p>
+<p><strong>Click</strong></p>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+<div style="text-align: center;">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Cassette Tape '5'</a><a href="javascript:;">Where is Mom?</a></div>
+</div>
+<div class="colmod-content">
+<div style="text-align: left;">
+<div class="blockquote">
+<p><strong>Click- Vrr…</strong></p>
+<p>…</p>
+<p>Tape 5. Incident Redacted-Null.</p>
+<p>…</p>
+<p>The situation was a mixed bag, but we managed to make the best out of it.</p>
+<p>Perhaps it was under the guise of studying you, or keeping an informed eye on your situation, but your mother was around a lot more than she had been. You'd always liked her more than you liked me. Why? I think she managed to spoil you ever more than I did somehow, by giving you gifts, letting you stay up, telling you stories she certainly shouldn't, who knows. The why doesn't really matter.</p>
+<p>Needing to homeschool you was unfortunate, but understandable. The foundation didn't want to risk exposing you to other children, considered you dangerous, but your mother and I both gladly took on the extra work.</p>
+<p>She managed to spoil you even during those lessons. Took on the idea that you could "be anything you wanted to be" and that we should be exposing you to a wide range of experiences. I didn't disagree at all, but her enthusiasm meant I was sidled with the conventionally distasteful subjects.</p>
+<p>Once again, it wasn't ideal but it was livable, and we lived that way for years. It was wonderful to see you and your mother interacting, to hear you laugh together and watch her emphatically attempt to force your young mind to tackle some strange subject.</p>
+<p>…</p>
+<p>It's just that sometimes she got busy, and we'd both miss her.</p>
+<p>And it got tense when we both missed her, so we'd argue until you slammed a door in my face.</p>
+<p>You wanted to do so many things that you couldn't, to live a life that you couldn't, to live the dream that your mother always insisted on.</p>
+<p>It wasn't possible, so we argued, but I could survive the small disagreements.</p>
+<p>…</p>
+<p>It was the winter, I think. I don't like to dwell on the memories. Your mother had been quite busy for a while, so much that we'd only seen her two days in a few months. I tried to ask what was was going on, but she always dismissed me.</p>
+<p>"Big project."</p>
+<p>"Lots of moving parts."</p>
+<p>"We'll talk when Patricia's asleep."</p>
+<p>"Let me relax for a bit, honey."</p>
+<p>"Let me relax, Marcus."</p>
+<p>"Please."</p>
+<p>I dropped the subject, then she was gone for a while.</p>
+<p>She came back and she was different. Tired, drained, fatigued. Imagine every synonym you can and stack them on top of each other.</p>
+<p>I told her she had to quit.</p>
+<p>She agreed.</p>
+<p>She said she would.</p>
+<p>She said she loved me.</p>
+<p>Over and over again.</p>
+<p>She went into your room.</p>
+<p>I assume she said the same.</p>
+<p>She went to sleep right after, alone.</p>
+<p>I couldn't even wake her up, and I tried.</p>
+<p>I just laid down next to her and tried to sleep, but I couldn't.</p>
+<p>I don't know how long it took me to fall asleep that night, but at some point I did.</p>
+<p>Why did I?</p>
+<p>I should have-</p>
+<p>I should have waited.</p>
+<p>Why?</p>
+<p>I-</p>
+<p>I'm so sorry…</p>
+<p>…</p>
+<p>&lt;Dad is struggling to keep his composure.&gt;</p>
+<p>…</p>
+<p>She was gone when I woke up.</p>
+<p>…</p>
+<p>Some time later, a man wound up at our door.</p>
+<p>A coworker of your mother, I think.</p>
+<p>He told me that your mother was no longer with us.</p>
+<p>That was it.</p>
+<p>Nothing else.</p>
+<p>Just gone.</p>
+<p>…</p>
+<p>Just gone.</p>
+<p>…</p>
+<p>Even now, I don't know how she died. I don't even have a guess.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>Thus concludes tape 5.</p>
+<p>…</p>
+<p><strong>Click</strong></p>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+<div style="text-align: center;">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Cassette Tape '6'</a><a href="javascript:;">What did I do?</a></div>
+</div>
+<div class="colmod-content">
+<div style="text-align: left;">
+<div class="blockquote">
+<p><strong>Click- Vrr…</strong></p>
+<p>…</p>
+<p>Tape 6. Addendum 7183.1</p>
+<p>…</p>
+<p>I had to tell you at some point.</p>
+<p>You deserved to know. To be told the truth, though I knew you'd probably have guessed.</p>
+<p>You're so smart Patricia. You're just like your mother.</p>
+<p>You're so much like her…</p>
+<p>&lt;Dad is getting choked up. He clears his throat.&gt;</p>
+<p>When I finally did, as I expected, we argued.</p>
+<p>It wasn't anything new.</p>
+<p>You wanted more freedom.</p>
+<p>I knew that you couldn't have it.</p>
+<p>You wanted to have the opportunity to try.</p>
+<p>I knew they wouldn't let you.</p>
+<p>I tried to tell you.</p>
+<p>I tried to.</p>
+<p>But I couldn't.</p>
+<p>I was so weak then.</p>
+<p>I needed her.</p>
+<p>I needed her to be around, I needed her to exist.</p>
+<p>You used her words against me.</p>
+<p>She told you that you could do anything you desired.</p>
+<p>You knew I wanted that for you too.</p>
+<p>I told you I did.</p>
+<p>You said.</p>
+<p>"You're lying."</p>
+<p>…</p>
+<p>You walked out of the front door.</p>
+<p>No.</p>
+<p>You ran.</p>
+<p>Just like your mother.</p>
+<p>Sprinters in body and soul.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>I got a call later that day from the man who'd brought news of Avery's death. It found me so empty. It was like no time had passed; you left, and then I picked up the phone.</p>
+<p>He went by "Armature". Told me that he'd be dropping by shortly to pick me up, and that you'd been at large for hours.</p>
+<p>Your powers worked differently then. In-between how they first manifested and how they are now.</p>
+<p>You weren't spreading so quickly then. You had to try. You could choose who you wanted to change.</p>
+<p>Even then they couldn't stop you.</p>
+<p>Couldn't get close.</p>
+<p>But they knew I wasn't affected. I was all they had.</p>
+<p>They told me I needed to stop you. To calm you down. To do something.</p>
+<p>I said I would try.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>I walked by you 35 times before I found you.</p>
+<p>You were still wearing the clothes you had on when we had our spat.</p>
+<p>…</p>
+<p>You shouted that this is what your mother would have wanted.</p>
+<p>You shouted about how I kept lying to you.</p>
+<p>You shouted about how this wasn't what you wanted.</p>
+<p>You shouted that you just wanted what they had.</p>
+<p>You just wanted a chance.</p>
+<p>You just wanted to be given the chance.</p>
+<p>I never gave you a chance.</p>
+<p>I wasn't there for you.</p>
+<p>…</p>
+<p>I walked up to you and hugged you.</p>
+<p>I didn't know what to say otherwise, I just needed you to know I was there for you.</p>
+<p>Truly there for you.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>We stood there for a while.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>We were both crying.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>"I lied to you." I said.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>"I won't ever do that again."</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>Thus concludes tape 6.</p>
+<p>…</p>
+<p><strong>Click</strong></p>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+<div style="text-align: center;">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Cassette Tape '7'</a><a href="javascript:;">What did you do?</a></div>
+</div>
+<div class="colmod-content">
+<div style="text-align: left;">
+<div class="blockquote">
+<p><strong>Click- Vrr…</strong></p>
+<p>…</p>
+<p>Tape 7. Testing Log.</p>
+<p>…</p>
+<p>Life slowed down for both of us at that point, all starting with our relocation to Site-357.</p>
+<p>It was isolated, they told me, you'd be less of a risk if something bad happened. They also offered me a job. I'd be filling the void your mother left, but looking after you was most of it.</p>
+<p>…</p>
+<p>I could never get a handle on the research your mother's coworkers did. Intricate plans to contain some of the strangest things you could never imagine… It was scary at times, but the wonderous things they showed me, Patricia. I so desperately wanted to show you too, but they never trusted me to bring anything back. Told me I was enough of a liability as is, with them unable to keep track of you and all.</p>
+<p>But I'm rambling.</p>
+<p>…</p>
+<p>You…</p>
+<p>You took it <em>maturely</em>, but I could tell that a certain spark had left your eyes. I promised to never lie to you, you see, but that meant telling you the truth over and over again. I can't imagine it tore against your soul any less than it did mine.</p>
+<p>You ended up spending most of your time reading. It was that sort of stuff that I could get you after all, non-digital, minimum risk.</p>
+<p>It helped a bit.</p>
+<p>I think.</p>
+<p>I could see a fragment of that old spark return when you talked about your favorites, when you smiled that same smile from years ago.</p>
+<p>…</p>
+<p>Your mother's smile…</p>
+<p>…</p>
+<p>It made me feel proud.</p>
+<p>…</p>
+<p>Thus concludes tape 7.</p>
+<p>…</p>
+<p><strong>Click</strong></p>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+<div style="text-align: center;">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Cassette Tape 'FINAL'</a><a href="javascript:;">What do I do now?</a></div>
+</div>
+<div class="colmod-content">
+<div style="text-align: left;">
+<div class="blockquote">
+<p><strong>Click- Vrr…</strong></p>
+<p>…</p>
+<p>Tape 8. Modified Special Containment Procedures.</p>
+<p>…</p>
+<p>It was life.</p>
+<p>…</p>
+<p>But, as they say…</p>
+<p>Time comes for everyone in the end.</p>
+<p>Seeing this, the higher ups got pushy, and I was told to find a way to contain you permanently.</p>
+<p>…</p>
+<p>I could never think through things as well as your mother, but after a few months of slowly watching people and maneuvering favors, I eventually arranged everything you're seeing now.</p>
+<p>Everything you're seeing, and something you're not.</p>
+<p>On the underside of the table is a hidden compartment. Inside that compartment you'll find a number of pill bottles and a key.</p>
+<p>Those are what we call "Amnestics": drugs designed to erase memories. This specific amnestic was designed just for you, but you don't need to know the nitty gritty of it.</p>
+<p>If and when you wish to take this option, you should shut yourself back in the bedroom you woke up in, get comfortable, then swallow the pill. Doing so will put you into a sort of hibernation for a while, along with removing all your memories of today.</p>
+<p>…</p>
+<p>Besides that, your other option is to leave.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><strong>Vrrrrrrrrrrrrrrrrrrrrr</strong></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>Why do things this way?</p>
+<p>…</p>
+<p>Well…</p>
+<p>…</p>
+<p>Uh…</p>
+<p>…</p>
+<p>I-</p>
+<p>&lt;Dad stutters a bit, struggling to start the sentence.&gt;</p>
+<p>I-</p>
+<p>I've made a lot of mistakes as a father, but I think my biggest one was never giving you a chance.</p>
+<p>To make up for that, I've designed this convoluted system to give you — maybe some would say — too many chances.</p>
+<p>A chance to make the choice for yourself.</p>
+<p>Even…</p>
+<p>Even if it's not as fair as I'd like it to be.</p>
+<p>…</p>
+<p>You deserve the world, I really believe that, Patricia, but the world you were promised doesn't exist with you in it.</p>
+<p>…</p>
+<p>That's really all there is to say.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>If you need any time to think, I left you some of your favorite books on a shelf nearby.</p>
+<p>You can experience those all over again, at least.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>I love you Patricia.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>And I'm sorry.</p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p>Thus concludes the final tape.</p>
+<p>…</p>
+<p><strong>Click</strong></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p><em>Bending down slightly, you can see the compartment jutting out below the table.</em></p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p>…<br/>
+<em>What do you do?</em><br/>
+…</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><a href="https://scp-wiki.wikidot.com/scp-7183|">Delete The Memories</a></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p>…</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Leave</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">You're not really Patricia then, are you?</a></div>
+
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p>…<br/>
+<em>or you could just read a book and decide later</em><br/>
+…</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+</div>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: center;">
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-7183">SCP-7183</a>" by IndustryStandard, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-7183">https://scpwiki.com/scp-7183</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div></body></html>
+        </body>
+        </html>
+        

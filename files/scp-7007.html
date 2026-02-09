@@ -1,0 +1,980 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-7007</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-7007</h1>
+            <html><body><div id="page-content">
+
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><span style="text-decoration: underline;"><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media Hub</a></span></strong><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><strong><a href="https://scp-wiki.wikidot.com/vivarium-s-word-hole">More by Vivarium</a></strong><br/>
+&amp;<br/>
+<strong><a href="https://scp-wiki.wikidot.com/grigori-karpin-s-author-page">More by Grigori Karpin</a></strong></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+<div style="display: none">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Show component code</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide component code</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc(var(--base-font-size) * (</span><span class="hl-number">266</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">))</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (min-width: 56.25</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem))</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) </span><span class="hl-number">0</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> / </span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> -webkit-sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">grid-area:</span><span class="hl-code"> side-bar</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">2.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">scroll</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-color </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                padding </span><span class="hl-number">300</span><span class="hl-code">ms linear,
+                margin </span><span class="hl-number">300</span><span class="hl-code">ms linear</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-tertiary-color, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">rtl</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-width:</span><span class="hl-code"> </span><span class="hl-string">thin</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-scroll-chaining:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+                </span><span class="hl-reserved">overscroll-behavior:</span><span class="hl-code"> contain</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(var(--swatch-primary-darker), </span><span class="hl-number">0.1</span><span class="hl-code">) /* Thumb */
+                rgba(var(--swatch-tertiary-color), </span><span class="hl-number">0.05</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-secondary-color, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">), </span><span class="hl-number">0.8</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-corner</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw + </span><span class="hl-number">100</span><span class="hl-code">vh)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-style:</span><span class="hl-code"> </span><span class="hl-string">inset</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-right:</span><span class="hl-code"> </span><span class="hl-number">2.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-primary-darker), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">1</span><span class="hl-code">rem) - var(--sidebar-width-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(</span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)  /* Thumb */
+                rgba(</span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgb(var(--swatch-primary-darker, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">) /* Thumb */
+                rgb(var(--swatch-menubg-color, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;  /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> url("https://scp-wiki.wdfiles.com/local--files/component%</span><span class="hl-number">3</span><span class="hl-code">Acollapsible-sidebar/sidebar-tab.svg")</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-attachment:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem </span><span class="hl-number">12.875</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">em</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">9</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> var(--final-header-height-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--final-header-height-on-desktop, </span><span class="hl-number">0.688</span><span class="hl-code">rem) - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> calc(var(--final-header-height-on-desktop, -</span><span class="hl-number">2.313</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--swatch-alternate-color, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> + </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.scpnet-interwiki-wrapper</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Print</span><span class="hl-code"> </span><span class="hl-identifier">Friendly</span><span class="hl-code"> </span><span class="hl-identifier">Formatting</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">Estrella</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code"> 
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="scp-image-block block-center" style="width:100%;"><img alt="VKTM-7000%20Opening%20image%20FINAL" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM-7000%20Opening%20image%20FINAL" style="width:100%;"/>
+<div class="scp-image-caption" style="width:100%;">
+<p>SCP-7007.</p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<h4 id="toc0"><span><span style="text-decoration: underline;">Special Containment Procedures</span>:</span></h4>
+<p>SCP-7007 is to be kept in High-Yield Data Storage Facility 1 at Site-43. The anomaly may be viewed under strict limitations, with explicit approval of Site Director McInnis.</p>
+<p>Under no circumstances is any member of Overwatch Command to be allowed to view the anomaly or be informed of the anomaly’s existence. Access to the content of SCP-7007 is restricted to those personnel specifically cleared to review; general knowledge of the anomaly is to be suppressed even among Foundation personnel.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<h4 id="toc1"><span><span style="text-decoration: underline;">Description</span>:</span></h4>
+<p>SCP-7007 designates a cathode ray tube (CRT) television continuously playing a single episode of the game show <em>Misfortune Gorge</em>, sponsored and distributed by GoI-5889 (“<a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media</a>”). The episode is apparently from an established series, but no reference to other episodes has been found within the database.</p>
+<p>The recording consistently displays image degradation, static and warping lasting for brief periods. However, the audio is consistent with 1990s recording techniques. Despite this, Misfortune Gorge’s opening crawl alleges the episode was filmed in front of a live studio audience and contains copyright information indicating it was distributed in 2022.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> The manner and technique of storing the video file on SCP-7007 has not been discovered. The television appears to be of standard production and no obvious mechanical modifications have been discovered upon disassembly that would explain its ability to store video files. The anomaly has no need for electrical current to maintain operation, and if an individual enters containment in the midst of the episode’s playtime, the anomaly will reset and start the episode from the beginning.</p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM-7000%20Print%20AD" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM-7000%20Print%20AD"/>
+<div class="scp-image-caption">
+<p>Print ad shipped with SCP-7007.</p>
+</div>
+</div>
+<p>Individuals who watch the episode are convinced of the veracity of everything depicted during its runtime of forty-three minutes. This conviction will begin to affect the behavior of viewers in predictable ways: they believe the events actually occurred, and react accordingly. Amnestics have been ineffective on those subjects who have viewed the video, leading researchers to theorize that memories of the show are effectively permanent. This anomalous effect has been demonstrated even after merely reading a transcript of the show in print form.</p>
+<p><strong>Discovery</strong>: On 25 September 2022, the anomaly was received at Site-43 in a Foundation-issued secure artifact case, with a label indicating it was shipped with escalated security protocols from <a href="https://scp-wiki.wikidot.com/secure-facilities-locations">Area-32</a>. Director McInnis, finding the transfer of anomalies from Area-32 suspicious, ordered the parcel inspected. Ultrasound revealed a television set from the late 1980s; sounds were noted emanating from within the parcel. Director McInnis and Dr. Lillihammer alone were present when the parcel was opened, finding the following note and attached print ad:<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup></p>
+<blockquote>
+<p>Dear Dr. Wettle,</p>
+<p>We’re hoping you’d do us the favor of reviewing the show we’ve enclosed. Your organization is quite large and we were hoping to get some beta viewers for feedback on whether or not the show works from a perspective within the Foundation.</p>
+<p>Don’t worry about reporting this; as you can see from the video, the O5 Council is already well aware. So let’s keep it between us for now, we want the episode to be a surprise!</p>
+<p>Best,</p>
+<p>Your Friends at Vikander-Kneed</p>
+</blockquote>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;">
+<div style="text-align: center;">
+<h4 id="toc2"><span>NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION</span></h4>
+<p>Further review of this file is inadvisable, as even the most powerful amnestics have been shown to be ineffective. Read on at your own risk. If you are not already familiar with the contents, please report the breach of security to Director McInnis personally.</p>
+<p>You have been warned.</p>
+<p>— Maria Jones, Director, RAISA</p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="text-align: center;">
+<h4 id="toc3"><span>Addendum 7007.1 – Transcript of Misfortune Gorge:</span></h4>
+</div>
+<div style="border:solid 1px #000000; color:#000000; border-radius: 5px; background: #FCD799; padding:2px; margin-bottom: 5px; padding:5px">
+<p><em>The following is a transcript of the only known episode of Misfortune Gorge.</em></p>
+<div class="blockquote">
+<p><em>[The episode opens on an aerial shot of a desert city in ruins, many fires burning among buildings and the sky line semi-obscured by smoke. A title card for Misfortune Gorge is overlaid on the image. The view flies down into wide open space made up of desert sands accumulating over a large asphalt parking lot. Wrecked cars and desiccated human corpses populate the lot. The view flies over the lot and into a large structure, with the light dimming until the screen is entirely dark.]</em></p>
+
+<p><em>[Dramatic instrumental music rises in volume until a crescendo as the title card fades and is replaced with a close up of Jeremy Kincaid, the host of the show. He is wearing a red-and-white checkered suit coat, wide black tie over yellow collared shirt, and red slacks. His skin is ashy gray, and his eyes are consistently leaking black, oily tears. He smiles at the camera; his teeth are bloody and stained yellow. He is holding a long, thin microphone measuring approximately forty-five centimeters.]</em></p>
+<p><strong>Kincaid</strong>: Welcome back to another splendiferous episode of Misfortune Gorge, the gameshow where our contestants use their wits and hard-won life skills in a steep competition of life and death!</p>
+<p><em>[Raucous applause began with Kincaid’s introduction but then trails off into silence as the host finishes. The view pulls in for a closeup of Kincaid’s face. He winks, squirting oily liquid onto his coat and microphone.]</em></p>
+<p><strong>Kincaid</strong>: Oh, relax. I’m just kidding!</p>
+<p><em>[Audience laughter is heard.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> Intermingled with the laughter is the call of buzzards. Occasionally shadows pass overhead above the stage, indicating circling birds.]</em></p>
+<p><strong>Kincaid</strong>: There’s no skill involved at all! Misfortune Gorge, may the odds be ever in your f– <em>[touches his ear]</em> What? Come on, Jerry. Why not?!? Uh huh. Uh huh. Oh. I see. Welp. Time for a new slogan, I guess. <em>[coughs]</em> Y que las probabilidades estén siempre a tu favor! This episode – and all of them – brought to you by Vikander-Kneed Technical Media. For a better tomorrow<sup>TM</sup>.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+<p><strong>Kincaid</strong>: Here at Misfortune Gorge, we believe in a good clean competition. One where the sweat of the brow and the accomplishments of our contestants are earned the hard way: through nepotism and global conspiracies. That’s right! Today, our contestants are all from everyone’s favorite oppressive secret regime: the SCP Foundation! <em>[whispering]</em> Or is that Secure Contain Protect Foundation? Honestly that sounds worse. We’ll stick with the first one.</p>
+<p><em>[The view zooms out to show the stage as Kincaid walks over to a heavy curtain, rust colored and deteriorated.]</em></p>
+<p><strong>Kincaid</strong>: Things, creeps and glorious consumers we call an audience, let me introduce our contestants.</p>
+<p><em>[The following graphic appears on screen.]</em></p>
+
+<p><em>[The image fades and the curtains draw back to reveal the three individuals indicated, although Agent Echo is without his weapon. All three look confused and quickly glance around the stage.]</em></p>
+<p><strong>Kincaid</strong>: Let’s get to know our lucky contestants! O5-7, introduce yourself.</p>
+<p><strong>O5-7</strong>: Marjorie Gonzales, O5-7 of the Foundation.</p>
+<p><em>[O5-7’s eyes are wide as she speaks. She looks at the other two contestants in horror.]</em></p>
+<p><strong>Kincaid</strong>: Well Marjorie, tell us a little about yourself!</p>
+<p><strong>O5-7</strong>: I’ve been on Overwatch Command for over ten years. I gave up everything for this organization. I left my husband and my seven-year-old son to take this position. They were amnesticized, they think I’m dead. My son dropped out of high school recently and has taken up heroin.</p>
+<p><em>[O5-7 tries to cover her mouth halfway through her speech but her arms won’t rise all the way and she continues to speak.]</em></p>
+<p><strong>Kincaid</strong>: Oh no! Have you ever tried to reach out to them?</p>
+<p><strong>O5-7</strong>: Not even once.</p>
+<p><em>[O5-7’s eyes narrow and she says this last line through gritted teeth.]</em></p>
+<p><strong>Kincaid</strong>: How fitting! Alright, enough from you. Agent Echo, how are things?</p>
+<p><em>[O5-7 continues moving her mouth as if speaking, but no sound comes out. Agent Echo looks at O5-7 in shock, but begins speaking. O5-7 appears to be screaming.]</em></p>
+<p><strong>Agent Echo</strong>: I don’t actually know. I’ve been with the Foundation for a significant amount of time, but there’s been so many missions that were amnesticized, so it could’ve been three years or three weeks.</p>
+<p><strong>Kincaid</strong>: Well, that’s no good. Hopefully you have some fun tonight, right folks?</p>
+<p><em>[Rousing applause is heard.]</em></p>
+<p><strong>Kincaid</strong>: Well, Marjorie, could you shed any light on Echo’s conundrum?</p>
+<p><strong>O5-7</strong>: <em>[Grimacing]</em> It’s just cheaper to amnesticize than pay for psychological treatment, and more effective.</p>
+<p><strong>Kincaid</strong>: Well, isn’t that interesting! How do you feel about that, Echo?</p>
+<p><em>[Echo stares at O5-7. She avoids his gaze.]</em></p>
+<p><strong>Kincaid</strong>: Well, he’s just flat out stupefied, folks! Marjorie, anything else?</p>
+<p><strong>O5-7</strong>: We need our agents working at peak efficiency, and they experience a lot of trauma. Not to mention are sometimes asked to do ethically questionable actions to contain an anomaly. So amnesticization is just better for everyone. That way they’re still useful.</p>
+<p><em>[O5-7 flips off Kincaid, which is blurred on the video.]</em></p>
+<p><strong>Kincaid</strong>: Now now, that’s no good! We’re a family show here at Misfortune Gorge!</p>
+<p><em>[The audience boos, prompting O5-7 to flip off the audience. As she focuses off camera she takes a step back, and her mouth opens wide. Agent Echo stares at O5-7, his fists clenched at his side.]</em></p>
+<p><strong>Kincaid</strong>: And our final contestant! Dr. Kleiner, introduce yourself.</p>
+<p><em>[Up until being addressed, the researcher had been paying little attention to Kincaid or her fellow contestants. She had been looking around the stage, in a focused manner. She does not cease her observations, but does respond to the host.]</em></p>
+<p><strong>Dr. Kleiner</strong>: Isabel Kleiner. Researcher, Security Clearance Level 4. Site-19.</p>
+<p><strong>Kincaid</strong>: Well, aren’t we a barrel of laughs?</p>
+<p><em>[The audience laughs for approximately three minutes until Kincaid waves them off.]</em></p>
+<p><strong>Kincaid</strong>: But seriously, Izzy, aren’t you glad to be here? Excited?</p>
+<p><strong>Dr. Kleiner</strong>: You brought us here against our will, and are forcing us to divulge classified intel through anomalous means. I would not say I am happy about this, no. Interested? Yes. Professionally speaking, I don’t know how I got here, and I want to.</p>
+<p><strong>Kincaid</strong>: Oh, sounds like we’ve got a contender here!</p>
+<p><em>[A medium build, middle aged man, dressed in slacks and a tucked-in button down shirt emerges from behind the curtain. A look of confusion is on his face, as he frantically looks around the stage.]</em></p>
+<p><strong>Kevin</strong>: What?</p>
+<p><strong>Kincaid</strong>: What th–</p>
+<p><strong>Kevin</strong>: YOU!</p>
+<p><em>[The individual<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> points at Kincaid, and advances towards him.]</em></p>
+<p><strong>Kevin</strong>: You did this again?</p>
+<p><strong>Kincaid</strong>: Oh right, I <a href="https://scp-wiki.wikidot.com/scp-5681">remember you now</a>. Wait, what are you doing here?</p>
+<p><strong>Kevin</strong>: You tell me!</p>
+<p><strong>Kincaid</strong>: Well, it seems like you’re ruining a perfectly good episode of television!</p>
+<p><strong>Kevin</strong>: I don’t want to be here, and I certainly don’t want to see you!</p>
+<p><strong>O5-7</strong>: If you need to address this, maybe we could get out of your way an–</p>
+<p><strong>Kincaid</strong>: Nonsense! We’ll cut it in post. <em>[Putting his finger to his ear and talking softly]</em> Jerry, what the fuck? Get security out here.</p>
+<p><strong>Kevin</strong>: We can hear you.</p>
+<p><strong>Kincaid</strong>: No you can’t! Don’t gaslight me, Kevin! Anyway, it’s time for…</p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h3 id="toc4"><span><em>A WORD FROM OUR SPONSORS</em></span></h3>
+</div>
+
+<br/>
+<div style="text-align: center;">
+<h4 id="toc5"><span>Second Segment</span></h4>
+</div>
+<div class="blockquote">
+<p><em>[The screen fades in to show all three contestants behind podiums with their names on them, and Kincaid walking in front of them facing the camera.]</em></p>
+<p><strong>Kincaid</strong>: Welcome back folks, to Misfortune Gorge, the gameshow where life hangs in the balance! Don’t worry, it’s just a phra–</p>
+<p><strong>Kevin</strong>: Bullshit.</p>
+<p><em>[Kevin wanders behind the contestants, looking for an exit.]</em></p>
+<p><strong>Kincaid</strong>: Please go.</p>
+<p><strong>Kevin</strong>: I thought there was supposed to be a gorge.</p>
+<p><strong>Kincaid</strong>: Shut the fuck up, Keith.</p>
+<p><strong>Kevin</strong>: I’m not even a contestant! I don’t even know why I’m here.</p>
+<p><strong>Kincaid</strong>: Me either, Bryan. Why don’t you leave?</p>
+<p><strong>Kevin</strong>: You took me from my home. AGAIN!</p>
+<p><strong>Kincaid</strong>: Details, details. Now, can I get back to hosting my show?</p>
+<p><em>[Kevin waves dismissively.]</em></p>
+<p><strong>Kincaid</strong>: Great. <em>[Turning to the three contestants.]</em> Now! Let’s talk about our first game!</p>
+<p><strong>Dr. Kleiner</strong>: You’re not very good at this, are you?</p>
+<p><strong>O5-7</strong>: Seriously.</p>
+<p><strong>Kincaid</strong> <em>[Sighing]</em> Okay, just bring it out.</p>
+<p><em>[The image fades to darkness, briefly replaced with the following graphic.]</em></p>
+
+<p><strong>Kincaid</strong>: Say it with me folks!</p>
+<p><em>[Several thousand voices are heard to mumble indecipherably.]</em></p>
+<p><strong>Kincaid</strong>: That’s right! Name that Atrocity!</p>
+<p><em>[A curtain is drawn back where the contestants entered from to show a large projection screen.]</em></p>
+<p><strong>Kincaid</strong>: Now, we’re going to show you three some images, and the first to recognize what we’re showing, hit your buzzer and call out that answer.</p>
+<p><strong>O5-7</strong>: <em>[Hits buzzer]</em> A waste of my time.</p>
+<p><strong>Kincaid</strong>: Interesting you should say that, this round should be especially intriguing for you and Agent Echo!</p>
+<p><strong>Agent Echo</strong>: I’d just like to leave.</p>
+<p><strong>Kevin</strong>: Wouldn’t we all.</p>
+<p><strong>Kincaid</strong>: Who gave him a microphone, Jerry? Okay! Let’s go!</p>
+<p><em>[An image of a shopping mall on fire appears on screen.]</em></p>
+<p><strong>Agent Echo</strong>: Is that Jersey City? I think I’ve been there.</p>
+<p><strong>O5-7</strong>: You have.</p>
+<p><em>[She glares at Kincaid, who winks at her.]</em></p>
+<p><strong>Agent Echo</strong>: When?</p>
+<p><strong>O5-7</strong>: Two months ago.</p>
+<p><strong>Kincaid</strong>: What was he doing there, Marjorie?</p>
+<p><em>[O5-7 sighs and then shrugs.]</em></p>
+<p><strong>O5-7</strong>: You were on a containment deployment that went bad. We were forced to make some tough decisions.</p>
+<p><strong>Kincaid</strong>: No euphemisms allowed!</p>
+<p><strong>Agent Echo</strong>: Went bad how?</p>
+<p><strong>Dr. Kleiner</strong>: Are you putting on a show with this innocent act, Echo? Civilians died, and we had to amnesticize half the city’s police force and emergency workers. What does it ever mean when something went bad on containment?</p>
+<p><strong>Agent Echo</strong>: Oh… How many people?</p>
+<p><strong>O5-7</strong>: Fifteen.</p>
+<p><strong>Agent Echo</strong>: Why can’t I remember it?</p>
+<p><em>[Dr. Kleiner groans and rolls her eyes. She hits the buzzer.]</em></p>
+<p><strong>Dr. Kleiner</strong>: Failure to contain an undesignated anomaly led to the emulsification of a Sbarro’s and fifteen people we had to cover up.</p>
+<p><strong>Kincaid</strong>: It’s called <em>name</em> that atrocity, doctor.</p>
+<p><strong>O5-7</strong>: Operation Moon Hits Your Eye.</p>
+<p><em>[Kincaid laughs.]</em></p>
+<p><strong>Kincaid</strong>: Now isn’t that a riot, folks?</p>
+<p><em>[The audience applauds.]</em></p>
+<p><strong>Kincaid</strong>: One point for Marjorie! For a bonus, how many people did Echo’s team lose?</p>
+<p><strong>O5-7</strong>: <em>[Closing her eyes.]</em> Three.</p>
+<p><strong>Kincaid</strong>: And?</p>
+<p><strong>O5-7</strong>: One of them was his fiancé.</p>
+<p><strong>Agent Echo</strong>: I have a fiancé?</p>
+<p><strong>Kincaid</strong>: Not anymore!</p>
+<p><em>[Audience laughs.]</em></p>
+<p><strong>Kincaid</strong>: Next image!</p>
+<img alt="VKTM-7000_Wrecked_Bus-EDIT" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM-7000_Wrecked_Bus-EDIT"/>
+<p><em>[Sixteen minutes of footage omitted for brevity. Each of the images shown is a mission Agent Echo was assigned to; some are successes and some are failures. Each has a significant cost of human life or psychological trauma on the agent. Echo ceases speaking after the third image. By the time the round is finished, O5-7 has three points and Dr. Kleiner has two.]</em></p>
+<p><strong>Kincaid</strong>: Alright, you win this round! Jerry, let’s show Marjorie what she won!</p>
+<p><em>[The curtains swing closed over the projection screen and then open again to reveal a large crystal bowl filled with water and several dozen drowned June bugs floating in the liquid.]</em></p>
+<p><strong>O5-7</strong>: You do not recognize the bugs in th–</p>
+<p><strong>Kincaid</strong>: Ah ah ah! No way, you’re not getting this show hit with a copyright strike. Moving on!</p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h3 id="toc6"><span><em>COMMERCIAL BREAK!</em></span></h3>
+</div>
+
+<div style="text-align: center;">
+<h4 id="toc7"><span>Third Segment</span></h4>
+</div>
+<div class="blockquote">
+<p><strong>Kincaid</strong>: Welcome back folks. Now that you’ve paid some of our bills, maybe we can pay some of our contestants! Let’s move on to the next game!</p>
+
+<p><em>[The rusty curtains draw back and reveal a large spinning wheel, at least 3 meters in diameter separated into seven numbered, equally-sized segments.]</em></p>
+<p><strong>Kevin</strong>: Wheel of Kevin?! What the hell, you can’t ever remember my name, but you name a game after me?</p>
+<p><strong>Kincaid</strong>: I have no idea who you are. Security!</p>
+<p><em>[Attached to the wheel is a crucified human corpse, resembling depictions of Jesus Christ, including a crown of thorns.]</em></p>
+<p><strong>Kevin</strong>: That’s not me.</p>
+<p><strong>Kincaid:</strong> You’re right, that’s Jesus. Who’s going to mistake you for our one true savior? Also, get out of here!</p>
+<p><strong>Kevin</strong>: But it’s the Wheel of Kevin.</p>
+<p><strong>Kincaid</strong>: I don’t understand your point.</p>
+<p><em>[O5-7 clears her throat.]</em></p>
+<p><strong>Kincaid</strong>: What?</p>
+<p><strong>O5-7</strong>: Are we going to be here all night?</p>
+<p><strong>Kincaid</strong>: Maybe!</p>
+<p><em>[Turns and winks at the camera. The audience laughs.]</em></p>
+<p><strong>Kincaid</strong>: Okay, so here’s the rules of the game.</p>
+<p><em>[Kincaid walks over to the wheel.]</em></p>
+<p><strong>Kincaid</strong>: Each spin of the wheel grants an opportunity to win some points based on a specific challenge, but careful! Some segments of the wheel will provide a penalty!</p>
+<p><strong>Kevin</strong>: Oh, this will be good.</p>
+<p><strong>Kincaid</strong>: Will you leave?</p>
+<p><strong>Kevin</strong>: I’d love to.</p>
+<p><em>[Kincaid shakes his head and turns back to the contestants.]</em></p>
+<p><strong>Kincaid</strong>: Agent Echo, you’re up!</p>
+<p><strong>Agent Echo</strong>: Alright…</p>
+<p><em>[The wheel begins spinning and one arm of the corpse extends, striking a raised post from the center point of each segment of the wheel. Droplets of blood spray from the wheel and splash over the contestants.]</em></p>
+<p><strong>Dr. Kleiner</strong>: I don’t even know why we’re playing the game.</p>
+<p><strong>Kincaid</strong>: What choice do you have? Besides, who wouldn’t want to test their fates for the chance to win such incredible prizes?</p>
+<p><em>[The camera spins and zooms in to the other side of the stage where several prizes have been displayed.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup> The camera spins back to the wheel as it slows and the hand of Christ lands on the post in section 2. The post perfectly fits within a hole in the wrist of the body.]</em></p>
+<p><strong>Kincaid</strong>: Oh no! Looks like you landed on one of the penalty tiles!</p>
+<p><strong>Agent Echo</strong>: How many points do I lose?</p>
+<p><strong>Kincaid</strong>: None! It says here, “you will be stabbed at some point during the show.” Fun!</p>
+<p><em>[O5-7 rolls her eyes.]</em></p>
+<p><strong>Agent Echo</strong>: What the fuck is wrong with this show?</p>
+<p><strong>Kevin</strong>: It’s Hell.</p>
+<p><strong>Kincaid</strong>: Absolutely nothing! <em>[Narrowing his eyes at Kevin.]</em> Don’t mind him. Okay, Marjorie, your turn.</p>
+<p><em>[Fourteen minutes omitted for brevity. O5-7 landed on segment 3, resulting in Kincaid yelling “Bankrupt!” and the loss of all her points. Dr. Kleiner landed on 7, which was described as “Don’t look behind you” and gained zero points.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup> Agent Echo landed on segment 5 and was challenged to “throw a rock at Kevin!” A small stone materialized at his podium, but Agent Echo refused to do so and gained no points.]</em></p>
+<p><strong>Kincaid</strong>: Alright, Dr. Kleiner, you’re up!</p>
+<p><em>[The wheel spins and the hand of Christ falls on segment 1.]</em></p>
+<p><strong>Kincaid</strong>: Fill some blood in this cup for two points!</p>
+<p><em>[A paring knife and styrofoam cup appear on Dr. Kleiner’s podium. She picks up the knife and cup and examines them.]</em></p>
+<p><strong>Kincaid</strong>: What’s the matter? Not so appealing when you have to do your own dirty work?</p>
+<p><em>[Dr. Kleiner stares at Kincaid, and then throws the knife at him. It disappears after leaving her fingers and manifests back on the podium. Kincaid smiles and waggles his finger back and forth.]</em></p>
+<p><strong>Kincaid</strong>: I applaud your initiative, but that’s not going to work. Come on now, you can’t have a problem with a little bloodletting, surely. Look who you work for!</p>
+<p><em>[Dr. Kleiner walks over to Agent Echo, then slashes his forearm. He screams and pushes her away from him.]</em></p>
+<p><strong>Agent Echo</strong>: What’s your problem, lady?</p>
+<p><strong>Dr. Kleiner</strong>: The sooner we win, the sooner we can go home. I’ve read the files on Vikander-Kneed. They don’t kill people. Right?</p>
+<p><em>[Kincaid smiles and shakes his head. The cameras zoom in on Kevin in the background behind the contestants.]</em></p>
+<p><strong>Kevin</strong>: Um…</p>
+<p><strong>Kincaid</strong>: Ignore him.</p>
+<p><em>[Kincaid throws the rock at Kevin that Echo refused to.]</em></p>
+<p><strong>Dr. Kleiner</strong>: I’m in the lead, so it gives me the best chance of winning if I’m uninjured. You’re the most likely to be able to operate with such a wound, so…</p>
+<p><em>[Dr. Kleiner holds out the styrofoam cup. Agent Echo curses and holds out his arm so the blood from his wound drips into the cup. Kincaid suddenly appears from off camera, grabbing the styrofoam cup and upending it so the blood trickles out into his eyes. The blood mixes with the oily black substance leaking from his eyes and turns it a rusty brown color. For the rest of the episode, the substance retains that color.]</em></p>
+<p><strong>Kincaid</strong>: <em>[Satisfied sigh]</em> Oh thank god, I was so parched.</p>
+<p><em>[Kleiner backs away and returns to her podium. The point tally under her name goes up by 3 points, putting her at 5 points total.]</em></p>
+<p><em>[Kincaid is running his fingers inside the cup and then rubbing the remnants of Echo’s blood into his eyes. He returns to standing in front of the wheel.]</em></p>
+<p><strong>Kincaid</strong>: Right! Marjorie!</p>
+<p><strong>O5-7</strong>: I have a title, couldn’t yo–</p>
+<p><strong>Kincaid</strong>: Your title <em>is</em> Marjorie.</p>
+<p><em>[The wheel begins spinning.]</em></p>
+<p><strong>Kincaid</strong>: Oh, I’m sorry, I forgot you sacrificed your whole family to this great calling. To combat the things in the dark. OH FIVE SEVEN! A great leader responsible for <a href="https://scp-wiki.wikidot.com/scp-6500">important choices!</a> Containing the awful anomalies! Preserving noooooormalcy.</p>
+<p><em>[The wheel stops spinning with the now battered and disfigured hand of Christ indicating the segment numbered 4.]</em></p>
+<p><strong>Kincaid</strong>: There we go! Ready for your challenge?</p>
+<p><em>[O5-7 crosses her arms.]</em></p>
+<p><strong>Kincaid</strong>: Explain to your son why you abandoned him!</p>
+<p><strong>O5-7</strong>: What?</p>
+<p><em>[The curtains part again to reveal a teenage boy with dirty clothes and hair. He has bags under his eyes.]</em></p>
+<p><strong>O5-7</strong>: Cas?</p>
+<p><strong>Caspian Gonzales</strong>: Mom? What the fuck!</p>
+<p><strong>Kincaid</strong>: Go ahead, explain!</p>
+<p><strong>O5-7</strong>: I needed to dedicate myself to the job, it was too important.</p>
+<p><em>[The audience boos.]</em></p>
+<p><strong>Caspian</strong>: Did you really need to abandon us? Couldn’t you have just kept it secret?</p>
+<p><strong>O5-7</strong>: I couldn’t afford the distraction. If I took my eye off the ball, I would lose my position and then the world would suffer.</p>
+<p><strong>Caspian</strong>: But you’re my mother. I needed you.</p>
+<p><strong>O5-7</strong>: The Foundation needed me more, Cas.</p>
+<p><strong>Kincaid</strong>: Really?</p>
+<p><strong>O5-7</strong>: Okay, no, but I didn’t really want to be a mother anyway!</p>
+<p><em>[O5-7’s mouth hangs open after this. She looks away, downcast.]</em></p>
+<p><strong>Kincaid</strong>: Excellent! Three points to Marjorie!</p>
+<p><em>[The audience claps.]</em></p>
+<p><strong>Kevin</strong>: Well, you’re still a dick.</p>
+<p><strong>Kincaid</strong>: Yes I am!</p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h3 id="toc8"><span><em>TIME TO MAKE THE MONEY!</em></span></h3>
+</div>
+<br/>
+
+<br/>
+<div style="text-align: center;">
+<h4 id="toc9"><span>Final Segment</span></h4>
+</div>
+<div class="blockquote">
+<p><em>[Screen fades in from the last commercial to find Kincaid sitting cross legged on the floor of the stage. The oily brown substance is pooling around him on the floor, pouring from his eyes and down his shirt and into his lap. The three contestants are facing him in a semicircle, but are standing. Kevin is bound to a simple wooden chair in the corner of the screen, his mouth gagged with cloth. He is rocking back and forth in the chair.]</em></p>
+<p><strong>Kincaid</strong>: Oh look who’s back, it’s the audience! We missed you.</p>
+<p><strong>O5-7</strong>: <em>[Scoffs]</em> Audience.</p>
+<p><strong>Kincaid</strong>: Sorry?</p>
+<p><strong>O5-7</strong>: What audience?</p>
+<p><strong>Kincaid</strong>: <em>[Pointing at the camera]</em> The Audience.</p>
+<p><em>[O5-7 moves over to the camera and turns it around.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup> The audience is an American football field sized coliseum. At least seventy thousand people sit in the stands. The closest seats are visible as the camera pans by. Filling each seat is a humanoid corpse in various states of decomposition.]</em></p>
+<p><strong>Kincaid</strong>: Stop it!</p>
+<p><em>[The camera circles back to the stage and Kincaid ushers O5-7 back to where she was before.]</em></p>
+<p><strong>Kincaid</strong>: They’re shy.</p>
+<p><em>[Kincaid winks at the camera.]</em></p>
+<p><strong>Kincaid</strong>: Alright, who’s ready for the last part of the show?</p>
+<p><strong>Dr. Kleiner</strong>: Good god, yes. Let’s get this over with. I have research I could be doing.</p>
+<p><strong>Agent Echo</strong>: Yeah, I’m done here.</p>
+<p><strong>Kincaid</strong>: Oh? Oh yes! Important things to get back to, and then get your memory erased! Fun fun.</p>
+<p><em>[Agent Echo frowns, but does not respond.]</em></p>
+<p><strong>O5-7</strong>: Okay, that’s enough. Leave him be.</p>
+<p><strong>Kincaid</strong>: Where was that nurturing spirit a minute ago?</p>
+<p><strong>O5-7</strong>: Tell us what the game is already.</p>
+<p><strong>Kincaid</strong>: Alright alright. It’s actually my favorite! Because it’s time for:</p>
+
+<p><strong>Kincaid</strong>: Okay! Ready?</p>
+<p><strong>Dr. Kleiner</strong>: What about the rules?</p>
+<p><strong>Kincaid</strong>: You guess the number I’m thinking of.</p>
+<p><strong>O5-7</strong>: That’s ridiculous.</p>
+<p><strong>Kincaid</strong>: No, it isn’t. Tell me another game show that’s ever done that. Go on, I’m waiting.</p>
+<p><strong>Agent Echo</strong>: He’s got you there.</p>
+<p><em>[Kincaid walks over to Echo and slaps him on the back, leaving a rusty handprint on his uniform.]</em></p>
+<p><strong>Kincaid</strong>: Thank you, my friend!</p>
+<p><em>[Kevin is struggling in his chair, succeeding in catching Dr. Kleiner’s attention. He indicates his bindings with a head motion. Kleiner stares at him, then turns back towards Kincaid and the other contestants.]</em></p>
+<p><strong>Dr. Kleiner</strong>: Alright, let’s play already.</p>
+<p><em>[Kevin’s low whimpering can be heard for a moment, but audience applause drowns it out.]</em></p>
+<p><strong>Kincaid</strong>: Okay! Number between 1 and 10. Echo, you first. Go!</p>
+<p><em>[Agent Echo just grimaces.]</em></p>
+<p><strong>Kincaid</strong>: Pick. A. Fucking. Number.</p>
+<p><strong>Agent Echo</strong>: Uh, four.</p>
+<p><strong>Kincaid</strong>: Hmmm. Nope, that’s not it.</p>
+<p><strong>Agent Echo</strong>: Who cares?</p>
+<p><strong>Kincaid</strong>: That’s the spirit! Marjorie?</p>
+<p><em>[O5-7 sighs. Kevin begins softly moaning in the background again, and Dr Kleiner turns to look at him.]</em></p>
+<p><strong>O5-7</strong>: Eight.</p>
+<p><strong>Kincaid</strong>: No way! Okay, Doctor? Your turn.</p>
+<p><em>[Dr. Kleiner is looking at Kevin. No emotion is easily readable on her face.]</em></p>
+<p><strong>Kincaid</strong>: <em>[Touching his ear]</em> Jerry, will you please take George to the back?</p>
+<p><em>[A humanoid-shaped darkness begins to drag Kevin off to the side of the stage.]</em></p>
+<p><strong>Kincaid</strong>: Oh Dr. Kleiner?</p>
+<p><em>[She turns away from Kevin and looks back at Kincaid.]</em></p>
+<p><strong>Kincaid</strong>: Wow! Nothing fazes you, huh? What’s your guess? You’re tied with Marjorie, so if you don’t get it, we’re going back around!</p>
+<p><strong>Dr. Kleiner</strong>: Seven.</p>
+<p><em>[Confetti begins falling from above them, with a klaxon sounding and trumpets playing a fanfare.]</em></p>
+<p><strong>Kincaid</strong>: That’s it!</p>
+<p><strong>O5-7</strong>: Come on.</p>
+<p><strong>Kincaid</strong>: Complain, complain, complain. What now?</p>
+<p><strong>O5-7</strong>: You probably didn’t even have a number in mind, you just picked who you wanted to win.</p>
+<p><strong>Kincaid</strong>: That’s absolutely true.</p>
+<p><strong>O5-7</strong>: Seriously?</p>
+<p><strong>Kincaid</strong>: What’s the matter? You only like playing when you’re the one who can manipulate the results? You’re only happy when you can ruin a man’s dreams of having a primetime gameshow?</p>
+<p><strong>O5-7</strong>: What are you talking about?</p>
+<p><strong>Kincaid</strong>: Why do you do it anyway? Don’t tell me that nonsense about dying in the dark, lady. Why do you insist on containing everything? I worked for years on that show. One simple decision by you fucks, and it’s all up in smoke. So tell me, why contain the things that aren’t nightmares? No more bullshit.</p>
+<p><strong>O5-7</strong>: We’ve been doing it so long, we don’t know how to exist any other way. And we don’t want to let go.</p>
+<p><strong>Kincaid</strong>: Of what?</p>
+<p><strong>O5-7</strong>: Control. It’s in the name, for fuck’s sake. And if the <a href="/scp-6500">anomalies weren’t around to control</a> anymore, we’d lose what hold we have.</p>
+<p><strong>Dr. Kleiner</strong>: Inspiring. Can we leave now?</p>
+<p><em>[Kincaid points at Echo and O5-7, snapping his fingers.]</em></p>
+<p><strong>Kincaid</strong>: They can!</p>
+<p><em>[Tendrils of black sludge reach up from the floor of the stage, wrapping themselves around Echo and O5-7, dragging them down into a hole opened in the floor.]</em></p>
+<p><strong>Dr. Kleiner</strong>: Listen, I don’t care what you do to them. I’m going home.</p>
+<p><strong>Kincaid</strong>: What about your prize?</p>
+<p><strong>Dr. Kleiner</strong>: I don’t care.</p>
+<p><em>[Kincaid snaps his fingers again, and the prizes are all laid out in front of them. He walks over and lifts the paper bag, staining it further with his fingers covered in brown fluid. At this point the only distinguishing feature on Kincaid is the eyes, glowing a dull yellow.]</em></p>
+<p><em>[He walks over and hands her the bag. She gingerly opens it, trying to avoid the residue from his touch. She pulls out a crumpled pile of papers. She looks at them and glances up at the camera, her eyes wide.]</em></p>
+<p><strong>Kincaid</strong>: An exclusive employment contract with Vikander-Kneed Technical Media planning and statistics department! Already signed!</p>
+<p><em>[Dr. Kleiner frantically flips to the last pages.]</em></p>
+<p><strong>Dr. Kleiner</strong>: Hey, my signature is here. I didn’t sign this!</p>
+<p><strong>Kincaid</strong>: I’ll think you’ll find that you did.</p>
+<p><em>[Kincaid turns to the camera with his arms open wide. A spray of the brown liquid hits Kleiner.]</em></p>
+<p><strong>Kincaid</strong>: Well, that’s all folks! We’re outta time here at Misfortune Gorge. I hope you all had a good time, I know our very own Dr. Kleiner did. Don’t worry, you’ll be seeing a lot of her in the future! She’s VKTM material.</p>
+<p><strong>Dr. Kleiner</strong>: The fuck I am!</p>
+<p><strong>Kincaid</strong>: Just smell that gumption, folks! Can’t wait to get started! Thank you to our sponsors, Vikander-Kneed Technical Media. For a Better Tomorrow<sup>TM</sup>. Goodnight, America!</p>
+<p><em>[Credits begin to roll as the camera pulls back from the stage. Dr. Kleiner is dragged back into the shadows of the side stage area, and Kincaid follows her.]</em></p>
+</div>
+<div style="display: flex; justify-content: center; grid-gap: 10px;border:solid 1px #000000; color:#000000; border-radius: 50px; background: #000000; padding:5px; margin-bottom: 10px; padding:10px">
+<div style="float:left; width: 50%; padding: 0 2%">
+<div style="text-align: right;">
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="font-size:200%;"><span style="font-family: 'Alfa Slab One', cursive;"><span style="color: #ffffff">Misfortune</span></span></span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="color: #c1c1c1">Produced by</span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="color: #ffffff">Cast</span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="color: #c1c1c1">The Host</span><br/>
+<span style="color: #c1c1c1">O5-7</span><br/>
+<span style="color: #c1c1c1">Agent Echo</span><br/>
+<span style="color: #c1c1c1">Dr. Kleiner</span><br/>
+<span style="color: #c1c1c1">Kevin</span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="color: #ffffff">Crew</span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="color: #c1c1c1">Production Designer</span><br/>
+<span style="color: #c1c1c1">Key Grip</span><br/>
+<span style="color: #c1c1c1">Graphic Designer</span><br/>
+<span style="color: #c1c1c1">Light Board Operator</span><br/>
+<span style="color: #c1c1c1">Planning and Statistics</span><br/>
+<span style="color: #c1c1c1">Puppet Creative Consultant</span><br/>
+<span style="color: #c1c1c1">Music Coordinator</span><br/>
+<span style="color: #c1c1c1">Editing Supervisor</span><br/>
+<span style="color: #c1c1c1">Best Boy</span><br/>
+<span style="color: #c1c1c1">Casting Supervisor</span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+</div>
+</div>
+<div style="float:right; width: 45%; padding: 0 2%">
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="font-size:200%;"><span style="font-family: 'Alfa Slab One', cursive;"><span style="color: #ffffff">Gorge</span></span></span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="color: #ffffff">Vikander-</span><br/>
+<span style="color: #ffffff">Kneed</span><br/>
+<span style="color: #ffffff">Technical</span><br/>
+<span style="color: #ffffff">Media</span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="color: #ffffff">Jeremy Kincaid</span><br/>
+<span style="color: #ffffff">Marjorie Gonzales</span><br/>
+<span style="color: #ffffff">Agent Echo</span><br/>
+<span style="color: #ffffff">Dr. Isabel Kleiner</span><br/>
+<span style="color: #ffffff">Kevin Fillmore</span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="color: #ffffff">Jerry</span><br/>
+<span style="color: #ffffff">Jerry</span><br/>
+<span style="color: #ffffff">Jerry</span><br/>
+<span style="color: #ffffff">Jerry</span><br/>
+<span style="color: #ffffff">Dr. Isabel Kleiner</span><br/>
+<span style="color: #ffffff">Jerry</span><br/>
+<span style="color: #ffffff">Jerry</span><br/>
+<span style="color: #ffffff">Jerry</span><br/>
+<span style="color: #ffffff">Jerry</span><br/>
+<span style="color: #ffffff">Jerry</span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+</div>
+</div>
+<div style="text-align: center;">
+<h3 id="toc10"><span><em>ONE MORE AD BREAK TO FEED OUR BANK ACCOUNTS!</em></span></h3>
+</div>
+<br/>
+
+<p><em>The final image before the episode begins again is included below.</em></p>
+
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<blockquote>
+<p><strong><span style="text-decoration: underline;">Update</span></strong>: (30 September 2022) Agent Echo was found unconscious on the streets of Reykjavik, Iceland. As of writing, no sign of Marjorie Gonzales, the previous O5-7, has been found.</p>
+<p>Kevin Fillmore continues to work at the Phoenix Police Department and has no knowledge of the events described above.</p>
+</blockquote>
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. The identifying copyright number does not match any on record with the US Office of Copyright or any other nation’s equivalent federal body.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. William Wettle, Researcher in Replication Studies at Site-43, claimed to have no knowledge of the anomaly and categorically denied any connection to <a href="/scp-6123">GOI-5889</a>.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Audio analysis indicates a live audience of more than two thousand individuals.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Recording did not actually register the phrase “TM” but invariably, transcripts have included it and the notation cannot be deleted for unknown reasons.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Matching the description of Kevin Fillmore, an administrator working for the Phoenix Police Department in Phoenix Arizona.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Including a neon yellow 2022 Toyota Camry, a gold trimmed Rolex branded watch, a $50 giftcard to the VKTM.com online store, and a brown paper bag with oil stains.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. A entity comprised of shadows with red glowing eyes appeared behind the researcher and grasped her head, keeping it immobile, and would not allow her to turn and look behind her.</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. Interestingly, as the view rotates 180° there is no camera operator seen.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-7007">SCP-7007</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-7007">https://scpwiki.com/scp-7007</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename</strong>: CRT<br/>
+<strong>Author</strong>: Robert Anders<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/schwarzbrot/23624689029/">https://www.flickr.com/photos/schwarzbrot/23624689029/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Wheel of Kevin<br/>
+<strong>Author</strong>: <span class="printuser"><a href="http://www.wikidot.com/user:info/vivarium" onclick="WIKIDOT.page.listeners.userInfo(6798022); return false;">Vivarium</a></span><br/>
+<strong>License</strong>: CC BY-SA 3.0<br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span> and derivative of below image</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Corn Maze Game Wheel<br/>
+<strong>Author</strong>: Jim the Photographer<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/72744295@N00/9903753734">https://www.flickr.com/photos/72744295@N00/9903753734</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Los Angeles Sunset<br/>
+<strong>Author</strong>: Ron Reiring<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/84263554@N00/2160218875">https://www.flickr.com/photos/84263554@N00/2160218875</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/vivarium" onclick="WIKIDOT.page.listeners.userInfo(6798022); return false;">Vivarium</a></span> and <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Will Become Desolation<br/>
+<strong>Author</strong>: Crusty Da Klown<br/>
+<strong>License</strong>: Public Domain<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/148598741@N02/50633046003/">https://www.flickr.com/photos/148598741@N02/50633046003/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<hr/>
+<p><strong><em>All voice over is released under Creative Commons 3.0 SA license – Written by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span> and voiced by both <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span> and <span class="printuser"><a href="http://www.wikidot.com/user:info/jak-mockery" onclick="WIKIDOT.page.listeners.userInfo(6556491); return false;">Jak Mockery</a></span></em></strong></p>
+<hr/>
+<p><strong>Music provided by Kevin Macleod</strong><br/>
+<em>Licensed Creative Commons: BY Attribution 4.0</em><br/>
+<em>Source</em>: <a href="https://incompetech.com/music/royalty-free/music.html">https://incompetech.com/music/royalty-free/music.html</a><br/>
+<span style="text-decoration: underline;">Tracks used</span>:<br/>
+SCP-x7x (6th Floor)<br/>
+Bleeping demo<br/>
+Ether Vox<br/>
+The Ice Giants<br/>
+Aquarium<br/>
+Adding the sun<br/>
+Hillbilly Swing<br/>
+Krampus Workshop<br/>
+Del Rio Bravo<br/>
+Symmetry<br/>
+Magistar</p>
+<hr/>
+<hr/>
+<p><strong><em>All Video edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span> using the below images:</em></strong></p>
+<blockquote>
+<p><strong>Name:</strong> Desolate track on Lealholm moor<br/>
+<strong>Author:</strong> Colin Grice<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://web.archive.org/web/20210613035718/https://www.geograph.org.uk/photo/94020">Geograph</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Dream Catcher<br/>
+<strong>Author</strong>: Randy Heinitz<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/rheinitz/6214617711/">https://www.flickr.com/photos/rheinitz/6214617711/</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Sandstone Sacrificial Altar<br/>
+<strong>Author</strong>: Gary Todd<br/>
+<strong>License</strong>: Public Domain<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/101561334@N08/29343946728/">https://www.flickr.com/photos/101561334@N08/29343946728/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Earth Rise<br/>
+<strong>Author</strong>: NASA<br/>
+<strong>License</strong>: Public Domain<br/>
+<strong>Source</strong>: <a href="https://commons.wikimedia.org/wiki/File:Apollo_10_Earthrise.ogv">https://commons.wikimedia.org/wiki/File:Apollo_10_Earthrise.ogv</a></p>
+</blockquote>
+<hr/>
+<blockquote>
+<p><strong>Filename</strong>: House<br/>
+<strong>Author</strong>: Jennifer C.<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/29638108@N06/5220536930/">https://www.flickr.com/photos/29638108@N06/5220536930/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: House<br/>
+<strong>Author</strong>: Andrew<br/>
+<strong>License</strong>: CC BY-SA 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/asnewlibrarian/1530559675/">https://www.flickr.com/photos/asnewlibrarian/1530559675/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: House<br/>
+<strong>Author</strong>: oatsy40<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/oatsy40/45135502511/">https://www.flickr.com/photos/oatsy40/45135502511/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: House<br/>
+<strong>Author</strong>: oatsy40<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/oatsy40/45135501651/">https://www.flickr.com/photos/oatsy40/45135501651/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Attractive woman working out at home<br/>
+<strong>Author</strong>: nenad Stojkovic<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/nenadstojkovic/52040977642/">https://www.flickr.com/photos/nenadstojkovic/52040977642/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: muscles 2<br/>
+<strong>Author</strong>: fsecart<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/fsecart/648521701/">https://www.flickr.com/photos/fsecart/648521701/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: woman working out on the wooden terrace on lake<br/>
+<strong>Author</strong>: nenad Stojkovic<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/nenadstojkovic/50183373131/">https://www.flickr.com/photos/nenadstojkovic/50183373131/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Capitalism<br/>
+<strong>Author</strong>: Surizar<br/>
+<strong>License</strong>: CC BY-SA 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/puchica/2459268417/">https://www.flickr.com/photos/puchica/2459268417/</a></p>
+</blockquote>
+<hr/>
+<blockquote>
+<p><strong>Filename</strong>: vintage paper texture<br/>
+<strong>Author</strong>: pinkorchid_too (Sandra)<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://ccsearch-dev.creativecommons.org/photos/6a5196e8-3810-4017-bd26-84f0d08b797c">link</a><br/>
+<strong>Source:</strong> <a href="/sarkicism-hub">SCP Foundation Wiki</a><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Title:</strong> cf15Pj6.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/metaphysician" onclick="WIKIDOT.page.listeners.userInfo(1698079); return false;"><img alt="Metaphysician" class="small" src="https://www.wikidot.com/avatar.php?userid=1698079&amp;amp;size=small&amp;amp;timestamp=1756043114" style="background-image:url(https://www.wikidot.com/userkarma.php?u=1698079)"/></a><a href="http://www.wikidot.com/user:info/metaphysician" onclick="WIKIDOT.page.listeners.userInfo(1698079); return false;">Metaphysician</a></span><br/>
+<strong>Release year:</strong> 2016</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>:Jason Lord of TV<br/>
+<strong>Author</strong>: jasoneppink<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/38102495@N00/2431543939">https://www.flickr.com/photos/38102495@N00/2431543939</a><br/>
+<strong>Additional Notes</strong>: Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/vivarium" onclick="WIKIDOT.page.listeners.userInfo(6798022); return false;">Vivarium</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Image from page 57 of "A masque of dead Florentines : wherein some of death's choicest pieces, and the great game that he played therewith, are fruitfully set forth" (1895)<br/>
+<strong>Author</strong>:internet Archive Book Images<br/>
+<strong>License</strong>: Public Domain<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/internetarchivebookimages/14784089862/">https://www.flickr.com/photos/internetarchivebookimages/14784089862/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: IMG_0763 (wrecked bus)<br/>
+<strong>Author</strong>: Joe Loong<br/>
+<strong>License</strong>: CC BY-SA 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/joelogon/8004542634/">https://www.flickr.com/photos/joelogon/8004542634/</a><br/>
+<strong>Additional Notes</strong>: Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/vivarium" onclick="WIKIDOT.page.listeners.userInfo(6798022); return false;">Vivarium</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: BLM-Idaho's Clay Stephens Assists with Australian Bushfires<br/>
+<strong>Author</strong>: BLMIdaho<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/blmidaho/49451326777/">https://www.flickr.com/photos/blmidaho/49451326777/</a><br/>
+<strong>Additional Notes</strong>: Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: scowls<br/>
+<strong>Author</strong>: coia.nac<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/coianac/8293218154/">https://www.flickr.com/photos/coianac/8293218154/</a><br/>
+<strong>Additional Notes</strong>: Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: threemoonsinitiative.jpg<br/>
+<strong>Author</strong>: <span class="printuser"><a href="http://www.wikidot.com/user:info/daveyoufool" onclick="WIKIDOT.page.listeners.userInfo(2034230); return false;">daveyoufool</a></span><br/>
+<strong>License</strong>: CC BY-SA 3.0<br/>
+<strong>Source</strong>: <a href="https://scp-wiki.wikidot.com/local--files/three-moons-initiative-hub/threemoonsinitiative.jpg">https://scp-wiki.wikidot.com/local--files/three-moons-initiative-hub/threemoonsinitiative.jpg</a><br/>
+<strong>Additional Notes</strong>: Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<hr/>
+<p>Pics used to create the "contestant" image:</p>
+<blockquote>
+<p><strong>Filename</strong>: IMG_2822 (O5-7)<br/>
+<strong>Author</strong>: World Travel and Tourism Council<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/78618717@N07/9720392851">https://www.flickr.com/photos/78618717@N07/9720392851</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Škvrny a fľaky na koži je ľahké odstrániť<br/>
+<strong>Author</strong>: Si jediné čo máš.<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/61357354@N08/5579309075">https://www.flickr.com/photos/61357354@N08/5579309075</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: French Army Soldier at the Eiffel Tower<br/>
+<strong>Author</strong>: Derek Key<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/32211216@N06/9314637850">https://www.flickr.com/photos/32211216@N06/9314637850</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

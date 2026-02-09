@@ -1,0 +1,747 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-8492</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-8492</h1>
+            <div class='image-header'><img alt="8bitbreadbox" class="small" src="https://www.wikidot.com/avatar.php?userid=9441027&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9441027)"/>
+<img alt="jswessler" class="small" src="https://www.wikidot.com/avatar.php?userid=5033036&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5033036)"/>
+<img alt="sbrugnich" class="small" src="https://www.wikidot.com/avatar.php?userid=9827510&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9827510)"/>
+<img alt="Nylo" class="small" src="https://www.wikidot.com/avatar.php?userid=7778081&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7778081)"/>
+<img alt="stellyfins" class="small" src="https://www.wikidot.com/avatar.php?userid=8414632&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8414632)"/>
+<img alt="KatyaStrangelove" class="small" src="https://www.wikidot.com/avatar.php?userid=7047353&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7047353)"/>
+<img alt="Enayy" class="small" src="https://www.wikidot.com/avatar.php?userid=9435947&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9435947)"/>
+<img alt="SheNeon" class="small" src="https://www.wikidot.com/avatar.php?userid=9814791&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9814791)"/>
+<img alt="good_vibrations" class="small" src="https://www.wikidot.com/avatar.php?userid=7958390&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7958390)"/>
+<img alt="Croquembouche" class="small" src="https://www.wikidot.com/avatar.php?userid=2893766&amp;amp;size=small&amp;amp;timestamp=1769363420" style="background-image:url(https://www.wikidot.com/userkarma.php?u=2893766)"/></div><div class='text-content'>Item#:</span> <span class="number">8492</span></div>
+
+<div class="top-right-box">
+<div class="level">Level4</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">euclid</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">{$secondary-class}</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">keneq</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">warning</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<p><strong>Special Containment Procedures:</strong> SCP-8492, and by extension SCP-8492-1, are to be housed in a fireproof cell in Site-37’s Keter humanoid wing. Humidity is to be maintained between 20% and 40%, temperature is not to drop below 17°C, and oxygen saturation must not drop below 18.5% under any circumstances.</p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="SeedOfLight.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-8492/SeedOfLight.png"/>
+<div class="scp-image-caption">
+<p>Two lit candles. The leftmost is lit with SCP-8492, while the rightmost is lit with mundane fire.</p>
+</div>
+</div>
+<p><strong>Description:</strong> SCP-8492 is a self-sustaining oxidative reaction which, in spite of existing during a Vacillante-Type<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> GK-Class “Dead Greenhouse” scenario,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> continues to produce constant, unabating illumination.</p>
+<p>SCP-8492 currently resides within the oropharynx<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> of Agent Caitlin Wandmarcher (SCP-8492-1), with protrusions reaching anteriorly along the dorsal surface of the tongue. Though it produces appreciable heat and consumes oxygen as a non-anomalous flame would, expected deleterious effects upon its host<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup> are either absent or present with reduced severity. Transfer of SCP-8492 between hosts is not currently possible but is theorised to be a potentiality with further cultivation and growth.</p>
+<p>It is believed that SCP-8492 is the only remaining source of visible light in the universe.</p>
+<p><strong>Addendum 8492.1:</strong> Discovery</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Access fileserv:/S:/8492/fileserv/discovery</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- ACCESS GRANTED</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p><strong><span style="text-decoration: underline;">Operation Reconstruction 26/05/2031-8492-016</span></strong></p>
+<p><strong>Synopsis:</strong> Reports of scavenger team (ST-E13, ST-F14, ST-F16) disappearances along and around Bundesstraße 415. Mobile Task Force Zeta-36 “Cailleach” dispatched to investigate.</p>
+<p><strong>Participants:</strong></p>
+<ul>
+<li>Z36-1 (Team Leader) — Dietlind Bourgault (M, 37)</li>
+<li>Z36-2 (Navigator) — Emily Tetmajer (F, 36)</li>
+<li>Z36-3 (Automatic Rifleman) — Rupert Salinger (M, 26)</li>
+<li>Z36-4 (Grenadier) — Mendell Kolisch (M, 29)</li>
+<li>Z36-5 (Rescue Officer) — Caitlin Wandmarcher (F, 28)</li>
+</ul>
+<p><strong>Date &amp; Time:</strong> 26th of May 2031, 13:04</p>
+<p><strong>Operational Details:</strong> Ambient temperature -47.3°C, 35 km/h NE windcurrent (severe), heavy sleet; echolocation impeded, spectrometric and thermographic devices functioning with reduced range.</p>
+<hr/>
+<p>&lt;<em>Beginning of excerpt</em>&gt;</p>
+<p><strong>13:04:</strong> Initiation of operation. Thermal leakage calibration indicates maximum operational period of 70 hours.</p>
+<p><strong>14:40:</strong> Arrival at first orientating point.</p>
+<div class="content-panel standalone series">
+<p><strong>Tetmajer:</strong> FT-NIR readout. Multiple metallic objects, wide profile, thirty metres.</p>
+<p><strong>Bourgault:</strong> Where does satnav put us?</p>
+<p><strong>Tetmajer:</strong> Somewhere on B415, southeast of our reference locale.</p>
+<p><strong>Salinger:</strong> That’s helpful.</p>
+<p><strong>Wandmarcher:</strong> If you’ve got complaints, <em>you</em> learn to interpret audiohaptics.</p>
+<p><strong>Salinger:</strong> Try learning to interpret sarcasm; just another thing you’re shocking at.</p>
+</div>
+<p><strong>16:36:</strong> Core temperature alarm triggered on Z36-2 and Z36-5.</p>
+<div class="content-panel standalone series">
+<p><strong>Tetmajer:</strong> Caitlin, you need a heatpack?</p>
+<p><strong>Salinger:</strong> Who’s keeping who alive?</p>
+<p><strong>Wandmarcher:</strong> I’m sorry on the square cube law’s behalf.</p>
+<p><strong>Salinger:</strong> ‘To every body its vocation, and every vocation its body.’</p>
+<p><strong>Wandmarcher:</strong> Emily is five foot nothing.</p>
+<p><strong>Tetmajer:</strong> Five foot three.</p>
+<p><strong>Salinger:</strong> That, and she makes up for it with expertise.</p>
+<p><strong>Wandmarcher:</strong> &lt;<em>To Tetmajer</em>&gt; are you just going to take that?</p>
+<p><strong>Salinger:</strong> She agrees with me — who do you think I was quoting?</p>
+<p><strong>Tetmajer:</strong> Caitlin, I have bodywarmers to spare. Use one of mine.</p>
+<p><strong>Wandmarcher:</strong> Don't patronise me. I’ll tough it out.</p>
+<p><strong>Bourgault:</strong> No you won't. Relieve Salinger of a heat pack; your fingers are more important than your pride.</p>
+<p><strong>Salinger (Simultaneous):</strong> Mine? Why? She has her own.</p>
+<p><strong>Wandmarcher (Simultaneous):</strong> His? Why? I have my own.</p>
+<p><em>Movement of plastic and metal. Wandmarcher’s alarm silences itself but her suit does not play the ‘restoration of homeostasis’ (RoH) tone. Half an hour passes. Wandmarcher falls in with Tetmajer.</em></p>
+<p><strong>Wandmarcher:</strong> Didn’t mean to call your qualifications into question earlier.</p>
+<p><strong>Tetmajer:</strong> You know <em>you</em> don’t need to apologise for anything.</p>
+<p><strong>Wandmarcher:</strong> Which is why I’m doing it. &lt;<em>Sigh</em>&gt; How do you do this, man?</p>
+<p><strong>Tetmajer:</strong> You’ll have to elaborate.</p>
+<p><strong>Wandmarcher:</strong> Keep putting one foot in front of the other.</p>
+<p><strong>Tetmajer:</strong> The theatre of life has many roles. As long as I’m playing mine, and playing it well, I know that I’m where I’m meant to be.</p>
+<p><strong>Wandmarcher:</strong> And if there’s nothing you’re good at?</p>
+<p><strong>Tetmajer:</strong> Know when to bow and coda.</p>
+<p><strong>Wandmarcher:</strong> God, you’re dreary.</p>
+</div>
+<p><strong>17:11</strong> Prevailing wind shifts in favour of the expeditionary team.</p>
+<p><strong>17:49</strong> Environmental ambience exceeds effective echolocatable threshold. Ultrasonic proximity sensors adopted as primary sensory modality by all team members besides Z36-2, who continues to utilise spectrometry and IR imaging haptic feedback.</p>
+<p><strong>18:04</strong> Ambient temperature rises to -30°C. Multiple exotic objects and vacillating thermal conditions detected at 50 metres’ distance.</p>
+<div class="content-panel standalone series">
+<p><strong>Bourgault:</strong> Weapons at low-ready. Keep a low profile.</p>
+<p><strong>Salinger:</strong> Anyone else feel kinda nauseous?</p>
+<p><strong>Kolisch:</strong> Flashing thoughts. Pain around the bridge of my nose.</p>
+<p><strong>Wandmarcher:</strong> Colours and fairies.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup></p>
+<p><strong>Bourgault:</strong> Specialist, give me an arc of one-eighty.</p>
+<p><strong>Tetmajer:</strong> Inconsistent depth readout, most probably clustered precipitation. Spectrometry indicates timber, snow, and several pyramidal structures of low, fluctuant albedo. Switching metrics. &lt;<em>Pause</em>&gt; Air pressure at nominal levels. Local luminance readout is 0.026 Lux.</p>
+<p><strong>Salinger:</strong> Are we walking into the core of the sun right now, or is that a malfunction?</p>
+<p><em>Footsteps and heavy breathing.</em></p>
+<p><strong>Tetmajer:</strong> Ambient temperatures at -10°C. Luminance at 0.730. &lt;<em>Footstep</em>&gt; The snow here is packed; recently traversed.</p>
+<p><strong>Salinger:</strong> Next you’ll tell me that you’ve found three bowls of porridge.</p>
+<p><strong>Wandmarcher:</strong> Walking into a bear’s den might be worth it to taste something besides muesli. &lt;<em>Pause</em>&gt;</p>
+<p><strong>Tetmajer:</strong> I’m reticent to say this, but someone will need to take their helmet off if we want to confirm that the luminance readout isn’t an artifact.</p>
+<p><strong>Bourgault:</strong> Wandmarcher.</p>
+<p><strong>Kolisch:</strong> Why her?</p>
+<p><strong>Salinger:</strong> Shouldn’t need to say it.</p>
+<p><em>Wandmarcher removes her helmet. She screams, falls onto one knee, and covers her eyes. All communication from this point forward is whispered unless otherwise stated.</em></p>
+<p><strong>Tetmajer:</strong> Pyramidal object at fifty metres. Surface temperature too high to be characterised, low three-hundreds by my estimate.</p>
+<p><strong>Bourgault:</strong> Wandmarcher, describe what you’re seeing.</p>
+<p><strong>Wandmarcher:</strong> I- give me a minute, I’m still-</p>
+<p><strong>Tetmajer:</strong> Multiple high-temperature fabric-covered objects at forty metres, high surface heterogeneity. They’re concentrically arranged around the primary pyre.</p>
+<p><strong>Bourgault:</strong> Humanoid?</p>
+<p><strong>Tetmajer:</strong> Can’t discriminate at this range. Should I approach for echolocation?</p>
+<p><strong>Bourgault:</strong> Negative. &lt;<em>Shouting</em>&gt; Identify yourselves!</p>
+<p><strong>Salinger:</strong> If there're people, they're popsicles; no way anyone could survive out here.</p>
+<p><strong>Bourgault:</strong> It wouldn't be the most impossible thing that we're seeing.</p>
+<p><em>Wandmarcher rises and begins moving forward.</em></p>
+<p><strong>Kolisch:</strong> What are you doing? The captain didn’t say to get closer.</p>
+<p><strong>Wandmarcher:</strong> Can’t see from here. Need to- &lt;<em>Indistinct</em>&gt;</p>
+<p><strong>Salinger:</strong> I can’t hear her.</p>
+<p><strong>Tetmajer:</strong> Her radio was in her helmet.</p>
+<p><strong>Bourgault:</strong> It figures. &lt;<em>Exhale</em>&gt; Approach in lockstep.</p>
+<p><em>Quiet audio cue.</em></p>
+<p><strong>Kolisch:</strong> Proximity tone’s in the interval of thirty to forty metres. The crowd is in our effective engagement bracket; recommend we stop here in case we need to open up.</p>
+<p><strong>Bourgault:</strong> Not yet. Wandmarcher, you got anything for us?</p>
+<p><strong>Wandmarcher:</strong> &lt;<em>Retching, vomiting</em>&gt; I- I, uh, I see silhouettes.</p>
+<p><strong>Bourgault:</strong> Characterise.</p>
+<p><strong>Wandmarcher:</strong> &lt;<em>Wipes face</em>&gt; I don’t fucking know, I just see shadows.</p>
+<p><strong>Tetmajer:</strong> Your optic nerves are atrophied and adjusting. Give it a minute.</p>
+<p><strong>Salinger:</strong> In a <em>minute</em> we’ll have walked into the belly of the whale.</p>
+<p><strong>Wandmarcher:</strong> &lt;<em>Groaning</em>&gt; I see a man with saffron light in his eyes and mouth. Incandescent. He is surrounded by fire. He is speaking to me.</p>
+<p><strong>Bourgault:</strong> Can someone verify that?</p>
+<p><strong>Salinger:</strong> I don’t hear shit.</p>
+<p><strong>Wandmarcher:</strong> I’m reading his lips.</p>
+<p><em>Footsteps. Breathing becomes audible, not originating from Zeta-36.</em></p>
+<p><strong>Tetmajer:</strong> Entities in range for echo. &lt;<em>Clicks tongue</em>&gt; Twenty metres. Humanoids, at least a dozen. Spectrometry suggests polyester and acrylic clothing.</p>
+<p><strong>Bourgault:</strong> Foundation uniforms.</p>
+<p><strong>Tetmajer:</strong> Nil helmets.</p>
+<p><strong>Wandmarcher:</strong> My mother named me Caitlin.</p>
+<p><strong>Tetmajer:</strong> Crowd at ten metres. She’s almost close enough to touch.</p>
+<p><strong>Bourgault:</strong> Wandmarcher, take a step back.</p>
+<p><strong>Kolisch:</strong> She’s still moving—</p>
+<p><strong>Wandmarcher:</strong> I have been.</p>
+<p><strong>Bourgault:</strong> &lt;<em>Shouting</em>&gt; Wandmarcher! Snap out of it! &lt;<em>Aside</em>&gt; Salinger, grab her; we’re bugging out.</p>
+<p><strong>Wandmarcher:</strong> It's what I've always wanted.</p>
+<p><strong>Kolisch:</strong> Movement, left and front!</p>
+<p><strong>Bourgault:</strong> Hold your mud!</p>
+<p><strong>Salinger:</strong> &lt;<em>Grunting, exertion</em>&gt; Come on, work with me man…</p>
+<p><strong>Wandmarcher:</strong> &lt;<em>Shuffling</em>&gt; Who do you want me to be, Roo?</p>
+<p><strong>Salinger:</strong> &lt;<em>Pause</em>&gt; What?</p>
+<p><strong>Wandmarcher:</strong> What am I supposed to be?</p>
+<p><strong>Salinger:</strong> Make up your own damn mind— hey— hey!</p>
+<p><em>Rapid movement.</em></p>
+<p><strong>Salinger:</strong> Shit! &lt;<em>Aside</em>&gt; I’ve lost her. Permission to take off my helmet?!</p>
+<p><strong>Bourgault:</strong> She’s gone; you know what happens if—</p>
+<p><em>Loud acoustic cue.</em></p>
+<p><strong>Kolisch:</strong> Proximity!</p>
+<p><strong>Bourgault:</strong> Don’t—</p>
+<p><em>Gunshots, commotion.</em></p>
+</div>
+<p><strong>18:11:</strong> Zeta-36, with the exception of Z36-5, retreat from the site of interest. Discussion occurs over whether Z36-5 was affected by an anomalous compulsion or if her refusal to acknowledge orders was the result of a mundane psychological break caused by reexposure to light. Z36-2 states that the latter hypothesis has greater established precedent.</p>
+<p><strong>18:13:</strong> Censure of Z36-4 over engaging the crowd without authorisation. Zeta-36 collectively decide to find shelter and circle back around to the site of interest in case the crowd has moved on, so that they can attempt to recover Z36-5’s equipment.</p>
+<p><strong>20:08:</strong> Zeta-36 arrive back at the site of interest. Ambient temperatures have normalised. Earlier-encountered humanoid entities have perished of exposure. Z36-5 is found, alive but unconscious. Despite apparently prolonged exposure to the elements, her body temperature remains within physiological range. No trace of the yellow-eyed man whom Z36-5 allegedly encountered is found.</p>
+<p><strong>20:12:</strong> Discovery of Z36-5’s helmet. Z36-3 suggests leaving Z36-5 and recovering her equipment instead. Denied, on the grounds of Z36-5 possessing potentially actionable intelligence. When her head is repositioned so that her helmet can be reattached to her suit, environmental luminosity rises; this is remarked upon by Z36-2.</p>
+<p><strong>04:05</strong> Return of Zeta-36 to Site-37.</p>
+<p>&lt;<em>End of excerpt</em>&gt;</p>
+</div>
+</div>
+</div>
+<p><strong>Addendum 8492.2:</strong> Progression</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Access fileserv:/S:/8492/fileserv/progression</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- ACCESS GRANTED</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p><strong><span style="text-decoration: underline;">Conversation Transcript 28/05/2031-8492-011</span></strong></p>
+<p><strong>Synopsis:</strong> Excerpt from the first medical review of Agent Caitlin Wandmarcher following initial discovery of SCP-8492.</p>
+<p><strong>Date &amp; Time:</strong> 28th of May, 2031, morning hours.</p>
+<p><strong>Interviewer:</strong> Doctor Bastian Altschuler (M, 45)</p>
+<p><strong>Interviewee:</strong> Agent Caitlin Wandmarcher (F, 28)</p>
+<hr/>
+<p>&lt;<em>Beginning of excerpt</em>&gt;</p>
+<p><strong>Altschuler:</strong> — and that concludes the physical element of the examination. You can get dressed now.</p>
+<p><strong>Wandmarcher:</strong> Shorter than I expected.</p>
+<p><strong>Altschuler:</strong> Sight allows some steps to go by faster. I thought you'd be happy that we were able to skip broad palpation.</p>
+<p><strong>Wandmarcher:</strong> Modesty died with the sun. What’s the prognosis?</p>
+<p><strong>Altschuler:</strong> Nothing; you aren’t acutely diseased. If anything, you’re positively radiant.</p>
+<p><strong>Wandmarcher:</strong> Shit joke.</p>
+<p><strong>Altschuler:</strong> My apologies.</p>
+<p><strong>Wandmarcher:</strong> So when am I going back to work?</p>
+<p><strong>Altschuler:</strong> Are you keen to return? I thought you’d want to take some time convalescing.</p>
+<p><strong>Wandmarcher:</strong> I assumed that sitting around wouldn’t be an option.</p>
+<p><strong>Altschuler:</strong> Currently, it’s the opinion of site leadership that the best thing for you to do would be to rest and keep yourself healthy. Your life is our highest concern; it’s the only source of light in a dark, dark world.</p>
+<p><strong>Wandmarcher:</strong> Do you have a red nose at home, doctor?</p>
+<p><strong>Altschuler:</strong> I wasn’t trying to make any fun; the flame at the back of your throat is miraculous. The past few days have been the most animated that I've ever seen site command; they want to see if your condition can be replicated. Over the next week you’ll likely be seeing a parade of visitors: clerks, researchers, et cetera.</p>
+<p><strong>Wandmarcher:</strong> To each their pound of flesh.</p>
+<p><strong>Altschuler:</strong> Oh, it will be nothing invasive. In addition to routine medical reviews, we’ll be aiming to transcribe some documents with your assistance; the ones that weren’t able to be converted from a visual format before the last lights were extinguished.</p>
+<p><strong>Wandmarcher:</strong> &lt;<em>Laughter</em>&gt;</p>
+<p><strong>Altschuler:</strong> Did I say something humorous again?</p>
+<p><strong>Wandmarcher:</strong> &lt;<em>Losing composure</em>&gt; Kelly Sue DeConnick’s Sexy Lamp Test: if a sexy lamp could take the place of a woman in your story without breaking it, you're a shitty writer.</p>
+<p><strong>Altschuler:</strong> Your personhood comes first, of course. If you’d rather not see anyone it’s entirely your prerogative—</p>
+<p><strong>Wandmarcher:</strong> But if I say yes, I’ll literally be serving the purpose of a lamp. A lamp that isn’t even sexy.</p>
+<p><strong>Altschuler:</strong> I implore you to see this as empowering rather than objectifying. You are an entirely unique specimen; through you, the hope of future generations is kept alive.</p>
+<p><strong>Wandmarcher:</strong> I swear to god, if you say something like ‘it gives them an opportunity to live in the light and not die in the dark’ — or anything to similar effect — I will turn that bald spot into a soup bowl.</p>
+<p><strong>Altschuler:</strong> I wasn’t aware that I had a bald spot.</p>
+<p><strong>Wandmarcher:</strong> Knowing that now, are you still sure you want visible light to come back?</p>
+<p><strong>Altschuler:</strong> If I get to see my wife’s face again, I’ll endure that price with aplomb.</p>
+<p>&lt;<em>End of excerpt</em>&gt;</p>
+<hr/>
+<p><strong>Afterword:</strong> SCP-8492-1 has proven to be noncommunicative in all further interviews, and steadfastly refuses to speak about her encounter with the entity which played host to SCP-8492 before her. General observation may be our best method of gleaning insight into her psychological state; to that end I have arranged for visits from individuals that she is familiar with. Unfortunately, due to the risk to her health, as well as a lack of information regarding how SCP-8492 would respond to environs hazardous to a typical flame, she will have to be limited to clerical work and heated sections of the site for now.</p>
+<p>Above all else, keeping SCP-8492-1 healthy and happy must be the priority, until such a time that we find a way to transfer SCP-8492 to another host or replicate its properties. Checkups have observed gradual growth in its anatomical territory and luminosity, suggesting the possibility of cultivation or replication. With this comes the restoration of the utility of humanity’s most important sense.</p>
+<p>— Doctor Bastian Altschuler, signed 31/05/2031</p>
+</div>
+<p><br/></p>
+<div class="blockquote">
+<p><strong><span style="text-decoration: underline;">Conversation Transcript 27/06/2031-8492-006</span></strong></p>
+<p><strong>Synopsis:</strong> Eventful conversation between Agent Tetmajer and SCP-8492-1.</p>
+<p><strong>Date &amp; Time:</strong> 27th of June, 2031, evening hours.</p>
+<p><strong>Visitor:</strong> Agent Emily Tetmajer (F, 36)</p>
+<hr/>
+<p>&lt;<em>Beginning of excerpt</em>&gt;</p>
+<p><strong>Tetmajer:</strong> Caitlin.</p>
+<p><strong>SCP-8492-1:</strong> Emily, hey. How’s the team been?</p>
+<p><strong>Tetmajer:</strong> Gristed.</p>
+<p><strong>SCP-8492-1:</strong> You got disbanded? What for? Was it on my account?</p>
+<p><strong>Tetmajer:</strong> No, even if you’d like to imagine that it was so. Losing Kolisch was what did it. Not enough talent remaining on the team to justify the expense.</p>
+<p><strong>SCP-8492-1:</strong> I didn’t figure that it was my fault. I'm a dime a dozen. Where’s Kolisch now?</p>
+<p><strong>Tetmajer:</strong> If you’d find good company in the presence of another washed up ex-MTF, last I heard, he was transferred to fungal hydroponics.</p>
+<p><strong>SCP-8492-1:</strong> How will the man cope without a gun in his hands?</p>
+<p><strong>Tetmajer:</strong> He likely won’t.</p>
+<p><strong>SCP-8492-1:</strong> So … what's with the sunglasses? Has your sense of fashion degenerated that much in three years?</p>
+<p><strong>Tetmajer:</strong> It's for adjustment. You, of all people, should remember how painful it was to see again after so long spent in the dark.</p>
+<p><em>The door opens. A clerk steps forward and pauses under the doorframe.</em></p>
+<p><strong>Clerk:</strong> Hello? I'm here to file— oh, sorry, I didn't realise you had a visitor.</p>
+<p><strong>Tetmajer:</strong> I'm sure she won't mind you doing your job.</p>
+<p><strong>SCP-8492-1:</strong> It's not often that you're confidently wrong about anything, Emi.</p>
+<p><strong>Clerk:</strong> Sorry. I'll come back when you're not busy.</p>
+<p><em>The clerk leaves. The door closes.</em></p>
+<p><strong>Tetmajer:</strong> Popular, aren't you?</p>
+<p><strong>SCP-8492-1:</strong> My mouth is.</p>
+<p><strong>Tetmajer:</strong> That’s a childish parlance.</p>
+<p><em>Shuffling.</em></p>
+<p><strong>SCP-8492-1:</strong> What’s that?</p>
+<p><strong>Tetmajer:</strong> A mirror.</p>
+<p><strong>SCP-8492-1:</strong> I thought you would have thrown that out a while ago.</p>
+<p><strong>Tetmajer:</strong> Even after the lights went out, I could still see myself; running my hands over the bridge of my nose and lips and imagining what others would see if there was light spilling over me. Only in front of a mirror, though. My imagination wouldn’t permit me to visualise my face unless I could have really seen myself. &lt;<em>Removes sunglasses, blinks several times</em>&gt;</p>
+<p><strong>SCP-8492-1:</strong> And how does your imagination line up against reality?</p>
+<p><strong>Tetmajer:</strong> Very closely. Though, there’s a pinguecula on my left eye that I wasn’t aware of. I suppose ultraviolet never went away.</p>
+<p><strong>SCP-8492-1:</strong> And how do <em>I</em> look?</p>
+<p><strong>Tetmajer:</strong> Do you want to see?</p>
+<p><strong>SCP-8492-1:</strong> No. Describe me.</p>
+<p><strong>Tetmajer:</strong> You are a woman.</p>
+<p><strong>SCP-8492-1:</strong> I guess you could make that assumption.</p>
+<p><strong>Tetmajer:</strong> You are Asian.</p>
+<p><strong>SCP-8492-1:</strong> Gender and race are the first two things you notice?</p>
+<p><strong>Tetmajer:</strong> Is this exercise about knowing more about yourself, or interrogating my biases?</p>
+<p><strong>SCP-8492-1:</strong> Just look at me. Tell me what you see.</p>
+<p><strong>Tetmajer:</strong> Brown eyes and black hair—</p>
+<p><strong>SCP-8492-1:</strong> Completely. In one phrase or word. Don’t focus on the details.</p>
+<p><strong>Tetmajer:</strong> A former mobile task force operative? A medic. SCP-8492-1. The hope of the future, a woman, an Asian, an Asian woman.</p>
+<p><strong>SCP-8492-1:</strong> &lt;<em>Sigh</em>&gt;</p>
+<p><em>Silence, 00:10.</em></p>
+<p><strong>Tetmajer:</strong> None of those capture what you are?</p>
+<p><strong>SCP-8492-1:</strong> None of them feel like me.</p>
+<p><strong>Tetmajer:</strong> Well what do you want me to call you then? What do you want to be?</p>
+<p><strong>SCP-8492-1:</strong> I don’t <em>want</em> to be anything. I doubt it would even matter if I did.</p>
+<p><strong>Tetmajer:</strong> Of course it would. Desire is the distinction between motion and compulsion.</p>
+<p><strong>SCP-8492-1:</strong> People don’t see what you <em>want</em> to be, they see what you are: whatever’s most important to them, most standout, or most ideal. You know what was missing from your list of observations earlier? ‘Caitlin Wandmarcher’.</p>
+<p><strong>Tetmajer:</strong> I know your name.</p>
+<p><strong>SCP-8492-1:</strong> But ‘Caitlin’ isn’t what you see, it’s just a label you apply to whatever category my person exists within. You see an Asian woman, Kurtis Wandmarcher’s daughter, Rodney’s girlfriend, the uglier of the two cashiers at Dallmayr, the medic of Zeta-36. Now, the lamp. Nobody really sees Caitlin Wandmarcher.</p>
+<p><strong>Tetmajer:</strong> It takes a lifetime to know one person; ourselves. Who has time to know another?</p>
+<p><strong>SCP-8492-1:</strong> I don’t resent it. Call me by my role if it’s convenient shorthand; tell me to tie a tourniquet if it’s what you need; ask me to open my mouth and lean over a sheet of paper if it’s how I can best help. It’s just … strange, to suddenly be so acutely <em>aware</em>. If I’m not serving a purpose — if I don’t have a function relative to you that affects how you live your life — I’m not really there. Even to you.</p>
+<p><strong>Tetmajer:</strong> You’re no longer my medic, and I still came to see you.</p>
+<p><strong>SCP-8492-1:</strong> Because I glow, not because the unplunged depths of my oceanic soul intrigue you so. Tell me the real reason why you’re here. Don’t you dare fucking lie and say that it was to catch up.</p>
+<p><strong>Tetmajer:</strong> It was to congratulate you, originally.</p>
+<p><strong>SCP-8492-1:</strong> What for?</p>
+<p><strong>Tetmajer:</strong> ‘The theatre has many roles’. I thought you’d finally found a part worth performing.</p>
+<p><strong>SCP-8492-1:</strong> And I wasn’t before? I was a <em>medic</em>.</p>
+<p><strong>Tetmajer:</strong> Salinger was right; it wasn’t a position that we needed to be filled, and it wasn’t a job that you were cut out for. You were needed elsewhere.</p>
+<p><strong>SCP-8492-1:</strong> Where?</p>
+<p><strong>Tetmajer:</strong> Here. Incubating the hope of all the generations to come, every future where ‘brighter days ahead’ isn’t a morbid turn of phrase. What do you expect people to see when they look at you? The girl, or every unbeheld painting, unread book, unwitnessed vista? The potential you represent would obviously overshadow your humanity.</p>
+<p><em>No response from SCP-8492-1.</em></p>
+<p><strong>Tetmajer:</strong> Your plight isn’t special, Caitlin; nobody knows who I am either. I’m just their ears-so-good-they-may-as-well-be-eyes and ears. How could I complain, though? Before night fell, I was 'girl with glass nerves', as if my hyperacusis<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup> was somehow their burden to bear and not my own. You’ll always be seen through the lens of utility; that’s just the nature of things. So be thankful for the role you’ve been dealt. It’s a gift, a chance to <em>matter</em>.</p>
+<p><strong>SCP-8492-1:</strong> But not to be seen.</p>
+<p><strong>Tetmajer:</strong> Grow up.</p>
+<p>&lt;<em>End of excerpt</em>&gt;</p>
+<hr/>
+<p><strong>Afterword:</strong> Following the interview, SCP-8492-1 has begun to experience night terrors and issues with memory. She has also begun anthropomorphising SCP-8492; it is unclear whether this reflects actual sentience or merely a delusion on SCP-8492-1’s part. Additional material privileges have been afforded to SCP-8492-1 to ensure compliance with current containment protocols and to buoy her mental state.</p>
+<p>Experimentation with reproduction of SCP-8492 has yielded promising results. The flame has grown large enough that wooden spatulas can be ignited without invasive probing. However, they rapidly lose the ability to produce light, even if the chemical reaction is maintained. Regardless, the ability to produce additional light sources has greatly increased archival throughput.</p>
+<p>Knowledge and media long thought lost, including containment protocols for some of our most troublesome houseguests, have once again become accessible. Soon, we may even be able to navigate our site by sight once more. The effect on staff morale has been, predictably, drastic.</p>
+<p>— Doctor Bastian Altschuler</p>
+</div>
+<p><br/></p>
+<div class="blockquote">
+<p><strong><span style="text-decoration: underline;">Conversation Transcript 15/07/2031-8492-006</span></strong></p>
+<p><strong>Synopsis:</strong> Significant information about mental state and nature of SCP-8492 gleaned from a recorded conversation between Agent Salinger and SCP-8492-1.</p>
+<p><strong>Date &amp; Time:</strong> 15th of July, 2031, near midnight.</p>
+<p><strong>Visitor:</strong> Agent Rupert Salinger (M, 26)</p>
+<hr/>
+<p>&lt;<em>Beginning of excerpt</em>&gt;</p>
+<p><strong>Salinger:</strong> You called for me?</p>
+<p><strong>SCP-8492-1:</strong> Yeah. So you could watch this.</p>
+<p><em>Three minutes of slurping.</em></p>
+<p><strong>Salinger:</strong> Never liked coffee.</p>
+<p><strong>SCP-8492-1:</strong> What did you do to survive in university then? You looked at a picture of Anne Wizorek in the morning and the spike of rage was enough to get you through the day?</p>
+<p><strong>Salinger:</strong> Who?</p>
+<p><strong>SCP-8492-1:</strong> Reinforcing my point there.</p>
+<p><strong>Salinger:</strong> Why’re you <em>smiling</em>?</p>
+<p><strong>SCP-8492-1:</strong> Just noticed. You didn’t bring anything with you.</p>
+<p><strong>Salinger:</strong> How’s that weird?</p>
+<p><strong>SCP-8492-1:</strong> Everyone brings something in with them when they come to visit me: a mirror, a poster, a magnifying glass, a photograph; anything to look at, or through.</p>
+<p><strong>Salinger:</strong> Dipshit, they’re transcribers. It’s probably part of their job.</p>
+<p><strong>SCP-8492-1:</strong> Oh yeah, Doctor Altschuler was transcribing all over that polaroid of his wife.</p>
+<p><em>Fabric movement, coughing.</em></p>
+<p><strong>Salinger:</strong> You been having bad dreams?</p>
+<p><strong>SCP-8492-1:</strong> Hm? Oh, right, the melatonin. It’s half for the nightmares, half for the pain. I still feel it burning through my mind when I’m asleep, but at least I forget most of it when I wake up. Like a dream.</p>
+<p><strong>Salinger:</strong> You still have those?</p>
+<p><strong>SCP-8492-1:</strong> I stopped having them around the time that I forgot what seeing was like. Now, though? I have them every night. It always starts as a memory from when I was younger. I open my mouth to speak, and a mist of burning fat comes out. I retch, I try to scream, and then I wake up. &lt;<em>Pause</em>&gt; I don’t remember how things originally went, in those memories. Every time I try to recall what I actually said, I just relive the nightmare.</p>
+<p><em>Silence, 00:11.</em></p>
+<p><strong>SCP-8492-1:</strong> Got a frog in your throat?</p>
+<p><strong>Salinger:</strong> &lt;<em>Pause</em>&gt; Our last jaunt. Did I let go of you, or did you let go of me?</p>
+<p><strong>SCP-8492-1:</strong> Did Altschuler tell you to ask?</p>
+<p><strong>Salinger:</strong> No. And I almost didn’t, knowing that the bastard’ll be listening in.</p>
+<p><strong>SCP-8492-1:</strong> Careful who you call names. If you need your appendix out, no guarantees he’ll give it his best college try anymore.</p>
+<p><strong>Salinger:</strong> He’s a shrink, not a surgeon. Are you avoiding the question?</p>
+<p><strong>SCP-8492-1:</strong> I can recall the emotions I felt, not any of the actual events. But if I had to guess, just based on the headspace I was in … I think I’m the one who chose to slip away.</p>
+<p><strong>Salinger:</strong> Why?</p>
+<p><strong>SCP-8492-1:</strong> I wanted to get closer to the yellow-eyed man.</p>
+<p><strong>Salinger:</strong> And the guys that he was with, did they give you a choice?</p>
+<p><strong>SCP-8492-1:</strong> They definitely wanted me there. Not sure if they would’ve let me leave if I had tried. But I didn’t, so …</p>
+<p><strong>Salinger:</strong> What did they want?</p>
+<p><strong>SCP-8492-1:</strong> Someone to say yes.</p>
+<p><strong>Salinger:</strong> To what?</p>
+<p><strong>SCP-8492-1:</strong> The yellow-eyed man’s offer.</p>
+<p><strong>Salinger:</strong> Elaborate, dude. I’m not a mindreader.</p>
+<p><strong>SCP-8492-1:</strong> The offer was to take the light from him. To let it insinuate into my flesh in place of his.</p>
+<p><em>Silence, 00:23.</em></p>
+<p><strong>SCP-8492-1:</strong> In case you were wondering, it was something you said.</p>
+<p><strong>Salinger:</strong> What are you even replying to? I didn’t say anything.</p>
+<p><strong>SCP-8492-1:</strong> You were part of the reason why I said yes.</p>
+<p><strong>Salinger:</strong> God, it takes a weaver to pick apart what you mean sometimes. What did I even do? Allegedly. <em>Ostensibly</em>.</p>
+<p><strong>SCP-8492-1:</strong> Really? You don’t remember?</p>
+<p><strong>Salinger:</strong> I’ve thrown a lot of apples in my time, I don’t know what stuck in your shell.</p>
+<p><strong>SCP-8492-1:</strong> Think for just two seconds, Kafka.</p>
+<p><strong>Salinger:</strong> Oh. &lt;<em>Pause</em>&gt; Think I misjudged you.</p>
+<p><strong>SCP-8492-1:</strong> Is this an apology?</p>
+<p><strong>Salinger:</strong> The opposite. Of all sentences, <em>that’s</em> the one that sent you down a spiral? How’d you let it get under your skin?</p>
+<p><strong>SCP-8492-1:</strong> It came from you.</p>
+<p><strong>Salinger:</strong> I was just being an asshole.</p>
+<p><strong>SCP-8492-1:</strong> Being a chauvinistic bastard doesn’t <em>automatically</em> invalidate what you say. Once in a new moon, you happen to have a point. Even if it’s by accident.</p>
+<p><strong>Salinger:</strong> The <em>other</em> last thing I said to you was an instruction. Did you follow it?</p>
+<p><strong>SCP-8492-1:</strong> I <em>did</em> put a lot of thought into what I wanted to do, actually. Everyone has their place in this world. I just knew that it wasn’t with you, and Tetmajer, and the rest.</p>
+<p><strong>Salinger:</strong> So you walked away? No hesitation?</p>
+<p><strong>SCP-8492-1:</strong> I wasn’t wanted.</p>
+<p><strong>Salinger:</strong> And you feel like you are now?</p>
+<p><strong>SCP-8492-1:</strong> I’m needed, at least.</p>
+<p><strong>Salinger:</strong> Those two things are not the same.</p>
+<p><strong>SCP-8492-1:</strong> If it’s any consolation, it wasn’t the <em>only</em> reason that I did what I did.</p>
+<p><strong>Salinger:</strong> Something Tetmajer told you?</p>
+<p><strong>SCP-8492-1:</strong> Yeah. I mean, partially, but not completely. Not even mostly.</p>
+<p><strong>Salinger:</strong> Tell me what I’m missing, then.</p>
+<p><strong>SCP-8492-1:</strong> Your dad. Did he—</p>
+<p><strong>Salinger:</strong> He killed himself when I was two.</p>
+<p><strong>SCP-8492-1:</strong> Did you have a mom?</p>
+<p><strong>Salinger:</strong> Two.</p>
+<p><strong>SCP-8492-1:</strong> Do you think your biological mother being a lesbian might’ve had something to do with your dad … doing that? &lt;<em>Sigh</em>&gt; Putting that aside; when you were growing up, did you ever feel like your parents were building you up for something?</p>
+<p><strong>Salinger:</strong> Sure. To be a man they could be proud of.</p>
+<p><strong>SCP-8492-1:</strong> Did you ever make it?</p>
+<p><strong>Salinger:</strong> Yeah. One day they just stopped telling me what to do.</p>
+<p><strong>SCP-8492-1:</strong> &lt;<em>Exhale</em>&gt; I never got that. Right up until I lost contact in ‘26, mine were still trying to cultivate me.</p>
+<p><strong>Salinger:</strong> How do you figure?</p>
+<p><strong>SCP-8492-1:</strong> It was in the way that they talked. Instructions phrased as advice, attempts to contrive situations for my growth, expectant stares over Christmas dinner … God, the list goes on. I kept waiting for the other shoe to drop. When I flew the coop to go to university, I thought they’d give me a sendoff, start treating me like I’d reached fruition. Didn’t happen. I dared to dream that I joined the military, they’d finally let me go. But no, they still looked at me the same way that they had before. A child, still growing into her role. &lt;<em>Sigh</em>&gt; When I saw that yellow-eyed man and heard what he had to offer, I knew implicitly that it was what I’d been prepared for. I was a jigsaw piece meeting its match. Or a chicken realising its place in the world as it sees the neck cutter, if you like. &lt;<em>Laugh</em>&gt; It made me feel small. Just … ‘Oh. This is what it was about. I’m not meant to change the world, I’m just meant to be the vehicle for something else that will.’</p>
+<p><strong>Salinger:</strong> Between a single case of workplace bullying and bordering on thirty years of social and emotional pressure, I’m tempted to believe that the second thing has more to do with where you are now.</p>
+<p><strong>SCP-8492-1:</strong> Probably. Guess you can sleep easy tonight.</p>
+<p><strong>Salinger:</strong> Wasn’t planning to anyway.</p>
+<p><em>Loud pop. Fizzing. Sound of fluid being poured. Salinger leaves after one hour.</em></p>
+<p>&lt;<em>End of excerpt</em>&gt;</p>
+<hr/>
+<p><strong>Afterword:</strong> It is unclear what Salinger smuggled into SCP-8492-1’s room. Security protocols have been tightened and the previous nightwatchman has been transferred. SCP-8492 has expanded from the oropharynx into the mouth, nasal cavity, and stomach. Implausibly, it also appears to have spread haematogenously into the extremities, raising the peripheral temperature of SCP-8492-1 to a hazardous degree. Secondary fires lit with SCP-8492 also retain their luminosity for longer than when SCP-8492-1 was retrieved; the rate of improvement has proven to be exponential. Soon, it may be possible to produce indefinite light sources with need for ‘renewal’ via SCP-8492.</p>
+<p>Regrettably, SCP-8492-1’s mental state has maintained a downward trend. She is experiencing fits, hallucinations, and episodes of intense nausea and irritability. It is imperative that her compliance with the research team be maintained. Analgesia and the use of CNS depressants at this time, however, remain prejudicial to our aims. SCP-8492 has been demonstrated in testing to be responsive to SCP-8492-1’s level of awareness and emotional state; use of mood-stabilising drugs has resulted in long-term loss of luminosity per unit volume, while painkillers have been demonstrated to impair or even reverse growth.</p>
+<p>— Doctor Bastian Altschuler</p>
+</div>
+<p><br/></p>
+<div class="blockquote">
+<p><strong><span style="text-decoration: underline;">Conversation Transcript 19/08/2031-8492-003</span></strong></p>
+<p><strong>Synopsis:</strong></p>
+<p><strong>Date &amp; Time:</strong> 19th of August, 2031, morning hours.</p>
+<p><strong>Interviewer:</strong> Doctor Bastian Altschuler (M, 45)</p>
+<p><strong>Interviewee:</strong> SCP-8492-1 (Caitlin Wandmarcher) (F, 28)</p>
+<hr/>
+<p>&lt;<em>Beginning of excerpt</em>&gt;</p>
+<p><strong>Altschuler:</strong> You wanted to see me?</p>
+<p><strong>SCP-8492-1:</strong> Don’t pretend that you're here for my sake.</p>
+<p><strong>Altschuler:</strong> I can always come back, if you’re not willing to see me now.</p>
+<p><strong>SCP-8492-1:</strong> Just get it over with.</p>
+<p><strong>Altschuler:</strong> You told the nurse that the pain was getting worse. Where is it now?</p>
+<p><strong>SCP-8492-1:</strong> Everywhere in my head. I don’t remember a time when there wasn’t a flame burning inside me. When my mother looks at me, she sees the light more than my own face. When my father asks how I hurt myself, there’s the unspoken concern for the fire before myself. When my classmates clap for me, they do so not for what I’ve achieved, but because I did it in spite of the hardship of playing host to the flame. It colours everything.</p>
+<p><strong>Altschuler:</strong> Let’s focus on the present. Has it spread to anywhere, or gotten worse in some spots more than others?</p>
+<p><strong>SCP-8492-1:</strong> Heart and veins; I can feel my blood boiling. It’s eating me from the inside out, mind and flesh. Paracetamol isn’t cutting it. Give me something harder.</p>
+<p><strong>Altschuler:</strong> You know we can’t do that, Caitlin.</p>
+<p><strong>SCP-8492-1:</strong> Are you my doctor or the fire’s?</p>
+<p><strong>Altschuler:</strong> I’m trying to be both. But in this case, I’m afraid its needs have to come before your desires. To you, it’s pain. Terrible, yes, but transient. To the nascent light, it’s the trajectory of its life, and the eternity following.</p>
+<p><strong>SCP-8492-1:</strong> I know, I know. I'll take the pain if it's what I have to do. Just wish that carrying this needy little bastard wasn't such a zero sum game. &lt;<em>Sigh</em>&gt; Remember when I said that it was intelligent? You treated me like I was insane.</p>
+<p><strong>Altschuler:</strong> We’ve always trusted your judgement, Caitlin. I’ve said it before, but it bears repeating; we are in this together.</p>
+<p><strong>SCP-8492-1:</strong> Not equally.</p>
+<p><strong>Altschuler:</strong> No, not equally. The light is far more yours than it is ours; it’s a part of you. And someday, you’ll set it free into the world. My mentor told me that we are what we leave behind. I think you can take comfort in knowing that your legacy will be a beautiful one.</p>
+<p><strong>SCP-8492-1:</strong> I wonder what I’ll be remembered for. The things that I worked to be, or this thing that came upon me.</p>
+<p><strong>Altschuler:</strong> They’ll know your name either way.</p>
+<p><strong>SCP-8492-1:</strong> &lt;<em>Laugh</em>&gt; No, they won’t. It’s your accomplishment, doctor. I’m just the meat that carried the spark.</p>
+<p><strong>Altschuler:</strong> I’ll see to it personally that your name comes before mine. I promise, you’ll be beloved.</p>
+<p><strong>SCP-8492-1:</strong> Not for anything that I <em>did</em>. People used to call me ‘medic’, ‘dash-five’, ‘soldier’. Nobody calls me anything but ‘8492-1’ now. I worked hard to become a corpsman: I burned bridges, broke bones, gave up two years of my life so I could hold the qualification. All I had to do in order to become 8492-1 was follow a three-word command.</p>
+<p><strong>Altschuler:</strong> As a medical officer, you’ve saved lives in the dozens. As SCP-8492’s host, you’ll save all of them.</p>
+<p><strong>SCP-8492-1:</strong> I may be that, but that’s not what I am.</p>
+<p><strong>Altschuler:</strong> Where’s the headstrong woman from the transcripts, who chose this road to travel?</p>
+<p><strong>SCP-8492-1:</strong> You don't know me.</p>
+<p><strong>Altschuler:</strong> I know this much: when Bourgault ordered you to take Salinger’s heat pack, you didn’t.</p>
+<p><strong>SCP-8492-1:</strong> &lt;<em>Laugh</em>&gt; It wasn’t a selfless act. I— …</p>
+<p><strong>Altschuler:</strong> … felt like you had something to prove. Don’t you anymore? &lt;<em>Pause</em>&gt; I know things are hard right now. But whatever accord you struck with the yellow-eyed man, you must have known that this would be a part of it. Finite suffering in exchange for infinite gain. Isn’t that notion worth toughing this out for?</p>
+<p><strong>SCP-8492-1:</strong> Would you?</p>
+<p><strong>Altschuler:</strong> Of course.</p>
+<p><strong>SCP-8492-1:</strong> You probably think you mean it.</p>
+<p><strong>Altschuler:</strong> I do. Most people would choose to swap places with you in a heartbeat—</p>
+<p><strong>SCP-8492-1:</strong> Tell me your name again.</p>
+<p><strong>Altschuler:</strong> I— what? It’s … Bastian. Doctor Bastian Altschuler.</p>
+<p><em>Crackling becomes audible.</em></p>
+<p><strong>SCP-8492-1:</strong> You’ve been forced to be strong in ways that you weren’t meant to be. There are roads that you were made to travel, closed off to you. Not through your fault, but the petty confluence of circumstances beyond your control.</p>
+<p><strong>Altschuler:</strong> No. I’m where I’m meant to be.</p>
+<p><em>Crackling gains in intensity. Wind currents are now able to be heard.</em></p>
+<p><strong>SCP-8492-1:</strong> I can make you loved. Protected. Worshipped. They will throw down their lives for you, as if it was to save themselves. But it will change you.</p>
+<p><strong>Altschuler:</strong> I don’t lack for any of those things. Please, stop talking.</p>
+<p><strong>SCP-8492-1:</strong> You will be all tomorrows. They will predicate their joy upon your survival, their survival upon your joy. You will no longer be this sullen creature, caught in the orbit of significance. You will be effulgent. A hundred million luminous scintillae, a part of you captured in every living soul.</p>
+<p><strong>Altschuler:</strong> I don’t want that. It sounds frightening.</p>
+<p><strong>SCP-8492-1:</strong> This is a world unsuited for beings such as you. I can make it otherwise. I can make <em>you</em> otherwise. You won’t ever have to try again. All you will be expected to do is exist.</p>
+<p><strong>Altschuler:</strong> It would be an empty existence. I am where I am meant to be.</p>
+<p><em>Sound of conversation almost completely overshadowed by ambient noise.</em></p>
+<p><strong>SCP-8492-1:</strong> It’s okay to be afraid. Look at me. What do you see?</p>
+<p><strong>Altschuler:</strong> Red butterfly, pinned to a board. Incandescent.</p>
+<p><strong>SCP-8492-1:</strong> Open your mouth.</p>
+<p><em>Metallic shrieking.</em></p>
+<p><strong>SCP-8492-1:</strong> Open. Your. Mouth.</p>
+<p><strong>Altschuler:</strong> No.</p>
+<p><em>Ambient noise gradually diminishes in intensity. Silence is eventually reached.</em></p>
+<p><strong>SCP-8492-1:</strong> See? You wouldn’t. You don’t have the need.</p>
+<p><strong>Altschuler:</strong> What happened? My head feels like it’s been through a— oh, oh shit! Someone get in here!</p>
+<p>&lt;<em>End of excerpt</em>&gt;</p>
+<hr/>
+<p><strong>Afterword:</strong> Maximum thermal output of SCP-8492 shown to vastly exceed previous estimates. SCP-8492-1 has all but demonstrated the ability to transfer the anomaly from one individual to another — most likely without destroying the previous host, or else SCP-8492-1 would not have made the attempt. I’ve put the call out for volunteers to receive SCP-8492 in place of SCP-8492-1 but all applicants thus far are those with preexisting ennui, low job satisfaction, or a high degree of neurosis; it’s unlikely any of them would be better candidates than SCP-8492-1 was.</p>
+<p>I have no recollection of my experiences while under the hypnosis (?) of SCP-8492-1. However, I am not confident that my impartiality towards the subject can be maintained anymore. Recommending transfer of custody to the Keter containment wing.</p>
+<p>— Doctor Bastian Altschuler</p>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Addendum 8492.3:</strong> Incidents</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Access fileserv:/S:/8492/fileserv/incidents</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- ACCESS GRANTED</a></div>
+<div class="collapsible-block-content">
+<table class="wiki-content-table">
+<tr>
+<th colspan="3">Containment Timeline</th>
+</tr>
+<tr>
+<th>Date</th>
+<th>Notable Occurrence</th>
+<th>Response</th>
+</tr>
+<tr>
+<td>3rd of September 2031</td>
+<td>Exploratory behaviour observed in secondary fires lit by SCP-8492, such as attempts to form shapes and move towards novel objects and patterns. Testing reveals hallmarks of higher order cognition in SCP-8492, such as the ability to anticipate rewards and recognise itself in mirrored surfaces.</td>
+<td>Exposure of SCP-8492 to Foundation education materials and imagery intended to inspire loyalty and knowledge of intended function. Improvements noted in SCP-8492’s utility and luminosity beyond already-observed growth trends.</td>
+</tr>
+<tr>
+<td>24th of September 2031</td>
+<td>Heat release rate of SCP-8492 exceeds the ability of its containment cell to eliminate thermal energy. SCP-8492-1 suffers skin-tearing and severe dehydration.</td>
+<td>High-capacity liquid cooling system installed. Emollient baths provided for SCP-8492-1.</td>
+</tr>
+<tr>
+<td>26th of October 2031</td>
+<td>Multiple reports of “aggressive behaviour” by secondary fires, such as spontaneous conflagration and targeted assaults upon facility personnel. Most instances of aggression occur from fires lit between 8pm and 4am. Further investigation correlates malicious behaviour in SCP-8492 with greater emotional instability of SCP-8492-1 at the time of ignition. Research team speculates that SCP-8492-1 exerts a psychological imprinting effect upon SCP-8492.</td>
+<td>Covered oil lamps implemented in place of torches and candles. Anxiolytics and lithium administration initiated for SCP-8492-1.</td>
+</tr>
+<tr>
+<td>10th of November 2031</td>
+<td>SCP-8492-1 reports constant, unremitting nightmares and mental imagery of burning alive. Intensity and frequency of hallucinations noted to correlate with SCP-8492 growth phases. Hypothesised to be the effect of SCP-8492’s feeding process. SCP-8492-1 daily caloric intake exceeds 9,600 kcal.</td>
+<td>Mood-stabilising drug regimen ceased. Immediate increase in growth rate observed in SCP-8492.</td>
+</tr>
+<tr>
+<td>2nd of December 2031</td>
+<td>SCP-8492-1 blood oxygen saturation falls below 85% for a prolonged period. Significant cognitive impairments observed. SCP-8492 lucency diminishes, but not to the extent observed in previous cases when SCP-8492-1’s conscious state was compromised. SCP-8492 suggested to be gaining independence from SCP-8492-1.</td>
+<td>Additional air intake ports installed in SCP-8492’s containment cell to ensure adequate oxygen for combustion.</td>
+</tr>
+<tr>
+<td>28th of January 2032</td>
+<td>SCP-8492-1 ceases responding to attempts at communication. Remains on bedframe and makes no attempt to feed or excrete.</td>
+<td>Intravenous nutrition regimen initiated.</td>
+</tr>
+</table>
+<p><br/></p>
+<div class="blockquote">
+<p><strong><span style="text-decoration: underline;">Incident Log 01/02/2032-8492-0014</span></strong></p>
+<p><strong>Synopsis:</strong> Significant deterioration in SCP-8492-1’s condition. Suspected prelude to separation of SCP-8492 from host.</p>
+<p><strong>Location:</strong> Sublevel 4, Keter Containment Wing, Cell 42, Subdivision 1 (Primary)</p>
+<p><strong>Date &amp; Time:</strong> 1st of February, 2032, 16:05</p>
+<hr/>
+<p>&lt;<em>Beginning of incident log</em>&gt;</p>
+<p><strong>16:05:</strong> SCP-8492-1’s vitals become deranged (BP: 195/140 mmHg, HR: 148, O2: 92%, T: 39.6°C). Remains unresponsive to questioning. Increasing signs of pain<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup> are observed over the next half-hour.</p>
+<p><strong>16:30:</strong> Extensive second and third degree burn lesions form on SCP-8492-1’s skin. SCP-8492 begins screaming. A physician is summoned.</p>
+<p><strong>16:33:</strong> SCP-8492-1 rejects the presence of a physician. Becomes belligerent.</p>
+<p><strong>16:37:</strong> Volunteers are called upon to receive SCP-8492 from SCP-8492-1 before her condition can deteriorate further.</p>
+<p><strong>17:05:</strong> Agent Tetmajer arrives at SB4-KCW-C42-S1(P).</p>
+<div class="content-panel standalone series">
+<p><em>Tetmajer enters the cell, dressed in a thermal isolation suit. SCP-8492-1 is huddled in bed. Dry red stains cover her bedsheets.</em></p>
+<p><strong>Tetmajer:</strong> Caitlin.</p>
+<p><em>SCP-8492-1 reaches towards Tetmajer. Large, granulated ulcers are visible on her hands and forearms. Lucent fires burn on her extremities.</em></p>
+<p><strong>Tetmajer:</strong> Can’t bear it anymore?</p>
+<p><em>SCP-8492-1 vomits. The acid evaporates. She shuffles away from Tetmajer.</em></p>
+<p><strong>Tetmajer:</strong> It’s alright. There’s no shame in falling short; it’s not something you can control.</p>
+<p><em>Tetmajer approaches SCP-8492-1 and takes her hand.</em></p>
+<p><strong>Tetmajer:</strong> You weren’t made for this. I saw it from the start. You realise that by now too, don’t you?</p>
+<p><em>Tetmajer’s suit begins emitting an alert tone.</em></p>
+<p><strong>Tetmajer:</strong> I could have told you. But I was sentimental; dared to hope that you would make me proud. &lt;<em>Smiles</em>&gt; Wishful thinking.</p>
+<p><em>Tetmajer’s glove melts onto SCP-8492-1's body. Tetmajer’s hand releases steam and leaks heated blood profusely. She demonstrates clear signs of pain but does not relinquish her grip.</em></p>
+<p><strong>Tetmajer:</strong> You can let go now.</p>
+<p><em>SCP-8492-1 takes hold of Tetmajer’s shoulder. SCP-8492 spreads onto Tetmajer’s torso and towards her mouth. Tetmajer removes her helmet and presents her tongue.</em></p>
+<p><em>SCP-8492-1 pushes Tetmajer away. The fires on Tetmajer’s body extinguish.</em></p>
+<p><strong>Tetmajer:</strong> &lt;<em>Whispering</em>&gt; Waste of a hand. &lt;<em>To SCP-8492-1</em>&gt; I thought you wanted out. Well here I am, ready to take the burden from you.</p>
+<p><strong>SCP-8492-1:</strong> So I can go back to what exactly? What’s left for me to be?</p>
+<p><strong>Tetmajer:</strong> This realisation is coming a little late, don’t you think? &lt;<em>Sniff, long pause</em>&gt; You know, Kolisch walked into the dark the other day.</p>
+<p><strong>SCP-8492-1:</strong> Why?</p>
+<p><strong>Tetmajer:</strong> He couldn’t be a patrolman anymore.</p>
+<p><strong>SCP-8492-1:</strong> I don’t get it.</p>
+<p><strong>Tetmajer:</strong> I know. Because you’d rather be bad at something than be nothing at all.</p>
+<p><em>SCP-8492-1 sits up.</em></p>
+<p><strong>Tetmajer:</strong> You were born to serve substandard Caffe Affogatos, nurse your dead-end degree, and daydream about dating serial killers. Generic millennial woman; the world in which you would have thrived is gone.</p>
+<p><strong>SCP-8492-1:</strong> You adapted to living in the dark. Found a way to matter. Why can't I?</p>
+<p><strong>Tetmajer:</strong> You need to stop clinging to this dream of self-importance. You were an adequate rescue officer, but you had to try much harder than anyone else just to reach mediocrity in your field. The same goes for cultivating that flame. You aren’t the best fit. Give it up; others can do it better.</p>
+<p><strong>SCP-8492-1:</strong> So I can prove you right?</p>
+<p><strong>Tetmajer:</strong> The future of humanity is more important than your pride.</p>
+<p><strong>SCP-8492-1:</strong> I want this more than you do.</p>
+<p><strong>Tetmajer:</strong> Then prove me wrong.</p>
+</div>
+<p>&lt;<em>End of incident log</em>&gt;</p>
+<hr/>
+<p><strong>Afterword:</strong> SCP-8492 is no longer responding to Foundation educational materials; its behaviour has become erratic and frequently counterproductive, most likely due to SCP-8492-1’s mentality with respect to its condition and the research team. Removal of SCP-8492 from SCP-8492-1, whether via host-transfer or simple separation, should be our priority going forward. However, achieving this would require the consent of either SCP-8492 or SCP-8492-1, neither of whom seem willing to relinquish the other.</p>
+<p>— Doctor Bastian Altschuler</p>
+</div>
+<p><br/></p>
+<div class="blockquote">
+<p><strong><span style="text-decoration: underline;">Incident Log 17/02/2032-8492-0001</span></strong></p>
+<p><strong>Synopsis:</strong> Containment breach of SCP-8492.</p>
+<p><strong>Location:</strong> Sublevel 4, Keter Containment Wing, Cell 42, Subdivision 1 (Primary)</p>
+<p><strong>Date &amp; Time:</strong> 17th of February, 2032, 18:27</p>
+<hr/>
+<p>&lt;<em>Beginning of incident log</em>&gt;</p>
+<p><strong>18:27:</strong> Candles, oil lamps, and other objects are introduced to SCP-8492’s cell for ignition. SCP-8492-1 is roused via intercom for this purpose. Ignited items are ejected via the cell’s gated egress port.</p>
+<p><strong>18:49:</strong> A candle with a white stripe running along its side is noted by SCP-8492-1. She examines it, splits it in half, extracts a strip of paper from inside, and sets it aside.</p>
+<p><strong>19:02:</strong> The last item is ignited and removed from the room. SCP-8492-1 returns to its bed in a state of agitation. Over the next two hours, her behaviour and level of apparent distress settle, while heat production increases steadily.</p>
+<p><strong>20:25:</strong> SCP-8492-1 laughs.</p>
+<p><strong>20:30:</strong> In-room temperature rises by 12.5°C as cooling systems reach overload thresholds. A large flame forms beneath SCP-8492-1 despite an apparent lack of fuel. Research team consulted; majority opinion is that SCP-8492 is in the process of separating from SCP-8492-1.</p>
+<p><strong>20:44:</strong> In-room temperatures have risen by a total of 83.0°C. SCP-8492-1’s deep musculature and bones become visible as her skin and muscles combust. The room is now completely filled with fire.</p>
+<p><strong>20:51:</strong> SCP-8492 exhibits burrowing behaviour, oxidising the containment cell door and using wind currents to remove weakened sections. Containment breach alarm initiated. Oxygen supply to SCP-8492’s cell is cut, but no decrease in volume or lucency is noted. Instead, SCP-8492-1’s tissues are consumed at a higher rate.</p>
+<p><strong>21:15:</strong> SCP-8492 breaches external panelling on its cell door. Sprinklers and emergency bulkheads are engaged but are unable to prevent SCP-8492 from expanding into the ventilation network. Rapid growth phases are correlated with aggravated consumption of SCP-8492-1’s soft tissues. Evacuation of Site-37's sublevels is initiated.</p>
+<p><strong>21:18:</strong> SCP-8492 reaches an elevator shaft. The intercom system is activated in an attempt to negotiate with SCP-8492-1, who is presumed to be at least partially responsible for the entity’s coordinated behaviour.</p>
+<div class="content-panel standalone series">
+<p><strong>Altschuler:</strong> Caitlin, can you hear me?</p>
+<p><em>SCP-8492 presence confirmed on Sublevel-3. Multiple bulkheads breached; physical impediments to SCP-8492 deemed ineffective.</em></p>
+<p><strong>Altschuler:</strong> You need to calm down and return to your cell.</p>
+<p><em>SCP-8492 presence confirmed on Sublevel-2. Sitewide fire suppression system overload.</em></p>
+<p><strong>Altschuler:</strong> You told me that you had something to prove. Show me how strong you are. Show me that you can remain in control.</p>
+<p><em>SCP-8492 presence confirmed on Sublevel-1. Thermal stress causes extensive buckling and rupture of structural elements. Site leadership warned of the possibility of sectional collapse.</em></p>
+<p><strong>Altschuler:</strong> These past months of misery endured and effort committed; do you intend to throw it all away just to make a point?</p>
+<p><em>SCP-8492 presence confirmed on Ground Floor. Multiple key transformers nearing thermal overload; noncritical electrical failures imminent.</em></p>
+<p><strong>Altschuler:</strong> Think about what you’re doing. If you leave us in the dark, what purpose did any of this serve?</p>
+<p><strong>SCP-8492-1:</strong> What did it ever?</p>
+<p><em>Cameras within SCP-8492's cell cease to function. Intercom system loses power.</em></p>
+</div>
+<p><strong>21:28:</strong> SCP-8492 coalesces around a surface-to-facility ventilation port and achieves egress by burning through a compromised HEPA filter.</p>
+<p><strong>21:30</strong> Exterior guard units witness SCP-8492's exit from the facility. SCP-8492 reaches the treeline before it can be effectively engaged.</p>
+<p><strong>21:45:</strong> Scavenger Team ST-F15 encounters SCP-8492 approximately 1,300 metres from Site-37, near the start of an expedition.</p>
+<div class="content-panel standalone series">
+<p><em>SCP-8492 passes over ST-F15. ST-F15-6 steps forward and removes his visor. SCP-8492 stops in place.</em></p>
+<p><strong>ST-F-15-6:</strong> Cait?</p>
+<p><em>No response from SCP-8492.</em></p>
+<p><strong>ST-F15-6:</strong> Don’t get cold.</p>
+<p><em>SCP-8492 resumes south-westerly movement.</em></p>
+</div>
+<p><strong>21:50:</strong> Visual contact with SCP-8492 lost.</p>
+<p>&lt;<em>End of incident log</em>&gt;</p>
+</div>
+<p>No remains of SCP-8492-1 were discovered in its cell. SCP-8492 has yet to be re-encountered. Tracking efforts are currently underway.</p>
+<p>The piece of paper which SCP-8492-1 retrieved from inside the modified candle was recovered after the containment breach, relatively intact in spite of the conditions that it had been exposed to. While some sections had been rendered illegible, a portion of the text could still be interpreted.</p>
+<div class="blockquote" style="text-align: center;">
+<p><em>stop trying to be something</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. While originally used to refer to a loss of solar light, Vacillante-Type’s definition has been expanded in this case to encompass a scenario in which the production of light within the visible spectrum has ceased on a universal scale.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Officially designated the VT-GK-044 Event, beginning on the 13th of April, 2025, with total elimination of visible light occurring around March of 2029.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. The section of the throat which lies directly behind the mouth.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Pain, asphyxiation, hyperthermia, tissue desiccation, etc.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Colloquial term: refers to visual hallucinations triggered in extremely low-light environs where there is sufficient illumination to trigger mnemonic pathways associated with visual input, but not enough to be consciously registered.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Hypersensitivity to sound. Predisposes towards proficiency in interpreting haptic-acoustic sensor output.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. Weeping, thrashing, tension.</div>
+</div>
+
+</div>
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-8492">SCP-8492</a>" by Tiamat Elsen, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-8492">https://scpwiki.com/scp-8492</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<p><strong>Filename:</strong> SeedOfLight.png<br/>
+<strong>Name:</strong> Candle light silhouette<br/>
+<strong>Author:</strong> Frank Morales R<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://openverse.org/image/c99a7bf2-f7d0-4fae-93af-ede812ef2a7c?q=candles&amp;p=31">https://openverse.org/image/c99a7bf2-f7d0-4fae-93af-ede812ef2a7c?q=candles&amp;p=31</a><br/>
+<strong>Additional Notes:</strong> N/A</p>
+<p><strong>Filename:</strong> WhiteLogo.png<br/>
+<strong>Name:</strong> SCP icon<br/>
+<strong>Author:</strong> The Great Hippo<br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wdfiles.com/local--files/the-great-hippo/SCP_icon%281%29.png">https://scp-wiki.wdfiles.com/local--files/the-great-hippo/SCP_icon%281%29.png</a><br/>
+<strong>Additional Notes:</strong> Inverted brightness (black to white)</p>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

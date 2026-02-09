@@ -1,0 +1,606 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-6864</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-6864</h1>
+            <html><body><div id="page-content">
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=1&amp;theme=https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css&amp;css={$css}" style="display: none"></iframe></p>
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=2&amp;theme=https://cdn.scpwiki.com/theme/en/basalt/basalt-bedrock-min.css&amp;css={$css}" style="display: none"></iframe></p>
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=3&amp;theme=https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/1&amp;css={$css}" style="display: none"></iframe></p>
+<div style="text-align: right;">
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: left;">
+<p style="text-align: center;"><a href="/jakdragonx-rage-collection">Author Page</a> | <a href="https://scp-wiki.wikidot.com/forum/t-14706803/scp-6864">Discussion</a> | <a href="https://scp-wiki.wikidot.com/random:random-page">Feeling Lucky?</a></p>
+<p>⚠️ <strong>Content Warning:</strong> Suggestive content regarding physical or bodily harm and physical/mental harassment. Scary images too.</p>
+<p><strong>More by JakdragonX:</strong></p>
+<ul>
+<li><a href="/epitaphs-of-mine">Epitaphs of Mine</a> — feat. <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/ralliston" onclick="WIKIDOT.page.listeners.userInfo(5986843); return false;"><img alt="Ralliston" class="small" src="https://www.wikidot.com/avatar.php?userid=5986843&amp;amp;size=small&amp;amp;timestamp=1762023354" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5986843)"/></a><a href="http://www.wikidot.com/user:info/ralliston" onclick="WIKIDOT.page.listeners.userInfo(5986843); return false;">Ralliston</a></span></li>
+<li><a href="/scp-4983">SCP-4983 -- Welcome to Hales</a></li>
+<li><a href="/bagel">Hungry For a Bagel</a></li>
+</ul>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+<div class="content-warning creditRate">⚠️ content warning <span class="content-warning-arrow"><span style="white-space: pre-wrap;"> </span></span></div>
+</div>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> New host detected. Connecting to integrated <strong>SIMULACRUM</strong> agent…</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> Beginning system startup as user "TECHNICIAN"</tt><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<tt>[<span style="color: green"><strong>COMPLETE</strong></span>] Bootloader loaded successfully.</tt><br/>
+<tt>[<span style="color: green"><strong>COMPLETE</strong></span>] Neural-link connection established.</tt><br/>
+<tt>[<span style="color: green"><strong>COMPLETE</strong></span>] ScIP Operating System (ScIP.OS) - V. 12.5.10 has been detected.</tt><br/>
+<tt>[<span style="color: green"><strong>COMPLETE</strong></span>] No peripherals have been detected on system.</tt><br/>
+<tt>[<span style="color: green"><strong>COMPLETE</strong></span>] Beginning pre-scan of subconscious compatability with digital interface.</tt><br/>
+<tt>[<span style="color: red"><strong>ERROR</strong></span>] Compatability has not been verified.</tt><br/>
+<tt>[<span style="color: green"><strong>COMPLETE</strong></span>] Scan has detected port 4564332 as open for <strong>SIMULACRUM</strong> connection.</tt><br/>
+<tt>[<span style="color: green"><strong>COMPLETE</strong></span>] Initiating handshake between host and remote servers.</tt><br/>
+<tt>[<span style="color: red"><strong>ERROR</strong></span>] No acknowledgement by sending packet.</tt><br/>
+<tt>[<span style="color: red"><strong>ERROR</strong></span>] Unstable connection between host and <strong>SIMULACRUM</strong> database detected.</tt><br/>
+<tt>[<span style="color: red"><strong>ERROR</strong></span>] Security scan has detected possible malware!</tt><br/>
+<tt>[<span style="color: red"><strong>ERROR</strong></span>] Unable to isolate target files.</tt><br/>
+<tt>[<span style="color: red"><strong>ERROR</strong></span>] KERNEL CRASH DETECTED! HALTING SYSTEM START-UP!</tt><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<tt><span style="white-space: pre-wrap;">&gt;</span> Corrupted data detected! Initiating automated troubleshooter to resolve possible issues…</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> Please wait as the necessary application(s) load…</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> …</tt></p>
+<p><span style="white-space: pre-wrap;">&gt;</span> <tt>…</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> …</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> Troubleshooter is unable to fix corrupted files. Please check SKS.log for further information.</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> Would you like to attempt further troubleshooting by booting into SAFE MODE? — y/n</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;&gt;</span> y</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> Acknowledged. Running host <strong>SIMULACRUM</strong> session via SAFE MODE…</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> Complete. Beginning VIEW-ONLY session of remote user's connection at 16:07…</tt></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="smallmodal">
+<p><strong>FROM:</strong> no-reply (<span class="wiki-email">moc.gniffatsdoowleb|detamotua#moc.gniffatsdoowleb|detamotua</span>)<br/>
+<strong>TO:</strong> Brittany Williams (<span class="wiki-email">ten.pics|smailliw.ynattirb#ten.pics|smailliw.ynattirb</span>)<br/>
+<strong>SUBJECT:</strong> 6 Month Contract Notice</p>
+<hr/>
+<p style="text-align: center;"><strong><span style="color: #9d1cb9">CONGRATULATIONS ON YOUR 6 MONTH MILESTONE WITH US! YOU HAVE MADE US PROUD!</span></strong></p>
+<p>Brittany Williams,</p>
+<p>What a fantastic experience this must have been for you! From your very first day, we at Belwood Staffing saw your potential. We saw your dedication, and your capabilities to aspire and achieve. Now, after nearly 6 months of being with us, we can safely say that your potential has been reached. Your commitment to our cause is inspiring and, for that, we wish to thank you — from the very bottom of our hearts. &lt;3</p>
+<p>We know that after today, your contract with us expires. However, that doesn't mean things have to end! Belwood Staffing would like to graciously offer you a position as a <span style="text-decoration: underline;">FULL-TIME</span> employee, effective immediately! Such an opportunity would jumpstart your life into a fulfilling and worthwhile career here at Belwood Staffing. With numerous benefits and advantages, we hope that you consider joining us on our journey as an organization!</p>
+<p>If you're ready to get started, then please read the below information carefully. These attachments contain <span style="text-decoration: underline;">vital information</span> regarding the new-hire process. If you have any questions, please reach out to your Belwood Staffing Recruiter <em>immediately</em>.</p>
+<p>Along with your new-hire documents, we have also compiled a brief collection of your past memories with us. We hope you enjoy them! :)<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+
+<p style="text-align: center;"><strong><span style="color: #9d1cb9"><em>"WELCOME TO THE FAMILY!"</em></span></strong></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<tt><span style="white-space: pre-wrap;">&gt;</span> Data synchronized at 16:09.</tt><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="document">
+<div style="text-align: center;">
+<h2 id="toc0"><span><strong>WORK OVERVIEW FOR BELWOOD STAFFING NEW-HIRE</strong></span></h2>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="scp-image-block block-center" style="width:100%;"><img alt="Department_of_Children_Head_Office_Ghana.jpg" class="image" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Department_of_Children_Head_Office_Ghana.jpg"/>
+<div class="scp-image-caption">
+<p>Belwood Staffing's administrative buildings, located in Sacramento, California, U.S.A.</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<strong>LOCATION:</strong> BSL-6864</p>
+<p><strong>WORK TYPE:</strong> Walk-in/Remote (Full-time)</p>
+<p><strong>SPECIAL WORK REQUIREMENTS:</strong> In order to apply for this Belwood Staffing position, all associates are <em>required</em> to have the following:</p>
+<ul>
+<li>High School diploma or equivalent</li>
+<li>Bachelor's and/or Master's degree in Human Resources</li>
+<li>Minimum of 5 years of work experience in a related field</li>
+<li>US work authorization or identification</li>
+<li>Willingness to consume and/or regularly use enhancing supplements for the sake of improved work performance</li>
+<li>Able to work strenuously on weekends and nights, as required</li>
+</ul>
+<p>Preferred and successful candidates for this position are those who are goal-oriented and performance-driven. Applicants must also be able to work as a team, and maintain a positive attitude amongst their new family here at Belwood Staffing!</p>
+<p>Additionally, candidates are required to have excellent oral and written communication skills. An "always prepared" mindset is just the person Belwood Staffing needs! Those who are also proficient with computers are more likely to be considered for the role, alongside those who possess highly developed customer service and organizational skills.</p>
+<p><strong>DESCRIPTION:</strong> Belwood Staffing needs your help! We are looking for a skilled staffing recruiter to undertake a variety of tasks such as identifying, organizing, and hiring qualified applicants from various platforms and positions. More specifically, Belwood Staffing recruiters will undertake the following tasks:</p>
+<ol>
+<li>Facilitating the recruitment process by reviewing applications, resumes, and cover letters.</li>
+<li>Posting available contractor and/or temporary jobs to platforms such as Indeed, ZipRecruiter, Glassdoor, etc.</li>
+<li>Complete phone screens and/or interviews with potential candidates as required.</li>
+<li>Interact with applicants, managers, and other agencies in a professional manner.</li>
+<li>Ensure that the hiring process remains efficient, timely, and positive for Belwood Staffing.</li>
+</ol>
+<p>But working here is <em>more</em> than just some 9-5! Beyond your regularly scheduled duties, Belwood Staffing employees are also required to help maintain a stable and positive workplace environment. To promote our positive reputation, you will work closely alongside our certified staff to determine a proper dietary/workout plan that'll refine your appearance and perfect your image!</p>
+<p>While working alongside Belwood Staffing is its own reward, applicants who are accepted into this position will also receive a plethora of additional benefits! Opportunities for flexible scheduling, health, and dental insurance, 401(k), paid time off, and more are available to all full-time employees.</p>
+<p>We hope to see your smiling face here soon!</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="modal">
+<div style="text-align: center;">
+<h2 id="toc1"><span><strong>REFERENCE DOCUMENTS</strong></span></h2>
+<h3 id="toc2"><span><span style="color: #9d1cb9"><strong>COURTERSY OF BELWOOD LEGAL &lt;3</strong></span></span></h3>
+</div>
+</div>
+<div class="document">
+<div style="text-align: center;">
+<h4 id="toc3"><span><span style="color: #9d1cb9"><strong>DECEMBER 2020</strong></span></span></h4>
+<h5 id="toc4"><span>Customers satisfied: <span style="color: red">0</span></span></h5>
+</div>
+<hr/>
+<p>Starting a new job is never easy.</p>
+<p>Think about all the things we go through in order to be employed. From scrolling through countless pages of online job postings to finally sitting down for an interview just for them to turn you away…. It's quite frustrating, isn't it?</p>
+<p>We, here at Belwood Staffing, understand that struggle. It's hard, and more often than not the experience is <em>never</em> rewarding for the applicant themselves. That's why we wish to change it. To become truly unique from the traditional status-quo. With people like you by our side, we can achieve that dream.</p>
+<p>Do you remember your very first interview with us? Oh, how young and ambitious you were! So ready and prepared to show the world your skills and talent. Our recruiters saw the potential within you to achieve, and from there a budding new relationship began to form between us. Surely you remember too, right? If not, don't worry. We saved the memory for you so we could enjoy it forever.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<tt><span style="white-space: pre-wrap;">&gt;</span> Data synchronized at 16:11.</tt><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="blockquote">
+<p><strong><tt>[BEGIN LOG]</tt></strong></p>
+<p><strong>WILLIAMS:</strong> Thank you for your time.</p>
+<p><strong>ALLEN:</strong> Of course, of course. And thank you for being here.</p>
+<p><strong>WILLIAMS:</strong> It's a pleasure, really. I think working with you guys would be a fantastic opportunity.</p>
+<p><strong>ALLEN:</strong> I'm glad you think so! We're excited to be able to sit down like this and talk. After looking through your resume — we saw a spark in you that we haven't seen in anyone else.</p>
+<p><strong>WILLIAMS:</strong> Oh, thank you. I'm flattered.</p>
+<p><strong>ALLEN:</strong> Well, if you don't mind me asking: what makes you feel like you'd be perfect in this role with Belwood?</p>
+<p><strong>WILLIAMS:</strong> I don't mind at all. And really, I think my experience speaks for itself. Essentially it boils down to my love for engaging and helping people. I'm good at seeing everyone for their worth <em>and</em> their skills. Plenty of employers would agree with me too, as you can probably see in my resume.</p>
+<p><strong>ALLEN:</strong> Fantastic answers, Brittany.</p>
+<p><em>ALLEN clears his throat.</em></p>
+<p><strong>ALLEN:</strong> Beyond the experience and your obvious skill then, how do you feel about fitting in with Belwood in terms of its culture? We believe things like staff engagement and interpersonal interaction are all vital for a company to thrive. Would you agree with that?</p>
+<p><strong>WILLIAMS:</strong> Oh, of course. Having a positive environment where each of us can promote one another in a productive manner can make all the difference. I try to stay as positive and friendly with my co-workers as possible.</p>
+<p><strong>ALLEN:</strong> That's great news. We want to treat everyone here equally — like family, really.</p>
+<p><strong>WILLIAMS:</strong> I think that's fantastic. More companies should strive to have that bond with their workers.</p>
+<p><strong>ALLEN:</strong> Agreed. <em>[Coughing]</em> I should also mention that Belwood Staffing has a zero-tolerance policy for things like bigotry, discrimination, and hate. Are you comfortable with policies like this in our organization?</p>
+<p><strong>WILLIAMS:</strong> Frankly, I'd be quite worried if policies like that weren't everywhere now.</p>
+<p><strong>ALLEN:</strong> You and me both.</p>
+<p><strong>WILLIAMS:</strong> It's a shame that it has to even be stated, if I'm being honest.</p>
+<p><strong>ALLEN:</strong> <em>[Chucking]</em> That's one of the great things about us — we truly care. We just want everyone to get along — even if we have to shuffle some things around for it to work. Does the idea of going by a new name or anything sound good to you?</p>
+<p><strong>WILLIAMS:</strong> I believe I can make that work, yeah.</p>
+<p><strong>ALLEN:</strong> That's fantastic! I must say, I'm really impressed with you so far.</p>
+<p><strong>WILLIAMS:</strong> You're too kind, thank you, sir.</p>
+<p><strong>ALLEN:</strong> No, thank you! <em>[Laughter]</em> Alright we're almost done, I promise. Just one question, that's all.</p>
+<p><strong>WILLIAMS:</strong> Yeah, how can I help?</p>
+<p><strong>ALLEN:</strong> If I asked you to join this position with Belwood Staffing right now, would you accept my offer?</p>
+<p><strong><tt>[END LOG]</tt></strong></p>
+</div>
+<div class="document">
+<div style="text-align: center;">
+<h4 id="toc5"><span><span style="color: #9d1cb9"><strong>JANUARY 2021</strong></span></span></h4>
+<h5 id="toc6"><span>Customers satisfied: <span style="color: red">8</span></span></h5>
+</div>
+<hr/>
+<p>You made quite the impression on us! We couldn't <em>wait</em> to have you onboard our certified team of experts (and they couldn't wait either.) We know that you may have felt excited or even slightly uncomfortable at the prospect of joining our team, and that's okay. Making such a large leap into your future can often be scary!</p>
+<p>But with all the hiring documents completed, we could finally begin your first day. With it, an entirely new universe was in your grasp. We know that adjusting to a new environment can be difficult, and getting acquainted with your new family is stressful! But you, Brittany (and now BSL-6864-313), are very special. Where most people falter and freeze, you excelled. Even as a fresh new hire, you surpassed our expectations by a mile and then some. According to our records, you were able to help <span style="color: #9d1cb9"><strong>8</strong></span> people find jobs that day. What an impressive number for your first day! Our team couldn't have been any prouder of your skills.</p>
+<p>Said skills only continued to improve with our help. Belwood Staffing provides our members with quality training and enhancement courses that anyone can learn! Do you remember your very first training lesson? How exciting it was! You learned so much and acquired so many new skills that would only help you on your journey with us.</p>
+<p>Take a look below to see some of the training you had during your employment at Belwood Staffing. It might be a fantastic refresher on our atmosphere and culture!</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<tt>[<span style="color: red"><strong>ERROR</strong></span>] SAFE MODE has run into an issue with loading these files at 16:14. Possible data corruption detected.</tt>
+<p><tt>Would you still like to continue?</tt><br/>
+<span style="white-space: pre-wrap;"> </span><br/></p>
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">OPEN FILE</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<div class="jotting">
+<p><strong><tt>[BEGIN LOG]</tt></strong></p>
+<p><em>Video begins with a flyover of the Belwood Staffing administration building in Sacramento. After a dramatic sweep of the building, the camera perspective shifts to the inside of a hallway. Inside, a crowd of people swarms around the camera, walking past. Music plays in the background.</em></p>
+<p><strong>NARRATOR:</strong> If you are seeing this video, then congratulations on your new position in Belwood Staffing.</p>
+<p><em>The video perspective shifts again, now overlooking several cubicles inside an unmarked office space.</em></p>
+<p><strong>NARRATOR:</strong> We wish to welcome you, regardless of your wealth, status, employment history, or past circumstances. Here at Belwood, <em>you</em> are our newest member of the family.</p>
+<p><em>The video perspective shifts to that of a woman, age unknown. She is looking toward the camera, wiping her brow.</em></p>
+<p><strong>ACTOR 1:</strong> At Belwood, I just feel so… so comfortable, really. Like I— uh, really belong…? It's been such a — a rejuvenating experience being with so many people.</p>
+<p><strong>NARRATOR:</strong> This is BSL-3319-287, BSL-3319's newest hire here in California.</p>
+<p><em>The camera perspective shifts to another angle of the actor, looking upwards at her from the floor. She wipes her brow again.</em></p>
+<p><strong>ACTOR 1:</strong> I really, REALLY, wouldn't be able to recommend this place enough, yeah. It's been ha—</p>
+<p><em>ACTOR 1 freezes and opens her mouth before cutting abruptly. Video now begins playing a still image of a large facility. The interior is vacant, save for several cubicles in the nearby vicinity. After a moment, a splash image of "ATMOSPHERE" appears over the image. This lingers for 15 seconds, occasionally flickering in view, before fading.</em></p>
+<p><strong>NARRATOR:</strong> Here at Belwood, we take pride in our achievements. Not only have we become the top employer in the country, but we also score among the highest in workplace culture and atmosphere.</p>
+<p><em>The video flashes before changing to view another open hallway. Now, one individual can be seen, standing in the center of the walkway. She stares downwards to the floor.</em></p>
+<p><strong>NARRATOR:</strong> This is—</p>
+<p><em>The NARRATOR's voice wavers and fades. The individual has not moved and stays motionless for several more seconds.</em></p>
+<p><strong>NARRATOR:</strong> She—</p>
+<p><em>The individual in question jerks her head upward, towards the camera. Red streaks are visible across the sides of her face, where her eyes should be visible. A loud shriek is heard momentarily before the video cuts, now showing the hallway completely vacant.</em></p>
+<p><strong>NARRATOR:</strong> Is gone. You have the opportunity to relive her story. Let's go back, and see how she managed to get through her first day—</p>
+<p><em>A black screen prompts, reading "[CONFIDENTIAL]."</em></p>
+<p><strong>NARRATOR:</strong> It seems that she is uncomfortable. How do you think we should assist her?</p>
+<p><em>The screen flickers briefly.</em></p>
+<p><strong>NARRATOR:</strong> Option 1, should we confront her attacker directly?</p>
+<p><em>The sounds of screaming and gunfire are heard briefly.</em></p>
+<p><strong>NARRATOR:</strong> Option 2, should she lay down and accept her situation?</p>
+<p><em>Grunting and moaning can now be heard. Sobbing is detected, but cannot be verified.</em></p>
+<p><strong>NARRATOR:</strong> Option 3, should she become less desirable to human urges?</p>
+<p><em>The sound of a chainsaw, dripping liquid, and moaning plays loudly.</em></p>
+<p><strong>NARRATOR:</strong> Correct, option 3 is the best choice.</p>
+<p><em>Yelping and screaming overtake the NARRATOR's voice until shifting once more. The video now displays the Belwood Staffing administration video, upside down and inverted.</em></p>
+<p><strong>NARRATOR:</strong> Continue watching to see more examples of workplace preparation. Always remember that you—</p>
+<p><em>Another black screen, now displaying "ARE ALWAYS AT FAULT" in white letters fills the contents of the screen, which remains visible until the end of the video segment.</em></p>
+<p><strong><tt>[END LOG]</tt></strong></p>
+</div>
+</div>
+</div>
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">CLOSE FILE</a></div>
+</div>
+</div>
+</div>
+<div class="document">
+<div style="text-align: center;">
+<h4 id="toc7"><span><span style="color: #9d1cb9"><strong>MARCH 2021</strong></span></span></h4>
+<h5 id="toc8"><span>Customers satisfied: <span style="color: orange">158</span></span></h5>
+</div>
+<hr/>
+<p>Your training proved to come in handy, BSL-6864-313! As a Recruiter, you needed the necessary tools to achieve and we, at Belwood Staffing, were there for you. You only continued to excel as the months went by. Positive reviews of both you and your work quickly flooded our offices! Compliments on your customer service, communication skills, overall performance, and your hire choices were particularly impressive!</p>
+<p>While we could continue on about how many reviews you received, we believe that it may be better to just show you an example of one sent to us.</p>
+<p>According to BSL-6864-115, you were:</p>
+<blockquote>
+<p><em>"Fantastic! Oh, she's so amazing!"</em><br/>
+<em>She helped me find the PERFECT job for my needs. Now I can finally afford my new car and my son's college tuition. And it's all thanks to her and her beautiful, GORGEOUS face!"</em><br/>
+<em>"Thank you so much for this! I will cherish this opportunity and make sure that I never let down my family again :)"</em></p>
+</blockquote>
+<p>Needless to say, with reviews like these you were soon outperforming everyone in your area! You quickly became the talk of the town, and Belwood Staffing <em>noticed.</em> That's one of the great things about being with us — your achievements will never be missed!</p>
+<p>But, unfortunately, we can't always excel. Sometimes we have our bad days too. Moments that really test us as a whole, and make us wonder if we're truly prepared for this journey we call "life."</p>
+<p>BSL-6864-313, do you ever remember your struggles with us? Or how we always came to support you in your troubles? Well, we remember. Almost as if it was yesterday — all those times when you needed someone. <em>Anyone.</em></p>
+<p>But luckily you have us. And we've been here for you since.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<tt><span style="white-space: pre-wrap;">&gt;</span> Data synchronized at 16:16.</tt><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="text-container-wrap">
+<div class="text-container">
+<div class="recv">
+<p><span class="text">hey, mom?</span></p>
+</div>
+<div class="recv">
+<p><span class="text">hello???</span></p>
+</div>
+<div class="recv">
+<p><span class="text">i really need your help</span></p>
+</div>
+<div class="sent">
+<p><span class="text">Sweetie! Love of my life! Of course, what's going on today??</span></p>
+</div>
+<div class="recv">
+<p><span class="text">look, mom, I made a mistake</span></p>
+</div>
+<div class="recv">
+<p><span class="text">im at work rn and i don't feel safe</span></p>
+</div>
+<div class="sent">
+<p><span class="text">You don't feel safe? I thought Belwood Staffing was a FANTASTIC place!?!??</span></p>
+</div>
+<div class="recv">
+<p><span class="text">no mom please just listen to me</span></p>
+</div>
+<div class="recv">
+<p><span class="text">the people here… they're different. i didn't notice it until now. i thought it was just me not paying attention or maybe i was just looking at them wrong</span></p>
+</div>
+<div class="sent">
+<p><span class="text">What do you mean honey bunchins??</span></p>
+</div>
+<div class="recv">
+<p><span class="text">why are you calling me that?</span></p>
+</div>
+<div class="recv">
+<p><span class="text">look, the people here… they're hollow. vacant. they all look the same, talk the same, ACT the same… and their faces. its horrifying and im just uncomfortable. is there any way you could come grab me? im thinking about leaving for the day</span></p>
+</div>
+<div class="sent">
+<p><span class="text">LEAVE? Don't you know that's irresponsible? I raised you better than that BSL-6864-313!</span></p>
+</div>
+<div class="recv">
+<p><span class="text">how do you know that name?</span></p>
+</div>
+<div class="recv">
+<p><span class="text">mom???</span></p>
+</div>
+<div class="sent">
+<p><span class="text">no silly, you have the wrong number! This is BSL-6864-211. your manager!</span></p>
+</div>
+<div class="sent">
+<p><span class="text">Come to my desk upstairs! We can talk ALL about it &lt;3 room 15</span></p>
+</div>
+<div class="recv">
+<p><span class="text">what did you do with my mom?</span></p>
+</div>
+<div class="recv">
+<p><span class="text">answer me</span></p>
+</div>
+<div class="recv">
+<p><span class="text">hello??</span></p>
+</div>
+</div>
+</div>
+<div class="document">
+<div style="text-align: center;">
+<h4 id="toc9"><span><span style="color: #9d1cb9"><strong>MAY 2021</strong></span></span></h4>
+<h5 id="toc10"><span>Customers satisfied: <span style="color: orange">343</span></span></h5>
+</div>
+<hr/>
+<p>As you've experienced, life can be really hard sometimes. Which is why we need some help, from time to time. But what happens when your friends aren't around? Or, even worse, what if your family doesn't have your back?</p>
+<p>Luckily, however, your <em>new</em> family is here instead! Our team is full of dedicated, talented, and hard-working people like yourself. Each of them, no matter how small or how strong, are always willing to help you.</p>
+<p>Our family knew that you were suffering from a lot of stress. Which is why we decided to help you in the best way possible — a departure party! One of our final memories together, but something that's still important nonetheless. Don't you recall how many people were there to cheer you on? To congratulate you on your successes and support you for the next stage of your career?</p>
+<p>It would be a travesty to not reflect on that memory. Which is why we saved some special, never-before-seen footage, just for you!</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<tt><span style="white-space: pre-wrap;">&gt;</span> Data synchronized at 16:23.</tt><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="jotting">
+<p><strong><tt>[BEGIN LOG]</tt></strong></p>
+<p><em>Recording begins with an individual setting the camera on a nearby table, pointing it towards a door. The inside of the room is faintly lit with tall candles. Along the walls, several people can be seen crouching — presumably hiding — with party hats and similar party attire. A banner is strewn along the ceiling, although its contents cannot be discerned from this angle.</em></p>
+<p><strong>[UNKNOWN 1]:</strong><em>[Whispering]</em> Shhh…! I think I can hear her — she's coming!</p>
+<p><strong>[UNKNOWN 2]:</strong> In your places everyone!</p>
+<p><em>Several people run past the camera, cutting out of view. In the distance, a faint humming can be heard. The group behind the door tense in preparation as rattling keys fumble with the front door. After a moment a deadbolt lock can be heard shifting, and then the door swings open. Light from the outside hallway illuminates the room slightly, showing two people who are standing in front of the door on the opposite side.</em></p>
+<p><em>The individual opening the door does not notice anything and walks inside. She searches for a nearby light switch and activates it. As the lights turn on, the two people standing nearby pounce on their target. She yelps as they bring her to the floor.</em></p>
+<p><strong>[EVERYONE]:</strong> SURPRISE!</p>
+<p><em>The crowd laughs and cheers as the target screams and attempts to escape. On top of her, a member of the group retrieves a long belt from his waist. After a brief struggle, the attacker is able to wrap the belt around the target's upper torso and limbs, restricting her movements. On the opposite side, another member of the group retrieves duct tape from a nearby drawer and proceeds to cover the target's mouth and wrap the tape around her.</em></p>
+<p><em>The target continues to struggle unsuccessfully as another member grabs a desk chair and rolls it nearby. Other members of the group then lift and secure the target onto the chair itself. She attempts to scream for help, but the tape muffles her voice. The crowd continues cheering as the target is spun around to a dark table.</em></p>
+<p><strong>[UNKNOWN 3]:</strong> Are you ready for cake?!</p>
+<p><em>The group cheers as a member standing nearby the table retrieves a match and lights it. He proceeds to ignite one of the birthday candles. He continues to light 5 more candles, which illuminates the table and nearby vicinity. On the table itself, the birthday candles sit within a large mixing bowl full of miscellaneous pills, varying in size and color.</em></p>
+<p><em>Also sitting nearby the table, 4 others have also been strapped into chairs — each missing chunks of their body and flesh. The target individual can be seen panicking, her eyes widening at the sight of the others as the rest of the group crowds around the table.</em></p>
+<p><strong>[UNKNOWN]:</strong> Thank you all for joining! Today we're here to celebrate a very special person. Someone who has sacrificed so much for each of us!</p>
+<p><strong>[EVERYONE]:</strong> Here, here!</p>
+<p><strong>[UNKNOWN]:</strong> Many of us here consider ourselves as your friend, BSL-6864-313. Now, we're here to celebrate you and your future endeavors!</p>
+<p><em>The group whistles and continues cheering as the target attempts to tilt her chair onto the floor and break free.</em></p>
+<p><strong>[UNKNOWN]:</strong> Everyone, sing!</p>
+<p><em>The group begins singing a series of different songs in unison. As they sing, the target is resecured by another member of the group with more duct tape. The target begins visibly crying as the birthday candles are blown out.</em></p>
+<p><strong>[UNKNOWN]:</strong> Everyone, let's help our friend here with her first bite — then we feast!</p>
+<p><em>The group applauds as a member tears the duct tape from the target's mouth. She goes to scream but is stopped by a member who begins prying open her jaw. She retaliates but is unsuccessful as the member continues to force her jaw open. The target shrieks in apparent pain as her jaw is widened before a loud snapping noise is heard. The victim screams even more as the member releases his grip on her jaw, which now hangs loosely below her face.</em></p>
+<p><em>Another member then grabs a handful of the pills present in the nearby bowl and pours it down the target's mouth. She attempts to cough and spit out the pills but is unsuccessful. Members of the crowd cheer as more and more pills are shoved into her mouth. Some in the group then begin to eat some of the pills themselves. Eating lasts for several minutes, as the victim continues to choke and cough.</em></p>
+<p><strong>[UNKNOWN]:</strong> No great party is <em>truly</em> great without a few gifts, amiright everyone?!</p>
+<p><em>The crowd vocalizes in confirmation.</em></p>
+<p><strong>[UNKNOWN]:</strong> Let's give our friend a very special gift of her own! Something she can remember us by, forever and ever.</p>
+<p><em>A member of the crowd pulls out scissors, gauze, syringes, scalpels, string, and a hand-held sand grinder from a toolbox. The victim shrieks again and attempts to squirm away.</em></p>
+<p><strong>[UNKNOWN]:</strong> Don't worry. You're going to look <em>gorgeous!</em></p>
+<p><em>The camera is knocked away, facing upwards towards the ceiling. The sand grinder is heard activating, and the crowd cheers as the victim shrieks again. A loud snap cracks throughout the room before the victim's shrieks turn into gurgling.</em></p>
+<p><strong>[UNKNOWN 2]:</strong> She already looks <em>so</em> much better!</p>
+<p><em>Recording ceases abruptly as a member stomps on the device, destroying the camera.</em></p>
+<p><strong><tt>[END LOG]</tt></strong></p>
+</div>
+<div class="document">
+<div style="text-align: center;">
+<h4 id="toc11"><span><span style="color: #9d1cb9"><strong>JUNE 2021</strong></span></span></h4>
+<h5 id="toc12"><span>Customers satisfied: <span style="color: green">556</span></span></h5>
+</div>
+<hr/>
+<p>Ah, what a fun and fantastic memory to share together!</p>
+<p>But now we're coming to an end of our journey. We, here at Belwood Staffing, will sorely miss you, BSL-6864-313. From the happy memories, to your fantastic work performance, and even for the toughest moments life has to offer — we will never forget you. And, while it would be terribly sad to see you go, we at Belwood Staffing are empathetic. We understand that feeling of wanting a fresh start. Even if it means finding a worse company to work for instead!</p>
+<p>However, don't think that you'll never be welcomed back. Or, perhaps you're thinking about returning now. Either way, we would love to keep you here! If that interests you, or perhaps you're not able to find a new position due to any sudden or pre-existing conditions, then we'd be happy to have you back here in no time.</p>
+</div>
+<div class="document">
+<div style="text-align: center;">
+<h4 id="toc13"><span><span style="color: #9d1cb9"><strong>JULY 2021</strong></span></span></h4>
+<h5 id="toc14"><span>Customers satisfied: <span style="color: red">0</span></span></h5>
+</div>
+<hr/>
+<p>It seems like you have made your choice.</p>
+<p>We'll leave your special gift right here &lt;3<br/>
+<span style="white-space: pre-wrap;"> </span><br/></p>
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">SHOW ATTACHMENT</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">COLLAPSE ATTACHMENT</a></div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+With love from your new family,<br/>
+- <strong><span style="color: #9d1cb9">Belwood Staffing</span></strong></div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<tt><span style="white-space: pre-wrap;">&gt;</span> SAFE MODE has ran into an unexpected problem and is attempting to restart the session.</tt>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> Closing client now at 16:27.</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> SAFE MODE de-activated. Checking further dependencies…</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> Dependencies cleared. Terminating remote connection…</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> VIEW-ONLY remote connection terminated. Automatic logout initializing…</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> WARNING!</tt></p>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> You have (1) new message available. Accessing now…</tt><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="notation">
+<p><strong><span style="color: #9d1cb9"><tt>How is she?</tt></span></strong><br/></p>
+<div style="text-align: right;">
+<p><strong><span style="color: black"><tt>Breathing, at least. Somehow. The doctors can't figure out why.</tt></span></strong></p>
+</div>
+<br/>
+<strong><span style="color: #9d1cb9"><tt>Is anyone else aware of her location and status?</tt></span></strong><br/>
+<div style="text-align: right;">
+<p><strong><span style="color: black"><tt>I'm having someone take care of that now.</tt></span></strong></p>
+</div>
+<br/>
+<strong><span style="color: #9d1cb9"><tt>Good. How did it happen?</tt></span></strong><br/>
+<div style="text-align: right;">
+<p><strong><span style="color: black"><tt>The engineers are still looking into it, but we're guessing a memetic agent infected her neural-link connection.</tt></span></strong></p>
+</div>
+<br/>
+<strong><span style="color: #9d1cb9"><tt>Let's make sure it doesn't happen again.</tt></span></strong><br/>
+<div style="text-align: right;">
+<p><strong><span style="color: black"><tt>It won't. It shouldn't have ever happened at all. She was on her final day too, according to Site-119.</tt></span></strong></p>
+</div>
+<br/>
+<strong><span style="color: #9d1cb9"><tt>Someone needs to be held responsible for this. When are we going to start seeing some actual progress?</tt></span></strong><br/>
+<div style="text-align: right;">
+<p><strong><span style="color: black"><tt>I'm trying. Rome wasn't built in a day.</tt></span></strong></p>
+</div>
+<br/>
+<strong><span style="color: #9d1cb9"><tt>I don't care about how long it takes. I just want to see something. Anything.</tt></span></strong><br/>
+<div style="text-align: right;">
+<p><strong><span style="color: black"><tt>And you'll get it. Perfecting a technology like this is more complex than you could possibly imagine.</tt></span></strong></p>
+</div>
+<br/>
+<strong><span style="color: #9d1cb9"><tt>I don't care for the excuses. I just need the results. I can't keep telling everyone to wait — remember I'm doing this out of your benefit, not mine.</tt></span></strong><br/>
+<div style="text-align: right;">
+<p><strong><span style="color: black"><tt>I understand.</tt></span></strong></p>
+</div>
+<br/>
+<strong><span style="color: #9d1cb9"><tt>Then I want her documents on my desk by tomorrow. I can handle the cleanup from there.</tt></span></strong><br/>
+<div style="text-align: right;">
+<p><strong><span style="color: black"><tt>And if anyone starts asking questions?</tt></span></strong></p>
+</div>
+<br/>
+<strong><span style="color: #9d1cb9"><tt>Just tell them that she's with her family now.</tt></span></strong></div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<p><tt><span style="white-space: pre-wrap;">&gt;</span> <strong><span style="text-decoration: underline;"><a href="/simulacrum-project-hub">SIMULACRUM</a></span></strong> connection terminated. Goodbye, TECHNICIAN.</tt></p>
+<hr/>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-6864">SCP-6864</a>" by JakdragonX, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-6864">https://scpwiki.com/scp-6864</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

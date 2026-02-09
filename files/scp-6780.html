@@ -1,0 +1,928 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-6780</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-6780</h1>
+            <html><body><div id="page-content">
+<div style="display: none">
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ CODE</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- CODE</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-code">/</span><span class="hl-identifier">*</span><span class="hl-code">
+    </span><span class="hl-identifier">BLANKSTYLE</span><span class="hl-code"> </span><span class="hl-identifier">CSS</span><span class="hl-code">
+    </span><span class="hl-brackets">[</span><span class="hl-var">2021</span><span class="hl-code"> </span><span class="hl-var">Wikidot</span><span class="hl-code"> </span><span class="hl-var">Theme</span><span class="hl-brackets">]</span><span class="hl-code">
+    </span><span class="hl-identifier">By</span><span class="hl-code"> </span><span class="hl-identifier">Placeholder</span><span class="hl-code"> </span><span class="hl-identifier">McD</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> </span><span class="hl-identifier">HarryBlank</span><span class="hl-code">
+    </span><span class="hl-identifier">Based</span><span class="hl-code"> on:
+       </span><span class="hl-identifier">Paperstack</span><span class="hl-code"> </span><span class="hl-identifier">Theme</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">EstrellaYoshte</span><span class="hl-code">
+       </span><span class="hl-identifier">Penumbra</span><span class="hl-code"> </span><span class="hl-identifier">Theme</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">EstrellaYoshte</span><span class="hl-code">
+</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-var">@import</span><span class="hl-code"> </span><span class="hl-identifier">url</span><span class="hl-code">('</span><span class="hl-identifier">https</span><span class="hl-code">://</span><span class="hl-identifier">fonts.googleapis.com</span><span class="hl-code">/</span><span class="hl-identifier">css2</span><span class="hl-code">?</span><span class="hl-identifier">family</span><span class="hl-code">=</span><span class="hl-identifier">Montserrat</span><span class="hl-special">:ital</span><span class="hl-code">,</span><span class="hl-identifier">wght</span><span class="hl-var">@0</span><span class="hl-code">,800;1,800&amp;</span><span class="hl-identifier">display</span><span class="hl-code">=</span><span class="hl-identifier">swap</span><span class="hl-code">');
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">.9</span><span class="hl-code">rem</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> -</span><span class="hl-number">1.6</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.2</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">div#container-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">div#header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code">, </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">margin-left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; </span><span class="hl-reserved">float:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code">, </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">, </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+    </span><span class="hl-reserved">letter-spacing:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-family:</span><span class="hl-code"> 'Montserrat', </span><span class="hl-string">sans-serif</span><span class="hl-code"> !important</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">content:</span><span class="hl-code"> var(--header-title, "R\</span><span class="hl-number">0026</span><span class="hl-code"> C SITE-43")</span><span class="hl-code">;
+  </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-number">400</span><span class="hl-code">;
+  </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">1.3</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">content:</span><span class="hl-code"> var(--header-subtitle, "SUBVERTING COMMON PRACTICE")</span><span class="hl-code">;
+  </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-number">700</span><span class="hl-code">;
+  </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">1.2</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 707</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-reserved">a:</span><span class="hl-code">:before {
+        font-size: </span><span class="hl-number">1.6</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+}
+ 
+</span><span class="hl-identifier">#login-status</span><span class="hl-code">,
+</span><span class="hl-identifier">#login-status</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-title</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#footer</span><span class="hl-code">, </span><span class="hl-identifier">#footer</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#search-top-box-input</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-input</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-input</span><span class="hl-special">:focus</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-form</span><span class="hl-code"> </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-var">submit</span><span class="hl-brackets">]</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-form</span><span class="hl-code"> </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-var">submit</span><span class="hl-brackets">]</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-form</span><span class="hl-code"> </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-var">submit</span><span class="hl-brackets">]</span><span class="hl-special">:focus</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#efefef</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-identifier">input.empty</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#999999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">2.3</span><span class="hl-code">rem!important</span><span class="hl-code">;
+    </span><span class="hl-reserved">right:</span><span class="hl-code"> </span><span class="hl-number">8</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#top-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+   </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+   </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+   </span><span class="hl-reserved">right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+   </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">7.9</span><span class="hl-code">rem</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#top-bar</span><span class="hl-code">, </span><span class="hl-identifier">#top-bar</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">h1</span><span class="hl-code">,
+</span><span class="hl-identifier">h2</span><span class="hl-code">,
+</span><span class="hl-identifier">h3</span><span class="hl-code">,
+</span><span class="hl-identifier">h4</span><span class="hl-code">,
+</span><span class="hl-identifier">h5</span><span class="hl-code">,
+</span><span class="hl-identifier">h6</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-family:</span><span class="hl-code"> 'Montserrat', </span><span class="hl-string">sans-serif</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+    </span><span class="hl-reserved">letter-spacing:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">1.45</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">div#extra-div-1</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">160</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> url('https://scp-wiki.wdfiles.com/local--files/theme%</span><span class="hl-number">3</span><span class="hl-code">Ablankstyle/</span><span class="hl-number">43</span><span class="hl-code">Head.png')</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-size:</span><span class="hl-code"> contain</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 707</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">div#extra-div-1</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">15</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-image:</span><span class="hl-code"> linear-gradient(
+        to </span><span class="hl-string">bottom</span><span class="hl-code">,
+        </span><span class="hl-var">#e0e0e0</span><span class="hl-code">, </span><span class="hl-var">#e0e0e0</span><span class="hl-code"> </span><span class="hl-number">90</span><span class="hl-string">px</span><span class="hl-code">,
+        </span><span class="hl-var">#e0e0e0</span><span class="hl-code"> </span><span class="hl-number">90</span><span class="hl-string">px</span><span class="hl-code">, </span><span class="hl-var">#ffffff</span><span class="hl-code"> </span><span class="hl-number">200</span><span class="hl-string">px</span><span class="hl-code">,
+        </span><span class="hl-var">#ffffff</span><span class="hl-code"> </span><span class="hl-number">200</span><span class="hl-string">px</span><span class="hl-code">, </span><span class="hl-var">#ffffff</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  --</span><span class="hl-reserved">timeScale:</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-code">;
+  --</span><span class="hl-reserved">timeDelay:</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-code">s</span><span class="hl-code">;
+  --</span><span class="hl-reserved">posX:</span><span class="hl-code"> calc(</span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> - </span><span class="hl-number">358</span><span class="hl-string">px</span><span class="hl-code"> - </span><span class="hl-number">13</span><span class="hl-code">rem)</span><span class="hl-code">;
+  --</span><span class="hl-reserved">fnLinger:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">s</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">hr</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">6</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">td</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">12</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">line-height:</span><span class="hl-code"> </span><span class="hl-number">1.4</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.sidebox</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">td</span><span class="hl-code">, 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.sidebox</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.35</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border-right:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#DDD</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#top-bar</span><span class="hl-code"> </span><span class="hl-identifier">div.open-menu</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 767</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">target</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+        </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#FDF6D7</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block.media</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-var">#D7EFE7</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block.resources</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-var">#F5D8E0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.creditRate</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">4</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-identifier">.fa-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-identifier">.fa-info</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-identifier">.cancel</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">PAGE</span><span class="hl-code"> </span><span class="hl-identifier">RATING</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">4</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">div.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.rate-points</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.rateup</span><span class="hl-code">,
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.ratedown</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-top:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.rateup</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.ratedown</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.rateup</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.ratedown</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.cancel</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.cancel</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.cancel</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.anchor</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+    </span><span class="hl-reserved">height:</span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.sidebox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.14</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">8</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> calc((</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">870</span><span class="hl-string">px</span><span class="hl-code">)/</span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">max-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - </span><span class="hl-number">18</span><span class="hl-code">rem)</span><span class="hl-code">;
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">103.5</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">5</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 1290</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">.sidebox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-reserved">visibility:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-reserved">h2:</span><span class="hl-code">:before {
+        font-size: </span><span class="hl-number">0.9</span><span class="hl-string">em</span><span class="hl-code"> !important</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+}
+ 
+</span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">YUI</span><span class="hl-code"> </span><span class="hl-identifier">TAB</span><span class="hl-code"> </span><span class="hl-identifier">BASE</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">{</span><span class="hl-reserved">background-color:</span><span class="hl-string">inherit</span><span class="hl-code">;</span><span class="hl-reserved">background-image:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-brackets">{</span><span class="hl-reserved">background:</span><span class="hl-string">inherit</span><span class="hl-code">;</span><span class="hl-reserved">text-decoration:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-brackets">{</span><span class="hl-reserved">color:</span><span class="hl-string">inherit</span><span class="hl-code">;</span><span class="hl-reserved">background:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-brackets">{</span><span class="hl-reserved">border-color:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-brackets">{</span><span class="hl-reserved">line-height:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">YUI</span><span class="hl-code"> </span><span class="hl-identifier">TAB</span><span class="hl-code"> </span><span class="hl-identifier">CUSTOMIZATION</span><span class="hl-code"> ----</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+     </span><span class="hl-reserved">flex-wrap:</span><span class="hl-code"> wrap</span><span class="hl-code">;
+     </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - </span><span class="hl-number">.125</span><span class="hl-code">rem)</span><span class="hl-code">;
+     </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+     </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+     </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Link</span><span class="hl-code"> </span><span class="hl-identifier">Modifier</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Tab</span><span class="hl-code"> </span><span class="hl-identifier">Background</span><span class="hl-code"> </span><span class="hl-identifier">Colour</span><span class="hl-code"> | [</span><span class="hl-identifier">UNSELECTED</span><span class="hl-code">] ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#efefef</span><span class="hl-code">;
+     </span><span class="hl-reserved">border:</span><span class="hl-code"> unset</span><span class="hl-code">;
+     </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+     </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Tab</span><span class="hl-code"> </span><span class="hl-identifier">Background</span><span class="hl-code"> </span><span class="hl-identifier">Colour</span><span class="hl-code"> | [</span><span class="hl-identifier">HOVER</span><span class="hl-code">] ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code">, /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Listitem</span><span class="hl-code"> </span><span class="hl-identifier">Modifier</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">relative</span><span class="hl-code">;
+     </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+     </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+     </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+     </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+     </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+     </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+     </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset-bottom</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+     </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+     </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+     </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">border:</span><span class="hl-code"> unset</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.35</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">.75</span><span class="hl-string">em</span><span class="hl-code">;
+ 
+     </span><span class="hl-reserved">text-overflow:</span><span class="hl-code"> ellipsis</span><span class="hl-code">;
+     </span><span class="hl-reserved">overflow:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+     </span><span class="hl-reserved">white-space:</span><span class="hl-code"> </span><span class="hl-string">nowrap</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code">, /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Selection</span><span class="hl-code"> </span><span class="hl-identifier">Modifier</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+     </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+     </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Tab</span><span class="hl-code"> </span><span class="hl-identifier">Background</span><span class="hl-code"> </span><span class="hl-identifier">Colour</span><span class="hl-code"> | [</span><span class="hl-identifier">SELECTED</span><span class="hl-code">] ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:active</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-content</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-content</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code">---- </span><span class="hl-identifier">SCROLLBAR</span><span class="hl-code"> ----</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#FFF</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#CCC</span><span class="hl-code">;
+     </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#EEE</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code">---- </span><span class="hl-identifier">CENTER</span><span class="hl-code"> </span><span class="hl-identifier">IMAGES</span><span class="hl-code"> </span><span class="hl-identifier">ON</span><span class="hl-code"> </span><span class="hl-identifier">MOBILE</span><span class="hl-code"> </span><span class="hl-identifier">courtesy</span><span class="hl-code"> </span><span class="hl-identifier">of</span><span class="hl-code"> </span><span class="hl-identifier">EstrellaYoshte</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> </span><span class="hl-identifier">PeppersGhost</span><span class="hl-code"> ----</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-identifier">.imagediv</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">float:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">15</span><span class="hl-string">px</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 540</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-identifier">.imagediv</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">float:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (max-width: 600</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">.scp-image-block.block-right</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">float:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code">---- </span><span class="hl-identifier">ACS-COLORED</span><span class="hl-code"> </span><span class="hl-identifier">TABLE</span><span class="hl-code"> </span><span class="hl-identifier">DIVS</span><span class="hl-code"> ----</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table1</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table1</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#D7EFE7</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table2</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table2</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#D8ECF4</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table3</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table3</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#FDF6D7</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table4</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table4</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#FFDABF</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table5</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table5</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#F5D8E0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table6</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table6</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(</span><span class="hl-number">146</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.tableb</span><span class="hl-code"> </span><span class="hl-identifier">.wiki-content-table</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border-collapse:</span><span class="hl-code"> </span><span class="hl-string">separate</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-spacing:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.tableb</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.tableb</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">img</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.tableb</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.top-left-box</span><span class="hl-code"> &gt; </span><span class="hl-identifier">.item</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">WORDS</span><span class="hl-code"> </span><span class="hl-identifier">NO</span><span class="hl-code"> </span><span class="hl-identifier">LONGER</span><span class="hl-code"> </span><span class="hl-identifier">BROKEN</span><span class="hl-code">, </span><span class="hl-identifier">THE</span><span class="hl-code"> </span><span class="hl-identifier">CROQUEMBOUCHE</span><span class="hl-code"> </span><span class="hl-identifier">HAS</span><span class="hl-code"> </span><span class="hl-identifier">SPOKEN</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+</span><span class="hl-identifier">span</span><span class="hl-code">, </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">word-break:</span><span class="hl-code"> </span><span class="hl-string">normal</span><span class="hl-code"> !important </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.avatar-hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code"> !important</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#breadcrumbs</span><span class="hl-code">, </span><span class="hl-identifier">.pseudocrumbs</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-top:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-identifier">.page-tags</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> -- </span><span class="hl-identifier">FANCY</span><span class="hl-code"> </span><span class="hl-identifier">THINGS</span><span class="hl-code"> </span><span class="hl-identifier">from</span><span class="hl-code"> </span><span class="hl-identifier">Woedenaz</span><span class="hl-code">'</span><span class="hl-identifier">s</span><span class="hl-code"> </span><span class="hl-identifier">Dustjacket</span><span class="hl-code"> </span><span class="hl-identifier">Theme</span><span class="hl-code"> -- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-identifier">.fancyhr</span><span class="hl-code"> </span><span class="hl-identifier">hr</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border-top:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">vw </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--bright-accent), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-source:</span><span class="hl-code"> url('https://scp-wiki.wdfiles.com/local--files/theme%</span><span class="hl-number">3</span><span class="hl-code">Aflopstyle-dark/wl_hr.png')</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-repeat:</span><span class="hl-code"> round round</span><span class="hl-code">;
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-slice:</span><span class="hl-code"> </span><span class="hl-number">80</span><span class="hl-code"> </span><span class="hl-number">500</span><span class="hl-code"> </span><span class="hl-number">80</span><span class="hl-code"> </span><span class="hl-number">500</span><span class="hl-code"> fill</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-width:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">80</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">80</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.fancyborder</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">vw </span><span class="hl-string">solid</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.5</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image:</span><span class="hl-code"> url('https://scp-wiki.wdfiles.com/local--files/theme%</span><span class="hl-number">3</span><span class="hl-code">Aflopstyle-dark/wl_border.png') </span><span class="hl-number">600</span><span class="hl-code"> round</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-width:</span><span class="hl-code"> </span><span class="hl-number">6</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">vw</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media Hub</a></strong><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<strong><a href="https://scp-wiki.wikidot.com/ihp-s-author-page">More by ihp</a></strong><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<strong><a href="https://scp-wiki.wikidot.com/grigori-karpin-s-author-page">More by Grigori Karpin</a></strong></p>
+
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<p><strong>Special Containment Procedures</strong>:<br/>
+No containment procedures are necessary at this time.</p>
+<div class="scp-image-block block-right" style="width:420px;"><img alt="VKTM%20-%20Dado%28a%29" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20-%20Dado%28a%29"/>
+<div class="scp-image-caption">
+<p>“Dado”</p>
+</div>
+</div>
+<p><span style="text-decoration: underline;">Archived Containment Procedures</span>:<br/>
+METATRON.aic is to review videos uploaded to YouTube or other social media sites for the presence of SCP-6780. Videos containing SCP-6780 are to be taken down and stripped of the anomaly. The channel owners are to be amnesticized.</p>
+<p>Copies of SCP-6780 instances are to be stored at the High-Yield Data Storage Facility 1 at Site-43.</p>
+<p><strong>Description:</strong> SCP-6780 is a series of videos and written advertisements produced by GOI-5889 ("<strong><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media</a></strong>") that represents a public relations advertising campaign for a line of supplements known as <em>'helth by dado'</em>. The verbal and audio-visual content of SCP-6780 appears to be attempting to extol the virtues of 'helth by dado' through use of spoken and written testimonials, reenactments, and use of devices such as medical diagrams, which often do not display human anatomy.</p>
+<p>'helth by dado', <a href="/dado-hub">despite the apparent origin</a>, is largely non-anomalous in content; examples of products in this line include coyerroodlquhhylx<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> and dado brain plus<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup>. SCP-6780 instances often portray the products causing significant mundane physical changes in the subject.</p>
+<p>Individuals who view SCP-6780 become skeptical of testimonial endorsements concerning a product,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> even products not featured in SCP-6780. This compels subjects to research products recommended to them, ultimately showing a preference for generic products over well-known brand names.</p>
+<p>Video instances of SCP-6780 typically involve testimonials of one kind or another, but can vary with unpredictable regularity. Additionally, demonstrations of the product often end with undesirable results.</p>
+<p><strong>Discovery</strong>: On 11/12/2021, METATRON.aic noted activity triggering several flags for Vikander-Kneed activity on numerous YouTube channels. Review of the noted channels revealed instances of SCP-6780 edited into videos uploaded. Upon confirmation of the GOI’s involvement, members of MTF-Kappa-43 (“The Mediators”) contacted the uploaders, who were unaware of the inclusion of the instances.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup> The videos were taken down, the channel owners amnesticized, and the current containment procedures developed.</p>
+<div style="border: solid 3px #000000; padding: 1px 15px; background: #E5E5E2; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<h4 id="toc0"><span>Addendum 6780.1: Selected Transcripts</span></h4>
+<p><em>The following are several examples of SCP-6780 instances</em>:</p>
+<div class="blockquote">
+<p><strong>Designation:</strong> SCP-6780-04<br/>
+<strong>Duration:</strong> 01:29</p>
+<p><em>A brunette woman sits on a wooden stool on a sound stage made to look like a plain, white room, framed so that its existence as a sound stage, as opposed to an actual room, is obvious. The woman is rubbing her stomach with a content smile on her face. A voice off-camera calls 'Action!' before the woman begins her testimony.</em></p>
+<p><strong>Spokesperson</strong>: Hello, I'm Olivia McConnell. My grandfather is a very important politician, and we've been using helth by dado for the last six months. His job often keeps him very busy and makes him very tired, but thanks to helth by dado's 'superbond'<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup>, we're never apart!"</p>
+<p><em>McConnell lifts up her shirt, revealing a male human face located directly above her navel. The face appears to be mouthing the words 'Kill me'.</em></p>
+<p><strong>McConnell</strong>: Yes, there's a bit of unrest at home, but that's okay. helth by dado means my grandfather gets to spend more time with me!</p>
+</div>
+<div class="blockquote">
+<p><strong>Designation:</strong> SCP-6780-11<br/>
+<strong>Duration:</strong> 0:31</p>
+<p><em>A blonde woman identified by a subtitle as 'Angeline Wakefield, Proud helth by dado Customer' sits in the 'stool' set, surrounded by five children. Each of these children is visibly ill, with visible symptoms leading Foundation pathologists to conclude that the children in question are infected with diseases including bubonic plague, smallpox, polio, and possibly a parasitic worm, as a tendril is seen extending from the nostril of one of the children at approximately 0:22.</em></p>
+<p><strong>Wakefield:</strong> I'm currently using coyerroodlquhhylx as an alternative to vaccines.</p>
+<p><em>Wakefield holds up a bottle of the product.</em></p>
+<p><strong>Wakefield:</strong> Now, I don't ever have to worry about my children being negatively affected by vaccination. They'll all die by the age of twenty, just as God intended! Thanks, helth by dado!</p>
+<p><em>Wakefield smiles at the camera. One of her children abruptly collapses.</em></p>
+</div>
+</div>
+<hr/>
+<h4 id="toc1"><span>Addendum 6780.2: Intercepted Communications</span></h4>
+<p>The following is a series of text messages intercepted by MTF-Kappa-43 personnel:<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup></p>
+<div style="display: block; margin: auto; align: center; border: dashed 1px #444444; background:#f4f4f4; width: 70%; padding:10px">
+<p><span style="color: red">dado was cocnerned because last video was not nice to helt by dado what is dado paying yuo people for</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Well, I'm sorry to hear you're unsatisfied with our efforts so far, dado. But let's see if we can't get to the core of the problem, shall we? What did you take issue with in the videos?</span></em></p>
+</div>
+<p><span style="color: red">dado thinks video make s helt by dado seem bad and heartless capitalist crao dado is not capitlast dado is dado trust in dado trust in helth by dado</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">So, you want people to trust in you more? Well, why didn't you just say so?? We were thinking you wanted to strengthen your brand!</span></em></p>
+</div>
+<p><span style="color: red">brand what ist dado brand</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Well, mercenary and serving the ends of purposeless soulless consumerism, and the humor of course. Don't forget the humor!</span></em></p>
+</div>
+<p><span style="color: red">dado doesnt think thats' fair to dado</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Well, what would you like your brand to be? We're here to serve you, after all</span></em></p>
+</div>
+<p><span style="color: red">dado wants to be trusted source of retail speciality goods. ilke what dado is. dado is small busness thing. not corporat dado. dado is entrepreneur.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Alright! we'll get working on the next video right away. I think you'll like what we come up with!</span></em></p>
+</div>
+</div>
+<hr/>
+<div style="border: solid 3px #000000; padding: 1px 15px; background: #E5E5E2; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<h4 id="toc2"><span>Addendum 6780.3: Selected Transcripts [continued]</span></h4>
+<div class="blockquote">
+<p><strong>Designation:</strong> SCP-6780-16<br/>
+<strong>Duration:</strong> 0:27</p>
+<p><em>A handsome man in a tweed jacket walks across a soundstage, which is dissolving behind him, revealing a winter garden surrounded by a high brick wall.</em></p>
+<p><strong>Dado</strong>: Hi, I’m Dado. The CEO of Dado Industries and the creator of helth by dado. I thought I’d talk to you about our product line and let you fine folks at home know about all the benefits of our various health supplements.</p>
+<p><em>The garden dissolves into a beach scene. The entity continues to walk, the camera following him.</em></p>
+<p><strong>Dado</strong>: We at Dado Industries care about the well being of you – our customers. It’s for that reason that we developed products like Coyerroodlquhhylx, which 100% could help in the treatment of some infections. We in no way have repurposed a malaria medication to try and swindle the public during this time of trouble. This is about trust, and we want you to trust us.</p>
+<p><em>The beach dissolves into a scene where the entity is getting into a luxury electric car.</em></p>
+<p><strong>Dado</strong>: Trust in us like we trust in you. And give us your money. Because of that trust. Dado loves you. Especially your purchasing power.</p>
+<p><em>The entity races off down the street, weaving in and out of traffic until disappearing from view. The screen is full of written words in small font for a moment and then the ad ends.</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup></p>
+</div>
+</div>
+<hr/>
+<h4 id="toc3"><span>Addendum 6780.4: Intercepted Communications [continued]</span></h4>
+<p>The following is a series of text messages intercepted by MTF-Kappa-43 personnel:</p>
+<div style="display: block; margin: auto; align: center; border: dashed 1px #444444; background:#f4f4f4; width: 70%; padding:10px">
+<p><span style="color: red">dado is unhappy with last ad</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Oh? Did you have any notes or suggestions?</span></em></p>
+</div>
+<p><span style="color: red">tha twas not dado. who was that? he is not dado, dado is dado.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Well that was an actor dear, all commercials star actors. Did you want to appear yourself? We’d be glad to make that happen. What a coup that would be! Filming the immortal dado for a dado product ad. We’d be the talk of the media world.</span></em></p>
+</div>
+<p><span style="color: red">no no no. you will not film dado. dado s shy. dado would like ads to sell helthb y dado products. sell the idea of dados products. leave actor paying dado out of it.</span></p>
+<p><span style="color: red">playing dado. dado paying you mr vktm.</span><br/></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Well, if you insist. The customer is always right, after all. We’ll work on some new material.</span></em></p>
+</div>
+</div>
+<hr/>
+<div style="border: solid 3px #000000; padding: 1px 15px; background: #E5E5E2; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<h4 id="toc4"><span>Addendum 6780.5: Selected Transcripts [continued]</span></h4>
+<div class="blockquote">
+<p><strong>Designation:</strong> SCP-6780-23<br/>
+<strong>Duration:</strong> 2:09</p>
+<p><em>This instance of SCP-6780 cuts between testimonials and a re-enactment. The individual giving the testimony is a man identified as "Micah Morris, Age 97" by a subtitles, apparently sitting within his home; Morris appears to be no older than thirty-five years of age.</em></p>
+<p><strong>Morris</strong>: I'm scared of death. But now I don't really have to worry about it! helth by dado has this great product, 'ageaway'<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup> which has really, really helped.</p>
+<p><em>The scene cuts to a reenactment where an elderly man appears to be bathing in blood. Nude cadavers of young men and women are in the shot as the man scrubs himself using the blood. Morris's voiceover continues in narration.</em></p>
+<p><strong>Morris</strong>: I used to try the Bathory method to make myself younger. Really messy, and the smell! Horrible.</p>
+<p><em>Cut to the elderly man loading corpses into an indoor incinerator.</em></p>
+<p><strong>Morris</strong>: But, then I saw the advertisement in the Sunday paper, and thought I should give it a try.</p>
+<p><em>Cut to the elderly man picking a box off of their doorstep. In the background, through the open door, several people are seen blindfolded, bound, and gagged.</em></p>
+<p><strong>Morris</strong>: It was miraculous; after one treatment, I looked like this.</p>
+<p><em>Cut to a before-and-after comparison; one shows a man similar in appearance to the actor playing the elderly man. The other shows a man who appears to be in his fifties.</em></p>
+<p><strong>Morris</strong>: And ever since then, I've just been getting younger and younger. Now I don't need to do the Bathory method anymore. But I still do! Because it's fun. helth by dado has given me my youth back, and I'll forever be thankful for it.</p>
+<p><em>Morris stands, revealing that their hands are covered in blood. Screaming is heard off-camera as Morris exits the shot.</em></p>
+</div>
+</div>
+<hr/>
+<h4 id="toc5"><span>Addendum 6780.6: Intercepted Communications [continued]</span></h4>
+<p>The following is a series of text messages intercepted by MTF-Kappa-43 personnel:</p>
+<div style="display: block; margin: auto; align: center; border: dashed 1px #444444; background:#f4f4f4; width: 70%; padding:10px">
+<p><span style="color: red">dado is speechless</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">That last ad was really something right? I thought it was some of our best work in five years. I’m really glad to see it resonated with you, dado. I think it’ll really inspire the consumers to pick up your products.</span></em></p>
+</div>
+<p><span style="color: red">dado think it something alright. dado thinks it dumpster fire.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Oh, well that’s disappointing, the creative department were really proud of it. Well… did you have any notes? I really want to get this right for you. It’s important to us that you’re happy with the product.</span></em></p>
+</div>
+<p><span style="color: red">dado has notes. dado has many fine notes. most importantly, dado thinks you should stop killing people to make ads.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">They’re actors, no one is going to miss them.</span></em></p>
+</div>
+<p><span style="color: red">what</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">dado, it’s a joke, dear. These are ads, we pay people to act in them, no one actually died.</span></em></p>
+</div>
+<p><span style="color: red">what about all the blood. dado hates blood.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Special effects! Did you actually think we killed people for two-minute ad copy?</span></em></p>
+</div>
+<p><span style="color: red">no definitely not. dado is smart.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">No doubt.</span></em></p>
+<p><em><span style="color: blue">Well. Any thoughts on a new direction then? If this one wasn’t to your liking.</span></em></p>
+</div>
+<p><span style="color: red">dado just thinks less blood. dado hates violence.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Never mind the violence of unchecked capitalism, amirite? We’ll take a new direction. Don’t worry your dado head about it. You do have a head right? It’s just no one has ever seen you. Just the products and the texts.</span></em></p>
+</div>
+<p><span style="color: red">yes dado hash ead. where else would dado’s beautiful brain be</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Right! And such a beautiful mind to have come up with all those wonderful products, such an innovator.</span></em></p>
+</div>
+<p><span style="color: red">dado is an entrepreneur, not innovator</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Gotcha, well keep your eyes peeled for the new ad, I’ve got some great ideas.</span></em></p>
+</div>
+</div>
+<hr/>
+<div style="border: solid 3px #000000; padding: 1px 15px; background: #E5E5E2; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<h4 id="toc6"><span>Addendum 6780.7: Selected Transcripts [continued]</span></h4>
+<div class="blockquote">
+<p><strong>Designation:</strong> SCP-6780-25<br/>
+<strong>Duration:</strong> ??</p>
+<p><em>The ad consists of a variable run time,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-9')">9</a></sup> containing only static and the words: “Buy helth by dado, we’d hate to use violence.” overlaid onto the static in bright red font, flickering on and off.</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-10" onclick="WIKIDOT.page.utils.scrollToReference('footnote-10')">10</a></sup></p>
+</div>
+</div>
+<h4 id="toc7"><span>Addendum 6780.8: Intercepted Communications [continued]</span></h4>
+<p>The following is a series of text messages intercepted by MTF-Kappa-43 personnel:</p>
+<div style="display: block; margin: auto; align: center; border: dashed 1px #444444; background:#f4f4f4; width: 70%; padding:10px">
+<p><span style="color: red">dado would like to speak with manager</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">My manager? I am the manager, dado. What’s the problem?</span></em></p>
+</div>
+<p><span style="color: red">dado would like to speak to someone in charge.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Also me. Did you have a problem with the last ad? We’ve found subliminals to be quite effective.</span></em></p>
+</div>
+<p><span style="color: red">dado did not have problem with subliminals.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Then what’s the matter? You should see a serious bump in purchases over the next fiscal quarter!</span></em></p>
+</div>
+<p><span style="color: red">dado will try one last time. dado hired vktm to be voice of helth by dado. you not do what dado asked. dado is sick of asking.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">I’m afraid I don’t quite understand, we’ve tried our best to live up to your wishes! What in particular are you taking issue with?</span></em></p>
+</div>
+<p><span style="color: red">dado is sick of vktm double speak. you would not like dado when hes <strong>angry</strong>!</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Like the Hulk, right? I like it, do you want us to get Mark Ruffalo? I bet he’s not busy.</span></em></p>
+</div>
+<p><span style="color: red">no that is not what dado wants. you are making dado very angr</span></p>
+<p><span style="color: red">wait, could you get ruffalo</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Probably not.</span></em></p>
+</div>
+<p><span style="color: red">dado wants a refund.</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Oh, I’m sorry, dado. There’s no refunds possible, you should have read the contract. This is a service industry after all. But if that’s the end of our collaboration, we understand.</span></em></p>
+</div>
+<p><span style="color: red">whatever</span></p>
+<div style="text-align: right;">
+<p><em><span style="color: blue">Expect our invoice in the next week or so. Thank you for trusting Vikander-Kneed Technical Media. For a Better Tomorrow<sup>TM</sup>!</span></em></p>
+</div>
+<p><span style="color: red">dado very disappointed in vktm customer service</span></p>
+<p><span style="color: red">dado leaving bad review with bbb</span><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-11" onclick="WIKIDOT.page.utils.scrollToReference('footnote-11')">11</a></sup></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. A rebranded malaria treatment, marketed as a preventative treatment for all viral and bacterial infections.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Consisting of 99% ginkobiloba and ginseng supplement, 1% salt.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Even in person, as subjects will no longer trust product recommendations from individuals who are close to them.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Despite the instances resembling ads, they were spliced into the video files themselves. It is unclear how the GOI managed this.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. An alleged 'paltonic aphoridiac'[sic] which is meant to aid in the repairing of familial relationships; in reality, 'superbond' is grape-flavored CBD oil, diluted to the point where any narcotic or pharmaceutical effects are non-existent.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. The record was transmitted directly to Dr. William Wettle’s workstation computer at Site-43, from an unknown source.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. The writing on screen is made to look like disclaimers often included in prescription drug commercials but is in fact the entirety of Act II of the 1664 theatrical comedy, Tartuffe.</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. An 'anti-aging' skincare cream which is 50% moisturizer, 50% cortizone cream.</div>
+<div class="footnote-footer" id="footnote-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-9')">9</a>. Different each time it has been viewed.</div>
+<div class="footnote-footer" id="footnote-10"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-10')">10</a>. The pacing of the message fading in and out over the video, when compared to Morse code, translates to “When you’re broke, and you just can’t stand the sight of your face in the mirror anymore, health products like helth by dado are the only reasonable solution. Otherwise, maybe it’s time to consider the failure of your existence and the fact that vapidly buying things won’t fill that gaping hole in your life. helth by dado is now 35% off for a limited time.”</div>
+<div class="footnote-footer" id="footnote-11"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-11')">11</a>. According to research by Site-43 staff, Vikander-Kneed is not registered with the Better Business Bureau.</div>
+</div>
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-6780">SCP-6780</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-6780">https://scpwiki.com/scp-6780</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> Man posing in tweed blazer<br/>
+<strong>Author:</strong> Rydale Clothing<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source:</strong> <a href="https://www.flickr.com/photos/rydaleclothing/48348503942/">LINK</a><br/>
+<strong>Additional Notes</strong>: Edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> 6780 Logo<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;"><img alt="HarryBlank" class="small" src="https://www.wikidot.com/avatar.php?userid=6479803&amp;amp;size=small&amp;amp;timestamp=1758513776" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6479803)"/></a><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;">HarryBlank</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/6780%20logo">Link</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+</div></body></html>
+        </body>
+        </html>
+        

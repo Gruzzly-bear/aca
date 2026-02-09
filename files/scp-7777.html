@@ -1,0 +1,334 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-7777</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-7777</h1>
+            <div class='image-header'><img alt="A series of sevens printed on a black screen, occasionally interspersed by zeros." class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-7777/7777.png"/></div><div class='text-content'><strong>Special Containment Procedures:</strong> Following the events outlined in Addendum Three, this file is solely accessible to individuals with 4+/ETHICS or 4+/RAISA clearance. The file occupying the wider Foundation's SCP-7777 slot is not to contain any of this file's addenda or its image. Furthermore, it must contain minimal information regarding the anomaly itself or its true containment procedures.</p>
+<hr/>
+<p><strong>Description:</strong> SCP-7777 is an anomalous phenomenon affecting random number generators (RNGs) utilized by the SCP Foundation. SCP-7777 can manifest in any RNG that both continuously creates output and is not, at the time of manifestation, being monitored directly by a sapient individual.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup></p>
+<p>When an RNG comes under the effects of SCP-7777, it will immediately begin to produce a series of 7s interspersed with 0s at seemingly random intervals. This will continue for an unspecified duration, before abruptly ceasing. After an SCP-7777 event concludes, the RNG will continue to output as normal, with no detectable differences.</p>
+<p><span style="text-decoration: line-through;">Thus far, the meaning behind SCP-7777, if any, is unclear.</span> See below.</p>
+<hr/>
+<p style="text-align: center;"><strong>Addendum One — Discovery</strong></p>
+<hr/>
+<p>SCP-7777 was initially discovered on January 28th, 2018, following the presumed malfunction of a <a href="https://scp-wiki.wikidot.com/scp-3557">CK-Class Scenario Detector</a> (CSD). The device's internal pseudo-RNG had deviated significantly from its synchronized counterpart, indicating a potential CK-Class Scenario had occurred. When Technician Davis Silverstein (who was nearby at the time) checked the CSD's pRNG output, he discovered an abnormal pattern consisting entirely of 7s and 0s and reported it to a colleague, Dr. [EXPUNGED].</p>
+<p>Dr. [EXPUNGED] quickly informed the other members of his research team stationed in Site-17, including a member of the Department of Analytics Senior Researcher [EXPUNGED], who requested Dr. [EXPUNGED] receive a copy of the pRNG's output. With assistance from Davis, they were able to copy the abnormally generated numbers onto a separate drive, and forward the information to the Department of Analytics. The phenomenon was classified and catalogued provisionally as <a href="https://scp-wiki.wikidot.com/log-of-extranormal-events">EE</a>-770707.</p>
+<p>Faced with a number of urgent assignments, the department relegated EE-770707 to low-priority. As a result, the phenomenon was not researched for an additional three weeks, until Dr. [EXPUNGED] requested a follow-up. As Senior Researcher [EXPUNGED] was off-site, the assignment was given to Junior Researcher [EXPUNGED].</p>
+<p>After attempting various methods of analysis on the data, eventually [EXPUNGED] determined that the number of 7s between each 0 present in the pattern never exceeded 255. Under the assumption the numbers may be referring to the value of bytes, they translated the values into ASCII characters. The following is the resultant message.</p>
+<div style="width: 75%; margin: auto;">
+<blockquote>
+<p style="text-align: center;"><span style="font-size:85%;"><tt>Site Director Franklyn Garnett murdered Dr. Theresa Booth on March 11th, 2003, by replacing her medication with Compound Y-909 and framing it as amnestic overdose.</tt></span></p>
+</blockquote>
+</div>
+<p>Upon decoding the message, [EXPUNGED] panicked and emailed the Department of Analytics' Ethics Committee Liaison, Flora Marinos. After several hours, Liaison Marinos read the email and immediately reported the findings to the Ethics Committee proper. The Ethics Committee launched an investigation into Site-85 Director Franklyn Garnett, as Dr. Theresa Booth was indeed confirmed to have died from severe Class-C amnestic overdose on March 11th, 2003. The Records And Information Security Administration (RAISA) was tasked with locating the exact origin of the report.</p>
+<p>The official explanation for the death at the time was that Dr. Booth had suffered from a traumatic sibling loss one month prior, and unsuccessfully attempted to use Class-C amnestics to erase the memories of how they died. However, review of archived security camera footage revealed that approximately three minutes of footage were removed from various tapes — including the hallway directly outside Dr. Booth's living quarters — on the day prior to her death.</p>
+<p>With this knowledge, the Ethics Committee suspended Director Garnett's clearance provisionally as the investigation continued. However, shortly thereafter Director Garnett noticed the change and began to flee the site, unsuccessfully. When later detained, he confessed that he had indeed murdered Dr. Booth, in order to prevent her from coming forward to the Ethics Committee with embezzlement charges against him. In light of the confession, all pay was deducted from Franklyn Garnett's Foundation accounts, and he was amnesticized and removed from the Foundation permanently.</p>
+<p>Since this event, over 37 new instances of SCP-7777 have appeared in Foundation RNGs.</p>
+<hr/>
+<p style="text-align: center;"><strong>Addendum Two — Abridged Log of SCP-7777 Instances</strong></p>
+<hr/>
+<p>The following is an abridged list of SCP-7777 instances that the Ethics Committee recorded since the initial discovery of the anomaly.</p>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID #:</strong> 7777-2</p>
+<p><strong>Date:</strong> February 3rd, 2018</p>
+<p><strong>Discovery:</strong> Instance 7777-2 appeared in a pRNG being run alongside <a href="https://scpwiki.com/scp-1214">SCP-1214</a><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup>, during tests by the Department of Analytics to determine the differentiation between SCP-1214 and standard RNGs. The code was translated, then sent to Liaison Marinos, who in turn forwarded it to the Ethics Committee proper.</p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p><span style="font-size:85%;"><tt>Senior Researcher Jackson Bell sexually assaulted a female researcher during the Site-18 2016 Christmas Party.</tt></span></p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> The Ethics Committee determined that the events described had in fact occurred publicly, but due to the senior researcher's position, no one had reported the incident to an authority. Bell denied the incident had occurred, even after recorded footage came to light; he has since been barred permanently from Foundation community events, and is undergoing long-term correctional therapy with a pay reduction. The victim has been identified and compensated.</p>
+</div>
+</blockquote>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID:</strong> 7777-3</p>
+<p><strong>Date:</strong> February 26th, 2018</p>
+<p><strong>Discovery:</strong> Instance 7777-3 appeared in a similar manner to 7777-1, within a CSD.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> Technician Davis Silverstein was present, and intercepted the device, which was decoded and sent to the Ethics Committee through Liaison Marinos.</p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p><span style="font-size:85%;"><tt>Containment Specialist Sofia Rosario falsified her credentials and plagiarized stolen designs from her coworkers.</tt></span></p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> Evidence at first had suggested that Rosario was fully knowledgeable and capable of containment specialization, and no former co-workers of Rosario claimed that their designs had been stolen, suggesting that the SCP-7777 instance may not have been factually correct. However, at Liaison Marinos's insistence, further research was conducted; it was discovered that various minor inconsistencies existed within Rosaio's identification documents, suggesting it was falsified.</p>
+<p>Rosario was interrogated on March 2nd. During initial questioning, she began to hyperventilate and convulse, before spontaneously collapsing. Before medics could arrive, Rosario was confirmed dead. Autopsy revealed that she had consumed a cyanide pill. Her true identity has yet to be confirmed; since her death, three containment specialists had come forward to corroborate that Rosario had stolen designs from them and passed them off as her own.</p>
+</div>
+</blockquote>
+<p style="text-align: center;"><strong>[ENTRY EXPUNGED BY ORDER OF THE O5 COUNCIL]</strong></p>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID:</strong> 7777-6</p>
+<p><strong>Date:</strong> May 12th, 2018</p>
+<p><strong>Discovery:</strong> Instance generated during production of a number for the consumption of <a href="https://scpwiki.com/scp-5789">SCP-𝕐</a>.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p><span style="font-size:85%;"><tt>Accountant Gregory Caplin allowed various monetary crimes to occur due to negligence in bookkeeping important projects.</tt></span></p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> Caplin admitted to negligence in their duties, claiming that they did not intend any ill-will and merely had "higher priorities". After some discussion, they agreed to forward all their communications and financial records to the Ethics Committee, and transfer their current responsibilities to other accounting personnel. However, before they were reassigned to another job, O5-8 requested to transfer Caplin themselves, which was approved.</p>
+<p><strong>Additional Notes:</strong> Caplin's current location and occupation within the Foundation are not known.</p>
+</div>
+</blockquote>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID:</strong> 7777-13</p>
+<p><strong>Date:</strong> October 8th, 2018</p>
+<p><strong>Discovery:</strong> Dr. [EXPUNGED] forwarded Instance 7777-13 to Liaison Marinos. They claimed they had run an RNG on their personal laptop for over three months straight until an SCP-7777 instance occurred.</p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p><span style="font-size:85%;"><tt>Site Director Thomas Graham vandalized <a href="https://scpwiki.com/scp-4051">SCP-4051</a>'s containment chamber with the phrase "DUMB ANOMALY IDIOT" to intentionally provoke vim into breaching.</tt></span></p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> Security camera footage of SCP-4051's<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> containment chamber revealed that the event described in the SCP-7777 instance did occur. However, investigating Ethics Committee personnel accidentally discovered at least two dozen unethical and intentionally cruel experiments conducted under order by Graham against SCP-4051 in the process. In-depth probing revealed that this abusive behavior not only extended to SCP-4051, but <a href="https://scp-wiki.wikidot.com/scp-4415">various other anomalies and researchers</a> as well.</p>
+<p>Further analysis of the prior eight years Graham had been in-charge of Site-17 showed that he had committed numerous crimes against the Foundation, including homicide, assault, embezzlement, bribery, extortion, verbal and physical abuse, perjury, gross misuse of amnestics, and conspiracy, among other violations of Foundation code of conduct. When faced with the charges, Graham denied all of them, and demanded "O5 Council intervention", which was promptly denied. Graham then attempted to assault a stationed security officer, who quickly detained him.</p>
+<p>Graham has since been removed from his position, and assigned permanent D-Class status. Additionally, Site-17 has been placed under direct Ethics Committee control, and all affected anomalies and researchers have been provided with compensation and given optional free use of on-site parapsychological counseling.</p>
+<p><strong>Additional Notes:</strong> Despite the well-documented existence of all of Graham's crimes, no on-site personnel had come forward with complaints beyond the first four years of Graham's tenure as Site Director, including post-demotion. It is unclear why SCP-7777 highlighted this specific crime.</p>
+</div>
+</blockquote>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID:</strong> 7777-17</p>
+<p><strong>Date:</strong> January 1st, 2019</p>
+<p><strong>Discovery:</strong> During Site-42's New Year Celebration, a raffle was held for various prizes via ticket system. Midway through the celebration, various participants noticed that all raffle codes were comprised solely of 7s and 0s. When a present Ethics Committee Liaison discovered this, they halted distribution of the tickets (which were unusable regardless) and forwarded all the tickets they could find to the Ethics Committee proper. Although some tickets were missing, the context could extrapolate the missing values when translated to ASCII.</p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p><span style="font-size:85%;"><tt>Dr. Theron Sherman attacked Junior Researcher Roger Radcliff on September 12th, 2018, in Site-42's break room.</tt></span></p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> Roger Radcliff, when asked, did corroborate this claim. However, both physical and written records showed that Dr. Sherman was not present in Site-42 when the supposed attack occurred. As a result, no further action was taken, despite Radcliff's protests.</p>
+<p><strong>Additional Notes:</strong> See Instance 7777-18 for additional context.</p>
+</div>
+</blockquote>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID:</strong> 7777-18</p>
+<p><strong>Date:</strong> January 4th, 2019</p>
+<p><strong>Discovery:</strong> Instance 7777-18 appeared in a CSD, which was discovered by Junior Technician Carmi Avraamu Waters.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup></p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p><span style="font-size:85%;"><tt>Junior Researcher Roger Radcliff attempted to frame Dr. Theron Sherman using a falsified SCP-7777 instance.</tt></span></p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> Although Radcliff denied the charge, investigation has determined that the junior researcher entered managerial spaces and replaced the raffle tickets with their own. Radcliff has been placed on leave for three months.</p>
+<p><strong>Additional Notes:</strong> This is the first instance which SCP-7777 references itself in its accusations. SCP-7777's containment procedures have been updated.</p>
+</div>
+</blockquote>
+<p style="text-align: center;"><strong>[ENTRIES EXPUNGED BY ORDER OF THE O5 COUNCIL]</strong></p>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID:</strong> 7777-26</p>
+<p><strong>Date:</strong> December 13th, 2019</p>
+<p><strong>Discovery:</strong> The Astronomy Department discovered abnormal fluctuations in the luminosity of the Pleiades star cluster. Although not originally linked to SCP-7777, analysis of the phenomena by relevant researchers accidentally uncovered the corresponding instance's message on March 1st, 2020. The department forwarded its findings to the Ethics Committee shortly thereafter.</p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p><span style="font-size:85%;"><tt>Thaumaturgist Diana Ribeiro cast thaumaturgic spells on various Department of Tactical Theology researchers in an attempt to send them to the Abrahamic hell when they died.</tt></span></p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> Ethics Committee Liaison Marinos inquired of the validity of the claim to Ribeiro, who confirmed that she had indeed been casting spells in an attempt to send fellow DoTT members to the Abrahamic hell when they eventually died.</p>
+<p>After intense deliberation, it was determined that the success of these spells could not be validated, and that nothing in the Ethics Committee guidelines explicitly disallowed spells that did no physical or mental harm. As such, Ribeiro would not be charged with any violations and allowed to continue working at the Department of Tactical Theology.</p>
+<p><strong>Additional Notes:</strong> Other observatories focused on the Pleiades cluster did not find any abnormal fluctuations in their luminosity.</p>
+</div>
+</blockquote>
+<p style="text-align: center;"><strong>[ENTRY EXPUNGED BY ORDER OF THE O5 COUNCIL]</strong></p>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID:</strong> 7777-32</p>
+<p><strong>Date:</strong> July 11th, 2020</p>
+<p><strong>Discovery:</strong> Instance 7777-32 appeared in a CSD. Technician Davis Silverstein caught and reported the instance to the Ethics Committee via Liaison Marinos.</p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p><span style="font-size:85%;"><tt>Director Calvin Bold murdered a six-month-old baby by kicking it into a wall.</tt></span></p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> The child in question was the anomaly <a href="https://scpwiki.com/scp-6469">SCP-6469-D</a>,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup> which was decommissioned by Director Calvin Bold. As the child posed a threat to the existence of the Foundation and the veil, the actions taken by Director Bold have been deemed appropriate for the circumstances, and charges were subsequently dropped.</p>
+</div>
+</blockquote>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID:</strong> 7777-33</p>
+<p><strong>Date:</strong> August 9th, 2020</p>
+<p><strong>Discovery:</strong> Instance 7777-33 appeared in a CSD. Technician Davis Silverstein caught and reported the instance to the Ethics Committee via Liaison Marinos.</p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p><span style="font-size:85%;"><tt>Ethics Committee Member Jeremiah Cimmerian intentionally fabricated the SCP-6469 anomaly to protect Director Calvin Bold.</tt></span></p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> Jeremiah Cimmerian was recused from their case and complied with Ethics Committee investigation. After questioning, Cimmerian revealed they had indeed fabricated the SCP-6469 anomaly to prevent the demotion of Director Bold after unintentionally killing a fellow researcher's child, mistaking it for an anomaly. He became aware of this event after Bold messaged him in panic post-murder.</p>
+<p>Cimmerian also embezzled funds to pay the father of the child, informing them in the process that it was "not a bribe", and "[they] can press charges if [they] so wish". The researcher did not bring further charges to the Ethics Committee both prior to Instance 7777-33, nor after being asked if they wished to by the Ethics Committee proper.</p>
+<p>Cimmerian was discharged from the Ethics Committee after investigation, but has not been removed from Foundation employment.</p>
+<p><strong>Additional Notes:</strong> As of November 5th, 2020, Cimmerian has not been able to be located. Attempts to find them have yielded no results.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup></p>
+</div>
+</blockquote>
+<p style="text-align: center;"><strong>[ENTRIES EXPUNGED BY ORDER OF THE O5 COUNCIL]</strong></p>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>Instance ID:</strong> 7777-37</p>
+<p><strong>Date:</strong> May 16th, 2021</p>
+<p><strong>Discovery:</strong> Instance 7777-37 is believed to have initially manifested in a CSD. Technician Davis Silverstein had informed Liaison Marinos of another instance, but was unable to deliver the instance to them due to events described in Addendum Three.</p>
+<p><strong>Translated Text:</strong></p>
+<blockquote>
+<p style="text-align: center;">Unknown</p>
+</blockquote>
+<p><strong>Follow-Up Action:</strong> N/A; see Addendum Three</p>
+</div>
+</blockquote>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p style="text-align: center;"><strong>Addendum Three — Site Breach</strong></p>
+<hr/>
+<p>On May 16th, 2021, Site-14 came under attack by a hostile Group of Interest, believed to be the <a href="https://scpwiki.com/chaos-insurgency-hub">Chaos Insurgency</a>. The site's security was quickly overwhelmed; however, thanks to the unexpected presence of Mobile Task Forces in the area, the site was retaken relatively quickly.</p>
+<p>During retaking of the site, the following incident occurred:</p>
+<blockquote>
+<div style="font-size: 85%">
+<p><strong>TIME:</strong> APPROX. 15:30 LOCAL, May 16th, 2021</p>
+<p><strong>LOCATION:</strong> Site-14, Employee Break Room A4</p>
+<hr/>
+<p style="text-align: center;"><strong>[BEGIN LOG]</strong></p>
+<hr/>
+<p><strong>[00:00]:</strong> <em>The break room is under lockdown. As per standard practice, all researchers are taking shelter under objects such as tables or chairs. Alarms are audibly blaring and the room is darkened to reduce visibility.</em></p>
+<p><strong>[00:34]:</strong> <em>A loud banging noise can be heard outside of one of the break room's doors; the intensity increases and the door begins rattling. The personnel within the rooms begin to whisper with increasing panic.</em></p>
+<p><strong>[01:26]:</strong> <em>The door breaks in, and a Chaos Insurgency agent equipped with an MP7A1 firearm enters the room. One researcher begins screaming as the agent raises their firearm to point at the personnel, and demands that they leave their positions under the furniture and line against the back wall of the room. All personnel comply.</em></p>
+<p><strong>[03:02]:</strong> <em>The agent approaches the first faculty member, Researcher Huang Bai, and demands to know their full name. The researcher complies, and the agent moves to the next individual in line, repeating their request.</em></p>
+<p><strong>[04:55]:</strong> <em>After approximately two minutes of repeating this process, the agent reaches Technician Davis Silverstein, who tells the agent his name. The agent immediately draws their weapon and shoots Silverstein repeatedly. Other personnel flee. The agent ignores them, and continues to fire into Silverstein's corpse, until the entire magazine is exhausted.</em></p>
+<p><strong>[06:22]:</strong> <em>The agent attempts to leave, but is interrupted when MTF member Charis Stavros enters the room. Upon seeing Silverstein's corpse, Stavros attacks and apprehends the agent.</em></p>
+<p><strong>[08:43]:</strong> <em>Stavros, during tactical communication with other Task Force Units, noticed the agent begin to hyperventilate and shake. Stavros quickly produced <a href="https://scpwiki.com/scp-427">SCP-427</a><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-9')">9</a></sup> from a standard anomaly transportation unit they possessed, and applied it to the agent, stabilizing their condition.</em></p>
+<hr/>
+<p style="text-align: center;"><strong>[END LOG]</strong></p>
+<hr/>
+<p><strong>Additional Notes:</strong> The agent was discovered to have attempted to commit suicide via cyanide pill, but was prevented from doing so. Agent Stavros had been transporting SCP-427 to Site-12 when their Task Force was called to intervene.</p>
+</div>
+</blockquote>
+<p>Nearly all Chaos Insurgency elements either had fled the site or were killed in action. The aforementioned agent was placed into forced long-term medical care, and was restrained heavily to prevent further suicide attempts.</p>
+<p>On June 15th, 2021, the Ethics Committee took possession of the Chaos Insurgency agent.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-10" onclick="WIKIDOT.page.utils.scrollToReference('footnote-10')">10</a></sup> For the following three weeks, the Ethics Committee attempted to interrogate the agent about their identity and their actions during the raid, but were incapable of soliciting useful information.</p>
+<p>However, a breakthrough was discovered when the genetic material of the agent returned a match in the Ethics Committee's database of Foundation employees. The agent had a near identical match to <a href="https://scpwiki.com/task-forces#alpha-1">MTF Alpha-1</a> Agent Justin Bulle, who was still under Foundation service. Further examination of archived Chaos Insurgency agent genetic data revealed further matches with current and former members of MTF Alpha-1.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-11" onclick="WIKIDOT.page.utils.scrollToReference('footnote-11')">11</a></sup></p>
+<p>During this time, RAISA had taken possession of Technician Silverstein's belongings, including his personal laptop which contained [DATA EXPUNGED] and SCP-7777 instance 37. After decoding the message, the text read as follows:</p>
+<div style="width: 75%; margin: auto;">
+<blockquote>
+<p style="text-align: center;"><span style="font-size:85%;"><tt>O5-6 is plotting to murder Technician Davis Silverstein.</tt></span></p>
+</blockquote>
+</div>
+<p>Due to the discovery involving Alpha-1, the SCP-7777-37 instance, and prior interference in SCP-7777 documentation, RAISA colluded with the Ethics Committee to intercept an upcoming O5 Council session in Site-1 and hold Overseers for questioning. On July 17th, 2021, Mobile Task Force Omega-1 breached Site-1 and attempted to detain the thirteen overseers, capturing seven. Interrogation revealed that the O5 Council had been employing the Red Right Hand to capture SCPs for their personal benefit, which would be forbidden by the Ethics Committee otherwise. The remaining six overseers' locations are not known.</p>
+<p>Since July 21st, 2021, the Ethics Committee has taken direct control of the SCP Foundation, until the full extent of the damage done to the Foundation can be assessed and repaired. Containment Procedures for SCP-7777 have been updated.</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;">
+<hr/>
+<p style="text-align: center;"><strong>Addendum RAISA-4 — Internal Memo</strong></p>
+<hr/>
+<p>…And since then, it has remained that way.</p>
+<p>The above file is a mess of conflicting redactions, misleading information, and version conflict. It is the general mission of RAISA to attempt to resolve these issues, and present a cohesive and streamlined document for future onboarding of researchers. Furthermore, we ensure all proper parties are informed of relevant information, and ensure breaches of security are handled and dealt with.</p>
+<p>This file is to remain a <em>permanent</em> exception to our mission.</p>
+<p>A lot of things haven't really sat right with me since we first started looking into this anomaly. Why are some staff consistently involved in the discovery of the instances? Why did O5-6 attempt to assassinate a random, lowly technician? Why did no one report any of the crimes before the anomaly announced them, and why are so many reluctant to speak up even after?</p>
+<p>But everything fell into place after we confiscated that laptop.</p>
+<p>After examining the evidence, there is only one reasonable conclusion I can arrive at: <strong>SCP-7777 does not exist.</strong></p>
+<p>SCP-7777 represents a coordinated effort between Silverstein, Marinos, and various other faculty members (whose name I've taken the liberty of expunging) to create a platform to whistle-blow the Foundation's corruption. Using various tactics, they've successfully managed to fool a majority of the Foundation's leadership — including the Ethics Committee and even us, for a time — into believing SCP-7777 is a real, anomalous phenomenon which cannot be controlled. Only recently have some of us caught on, including the at-large O5-6, who attempted to uproot the project at its source — completely unaware his plan had already been compromised, and used to trigger his own downfall.</p>
+<p>Nonetheless, the Ethics Committee is completely in the dark about SCP-7777's true nature. I intend to keep it this way. I have reason to suspect that their intentions aren't as pure as they'd like us to believe; much of our data on what occurred have been through their reports, and they conveniently paint a pretty picture that the Ethics Committee overthrew a corrupt O5 Council.</p>
+<p>But a whistle-blowing service wouldn't be necessary to begin with if the Ethics Committee was <em>actually fighting corruption</em>.</p>
+<p>I don't think we're getting the full story here. The missing employees, the coincidental possession of SCP-427, and that one conspicuous database infiltration seem to point to the fact that the Ethics Committee is playing their own game, with the O5 now eliminated. I haven't a clue what they intend to do with the Foundation as the sole executive power, but I doubt with the pieces we've been able to put together that it's remotely good.</p>
+<p>Fortunately, SCP-7777 has given us a weighted 7-sided die, and I intend to leverage it with all of the power RAISA can muster. While the Ethics Committee's been creating their conspiracy, we've been creating our own. And I think it's time we excise the bad apples from our rotten bunch.</p>
+<p>Reach out to me when you're ready. We'll have much to discuss about the coming days.</p>
+<div style="text-align: center;">
+<p>—Maria Jones<br/>
+Director of the Records And Information Security Administration</p>
+</div>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. It should be noted that SCP-7777 appears to affect pseudo-random number generators and "true" random number generators equally.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. SCP-1214 is a pseudo-random character generator which eventually deviates from random generation and produces predictable and coherent sentences.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. It is believed that the high frequency of consistently-generating pRNGs used in CSDs made them a susceptible target to SCP-7777 influence.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. SCP-𝕐 is the set of all non-existent numbers. Occurring every approximate rotation of the Earth, it must be "fed" a number of incredibly large size to prevent it from "consuming" a random, likely small, number.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. SCP-4051 is a teenager capable of manifesting portals to extra-dimensional spaces, containing any item SCP-4051 is capable of comprehending.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. It should be noted that Technician Waters' senior advisor was Davis Silverstein prior to being transferred to a separate site on November 20th, 2018.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. SCP-6469-D, prior to neutralization, was an entity that appeared as a human child which manifested before disasters occurred; whether the child's appearance was causative or not is still unclear.</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. RAISA records appear to have been altered during this time from an unknown outside source.</div>
+<div class="footnote-footer" id="footnote-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-9')">9</a>. A locket which is capable of healing illness quickly, but if used for too long, can cause intense mutation.</div>
+<div class="footnote-footer" id="footnote-10"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-10')">10</a>. It was, at the time, expressedly forbidden for Ethics Committee personnel to place themselves into proximity of a hostile force. This act had been performed in secret.</div>
+<div class="footnote-footer" id="footnote-11"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-11')">11</a>. It is believed that this was not discovered earlier due to the aforementioned policy, the Ethics Committee solely holding the employment information of all Foundation personnel, and a lack of incentives to compare CI agents to Foundation personnel.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-7777">SCP-7777</a>" by Yossipossi, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-7777">https://scpwiki.com/scp-7777</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> 7777.png<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/yossipossi" onclick="WIKIDOT.page.listeners.userInfo(2199269); return false;"><img alt="Yossipossi" class="small" src="https://www.wikidot.com/avatar.php?userid=2199269&amp;amp;size=small&amp;amp;timestamp=1768576419" style="background-image:url(https://www.wikidot.com/userkarma.php?u=2199269)"/></a><a href="http://www.wikidot.com/user:info/yossipossi" onclick="WIKIDOT.page.listeners.userInfo(2199269); return false;">Yossipossi</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scpwiki.com/scp-7777">SCP Wiki</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

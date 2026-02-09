@@ -1,0 +1,564 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-8831</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-8831</h1>
+            <html><body><div id="page-content">
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=1&amp;theme=https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css&amp;css={$css}" style="display: none"></iframe></p>
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=2&amp;theme=https://cdn.scpwiki.com/theme/en/basalt/basalt-bedrock-min.css&amp;css={$css}" style="display: none"></iframe></p>
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=3&amp;theme=https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/1&amp;css={$css}" style="display: none"></iframe></p>
+
+<div class="preview">
+<p>Winter has officially touched down in Halloween. I'm not even a citizen and I wept when it finally hit me.</p>
+</div>
+
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<p><strong>EXB-08831:</strong> Halloween, Oklahoma<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/completeindie" onclick="WIKIDOT.page.listeners.userInfo(5632962); return false;"><img alt="CompleteIndie" class="small" src="https://www.wikidot.com/avatar.php?userid=5632962&amp;amp;size=small&amp;amp;timestamp=1766533731" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5632962)"/></a><a href="http://www.wikidot.com/user:info/completeindie" onclick="WIKIDOT.page.listeners.userInfo(5632962); return false;">CompleteIndie</a></span></p>
+<p><em>Winter has officially touched down in Halloween. I'm not even a citizen and I wept when it finally hit me.</em></p>
+<p>⚠️ <strong>Content warning:</strong> This article contains heavy themes of abuse, and mentions death caused by COVID-19.</p>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+<div class="content-warning creditRate">⚠️ content warning <span class="content-warning-arrow"><span style="white-space: pre-wrap;"> </span></span></div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="article" style="border: solid 5px rgb(78, 171, 237);">
+<div style="text-align: left;">
+<p>One phone rang. Then a second. His personal cellphone and his landline were both blowing up, and he got to the office at town hall to nothing but more pandemonium.</p>
+<p>Already, it was only one in the afternoon, he had just gotten back to the office after his lunch break, and already there was a message on his desk, a faxed memo from something called The Foundation, the word <em>protect</em> looking back at him sharply, on a weird arrowed insignia.</p>
+<p>Something about the fall of paranormality, and offering assistance in reintegrating their city to the modern day. Because years have elapsed, the world had changed overnight, the citizens of this city jumped forwards years into the future.</p>
+<p>And yet, despite all this, the shock setting in, all he could do was look at the gentle fall of white flecks, soft cold descending from the heavens, that a part of him had so dearly missed.</p>
+</div>
+<div class="quoteblock" style='background: url("https://live.staticflickr.com/4064/4336406440_265fa0b7dd_b.jpg") top center no-repeat; float: center; background-attachment: fixed; background-size: 1150px; background-color: #6B6B6B; background-blend-mode: multiply;'>
+<p><strong><span style="color: white"><em>"The snow's beautiful, isn't it?"</em></span></strong></p>
+</div>
+</div>
+<div class="modal">
+<table class="wiki-content-table">
+<tr>
+<th>ANOMALY</th>
+<th>POST-8300 STATE</th>
+</tr>
+<tr>
+<td>SCP-8831</td>
+<td>In the aftermath of <a href="https://scp-wiki.wikidot.com/scp-8300">SCP-8300</a>, and all anomalous properties and events abruptly concluding, the Locked Scenario that had affected Halloween abruptly stopped.</td>
+</tr>
+<tr>
+<th colspan="2">PROPOSAL</th>
+</tr>
+<tr>
+<td colspan="2">Free therapeutic assistance is to be offered to the entirety of Halloween. Additionally, at the request of town council, a documentary made by citizens and the Foundation, showing the anomalous effects of SCP-8831, has been commissioned immediately and is outsourced to the Media Department.</td>
+</tr>
+<tr>
+<th>STATUS</th>
+<th>NOTES</th>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: green"><strong>APPROVED!</strong></span></td>
+<td><em>Winter has officially touched down in Halloween. I'm not even a citizen and I wept when it finally hit me.</em> - Dr. Alexandria Thompson, Director of Reintegration.</td>
+</tr>
+</table>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="document">
+<div class="jotting">
+<div class="smallmodal">
+<p><strong>EXHIBITION #:</strong> 08831</p>
+<p><strong>EXHIBITION TITLE:</strong> THE TOWN OF HALLOWEEN</p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="3673377_3ec8c8a3.jpg" class="image" src="https://s0.geograph.org.uk/geophotos/03/67/33/3673377_3ec8c8a3.jpg"/>
+<div class="scp-image-caption">
+<p>Aerial photo of EXB-08831</p>
+</div>
+</div>
+<p><strong>LOCATION:</strong> The State of Oklahoma.</p>
+<p><strong>DESCRIPTION:</strong> EXB-08831 is the city of Halloween, Oklahoma. Sometime during October 2016, the town entered an IO-Locked Scenario (see below).</p>
+<p>The entirety of the town was confined within the dates October 1st 2016 and October 31st 2016. Cultural trends, weather, food/water supplies, etc., remained consistent to how it was during this timeframe, with physical resources anomalously replenishing themselves through as-of-yet unknown means.</p>
+<p>The IO-Locked Scenario that affected EXB-08831 lasted 2,617 days before abruptly self-terminating on January 1st 2024. During that time, EXB-08831's anomalous effects caused October 2016 to occur eighty-six (86) times in succession. During the Scenario, citizens of Halloween were anomalously imperceptive to the lack of temporal progression, and it was impossible for citizens of Halloween to leave the city.</p>
+<p>In the aftermath of the Scenario ending, the citizens of EXB-08831 are being aided in adjusting to the year 2024.</p>
+</div>
+<div class="darkdocument">
+<p style="text-align: center;"><strong>Foundation Research Archives</strong></p>
+<p style="text-align: center;"><strong>Common Anomalous Zones and How they Operate, Volume 12.</strong></p>
+<blockquote>
+<p><strong>A Locked Scenario (LS)</strong> occurs when an event, incident, or sequence of actions is anomalously extended past its logical expiration. These phenomena should not be confused with <strong>Temporal Loops (TL)</strong>, which create brackets of repeating time - Locked Scenarios merely repeat the event itself as time progresses. To achieve this effect, an LS will often alter human perception, along with any number of core scientific principles. Often mischaracterized as "hauntings" or "curses", some examples of Locked Scenarios in the Foundation database include <a href="/scp-112">SCP-112</a>, <a href="/scp-4382">SCP-4382</a>, and <a href="/scp-1337">SCP-1337</a>. As each of these documents demonstrate, Locked Scenarios can be incredibly dangerous, and require proper understanding for their safe containment and/or resolution.<br/>
+An LS will operate under two set variables: <em>Protracted vs. Indefinite</em>, and <em>Static vs. Organic.</em></p>
+<ul>
+<li><strong>A Protracted LS (P-LS)</strong> will eventually self-terminate.</li>
+<li><strong>An Indefinite LS (I-LS)</strong> will be self-sustaining.</li>
+</ul>
+<p>High-sensitivity Kant Counters can be used to tell these phenomena apart. The more common P-LS will show a gradual decline in Hume levels, culminating in a total field collapse or "burnout". An I-LS will show steady, or bare fluctuations in Hume levels, and will always require some form of external resolution.</p>
+<ul>
+<li><strong>A Static LS (S-LS)</strong> will only repeat a sequence of events.</li>
+<li><strong>An Organic LS (O-LS)</strong> will "progress" within its own set confines.</li>
+</ul>
+<p>Consider this separation in terms of a baseball game. In an S-LS, the game will repeat its nine innings over and over. In an O-LS, the game will continue into a 10th inning and beyond, with the score progressively increasing. Combining these factors, a Locked Scenario can be interchangeably characterized as PO-LS, or IS-LS, etc.</p>
+</blockquote>
+</div>
+<div class="document">
+<p>As an employee of Site-122, I can confidently say Oklahoma might be the most non-anomalous state in America, and one of the most non-anomalous places in the world. Prior to Halloween, the most anomalous thing in Site-122 was a Walkman that incited hallucinations that even amnestics couldn't scrub. We contained it by putting it in an old shoe box in one of the lockers.</p>
+<p>So once we got a real anomaly, a bonafide Keter-class IO-Locked Scenario, an entire town abruptly losing all connection to the outside world, it was all hands on deck. Site-122 was maybe more lax with rules than we should've been, half the staff barely knew how to administer amnestics, seeing as that shoebox hadn't been opened in seven years. We needed to outsource our interviews to keep them consistent.</p>
+<p>And despite that, Halloween became a passion project. And while it maybe led to some less than stellar following of protocol, I would like to hope we did it right.</p>
+<div style="text-align: right;">
+<p><em>Alexandria Thompson,</em><br/>
+<em>Director of Reintegration, Durant, Oklahoma,</em><br/>
+<em>Former Site-122 Director, Durant, Oklahoma.</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="document">
+<p><em>The Mayor of Halloween, Oklahoma, <strong>Douglas Hamilton</strong>, is sitting across a table from Dr. <a href="/scp-6494">Amity Thorn</a>, member of the Foundation Media Department.</em></p>
+<p><strong>Thorn:</strong> So, um. As I said, thank you for allowing this meeting, uh, in person, Mr. Hamilton.</p>
+<p><strong>Hamilton:</strong> I can't, I… What do you know of…</p>
+<p><strong>Thorn:</strong> Of what happened?</p>
+<p><strong>Hamilton:</strong> <em>(nods)</em></p>
+<p><strong>Thorn:</strong> How, how blunt and to the point would you like me to be?</p>
+<p><em>(Silence.)</em></p>
+<p><strong>Hamilton:</strong> It's for the best that I… that I know everything. The town… the <em>town</em> needs me to know.</p>
+<p><strong>Thorn:</strong> <em>(smiles)</em> I like you. But anyway, all of 8831 - well, that's what we'd been calling Halloween -, it… You were stuck in what could simply be called a time loop. You knew that. But, the exact details of the time loop are… weird.</p>
+<p><strong>Hamilton:</strong> I'm listening.</p>
+<p><strong>Thorn:</strong> The Foundation calls it a Locked Scenario - in this case, its a time loop that keeps going. My go-to example is <a href="/scp-5858">a play that went on for, like, two-thousand acts straight.</a> Act, intermission, act, intermission, on loop for three years. No one even thought it was weird.</p>
+<p><strong>Hamilton:</strong> Is that… This thing, is that what happened here?</p>
+<p><strong>Thorn:</strong> <em>(pause)</em> More or less. There's a lot more terminology, but I'm not one to explain what Hume levels and the like are. That's everything that needs to be known to get the gist. Point is, anyway, not alone. But Halloween went on for a lot longer than usual.</p>
+<p><strong>Hamilton:</strong> And you're here to help, document it, correct?</p>
+<p><strong>Thorn:</strong> Yes. Media department, and we know a couple studios to help make that vision a reality, too. Between you and me, the Foundation isn't used to PR, so our media department is a lot of run-off from other media companies now out of work, like Pixar and MGM<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup>.</p>
+<p><strong>Hamilton:</strong> …Pixar? The Toy Story people?</p>
+<p><strong>Thorn:</strong> Yep!</p>
+<p><em>(Silence.)</em></p>
+<p><strong>Thorn:</strong> Occult magic was the framework for their software.</p>
+<p><em>(Silence.)</em></p>
+<p><strong>Hamilton:</strong> I see.</p>
+<p><strong>Thorn:</strong> Point is, I want to help make Halloween's story known.</p>
+<p><strong>Hamilton:</strong> Ms. Thorn?</p>
+<p><strong>Thorn:</strong> Yes?</p>
+<p><strong>Hamilton:</strong> I want to make something clear. Halloween has been a town under my protection since September 2016. Regardless of how <em>you</em> define that, it doesn't change that I know this town better than anyone. I want a hand in this documentary on a granular level. I want Halloween's story to be known, not slaughtered.</p>
+<p><em>(Silence.)</em></p>
+<p><strong>Hamilton:</strong> Well?</p>
+<p><strong>Thorn:</strong> I was actually about to offer you directorial privileges, if you'd like?</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="article" style="border: solid 5px rgb(22, 202, 111);">
+<div style="text-align: left;">
+<p>I remember Halloween. The holiday, the night of trick-or-treating, that is. Making costumes calmly, hearing my parents argue downstairs, drowning it out with the new Knocked Loose album.</p>
+<p>Every Halloween, at my high school, there was a day of festivities, in-school events like costume contests and games and it was nice. School was my escape, and although I didn't really think about it, I started having school as not just an escape, but as a celebration every month.</p>
+<p>Every Halloween, people dress up as someone else, escaping themselves. And I've spent years escaping with Halloween.</p>
+</div>
+<div class="quoteblock" style='background: url("https://live.staticflickr.com/2143/2574954774_3215976c4e_b.jpg") top center no-repeat; float: center; background-attachment: fixed; background-size: 1150px; background-color: #6B6B6B; background-blend-mode: multiply;'>
+<p><strong><span style="color: white"><em>I'm ready for a different escape, now.</em></span></strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="document">
+<div class="jotting">
+<div class="smallmodal">
+<p><strong>SITE OF REINTEGRATION:</strong> Many formerly-anomalous citizens have gotten used to life within the Foundation, within anomalous areas, and/or had their lives disrupted by anomalous means that concluded with SCP-8300.</p>
+<p>Estimated financial cost of therapy and rehabilitation for affected persons would strain the civilian world's existing health systems, and so the Foundation has repurposed Site-122 into the main Site of Reintegration, formed to help civilians adjust to life after anomalous routine.</p>
+<p>While the main location for the Site of Reintegration is established in Durant, Oklahoma, due to the relatively-mundane life of the personnel of Site-122 and its location to EXB-08831, all Foundation sites will offer a Department of Reintegration, with varying magnitudes of services and amenities for its attendants.</p>
+</div>
+<div class="document">
+<p>The <a href="https://scp-wiki.wikidot.com/scp-7518">former director of Site-18</a> was literally smote where he stood, apparently unforgiven by God for something. Comparatively, I'm well-adjusted.</p>
+<p>Nothing ever happened at Site-122, so we mostly spent our time on Halloween. We sent operatives in when we could, to try and host events to add a sense of change to the community. We broke our own containment procedures to try and help people move out, but it was like that scene in The Truman Show, where absolutely everything goes wrong. We tried. So we focused on making them content. Making sure they had fun, making sure the holidays ran right. The Overseers would've never stood for it, but the Overseers don't stand for much anymore.</p>
+<p>In the aftermath of 8300, we are down nearly 80% of our staff. I don't care if it kills me, though, I'm not quitting until Halloween is happy. <em>Actually</em> happy.</p>
+<div style="text-align: right;">
+<p><em>Alexandria Thompson,</em><br/>
+<em>Director of Reintegration, Durant, Oklahoma,</em><br/>
+<em>Former Site-122 Director, Durant, Oklahoma.</em></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="blockquote">
+<div style="text-align: center;">
+<blockquote>
+<p><strong>PROCEDURE 8831-REINTEGRATION</strong></p>
+</blockquote>
+</div>
+<br/>
+<strong>Directive:</strong> Adjusting the citizens of EXB-08831 (formerly SCP-8831) to the year 2024. Citizens had been temporally dislocated in an IO-Locked Scenario in October 2016.
+<p><strong>Requirements:</strong> The following steps are to be taken, concurrently.</p>
+<ul>
+<li>Properly inform and vaccinate the citizens of EXB-08831 against COVID-19, as per current CDC guidelines.</li>
+<li>Restore EXB-08831's financial standing within the greater Oklahoma, American, and global economy.</li>
+<li>Accelerate EXB-08831's historical and technological standing to be in line with the greater Oklahoma and American society.</li>
+<li>The legal identification of most citizens in EXB-08831 has expired. It is to be replaced free or charge.</li>
+<li>As with most of the world, the census is to be conducted to update records to accommodate inaccuracies caused by anomalous effects.</li>
+</ul>
+<p>The Site of Reintegration's personnel are dedicating resources to assisting the population of EXB-08831. Proposal cleared by the Ethics Committee<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup>.</p>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="document">
+<p>As Director of Reintegration, I've been having a bit of a hand in all departments of the Foundation recently, now that we're on the other side of the Veil. And it's incredible to see. People are being affected greatly, and I mean, obviously they would be.</p>
+<p>There's this fascinating thing I've found out: when you are the Foundation, the bare minimum of human decency becomes a grand gesture, without effort. Do you know how heartwrenching it is to see a <em>kid</em> cry tears of joy because we aren't inhumanely locking them up? We had given this kid a life sentence for the cardinal sin of paranormality. <span style="text-decoration: line-through;">If I ever meet this godforsaken Ethics Commi</span></p>
+<p>Ultimately, we've created a dependency on being anomalous. There's this one guy at Site-19 who literally wanted nothing more than to be a part of the Foundation, because it would give his life meaning - but the very reason his life held no meaning <em>was</em> the Foundation.</p>
+<p>All this is to say, Halloween's going as well as you'd expect.</p>
+<div style="text-align: right;">
+<p><em>Alexandria Thompson,</em><br/>
+<em>Director of Reintegration, Durant, Oklahoma,</em><br/>
+<em>Former Site-122 Director, Durant, Oklahoma.</em></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="article" style="border: solid 5px rgb(187, 111, 82);">
+<div style="text-align: left;">
+<p>The producers apparently spent a long time trying to decide who would be the first face you saw when you started the documentary. They ultimately settled on someone who should've graduated college and didn't because of everything.</p>
+<p>The set is beautiful; it's mostly open to the elements, but with a nice gazebo where a chair has been set up. The cameras and lights all contained within, the traces of autumn being wiped out by snowfall visible behind me.</p>
+<p>The makeup took forever, and then the mayor - I think he's the director? - got mad at them because apparently I wasn't supposed to be wearing any. Grateful for that, I don't like the way it felt on my face.</p>
+<p>The cameras started rolling, and I felt more stressed now more than ever. But I knew my lines, and was told not to be worried. Just be myself. And to start talking when I was ready.</p>
+</div>
+<div class="quoteblock" style='background: url("https://live.staticflickr.com/684/22761922719_5ff0175fd3_b.jpg") top center no-repeat; float: center; background-attachment: fixed; background-size: 1150px; background-color: #6B6B6B; background-blend-mode: multiply;'>
+<p><strong><span style="color: white"><em>"My name is Catherine Anderson, and I lived in Halloween."</em></span></strong></p>
+</div>
+</div>
+<div class="article" style="border: solid 5px rgb(152, 152, 251);">
+<div style="text-align: left;">
+<p>"I'm a… well, I was a teacher at King's Public Elementary School. It… it never dawned on me, but day after day after day it was always, oh, Halloween's around the corner, or today's Halloween. I saw the kids come dressed up in all sorts of, all types of costumes, skeletons and bears or what have you, one came year after year dressed as Jack Skeleton from that creepy movie… But it. It wasn't year after year. It was month after month."</p>
+<p>"Fractions, year after year, it's just… The curriculum in October. And I taught it to the same kids dozens of times, hundreds maybe… And year after year, they got better and better. The whole class once, they gave me all perfect scores. I was so proud."</p>
+<p>"And I… What did I teach them? It was just… Over and… over and…"</p>
+</div>
+<div class="quoteblock" style='background: url("https://live.staticflickr.com/1292/1038145678_07e9014c1d_b.jpg") top center no-repeat; float: center; background-attachment: fixed; background-size: 1150px; background-color: #6B6B6B; background-blend-mode: multiply;'>
+<p><strong><span style="color: white"><em>"I'm sorry, can I take a minute?"</em></span></strong></p>
+</div>
+</div>
+<div class="article" style="border: solid 5px rgb(255, 112, 155);">
+<div style="text-align: left;">
+<p>"More than one time, a kid would walk into the hospital, the night of trick or treating, their leg… the leg twisted or injured, 'oh, I ran too fast, I slipped', I'd give them a week to heal, but they were always fine by October first."</p>
+<p>"The weather… the weather repeated. I got, kinda, into the groove of it. Every month, middle of October, the rain is so strong that you, you can't even see your own hands! And some fool would drive and end up on death's door. And they'd somehow heal, they'd, they'd actually make it… just in time for the next storm."</p>
+<p>"Over and over, the same injuries, the same determination to keep them safe, and. And they were always fine. They'd spring up like no time, they'd be fine, so fine, and the family would thank me and say how grateful they were, and I, I just…"</p>
+</div>
+<div class="quoteblock" style='background: url("https://live.staticflickr.com/1155/912907071_1770dfe5a8_b.jpg") top center no-repeat; float: center; background-attachment: fixed; background-size: 1150px; background-color: #6B6B6B; background-blend-mode: multiply;'>
+<p><strong><span style="color: white"><em>"I wish I actually did something."</em></span></strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="jotting">
+<div class="smallmodal">
+<div class="document">
+<p style="text-align: center;"><strong><em>WHAT HAPPENED IN HALLOWEEN</em></strong></p>
+<p style="text-align: center;">Releasing September 24th, 2024</p>
+<p style="text-align: center;"><strong>Dir.</strong> Douglas Hamilton</p>
+<p><strong>MPAA Rating:</strong> NC-17<br/>
+<strong>Runtime:</strong> 2h, 27m<br/>
+<strong>Genre:</strong> Documentary<br/>
+<strong>Prod.:</strong> The Foundation Media Dept.; <a href="/vikander-kneed-technical-media-hub">Vikander Entertainment and Media</a></p>
+<blockquote>
+<p>The tragic tale of what happened to Halloween, Oklahoma, the town stuck in October 2016 for nearly a decade.</p>
+<p>The time loop that took place in Oklahoma has ended, catapulting its citizens to the modern day overnight. Oklahoman citizen Paul Sparks narrates a documentary that provides a detailed examination of Halloween's eternal existence, freed when the Veil fell in 2024. Mayor Douglas Hamilton helps to lead his people into a new dawn, grappling with the pasts and charging into a brighter future.</p>
+</blockquote>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="article" style="border: solid 5px rgb(250, 220, 255);">
+<div style="background: antiquewhite; border: 1px solid silver; padding: 1em;">
+<div style="text-align: center;">
+<p><span style="font-size:400%;"><span style="color: firebrick"><strong>Rotten Tomatoes</strong></span></span></p>
+
+</div>
+<div style="float: center; width: 80%; margin: auto; box-shadow: 2px 2px 2px rgba(0,0,0,.4); padding: 1em; background: white">
+<div style="text-align: right; font-size: 1.2em; font-family: serif">
+<p><strong>The Critic</strong><br/>
+<em>Are We Cool Yet?, main opinionist</em><br/>
+★★★★★</p>
+</div>
+<br/>
+<div style="text-align: left;">
+<p>I have long known of Halloween, the holiday and the locale, but I was never much for the latter. Since the fall of privacy in the paranormal worlds, however, I have had an abundance of time, and on a whim chose to watch <em>What Happened To Halloween</em>. What I expected to say is, like most documentaries, it would be a hackneyed retelling of a story, made with tasteless commentary and a lack of focus on the stars of tragedy: the citizens building a new life.</p>
+<p>I am pleasantly surprised. <em>What Happened To Halloween</em> spends very little time trying to excuse the actions, opting instead to cleanly divide the film into two parts: the locked status the town had held, and the unlocked status it now resides in, the aftermath of people trying to heal.</p>
+<p>Most of my complaints do relate to the event's rather lackluster camera work, but those problems are waived when you realize that, despite big names of The Foundation and Vikander tied to it, they are merely assisting the citizens to make the masterpiece themselves. In a landslide, shoddy camera work turns into a quirk of life.</p>
+<p>No additional comments.</p>
+</div>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="article" style="border: solid 5px rgb(212, 212, 55);">
+<div style="text-align: left;">
+<p>Waking up on my day off, because I always have the first off, walking out my door at nearly eleven AM, and seeing firefighters, police, and white vans with secure, contain, protect plastered on them was a worrying sight. A gas leak, a terrorist, another type of threat? And yet all that was special was it being January 1st. But that wasn't what hurt. It wasn't finding out about fucking Bigfoot or that apparently those damn Parawatch people were right all along. That wasn't what got me.</p>
+<p>It was finding out my uncle had passed away four years ago of a sickness I had never known about. He died, alone, and because of this damn town, I wasn't there for him in his final hours, like he was for me and my wife when she passed.</p>
+<p>So, I was one of the first people out of Oklahoma, travelling as fast as that damn museum could get me my passport - because apparently mine is five years out of date - and visiting him in remote, middle of nowhere Iroquois Falls. There, as one of the many graves, was my uncle. The man who practically raised me.</p>
+</div>
+<div class="quoteblock" style='background: url("https://upload.wikimedia.org/wikipedia/commons/0/07/Srebrenica_massacre_memorial_gravestones_2009_1.jpg") top center no-repeat; float: center; background-attachment: fixed; background-size: 1150px; background-color: #6B6B6B; background-blend-mode: multiply;'>
+<p><strong><span style="color: white"><em>"Sorry I'm late, but I'm here now."</em></span></strong></p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="document">
+<p><em>The Mayor of Halloween, Oklahoma, <strong>Douglas Hamilton</strong>, is sitting across a table from Dr. Alexandria Thompson, Director of Integration.</em></p>
+<p><strong>Thompson:</strong> I only got around to watching the doc about… a week ago? Absolutely incredible work, really, it's just… I. Stellar.</p>
+<p><strong>Hamilton:</strong> Miss… Thompson? Miss Thompson, it is to my knowledge that your… your site, was supposed to protect us. Is this, is this right?</p>
+<p><strong>Thompson:</strong> Yes, it was our-</p>
+<p><strong>Hamilton:</strong> <em>(loudly)</em> So why didn't you?</p>
+<p><strong>Thompson:</strong> …Was that rhetorical? I can never tell. People skills, not my…</p>
+<p><em>(Silence.)</em></p>
+<p><strong>Thompson:</strong> I take it that it was. Go on, sorry.</p>
+<p><strong>Hamilton:</strong> For years, we existed, stuck, and your Foundation was supposed to protect us. Your location didn't protect anything else, why didn't you protect us? Instead, you merely watched, providing small things, but it never mattered. You <em>left</em> us.</p>
+<p><em>(Silence.)</em></p>
+<p><strong>Thompson:</strong> …may I…</p>
+<p><strong>Hamilton:</strong> Yes.</p>
+<p><strong>Thompson:</strong> I'm sorry. I followed protocols that I shouldn't have, and the Foundation may have been why I failed you, my personnel maybe even. But it's my fault, for not seeking some proposal or approval, training my staff better. Halloween stayed stuck, and it's fair to hate me.</p>
+<p><strong>Hamilton:</strong> …What are you… planning to…?</p>
+<p><strong>Thompson:</strong> Hmm?</p>
+<p><strong>Hamilton:</strong> Are you sticking with this Foundation?</p>
+<p><strong>Thompson:</strong> I haven't decided. They want me on the Board of Directors - god, we have a board now. But… but not until everything here is resolve-</p>
+<p><strong>Hamilton:</strong> <em>(loudly)</em> It's never going to be resolved!!</p>
+<p><strong>Thompson:</strong> Then I'm not leaving.</p>
+<p><strong>Hamilton:</strong> You…?</p>
+<p><strong>Thompson:</strong> If I spend my life fixing this mess, that's a perfectly good life. Meeting these people, and helping. It's fulfilling, cathartic.</p>
+<p><strong>Hamilton:</strong> Is that what we are to-</p>
+<p><strong>Thompson:</strong> Sir. You can't tell me anything I haven't told myself. I've let down my people so much. They transferred me to Site-122 from <em>Site-19</em>. Because I wasn't enough, because I let my team down in the eleventh hour. Please.</p>
+<p><strong>Hamilton:</strong> Why is this about you now?</p>
+<p><strong>Thompson:</strong> It's not. Site-122, we were your captors. We didn't create the Locked Scenario, but we didn't help you. And I'm at fault. Because of our failings, we let you all down. We abused you, kept you happy and content so it never got worse.</p>
+<p><strong>Hamilton:</strong> Then we got out.</p>
+<p><strong>Thompson:</strong> Then you got out.</p>
+<p><em>(Silence.)</em></p>
+<p><strong>Hamilton:</strong> It <em>is</em> nice to meet you. It. It really is.</p>
+<p><strong>Thompson:</strong> Likewise. I've heard lovely things.</p>
+<p><em>(Silence.)</em></p>
+<p><strong>Hamilton:</strong> Will we ever be…</p>
+<p><em>(Silence.)</em></p>
+<p><strong>Hamilton:</strong> Will it be okay?</p>
+<p><strong>Thompson:</strong> ….I don't think so. That's a scar, it runs so deep. But it doesn't have to be okay, because <em>you're</em> going to be okay. It's bad now. It'll always be bad. But if life was always happiness, we'd grow numb.</p>
+<p><strong>Hamilton:</strong> That's… That's a fascinating… That's fascinating.</p>
+</div>
+<p style="text-align: center;">I think I got it from you.</p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="notation">
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. In the aftermath of SCP-8300, a large amount of media-production industry personnel were left unemployed. Notable inclusions are Pixar, MGM, Studio Ghibli, Rooster Teeth, and Netflix Studios. All of them have been offered employment with the Foundation, of which approx. 7% have accepted.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. The Ethics Committee was a department of the Foundation focused on maintaining ethical standards for the containment of anomalies and staff, with a heavy emphasis on humanoid entities. The department was dissolved as of January 12th, 2024, in favor of a standard human resources department.</div>
+</div>
+<div class="collection">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">More From This Author</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">More From This Author</a></div>
+<div class="collapsible-block-content">
+<table style="1px solid black; width: 100%;">
+<tr>
+<th class="namerow" colspan="2"><div class="list-pages-box"> <div class="list-pages-item">
+<p>CompleteIndie's Works</p>
+</div>
+</div></th>
+</tr>
+<tr>
+<th class="titlecolumn">SCPs</th>
+<th class="articlecolumn"><div class="list-pages-box"> <div class="list-pages-item">
+<p><a href="/scp-8359">SCP-8359</a> <em>(+45)</em> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-6494">SCP-6494</a> <em>(+27)</em> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-5763">SCP-5763</a> <em>(+86)</em> <span class="collectiondot">•</span></p>
+</div>
+</div></th>
+</tr>
+<tr>
+<th class="titlecolumn">Tales/GoI Formats</th>
+<th class="articlecolumn"></th>
+</tr>
+<tr>
+<th class="titlecolumn">Other</th>
+<th class="articlecolumn"><div class="list-pages-box"> <div class="list-pages-item">
+<p><a href="/completeindies-author-page">CompleteIndie's Author Page</a> <em>(+16)</em> <span class="collectiondot">•</span></p>
+</div>
+</div></th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align: center;">
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-8831">EXB-8831</a>" by CompleteIndie, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-8831">https://scpwiki.com/scp-8831</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Name:</strong> West Newton, aerial 2013<br/>
+<strong>Author:</strong> Chris<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://www.geograph.org.uk/photo/3673377">Geograph</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Name:</strong> Philly Snow Storm Feb. 6, 2010<br/>
+<strong>Author:</strong> Kevin Burkett<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://www.flickr.com/photos/24514780@N02/4336406440">Flickr</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Name:</strong> Filming Bloomberg Studio 1.0 with Emily Chang<br/>
+<strong>Author:</strong> Steve Jurvetson<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://www.flickr.com/photos/44124348109@N01/22761922719">Flickr</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Name:</strong> Ward at Alpha Hospital<br/>
+<strong>Author:</strong> Jez<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://www.flickr.com/photos/35319816@N00/912907071">Flickr</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Name:</strong> New CT Bus<br/>
+<strong>Author:</strong> Oran Viriyincy<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://www.flickr.com/photos/95482862@N00/2574954774">Flickr</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Name:</strong> Srebrenica massacre memorial gravestones 2009 1<br/>
+<strong>Author:</strong> Michael Büker<br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/w/index.php?curid=6405619">Wikimedia Commons</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Name:</strong> Classroom 2<br/>
+<strong>Author:</strong> misskprimary<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://www.flickr.com/photos/11032799@N06/1038145678">Flickr</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

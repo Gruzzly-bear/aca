@@ -1,0 +1,767 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-9007</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-9007</h1>
+            <html><body><div id="page-content">
+
+<div class="preview">
+<p>Tookie says to click the link. He can see you. And he doesn't appreciate the hesitation.</p>
+</div>
+
+
+<div style="display: none">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Show component code</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide component code</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc(var(--base-font-size) * (</span><span class="hl-number">266</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">))</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (min-width: 56.25</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem))</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) </span><span class="hl-number">0</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> / </span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> -webkit-sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">grid-area:</span><span class="hl-code"> side-bar</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">2.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">scroll</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-color </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                padding </span><span class="hl-number">300</span><span class="hl-code">ms linear,
+                margin </span><span class="hl-number">300</span><span class="hl-code">ms linear</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-tertiary-color, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">rtl</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-width:</span><span class="hl-code"> </span><span class="hl-string">thin</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-scroll-chaining:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+                </span><span class="hl-reserved">overscroll-behavior:</span><span class="hl-code"> contain</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(var(--swatch-primary-darker), </span><span class="hl-number">0.1</span><span class="hl-code">) /* Thumb */
+                rgba(var(--swatch-tertiary-color), </span><span class="hl-number">0.05</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-secondary-color, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">), </span><span class="hl-number">0.8</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-corner</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw + </span><span class="hl-number">100</span><span class="hl-code">vh)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-style:</span><span class="hl-code"> </span><span class="hl-string">inset</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-right:</span><span class="hl-code"> </span><span class="hl-number">2.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-primary-darker), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">1</span><span class="hl-code">rem) - var(--sidebar-width-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(</span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)  /* Thumb */
+                rgba(</span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgb(var(--swatch-primary-darker, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">) /* Thumb */
+                rgb(var(--swatch-menubg-color, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;  /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> url("https://scp-wiki.wdfiles.com/local--files/component%</span><span class="hl-number">3</span><span class="hl-code">Acollapsible-sidebar/sidebar-tab.svg")</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-attachment:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem </span><span class="hl-number">12.875</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">em</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">9</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> var(--final-header-height-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--final-header-height-on-desktop, </span><span class="hl-number">0.688</span><span class="hl-code">rem) - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> calc(var(--final-header-height-on-desktop, -</span><span class="hl-number">2.313</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--swatch-alternate-color, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> + </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.scpnet-interwiki-wrapper</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Print</span><span class="hl-code"> </span><span class="hl-identifier">Friendly</span><span class="hl-code"> </span><span class="hl-identifier">Formatting</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">Estrella</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code"> 
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media Hub</a></strong><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<strong><a href="https://scp-wiki.wikidot.com/grigori-karpin-s-author-page">More by Grigori Karpin</a></strong><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<div class="scp-image-block block-center" style="width:100%;"><img alt="VKTM%20NEWS%20TOUCAN%20EDITED%20FOR%20CONTRAST" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20NEWS%20TOUCAN%20EDITED%20FOR%20CONTRAST" style="width:100%;"/>
+<div class="scp-image-caption" style="width:100%;">
+<p>Capture of SCP-9007-A appearing on a “reactions stream” by streamer RingerBang.</p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<h3 id="toc0"><span><span style="text-decoration: underline;">Special Containment Procedures</span>:</span></h3>
+<p>Instances of SCP-9007 are to be stored or examined on a computer that has been entirely separated from SCiPNet or outside internet connection. Following the download of an instance of the anomaly, the affected device must be entirely quarantined.</p>
+<p>METATRON.aic is to scan the internet for instances of SCP-9007, taking down any posts or monitoring for any posting activity that includes the anomalous file. YouTube, Facebook, Instagram, TikTok and other social media platforms will be scrubbed daily by the .aic in order to find instances of the posting.</p>
+<p>Details concerning the backdrop of SCP-9007 instances are to be recorded and fed into an algorithmic search protocol by the .aic in order to possibly identify the filming location.</p>
+<p>Subjects affected by the anomaly are to be transported to Foundation-owned medical facilities, assessed and treated as necessary depending on the severity of their reactions – from amnesticization to medical incarceration.<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<h3 id="toc1"><span><span style="text-decoration: underline;">Description</span>:</span></h3>
+<p>SCP-9007 is a series of internet broadcasts which appear to be streamed live to a variety of platforms. Instances of SCP-9007 each contain different content, but maintain the unifying theme and premise of a news show entitled “Vikander News Daily.” At time of writing, a full broadcast of the anomaly has not been discovered; fragments of the show have appeared on social media platforms, video hosting websites, and streaming platforms. Within the metadata of each video segment is a coded date of transmission, many of these should not be possible considering the technology present in the recording.</p>
+<p>Initial anomalous effects seem outside GOI-5889’s (“<a href="/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media</a>”) usual modus operandi. SCP-9007 instances contain anomalous events and conditions. Additionally, individuals who watch an episode are affected by a cognitohazardous anomaly.</p>
+<p>Anomalous effects present in individuals who view the anomaly include hallucinations of visitations by dead relatives and/or loved ones. If a viewer has not experienced a loss in their close families or social circles, the subject will experience a visitation by the apparent mascot of Vikander News Daily: Tookie, the Toucan (designated as SCP-9007-A). The entity will attempt to entertain the subject with a variety of performance art pieces.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+Subjects who hallucinate a visitation by SCP-9007-A experience a number of additional psychological symptoms:</p>
+<ul>
+<li>impulsive, aggressive and violent behavior towards authority figures;<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup></li>
+<li>verbal outbursts;</li>
+<li>tendency to excessive use of expletives, in no relation to how much the individual would previously use such language;</li>
+<li>derealization – especially in the sense of feeling emotionally disconnected from their actions and other people;</li>
+<li>paranoia;</li>
+<li>delusions concerning the relationship between themselves and SCP-9007-A; and</li>
+<li>halitosis</li>
+</ul>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+Roughly 5% of individuals affected by SCP-9007 instances have shown a resistance to amnesticization, making it difficult to fully resolve their symptomology. This resistance has led to medical institutionalization as the only remaining option. Thus, Foundation command’s primary focus is on prevention and quarantining of SCP-9007 broadcasts.</p>
+<p>Despite being unable to affect or physically interact with the environment or individual it manifests in front of, SCP-9007-A can be captured on both auditory and visual recordings.<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<h4 id="toc2"><span><span style="text-decoration: underline;">Discovery</span>:</span></h4>
+<p>SCP-9007-A was first recorded on 15 January, 2024, during a live stream hosted by RingerBang (AKA Jacob Fairhaven), a well-known reaction streamer. The stream consisted of Fairhaven watching and reacting to various short clips from YouTube and other video hosting sites, while reacting to them in an animated manner. RingerBang had just begun to watch an instance of SCP-9007 when the entity manifested. See transcript below (<em>edited to avoid cognitohazardous material</em>).</p>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #BAD5DE; padding:5px; margin-bottom: 10px; padding:10px; font-family: ‘Arial Rounded MT Bold’">
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<em>[Fairhaven sits in front of his webcamera, the video edited to focus entirely on his stream and not the content he is reacting to. The resolution is not ideal due to the enlargement, but his features are identifiable, as are the details of his room. Behind him is a CRT TV and various retro gaming consoles, against a red painted wall illuminated by a standing light.]</em></p>
+<p><strong>Fairhaven</strong>: Okay, Bangers! That last clip was ridiculous but this next one is supposed to be <em>wild.</em></p>
+<p><em>[Fairhaven clicks into a video hosting website and begins watching an instance of SCP-9007.]</em></p>
+<p><strong>Fairhaven</strong>: What the fuck? This is just a news program. Who cares? Although, that one on the right, the dude, he’s got something weird going on with his makeup. Why the prosthetics? Overall this is a snooze so f–</p>
+<p><strong>Unknown voice</strong>: You want entertainment? Vikander-Kneed has what you need!</p>
+<p><em>[SCP-9007-A appears behind Fairhaven, walking in from off camera. The entity is approximately 1.8 meters tall, with the head and body of a toucan of the family Ramphastidae, but enlarged to the size of a human. Its wings terminate in an appendage shaped like a human hand, but constructed with feathers exhibiting the full dexterity of human fingers. The entity is rocking side to side and bobbing its head.]</em></p>
+<p><em>[Fairhaven turns around and screams.]</em></p>
+<p><strong>SCP-9007-A</strong>: That’s the spirit! Get hyped!</p>
+<p><strong>Fairhaven</strong>: What the fuck are you?</p>
+<p><strong>SCP-9007-A</strong>: <em>Who</em> the fuck am I? I’m Tookie the Toucan, the official spokesbird for Vikander Daily News!</p>
+<p><strong>Fairhaven</strong>: How are you talking?</p>
+<p><strong>SCP-9007-A</strong>: With my mouth! Now, you just expressed boredom at the informative and incredibly entertaining work my friends at the Vikander News Daily anchor desk are kind enough to show the world. So, they sent me to show you a good time!</p>
+<p><strong>Fairhaven</strong>: What?</p>
+<p><strong>SCP-9007-A</strong>: Do you like juggling?</p>
+<p><em>[The entity pulls three bowling pins from behind its back and proceeds to juggle them flawlessly.]</em></p>
+<p><strong>Fairhaven</strong>: You’re juggling? Am I high?</p>
+<p><strong>SCP-9007-A</strong>: Not a fan huh? Okay.</p>
+<p><em>[SCP-9007-A drops the three bowling pins and pulls a long serrated knife out from behind its back.]</em></p>
+<p><strong>SCP-9007-A</strong>: I usually like to save this for the third act, but you’re a tough audience.</p>
+<p><em>[Fairhaven screams, gets up from the chair and runs off camera. SCP-9007-A approaches the desk until its head is taking up most of the camera feed.]</em></p>
+<p><strong>SCP-9007-A</strong>: Kids? Don’t try this at home unless you have a responsible adult present. Remember, I’m a professional.</p>
+<p><em>[The entity backs away from the camera until the majority of its upper body is visible on camera.]</em></p>
+<p><strong>SCP-9007-A</strong>: How’s my lighting, Jerry?</p>
+<p><strong>Unknown voice</strong>: Looks good from the control room, Tookie.</p>
+<p><strong>SCP-9007-A</strong>: Excellent. Alright, the first incision is the toughest.</p>
+<p><em>[SCP-9007-A holds out its left wing/arm appendage and holds the knife in the hand-like appendage. It begins slicing down the center of the left appendage with the knife.]</em></p>
+<p><strong>SCP-9007-A</strong>: Usually, you’d want to pluck my feathers for a proper dissection, but we’re in a rush, I can tell.</p>
+<p><em>[Fairhaven is whimpering off camera, apparently still in the room.]</em></p>
+<p><strong>Fairhaven</strong>: <em>[sobbing]</em> Oh Jesus, I want to go home.</p>
+<p><strong>SCP-9007-A</strong>: This <em>is</em> your home, silly. Now pay attention. I’m doing this for you.</p>
+<p><em>[The entity slices through the upper portion of the interior of the appendage, then makes a circular incision around the joint conjoining the wing to the torso.]</em></p>
+<p><strong>SCP-9007-A</strong>: Once you’ve made your incisions, get a firm grip and then tug. You can’t do this halfway, it needs to be a strong pull. So, take a deep breath and give it your all!</p>
+<p><em>[SCP-9007-A inserts its finger digits into the circular incision, then pulls in one quick motion down the length of its upper extremity. The flesh parts, spraying the area with blood. SCP-9007-A completely degloves the upper extremity, holding the mass of flesh and feathers in its other hand. The entity shakes the mass, spraying blood across the desktop. Off camera, Fairhaven sobs louder.]</em></p>
+<p><strong>SCP-9007-A</strong>: Now, here’s the important step, you want to sever the deltoid in one deep but sure slice, or it’ll be hell to get the muscle detached from the shoulder.</p>
+<p><em>[The entity begins slicing through muscle tissue on the flayed extremity. The musculature resembles human anatomy, but with solid layers of muscle tissue that lack the natural stranding present in all non-anomalous organisms. SCP-9007-A makes a few sure cuts, pries the muscle tissue away from the bone structure with the tip of the knife and begins to methodically saw through the tissue closest to the bone.]</em></p>
+<p><em>[Fairhaven is heard vomiting off camera.]</em><br/></p>
+<div style="text-align: center;">
+<p><strong>End of Excerpt</strong></p>
+</div>
+<hr/>
+<p><strong>Afterword:</strong> <em>The entity continued to dissect its upper extremity until nothing but bones and severed ligaments remained. It then began to sing a rendition of “Take Me Out to the Ballgame” while doing close up magic. Eventually the stream was shut down by the hosting service. Fairhaven responded with violence when Foundation agents entered the domicile but was subdued, taken into protective custody, and treated with amnestics. His prognosis for recovery is poor.</em></p>
+<p><em>SCP-9007-A was not recovered. When the room was examined, no blood was found. There was no evidence of the manifestation at all. Disinformation campaigns were begun almost immediately, discrediting the stream as a stunt to draw in more viewers and instigating religious communities to condemn it for moral outrage by several embedded agents within religious organizations in the United States and Canada.</em><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h4 id="toc3"><span><span style="text-decoration: underline;">Addendum 9007.1</span>: Select excerpts of SCP-9007 instances</span></h4>
+<div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;">
+<div style="text-align: center;">
+<h4 id="toc4"><span>NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION</span></h4>
+<p>The video/audio data transcribed within this file constitutes a Class-B Cognitohazard. Reading through the transcripts should be free from risk, but given the nature of the anomaly and the resultant symptomology associated with the anomalous effect, caution is advised.</p>
+<p>Any symptoms associated with the anomaly are to be reported, and individuals are advised to seek medical treatment with amnestics.</p>
+<p>For direct video access, please submit an authorization request to an appropriately cleared RAISA representative.</p>
+<p>— Maria Jones, Director, RAISA</p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div style="border:solid 3px #000000; color:#000000; border-radius: 10px; background: #D6A59A; padding:1px; margin-bottom: 5px; padding:5px; font-family: ‘Arial Rounded MT Bold’">
+<div style="text-align: center;">
+<p><strong>Excerpt of SCP-9007-1</strong><br/>
+<em>8 October, 1871</em></p>
+</div>
+<br/>
+<em>[Episode opens on an illuminated map of the United States before an animated series of stars flashes across the camera. As the stars fade the camera has refocused on a wide polished desk; behind the desk is a large video screen showing the waving flag of the United States, but recolored to represent the logo of Vikander Kneed.]</em>
+<p><em>[Behind the desk sit two individuals: a desiccated human cadaver with a full but trimmed mustache, propped up by steel pole and duck<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> taped to a chair, and a woman in a business jacket with startling pink makeup around the eyes and mouth. As she begins speaking, the sides of her mouth split the skin of her cheeks, revealing row upon row of shark-like teeth. The woman is turned towards the withered corpse in the opposite chair.]</em></p>
+<p><strong>News Anchor:</strong> <em>[Chuckling]</em> That’s so true, <a href="https://en.wikipedia.org/wiki/Walter_Cronkite">Walter</a>.</p>
+<p><em>[Turning back towards the camera as the view comes in for a close up, the woman’s mouth is shown in greater detail. The opening of her mouth stretches far beyond what is biologically possible, lips going all the way to just below the ears. A red, viscous liquid is staining her sharp teeth as she smiles.]</em></p>
+<p><strong>News Anchor</strong>: Welcome back to Vikander News Daily, your only source for current affairs. Our next story brings us home to the US. We’ve got reports coming out of northeastern Wisconsin describing a truly terrible conflagration. In the field, we have Carmen Vivendi, who we are assured has the scoop.</p>
+<p><em>[The scene shifts to an image of a fire burning out of control in the background, the trees nearby actively smoldering when they aren’t already aflame. The on-site reporter – a young, eager, well-manicured woman with styled hair and in modern skirt suit – is staring directly into the camera.]</em></p>
+<p><strong>On-site reporter</strong>: I’m just outside the town of Peshtigo, Wisconsin, where earlier this morning, a large forest fire broke out. We are getting reports that it spread through the town and throughout much of the peninsula. Coming up on screen there should be an image showing the US Census Bureau’s estimation of the area impacted by the fire.</p>
+
+<p><strong>News Anchor</strong>: Could we make that bigger?</p>
+<p><strong>Unknown voice</strong>: The fire?</p>
+<p><strong>News Anchor</strong>: What? No, never mind, I am sure the people at home are sitting in unhealthy proximity to their screens anyway. Carmen, that’s a lot of area!</p>
+<p><strong>On-site reporter</strong>: Yeah, over a million acres were destroyed. Over the course of last twenty four hours, there’s been somewhere in the neighborhood of fifteen hundred dead and millions of dollars of property damage.</p>
+<p><strong>News Anchor</strong>: And that’s 1871’s version of millions of dollars!</p>
+<p><strong>On-site reporter</strong>: Did you want to tell the story?</p>
+<p><strong>News Anchor</strong>: No no, go ahead.</p>
+<p><strong>On-site reporter</strong>: Well, earlier we captured an image of the worst of the fire and some of the brave souls who have been fighting this blaze.</p>
+
+<p><strong>News Anchor</strong>: Carmen.</p>
+<p><em>[The scene returns to the on-site reporter. The fire is creeping closer with each passing moment.]</em></p>
+<p><strong>On-site reporter</strong>: Yes, Kinney?</p>
+<p><strong>News Anchor</strong>: Something tells me that isn’t the Peshtigo fire.</p>
+<p><strong>On-site reporter</strong>: What do you mean?</p>
+<p><strong>News Anchor</strong>: The Peshtigo fire happened in 1871, right?</p>
+<p><strong>On-site reporter</strong>: Yes, I am reporting live from that exact year.</p>
+<p><strong>News Anchor</strong>: Mmmhmm. So where did they get 21st century fire trucks?</p>
+<p><strong>On-site reporter</strong>: …</p>
+<p><strong>News Anchor</strong>: Carmen…</p>
+<p><strong>On-site reporter</strong>: What do you want from me? There were no good images of people fighting the fire, so I found something more dynamic. It’s from the 2020 Australia fires.</p>
+<p><strong>News Anchor</strong>: We have an ethical responsibility to accurately report the news!</p>
+<p><strong>On-site reporter</strong>: It’s in the ballpark of the truth.</p>
+<p><strong>News Anchor</strong>: Oh Jesus, just go on with the story.</p>
+<p><strong>On-site reporter</strong>: You got it! Well, the fire is said to have started due to slash and burn land management. Local weather conditions led to increased wind speed and several burns merged and then started to spread out into the forest. With the wind picking up to almost 110 miles per hour, the fires raged across the area and an entire community was consumed.</p>
+<p><strong>News Anchor</strong>: Have you spoken to any of the locals?</p>
+<p><strong>On-site reporter</strong>: Yes. As you can probably imagine, the survivors are distraught. Their homes, their entire lives have been wiped out. I’ve got a local here who’s agreed to go on the record.</p>
+<p><em>[A man in soot-stained overalls and a battered wide brim hat comes into view. The fire has approached to approximately three meters beyond where the two stand.]</em></p>
+<p><strong>On-site reporter</strong>: This is George Clayburn, he’s a local farm worker and blacksmith, isn’t that right?</p>
+<p><strong>Clayburn</strong>: Ayup.</p>
+<p><strong>On-site reporter</strong>: Can you tell us what you saw?</p>
+<p><strong>Clayburn</strong>: Ayup.</p>
+<p><em>[The fire continues to edge nearer across the trees closest to the reporter and witness.]</em></p>
+<p><strong>On-site reporter</strong>: Anytime.</p>
+<p><strong>Clayburn</strong>: Well, the fire started and it spread out over the forest. Ate up my fields. Ate up my neighbor’s fields. Ate up the town.</p>
+<p><strong>On-site reporter</strong>: That’s terrible.</p>
+<p><strong>Clayburn</strong>: Ayup.</p>
+<p><strong>On-site reporter</strong>: How is your family? Your property?</p>
+<p><strong>Clayburn</strong>: Gone. All gone.</p>
+<p><strong>On-site reporter</strong>: Your neighbors too?</p>
+<p><strong>Clayburn</strong>: Ayup.</p>
+<p><strong>On-site reporter</strong>: Well, you seem to be in shock. Do you have anything of your life left?</p>
+<p><strong>Clayburn</strong>: A’nope.</p>
+<p><strong>On-site reporter</strong>: What are you going to do?</p>
+<p><em>[The man shrugs.]</em></p>
+<p><em>[The fire has approached to within inches of the reporter and the witness. Their clothes begin to smolder. The reporter’s shoulder length hair starts to burn at the tips. Neither the reporter nor Mr. Clayburn notice the burning of her hair or the proximity of the fire.]</em></p>
+<p><strong>On-site reporter</strong>: Well, is there anything else you want to say?</p>
+<p><strong>Clayburn</strong>: Yes, ma’am. This afternoon I watched my children die. They was caught up in the conflagration, trying to get the animals out of the barn. The sparks floated in like little fairies and caught on the hay, catching fire immediately.</p>
+<p><em>[The man’s hat starts to burn.]</em></p>
+<p><strong>Clayburn</strong>: I could hear them scream as the fire first touched their skin and clothes and hair. They screamed for their mama. They screamed for me. And I couldn’t do a damn thing. The fire you see, it had collapsed part of the barn roof in front of the entrance. All I could do is listen as they screamed and then they stopped. And all I could hear was the crackling of the flames.</p>
+<p><em>[The man’s overalls and facial hair start to burn. Suddenly he notices the damage and drops to the ground trying to roll and put out the fire. The reporter’s hair is fully ablaze, her face starts to char and her eyes begin to bubble from the heat. Her lips blackened from the fire begin to crack and weep blood. She does not react to the man or herself burning. Her voice is distorted, seemingly due to the damage to her mouth but she is still comprehensible.]</em></p>
+<p><strong>On-site reporter</strong>: That’s horrible, Mr. Clayburn. I just want you to know that the thoughts and prayers of all our audience and the Vikander-Kneed Technical Media family are with you in this time of loss. If you can spare just one more moment, I have a final question for you.</p>
+<p><em>[The man is wailing in distress and pain.]</em></p>
+<p><strong>On-site reporter</strong>: Just one more question, please. Mr. Clayburn, do you think forest fires have a right to exist?</p>
+<div style="text-align: center;">
+<p><strong>End Excerpt</strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="border:solid 3px #000000; color:#000000; border-radius: 10px; background: #CCB881; padding:1px; margin-bottom: 5px; padding:5px; font-family: ‘Arial Rounded MT Bold’">
+<div style="text-align: center;">
+<p><strong>Excerpt of SCP-9007-2</strong><br/>
+<em>15 January, 1919</em></p>
+</div>
+<p><em>[The two anchors sit facing one another. Kinney is laughing and pointing at the desiccated corpse.]</em></p>
+<p><strong>News Anchor</strong>: Jerry, did you hear what Walt just said? That’s hilarious. We need to start including these bits in the broadcast.</p>
+<p><strong>Unknown voice</strong>: We’re live, Kinney.</p>
+<p><strong>News Anchor</strong>: Oh shit. Sorry, Walt. Money time.</p>
+<p><em>[The woman turns to the camera and smiles. Eighty-four red stained teeth are visible.]</em></p>
+<p><strong>News Anchor</strong>: Welcome back to Vikander News Daily, the only show where news isn’t bound by the strictures of time and space. I’m Kinney St. Clair, and this is Walter Cronkite. Next on the show is an interview with beloved gameshow host Jeremy Kincaid, who’s got a new book out – <em>Who We Were, a memoir about the death of media literacy</em>. Can’t wait to talk to him about it. But first, we bring you to Boston, where our field reporter, Carmen Vivendi, has breaking news coming out of Keany Square. Carmen, are you there?</p>
+<p><em>[Feed switches to Carmen in the field. Her skin shows burns partially healed, and her eyes are restored, but her skirt suit shows black patterns stemming from burns, and is soot-stained. Behind the reporter the camera can see the streets of an urban area showing substantial damage and disarray. Wreckage of buildings and vehicles appropriate to the date are seen, with a substantial gelatinous liquid material covering the streets and wreckage.]</em></p>
+
+<p><strong>Onsite-reporter</strong>: Hi Kinney, yes, I’m here.</p>
+<p><strong>News Anchor</strong>: What’s happening this afternoon in Boston?</p>
+<p><strong>On-site reporter</strong>: Well, recently a ship unloaded a tank of molasses at the warehouse district behind me. This afternoon, that tank burst, leading to a vast flood of liquid molasses sweeping through the district, damaging many nearby properties and causing at least twenty deaths.</p>
+<p><strong>News Anchor</strong>: Twenty people? From molasses?</p>
+<p><strong>On-site reporter</strong>: Well, the tank in question held more than two million gallons before it burst. The resultant wave measured nearly twenty-five feet in height and traveled more than twenty miles an hour. Over a hundred people were seriously injured, and like I said more than twenty died. Slammed against buildings or debris, crushed, or drowned under millions of gallons of sugary syrup.</p>
+<p><strong>News Anchor</strong>: Good lord.</p>
+<p><strong>On-site reporter</strong>: Is he? Good, I mean.</p>
+<p><strong>News Anchor</strong>: Um… maybe we should stick to the news, Carmen. Was there any other damage?</p>
+<p><strong>On-site reporter</strong>: Several horses and yard dogs were killed as well.</p>
+<p><strong>News Anchor</strong>: Horses? How many?!?</p>
+<p><strong>On-site reporter</strong>: Uh… let me check my notes. Hard to say for sure, but at least six horses were killed.</p>
+<p><strong>News Anchor</strong>: Jesus Christ. What a tragedy! All those beautiful animals!</p>
+<p><strong>On-site reporter</strong>: Um…</p>
+<p><strong>News Anchor</strong>: Are you even human, Carmen? Horses! Dead! Fucking tragedy.</p>
+<p><strong>On-site reporter</strong>: Moving on… I’ve got a witness here who works in the district and escaped with only mild injuries.</p>
+<p><strong>News Anchor</strong>: Yes, let’s hear from the human victims. That’s all that matters, right?</p>
+<p><strong>On-site reporter</strong>: I don’t speak horse.</p>
+<p><strong>News Anchor</strong>: Fine. Go ahead.</p>
+<p><em>[The camera pans to the right to frame a man in his mid-thirties covered in molasses and dirt. A graphic rises from the bottom of the screen with the name of the individual: Harry Gibson.]</em></p>
+<p><strong>On-site reporter</strong>: Hi, Mr. Gibson. Do you think you can talk to us about what happened?</p>
+<p><strong>Gibson</strong>: Sorry, is this a movie camera? Like the things you see at a cinema?</p>
+<p><strong>On-site reporter</strong>: Yes. Do you think there’s a loving god, Mr. Gibson?</p>
+<p><strong>Gibson</strong>: I’m sorry?</p>
+<p><strong>News Anchor</strong>: Carmen….</p>
+<p><strong>On-site reporter</strong>: Fine. Mr. Gibson, what did you see?</p>
+<p><strong>Gibson</strong>: Uh… I work next door to the distillery where they say the tank was and –</p>
+<p><strong>On-site reporter</strong>: Are you saying there’s some doubt about the source? Is this a coverup?</p>
+<p><strong>Gibson</strong>: Cover up?</p>
+<p><strong>News Anchor</strong>: Carmen! Let the man talk!</p>
+<p><strong>On-site</strong>: Go ahead then.</p>
+<p><strong>Gibson</strong>: Like I was saying – wait, why are you asking me questions? Movies don’t have sound.</p>
+<p><strong>On-site Reporter</strong>: Would you please just finish your statement? It smells like Auntie Juneberry’s bakery during a heatwave out here.</p>
+<p><strong>Gibson</strong>: So, I was up on a scaffolding and I saw the whole thing. Jim, my neighbor who works with me, he was hit by the wave. Saw him go under and then get pushed up against a loading truck. I thought he was gonna drown but I guess it was the weight that was the problem. You ain’t got much idea how heavy that much molasses is. Anyway, when the flood subsided, his body was dragged outta the wreckage of that truck and his chest was caved in. You could see the ribs poking through his sternum. Ain’t never seen anything like that.</p>
+<p><strong>On-site reporter</strong>: Bet a loving god wouldn’t have stabbed Jim with his own ribs.</p>
+<div style="text-align: center;">
+<p><strong>End Excerpt</strong></p>
+</div>
+</div>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #BAD5DE; padding:5px; margin-bottom: 10px; padding:10px; font-family: ‘Arial Rounded MT Bold’">
+<div style="text-align: center;">
+<p><strong>Excerpt of SCP-9007-2.5</strong><br/>
+<em>unknown date</em></p>
+</div>
+<p><em>[An interstitial clip of SCP-9007, originating from an unknown date.]</em></p>
+<p><em>[Segment opens on an empty classroom with at least three dozen desks facing a dry erase board and a teacher’s desk which faces back towards the camera. Several minutes of silence elapse with no change in the recording. Slight disturbance of paper on the teacher’s desk indicates air flow within the room and is the only indication of time elapsing or movement for these opening minutes.]</em></p>
+<p><em>[A cough is heard close to a microphone, making the decibel levels max out. Then voices are heard.]</em></p>
+<p><strong>SCP-9007-A</strong>: Jerry! We ready to go?</p>
+<p><strong>Unknown voice</strong>: All set, let her rip, Tookie.</p>
+<p><em>[SCP-9007-A walks into frame and leans on the teacher’s desk while the camera zooms in. The entity’s previously dissected upper extremity appears whole again, but if the video is slowed it is clear the flesh has been affixed to the upper extremity through haphazard stapling across the upper length of the appendage. Small globules of pus fly from the suture line and beneath the staples as the entity gestures to the camera in a happy wave.]</em></p>
+<p><strong>SCP-9007-A</strong>: Hello Vikander News Daily audience. I’ve broken into our usually scheduled broadcast with an important message from the production team. The world around us has never looked bleaker. NFTs, cryptocurrency, corporate complacency and enabling of genocides, and the worst sin of the modern western world: commercials. Advertising is the life blood of all media industries, yes even journalism.</p>
+<p><em>[The entity’s eyes begin weeping a reddish green fluid.]</em></p>
+<p><strong>SCP-9007-A</strong>: Here at Vikander-Kneed, we know what makes a society tick. The life’s blood of all western democracies – money. And we know that nothing diminishes the entertainment and escapism of watching the news like breaking for a car advertisement or ad about erectile dysfunction treatment.</p>
+<p><em>[The reddish green fluid begins flowing out of the entity’s beak as it talks, adding to the fluid flowing from its eyes.]</em></p>
+<p><strong>SCP-9007-A</strong>: You get home after ten hours on the factory line, surrounded by your fellow child laborers, and all you want to do is watch the news. So you can be entertained by all the horrendous tragedy in the world that isn’t happening to you and say “Hey, my life isn’t too bad. Maybe I should buy a car?”</p>
+<p><em>[The entity reaches up above the frame and pulls down a graphic to hang just over its right shoulder. In doing so, the staples on most of its wound loosen, splashing blood and pus in a puddle around its feet and splattering the camera lens in a fine mist.]</em></p>
+
+<p><strong>SCP-9007-A</strong>: Now, we understand that a healthy economy means happy citizenry, but even more important than that is the need to stay informed.</p>
+<p><em>[The flesh of the entity’s arm begins putrefying visually, the wound running down the length weeping more fluid as the skin, feathers and musculature begin to stretch and drape off the bones. SCP-9007-A does not notice this or the other fluid weeping from its beak and eyes.]</em></p>
+<p><strong>SCP-9007-A</strong>: What is society without a well-organized and well-funded journalistic industry? Structureless. Chaos. Wilderness. Aristotle said it best when he said “outside of the city, men are gods or beasts.” And that’s what we’d be without the news. Cityless. Lost. Beasts not worthy of any consideration. Animals, just sniffing around in the shit.</p>
+<p><em>[The flesh from the upper extremity falls off the bone entirely, leaving stringy bits of biological matter trailing between the lump of rotten muscle and the bones of the appendage. A wet slap is heard as the flesh hits the floor of the classroom.]</em></p>
+<p><strong>SCP-9007-A</strong>: But how do we manage to maintain the shared concept of a well-informed democracy, <strong>AND</strong> also avoid interruptions of your evening entertainment? You, dear audience, are the answer! It’s a win-win scenario! We get your hard earned money, and you get the soulless entertainment and self importance of knowing “what’s going on in the world.”</p>
+<p><em>[The entity gesticulates wildly pointing at the camera, slapping the lens with trails of putrid strings of muscle and fat. SCP-9007-A bends down and approaches the camera so the majority of the shot is taken up by the entity’s face. As it does so, the entity’s beak begins to show surface fractures.]</em></p>
+<p><strong>SCP-9007-A</strong>: All you have to do is visit our website: VikanderNewsDaily.hub.giveusyourmoney. Click the support button and pledge a financial support by month or one time donation.</p>
+<p><em>[The entity’s eyes rapidly cloud, fading in color until they are gray. The liquid composing the eyes begin to bubble until the eyeballs burst and gush greyish fluid out over the feathered face of the entity.]</em></p>
+<p><strong>SCP-9007-A</strong>: With just a small pledge, you can take part in assuring the freedom of the Fourth Estate. All currencies accepted including precious gems, legal tender, sapient souls, viable organs – except the brain – and traveler’s checks!</p>
+<p><em>[The entity’s beak begins to crumble away, the material mixing with the viscous fluid leaking from its eye orbits. As the segment closes, all that is left is a mildewed, vaguely humanoid skeleton, covered in rotting organic detritus.]</em></p>
+<p><strong>SCP-9007-A</strong>: Join a team that has your best interests at heart. Just so long as those interests are aligned with our corporate mission statement. Vikander News Daily, where the world stays connected.</p>
+<div style="text-align: center;">
+<p><strong>End Excerpt</strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="border:solid 3px #000000; color:#000000; border-radius: 10px; background: #D6D3D2; padding:1px; margin-bottom: 5px; padding:5px; font-family: ‘Arial Rounded MT Bold’">
+<div style="text-align: center;">
+<p><strong>Excerpt of SCP-9007-3</strong><br/>
+<em>30 June 1908</em></p>
+</div>
+<p><em>[Segment opens with the two anchors playing a card game. The desiccated corpse has several stakes of wood attached to the arm holding up a hand of cards, which are stapled to its weathered skin.]</em></p>
+<p><strong>News Anchor</strong>: Ah! Got you this time, Cronkite! Go Fish!</p>
+<p><strong>Unknown voice</strong>: Kinney, we’re live.</p>
+<p><em>[The animate news anchor reaches over to the pile of cards and adds one to the corpse’s hand, then takes out a stapler and begins affixing the card to its skin.]</em></p>
+<p><strong>News Anchor</strong>: Mmhmm, okay just the one card, Walt. Don’t worry, I’m not looking.</p>
+<p><strong>Unknown voice</strong>: Kinney!</p>
+<p><strong>News Anchor</strong>: I heard you, Jerry. Go to the field reporter.</p>
+<p><em>[The other voice sighs and the image shifts to a bleak scene of forested woodland but with thousands of blasted trunks lying on the ground, burnt and stripped of vegetation. Ash falls from the air, drifting in front of the camera as the field reporter steps into frame with a wireless microphone.]</em></p>
+<p><strong>On-site reporter</strong>: This is Carmen Vivendi, reporting live from Si–</p>
+<p><strong>News Anchor</strong>: They know who you are, Carmen. Get on with it. Ha! Four eights!</p>
+<p><em>[The sound of cards being slapped down on a hard surface can be heard as the reporter begins again.]</em></p>
+<p><strong>On-site reporter</strong>: I’m speaking to you live from central Siberia, in the Yeniseysk Governorate, close to the Podkamennaya Tunguska River. Roughly two hours ago, an explosion occurred over the sparsely populated area and felled over two thousand square kilometers of trees in what was once a densely forested region.</p>
+<p><strong>News Anchor</strong>: Mmmhmm, go on.</p>
+<p><strong>On-site reporter</strong>: As I mentioned, not many live out this way, but according to first hand accounts recorded by academics in the 1920s and 1930s, at least three people could have died.</p>
+<p><strong>News Anchor</strong>: Wait… “in the 1920s and 1930s”? What?</p>
+<p><strong>On-site reporter</strong>: Well, as I said, I am reporting to you live from Siberia in 1908. You’d have known that if you were paying attention Kinney.</p>
+<p><strong>News Anchor</strong>: So… how do you have reports from academics in the 1920s and 30s?</p>
+<p><strong>On-site reporter</strong>: Nothing can hold back an intrepid journalist. The tyranny of time will hold no sway on the Vikander-Kneed News Department.</p>
+<p><strong>News Anchor</strong>: Sure.</p>
+<p><strong>On-site reporter</strong>: Like I was saying, this is one of the largest impact events in recorded history.</p>
+<p><strong>News Anchor</strong>: Impact events? I thought you said this was an explosion.</p>
+<p><strong>On-site reporter</strong>: An academic <a href="https://web.archive.org/web/20131014200044/http://www-th.bo.infn.it/tunguska/Asteroids-Chapter-18.pdf">article</a> in 2007 is going to note that, and it is widely believed, that this was caused by a meteor bursting at least five kilometers in the air.</p>
+<p><strong>News Anchor</strong>: Carmen. 2007? Can you just report the news?</p>
+<p><strong>On-site reporter</strong>: Go back to your card game. Anyway, I’ve got an eyewitness here by the name of S. Semenov.</p>
+<p><strong>News Anchor</strong>: You didn’t get his first name?</p>
+<p><strong>On-site reporter</strong>: S., can you tell us what you saw?</p>
+<p><strong>Semenov</strong>: I suddenly saw that directly to the north, over Onkoul's Tunguska Road, the sky split in two and fire appeared high and wide over the forest.</p>
+<p><strong>On-site reporter</strong>: Oh goodness.</p>
+<p><strong>Semenov</strong>: The split in the sky grew larger, and the entire northern side was covered with fire. At that moment I became so hot that I couldn't bear it as if my shirt was on fire; from the northern side, where the fire was, came strong heat.</p>
+<p><strong>On-site reporter</strong>: And you said you were about 65 kilometers from the explosion?</p>
+<p><strong>Semenov</strong>: Correct. Anyway, I wanted to tear off my shirt and throw it down, but then the sky shut closed, and a strong thump sounded, and I was thrown a few metres. I lost my senses for a moment, but then my wife ran out and led me to the house. After that such noise came, as if rocks were falling or cannons were firing, the Earth shook, and when I was on the ground, I pressed my head down, fearing rocks would smash it.</p>
+<p><strong>On-site reporter</strong>: That must have been terrifying.</p>
+<p><strong>Semenov</strong>: When the sky opened up, hot wind raced between the houses, like from cannons, which left traces in the ground like pathways, and it damaged some crops. Later we saw that many windows were shattered, and in the barn, a part of the iron lock snapped.</p>
+<p><em>[The on-site reporter snaps her fingers and Semenov freezes in place.]</em></p>
+<p><strong>On-site reporter</strong>: Kinney, the audience might like to know that this firsthand account is from a mineralogist expedition in 1930!</p>
+<p><em>[The anchor sighs audibly.]</em></p>
+<p><strong>News Anchor</strong>: Thank you, Carmen.</p>
+<p><strong>On-site reporter</strong>: You’re welcome, that’s what a professional does: ample research presented in an efficient and accurate way! This is why journalism is so imp–</p>
+<p><strong>News Anchor</strong>: Was there anything else from Mr. Semenov, Carmen?</p>
+<p><strong>On-site reporter</strong>: Oh, right.</p>
+<p><em>[The reporter snaps her fingers again and Semenov starts breathing normally.]</em></p>
+<p><strong>Semenov</strong>: What did you do to me?</p>
+<p><strong>On-site reporter</strong>: Never mind, do you have time for one final question, S.?</p>
+<p><strong>Semenov</strong>: I guess so.</p>
+<p><strong>On-site reporter</strong>: According to a poll in 2022, only 81% of Americans believe in God. That’s a drop of more than 10% over the previous ten years. Do you think there’s a God?</p>
+<p><em>[Semenov stares at the reporter for several moments before answering.]</em></p>
+<p><strong>Semenov</strong>: Yes.</p>
+<p><strong>On-site reporter</strong>: You heard it here first, Kinney. A country bumpkin suffering from traumatic brain injury caused by a meteor strike agrees with you. God is real!</p>
+<p><strong>News Anchor</strong>: Thank you, Carmen.</p>
+<div style="text-align: center;">
+<p><strong>End Excerpt</strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="border:solid 3px #000000; color:#000000; border-radius: 10px; background: #F7BA97; padding:1px; margin-bottom: 5px; padding:5px; font-family: ‘Arial Rounded MT Bold’">
+<div style="text-align: center;">
+<p><strong>Excerpt of SCP-9007-4</strong><br/>
+<em>832 Ab urbe condita</em></p>
+</div>
+<p><em>[Segment begins like the others with the anchor desk. Behind it the two anchor chairs are empty, unlike in the other segments. Voices can be heard from off camera.]</em></p>
+<p><strong>Unknown voice</strong>: I understand, I do. But what are you going to do? She’s on contract and we don’t have anyone else.</p>
+<p><em>[A creaking sound like an old wooden door is heard.]</em></p>
+<p><strong>News Anchor</strong>: Exactly, Walt. She’s unprofessional. What’s with that god shit?</p>
+<p><strong>Unknown voice</strong>: All due respect to your decades of experience, Walt, but she’s on contract! You want your own lucrative contract vaporized because a coworker is dissatisfied? You want to lose the fruit baskets in your dressing room? You want to lose your moisturizing cream? Because we dug up your grave to get you on the show, Walt. And if the contract goes, guess where you’re going back lickety split?</p>
+<p><em>[Creaking is audible.]</em></p>
+<p><strong>News Anchor</strong>: There there, Walt. He didn’t mean it. <em>Did you, Jerry?</em></p>
+<p><strong>Unknown voice</strong>: I’m just doing my job, Kinney.</p>
+<p><strong>News Anchor</strong>: Alright, Jesus. But that was uncalled for, Jerry, I’m calling my agent tonight.</p>
+<p><strong>Unknown voice</strong>: Get behind the desk and do your jobs.</p>
+<p><em>[The two news anchors appear on camera, the woman wheeling the desiccated corpse on a dolly. The body is strapped down with ropes across its midsection and legs. The woman leaves the corpse propped up next to its anchor chair.]</em></p>
+<p><strong>News Anchor</strong>: You’re good to stand during this segment, pal?</p>
+<p><em>[The corpse’s mouth opens and a creaking moan is heard. No other sign of animation is obvious. The woman pats the corpse on the shoulder.]</em></p>
+<p><strong>News Anchor</strong>: Good old soldier. Right, let’s get on with the show.</p>
+<p><em>[The woman sits behind the desk and straightens her suit.]</em></p>
+<p><strong>News Anchor</strong>: Good evening, and welcome to Vikander News Daily, your source for all th–</p>
+<p><strong>Unknown voice</strong>: We’re thirty minutes into the show, Kinney. We’ve already done the intro. Now introduce the segment.</p>
+<p><strong>News Anchor</strong>: We can fix it in post.</p>
+<p><strong>Unknown voice</strong>: We’re live!</p>
+<p><em>[The anchor shrugs. The corpse smiles slightly, causing the mustache that was taped on to break free from the dry skin and hang loosely from one end for the remainder of the broadcast.]</em></p>
+<p><strong>News Anchor:</strong> Well, no time for chit chat! Folks, we have breaking news for you tonight, we’re just getting reports of a volcanic eruption. We now go to our reporter on scene, Carmen Vivendi. Carmen, what can you tell us?</p>
+<p><strong>News Anchor</strong>: Carmen, are you there?</p>
+<p><em>[The feed cuts to Mount Vesuvius rising in night, silhouetted by light from the cascading eruption. The on-site reporter walks into frame. Behind her, a large plume of ash has been ejected from the top of the mountain, and a wall of flame seems to be encroaching towards the outskirts of town. The woman stands in a small cobbled street with buildings in Roman style, some of which are burning. Screams can be heard in the background. The reporter’s face and suit are blackened by soot, but her skin and hair are not burned.]</em></p>
+<p><strong>On-site reporter</strong>: I’m here, Kinney. What’s this I hear about you wanting me off the show?</p>
+<p><strong>News Anchor</strong>: I don’t know what you mean. Can you tell me, is it safe to be so close to an active volcanic eruption like that?</p>
+<p><strong>On-site reporter</strong>: I’m good right where I am, Kinney. Right here, on Vikander News Daily.</p>
+<p><strong>News Anchor</strong>: That’s good, but let’s talk about the story. Can you tell us what’s happening?</p>
+<p><strong>On-site reporter</strong>: Of course. I’m a professional.</p>
+<p><em>[Several minutes pass where the only sounds heard are structures burning and some distant shouting.]</em></p>
+<p><strong>News Anchor</strong>: <em>[Coughs]</em> Any time you’re ready, Carmen.</p>
+<p><strong>On-site reporter</strong>: Well, Kinney, after a long history of ignoring the warning signs, the community at Pompeii is being devastated by the eruption of a nearby volcano.</p>
+<p><em>[The camera pans upwards to frame the mountain from a much higher altitude<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup>, just in time to catch a secondary explosion on the slopes and a curtain of ash rushing down the mountainside.]</em></p>
+
+<p><strong>On-site reporter:</strong> As you can see, after a long attempt at negotiations, Mount Vesuvius has decided enough… is enough.</p>
+<p><strong>News Anchor</strong>: What’s the word like there amongst the residents?</p>
+<p><strong>On-site reporter</strong>: Let’s find out.</p>
+<p><em>[The camera returns to ground level and follows the reporter as she approaches a man currently running towards her position in a hurried manner.]</em></p>
+<p><strong>On-site reporter:</strong> Excuse me sir, could you tell me what's you're feeling right now?</p>
+<p><em>[The man is running past, screaming as his toga bursts into flame. He coughs black phlegm and tries frantically to put out the flames on his person. He then suddenly collapses to the cobbled street surface. The camera zooms in. Scarring from the heat has burned away his eyebrows and part of his hair, and his corneas exhibit such significant scarring from the dust that they are clouded. The man’s face has a blue tint, indicating suffocation.]</em></p>
+<p><strong>On-site reporter:</strong> Well, you heard it here, Kinney, that's the feeling on the ground.</p>
+<p><em>[Other screams can be heard in the background; they build in crescendo until suddenly ceasing as the ash wave crests over the city. The gases seem to have no effect on the on-site reporter.]</em></p>
+<p><strong>News Anchor</strong>: Well, before you go, have you tried to get a statement from the volcano? It's always important to hear both sides of any debate.</p>
+<p><strong>On-site reporter</strong>: I have indeed, and I hold its prepared statement in my hand.</p>
+<p><strong>News Anchor</strong>: Great!</p>
+<p><em>[The wall of gas and ash overwhelms the reporter, coating her in red-hot volcanic ash. It is difficult to see anything in the recording beyond her outline. The reporter does not react.]</em></p>
+<p><strong>On-site reporter</strong>: It's hard to translate from volcanoese but I believe the statement reads: "I have a right to defend myself."</p>
+<div style="text-align: center;">
+<p><strong>End Excerpt</strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+Efforts to locate the source of SCP-9007 broadcasts are ongoing.</p>
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Including but not limited to: police, security guards, and Foundation personnel.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. A small infographic pops up on screen noting that this is in fact not <em>duct</em> tape but tape made out of ducks.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. At least fifty meters from the ground.</div>
+</div>
+
+<hr/>
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-9007">SCP-9007</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-9007">https://scpwiki.com/scp-9007</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Filename:</strong> Philly<br/>
+<strong>Author:</strong> Snehrashmi<br/>
+<strong>License:</strong> CC BY-SA 4.0<br/>
+<strong>Source</strong>: <a href="https://commons.wikimedia.org/wiki/File:Philly_-_The_official_mascot_of_Amritpex_2023.jpg">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by Grigori Karpin</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> living room<br/>
+<strong>Author:</strong> greg.chiasson<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/gregchiasson/537507829/">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by Grigori Karpin</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Toco toucan<br/>
+<strong>Author:</strong> AntanO<br/>
+<strong>License:</strong> CC BY-SA 4.0<br/>
+<strong>Source</strong>: <a href="https://commons.wikimedia.org/wiki/File:Toco_toucan_(Ramphastos_toco)_close-up.jpg">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by Grigori Karpin</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Eruption of Stromboli<br/>
+<strong>Author:</strong> Wolfgang Beyer<br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source</strong>: <a href="https://commons.wikimedia.org/wiki/File:Stromboli_Eruption.jpg">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by Grigori Karpin</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong>BostonMolassesDisaster<br/>
+<strong>Author:</strong> Globe Newspaper Co.<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source</strong>: <a href="https://commons.wikimedia.org/wiki/File:BostonMolassesDisaster.jpg">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by Grigori Karpin</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong>VKTM News ad graphic<br/>
+<strong>Author:</strong> Grigori Karpin<br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source</strong>: <a href="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20news%20ad%20graphic1">LINK</a><br/>
+<strong>Additional Notes:</strong> created by Grigori Karpin</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong>Pretty much all the information about Tunguska and the eyewitness report is taken from the Wikipedia article.<br/>
+<strong>Author:</strong> Wikipedia<br/>
+<strong>License:</strong> CC BY-SA 4.0<br/>
+<strong>Source</strong>: <a href="https://en.wikipedia.org/wiki/Tunguska_event#cite_note-Longo_2007_303%E2%80%93330-10">LINK</a><br/>
+<strong>Additional Notes:</strong> I did not copy and paste any of it, except some of the first hand account by Semenov.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Peshtigo Fire extend<br/>
+<strong>Author:</strong> US Census<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source</strong>: <a href="https://en.wikipedia.org/wiki/File:PeshtigoFireExtend.png">LINK</a><br/>
+<strong>Additional Notes:</strong> No edits</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Photo from TV Dec 31 fire Australia 20% of Australian forests burned<br/>
+<strong>Author:</strong> Melanie Lazarow<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/mlazarow/49500942963/">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by Grigori Karpin</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Toucan<br/>
+<strong>Author:</strong> gustavorezende<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source</strong>: <a href="https://openclipart.org/detail/266381/toucan#google_vignette">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by Grigori Karpin</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

@@ -1,0 +1,795 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-7016</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-7016</h1>
+            <html><body><div id="page-content">
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=1&amp;theme=https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css&amp;css={$css}" style="display: none"></iframe></p>
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=2&amp;theme=https://cdn.scpwiki.com/theme/en/basalt/basalt-bedrock-min.css&amp;css={$css}" style="display: none"></iframe></p>
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=3&amp;theme=https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/1&amp;css={$css}" style="display: none"></iframe></p>
+
+<div style="text-align: right; margin-top: -20px;">
+<p><span style="font-size:80%;">by <a href="/cydhra">Cydhra</a></span></p>
+</div>
+<div class="baseHeading euclid contaiment-risk-C3 threat-ind-2">
+<div class="leftBlockHeading" style="height:calc(100% - 32px);">
+<div class="confidentialHeading">
+<p><span class="confidentialSpan"><a href="/s7-apcs-guide">CONFIDENTIAL</a></span><br/></p>
+</div>
+<div class="detailsHeading">
+<p><span class="detailsSpan" data-title="Security Clearance Level 4/ORCON">Security Clearance Level 4/ORCON</span><br/>
+<span class="detailsSpan" data-title="North Atlantic Parathreat Response Alliance">North Atlantic Parathreat Response Alliance</span><br/>
+<span class="detailsSpan" data-title="Site 64, Oregon">Site 64, Oregon</span><br/></p>
+</div>
+<br/></div>
+
+<div class="rightBlockHeading">
+<div data-title="Class — Safe" id="u-classImageHeading-safe" style="background:#4e6c77;">
+<p><span style="color: white; font-weight: bold; font-size: 500%; line-height: 60px;">S</span><br/></p>
+</div>
+<div data-title="Class — Euclid" id="u-classImageHeading-euclid" style="background:#ffc000;">
+<p><span style="color: white; font-weight: bold; font-size: 500%; line-height: 60px;">E</span><br/></p>
+</div>
+<div data-title="Class — Keter" id="u-classImageHeading-keter" style="background:#b80000;">
+<p><span style="color: white; font-weight: bold; font-size: 500%; line-height: 60px;">K</span><br/></p>
+</div>
+<div data-title="Class — Thaumiel" id="u-classImageHeading-thaumiel" style="background:#8B008B;">
+<p><span style="color: white; font-weight: bold; font-size: 500%; line-height: 60px;">T</span><br/></p>
+</div>
+<div data-title="Class — Uncontained / Neutralized" id="u-classImageHeading-neutralized" style="background:#ddd;">
+<p><span style="color: black; font-weight: bold; font-size: 500%; line-height: 60px;">N</span><br/></p>
+</div>
+<div data-title="Class — euclid" id="u-classImageHeading-nonstandard" style="background:#330000;">
+<p><span style="color: white; font-weight: bold; font-size: 500%; line-height: 60px;">none</span><br/></p>
+</div>
+<br/></div>
+<div class="bottomBlockHeading" style="width:max(650px, 70%);">
+<div class="componentHeading">
+<p><span class="componentHeadingSkewFixSpan" style="position: relative;top: -15px;">Intelligent-control</span><br/></p>
+</div>
+<div id="u-xxxxHeading-A5" style="background: #4e6c77; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p><span style="color: white">A5</span><br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-A4" style="background: orange; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>A4<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-A3" style="background: red; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>A3<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-A2" style="background: red; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>A2<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-B5" style="background: #4e6c77; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p><span style="color: white">B5</span><br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-B4" style="background: orange; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>B4<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-B3" style="background: orange; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>B3<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-B2" style="background: red; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>B2<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-C5" style="background: #4e6c77; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p><span style="color: white">C5</span><br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-C4" style="background: #4e6c77; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p><span style="color: white">C4</span><br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-C3" style="background: orange; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>C3<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-C2" style="background: orange; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>C2<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-D5" style="background: #4e6c77; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p><span style="color: white">D5</span><br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-D4" style="background: #4e6c77; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p><span style="color: white">D4</span><br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-D3" style="background: orange; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>D3<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-D2" style="background: orange; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>D2<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-E5" style="background: #4e6c77; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p><span style="color: white">E5</span><br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-E4" style="background: #4e6c77; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p><span style="color: white">E4</span><br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-E3" style="background: orange; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>E3<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-E2" style="background: orange; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>E2<br/></p>
+</div>
+<br/></div>
+<div data-title="KETER CLASSE" id="u-xxxxHeading-KETER" style="background: red; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>KETER<br/></p>
+</div>
+<br/></div>
+<div data-title="Containment breach is inevitable under any and all means of containment" id="u-xxxxHeading-AAA" style="background: black; display: none; font-size: 18px;">
+<div class="XXXXheadBox" style="color:white; margin: 0 0 0 25%;">
+<p>AAA<br/></p>
+</div>
+<br/></div>
+<div data-title="Possibility of containment breach has been ruled out" id="u-xxxxHeading-EEE" style="background: white; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>EEE<br/></p>
+</div>
+<br/></div>
+<div data-title="Containment is impossible" id="u-xxxxHeading-TS" style="background: #ccc; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>Ȼ<br/></p>
+</div>
+<br/></div>
+<div data-title="Insufficient data for analysis" id="u-xxxxHeading-Q" style="background: white; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>?<br/></p>
+</div>
+<br/></div>
+<div id="u-xxxxHeading-T" style="background: #8B008B; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p><span style="color: white">T</span><br/></p>
+</div>
+<br/></div>
+<div data-title="Type of end-of-the-world scenario that may follow a containment breach" id="u-xxxxHeading-KC" style="background: red; display: none; font-size: 18px;">
+<div class="XXXXheadBox">
+<p>{$k-class}<br/></p>
+</div>
+<br/></div>
+
+<div data-title="Secrecy danger level: Broken Masquerade" id="u-potentialLevel-1" style="background: #505052; display: none; font-size: 18px;">
+<div class="potentialLvl-Wh">
+<p>Vedist I<br/></p>
+</div>
+<br/></div>
+<div data-title="Secrecy danger level: Distant Storm" id="u-potentialLevel-2" style="background: #505052; display: none; font-size: 18px;">
+<div class="potentialLvl-Wh">
+<p>Vedist II<br/></p>
+</div>
+<br/></div>
+<div data-title="Secrecy danger level: Fallen Angel" id="u-potentialLevel-3" style="background: #505052; display: none; font-size: 18px;">
+<div class="potentialLvl-Wh">
+<p>Vedist III<br/></p>
+</div>
+<br/></div>
+<div data-title="Secrecy danger level: Fingerpost" id="u-potentialLevel-4" style="background: #505052; display: none; font-size: 18px;">
+<div class="potentialLvl-Wh">
+<p>Vedist IV<br/></p>
+</div>
+<br/></div>
+<div data-title="Secrecy danger level: Razorblade" id="u-potentialLevel-5" style="background: #505052; display: none; font-size: 18px;">
+<div class="potentialLvl-Wh">
+<p>Vedist V<br/></p>
+</div>
+<br/></div>
+<div data-title="Secrecy danger level: Vacuum" id="u-potentialLevel-6" style="background: #505052; display: none; font-size: 18px;">
+<div class="potentialLvl-Wh">
+<p>Vedist VI<br/></p>
+</div>
+<br/></div>
+<div class="numberHeading">
+<p><span class="numberHeadingSkewFixSpan" style="position: relative;top: -15px;">SCP-7016</span><br/></p>
+</div>
+<br/></div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h1 id="toc0"><span>Special Containment Procedures</span></h1>
+<p><span class="bigtext" style="color: green">The entity referred to by this document</span> is not to be referred to by any consistent name, designation, or title – in compliance with Protocol <a href="https://scp-wiki.wikidot.com/taboo" target="_blank">4000-ESHU</a>.<br/>
+It has been transferred to Site 64, Oregon for diplomatic reasons.<br/>
+<span class="bigtext" style="color: green">The narrator of many lies</span> is not to be believed. Specifically, personnel must ignore all assertions of its role and position in Foundation hierarchy. <span class="bigtext" style="color: green">The being in Foundation custody</span> will reinforce such claims with detailed knowledge about Foundation procedures, secrets, and protocols. This knowledge does not prove its affiliation with the Foundation.<br/>
+Despite its claims, it is not authorized to issue commands to personnel, leave the containment area, or otherwise interfere with containment procedures.<br/>
+Personnel are advised to minimize direct or indirect interactions with <span class="bigtext" style="color: green">the humanoid from the forest without a name</span> as much as possible, to reduce the amount of causal event chains it can influence.</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h1 id="toc1"><span>Description</span></h1>
+<p><span class="bigtext" style="color: green">The anomalous manifestation</span> currently looks like a white, female human. However, it has shown to change outside appearances before, as is common with <span class="bigtext" style="color: purple">inhabitants of the forest of yonder</span>. It has shown the ability to consciously influence events in its local proximity to statistically unlikely outcomes, furthering its goals or at least preserving its physical integrity.<br/>
+The amount of influence <span class="bigtext" style="color: green">the being from under the well</span> can exert is unclear at the moment, as is the amount of control it has over the effects. From recovered evidence it is assumed that it cannot control the concrete outcome of an event. Further research into the exact effects is pending.</p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h1 id="toc2"><span>Addenda</span></h1>
+<h3 id="toc3"><span><span style="text-decoration: underline;">The Umbrella Defense System</span></span></h3>
+<p><span class="bigtext" style="color: green">The entity of particular interest</span> had been encountered first during a raid by <span class="bigtext" style="color: teal">invaders from wells deep</span> on a U.S. Military site belonging to the paratechnological Umbrella Defense System. <span class="bigtext" style="color: teal">The attackers without names</span> did not trigger any alarms and were not spotted prior to the breach event. This is attributed through their anomalous entry through a ventilation shaft within the radio-communications building of the Umbrella site. How they achieved the entry is currently being investigated, as access to and from <span class="bigtext" style="color: purple">the extradimensional paths</span> normally requires some form of ritualistic invitation.</p>
+<div class="document">
+<div style="text-align: right;">
+<p><tt>January 27, 1963</tt><br/>
+<tt>LEVEL 4: TOP SECRET</tt></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h5 id="toc4"><span>Umbrella Defense System</span></h5>
+<p><tt>North Atlantic Parathreat Response Alliance</tt></p>
+</div>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="OTH-B_coverage.gif" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-7016/OTH-B_coverage.gif"/>
+<div class="scp-image-caption">
+<p>Umbrella Defense OTR Coverage of the conterminous United States</p>
+</div>
+</div>
+<p>Early in the 1960s, the Soviet Union underwent efforts to surpass the previously technologically dominant United States in the ongoing arms race. After the successful detonation of its first thermonuclear warhead in 1958, the Soviet Government sought to develop strategical paraweapons to counter the United States nuclear prominence. While the United States extended their edge in nuclear technology with the neutron bomb, the Soviet Union began deploying several eigenweapon-systems on their east coast.<br/>
+After two years of negotiations with the Federal Government of the United States, the Foundation agreed to a program against Soviet paraweapon threats as well as conventional nuclear ballistic missiles. The Foundation recognizes the threat exerted by the Russian government's unwillingness to halt their advances in paratechnological armament. Despite earlier concerns, the Foundation agenda was reinterpreted to necessitate a <em>balance of terror</em> to contain Soviet paratechnology.</p>
+<p>In exchange to massive funding of Foundation projects, Foundation scientists developed a previously theorized eigenweapon which got integrated into the nuclear deterrence strategy of the United States. The weapon was capable of deconceptualizing targets that are visible and describable to a group of trained operators. The weapon assigns a nomenclative designation to a target if operators reach a consensus about the nature of the target, and create a nomenclative label within the weapons' acceptable boundaries. The weapon will then deconceptualize the nomenclative designation [<a class="bibcite" href="javascript:;" id="bibcite-1-15439a" onclick="WIKIDOT.page.utils.scrollToReference('bibitem-1')">1</a>] while disintegrating entities strictly designated under the nomenclative label chosen by the operators.</p>
+<div class="scp-image-block block-left" style="width:300px;"><img alt="Aerial_view_of_clear_AFS_site%2C_Official_photograph_BMEWS_Project_by_C._Henry%2C_5_July_1962%2C_Photographic_Services%2C_Riverton%2C_NJ%2C_BMEWS%2C_clear_as_negative_no._A-3945._-_Clear_Air_Force_HAER_AK-30-A-96.jpg" class="image" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Aerial_view_of_clear_AFS_site%2C_Official_photograph_BMEWS_Project_by_C._Henry%2C_5_July_1962%2C_Photographic_Services%2C_Riverton%2C_NJ%2C_BMEWS%2C_clear_as_negative_no._A-3945._-_Clear_Air_Force_HAER_AK-30-A-96.jpg"/>
+<div class="scp-image-caption">
+<p>Fairbanks Umbrella site with on-site radar</p>
+</div>
+</div>
+<p>Not all targets were applicable (More details about the weapon system can be found in [<a class="bibcite" href="javascript:;" id="bibcite-2-14962a" onclick="WIKIDOT.page.utils.scrollToReference('bibitem-2')">2</a>]). Nonetheless, the range of potential targets surpassed everything considered reasonable defense. To contain the potential impact of such an eigenweapon, Foundation operatives embedded multiple layers of perception filters into any documentation and constructions. Those filters convinced operators and anyone with access to the documentation or knowledge of the weapon that it requires direct line of sight, requires the target to approach the weapon, and can only target inanimate objects. This way, it is only capable of targeting incoming projectile threats, but not people, institutions, countries, or similar concepts that cannot be considered ballistic threats. Moreover, filters convince U.S. officials that a weapon capable of a wider range of targeting options is inherently infeasible and inquiries as well as further research into such a weapon of mass destruction are therefore pointless.</p>
+<p>The weapon system consists of a series of upstream Over-the-horizon radars and downstream anomalous deconceptualization cannons. The OTR sites relay incoming threats to operators of the deconceptualization cannons, who then have to classify and label the incoming threat. If consensus about an incoming threat is reached, the weapon is ready to fire within 80 seconds. It will locate the target's new nomenclative group within the Noosphere and deconceptualize it through a pseudo-thaumaturgic mechanism [<a class="bibcite" href="javascript:;" id="bibcite-2-43566a" onclick="WIKIDOT.page.utils.scrollToReference('bibitem-2')">2</a>], disintegrating its physical associations as a side effect.</p>
+</div>
+<div class="document">
+<div style="text-align: right;">
+<p><tt>November 04, 1963</tt><br/>
+<tt>LEVEL 4: TOP SECRET</tt></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h5 id="toc5"><span>Incident Report: Breach of Umbrella Cannon Array, Bettles, AK</span></h5>
+<p><tt>North Atlantic Parathreat Response Alliance</tt></p>
+</div>
+<div class="scp-image-block block-right" style="width:250px;"><img alt="tomb_layout.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-7016/tomb_layout.png"/>
+<div class="scp-image-caption">
+<p>Site layout of Bettles Umbrella Cannon Array. Entry likely through ventilation in communications block (A). Attackers then breached both western weapon control rooms (F) and seized the generator room (E).</p>
+</div>
+</div>
+<p>This transcript was created from automated CCTV footage covering the weapon control rooms and some parts of the premises. The CCTV footage uses magnetic tape bands but due to shortcomings in their logistics, the military was unable to store more than a week of footage, because the tapes had to be reused. Foundation operatives were therefore unable to analyze the weeks prior for suspicious activity.</p>
+<p><strong>[05:56]</strong>: The door to the communications block opens. Seven <span class="bigtext" style="color: teal">unnameable creatures</span> exit the building. Two of them have thin tails protruding from under their cloaks, two more have lizard-like heads with elongated mouths and sharp teeth. Six of them carry weapons reminiscent of spears with long bronze tips. The seventh, which is <span class="bigtext" style="color: green">the one described in this document</span> carries a M3A1 submachine gun. It is dressed in typical U.S. Army camouflage.</p>
+<p><strong>[05:57]</strong>: <span class="bigtext" style="color: teal">The unseeable intruders</span> stack up before the door of the generator room, then breach it. It is assumed that they find it empty, since no bodies were recovered from the room in the aftermath.</p>
+<p><strong>[06:03]</strong>: Together with six more <span class="bigtext" style="color: teal">invaders from a different sky</span>, they exit the generator room. The <span class="bigtext" style="color: teal">gathering of name seekers</span> splits in two groups.</p>
+<p><strong>[06:05]</strong>: Both groups simultaneously breach the western and the south-western weapon control rooms. Three soldiers, one in the western, two in the south-western control rooms are killed immediately upon entry. The <span class="bigtext" style="color: teal">trespassers with unseen faces</span> charge into the rooms and hinder personnel to equip weapons by force. The spear-like weapons compensate for their lack of firearms within the confined spaces and suffice for an immediate defeat of both control crews.</p>
+<p><strong>[06:07]</strong>: <span class="bigtext" style="color: teal">The hostile warriors</span> then access the seized Umbrella Cannons while subduing surviving U.S. soldiers in the south-western control room. In their apparent lack of military training, the <span class="bigtext" style="color: teal">individuals whose titles cannot be uttered</span> did not remove any weapons from the vicinity of the survivors. One of the captured U.S. soldiers manages to get hold of his gun and opens fire upon the <span class="bigtext" style="color: teal">entry team</span>. One bullet pierces the skull of a <span class="bigtext" style="color: teal">lizard usurper</span>. The soldier is then terminated with a spear.</p>
+<p><strong>[06:08]</strong>: The shots alert the third crew in the eastern control room, who now exit the building. The <span class="bigtext" style="color: teal">forest dwellers from beyond</span> retreat into the control rooms and barricade the doors, while the third crew opens fire onto them.</p>
+<p><strong>[06:08]</strong>: Concurrently, a <span class="bigtext" style="color: teal">second group from the place of names</span> begins an attack from the south, diverting attention of deployed soldiers away from the cannon array. The attackers use thaumaturgical spells and anomalous fauna to attract and withstand gunfire.</p>
+<p><strong>[06:09]</strong> The south-western Umbrella Cannon starts its boot-up sequence. No firing command has been issued yet.</p>
+<p><strong>[06:11]</strong> Bullets fired from the south-eastern weapon control room damage all three coolant pumps outside the south-western control room. The bullets were fired seemingly deliberately from Foundation technician Matt Franklin, who is currently deployed at the site as a liaison because of his military experience. He then retreats into the weapon control room. The rest of its crew follows.</p>
+<p><strong>[06:12]</strong> Since the south-western weapon is currently in its booting procedure, coolant flow from the idling south-eastern control room is automatically rerouted to the south-western cannon. This renders the south-eastern cannon inoperable.</p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="umbrella_site_plane.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-7016/umbrella_site_plane.png"/>
+<div class="scp-image-caption">
+<p>Photograph taken 148 minutes after the attack from a Lockheed U-2 reconnaissance aircraft. Damage to communications building is minimal, but collapsed radio tower can be seen (4).</p>
+</div>
+</div>
+<p><strong>[06:14]</strong> The team from the south-eastern control room activates the Umbrella Cannon. It is unknown how they arrived at the conclusion that the weapon could be used to fire at <span class="bigtext" style="color: teal">the group of nameless souls</span>. Matt Franklin did not experience altered perception through the weapon's memetic filters, but the deployed U.S. soldiers did.</p>
+<p><strong>[06:14]</strong> Soldiers defending the base from the southern attacks begin firing mortars at the attackers.</p>
+<p><strong>[06:15]</strong> The south-eastern Umbrella Cannon fails the boot process due to lack of coolant flow. The issued firing order is rerouted to the western Umbrella Cannon. While it boots up, members from the south-eastern control room begin communicating with the <span class="bigtext" style="color: teal">uninvited guests</span>. The contents of this exchange are unknown, because the CCTV surveillance does not include audio recording.</p>
+<p><strong>[06:16]</strong> The western Umbrella Cannon logs a failure of consensus. Three seconds later, Matt Franklin manually overrides the safeguard and orders it to fire. The site experiences a power failure.</p>
+<p>It is uncertain what happened next, but reconstruction efforts through survivor interviews and damage assessment suggest that the ventilation shaft in the communications room disintegrated and led to the immediate collapse of the radio tower. The tower crashed into the generator room, destroying both generators and causing a fire from leaking diesel. Simultaneously, many of the <span class="bigtext" style="color: teal">unnamed attackers</span> partially disintegrated or spontaneously combusted. The force exerted by the explosions and incomplete disintegration destroyed all three weapon control rooms, killing two incapacitated soldiers and injured several more. This marks the end of the hostile attack, as the <span class="bigtext" style="color: green">being described in this file</span> was the sole enemy survivor at the cannons and escaped into the surrounding forest. The southern <span class="bigtext" style="color: teal">anomalous army</span>, severely weakened through several combustions among them, seize all hostilities and retreat into the forest.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h3 id="toc6"><span><span style="text-decoration: underline;">Investigation</span></span></h3>
+<p>In the aftermath, Foundation technician Matt Franklin, who was present during the shootout between the weapon control rooms, was interviewed about the attack and the days preceding it. Of particular interest are his accounts about Elena Griffin, a Foundation field agent who was stationed with him at the Bettles Umbrella Site. Before her deployment within the Umbrella Project, she was assigned as security personnel during multiple expeditions into <span class="bigtext" style="color: purple">the space beyond our chimneys</span>.</p>
+<div class="document">
+<div style="text-align: right;">
+<p><tt>November 05, 1963</tt><br/>
+<tt>LEVEL 2: RESTRICTED</tt></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h5 id="toc7"><span>Interview Log: Breach of Umbrella Cannon Array, Bettles, AK</span></h5>
+<p><tt>Umbrella Defense Project, Internal Documentation</tt></p>
+</div>
+<p><strong>Interviewer</strong>: Dr. Elias Lockwood, Site 64, Umbrella Defense Project<br/>
+<strong>Interviewee</strong>: Matt Franklin, Umbrella Defense Project</p>
+<p>Introduction and initial questions were cut for brevity.</p>
+<div class="notation">
+<p><strong>Lockwood</strong>: And after you heard the shots, what did you do?</p>
+<p><strong>Franklin</strong>: We all grabbed our weapons and got up.</p>
+<p><strong>Lockwood</strong>: Immediately? Were you expecting an attack?</p>
+<p><strong>Franklin</strong>: No, but that is a military site. Normally you'd expect to hear an alarm before anything happens, so it was unexpected.</p>
+<p><strong>Lockwood</strong>: And then?</p>
+<p><strong>Franklin</strong>: We stacked up on the door, because the shots were nearby, and got out.</p>
+<p><strong>Lockwood</strong>: And you saw <span class="bigtext" style="color: teal">those that came from another place</span> immediately?</p>
+<p><strong>Franklin</strong>: Yeah pretty much. They were outside the other two buildings, doors wide open. And you could see that they weren't our kind.</p>
+<p><strong>Lockwood</strong>: How so?</p>
+<p><strong>Franklin</strong>: Animal features and everything. My guys were briefed on them a bit, but not much. They were just soldiers deployed at some tech that by chance was classified by us, and so they were told the most urgent stuff. There are permanent wells deeper in the forest, but to be honest, nobody expected an invasion from… from <span class="bigtext" style="color: purple">beyond the pathways</span>.</p>
+<p><strong>Lockwood</strong>: Who do you mean by <em>nobody</em>?</p>
+<p><strong>Franklin</strong>: Project Lead. Apparently <span class="bigtext" style="color: teal">fair folk</span> doesn't care for our side that much.</p>
+<p><strong>Lockwood</strong>: Was that a problem? I mean the Army not knowing what they were facing.</p>
+<p><strong>Franklin</strong>: So we had told them not to talk when seeing them and that's it. And at first, there was nothing to talk about anyways: there were some asshats, so we started shooting.</p>
+<p><strong>Lockwood</strong>: But I infer that there was something to talk about after all?</p>
+<p><strong>Franklin</strong>: Well here it gets weird. A few days before that I had a chat with Agent Griffin. Normal small talk, you know how it is. We were outsiders, she was even non-military, and we were also the only ones who knew what this whole thing even was. So we kinda stuck together.</p>
+<p><strong>Lockwood</strong>: I don't need your life-story, just give me the bullet points.</p>
+<p><strong>Franklin</strong>: Sir. She told me some stuff about <span class="bigtext" style="color: teal">you know who</span> —</p>
+<p><em>[Lockwood signs Franklin to watch his phrases]</em></p>
+<p><strong>Franklin</strong>: — and she was asking what I'd do if they attacked.</p>
+<p><strong>Lockwood</strong>: I thought nobody expected an attack?</p>
+<p><strong>Franklin</strong>: At that moment it was just an innocent question, more like 'what if'. And well, we talked for a bit, and we came up with the idea to use Umbrella against them. Because you know. Big weapon go boom.</p>
+<p><strong>Lockwood</strong>: How would that even work?</p>
+<p><strong>Franklin</strong>: She knew everything about this nomenclative bullshit and knew how the weapon was targeting sentences or whatever the hell your boys in the lab came up with. So the idea was, and again, this is only us fucking around, but the idea was that we talk to them and let them do their whole shtick were they try to steal a name. And then we would just target the name with Umbrella and blast their asses.</p>
+<p><strong>Lockwood</strong>: So when they attacked you actually tried that?</p>
+<p><strong>Franklin</strong>: Well not exactly that —</p>
+<p><strong>Lockwood</strong>: Do you have <em>any</em> idea how stupid of an idea that is?</p>
+<p><strong>Franklin</strong>: To be honest, no, I have no idea how that thing works. But in the heat, when your ass is out there?</p>
+<p><strong>Lockwood</strong>: What heat, they didn't even have firearms!</p>
+<p><strong>Franklin</strong>: Yeah smartass, that is what we thought as well. But then fucking Griffin starts firing at us.</p>
+<p><strong>Lockwood</strong>: Agent Griffin opened fire at you during the attack?</p>
+<p><strong>Franklin</strong>: Hell yeah she did. Suddenly looks through the door from the western building, pulls her gun and opens fire. Hell of a bad shot though.</p>
+<p><strong>Lockwood</strong>: She was in the western building, are you sure?</p>
+<p><strong>Franklin</strong>: Yes sir.</p>
+</div>
+<p>Dr. Lockwood pauses the interview to confirm that no soldiers survived the initial breach in the western building. It is concluded that Agent Griffin was part of the <span class="bigtext" style="color: teal">anomalous attack team</span>. The only feasible explanation is that Agent Griffin had lost her name to the <span class="bigtext" style="color: green">surviving creature from the wells</span>. It is currently unknown when this occurred, as it contradicts the accounts of Matt Franklin discussing attack strategies against <span class="bigtext" style="color: teal">those that wander the twisted path</span> with her. However, it is considered infeasible that she lost her name during her deployment, as she had no way to perform Procedure 4000-Halloway at the Umbrella site.</p>
+<p>The following excerpt from the interview continues with the events that transpired during the attack at the Bettles site.</p>
+<div class="notation">
+<p><strong>Lockwood</strong>: Okay, let's presume that in that very situation it sounded like a good idea to use the cannon against <span class="bigtext" style="color: teal">the creatures who seem to have lost their names</span>. Your entire team was under antimemetic filters and was unable to reach consensus, because they were convinced only incoming projectiles could be targeted with the weapon.</p>
+<p><strong>Franklin</strong>: Yeah that was actually Griffin's idea. She said, that consensus is enough. Intent to fire isn't required.</p>
+<p><strong>Lockwood</strong>: What does that even mean?</p>
+<p><strong>Franklin</strong>: I shot the pumps at the other building.</p>
+<p><strong>Lockwood</strong>: That sounded like it was supposed to be an explanation.</p>
+<p><strong>Franklin</strong>: They had activated that cannon already, so coolant was redirected from our building to theirs. This meant that our cannon couldn't be fired anymore, because no coolant was available. So when we issued a command to the console, it got relayed to the only cannon left. And in that building were the <span class="bigtext" style="color: teal">yet to be named ones</span>.</p>
+<p><strong>Lockwood</strong>: So?</p>
+<p><strong>Franklin</strong>: I then got to the door and asked them who they were. And may the Lord be my witness, those idiots swallowed the bait faster than a hooker from… Anyway, they told me their whole crap about some well deep in the forest or whatever, and they came here to kill our leader who had begun a second genocide on them and —</p>
+<p><strong>Lockwood</strong>: What does that have to do with the cannon?</p>
+<p><strong>Franklin</strong>: I just repeated the whole phrase. Was the most complicated thing about the whole operation, had to remember their whole monologue long enough to greet them with it. <em>[Laughs]</em>. This way they accept it as their name or title or whatever. Griffin explained it, but I'm not about all that ritual stuff. I just ordered the cannon to fire. Because they had just accepted it as their name, consensus in their building was reached, and because they were in the building where the cannon was, it just fired. Boom.</p>
+<p><strong>Lockwood</strong>: Boom?</p>
+<p><strong>Franklin</strong>: Yes, sir. They were all gone instantly. Victory.</p>
+<p><strong>Lockwood</strong>: Victory.</p>
+<p><strong>Franklin</strong>: Battle was over.</p>
+<p><strong>Lockwood</strong>: According to the weapon's log, consensus wasn't reached in their building.</p>
+<p><strong>Franklin</strong>: I'm gonna be honest: I have no idea what to tell you. It worked, they were gone, you go figure out the rest.</p>
+<p><strong>Lockwood</strong>: Your definition of victory seems off, too. The whole site was destroyed, nine soldiers were killed, and one of <span class="bigtext" style="color: teal">those who came to our world</span> survived.</p>
+<p><strong>Franklin</strong>: What really?</p>
+<p><strong>Lockwood</strong>: Yes. <span class="bigtext" style="color: green">The one that you assumed was your colleague</span>.</p>
+<p><strong>Franklin</strong>: Son of a… Well there you have it. Maybe that's why consensus wasn't reached.</p>
+<p><strong>Lockwood</strong>: <em>[Sighs]</em>. Thank you, sir, for your cooperation, but I am afraid this isn't the end of it. Your behavior was reckless. The Foundation expects more from their employees.</p>
+<p><strong>Franklin</strong>: Oh to hell with that. They had seized two cannons. This wasn't a situation for diplomacy or waiting for some dumb MTF to —</p>
+<p><strong>Lockwood</strong>: Enough. You have breached Umbrella Protocol and targeted illegal subjects. You have furthermore breached protocol 4000-ESHU and your actions may have led to a further containment breach of <span class="bigtext" style="color: teal">an anomaly that cannot be labeled</span>. Please wait here, somebody else will decide what to do with you.</p>
+<p><strong>Franklin</strong>: Oh come on.</p>
+</div>
+</div>
+<div class="document">
+<div style="text-align: right;">
+<p><tt>November 05, 1963</tt><br/>
+<tt>LEVEL 5: TOP SECRET</tt></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h5 id="toc8"><span>Interview Log: Breach of Umbrella Cannon Array, Bettles, AK</span></h5>
+<p><tt>BY ORDER OF THE OVERSEER COUNCIL<br/>
+THIS FILE IS CLASSIFIED LEVEL 5. UNAUTHORIZED ACCESS WILL LEAD TO IMMEDIATE DISCIPLINARY ACTION.</tt></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Request Access</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Hide Classified Documentation</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<p>Approximately an hour after the initial interview, the door to the interview room opens. An unknown man of African ethnicity enters the room. Matt Franklin is still sitting in the room, awaiting further debriefing.</p>
+<div class="notation">
+<p><strong>???</strong>: Hello, Mr Franklin.</p>
+<p><strong>Franklin</strong>: Fucking finally. So you are the disciplinary team?</p>
+<p><strong>???</strong>: <em>[Laughs]</em> No, Mr. Franklin. I just have a few more questions for you.</p>
+<p><strong>Franklin</strong>: Oh. Yeah, whatever.</p>
+<p><strong>???</strong>: Mr. Franklin, during your time with Ms. Griffin, did she ever exhibit any abnormal behavior towards you?</p>
+<p><strong>Franklin</strong>: Define abnormal, sir?</p>
+<p><strong>???</strong>: Well, we have established that she apparently lost her name. Though, we are unsure when that happened. A few days prior she was still discussing war strategies against <span class="bigtext" style="color: teal">those that were hunted by Kings of Men</span> with you, which seems rather odd for <span class="bigtext" style="color: green">someone who is from the other side</span>.</p>
+<p><strong>Franklin</strong>: I don't know what to tell you. Seemed the same as always.</p>
+<p><strong>???</strong>: How long have you known her?</p>
+<p><strong>Franklin</strong>: Met her at the Umbrella site.</p>
+<p><strong>???</strong>: So if she met her fate much earlier, you wouldn't be able to tell?</p>
+<p><strong>Franklin</strong>: Probably not? But if she was… wasn't herself, why would she willingly throw herself and all those others into certain death?</p>
+<p><strong>???</strong>: Certainly interesting, right? Although it seems she was lucky enough to get away safely.</p>
+<p><strong>Franklin</strong>: So maybe she wasn't a <span class="bigtext" style="color: teal">creature of an unknown forest</span>? Otherwise, the weapon should've targeted her, right?</p>
+<p><strong>???</strong>: Possibly.</p>
+<p><strong>Franklin</strong>: Why did they attack in the first place? We were told they don't meddle with our business, and suddenly we are under fire like the Germans are back.</p>
+<p><strong>???</strong>: It seems they have an interest in the Umbrella system. I suppose they understand it is working under the same principles as their powers.</p>
+<p><strong>Franklin</strong>: So the higher ups misjudged it?</p>
+<p><strong>???</strong>: <em>[Laughs politely]</em> I wouldn't go that far. This isn't anything that we cannot recover from.</p>
+<p><strong>Franklin</strong>: So we will get additional manpower?</p>
+<p><strong>???</strong>: Quite inquisitive. No, I don't think the higher-ups, as you call them, will be very pleased if they hear we need more manpower. I think this is something I can handle informally.</p>
+<p><strong>Franklin</strong>: Meaning?</p>
+<p><strong>???</strong>: You do understand that I am here to ask you questions?</p>
+<p><strong>Franklin</strong>: Come on, mister… We were just lit up by <span class="bigtext" style="color: teal">a damn anomaly that was supposed to be silent</span>. Cut me some slack.</p>
+<p><strong>???</strong>: Those that come from <span class="bigtext" style="color: purple">a place where names have power</span> seem all but united on the topic. A little demonstration that our technology is stronger than their warriors and their magick should suffice to dissuade them further. You shouldn't worry about that, Mr. Franklin. <em>[Pauses].</em> Before I leave though, one last question. What did they tell you about their goals?</p>
+<p><strong>Franklin</strong>: Nothing.</p>
+<p><strong>???</strong>: You said they told you they wanted to kill someone?</p>
+<p><strong>Franklin</strong>: Oh that. Yes they were spouting something about a second atrocity or something, and about inverting the terror.</p>
+<p><strong>???</strong>: Interesting choice of words. Truly. Are you sure it was <em>inverting the terror</em>?</p>
+<p><strong>Franklin</strong>: Might've been something else. Balance. Maybe it was balance. I'm sorry, what do you do at the project exactly?</p>
+<p><strong>???</strong>: <em>[Laughs politely]</em> Thank you, Mr. Franklin. But I don't think that matters right now. I am grateful you answered my questions. Fare well.</p>
+<p><strong>Franklin</strong>: Wait —</p>
+<p><em>[The unknown person leaves the room]</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h3 id="toc9"><span><span style="text-decoration: underline;">Escalation</span></span></h3>
+<p>Following the incident at Bettles, it became clear that the misfire of the Umbrella cannon array had targeted several populations of <span class="bigtext" style="color: teal">the nameless</span> among the anomalous communities, especially those in physical proximity to Alaska. This was especially dangerous to the Umbrella Defense Project, because large parts of the system (especially the two OTR sites) are located in Oregon and Maine, incidentally both in proximity to the exits of the <a href="https://scp-wiki.wikidot.com/three-portlands-hub" target="_blank">City of Three Portlands</a>, which harbored large communities of <span class="bigtext" style="color: teal">creatures with misplaced names</span>.</p>
+<p>This has led Site 64 Director Veronica Anderson to launch an investigation into Three Portlands to ascertain the immediate reaction among the anomalous community. A Foundation team was sent into Three Portlands to gauge the sentiment among different subgroups of the city populace.</p>
+<div class="document">
+<div style="text-align: right;">
+<p><tt>November 12, 1963</tt><br/>
+<tt>LEVEL 2: RESTRICTED</tt></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h5 id="toc10"><span>Report on Insurgent Sentiments within the Three Portland Community</span></h5>
+<p><tt>Umbrella Defense Project, Internal Documentation</tt></p>
+</div>
+<p>Dear Director Anderson,</p>
+<p>As per your request I launched an investigation within the various communities of Three Portlands. Before I get to my summary though, I like you to know that such investigations are hardly representative of the opinion and sentiment within the anomalous community. The locals only share with us what they want us to know, and especially <span class="bigtext" style="color: teal">those that are to remain unnamed</span> are very secluded and don't really like to communicate with the Foundation. Hence, I urge you to consider everything in this report as only a part of the full picture. It is very possible that the situation is far closer to escalation as the careful estimates we were able to gather are suggesting. Covert operations usually don't lead to anything, as the Portland community has a surprising talent to uncover covert agents. Only our diplomatic efforts allowed us to conduct this survey at all, so let this be a word of warning.</p>
+<p>Since the incident at Bettles took place, discontent within the public mood has been increasing at an alarming rate. While the firing of the Umbrella System does not seem to have affected the local population of <span class="bigtext" style="color: teal">those that shall not receive proper titles</span>, word on the streets is that a comparatively large amount of <span class="bigtext" style="color: teal">creatures without renown</span> within <span class="bigtext" style="color: purple">the forest of fair tales</span> were annihilated by the weapon's misfire. Confusingly, a lot of the residents claim that happened only three days ago, even though the Bettles incident was on the fourth. This greatly increased stress between the <span class="bigtext" style="color: teal">nameless community</span> and the rest of the city's population. A large portion of the local community has left the city. Those that remain are led by <span class="bigtext" style="color: green">an individual of their kin dressed in US military attire</span>.</p>
+<p>According to members of the Cogwork Orthodoxy, a relatively secluded schism of the Church of the Broken God, <span class="bigtext" style="color: teal">those that cannot be introduced</span> are preparing for retaliatory strikes against the United States for what they call genocide. They seek a high amount of paratechnological armament, contrary to their usual reliance on the intrinsic anomalous. The Church is worried they might be targeted because of their affinity towards paratechnology (and because they are mostly considered human).</p>
+<p>I think it is out of the question that this incident is considered as a declaration of war by the United States against <span class="bigtext" style="color: teal">those that come from no country</span> and a response is imminent. I am worried that any relations we maintain to the City of Three Portlands will suffer under this hostility, and we too have to fear attacks by <span class="bigtext" style="color: teal">the enemy we only describe</span>.</p>
+</div>
+<div class="document">
+<div style="text-align: right;">
+<p><tt>November 1963</tt><br/>
+<tt>LEVEL 6: COSMIC TOP SECRET</tt></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h5 id="toc11"><span>UNSANCTIONED INTERVIEW, THREE PORTLANDS, UNKNOWN DATE</span></h5>
+<p><tt>BY ORDER OF THE OVERSEER COUNCIL</tt><br/>
+<tt>THIS FILE IS CLASSIFIED LEVEL 6. UNAUTHORIZED ACCESS WILL LEAD TO IMMEDIATE DISCIPLINARY ACTION.</tt></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Request Access</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Hide Classified Documentation</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<p>This report was compiled from video footage from an unknown location within Three Portlands. The tape shows a small room with two individuals. One is an unknown man of African descent, one is <span class="bigtext" style="color: green">the one who crawled through wells</span>.</p>
+<p>The African man seems to have initiated the exchange through unknown means, the other one is present voluntarily.</p>
+<div class="notation">
+<p><span class="bigtext" style="color: green">Good daytime, commander of men.</span></p>
+<p><strong>???</strong>: Good morning.</p>
+<p><span class="bigtext" style="color: green">It seemed like your invitation wasn't a question. You have a special way of authority, even around here. What is your name?</span></p>
+<p><strong>???</strong> <em>[laughs politely]</em>: I am afraid my name has a taste that I am no longer used to.</p>
+<p><span class="bigtext" style="color: green">What an interesting conundrum. Say though, traveler, what has led us to this unusual conversation?</span></p>
+<p><strong>???</strong>: It came to my attention that <span class="bigtext" style="color: teal">those that follow your words</span> have developed an unhealthy interest in Foundation business. I'd like to parley, if you will.</p>
+<p><span class="bigtext" style="color: green">A parley from the warbringers. How amusing yet unsettling. Shining light upon your actions, I'd argue that preservation is anything but unhealthy, wouldn't you agree?</span></p>
+<p><strong>???</strong>: Preservation? Right… I have been warned, that Mutually Assured Destruction is a concept you seem to be fond of.</p>
+<p><span class="bigtext" style="color: green">Isn't that a spirit you once called, when you built the atrocity against the name of ours? And lastly you proved that I was right.</span></p>
+<p><strong>???</strong>: The Foundation remains quite divided on the topic, but it has been deemed necessary by a majority, if only a tight one, that we must protect our kin against threats from men far east.</p>
+<p><span class="bigtext" style="color: green">Ironic that you deem this madness necessary, but deny my kind the same safety? Why have you come here? Only to condemn our kin to your destructive will? I know what you did. Why do you think, we want to parley.</span></p>
+<p><strong>???</strong>: Ah, now that you mention your <span class="bigtext" style="color: teal">fellow ancient spirits</span>, isn't that a bit disingenuous? Before the weapon was fired, <span class="bigtext" style="color: teal">the folk from places dark</span> did not pay much interest to our struggles. It would even seem that you were quite alone in your sorrow. Quite convenient that only you survived at Bettles, and now they suddenly listen to you, follow you even, wouldn't you say?</p>
+<p><span class="bigtext" style="color: green">Lucky might be the better phrasing. Lucky for them of course, as they now see that your kin cannot be trusted with the secrets of names. But you refuse to answer my question, speak up now!</span></p>
+<p><strong>???</strong> <em>[Sighs]</em>: You are mistaken if you think I do not empathize with your concerns. The council disagrees, but ensuring a <em>balance of terror</em> might be the only way to preserve piece between all parties. Even if we might need to give away further secrets, against better judgement.</p>
+<p><span class="bigtext" style="color: green">What is your proposal?</span></p>
+<p><strong>???</strong>: It was never my wish to share our secrets with the United States. But we did it, the council has decided. And as you have made very clear, the best we can do now is sharing it with <span class="bigtext" style="color: teal">the fellowship who cannot recall their names</span> as well. The MAD doctrine only works, if all parties have the means of mutual destruction, as you apparently agree upon.</p>
+<p><span class="bigtext" style="color: green">So you are here to surrender your atrocity? Your words are wicked, this isn't the truth. Speak up, what are your demands?</span></p>
+<p><strong>???</strong>: Distrusting as always. Well I have <em>one</em> small question, but foremost I cannot surrender the full weapon. The Foundation ensured that the States weren't aware of the weapon's true potential. But the nomenclative magic is your domain, so we cannot lie to you about it. The only thing I can offer you is the location of one of our weapons. You may make your point towards the powers of the world while you are there, but the weapon is stationary, you cannot take it with you. Use your time wisely. Fix what damage has been done, and we can continue our paths in piece.</p>
+<p><span class="bigtext" style="color: green">As it is nature to your kin, your words cry of falsehood. But I do respect your willingness to bring balance and cannot but thank you, or otherwise I will be known as unappreciative. Say, man of strange intents. Can I repay you with a present of my own?</span></p>
+<p><strong>???</strong>: I am afraid I have to decline. This is a purely strategic meeting and I cannot accept what you have to offer me.</p>
+<p><span class="bigtext" style="color: green">You are too afraid of the world. Continue then, ask your question.</span></p>
+<p><strong>???</strong>: Christmas Valley, Oregon. Come with friends. And now my question: How did you survive when Umbrella was fired?</p>
+<p><em>[The <span class="bigtext" style="color: green">entity that came from far to parley</span> grins, exposing sharp, inhuman teeth]</em></p>
+<p><span class="bigtext" style="color: green">When we choose a name in your world, we include the well we used to get out of the forest. So after I explained to the man named Franklin how the weapon is fired, I made sure to use a different well for my companions than I had used myself.</span></p>
+<p><strong>???</strong>: Are you suggesting that —</p>
+<p><span class="bigtext" style="color: green">My deepest apologies, Doctor, but I have to leave now, I thank you for your visit. I am sure we will see each other again soon. Maybe, till then, you will even taste a name again.</span></p>
+<p><em>[It walks out of the room giggling, leaving the unknown man behind]</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="document">
+<div style="text-align: right;">
+<p><tt>November 16, 1963</tt><br/>
+<tt>LEVEL 4: TOP SECRET</tt></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h5 id="toc12"><span>Intercepted Soviet Message between Agents on US Soil</span></h5>
+<p><tt>North Atlantic Parathreat Response Alliance</tt></p>
+</div>
+<p>The following encoded message has been recovered by the Central Intelligence Agency while pursuing Soviet agents in Alaska in proximity to Umbrella sites. The decoded and translated message has been forwarded to NAPRA agencies.</p>
+<div class="papernote">
+<p><span class="bigtext" style="color: teal">nomenclative hazard K-0148</span> destabilized. attack vector through Freeport advised. insufficient guarding of sites surrounding Freeport in case of <span class="bigtext" style="color: teal">name danger Z/7227</span> attack. focus on Christmas Valley, Oregon. send operatives.</p>
+</div>
+<p>It has prompted the National Foreign Intelligence Board to reconsider their approach on paratechnological warfare. On the following day, the Foundation received the following preliminary Memo from the Board meeting. A presidential order about the change of course is believed imminent.</p>
+<div class="jotting" style="font-family: Fira Code, monospace;">
+<p><span style="text-decoration: underline;">Memorandum From:</span> The National Foreign Intelligence Board</p>
+<p><span style="text-decoration: underline;">Memorandum To:</span> North Atlantic Parathreat Response Alliance, Administrative Board, SCP Foundation</p>
+<p><span style="text-decoration: underline;">Subject:</span> Dissuasion of Soviet Extradimensional Attacks on Umbrella Defense Sites</p>
+<p>Summary:</p>
+<ol>
+<li>In response to the recent fatal attack on the United States Umbrella Defense System Site in Bettles, AK, the Assistant to the President for National Security Affairs requested reassessment of the Umbrella project and the paratechnological threat exerted by the Soviet Union.</li>
+<li>The reassessment of the Umbrella Nuclear Ballistic Missile Defense program concluded that the sites are vulnerable to paranormal entry and will - in the event of a Soviet nuclear or paratechnological first strike - provide insufficient intercepting capabilities and provide ample targets for Soviet paratechnological ballistic missiles on U.S. soil.</li>
+<li>The inability of the United States to perform retaliation strikes on Soviet cities is amplified by recent projections of Soviet Ballistic Missile Defense projects. This substantially reduces the United States ability to exert a conventional nuclear threat on Soviet cities.</li>
+<li>The interference by extradimensional anomalies requires further deployment of U.S. resources in Oregon and Maine to dissuade extradimensional attacks from the enclave known as the City of Three Portlands.</li>
+</ol>
+<p>For these reasons, the United States Department of Defense / PENTAGRAM wishes to achieve the following objectives at minimum cost:</p>
+<ol>
+<li><span style="text-decoration: underline;">Objective 1: Interception of Soviet Paratechnological Attacks during Nuclear War</span>: The North Atlantic Parathreat Response Alliance must continue their combined efforts to dissuade the USSR from deploying more and more paratechnological armament. It shall be noted that the U.S. President does not wish to extend the doctrine of Mutually Assured Destruction to paratechnological armament. However, the United States Government is determined to deter all paratechnological threats through equal means.</li>
+<li><span style="text-decoration: underline;">Objective 2: Protection of U.S. Military Sites from Extra-Dimensional Attacks</span>: The United States reevaluated the danger exerted by the Three Portlands Enclave and PENTAGRAM therefore makes use of Section 13<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> of the Umbrella Defense Act and temporarily activates mobile Umbrella weapons. The weapons shall be deployed in Oregon and Maine at the existing sites to dissuade paranormal attacks originating from the enclave.</li>
+<li><span style="text-decoration: underline;">Objective 3: Destruction of Soviet Cities using Paratechnological Warfare</span>: The United States requires the ability to strike Soviet cities even under the assumption of widespread Soviet BMD. Therefore, the U.S. Federal Government requires the unblocking of critical offensive paratechnology for military purposes. The activation of Section 13 is not sufficient to reach this objective, hence the White House will discuss further paratechnological solutions with Foundation officials. This decision has been made in light of recent Soviet paratechnological escalations.</li>
+</ol>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h3 id="toc13"><span><span style="text-decoration: underline;">Confrontation</span></span></h3>
+<p>In light of this development, Site Command 64 emergency-deployed MTF Tau-51 ("Urban Brawl") to guard the mobile Umbrella Cannons that were to be deployed in Oregon. It was feared that <span class="bigtext" style="color: teal">creatures from far yonder</span> would attack the Umbrella Sites in Oregon or Maine and despite far greater military occupancy in those locations, it was feared that the mobile weaponry would fall into enemy hands. Incidentally, <span class="bigtext" style="color: green">the anomaly who leads the attacks</span> happened to attack just as the convoy guarding the mobile weapon approached the Umbrella Site.</p>
+<div class="document">
+<div style="text-align: right;">
+<p><tt>November 19, 1963</tt><br/>
+<tt>LEVEL 4: TOP SECRET</tt></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h5 id="toc14"><span>Incident Report on Umbrella Convoy Attack in Christmas Valley, Oregon</span></h5>
+<p><tt>North Atlantic Parathreat Response Alliance</tt></p>
+</div>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="Burma_Road.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-7016/Burma_Road.jpg"/>
+<div class="scp-image-caption">
+<p>Foundation transport convoy for mobile Umbrella unit.</p>
+</div>
+</div>
+<h6 id="toc15"><span>Convoy Layout</span></h6>
+<p>The convoy consisted of six Class 8 transporters and four auxiliary vehicles. 40 personnel were deployed to guard the trucks, mostly staying in the back of the trucks. The number of trucks was chosen to disguise the position of the mobile Umbrella unit, which was located in the second vehicle counting from the lead vehicle. The auxiliary vehicles were used for area reconnaissance and clearing the road in front of the convoy.</p>
+<p>The convoy was armed with two belt-fed machine guns, one located in the back of the rear vehicle and one mounted to an auxiliary truck. Combat personnel were armed with M14 rifles, and experimental positron-discharge anti-materiel rifles [<a class="bibcite" href="javascript:;" id="bibcite-3-17630a" onclick="WIKIDOT.page.utils.scrollToReference('bibitem-3')">3</a>].</p>
+<h6 id="toc16"><span>Attack</span></h6>
+<p><strong>[15:18]</strong> Two spotter vehicles notice approaching movements from within a small roadside thicket. A warning is issued to the convoy and the vehicles turn around.</p>
+<p><strong>[15:19]</strong>: A large pack of <span class="bigtext" style="color: peru">animals reminiscent of armored Hippopotamus</span> burst out the thicket and immediately ram into the lead vehicle. The truck is flipped on its side, rendering it immobile and killing one of the MTF members inside. The convoy halts and MTF Tau-51 dismounts. Fire is opened on the <span class="bigtext" style="color: peru">attacking river-horses</span>. However, the anomalous copper armor worn by the <span class="bigtext" style="color: peru">impressive river mammals</span> rearranges itself above their natural carapace and shields them from most damage.</p>
+<p><strong>[15:20]</strong>: A group of <span class="bigtext" style="color: teal">inhabitants of a sunless forest</span> emerge from the forest and begin to fire arrows into the sky. The arrows turn midair before reaching their trajectory apex and lock onto members of the MTF, before accelerating towards them. MTF Tau-51 is forced to retreat into cover inside and under their vehicles.</p>
+<div class="scp-image-block block-left" style="width:300px;"><img alt="634px-Convoy.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-7016/634px-Convoy.jpg"/>
+<div class="scp-image-caption">
+<p>Aftermath of the attack on the convoy. Leading vehicles destroyed.</p>
+</div>
+</div>
+<p><strong>[15:21]</strong>: An MTF agent retrieves an anti-materiel rifle from a truck and fires upon <span class="bigtext" style="color: peru">a giant in copper armor</span>. The shot pierces through its skull and kills it immediately. With this weapon proven effective, the MTF begins to fight for control over the trucks containing those rifles.</p>
+<p><strong>[15:22]</strong>: <span class="bigtext" style="color: green">The visitor from underneath ancient stars</span> recognizes the second truck as the container of the Umbrella Cannon and approaches it. One of the <span class="bigtext" style="color: peru">gray behemoths</span> forces open the door to the truck and <span class="bigtext" style="color: green">the hostile humanoid</span> vanishes in the truck.</p>
+<p><strong>[15:23]</strong>: The MTF is equipped with anti-materiel rifles and begin to gain ground quickly. From the safety of their cover they manage to kill several <span class="bigtext" style="color: teal">attackers from an unsung place</span> by shooting through the truck walls, and they begin attacking the <span class="bigtext" style="color: peru">living tanks</span>.</p>
+<p><strong>[15:24]</strong>: The mobile Umbrella Cannon fires at an unknown target. No damage to the convoy or the MTF can be ascertained. The MTF now realizes that the weapon has been captured and opens fire at the second truck. It immediately catches fire and forces the <span class="bigtext" style="color: green">leader of strange attacks</span> to get out of the vehicle, where it is subdued.</p>
+<p><strong>[15:25]</strong>: Using the anti-materiel rifles, the MTF dispatches the <span class="bigtext" style="color: peru">legendary hippos</span>, which in conjunction with the immobilization of their leader convinces the <span class="bigtext" style="color: teal">nameless bowmen</span> to flee. After seven minutes, the fight ends.</p>
+<h6 id="toc17"><span>Aftermath</span></h6>
+<p>Both leading vehicles and the Umbrella Cannon burned out. Reinforcements from Christmas Valley were quickly on the scene and injured MTF-Agents were moved to Site 64. The <span class="bigtext" style="color: green">imposter from Bettles</span> was imprisoned and moved to Christmas Valley for questioning. However, Foundation operatives dissuaded U.S. military personnel from interacting with it, and <span class="bigtext" style="color: green">the entity with great resolve</span> was later moved to Site 64 as well.</p>
+<p>Foundation researchers picked up several spikes in Nootropic activity during the weapon's discharge and were able to link them to locations in the Soviet Union. A reaction from <a href="https://scp-wiki.wikidot.com/gru-p-hub" target="_blank">Soviet Groups of Interest</a> has yet to be discovered.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h3 id="toc18"><span><span style="text-decoration: underline;">Containment</span></span></h3>
+<div class="document">
+<div style="text-align: right;">
+<p><tt>November 19, 1963</tt><br/>
+<tt>LEVEL 6: COSMIC TOP SECRET</tt></p>
+</div>
+<br/>
+<div style="text-align: center;">
+<h5 id="toc19"><span>Interview Log: <span style="color: green">Captured combatant without any designation</span></span></h5>
+<p><tt>BY ORDER OF THE OVERSEER COUNCIL<br/>
+THIS FILE IS CLASSIFIED LEVEL 6. UNAUTHORIZED ACCESS WILL LEAD TO IMMEDIATE DISCIPLINARY ACTION.</tt></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Request Access</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Hide Classified Documentation</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<p><span class="bigtext" style="color: green">The being from twisted realms</span> sits in an interview room in Site 64. Dr. Lockwood sits opposite of it and is currently setting up recording equipment for an imminent interview. An unknown man of African descent enters the room.</p>
+<div class="notation">
+<p><strong>???</strong>: I'm sorry, will you give us ten minutes?</p>
+<p><strong>Lockwood</strong>: Sir.</p>
+<p><em>[Dr. Lockwood leaves the room. The unknown man takes place on his chair.]</em></p>
+<p><strong>???</strong>: Hello strange one. I wasn't expecting to see you again so soon. Sadly I am in a bit of a hurry. Your disturbances alarmed the White House and I have to talk to the president to explain that everything is under control, and he doesn't need to parade his stupid weapons. <em>[He halts himself, then smiles and sits down]</em>. Excuse me, those quarrels are not your concern. I'm sure now that you're done, the White House will reach the council's opinion.</p>
+<p><span class="bigtext" style="color: green">The house that is white? Well lucky me, for the Foundation sent their most important man.</span></p>
+<p><strong>???</strong>: I don't know if <em>lucky</em> is applicable in this situation. Though admittedly, you gave me quite a headache. First, you attack a site under my oversight, and I have to explain to the council, why I did not consider this a danger.</p>
+<p><span class="bigtext" style="color: green">Unfortunate.</span></p>
+<p><strong>???</strong>: Then I try to clean up, but you survive.</p>
+<p><span class="bigtext" style="color: green">Lucky Me.</span></p>
+<p><strong>???</strong>: And despite better judgement I offer you a deal to compensate, and grant you access to a weapon you shouldn't even know about.</p>
+<p><span class="bigtext" style="color: green">Lucky Me.</span></p>
+<p><strong>???</strong>: Tell me, what is it that you wish to gain out of annoying me? The council is all over my ass now, over how you were able to uncover two of our sites and gain access on them so easily.</p>
+<p><span class="bigtext" style="color: green">Well, tell me. How did I get access to them? Wasn't that your idea?</span></p>
+<p><strong>???</strong>: And yet, most of your <span class="bigtext" style="color: teal">friends without a goddess</span> are dead, you are here, the council is happy, and the crisis is over. So what's your plan now?</p>
+<p><span class="bigtext" style="color: green">I am still here. I am a lucky one.</span></p>
+<p><strong>???</strong> <em>[Laughs]</em>: Luck? What, the same luck that killed your <span class="bigtext" style="color: teal">warriors of Bettles</span>? The same luck that killed your <span class="bigtext" style="color: teal">kind in the forest</span>? The same luck that made us believe in a Soviet attack in Oregon and foiled your attack on the mobile unit? The same luck that brought you here? <em>[sarcastically]</em> Truly, you <em>are</em> a lucky one.</p>
+<p><strong>???</strong>: Luck is a matter of perspective. I found the Bettles site through some Soviets who thought they could abuse my kin to do their dirty work. They threatened me with horror so unspeakable, even I refuse to taste its name. But what can I say. I may not be as narrow-minded as them, but I cannot just walk into your domain and expect to win. So I had to convince my kin to follow me to do what was necessary. With every sacrifice that was necessary. And as I've told you: I was the one who told the man named Franklin how to fire the weapon.</p>
+<p><span class="bigtext" style="color: green">Wait… what have you —</span></p>
+<p><strong>???</strong>: And then you gave me all I needed to save my kind. Your blind reliance on perpetual madness and mutual destruction is confusing, yet convenient. In your arrogance you attacked us, giving me every warrior I would need. Then you came to me, like a dog that fell into a river, and offered me to partake in your madness. You pretended everything was going according to plan. And yet, your kind is so easy to figure out. All it needed was a little note on a paper and all those hate-filled men at the white residence lost their mind. They provided me with the weapon I needed to get rid of the extortioners that held my kin hostage. The madness in their homeland ended. And then your warriors provided me with the last piece of the puzzle to end this madness in your home too. You. You so-called councilors are so easy to read. Once I met you, I knew what needed to be done. Your arrogance would make it easy. So I fired the cannon in the place with the name Oregon and let your men take me. And now you even hand me the one you call Kennedy.</p>
+<p><span class="bigtext" style="color: green">No, you cannot… How did you do that?</span></p>
+<p><strong>???</strong>: It is as you've said, doc: I <em>am</em> the lucky one.</p>
+<p><span class="bigtext" style="color: green">You —</span></p>
+<p><strong>???</strong>: But don't worry. Before I meet the president though, I will write you a nice file, just like you do for all of my kin. Look, it will be highly secretive and with all the security measures in place to prevent your escape, just like you like it. What do you think your… how do you say it… anomalous properties are? Being lucky? <em>[Laughs]</em> That sounds good to me. But I have to leave now, somebody has to convince the president to shut the project down, right?</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="overwatch_memo">
+<p>After a Foundation liaison visited the United States president shortly after the incident at Christmas Valley, Oregon, the United States unilaterally terminated the Umbrella Defense Project on November 20, 1963. As per clause 19.B of the Umbrella Defense Act, Foundation operatives have begun deconstructing the permanent Umbrella Sites, decommissioning the mobile Umbrella units, and amnestizing U.S. government officials. Documentation about the project will be moved to cold storage. Anomalies associated with the Umbrella Defense Project will be scheduled for review.</p>
+<p>Thank you all for your work.</p>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. A stipulation that allows the United States to deploy mobile Umbrella cannons without the consent of the Foundation for a limited period of time. After three months, an agreement about the deployment with the Foundation must be in effect for continued deployment.</div>
+</div>
+<div class="bibitems">
+<div class="title">Bibliography</div>
+<div class="bibitem" id="bibitem-1">1. Simmons D., Clearwater F., Flipsen, M. <em>A better understanding of nomenclative hazards</em>. Foundation Publishing Archive, <em>Portland, Amsterdam</em>, <em>1952</em></div>
+<div class="bibitem" id="bibitem-2">2. Nord, A., Simmons, D. <em>Nomenclative clustering and directed dissociation within the Noosphere</em>. Foundation Publishing Archive, <em>Portland</em>, <em>1957</em></div>
+<div class="bibitem" id="bibitem-3">3. Schneider, L., Rosenthal, C. <em>Weaponizing Local Positron Anomalies in Infantry Rifles</em> in: Foundation Combat and Technologies, Foundation Publishing Archive, <em>Düsseldorf</em>, <em>1961</em></div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-7016">SCP-7016</a>" by Cydhra, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-7016">https://scpwiki.com/scp-7016</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> OTH-B_coverage.gif<br/>
+<strong>Name:</strong> OTH-B coverage<br/>
+<strong>Author:</strong> U.S. National Oceanic and Atmospheric Administration<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source:</strong> <a href="https://commons.wikimedia.org/wiki/File:OTH-B_coverage.gif">https://commons.wikimedia.org/wiki/File:OTH-B_coverage.gif</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Filename:</strong> duga_otr.png<br/>
+<strong>Name:</strong> Duga radar station within the Chernobyl Exclusion Zone, Ukraine (08), Decolorized<br/>
+<strong>Author:</strong> Alexander Blecher<br/>
+<strong>License:</strong> Creative Commons Attribution-Share Alike 4.0<br/>
+<strong>Derivative of:</strong> <a href="https://commons.wikimedia.org/wiki/File:Duga_radar_station_within_the_Chernobyl_Exclusion_Zone,_Ukraine_(08).JPG">https://commons.wikimedia.org/wiki/File:Duga_radar_station_within_the_Chernobyl_Exclusion_Zone,_Ukraine_(08).JPG</a><br/>
+<strong>Additional Notes:</strong> Image was decolorized and brightened.</p>
+</blockquote>
+
+<blockquote>
+<p><strong>Filename:</strong> tomb_layout.png<br/>
+<strong>Name:</strong> Plan of "the Tomb of the Kings" in Jerusalem, Edited<br/>
+<strong>In:</strong> Encyclopaedia Biblica<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Derivative of:</strong> <a href="https://commons.wikimedia.org/wiki/File:C%2BB-Tombs-Fig1-TombOfTheKings.PNG">https://commons.wikimedia.org/wiki/File:C%2BB-Tombs-Fig1-TombOfTheKings.PNG</a><br/>
+<strong>Additional Notes:</strong> Image was edited: Layout changed and partially removed</p>
+</blockquote>
+
+<blockquote>
+<p><strong>Filename:</strong> umbrella_site_plane.png<br/>
+<strong>Name:</strong> Pristina Serbian Military Airfield 1999 Kosovo War (Edit)<br/>
+<strong>Author:</strong> U.S. Air Force<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Derivative of:</strong> <a href="https://commons.wikimedia.org/wiki/Category:Bombing_of_Kosovo_in_1999#/media/File:Pristina_Serbian_Military_Airfield_1999_Kosovo_War.jpg">https://commons.wikimedia.org/wiki/Category:Bombing_of_Kosovo_in_1999#/media/File:Pristina_Serbian_Military_Airfield_1999_Kosovo_War.jpg</a><br/>
+<strong>Additional Notes:</strong> Image was cropped, recolored and markings were added.</p>
+</blockquote>
+
+<blockquote>
+<p><strong>Filename:</strong> Burma_Road.jpg<br/>
+<strong>Name:</strong> China-bound convoy travels Burma Road<br/>
+<strong>Author:</strong> U.S. Army Center of Military History<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source:</strong> <a href="https://commons.wikimedia.org/wiki/File:China-bound_convoy_travels_Burma_Road.jpg">https://commons.wikimedia.org/wiki/File:China-bound_convoy_travels_Burma_Road.jpg</a></p>
+</blockquote>
+
+<blockquote>
+<p><strong>Filename:</strong> 634px-Convoy.jpg<br/>
+<strong>Name:</strong> Convoy of lorries under enemy artillery and mortar fire<br/>
+<strong>Author:</strong> United Kingdom Government<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source:</strong> <a href="https://commons.wikimedia.org/wiki/File:Convoy_of_lorries_under_enemy_artillery_and_mortar_fire.jpg">https://commons.wikimedia.org/wiki/File:Convoy_of_lorries_under_enemy_artillery_and_mortar_fire.jpg</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

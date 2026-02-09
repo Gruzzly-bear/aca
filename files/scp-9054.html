@@ -1,0 +1,471 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-9054</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-9054</h1>
+            <div class='image-header'><img alt="Core.jpg" class="crom-thumbnail" src="https://scp-wiki.wikidot.com/local--files/scp-9054/Core.jpg" style="display: none"/>
+<img alt="P4TR1CK07" class="small" src="https://www.wikidot.com/avatar.php?userid=7817017&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7817017)"/>
+<img alt="Anyar" class="small" src="https://www.wikidot.com/avatar.php?userid=5274479&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5274479)"/>
+<img alt="AstralNavigator" class="small" src="https://www.wikidot.com/avatar.php?userid=9716469&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9716469)"/>
+<img alt="ViciousSpirit" class="small" src="https://www.wikidot.com/avatar.php?userid=6304769&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6304769)"/>
+<img alt="ThanTheDemoness" class="small" src="https://www.wikidot.com/avatar.php?userid=6355894&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6355894)"/>
+<img alt="jswessler" class="small" src="https://www.wikidot.com/avatar.php?userid=5033036&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5033036)"/>
+<img alt="SierraBlade220" class="small" src="https://www.wikidot.com/avatar.php?userid=9904470&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9904470)"/>
+<img alt="Arcane_Treatise" class="small" src="https://www.wikidot.com/avatar.php?userid=8582312&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8582312)"/>
+<img alt="Cdudeman123" class="small" src="https://www.wikidot.com/avatar.php?userid=9968974&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9968974)"/>
+<img alt="Heck_Tech" class="small" src="https://www.wikidot.com/avatar.php?userid=8911435&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8911435)"/></div><div class='text-content'>Item#:</span> <span class="number">SCP-9054</span></div>
+
+<div class="top-right-box">
+<div class="level">Level2</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">safe</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">{$secondary-class}</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">vlam</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">caution</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="toc0"><span>Special Containment Procedures:</span></h3>
+<hr/>
+<p>Following standard Foundation protocol, SCP-9054 will be redesignated as Neutralized once the ongoing demanifestation of its internal structures, which are currently inaccessible<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup>, is complete. Observation teams will continue using ground-penetrating radar (GPR) and light detection and ranging (LiDAR) technologies to track the demanifestation progress and report any new or developing structural abnormalities.</p>
+<h3 id="toc1"><span>Description:</span></h3>
+<hr/>
+<p>SCP-9054 is an extradimensional anomaly located in New York City, New York. Before its sudden collapse, SCP-9054 was an infinitely large industrial complex with non-Euclidean<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> internal geometry. SCP-9054 was previously only accessible via an access tunnel in the city's subway system, and only in the presence of SCP-9054-1, henceforth referred to as Sr. Researcher Nicholas Feynman.</p>
+<p>Due to his unique interaction with SCP-9054, Feynman was assigned as the team lead for the project. It quickly became apparent that D-Class testing would prove futile, as all communication from within SCP-9054's internal structure failed to reach Foundation personnel outside. Additionally, all D-Class personnel who entered SCP-9054 were deemed unrecoverable.</p>
+<p>The following video and audio logs were received via Foundation communication devices after the events of Addendum SCP-9054-4.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc2"><span>Addendum SCP-9054-1: Exploratory Log - The Silo</span></h3>
+<hr/>
+<img alt="Silo.jpg" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9054/Silo.jpg"/>
+<p><strong>Foreword:</strong> Sr. Researcher Feynman was to lead a team of three, consisting of himself, one of his junior researchers, and a member of Mobile Task Force Zeta-9 ("Mole Rats"), into SCP-9054.</p>
+<hr/>
+<p><strong>BEGIN LOG</strong></p>
+<p><strong>Sr. Researcher Nicholas Feynman:</strong> We've only just entered, and it is immediately apparent that we are in an anomalous space. The vastness of this silo is hard to put into words.</p>
+<p><strong>Jr. Researcher Emilia Hernandez:</strong> Sir, how high do you think it goes? 150, no, 200 floors?</p>
+<p><strong>Feynman:</strong> Higher than that.</p>
+<p><em>The team of three stands in the center of a cylindrical room, although there does not seem to be a ceiling. At one end of the room rests a flight of steel steps, not dissimilar from a fire escape. The steps zig-zag upwards, randomly offering a brief respite from their ascent by opening into occasional platforms that encircle the wall's circumference. Rusted steel pipes of various sizes and whirring industrial fans jut out from the walls at inconsistent intervals. The pipes stretch upward for several levels before abruptly plunging back into the cement walls. An unidentified substance leaks from the pipes and runs down the walls, painting dark streaks down their lengths. Above, a pale light shines down on them, causing the web of wires that criss-cross the silo to cast dark, shifting shadows.</em></p>
+<p><strong>Feynman:</strong> Extraordinary. Emilia, get the drone up. I want a spectral analysis of that light source from above. If it’s not coming from the sun, I want to know what's producing it.</p>
+<p><strong>Hernandez:</strong> Yes, Sir.</p>
+<p><em>Hernandez kneels to open one of the several sturdy cases on the ground, revealing a medium-sized drone fitted with cameras, and removes it from its case. Before powering it on, she glances up at Feynman, waiting for a confirming nod. Within moments, she has lifted the drone out of sight.</em></p>
+<p><em>Feynman opens a laptop, enters some commands, and gives a thumbs up to Hernandez, indicating that the drone's video feed has been established. The team is silent for some time as the drone ascends.</em></p>
+<p><strong>Feynman:</strong> How high has it gone?</p>
+<p><strong>Hernandez:</strong> 500 meters now. We passed the Empire State Building a few minutes ago.</p>
+<p><em>Several more minutes pass.</em></p>
+<p><strong>Hernandez:</strong> 900 meters. I'm surprised we're even still able to communicate with the drone at this distance. Signal's still clean, but the interference from those wires is getting a bit noisy.</p>
+<p><strong>Feynman:</strong> It must be a feature of the space.</p>
+<p><em>Sgt. Konovalov Pavlovich, the senior MTF who accompanied the team, touches his earpiece. He speaks, waits a moment, then approaches the two researchers.</em></p>
+<p><strong>Pavlovich:</strong> Doc, I'm going to step outside to take a smoke break.</p>
+<p><em>Feynman lifts his head from the monitor for only a moment to glare at Pavlovich. With a scoff, he returns his eyes to the monitor, ignoring Pavlovich. Feynman and Hernandez are heard grumbling about Pavlovich's unprofessional attitude until, eventually, the sergeant returns. He is panting, as though he had sprinted back to the group.</em></p>
+<p><strong>Feynman:</strong> Smoking will kill you, you know.</p>
+<p><strong>Pavlovich:</strong> Shut the hell up.</p>
+<p><em>Feynman noticeably winces. Pavlovich does not seem to notice, lighting a cigarette. In the silence that follows, Hernandez interjects, her open palms moving downwards in a slow, soothing gesture as she attempts to mediate.</em></p>
+<p><strong>Hernandez:</strong> Calm down, Pavlovich. You're pale. What's going on?</p>
+<p><strong>Pavlovich:</strong> You both should be more worried about what's going to kill you. We've lost communication with the outside. The entrance—the exit. It's gone.</p>
+<hr/>
+<p><strong>Approximately Three Hours Later</strong></p>
+<hr/>
+<p><em>Feynman returns to the group from the access tunnel. Pavlovich can be heard requesting assistance through his headset, evidently to no avail. Hernandez is watching the drone footage on the laptop.</em></p>
+<p><strong>Feynman:</strong> The tunnel is a dead end. It's still not reacting to my presence. There's no way to get back to the subway.</p>
+<p><strong>Hernandez:</strong> 3500 meters and counting. The atmospheric pressure hasn't dropped a single millibar. There’s no ceiling. Just more of… this.</p>
+<p><strong>Feynman:</strong> Is it possible we missed something? Every single platform—every single one—is a dead end? No exits or offshoots on any floor?</p>
+<p><em>Hernandez shakes her head and scowls.</em></p>
+<p><strong>Hernandez:</strong> You watched the footage for the first two and a half hours. You know how diligent I'm being here. No, we haven't missed anything.</p>
+<p><em>Pavlovich removes his earpiece. He approaches and snatches the controller from Hernandez, tossing it into the case on the floor.</em></p>
+<p><strong>Hernandez:</strong> Hey! That's our only feed on the upper levels! We're blind without that drone!</p>
+<p><strong>Pavlovich:</strong> It isn't going to be that easy. Science and logic aren't going to work here. The only chance we have now is up.</p>
+<p><em>Feynman shoots him a glare, but it is assuaged by Hernandez, who is glancing between them. She sighs and hesitantly cuts in.</em></p>
+<p><strong>Hernandez:</strong> Pavlovich is right, Sir. We're burning battery on a drone that's recording a vacuum. We're not going to get anywhere by standing here and waiting for someone to rescue us, either. Since we've entered, we haven't seen any of the D-Class that entered before us. Maybe they found a way out?</p>
+<p><em>After a moment, without a response, Feynman abruptly closes his laptop.</em></p>
+<p><strong>Pavlovich:</strong> Fat chance. Those unaccustomed to the anomalous don't often make it out of places like these. The Foundation writes them off for a reason.</p>
+<p><em>Feynman and Hernandez stare at him, their eyes wide. He steps them, towards the steps, patting Feynman roughly on the shoulder as he passes.</em></p>
+<p><strong>Pavlovich:</strong> But you've got a Mole Rat with you.</p>
+<p><em>The group proceeds to ascend the steps for approximately six hours, Pavlovich leading, climbing nearly 3000m without locating an exit. Despite their continued ascent, the ambient light from above remains static—no brighter above, and no darker below. Pipes continue to extrude from and sink into the cement walls. Wires stretch from one end of the silo to the other, both above and below them.</em></p>
+<p><strong>END LOG</strong></p>
+<h4 id="toc3"><span>Personal Audio Log 1:</span></h4>
+<div class="blockquote">
+<div style="text-align: center;">
+<h3 id="toc4"><span>It Seems We are Trapped</span></h3>
+</div>
+<p>Emilia and the Mole Rat are somehow sleeping on these steel grates. I can barely move, let alone sleep. I swear, every time I shift my weight, I feel as though the panel I'm standing on is going to break loose and drop me 30-some-odd floors to the next platform. But some way, somehow, all of these structures are sturdy, despite seemingly being decades old and in grave disrepair.</p>
+<p>Three thousand meters. Any higher and we should be freezing, gasping for oxygen, even. But the temperature, the air pressure, everything is constant. It's as if we haven't moved at all.</p>
+<p>My legs have never felt as numb as they do now. But the only way out is up. It has to be up.</p>
+<p>Earlier, I had Emilia run some tests on both the UV signature of the overhead light and the substance leaking from the pipes.</p>
+<p>The light? It truly is sunlight. We're endlessly marching towards that warm, comforting daylight, hoping—praying that we'll reach it. That it will offer some sort of salvation from the hell we're in.</p>
+<p>Horrifically enough, it's blood in the pipes. I don't have any pretty metaphor for that.</p>
+<p>I want out of this hole. I want out of this company. Pavlovich is so… hostile. If I complain about the pain, he screams at me like a drill sergeant to get over it. To push past the pain and keep going. She doesn't know, but I notice when she moves between him and me. She's shielding me. Like she thinks I need protection. How pitiful… Never mind. It's not important.</p>
+<p>There has to be a way out. There has to be. I can't keep climbing forever. My legs will give out before then.</p>
+<p>I'm tired. Please let there be a way out.</p>
+<p>— Nicholas Feynman</p>
+</div>
+<hr/>
+<p><strong>Approximately Two Hours Later</strong></p>
+<hr/>
+<p><em>Feynman stares up from his vantage on the platform. His rapid, shallow breaths are the only sounds to break the silence. Hundreds of wires stretch from one end of the Silo to the other, intersecting and tangling in the center of the chamber. Several D-Class personnel dangle from the tangled mass, their lifeless bodies suspended at various heights by severed cables wrapped taut around their necks.</em></p>
+<p><em>Pavlovich looks away and continues the climb, muttering incoherently under his breath. Hernandez touches Feynman's shoulder before following the sergeant. Feynman does not look away for several minutes.</em></p>
+<hr/>
+<p><strong>Approximately Four Hours Later</strong></p>
+<hr/>
+<p><strong>BEGIN LOG</strong></p>
+<p><em>The team climbs another 1200m without rest, their pace slowing considerably. Eventually, they come to a stop for a rest on the staircase. Feynman and Hernandez are sitting next to one another on a step, just before the bend of the next flight of steps. Pavlovich is stationed notably lower, smoking cigarettes.</em></p>
+<p><strong>Hernandez:</strong> It might be too late to go back down.</p>
+<p><em>Hernandez chuckles, staring down between the gap in the steps. The bottom of the silo is still clearly visible, but impossibly far away.</em></p>
+<p><strong>Feynman:</strong> We could always jump.</p>
+<p><em>Hernandez elbows him in the side and scoffs awkwardly, noting the lack of sarcasm in his voice.</em></p>
+<p><strong>Hernandez:</strong> Don't talk like that. We'll find something. We have to.</p>
+<p><em>Feynman begins to cough as the smoke from Pavlovich's cigarettes rises to meet him. Hernandez waves her hand, blowing the smoke away.</em></p>
+<p><strong>Hernandez:</strong> Damnit, you'd think with all these fans, there'd be some airflow in here.</p>
+<p><em>Feynman's eyes widen, and he stands up abruptly, scanning the walls. After a moment, he points emphatically to one of the fans on the wall. It is defunct—rusted and unmoving. Dangling just above it is a severed wire.</em></p>
+<p><strong>END LOG</strong></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc5"><span>Addendum SCP-9054-2: Exploratory Log - The Tunnel</span></h3>
+<hr/>
+<img alt="Tunnel.jpg" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9054/Tunnel.jpg"/>
+<p><strong>Foreword:</strong> After Feynman's discovery, the team manages to reach the severed wire, and, after confirming it carries no current, uses it to slide down to the decommissioned industrial fan. The opening between the blades is just large enough for them to pass through. Beyond the fan is a rusted air duct that continues in a declining grade for some time. Within a few minutes, the grade becomes too steep, causing them to slide. The group is then ejected into SCP-9054's next point of interest, the Tunnel.</p>
+<hr/>
+<p><strong>BEGIN LOG</strong></p>
+<p><em>The tunnel extends bilaterally, lit by erratic, flickering crimson floodlights that endlessly cycle between blinding, sinister light and total darkness. The pipes here are significantly more worn, mimicking the same irregular pattern as the Silo, but ruptures are common. Along the walls are intake and exhaust vents, their fans whirring loudly as they struggle to ventilate the gas leaking from the screaming pipes.</em></p>
+<p><em>Once the three regain their footing, they begin to move. No words are exchanged for nearly an hour.</em></p>
+<p><strong>Feynman:</strong> How far have we gone since the vent?</p>
+<p><em>Hernandez does not hear him over the deafening sounds of the tunnel. He asks again, raising his voice.</em></p>
+<p><strong>Feynman:</strong> How far have we walked?</p>
+<p><em>She still does not hear him. He screams the question once more, and she finally turns to face him.</em></p>
+<p><strong>Hernandez:</strong> What!? Oh! I don't know! I'm just trying to keep moving, Sir.</p>
+<p><strong>Pavlovich:</strong> She's right, Doc. Don't be a bitch about it. It smells like shit, and it's loud as hell in here, but you have to keep moving. The sooner we get out of here, the better. Make tracks.</p>
+<p><em>Feynman slows his pace to create distance between himself and Pavlovich. After a moment of hesitation, Hernandez also slows her pace, allowing Pavlovich to take the lead. She lowers her voice as she nears Feynman.</em></p>
+<p><strong>Hernandez:</strong> Don't worry about him, Sir. He's just an asshole. All muscle, no brain.</p>
+<p><strong>Feynman:</strong> I'm not worried about him, Emilia. I'm fine.</p>
+<p><em>Feynman picks up his pace, creating distance between himself and Hernandez this time. She stops for a moment, staring after him before continuing. She does not close the gap.</em></p>
+<p><strong>Hernandez:</strong> Fine.</p>
+<p><strong>END LOG</strong></p>
+<h4 id="toc6"><span>Personal Audio Log 2:</span></h4>
+<div class="blockquote">
+<div style="text-align: center;">
+<h3 id="toc7"><span>I Can't Hear Myself Think</span></h3>
+</div>
+<p>This will be another night without sleep. It's so fucking loud. Every few meters, there's another pipe that can't handle the pressure. The fans in these vents sound as if they're going to fall off their axles. Even if it weren't so loud, the floor is wet. The sample I took matches the blood from the pipes. It smells so bad—like rusted metal. I can't stand it. I don't understand how Emilia and the Mole Rat can sleep through all this.</p>
+<p>And the lights… fuck the lights. It's just like a containment breach. The emergency lights turn on, and the alarm klaxons blare. It's deafening. You can't think through the noise. All you can do is cup your ears and run.</p>
+<p>I wish I were back in the Silo. At least there was a light at the end of the tunnel.</p>
+<p>I hate it here. I hate feeling like this. Like a pipe about to burst.</p>
+<p>Is this what you felt like?</p>
+<p>— Nicholas Feynman</p>
+</div>
+<hr/>
+<p><strong>Approximately Four Hours Later</strong></p>
+<hr/>
+<p><strong>BEGIN LOG</strong></p>
+<p><em>Feynman is struggling to keep pace with the others. His exhaustion is slowing him down. After some time, he stumbles and falls. Hernandez notices and stoops to help him to his feet. However, Pavlovich turns and pushes her out of the way. Pavlovich grabs Feynman's arm, pivots, and hauls him across the cold, damp floor. Feynman waves his free hand frantically in a desperate bid to anchor himself.</em></p>
+<p><em>Hernandez looks on in horror before finally opening her mouth to protest, but Pavlovich speaks first.</em></p>
+<p><strong>Pavlovich:</strong> You're pathetic. All you can do is cry and sob. Your bitching is holding us back. Get your ass up and get moving. Otherwise, I'll drag you out of this shithole myself.</p>
+<p><strong>Hernandez:</strong> Pavlovich, are you crazy!?</p>
+<p><em>Pavlovich drops Feynman into a puddle, continuing his march. Feynman struggles to lift himself to his feet, smearing blood across his cheek as he runs the back of his hand across his lip.</em></p>
+<p><strong>Pavlovich:</strong> I'm not going to have your death on my conscience when it can be so easily avoided by just moving your damn legs.</p>
+<p><strong>Approximately Two Hours Later</strong></p>
+<p><em>Hernandez is now supporting Feynman as they make their way down the tunnel. Both are panting and heaving with each breath.</em></p>
+<p><strong>Hernandez:</strong> Pavlovich, we have to take a break.</p>
+<p><em>Pavlovich offers no response. His pace does not slow, nor does he turn to face them.</em></p>
+<p><strong>Hernandez:</strong> Pavlovich!</p>
+<p><em>Pavlovich finally stops, sighing heavily in exasperation. He turns, wiping his sweaty brow and rubbing his temples, a pained expression on his face. Steam screams from a pipe somewhere behind him.</em></p>
+<p><strong>Pavlovich:</strong> Fucking Christ, I can't stand one more second of this place! We have to keep moving. If we wait any longer, we might not get out at all.</p>
+<p><strong>Feynman:</strong> What's the point!? You said it yourself, "The Foundation writes them off for a reason."</p>
+<p><strong>Pavlovich:</strong> You want to die here? You want to roll over and take the easy way out, just like your father did?</p>
+<p><em>Feynman goes silent. Hernandez's jaw drops.</em></p>
+<p><strong>Pavlovich:</strong> Yeah, I read your dossier. Grow up and move on. I'm not letting you die here, no matter how deep the grave you've dug for yourself is.</p>
+<p><em>Feynman swings his fist in a wide arc. Pavlovich does not have time to react before the force of the blow launches his temple into one of the pipes. He stumbles and falls to one knee, grasping at his head before Feynman delivers a swift kick to his exposed nose. The sergeant collapses to his side, desperately shielding his face and head. Feynman delivers another strike with the heel of his boot directly into Pavlovich's ribcage. An audible crack can be heard as Feynman stomps twice more.</em></p>
+<p><strong>Feynman:</strong> Fuck you, you piece of shit! Fuck you! How does it feel to be kicked when you're down? How does it feel to be beaten when you're weak? Fuck you! Fuck you—</p>
+<p><em>Hernandez's fist suddenly collides with Feynman's jaw. He stumbles and collapses with a splash into something wet. She looks at him in horror and does not help him to his feet. He stares blankly into space for some time, breathing heavily.</em></p>
+<p><strong>Hernandez:</strong> I'm tired of this, Nick. I get it. This place is breaking you. It's tearing you apart. But it's not just you. We're all suffering, here. It's bad enough as it is. I can't hear, I can't think, half the time, I can barely even breathe. I cannot carry you out of here on my back when all you're doing is dragging your feet in the sand.</p>
+<p><em>Feynman does not respond. Hernandez's chest is heaving as she speaks. Her contorted face is lit momentarily by the red glare of the floodlights.</em></p>
+<p><strong>Hernandez:</strong> Do you think you're the only one who's lost someone? Do you think you're the only one who struggles? We're all fighting our own demons. It's hard. I know it's fucking hard. I have people I want to see one more time. I have things I want to apologize for, and things I want to be thankful for. I don't want to die in here with regrets. I want out, just like you.</p>
+<p><strong>Hernandez:</strong> But look around you, Nick. This place doesn't make sense. It's not supposed to. We don't know when or if we're getting out of here. You want to keep crawling through your misery? Fine. Don't want my support? Fine. But Pavlovich is right. Don't drag him down with you. Don't drag me down with you.</p>
+<p><strong>Hernandez:</strong> Pavlovich may have been out of line, but at least he's <em>trying</em>. Because that's all we can do.</p>
+<p><em>She kneels to him, placing her hands on his shoulders, shaking him.</em></p>
+<p><strong>Hernandez:</strong> I know you're suffering, Nick. But you're not suffering alone… I need you to be more than this. I need you to stop trying to go down with the ship while everyone else is trying to keep it afloat. Now get up.</p>
+<p><em>Feynman silently obeys, his gaze gliding across the tunnel as he rises to his feet. His pants and shirt are stained with crimson. Under his feet, where he had collapsed, was a pile of viscera. Unidentified organs are strewn throughout the tunnel. Behind him, a pipe bursts, blood leaking from the rupture.</em></p>
+<p><strong>END LOG</strong></p>
+<h4 id="toc8"><span>Personal Audio Log 3:</span></h4>
+<div class="blockquote">
+<div style="text-align: center;">
+<h3 id="toc9"><span>I Don't Want to Be Like You</span></h3>
+</div>
+<p>You always treated me like shit. Always. You deserved worse, you piece of shit. What did I ever do to deserve that? What heinous crime did I commit against you that warranted such vicious hatred? I don't want to be like you. I won't be like you. I refuse to be like you.</p>
+<p>— Nicholas Feynman</p>
+</div>
+<hr/>
+<p><strong>Approximately Twelve hours later</strong></p>
+<hr/>
+<h4 id="toc10"><span>Personal Audio Log 4:</span></h4>
+<div class="blockquote">
+<div style="text-align: center;">
+<h3 id="toc11"><span>It Makes Me Sick</span></h3>
+</div>
+<p>The deeper into this tunnel we go, the more it stinks. The louder it gets. The more… blood.</p>
+<p>I threw up after Pavlovich. It took Emilia hours to calm me down. What am I saying? I'm still not calm. Not with all of this around me. Every step I take, my boots stick to the floor. It's becoming difficult to avoid now. I even caught Pavlovich gagging at the smell. I walk with my eyes closed most of the time. I don't want to look at it.</p>
+<p>He told us to leave him behind. I didn't want to. Honestly. Even if I did, Emilia wouldn't let that happen. Even when he insisted that he would just slow us down, that he'd break her jaw if we stayed with him. She wouldn't even bend. He couldn't deny her.</p>
+<p>He told me again to keep moving. As much as it pissed me off, he said it differently this time. Like he was pleading with me. Begging for me to get out of this place. If he weren't such an asshole, I'd have thought he was desperate for us to survive.</p>
+<p>— Nicholas Feynman</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc12"><span>Addendum SCP-9054-3: Exploratory Log - The Catwalk</span></h3>
+<hr/>
+<img alt="Catwalk.jpg" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9054/Catwalk.jpg"/>
+<p><strong>Foreword:</strong> After several more hours, the team discovers a collapsed section of the concrete wall. Past this opening is another galvanized steel walkway, similar to the ones scattered throughout the Silo. The offshoot continues for some time before opening up into SCP-9054's third point of interest: the Catwalk.</p>
+<hr/>
+<p><strong>BEGIN LOG</strong></p>
+<p><em>The Catwalk is suspended over a dark abyss. Yellow lamps dangle from the ceiling, casting a warm, amber glow down onto the walkway. Tangled, messy, and occasionally severed and sparking wires droop from an overhanging ceiling. On one side is a stark concrete wall that plunges into the inky void, and on the other, the ceiling rises and vanishes in a thick fog. Flanking the catwalk are larger, sturdier pipes that cut diagonally through the space into the ceiling above and the gloom below. It is silent here.</em></p>
+<p><em>Hernandez walks slowly behind Feynamn, supporting Pavlovich, who is grasping at his ribcage. The team is silent for several minutes, staring out into the darkness. Feynman is the first to break the silence.</em></p>
+<p><strong>Feynman:</strong> It's… peaceful here. Don't you think?</p>
+<p><em>Hernandez nods, not looking away from the void.</em></p>
+<p><strong>Feynman:</strong> It's quiet. How… strange.</p>
+<p><em>Feynman stops walking and turns towards the void, lowering himself to a sitting position and dangling his legs over the edge. He rests his arms on the guard rails and pokes his head out into the darkness. After receiving a nod of confirmation from Pavlovich, she lowers him to the ground, where he rests with his back against the guard rail. After a moment, she steps away from him, joining Feynman.</em></p>
+<p><strong>Hernandez:</strong> Are we going to talk about what happened back there?</p>
+<p><strong>Feynman:</strong> Pavlovich is a monster. He'll survive.</p>
+<p><strong>Hernandez:</strong> You know that's not what I mean. Pavlovich might be a monster, but you're not.</p>
+<p><em>Feynman doesn't respond for a moment, then sighs loudly.</em></p>
+<p><strong>Feynman:</strong> That wasn't me.</p>
+<p><strong>Hernandez:</strong> Then who was it?</p>
+<p><strong>Feynman:</strong> No one important. They're gone now. They're gone for good this time.</p>
+<p><strong>Hernandez:</strong> Good. Then you should be strong enough to stand on your own two feet from here on out.</p>
+<p><em>The two are silent again. Feynman points into the abyss, where a pinpoint of light flickers into and out of existence. The two continue watching, seeing several more instances appear and disappear. Some of the lights persist for some time, glowing brightly through the fog. Others fade almost as soon as they manifest.</em></p>
+<p><strong>Feynman:</strong> What do you think they are?</p>
+<p><strong>Hernandez:</strong> No clue. I left the drone at the bottom of the Silo, if you want to get it.</p>
+<p><strong>Feynman:</strong> I'd rather not.</p>
+<p><em>Pavlovich's subsequent chuckle evolves into a wracking cough. After a few deep breaths, he speaks.</em></p>
+<p><strong>Pavlovich:</strong> I'd like to think they're the ones that didn't make it out of places like these… The ones I had to leave behind.</p>
+<p><em>Pavlovich looks down the infinite length of the Catwalk, shaking his head.</em></p>
+<p><strong>Pavlovich:</strong> I'm not making it much further than this. I guess I'll be up there next. Maybe you two will join me soon enough, eh?</p>
+<p><em>He chuckles silently to himself. Hernandez nestles her head in between her knees, sniffling softly. After several minutes, Feynman leans back, stretching against the steel panels separating him from the endless darkness below.</em></p>
+<p><strong>Pavlovich:</strong> For what it's worth, I don't think you're like your old man. I know it's still fresh, but… Hell, you're not even that special. You've got this -1 designation, but when the covers are stripped away, you're just as normal as everyone else. Just another person with a fucked up past. Hold it together, Doc.</p>
+<p><strong>END LOG</strong></p>
+<h4 id="toc13"><span>Personal Audio Log 5:</span></h4>
+<div class="blockquote">
+<div style="text-align: center;">
+<h3 id="toc14"><span>So This is What Peace Feels Like</span></h3>
+</div>
+<p>I don't know if I've ever known what it felt like. Peace. You were always there, the embodiment of chaos. You were unavoidable. I couldn't climb high enough. I couldn't run far enough. I couldn't get away. Even when the sunshine looked so, so very close… I couldn't quite reach it. And now you're gone.</p>
+<p>Is this what you're feeling right now? Now that all of the pressure is gone? Now that all of the screams are silenced? Did you finally stop hating me when everything that pushed you over the edge ceased to exist? Did you forgive me for hating you?</p>
+<p>Can I ask you to forgive me now? Now that I know how you felt? Now that I know why you did what you did?</p>
+<p>It's okay if you don't. But I think it's worth mentioning that I forgive you.</p>
+<p>— Nick</p>
+</div>
+<hr/>
+<p><strong>Approximately One Hour Later</strong></p>
+<hr/>
+<p><strong>BEGIN LOG</strong></p>
+<p><em>Feynman climbs onto the guard railing, balancing by throwing his arms out to his sides. Hernandez and Pavlovich have each fallen asleep. He turns to look at them for a moment before turning back to the darkness in front of and below him. He adjusts his weight forward, diving into the fog below.</em></p>
+<p><strong>END LOG</strong></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc15"><span>Addendum SCP-9054-4: Exploratory Log - The Core</span></h3>
+<hr/>
+<img alt="Core.jpg" class="image" src="https://scp-wiki.wikidot.com/local--files/scp-9054/Core.jpg"/>
+<p><strong>Foreword:</strong> Feynman's body camera detaches during his fall. In its descent, it captures SCP-9054's final known point of interest: the Core.</p>
+<hr/>
+<p><strong>BEGIN LOG</strong></p>
+<p><em>The Core is presumed to lie at the bottom of the void, far below Catwalk. Above it, massive trellises suspend indefinitely into the fog. A large, softly illuminated body of water, likely a salinized solution, surrounds the structure. The network of pipes all terminate here; all notably polished and without rust or wear. Four catwalks encroach upon the Core at each of the cardinal directions. The Core itself is a worn, multi-layered sphere of unknown metallic composition. An extremely bright internal radiation source is visible through the worn panels, and a concentrated beam emanates from a circular aperture in the inner layer, from which luminous pinpoints of light ascend into the upper void.</em></p>
+<p><strong>END LOG</strong></p>
+<hr/>
+<h4 id="toc16"><span>Personal Audio Log 6:</span></h4>
+<div class="blockquote">
+<div style="text-align: center;">
+<h3 id="toc17"><span>I Miss You, Dad</span></h3>
+</div>
+<p>It took me too long to realize. All those lights? They're just fragments of what I forgot. Fragments of what was buried underneath a dark fog of pain and suffering. Memories of the times you and I spent together. The good times, not the bad.</p>
+<p>The time you took me to the park, and you pushed me on that swing so hard I nearly spun all the way around the bar.</p>
+<p>The time you cut in line to get my favorite ice cream flavor before they ran out of stock.</p>
+<p>The time you stood up for me when I was bullied in school by my own principal.</p>
+<p>The time you gave me exactly what I wanted for Christmas. And you wrapped it. You never wrapped presents. Mom always did.</p>
+<p>The time you stopped on the side of the road to help the dog that had been hit by a car. I pointed it out and wouldn't stop screaming until we went back to help it.</p>
+<p>The time you told me not to join the military, because you didn't want me to suffer the way you did.</p>
+<p>The time you told me you loved me, even though it was hard to see sometimes.</p>
+<p>The time you told me that I was everything to you. That I made you proud. That you only ever wanted the best for me.</p>
+<p>The time you apologized for everything.</p>
+<p>You hurt me. Again and again and again and again, you hurt me. But you're just like this place. You were alive. You were hopeful. You desired so much to find salvation at the top of that brutal staircase you climbed for decades. You were scared every time life blared an alarm at you. When all you could see was red, you kept marching on. No matter how many times you tore yourself to pieces, gutting and bleeding yourself over and over again, just for a little bit of peace, you kept going. Just so that you could rise above it all, suspended over a void of sorrow, sadness, hatred, and suffering. So that you could gaze out into that void and pick out the brightest moments of your life and share them with me.</p>
+<p>So that you could stop being the monster you were. And instead, become something so much softer. Something caring. Something compassionate.</p>
+<p>This is your sacred place, Dad. This is where I want to remember you.</p>
+<p>I miss you, Dad.</p>
+<p>— Nick</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="article">
+<h3 id="toc18"><span>Addendum SCP-9054-5: Demanifestation of SCP-9054</span></h3>
+<hr/>
+<p>Five days after they entered, Junior Researcher Emilia Hernandez and a wounded Sgt. Konovalov Pavlovich were discovered outside the former entrance of SCP-9054. GPR and LiDAR analysis confirmed that the internal structures of SCP-9054 had begun to degrade, and Senior Researcher Nicholas Feynman's recovery was deemed impossible. This was met with protest from Sgt. Pavlovich, who was subsequently reassigned and referred for psychological evaluation with Foundation psychologists.</p>
+<p>Though Foundation specialists believe he died on impact with the lake, Feynman's final bodycam footage does not conclusively show whether he survived the fall from the Catwalk. However, at the request of Junior Researcher Hernandez, SCP-9054 Demanifestation Observation teams are instructed not to employ thermal imaging technology and scan for signs of life during the demanifestation period.</p>
+<div class="blockquote">
+<div style="text-align: center;">
+<h3 id="toc19"><span>On the Recovery of Senior Researcher Nicholas Feynman</span></h3>
+</div>
+<p>I was made aware of Sgt. Pavlovich's continued requests for the utilization of thermal imaging and acoustics analysis during the course of SCP-9054's demanifestation period. While I understand and respect Sgt. Pavlovich's motives, I cannot recommend further attempts to recover Senior Researcher Nicholas Feynman.</p>
+<p>This recommendation is not based on an assessment of survivability; rather, it is based on the circumstances under which he became separated from the team. Feynman's body camera footage clarifies his intent. He did not fall while attempting an escape. He was not disoriented or coerced. His actions were deliberate and informed.</p>
+<p>I worked closely with Nicholas for several years prior to this incident. On many days, he relied on support from myself and his staff. In hindsight, it would have been more appropriate for him to have received a psychological evaluation, particularly following the death of his father just three months ago.</p>
+<p>However, during our final hours within SCP-9054, I observed a marked change in his demeanor: a level of clarity and determination that had not been previously evident. I believe he made this decision because he knew that it would result in salvation for both Pavlovich and me, with an understanding that the same salvation would not be offered to him. Lastly, I believe that continuing this search would not honor, but rather detract from, his choice.</p>
+<p>That is not within our rights.</p>
+<p>— Junior Researcher Emilia Hernandez</p>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. See Addendum SCP-9054.5</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Progress within SCP-9054 does not correlate with physical movement, and its internal structures may loop or shift without warning.</div>
+</div>
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-9054">SCP-9054</a>" by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1770516287" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span>, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-9054">https://scpwiki.com/scp-9054</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Filename:</strong> Silo.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9054/Silo.jpg">SCP Wiki</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Tunnel.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9054/Tunnel.jpg">SCP Wiki</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Catwalk.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9054/Catwalk.jpg">SCP Wiki</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Core.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1769523723" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/scp-9054/Core.jpg">SCP Wiki</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+
+</div></body></html></div>
+        </body>
+        </html>
+        

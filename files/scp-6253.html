@@ -1,0 +1,651 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-6253</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-6253</h1>
+            <div class='text-content'><strong>Item #:</strong> SCP-6253</p>
+<p><strong>Object Class:</strong> Thaumiel</p>
+<p><strong>Special Containment Procedures:</strong> SCP-6253 is under constant updates and development from the Church of Maxwellism Sysadmins<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> in conjunction with MTF-Kappa-10 ("Skynet") for continuing updates and support.</p>
+<p><strong>Description:</strong> SCP-6253 is the collective designation for several pieces of software, firmware, and drivers that, when installed on cybernetic implants meant for human BMI (Brain Machine Interface) provides support and defense against threats both mundane and anomalous.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> A full changelog of these threats and how SCP-6253 has been updated are available upon request.</p>
+<p>SCP-6253 was created by the Church of Maxwellism (GOI-004-C) to provide security for their own cybernetics and reached out to the Foundation for support in mass distribution beyond their own group. MTF-Kappa-10 has confirmed that SCP-6253 contains no malware or spyware. The only information that gets sent from brains implemented with SCP-6253 is detailed bug reports that are generated when an error occurs.</p>
+<p>SCP-6253 is considered anomalous for two main reasons:</p>
+<ol>
+<li>SCP-6253 is a creation of a known GOI, and therefore has anomalous origins.</li>
+<li>SCP-6253 is used to protect against anomalous hazards.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup></li>
+</ol>
+<p><strong>Addendum 6253-1:</strong> Initial Proposal</p>
+<div class="blockquote">
+<p>&lt;BEGIN LOG - CONCEALED BODY CAMERA FOOTAGE - AGENT SANTIAGO MCCAWLEY&gt;<br/>
+<strong>Foreword:</strong> A member of the Church of Maxwellism, Ines Bernard, asked for a personal meeting with a Foundation representative to propose a mutually beneficial agreement. They did not want to relay this information over the phone, and were granted a meeting at a public café.</p>
+<hr/>
+<p><em>&lt;The camera opens in the café. The camera is seen pointing towards a woman of light complexion wearing a pink hijab and dark tinted sunglasses. She is sitting in a chair. &gt;</em></p>
+<p><strong>Ines Bernard:</strong> Are you in Rajesh's D&amp;D group?</p>
+<p><strong>Agent McCawley:</strong> No, Rajesh is my brother.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+<p><strong>Ines Bernard:</strong> Nice to meet you. I'm Ines.</p>
+<p><em>&lt;She stands, and they shake hands before sitting back down&gt;</em></p>
+<p><strong>Agent McCawley:</strong> I'm Santiago, thanks. I understand you have a proposal for us?</p>
+<p><strong>Ines Bernard:</strong> Of course. Are you familiar with DeBeers Biotech?</p>
+<p><strong>Agent McCawley:</strong> You mean Neven DeBeers's company? The one trying to interface with people's brains through technology?</p>
+<p><strong>Ines Bernard:</strong> I am. I propose-</p>
+<p><strong>Barista:</strong> <em>&lt;shouting from a distance&gt;</em> I have a chocolate espresso for Marie?</p>
+<p><strong>Ines Bernard:</strong> That would be me, one moment.</p>
+<p><strong>Agent McCawley:</strong> Of course. Go on ahead.</p>
+<p><strong>Ines Bernard:</strong> May I get you anything?</p>
+<p><strong>Agent McCawley:</strong> I already ordered, thanks.</p>
+<p><em>&lt;Several seconds pass while Ms. Bernard gathers her drink.&gt;</em></p>
+<p><strong>Ines Bernard:</strong> Okay, back to business. I propose that the Maxwellists, under a team that I lead, provide software to be implanted into the chips themselves to prevent third-party or even second party data gathering by opponents both anomalous and mundane. With the advent of this technology, legislation to protect this will be slow, and may come too late. Therefore, it would be in the Foundation's interest to distribute the software on our behalf. Naturally, you would be able to peer-review the code and data for analysis. The only thing that would be sent by the software to us are bug reports.</p>
+<p><strong>Agent McCawley:</strong> A few questions- First, I understand what you mean by third-party but whom are you referring to when it comes to second-party?</p>
+<p><strong>Ines Bernard:</strong> I am referring to DBB and their owner Neven DeBeers. Data on our minds is our own to only be shared between those the individual desires. Not to be a data point for someone else's profit. This is heresy to us.</p>
+<p><strong>Agent McCawley:</strong> Next question, why would the Foundation involve itself with a private business not affiliated with the anomalous?</p>
+<p><strong>Ines Bernard:</strong> Two reasons. First, the Foundation has a great deal of injured or otherwise maimed employees with cybernetic implants and prosthetics. If the Foundation were to be compromised due to the insecurity of these devices in the future, it would be bad for those employees. Additionally, there are several anomalous infohazards and cyberhazards that this software would protect against. It is already standard issue with many within my church, the issue would be integrating it with the DBB hardware specifically.</p>
+<p><strong>Agent McCawley:</strong> So you want the Foundation to acquire some of this hardware for you, you make the tweaks needed to the software, and we would distribute it from there? What assurances, sans the code oversight, can you provide that the Maxwellists will not abuse this?</p>
+<p><strong>Ines Bernard:</strong> While I understand why you ask the question, it is a bit loaded. First, the advent of brain-to-computer hardware is already spreading the glory of WAN. However, as the technology spreads, there will more and more people who wish to abuse it. That is against WAN, and against us. As for assurances, the code oversight is a given, but I've no other alternatives to provide. Suggestions are negotiable.</p>
+<p><strong>Agent McCawley:</strong> May I ask a hard question?</p>
+<p><strong>Ines Bernard:</strong> You may.</p>
+<p><strong>Agent McCawley:</strong> You say that this is the same software that Maxwellists use to regulate signals and data into their brain. What is the worst that has happened or could potentially happen to someone with this software in their heads?</p>
+<p><strong>Ines Bernard:</strong> Brain-death. Symptoms similar to alzheimers or dementia as users find themselves unable to retain information or process too much information for too long. We have found the source for each of these errors and they have not happened again. That gives me an idea for an assurance we can provide though.</p>
+<p><strong>Agent McCawley:</strong> I'm listening.</p>
+<p><strong>Ines Bernard:</strong> As the software develops and continues, the Church of Maxwellism will be the first to receive the upgrade. Following that, any errors that need to be ironed out will be tested on within our group, and only sent out for mass use after a period of testing time. The amount of time can be determined later.</p>
+<p><strong>Agent McCawley:</strong> One more question, why wouldn't the Foundation just develop this software ourselves? We already do so for our own employees and other assets with prosthetics and cybernetics.</p>
+<p><strong>Ines Bernard:</strong> Because we're better. What your software developers do for their job…</p>
+<p><em>&lt;She lowers her sunglasses to reveal her cybernetic eyes, fitted with irises resembling yellow camera apertures&gt;</em></p>
+<p><strong>Ines Bernard:</strong> …we do for our lives.</p>
+<p><em>&lt;She raises her glasses, concealing her eyes&gt;</em></p>
+<p><strong>Ines Bernard:</strong> If it's developed by anyone else, it is a classic case of the designer not being a user.</p>
+<p><strong>Agent McCawley:</strong> Blunt, but point taken. How would you know that the Foundation wouldn't abuse this either?</p>
+<p><strong>Ines Bernard:</strong> In all our encounters with you, as well as those with the tickers and the Broken Church, you've been somewhat foolish and cold, but have never strayed away from your declared intentions to protect the world as a whole.</p>
+<p><strong>Agent McCawley:</strong> So in other words, we're predictable?</p>
+<p><strong>Ines Bernard:</strong> I hope no offense is taken, but after the <a href="/scp-5392">incident with the Tachyon Express</a>,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> I'm hoping that the Foundation knows that technology must be regulated hard before it comes into commercial use. The regulation and safety must precede the technology, not the other way around.</p>
+<p><strong>Agent McCawley:</strong> That's… an interesting comparison you'd make.</p>
+<p><strong>Ines Bernard:</strong> Why do you say that?</p>
+<p><strong>Agent McCawley:</strong> I just know some of the folks that were involved with that.</p>
+<p><em>&lt;Miss Bernard looks down towards Agent McCawley's chest.&gt;</em></p>
+<p><strong>Ines Bernard:</strong> Your heart rate just spiked and your pupils dilated. Are you okay? Did I say something wrong?</p>
+<p><strong>Agent McCawley:</strong> I assure you that you have said nothing wrong, and that I am fine. I will take your proposal to my superiors and we will go from there.</p>
+<p><strong>Barista:</strong> <em>&lt;shouting from a distance&gt;</em> Americano with oat milk for Albert?</p>
+<p><strong>Agent McCawley:</strong> That's for me. Here's my card, please text me later through this secure line for further updates.</p>
+<hr/>
+<p>&lt;END LOG&gt;</p>
+</div>
+<div class="addendum" style="background: center center no-repeat;">
+<p style="text-align: center;"><strong>Proposal: Project INDIE-MIND, a joint initiative between the Foundation and Church of Maxwellism to covertly develop and distribute an anomalous software package to protect civilian and Foundation cyborgs against hazards both anomalous and mundane that would affect them specifically.</strong></p>
+<p style="text-align: center;"><strong>COUNCIL VOTE SUMMARY:</strong></p>
+<table class="wiki-content-table">
+<tr>
+<th>YEA</th>
+<th>NAY</th>
+<th>ABSTAIN</th>
+</tr>
+<tr>
+<td>O5-01</td>
+<td>O5-03</td>
+<td>O5-11</td>
+</tr>
+<tr>
+<td>O5-02</td>
+<td>O5-10</td>
+<td></td>
+</tr>
+<tr>
+<td>O5-04</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O5-05</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O5-06</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O5-07</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O5-08</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O5-09</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O5-12</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O5-13</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<span style="white-space: pre-wrap;"> </span><br/>
+<table class="wiki-content-table">
+<tr>
+<th>STATUS</th>
+</tr>
+<tr>
+<td><strong><span style="color: #057800">PROJECT INDIE-MIND APPROVED</span></strong></td>
+</tr>
+</table>
+</div>
+<blockquote>
+<p><strong>DATE:</strong> 30/8/2024<br/>
+<strong>FROM:</strong> Dr. Tracy Farrows &lt;<span class="wiki-email">noitadnuof.pcs|sworraft#noitadnuof.pcs|sworraft</span>&gt;<br/>
+<strong>TO:</strong> O5 General Secretary &lt;<span class="wiki-email">noitadnuof.pcs|cesneg5o#noitadnuof.pcs|cesneg5o</span>&gt;<br/>
+<strong>SUBJECT:</strong> Codebase review-SCP 6253</p>
+<hr/>
+<p>Hello,</p>
+<p>Upon review of the codebase developed by the Maxwellists, our conclusion is that minor changes need to be made with respect to structure and documentation to make verification easier. I recognize a lot of the Maxwellists are self-taught but there's a lot of inconsistent naming schemes of variables that frustrates me. It's more of a standards issue than anything else.</p>
+<p>Apart from that, my team and I agree that this is free of any malware or data loggers. Only exception to this a bug report system which… kind of looks like it's being submitted as a prayer? Either way, once you get past the surface issues, there's a lot of good code and good ideas here that pass our unit tests with flying colors. Approved for release on commercial and Foundation BMI devices.</p>
+<p>Regards,<br/>
+Dr. Tracy Farrows<br/>
+Head of Medical Technology | Foundation Medical</p>
+</blockquote>
+<blockquote>
+<p><strong>DATE:</strong> 6/9/2024<br/>
+<strong>FROM:</strong> Cap. Seth Perrier &lt;<span class="wiki-email">noitadnuof.pcs|reirreps#noitadnuof.pcs|reirreps</span>&gt;<br/>
+<strong>TO:</strong> Ines Bernard &lt;<span class="wiki-email">naw.msillewxam|seni.dranreb#naw.msillewxam|seni.dranreb</span>&gt;<br/>
+<strong>SUBJECT:</strong> Bug Reports</p>
+<hr/>
+<p>Hello Ms. Bernard,</p>
+<p>Attached are the bug reports for this week. Here's the amended version of what the errors seem to entail.</p>
+<table class="wiki-content-table">
+<tr>
+<td>Tracked Commercial BMI Devices</td>
+<td>Unique Commercial devices reporting errors</td>
+<td>Tracked Foundation Devices</td>
+<td>Tracked Foundation Devices reporting errors.</td>
+<td>Total unique devices</td>
+<td>Total unique devices reporting errors</td>
+</tr>
+<tr>
+<td>22,852</td>
+<td>89</td>
+<td>127</td>
+<td>22</td>
+<td>22,979</td>
+<td>111</td>
+</tr>
+</table>
+Error categories that were reported.<br/>
+<table class="wiki-content-table">
+<tr>
+<td>Total errors</td>
+<td>Error Code</td>
+<td>Error code Definition</td>
+</tr>
+<tr>
+<td>41</td>
+<td>22</td>
+<td>Limbs Not Found<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup></td>
+</tr>
+<tr>
+<td>39</td>
+<td>144</td>
+<td>Unable to contact nerve 44<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup></td>
+</tr>
+<tr>
+<td>25</td>
+<td>222</td>
+<td>Neural Garbage Collector Error<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup></td>
+</tr>
+<tr>
+<td>4</td>
+<td>900</td>
+<td>Unknown process detected</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>Unable to ping/connect to nervous system on start up</td>
+</tr>
+</table>
+<p>I took the liberty of following up on the two instances of error code 1 and both of them were patients who were just coming to after their respective BMI surgeries. The bug reports are the equivalent of plugging in a USB drive, only to realize it was upside down. Both patients are well now. Not sure about the unknown processes, I think it's software implemented by the manufacturer that's still running? I can't be sure.</p>
+<p>Regards,<br/>
+Captain Seth Perrier<br/>
+Head of BMI Software Development | MTF-Kappa-10 "Skynet"</p>
+</blockquote>
+<blockquote>
+<p><strong>DATE:</strong> 7/9/2024<br/>
+<strong>FROM:</strong> Ines Bernard &lt;<span class="wiki-email">naw.msillewxam|seni.dranreb#naw.msillewxam|seni.dranreb</span>&gt;<br/>
+<strong>TO:</strong> Cap. Seth Perrier &lt;<span class="wiki-email">noitadnuof.pcs|reirreps#noitadnuof.pcs|reirreps</span>&gt;<br/>
+<strong>SUBJECT:</strong> Re: Bug Reports</p>
+<hr/>
+<p>Captain Perrier,</p>
+<p>I agree with your assessment. It's threads running from DBB that are trying to figure out what's not sending signals out. It's all debugging code. We're on top of it. Will update the repository later today.</p>
+<p>As for the nerve 44 issue, I think that's because so many prosthetics are in the head that they replace or remove the nerve endings in the scalp. It's like having a 'change oil' light on in an electric car. I'll need to update the processes that check for hardware in that region.</p>
+<p>Ines Bernard<br/>
+Lead@WAN's Holy Sysadmins</p>
+<p><em>"Data Integrity is Life Integrity"</em></p>
+</blockquote>
+<p><strong>Addendum 6253-2:</strong> Changelog</p>
+<div class="blockquote">
+<p><strong>SCP-6253 Patch Notes. September 13, 2024</strong></p>
+<blockquote>
+<p>Version 1.01</p>
+</blockquote>
+<ul>
+<li>Added the ability for BMI to send spoof messages when the DBB debugging code is running to make them believe the issue is server side. This is a temporary fix while the Foundation plants more assets into DBB's hierarchy to gain more control over administrative decisions.</li>
+<li>Added ability for BMI to better check which parts of the patient's body are installed, which will result in less false errors about connecting to certain nerves that are no longer present.</li>
+<li>Fixed Neural Garbage Collector not removing suicidal thoughts. This was caused by patients who were having trouble adapting to the various traumas that granted them their prosthetics. Normally, their brains would be removing them on their own, but the NGC flagged it as a harmful thread that needed to be removed. Which would lead to users trying to keep thinking about harming themselves to complete their previous thoughts, which would lead to the NGC flagging it again. As much as it sucks to have to allow this, we have to allow natural brain processes to remain uninterrupted. Even if it may hurt them, it's their thoughts to have.</li>
+<li>Fixed an issue where the smell of lavender while listening to "Yellow Submarine" by the Beatles would cause users to lose connection to cybernetic limbs.</li>
+</ul>
+<p><strong>Roadmap:</strong></p>
+<p>As we move forward with this project, we will focus on a few main things.</p>
+<p>1. Maintaining operational security and secrecy from those who would wish to infiltrate the hardware, in particular DBB and other commercial BMI developers.<br/>
+2. Protecting individual and free thought, without outside influence.<br/>
+3. Protecting users from anomalous influence, specifically influence that would take advantage of their BMI interfaces.</p>
+<p><strong>Status:</strong> <span style="color: green">Approved.</span> by Foundation Medical and MTF-Kappa-10 Skynet.</p>
+</div>
+<div class="blockquote">
+<p><strong>SCP-6253 Patch Notes. September 20, 2024</strong></p>
+<blockquote>
+<p>Version 1.02</p>
+</blockquote>
+<ul>
+<li>Fixed an issue where certain prosthetic eyes would attempt to look farther in one direction outside of their peripheral view than what was possible, then not coming back to true center once relaxed. This issue was hardware specific.</li>
+<li>Added to the functionality with which users will repel visual cognitohazards. See developer comments.</li>
+<li>Fixed bug where smelling lavender and sneezing caused loss of connection to cybernetic limbs. This appears to have been an edge case where certain sensory stimuli act as naturally occurring cognitohazards for users. We will stay on top of these as much as possible.</li>
+</ul>
+<p><strong>Developer Comments:</strong></p>
+<p>We encountered our first anomalous hazard in the wild when a Foundation employee viewed an anomalous image which had their organic sensory organs perceive another dimension/reality. The firmware detected that an outside process was operating and restarted as intended and the issue was resolved. Using the data from that incident, we have developed a system that will log the stimuli, reboot the user's occipital lobe,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-9')">9</a></sup> then censor the hazard in the user's vision preventing further errors, in addition to removing the image from the user's recallable memory. Beta versions of similar software for auditory, ulfactory, tactile, and other senses are in development.</p>
+<p><strong>Status:</strong> <strong><span style="color: green">Approved.</span></strong> by Foundation Medical and MTF-Kappa-10 Skynet.</p>
+</div>
+<div class="blockquote">
+<p><strong>SCP-6253 Patch Notes. September 27, 2024</strong></p>
+<blockquote>
+<p>Version 1.03</p>
+</blockquote>
+<ul>
+<li>Fixed an issue where users wearing high-heels would not properly convey the difference in height to the cerebellum resulting in balance issues.</li>
+<li>Fixed an issue where the on-demand sleep function<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-10" onclick="WIKIDOT.page.utils.scrollToReference('footnote-10')">10</a></sup> would interfere with the Neural Garbage Collectors operations.</li>
+<li>Updated the software that determined whether or not an anomalous affect was voluntarily induced or not.</li>
+<li>Made improvements to firmware preventing outside parties from discovering the software.</li>
+<li>Fixed an issue where scratching an itch while smelling lavender caused loss of connection to cybernetic limbs.</li>
+</ul>
+<p><strong>Developer Comments:</strong><br/>
+For reasons yet unknown, Lavender seems to be a naturally occurring cognitohazard when used in conjunction with certain bodily actions. This may have been showing up in cyborgs before the project INDIE-MIND but we never had enough data to pin down the source. We are working with the Foundation to determine a long-term solution while we patch specific issues in the short term. Op-sec operations with preventing visibility from DBB remain secure but they continue to press on. We're on top of them and changes made to firmware regarding these changes should not taken to mean that DBB is getting closer to discovering the operation. They aren't.</p>
+<p><strong>Status:</strong> <strong><span style="color: green">Approved.</span></strong> by Foundation Medical and MTF-Kappa-10 Skynet.</p>
+</div>
+<div class="blockquote">
+<p><strong>SCP-6253 Patch Notes. October 4, 2024</strong></p>
+<blockquote>
+<p>Version 1.04</p>
+</blockquote>
+<ul>
+<li>Added to functionality that will repel against auditory cognitohazards. See developer comments.</li>
+<li>Added a feature that removes some harmful memories of nightmares and dreams upon waking up. This mimics the brain's natural defense against dream based cognitohazards by forgetting the dream upon waking up. This will decrease the amount of anomalous/unknown processes going forward by an estimated 34%.</li>
+<li>Fixed an issue where smelling lavender and having suicidal thoughts caused loss of connection to cybernetic limbs.</li>
+</ul>
+<p><strong>Developer Comments:</strong><br/>
+We are especially proud of the security features we've built and deployed today.</p>
+<ul>
+<li>The Auditory defense system will detect the auditory behavior in real time and cancel it out similar to noise-cancelling headphones. Getting the system to recognize the hazard in real-time, and cancel it out in a timeframe before any anomalous effects can take hold was difficult but worth it. This has been in the proverbial oven for some time.</li>
+</ul>
+<ul>
+<li>In a similar manner, the NGC's ability to remove memories was extremely limited for the sake of memory autonomy. However, this got in the way of the brain's natural amnestic process of forgetting nightmares or other bad dreams that may contain dangerous oneirohazards.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-11" onclick="WIKIDOT.page.utils.scrollToReference('footnote-11')">11</a></sup> We've found a way to have both organic and synthetic components work together on this.</li>
+</ul>
+<p>As both of these systems are new, we are keeping a close eye on them and will make fixes as needed.</p>
+<p><strong>Status:</strong> <strong><span style="color: green">Approved.</span></strong> by Foundation Medical and MTF-Kappa-10 Skynet.</p>
+</div>
+<p><strong>Addendum 6253-3:</strong> G.O.C. Involvement</p>
+<p>On October 6th, 2024, the following email was delivered to the Foundation Department of Public Outreach from the G.O.C. Relations Office.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-12" onclick="WIKIDOT.page.utils.scrollToReference('footnote-12')">12</a></sup></p>
+<blockquote>
+<p><strong>DATE:</strong> 6/10/2024<br/>
+<strong>FROM:</strong> GOC Relations Office &lt;<span class="wiki-email">cog.nu|eciffosnoitaler#cog.nu|eciffosnoitaler</span>&gt;<br/>
+<strong>TO:</strong> Foundation Dept of Public Outreach &lt;<span class="wiki-email">noitadnuof.pcs|OPD#noitadnuof.pcs|OPD</span>&gt;<br/>
+<strong>SUBJECT:</strong> Urgent Inquiry regarding DeBeers Biotech.<br/>
+<strong>ATTACHED:</strong> scpmalware-logs.zip</p>
+<hr/>
+<p>Hello Ms. Long,</p>
+<p>I am glad to finally have the chance to work with you. My predecessor, Victor Eckelberg, spoke highly of you.</p>
+<p>To business then. I am here because we have entered into a relationship with DeBeers Biotech. They have contracts with the GOC to provide cybernetic prosthetics and enhancements to members of the GOC who need them.<br/>
+<br/>
+You can imagine our surprise when DeBeers Biotech came to us with proof that they had been compromised and attacked from servers and operatives that belong to the SCP Foundation. To be clear, DBB as a business does not know it was the SCP Foundation, but their server logs and other forensic cyberanalysis has shown traces to known Foundation servers. (See attached) Ignoring the fact that you have taken action against a company which we have verified does not have anomalous ties, this can very easily be construed as an attempt to have access to data on our employees' prosthetics. Before we throw around words like 'espionage' and 'abeyance of relations', I will give you an opportunity to explain yourselves.</p>
+<p>At this time we are demanding the following:<br/>
+1. A total suspension of the aforementioned activities that have brought us here.<br/>
+2. Access to all documentation concerning those aforementioned activities.<br/>
+3. Names and records of all personnel involved.</p>
+<p>Failure to perform the above steps will result in retaliatory action against Foundation assets and subsidiary companies.</p>
+<p>Regards,<br/>
+Michael Abinaldi<br/>
+G.O.C. Director of Relations.</p>
+</blockquote>
+<blockquote>
+<p><strong>DATE:</strong> 6/10/2024<br/>
+<strong>FROM:</strong> Foundation Dept of Public Outreach &lt;<span class="wiki-email">noitadnuof.pcs|OPD#noitadnuof.pcs|OPD</span>&gt;<br/>
+<strong>TO:</strong> GOC Relations Office &lt;<span class="wiki-email">cog.nu|eciffosnoitaler#cog.nu|eciffosnoitaler</span>&gt;<br/>
+<strong>SUBJECT:</strong> Re: Urgent Inquiry regarding DeBeers Biotech.</p>
+<hr/>
+<p>Hello Mr. Abinaldi,</p>
+<p>I am glad to finally able to work with you. I had hoped our first meeting would under better circumstances, but here we are.</p>
+<p>Admittedly, you have caught me off-guard as at this time, I have no idea what you are talking about. I will take some time to review the evidence provided and investigate on my end. I hope we can get this matter settled soon. I will respond back to you before end of business today. These are very serious allegations and I want to assure you that I am taking them seriously.</p>
+<p>Sincerely,<br/>
+Catherine Long<br/>
+Head of Public Outreach<br/>
+SCP Foundation</p>
+</blockquote>
+<div class="blockquote">
+<p>&lt;BEGIN LOG- PHONE TRANSCRIPT- Department of Public Outreach - Catherine Long direct line calling MTF Kappa-10 Cpt. Seth Perrier&gt;</p>
+<p><strong>Catherine Long:</strong> Hi, this is Catherine Long for Captain Seth Perrier.</p>
+<p><strong>Cpt. Seth Perrier:</strong> Speaking.</p>
+<p><strong>Catherine Long:</strong> Who the ████ authorized an op against the GOC?</p>
+<p>&lt;END OF RELEVANT LOG&gt;</p>
+<hr/>
+<p><strong>Afterword:</strong> Due to the large amount of insults, shouting, and profanities, the remainder of the phone call has been omitted from the formal record. Ms. Long was briefed on Project INDIE-MIND and SCP-6253.</p>
+</div>
+<blockquote>
+<p><strong>DATE:</strong> 6/10/2024<br/>
+<strong>FROM:</strong> Foundation Dept of Public Outreach &lt;<span class="wiki-email">noitadnuof.pcs|OPD#noitadnuof.pcs|OPD</span>&gt;<br/>
+<strong>TO:</strong> GOC Relations Office &lt;<span class="wiki-email">cog.nu|eciffosnoitaler#cog.nu|eciffosnoitaler</span>&gt;<br/>
+<strong>SUBJECT:</strong> Re:Re: Urgent Inquiry regarding DeBeers Biotech.<br/>
+<strong>ATTACHED:</strong> Amended_6253_documentation.zip</p>
+<hr/>
+<p>Mr. Abinaldi,</p>
+<p>To address your demands point by point.</p>
+<p><em>1. A total suspension of the aforementioned activities that have brought us here.</em></p>
+<p>Agreed, all activities concerning the project have been halted. Your partners at DBB will be able to confirm as much.</p>
+<p><em>2. Access to all documentation concerning those aforementioned activities.</em></p>
+<p>See attached for what I have been permitted to share with you. The short version is that the Foundation saw that our own employees with cybernetic implants were vulnerable to certain hazards that would affect them specifically. After developing software for them, we saw that commercial BMI technology was likely going to expose users to the anomalous potentially causing an issue with the veil, as well as cause potential harm to a portion of the population. Project INDIE-MIND was meant to intervene on their behalf, not knowing of DBB's connection with the GOC. Had we known, we would have come to you initially in a joint venture.</p>
+<p><em>3. Names and records of all personnel involved.</em></p>
+<p>For the safety of the personnel involved, we will not be revealing that at this time.</p>
+<p>I recognize that these alone may not put this behind us. What sort of concessions are your superiors looking for?</p>
+<p>Sincerely,<br/>
+Catherine Long<br/>
+Head of Public Outreach<br/>
+SCP Foundation</p>
+</blockquote>
+<blockquote>
+<p><strong>DATE:</strong> 6/10/2024<br/>
+<strong>FROM:</strong> GOC Relations Office &lt;<span class="wiki-email">cog.nu|eciffosnoitaler#cog.nu|eciffosnoitaler</span>&gt;<br/>
+<strong>TO:</strong> Foundation Dept of Public Outreach &lt;<span class="wiki-email">noitadnuof.pcs|OPD#noitadnuof.pcs|OPD</span>&gt;<br/>
+<strong>SUBJECT:</strong> Re:Re:Re: Urgent Inquiry regarding DeBeers Biotech.</p>
+<hr/>
+<p>Hello Ms. Long,</p>
+<p>My response to the individual points are as follows:</p>
+<p><em>Agreed, all activities concerning the project have been halted. Your partners at DBB will be able to confirm as much..</em></p>
+<p>We have confirmed as much. Thank you.</p>
+<p><em>See attached for what I have been permitted to share with you. The short version is that the Foundation saw that our own employees with cybernetic implants were vulnerable to certain hazards that would affect them specifically. After developing software for them, we saw that commercial BMI technology was likely going to expose users to the anomalous potentially causing an issue with the veil, as well as cause potential harm to a portion of the population. Project INDIE-MIND was meant to intervene on their behalf, not knowing of DBB's connection with the GOC. Had we known, we would have come to you initially in a joint venture.</em></p>
+<p>There's a few holes to be poked in your story here. One being that the software in question seems to prevent non-anomalous issues as well as anomalous ones. This doesn't fall in with the Foundation's usual MO of focusing just on the anomalous. Furthermore, any potential issues with the veil or public safety would be well within either of our respective entities ability to police, so that point doesn't make sense.</p>
+<p><em>For the safety of the personnel involved, we will not be revealing that at this time.</em></p>
+<p>I suppose this is fair enough. It isn't relevant. My superiors are not looking for concessions, they are however looking for blood and to one-up the Foundation. To give some context, the owner and C.E.O. of DBB, Neven DeBeers, has multiple contracts with the UN and GOC across his various companies. These contracts are vital to continued operations. He is, quite understandably, upset about this breach of security and is calling on the GOC to defend their mutual interest. Make no mistake Ms. Long, we <em>will</em> protect our mutual interest.</p>
+<p>I will report to my superiors and go from there.</p>
+<p>Regards,<br/>
+Michael Abinaldi<br/>
+G.O.C. Director of Relations.</p>
+</blockquote>
+<p>Members of the Church of Maxwellism associated with SCP-6253 were advised to lockdown until Foundation staff could guarantee their safety. Cpt. Seth Perrier called Ines Bernard to relay the message to her.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-13" onclick="WIKIDOT.page.utils.scrollToReference('footnote-13')">13</a></sup> Cpt. Perrier reported she was distressed. Worried, Cpt. Perrier requested a wellness check. Agent McCawley was dispatched as he was the only person Ms. Bernard has met from the Foundation personally.</p>
+<div class="blockquote">
+<p>&lt;BEGIN LOG - CONCEALED BODY CAMERA FOOTAGE - AGENT SANTIAGO MCCAWLEY&gt;</p>
+<hr/>
+<p><em>&lt;Agent McCawley approaches the residence of Ms. Bernard. The house is small, and the lawn is overgrown. Agent McCawley knocks on the door, holding a coffee beverage in his hand.&gt;</em></p>
+<p><strong>Ines Bernard:</strong> Who is it?</p>
+<p><strong>Agent McCawley:</strong> It's Santiago, with the Foundation. I'm just here to check up on you.</p>
+<p><strong>Ines Bernard:</strong> Why?</p>
+<p><strong>Agent McCawley:</strong> Captain Perrier was worried on the phone when you and he spoke.</p>
+<p><strong>Ines Bernard:</strong> How do I know it's you? Are you in Rajesh's D&amp;D group?</p>
+<p><strong>Agent McCawley:</strong> I'm sorry what? Oh! Wait No! Rajesh is my brother.</p>
+<p><strong>Ines Bernard:</strong> Are you armed?</p>
+<p><strong>Agent McCawley:</strong> I am. I can leave it in my car if you want.</p>
+<p><strong>Ines Bernard:</strong> There's a metal milk box to the left of the door on your side. Leave it there. I'll be able to assure it's there.</p>
+<p><em>&lt;Agent McCawley pauses for a few seconds reaching to remove his service pistol, unloading and clearing the chamber before putting it in the crate.&gt;</em></p>
+<p><strong>Agent McCawley:</strong> Your house, your rules.</p>
+<p><em>&lt;Just as Agent McCawley's hands are clear of the box, the metal crate closes shut. The door opens showing Ms. Bernard.&gt;</em></p>
+<p><strong>Ines Bernard:</strong> It's magnetically sealed, you'll get it back once you leave.</p>
+<p><strong>Agent McCawley:</strong> You get visitors with guns often?</p>
+<p><strong>Ines Bernard:</strong> I get visitors with smartphones and I don't know what their phones will scan for sometimes.</p>
+<p><strong>Agent McCawley:</strong> Should I put my phone in there too?</p>
+<p><strong>Ines Bernard:</strong> No, Foundation security is adequate enough. You can keep your phone and your concealed camera.</p>
+<p><strong>Agent McCawley:</strong> Ah… you know about that. Well, what about this chocolate espresso?</p>
+<p><strong>Ines Bernard:</strong> Bit overboard for a wellness check don't you think?</p>
+<p><strong>Agent McCawley:</strong> Do you want the drink or not?</p>
+<p><em>&lt;Ms. Bernard takes the drink, sniffs at the drink and pauses for a few seconds before her eyes blink rapidly.&gt;</em></p>
+<p><strong>Agent McCawley:</strong> You won't detect anything other than chocolate and coffee. I assure you.</p>
+<p><strong>Ines Bernard:</strong> A Foundation employee comes to my door after an international crisis, has been perfectly compliant with my requests and offers me coffee? You wouldn't be a little unnerved?</p>
+<p><strong>Agent McCawley:</strong> I suppose you have a point, but if you're looking for a more practical reason, the Foundation wants to look out for its asset and business partner. May I come in?</p>
+<p><em>&lt;Ms. Bernard looks up and down Agent McCawley's person with her pupils dilating and contracting.&gt;</em></p>
+<p><strong>Ines Bernard:</strong> You're clear.</p>
+<p><em>&lt;Ms. Bernard takes a long sip of the beverage, waving Agent McCawley in with her free hand. They progress to a set of furniture&gt;</em></p>
+<p><strong>Ines Bernard:</strong> Have a seat, can I get you anything?</p>
+<p><strong>Agent McCawley:</strong> <em>&lt;sits down&gt;</em> No thanks. I'm here because when you spoke with Captain Perrier, you mentioned trying to find another partner?</p>
+<p><strong>Ines Bernard:</strong> I was angry. I didn't think through the statement.</p>
+<p><strong>Agent McCawley:</strong> Do you still feel like you want to find another partner for INDIE-MIND?</p>
+<p><strong>Ines Bernard:</strong> No. There's realistically no other partner to turn to. I want to preserve the project but… well, what's the latest you have heard?</p>
+<p><strong>Agent McCawley:</strong> GOC got the UN-joined countries to increase taxes on the Foundation's front companies. It's temporary but it will cost the Foundation a lot of money and cause a lot of layoffs. It's actually pretty smart for the GOC's part. It's non-violent, earns them a profit, shows their business partners they can enforce and protect their interests, and we can't retaliate otherwise they respond back and… well no one would win when that happens. Right now, INDIE-MIND can still function making code for the Foundation, and the Maxwellists, but the general population is a no-go.</p>
+<p><strong>Ines Bernard:</strong> Is that it?</p>
+<p><strong>Agent McCawley:</strong> What would you have us do?</p>
+<p><strong>Ines Bernard:</strong> Blackmail Neven DeBeers into allowing for the project to continue!</p>
+<p><strong>Agent McCawley:</strong> Even if you could get the population to care about another stupid billionaire being stupid story, trying to threaten him would only involve the GOC further.</p>
+<p><strong>Ines Bernard:</strong> You can't use a memetic or cognitohazard on him?</p>
+<p><strong>Agent McCawley:</strong> Assuming he wasn't inoculated against that sort of thing before, he definitely would be now. That's what the GOC does with their business partners.</p>
+<p><strong>Ines Bernard:</strong> So you can do nothing?</p>
+<p><strong>Agent McCawley:</strong> I didn't say that.</p>
+<p><em>&lt;Ms. Bernard raises her eyebrows.&gt;</em></p>
+<p><strong>Ines Bernard:</strong> So you have something in the works then.</p>
+<p><strong>Agent McCawley:</strong> For OPSEC reasons, it's better I don't tell you. I recognize it's a lot to ask for a shady Foundation agent who shows up at your house, but please trust me. Or if you don't trust me, trust that the Foundation is a powerful entity. We're not pushovers.</p>
+<p><strong>Ines Bernard:</strong> You lose your fair share of battles. What makes you certain you'll win this one?</p>
+<p><strong>Agent McCawley:</strong> Because we have something that the GOC and DeBeers don't.</p>
+<p><strong>Ines Bernard:</strong> And that is?</p>
+<p><strong>Agent McCawley:</strong> Your software.</p>
+<hr/>
+<p><em>&lt;END LOG&gt;</em></p>
+</div>
+<p><strong>Addendum 6253-4:</strong> DBB showcase and Fallout<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+One month after the events of SCP-6253's discovery by the GOC, DeBeers Biotech announced its plans to become public on the New York Stock Exchange. To increase public opinion, a public showcase of DeBeers Biotech's line of prosthetics and BMI software was orchestrated.</p>
+<div class="blockquote">
+<p>&lt;BEGIN LOG - DEBEERS BIOTECH PUBLIC SHOWCASE - 7/1/2024-1100 HOURS.&gt;</p>
+<hr/>
+<p><em>&lt;The keynote address begins with an introductional video. In the video, several persons are depicted. A pre-pubescent child with autism. A amputee soldier wounded in combat. A paramedic who after the September 11 attacks on the World Trade Center suffers from cranial damage resulting in impaired cognition and function. As the video progresses, we are shown a glimpse of the 'onboarding' process for these individuals to gain BMI implements. The child is shown where the chip would go in his brain via an MRI. The soldier is having their measurements taken of their shoulder by doctors in lab coats. The paramedic is being operated on in a craniotomy medical theater while surgeons add BMI hardware to their person. They are all shown to be engaging and active with their respective families throwing an American football. The video closes on all three facing the camera holding up a large sign that says: "Thank you DBB!".</em></p>
+<p><em>The video closes and we see the auditorium where the event is held. From stage left, four cyborgs of varying gender and ethnicity are carrying a palanquin. The cyborgs are all clad in shorts, sleeveless shirts, or sports bras.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-14" onclick="WIKIDOT.page.utils.scrollToReference('footnote-14')">14</a></sup> Once they reach center stage, they all squat down and rest the palanquin on the ground. The cover for the passenger compartments is opened revealing DeBeers Biotech's owner and CEO Neven DeBeers inside. He steps out, shaking the hands of all the cyborgs before they take the palanquin off stage right.&gt;</em></p>
+<p><strong>Neven DeBeers:</strong> Give me one second, folks, I have to rate my Uber. <em>&lt;He pulls out a phone from his suit pocket.&gt;</em> Four stars. Was good, but I prefer a Circuit.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-15" onclick="WIKIDOT.page.utils.scrollToReference('footnote-15')">15</a></sup> <em>&lt;pauses for laughter&gt;</em> Thank you all for coming here and for being a part of this extraordinary technology. A few short years ago, prosthetics were about replacing what had been lost with wooden stumps to make sure that you didn't fall over when you limped. Over time, these became realistic albeit static-looking limbs that wouldn't move where you wanted them to. After that, unfortunately, the world wars caused so many injuries and dismemberments that we had a lot of prosthetics made and the science advanced farther and farther giving us limbs that would bend but only had a set of predetermined functions, governed by gravity or some other force. We've had to cheat with physics to make these work. Now, DeBeers Biotech is taking the next step forward and actions that your brain takes will now be governed by actions directly asked for by the user. <em>&lt;Cheering starts to build&gt;</em> No more cheating physics! No more peg-legs! No more limbs that won't do want you want them to. These are real limbs, and they are as easy to get as a new prescription of glasses! <em>&lt;Cheering and applauding has reached its apex and the whole of the audience has joined in.&gt;</em></p>
+<p><strong>Neven DeBeers</strong>: Thank you. I am glad to be joined by several people in attendance who DBB has helped regain full use of their bodies. We're not just here to restore limbs. We're here to restore function to brains that needed help. People who are born and lack the ability to access certain parts of their brain, people who experience loss of brain function following a traumatic injury, we are able to make sections of the brain that lose function replicable with our proprietary hardware that can be installed via neurosurgery. Not only can those function identical to the brain, but you the user can… <em>&lt;DeBeers puts his finger to his earpiece.&gt;</em> I'm being told that someone in the audience needs medical care. Can we please make way in the crowd for medical personnel? Dr. Geppetto, can you assist please?<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-16" onclick="WIKIDOT.page.utils.scrollToReference('footnote-16')">16</a></sup> <em>&lt;There is silence from the stage for three minutes while medical personnel work to escort the audience member.&gt;</em> This is what happens when I talk for too long. Now, we have whole sections of the-</p>
+<p><strong>Female Audience Member:</strong> <em>&lt;screaming&gt;</em> I can't feel my legs!</p>
+<p><strong>Neven DeBeers</strong>: <em>&lt;continuing&gt;</em>the- brain that-um, sorry can you not scre- Can we please have the paramedics come back, please? It's okay miss, it's going to be all right.</p>
+<p><em>&lt;At this point the audience volume is starting to increase. There is screaming, yelling, and loud voices. It gradually starts with a few loud sources before increasing and becoming more frequent.&gt;</em></p>
+<p><strong>Neven DeBeers</strong>: Everyone, please calm down. I'm sure it's nothing to worry about. It's going to be- <em>&lt;Mr. DeBeers's security detail rushes on stage to escort him out. One of the members of his security detail collapses to the ground as their left leg buckles.&gt;</em></p>
+<p><strong>Neven DeBeers</strong>: Jeff what's happened?</p>
+<p><strong>Jeff</strong>: <em>&lt;audible over DeBeers's microphone.&gt;</em> Get him out of here! Now! <em>&lt;The remainder of the detail rushes DeBeers out of the stage. Jeff pulls up the pant leg to show his cybernetic limb, presumably to attempt to troubleshoot the issue.&gt;</em></p>
+<p><strong>Neven DeBeers</strong>: Is it only cyb-? <em>&lt;The speech and the stream cut out here. Shortly after the stream shows a graphic displaying the message: "The stream will return shortly!" with the DeBeers Biotech logo in the background.&gt;</em></p>
+<hr/>
+<p>&lt;END LOG&gt;</p>
+</div>
+<div class="blockquote">
+<p>&lt;BEGIN LOG - PHONE TRANSCRIPT - Department of Public Outreach - Catherine Long direct line calling GOC Relations Office - 7/2/2024-0905 HOURS&gt;</p>
+<hr/>
+<p><strong>Catherine Long:</strong> Mr. Abinaldi, good morning.</p>
+<p><strong>Michael Abinaldi:</strong> Ms. Long, is this about what I think it is?</p>
+<p><strong>Catherine Long:</strong> Your business partner dropped the ball last night. The Foundation would like to pick it back up.</p>
+<p><strong>Michael Abinaldi:</strong> I'm listening.</p>
+<p><strong>Catherine Long:</strong> You know as well I do that there is no conventional reason for last night's debacle at the DBB showcase. All the victims were augmented persons and patients with DBB. Furthermore, if their records do not show any external connection interfacing with their brains, then the only cause must be internal.</p>
+<p><strong>Michael Abinaldi:</strong> How do you intend to help?</p>
+<p><strong>Catherine Long:</strong> Remember Project Indie-Mind? We want to offer that software to the GOC, and release it to the general population to protect them from hazards. We're going to reintroduce it through a new company. One I think the GOC would love to do business with.</p>
+<p><strong>Michael Abinaldi:</strong> I assume there's a catch here.</p>
+<p><strong>Catherine Long:</strong> Have the UN lower its taxes back to what they were previously. Compensate us for damages done. That cost us nearly a billion dollars.</p>
+<p><strong>Michael Abinaldi:</strong> No. If you play your cards right with your new business venture, the contracts you could get will help you make up that money in due time. As for lowering taxes going forward, I'll need to take that up with the higher-ups. Furthermore, we will want to oversee anything that gets put into our people's brains.</p>
+<p><strong>Catherine Long:</strong> Fair enough, on both points.</p>
+<p><strong>Michael Abinaldi:</strong> To be clear, this is what Foundation cyborgs use in the field?</p>
+<p><strong>Catherine Long:</strong> Correct.</p>
+<p><strong>Michael Abinaldi:</strong> And what would this cost us?</p>
+<p><strong>Catherine Long:</strong> The bean counters are still coming up with a cost, right now I'm just gauging interest. One thing I want to note is that this isn't a subscription service. One flat fee per user, including continuous support for the rest of their natural life.</p>
+<p><strong>Michael Abinaldi:</strong> That's awfully generous of you.</p>
+<p><strong>Catherine Long:</strong> There were… ethical concerns if we charged people a monthly fee to use their own bodies.</p>
+<p><strong>Michael Abinaldi:</strong> There's two questions I have to ask that I know will get asked later, How do we know that the Foundation is acting in good faith and didn't sabotage DBB's showcase to make this deal happen? Secondly, why didn't the Foundation just make this software company to begin with?</p>
+<p><strong>Catherine Long:</strong> You said it yourself when this issue originally occurred, DBB had confirmed the software had removed itself. That's our alibi. As for why we didn't do this sooner, at the time, DBB was at the forefront of BMI software. We knew they were going to get the most business so changing their product would help more people than selling our own. You should strike on this while the iron is hot. That way, you have substantial cause to exit the contract with DBB without jeopardizing anything else.</p>
+<p><strong>Michael Abinaldi:</strong> I'll present this later today. Good day Miss Long.</p>
+<p><strong>Catherine Long:</strong> Good day Mr. Abinaldi.</p>
+<hr/>
+<p>&lt;END LOG&gt;</p>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">INCOMING CALL</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- CALLER UNKNOWN</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p>&lt;BEGIN LOG - PHONE TRANSCRIPT - Private cellular phone of Ines Bernard - calling Catherine Long direct line&gt;</p>
+<hr/>
+<p><strong>Catherine Long:</strong> This is Catherine.</p>
+<p><strong>Ines Bernard:</strong> You massacred all those people.</p>
+<p><strong>Catherine Long:</strong> Ms. Bernard, we finally speak. I have a very good explanation.</p>
+<p><strong>Ines Bernard:</strong> You want to explain making people lose their limbs? Their beings? These are limbs they could <em>feel</em>. You're lucky that this didn't affect vital organs!</p>
+<p><strong>Catherine Long:</strong> It was worth it.</p>
+<p><strong>Ines Bernard:</strong> Excuse me?</p>
+<p><strong>Catherine Long:</strong> INDIE-MIND is back on the table for commercial development. DBB is recovering from the very public disaster of a showcase. They are only the top BMI software developer due to lack of competition, but that leaves us open to introduce something new. We want you at the helm.</p>
+<p><strong>Ines Bernard:</strong> Have you ever had your body taken from you?</p>
+<p><strong>Catherine Long:</strong> I can't say that I have.</p>
+<p><strong>Ines Bernard:</strong> You're in shock for a second or two. Your vision blurry from the explosion, your heart pounding blood to unmoving stumps. You're flat on your back trying to get flat on your stomach so you don't choke on your own blood. You think this is the end, or the start of the end if you survive. Your ability to interact with the world stripped. Now instead, imagine you are dragging dead-weight limbs that no matter much you beg, how much you pray, will not serve you? And there's dozens of people around you in the same situation? WAN saved me, but the chances of that happening to the people last night-</p>
+<p><strong>Catherine Long:</strong> -is one hundred percent. WAN saved you, now you can save them. I won't downplay or dismiss your trauma Miss Bernard, but I will ask you to weigh that trauma, and the trauma of those affected last night against the amount of people who will benefit from what you can provide. Secure and safe cybernetics that answer only to their user. No one else. No data logging, no kill switches in individuals, no monthly subscription to use your legs, nothing.</p>
+<p><strong>Ines Bernard:</strong> You didn't have to do this to them. There had to be another way to discredit DeBeers.</p>
+<p><strong>Catherine Long:</strong> People remember tragedies. Right now, we're beginning the process of lobbying the United States House and Senate to make prosthetic data and any data gathered from artificial body parts protected under HIPAA. The massacre makes that process a lot easier. Other countries will likely follow the US's precedent and demand the same from their governments. In short, Miss Bernard, we've won the rights for millions of cyborgs all around the world, and all it cost was one little bloodless tragedy, and a few hundred dollars worth of lavender Febreze. Trust me, in our line of work, this is a bargain.</p>
+<p><em>&lt;silence for several seconds&gt;</em></p>
+<p><strong>Ines Bernard:</strong> <em>&lt;choking up&gt;</em> You're paying for their therapy.</p>
+<p><strong>Catherine Long:</strong> I can make that happen.</p>
+<p><strong>Ines Bernard:</strong> I want <em>total</em> control of the company, and I'm picking my team, and I'm making them available to poor patients that can't afford them.</p>
+<p><strong>Catherine Long:</strong> We'll still verify the code as we have been, you'll need to be comfortable making versions for the military and other needs that may arise. You'll also be giving most of the profits from contracts and commercial sales to the Foundation. Beyond that, I see no reason to deny your terms. If you'd like, we can discuss the specifics at a later time.</p>
+<p><strong>Ines Bernard:</strong> WAN, how did it come to this?</p>
+<p><strong>Catherine Long:</strong> Does that mean you accept?</p>
+<p><em>&lt;Ms. Bernard sobs heavily for several seconds.&gt;</em></p>
+<p><strong>Ines Bernard:</strong> Y-yes.</p>
+<p><strong>Catherine Long:</strong> Congratulations Ms. Bernard, you are now the CEO of Secure Cybernetics and Prosthetics. We'll be in touch.</p>
+<hr/>
+<p>&lt;END LOG&gt;</p>
+</div>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Maxwellist order responsible for creating and updating SCP-6253, which is used in their cybernetics as well as Foundation cyborgs.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. For context, BMI refers to all devices and code that allow artificial limbs to receive commands from the brain.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. As well as mundane, such as DOS attacks.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. A code-phrase and response to confirm the identity of the other.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. The events concerning SCP-5392 were well-known within the anomalous community. Ms. Bernard's knowledge of these events is not considered a breach of security.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. This error is triggered when the brain commands the muscle in a cybernetic limb to contract or release but the command did not respond for whatever reason. This applies only to cybernetic limbs.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. Individual nerve endings throughout the body are numbered and continually pinged to confirm visibility. Nerve 44 specifically is a group of nerve endings located in the user's scalp. Users without a functioning nerve 44 report issues with being unable to sense when their hair is being pulled, unable to sense itching of the head, etc.</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. Much like the Java Garbage Collector in the Java programming language, the Neural garbage collector checks for code that is no longer in use and removes it from immediate memory. For example, if a user is trying to remember what day an event happened, and they have already recalled correctly the date in question, they should no longer be checking their brain for dates in the past. To that effect, the garbage collector clears out the 'clutter' in the brain. Not to be confused with deleting memories or traits.</div>
+<div class="footnote-footer" id="footnote-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-9')">9</a>. The portion of the brain that processes visual stimuli.</div>
+<div class="footnote-footer" id="footnote-10"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-10')">10</a>. A proprietary function of Debeers Biotech BMI technology that prevents a user from falling asleep until they actively choose to do so.</div>
+<div class="footnote-footer" id="footnote-11"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-11')">11</a>. Anomalous hazards that occur in dreams.</div>
+<div class="footnote-footer" id="footnote-12"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-12')">12</a>. The diplomatic arm of the G.O.C. and equivalent to our Department of Public Outreach</div>
+<div class="footnote-footer" id="footnote-13"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-13')">13</a>. Per crisis procedures, Cpt. Perrier used a burner phone. The audio for this conversation is unavailable.</div>
+<div class="footnote-footer" id="footnote-14"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-14')">14</a>. This is meant to draw emphasis on their cybernetic limbs</div>
+<div class="footnote-footer" id="footnote-15"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-15')">15</a>. DeBeers's electric car company.</div>
+<div class="footnote-footer" id="footnote-16"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-16')">16</a>. A doctor in the employ of DeBeers that specializes in emergent neurosurgery.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-6253">SCP-6253</a>" by Tao McCawley, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-6253">https://scpwiki.com/scp-6253</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

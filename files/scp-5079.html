@@ -1,0 +1,548 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-5079</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-5079</h1>
+            <html><body><div id="page-content">
+
+<div style="display: none">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">relative</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> rgba(</span><span class="hl-number">176</span><span class="hl-code">,</span><span class="hl-number">16</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.7</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+ 
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">),</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.12</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.wiki-content-table</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumtitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.maintitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">x-large</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addenda-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">;
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">; 
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.object-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">align-self:</span><span class="hl-code"> flex-end</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.title-style</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">underline</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div-empty</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.computed</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.computed</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Computed </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-special">:before</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Raw </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.codebox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-code">,  </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">.75</span><span class="hl-string">em</span><span class="hl-code">; 
+        </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+        </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> gainsboro</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-reserved">background-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> unset</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><a href="https://scp-wiki.wikidot.com/grigori-karpin-s-author-page">More by this author</a></strong></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<div class="scp-image-block block-right" style="width:300px;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-5079/Fungus"><img alt="Fungus" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-5079/Fungus/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>Surgically excised fungal material from an instance of SCP-5079-1.</p>
+</div>
+</div>
+<p><strong><span style="text-decoration: underline;">Special Containment Procedures</span></strong>:<br/>
+Foundation webcrawler I/O METATRON is to search for and delete all posts to online forums containing SCP-5079; the webcrawler shall also trace the post’s IP address. If a new IP address is registered then MTF personnel are to be mobilized to investigate and detain any individual who has posted SCP-5079.</p>
+<p>SCP-5079-1 instances are to be transported to converted medical centers in York, England, overseen by Site-91 personnel. Cover stories concerning the SCP-5079-1 instance are to be prepared in case any family or investigation queries the instance’s whereabouts. Police records concerning SCP-5079-1 instances are to be sanitized and emergency personnel finding an instance of SCP-5079-1 are to be administered Class-A amnestics.</p>
+<p><strong><span style="text-decoration: underline;">Description</span></strong>:<br/>
+SCP-5079 is a self-executing, carnomantic<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> ritual targeting a small segment of the population that converts soft tissue of the body to tissue resembling the cellular structure of fungi. Subjects who are afflicted by SCP-5079 (designated as SCP-5079-1 instances) will begin to generate fungal structures attaching the body to the surrounding area shortly after encountering the thaumaturgically charged language of SCP-5079. Generation of fungal structures starts with the conversion of soft tissues in the body but then shifts to cellular duplication. Growth analysis shows rapid generation of fungal tendrils, taking less than twelve hours to firmly attach the subject with furniture and building structures. Tendrils of fungal material also generate inwards, encroaching into the body’s remaining soft tissues. Genetic analysis of the fungal growth continue to show human DNA in all generated biological material.</p>
+<p>Residual human systems persist, subject to encroachment of fungal materials into the body, allowing for intravenous feeding. SCP-5079-1 instances produce extremely high levels of oxytocin and melatonin when compared to a normally healthy human subject unaffected by SCP-5079.</p>
+<p>Approximately 35% of SCP-5079-1 instances succumb to the transfiguration of SCP-5079, eventually suffering brain death due to lack of sustenance or hydration.</p>
+<p>The other 65% of SCP-5079-1 instances maintain normal brainwave activity and have shown expected levels of awareness, subject to physiological changes to sensory organs. However, only one instance of SCP-5079-1 has shown a willingness to speak.</p>
+<p>Instances of SCP-5079-1 are capable of continued life signs with proper treatment for approximately three to four years. Foundation researchers are developing possible treatments to reverse the process through pharmeceutical, thaumaturgical, and physiolocigal mechanisms. Thaumaturgical methods have thus far been able to slow the process and, in some cases, halt it completely.</p>
+<blockquote>
+<p><em>Treatment Protocols</em>: Instances of SCP-5079-1 are to be put into medically induced comas and intravenously fed.</p>
+<p>Additionally, instances are to be surgically excised from surrounding areas of their discovery and transported to converted medical facilities for care-giving by Foundation medical services.</p>
+<p><em>To date, over one thousand individuals have been designated as SCP-5079-1.</em></p>
+</blockquote>
+<p><span style="text-decoration: underline;">Targeted Individuals</span>:<br/>
+SCP-5079 only affects individuals that show a high incidence of correlation to a list of identifying aspects:</p>
+<ul>
+<li>Between 17 and 35 years old.</li>
+<li>Highly uncomfortable with in-person social interactions.</li>
+<li>Almost no social support structures (no friends, family, or coworkers).</li>
+<li>Either not employed or employed in positions that require little to no interaction with others.</li>
+<li>Spends significant amounts of their waking hours online (gaming, on forums, fandom writing, or consuming media).</li>
+<li>Does not endorse any religious or political ideology.</li>
+<li>Often frequents Reddit communities such as r/socialanxiety and/or r/socialskills.</li>
+</ul>
+<p>SCP-5079 has no effect on individuals that are inconsistent with the profile as outlined above.</p>
+<hr/>
+<p><span style="text-decoration: underline;">Discovery</span>: SCP-5079 was originally brought to Foundation personnel’s attention due to a series of missing person reports resulting in the discovery of SCP-5079-1 instances across continental Europe, the United Kingdom and the United States, beginning in August 2011. All initial instances were traced back to a series of posts by the Reddit user "jakesalone211."<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Interview of SCP-5079-1 Instance ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Access Granted ▼</a></div>
+<div class="collapsible-block-content">
+<blockquote>
+<p><em>Researcher’s notes: Subject was only partially coherent, as SCP-5079 progression had converted roughly 25% of her body mass, including partial transfiguration of the cranial structure and cervical spine areas. Subject was wheeled into the interview room on a rolling hospital bed, as she was securely affixed to the bedding by fungal material.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Date</strong>: – <em>2011-08-14</em><br/>
+<strong>Interviewee</strong>: – <em>Sylvia Ferver</em><br/>
+<strong>Foundation Personnel</strong>: – <em>Dr. Wellman Preda, Researcher</em></p>
+<p><strong>Preda</strong>: Good afternoon, Sylvia.</p>
+<p><strong>Ferver</strong>: Hello, doctor.</p>
+<p><strong>Preda</strong>: How are you this afternoon?</p>
+<p><strong>Ferver</strong>: 'Bout as well as you’d imagine, I figure. Not bad, all considering.</p>
+<p><strong>Preda</strong>: Do you feel up to answering some questions?</p>
+<p><strong>Ferver</strong>: I’m real tired, doctor. But I can try.</p>
+<p><strong>Preda</strong>: It’s appreciated, as the more we know, the better we can go about treating you and the others.</p>
+<p><strong>Ferver</strong>: Well, go on then.</p>
+<p><strong>Preda</strong>: When did you first notice anything strange?</p>
+<p><strong>Ferver</strong>: <em>[coughs]</em> Sorry, sometimes hard to breathe.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> <em>[coughs]</em> I think it was around a week ago, but it’s hard to say for sure.</p>
+<p><strong>Preda</strong>: Can you think of any preceding events? Anything that stands out in your memory around the time you noticed the growths?</p>
+<p><em>Ferver begins coughing violently for approximately sixty seconds.</em></p>
+<p><strong>Ferver</strong>: I really don’t know what could have caused this. I was browsing Reddit like I usually do, and then I felt stiff and it was difficult to shift in my chair.</p>
+<p><strong>Preda</strong>: Can I ask what was your reaction to the growths?</p>
+<p><strong>Ferver</strong>: Honestly? I didn’t notice at first.</p>
+<p><strong>Preda</strong>: You didn’t notice your skin metamorphosing into fungus and attaching your body to the chair?</p>
+<p><strong>Ferver</strong>: I know it’s hard to believe, but I really didn’t.</p>
+<p><strong>Preda</strong>: Could you explain how you failed to notice such a thing?</p>
+<p><strong>Ferver</strong>: Just felt sleepy and comfortable, you know? I don’t think I was really aware of what was happening until the police knocked down my door.</p>
+<p><strong>Preda</strong>: You don’t seem terribly upset by this process.</p>
+<p><strong>Ferver</strong>: Yea, I don’t know. I just don’t feel much anxiety about it. I sleep a lot, and when I’m not sleeping, I listen to audiobooks the guards bring me.</p>
+<p><strong>Preda</strong>: Do you not want to be cured?</p>
+<p><strong>Ferver</strong>: It’s not that I don’t want to be free of this… but I just can’t seem to care much about it.</p>
+<p><strong>Preda</strong>: Have you spoken with any of your fellow victims? I know they have you in shared rooms.</p>
+<p><strong>Ferver</strong>: No. They don’t speak for the most part. But I can feel them.</p>
+<p><strong>Preda</strong>: Feel them?</p>
+<p><strong>Ferver</strong>: Yea, I can vaguely tell what they’re feeling. Sometimes I can even tell what they’re thinking, but only a little. Most of them just don’t seem interested in talking.</p>
+<p><strong>- END LOG -</strong></p>
+</blockquote>
+</div>
+</div>
+</div>
+<hr/>
+<p><span style="text-decoration: underline;"><strong>Investigation into SCP-5079’s Origins</strong></span>:<br/>
+Given the carnomantic nature of SCP-5079, Dr. Preda consulted with <a href="https://scp-wiki.wikidot.com/sarkicism-hub">Dr. Judith Low</a>, Senior Adviser at the Foundation Department of History. Dr. Low believes that SCP-5079 is derived from a <em>Nälkä</em> ritual referenced to in a passage of the <em>Solomonari Valkzaron</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup>; the purpose of which was to create a joint being out of multiple individuals. Dr. Low further opined that the ritual was not intended to be shared as anonymous information, as typically it would be enacted to join those with intimate connections to one another: i.e. members of a small community.</p>
+<p>However, Dr. Low believes that if instances of SCP-5079-1 were to be placed close together, they would merge and eventually form an unknown instance.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> Dr. Low believes that keeping the instances physically separate would halt such a merged instance from developing.</p>
+<blockquote>
+<p><em>The Ethics Committee has ruled that experiments with instances of SCP-5079-1 towards testing Dr. Low’s hypothesis are inhumane and are not permitted at this time. All SCP-5079-1 instances are to be kept physically separate and treated in order to preserve life and potentially halt the progression of SCP-5079.</em></p>
+</blockquote>
+<p>Any purposes and features of this hypothetical joint being (merged from individual instances of SCP-5079-1) are unknown at this time.</p>
+<p>Review of Sylvia Ferver’s online activity revealed a post containing SCP-5079 shared on r/socialanxiety dated 2011-08-06. The IP address of the device used to post SCP-5079 was traced back to a flat in Newcastle, Northern England, owned by Jacob Bell. Survey of Reddit and other online forums found over thirty-five posts containing the thaumaturgically active language of SCP-5079. All posts containing SCP-5079 were traced back to Bell's IP address and were subsequently deleted from their respective servers.</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► MTF-Beta-777 Mobilization Log ◄</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Access Granted ▼</a></div>
+<div class="collapsible-block-content">
+<blockquote>
+<p><em><strong>Preamble</strong></em>: MTF-Beta-777<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup> ("Hecate’s Spear") was mobilized on 2011-08-15 from Site-91 to Newcastle in order to investigate the origin point of SCP-5079.</p>
+<p><strong>Mobilized personnel</strong>: Major Julia Weaver (β1), Lieutenant Mark Galbraith (β2), Lieutenant Gabriel Merced (β3) and Captain Maria Waltham (β4)<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup></p>
+<p><strong>07:15</strong> - MTF personnel arrive on site. Local police personnel surrounds the building.</p>
+<p><strong>07:18</strong> - MTF personnel close on Bell’s flat door; noting the absence of any thaumaturgical countermeasure.</p>
+<p><strong>07:19</strong> - MTF personnel breach.</p>
+<p><strong>07:20</strong> - β3 runs from the flat, vomiting in the hall. β1 reports that subject is firmly entrenched into the floor and walls, barely skeletal remains at the center of fungal masses covering roughly 60% of the studio flat.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup> β2 reports no life signs on subject, but fungal mass appears to be alive. β4 states the subject looks like living wall art. Fungal masses are saturated with blood.</p>
+<p><strong>07:22</strong> - β1 orders β4 to scan the room for thaumaturgical countermeasures. β1 exits flat to check on β3. β2 disconnects the hard drive to Bell’s computer and leaves the flat.</p>
+<p><strong>07:23</strong> - β4 scans the area for thaumaturgical residue and chokes back a sob. β1 calls in through the open door. β4 does not respond immediately.</p>
+<p><strong>07:24</strong> - β1 looks in from the open doorway and radios for support from command. β4’s lower extremities have been almost entirely wrapped in fungal material connected to the mass growing from Bell’s corpse. β4 attempts to dispel the fungal mass from her lower extremities through thaumaturgy but only succeeds in halting the climb of the mass.</p>
+<p><strong>07:25</strong> - β1 and β3 enter the flat and sever the fungal mass from β4’s lower extremities and drag her out of the building.</p>
+<p><strong>07:28</strong> - β4 is evacuated from the site by medical chopper and anomalous hazard disposal teams arrive. Samples are taken from the mass and the flat is sterilized with chemical agents and then a controlled burn.</p>
+</blockquote>
+<blockquote>
+<p><em><strong>Notes</strong></em>: Captain Waltham suffered from numerous shallow cuts and abrasions from the fungal material. After 24 hours observation, she showed no signs of infection, confirming that SCP-5079 is not a pathogen that can be transferred.</p>
+<p>For several weeks after the incident, Captain Waltham reported being "consumed" by feelings of loneliness and desperately wanting to feel connected to other people. She has been referred to Foundation approved therapy.</p>
+</blockquote>
+</div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+Bell’s hard drive contained numerous digital documents concerning thaumaturgy, a copy of the <em>Solomonari Valkzaron</em>, and numerous diagrams for carnomantic rituals. Research into Bell’s family has shown no connections to any known Neo- or Proto-Sarkic cults. Also recovered from Bell's flat was several self-help books with a focus on interpersonal communication and creating lasting bonds. The books are worn and have been heavily annotated by one individual's handwriting.
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">► Recovered Chat Logs from Bell’s Computer </a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">▼ Close file</a></div>
+<div class="collapsible-block-content">
+<p>The following are saved logs discovered on Bell’s computer from an IRC channel called <em>adywhatum?</em> featuring occult and thaumaturgical discussions with anonymous usernames.</p>
+<div style="background: #F7F7F7;&quot; &quot;float: center; border: solid 1px #444444; width: auto; padding: 1px 15px; margin: auto; box-shadow: 1px 1px 3px rgba(0,0,0,.2); font-family: 'Times New Roman';">
+<hr/>
+<div style="text-align: center;">
+<p>August 2nd, 2011</p>
+</div>
+<hr/>
+<p>7:33 PM &lt;<strong>Klaviguy</strong>&gt; so wait, you want what?<br/>
+7:34 PM &lt;<strong>occurious</strong>&gt; i don even kno… just sick of being alone<br/>
+7:34 PM &lt;<strong>Klaviguy</strong>&gt; so join a club, dont join a channel of practitioners<br/>
+7:34 PM &lt;<strong><span style="text-decoration: underline;">Ruemarcabrechick</span></strong>&gt; <em>Klaviguy</em> Stop being such a dick. Op warning.<br/>
+7:34 PM <em>occurious</em> wat exactly you interested in<br/>
+7:35 PM &lt;<strong>occurious</strong>&gt; uh I just… fuck I don’t know. Something to help with the loneliness<br/>
+7:35 PM i wanna connect<br/>
+7:36 PM &lt;<strong>thaumaybebabby</strong>&gt; magic isn’t something to fuck with<br/>
+7:36 PM easy answers only get you in trouble<br/>
+7:37 PM &lt;<strong>Klaviguy</strong>&gt; thought we weren’t supposed to be dicks<br/>
+7:37 PM let’s hear them out, right?<br/>
+7:40 PM &lt;<strong>occurious</strong>&gt; thanks<br/>
+7:42 PM &lt;<strong>thaumaybebabby</strong>&gt; <em>occurious</em> don’t listen to a thing this shyster has to say, neo-sarkics only like using people<br/>
+7:44 PM &lt;<strong>Klaviguy</strong>&gt; oh how shocking, religious persecution from a librarian<br/>
+7:48 PM &lt;<strong>thaumaybebabby</strong>&gt; fuck you, meat magician<br/>
+7:53 PM &lt;<strong><span style="text-decoration: underline;">Ruemarcabrechick</span></strong>&gt; OK ENOUGH. Drop it or you’re both out of here.<br/>
+7:53 PM &lt;<strong>thaumaybebabby</strong>&gt; dropping it<br/>
+7:53 PM &lt;<strong><span style="text-decoration: underline;">Ruemarcabrechick</span></strong>&gt; and <em>thaumaybebabby</em> no religious persecution ok? Some of my best friends are Sarkics.<br/>
+7:55 PM &lt;<strong>Klaviguy</strong>&gt; Then you’d know they don’t like to be called that<br/>
+7:57 PM &lt;<strong><span style="text-decoration: underline;">Ruemarcabrechick</span></strong>&gt; I apologize.<br/>
+7:58 PM &lt;<strong>Klaviguy</strong>&gt; so, <em>occurious</em> when you say “connect” what do you mean?<br/>
+7:59 PM &lt;<strong>occurious</strong>&gt; feel like I belong, not just some lonely idiot staring at his monitor<br/>
+8:00 PM &lt;<strong><span style="text-decoration: underline;">Ruemarcabrechick</span></strong>&gt; I think it’s necessary for me to warn you, <em>occurious</em><br/>
+8:00 PM you sure you’re aware of who you’re talking to<br/>
+8:01 PM &lt;<strong>occurious</strong>&gt; I’m an adult, I can figure it out for myself, thank you<br/>
+8:01 PM <em><strong><span style="text-decoration: underline;">Ruemarcabrechick</span></strong> holds her hands up in mock surrender</em><br/>
+8:03 PM &lt;<strong>Klaviguy</strong>&gt; right, so… I think I have something for you but its not for the masses… <em>occurious</em> pm?<br/>
+8:04 PM &lt;<strong>occurious</strong>&gt; sure</p>
+</div>
+<hr/>
+<div style="background: #F7F7F7;&quot; &quot;float: center; border: solid 1px #444444; width: auto; padding: 1px 15px; margin: auto; box-shadow: 1px 1px 3px rgba(0,0,0,.2); font-family: 'Times New Roman';">
+<hr/>
+<div style="text-align: center;">
+<p>August 2nd, 2011</p>
+</div>
+<hr/>
+<p>8:04 PM &lt;<strong>Klaviguy</strong>&gt; hey there<br/>
+8:05 PM &lt;<strong>occurious</strong>&gt; yo<br/>
+8:05 PM &lt;<strong>Klaviguy</strong>&gt; so how familiar are you with thaumaturgical rituals?<br/>
+8:06 PM &lt;<strong>occurious</strong>&gt; so so, not an expert<br/>
+8:07 PM &lt;<strong>Klaviguy</strong>&gt; you’ll have to get a few things, but I’ll run you through the requirements. Hold on, I’ll send you a list</p>
+<hr/>
+<div style="text-align: center;">
+<p>August 4th, 2011</p>
+</div>
+<hr/>
+<p>6:20 PM &lt;<strong>occurious</strong>&gt; you around?<br/>
+6:21 PM &lt;<strong>Klaviguy</strong>&gt; yeah… you get em?<br/>
+6:27 PM &lt;<strong>occurious</strong>&gt; yes I found the book and the materials<br/>
+6:28 PM &lt;<strong>Klaviguy</strong>&gt; nice one<br/>
+6:29 PM ok, well we’re gonna have to work through it and I can show you how to tailor the ritual to work for specific types of people<br/>
+6:30 PM &lt;<strong>occurious</strong>&gt; wym?<br/>
+6:31 PM &lt;<strong>Klaviguy</strong>&gt; Like if you want the ritual to work for certain personalities or shared interests, so you can shape the community how you want it<br/>
+6:32 PM &lt;<strong>occurious</strong>&gt; ok great<br/>
+6:33 PM &lt;<strong>Klaviguy</strong>&gt; right well, before we get into it, you need to know this doesn’t work by yourself. If you want to connect this way, you’ll need other people<br/>
+6:35 PM &lt;<strong>occurious</strong>&gt; no friends, that’s the whole point<br/>
+6:36 PM &lt;<strong>Klaviguy</strong>&gt; figure it out, genius. Doing it by yourself doesn’t do shit. You need to share the ritual with others<br/>
+6:37 PM &lt;<strong>occurious</strong>&gt; ……. ok, I’ll make it work</p>
+</div>
+<p>On the initial post on r/socialanxiety there was one comment from a “<em>Klaviguy</em>” stating: “<em>I told him to do it with other people. Idiot.</em>”</p>
+<p><em>adywhatum?</em> is no longer being operated.</p>
+</div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+After several months without the appearance of any new SCP-5079-1 instances, the Classification Committee was considering the reclassification to "Neutralized." However, on 2012-01-19, several new posts containing SCP-5079 were spotted by I/O METATRON and were deleted within seconds. The IP addresses of the posters were traced back to six new individual Reddit user accounts. When interviewed, the users universally stated they saw the original posts months before and saved them and then re-uploaded. One of the new posters stated "I liked the look of it, cool occult language. Thought others would get a kick outta it!" All six were administered Class-A amnestics and are under observation for signs of SCP-5079's effects.<br/>
+<span style="white-space: pre-wrap;"> </span><br/></p>
+
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Commonly known as “fleshcrafting,” carnomancy is a thaumaturgical tradition focused on the shaping of the body through anomalous means.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Review of this user's history of activity on Reddit reveals dozens of posts discussing the user's anxiety over connecting with others and their failed attempts at doing so.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Ms. Ferver had some buildup of fungal growths encroaching on her airways in the throat region.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. <em>Nälkä</em> holy book concerning the teachings and mythos of Grand Karcist Ion.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Based on her translation and analysis of the <em>Solomonari Valkzaron</em>.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Experts in thaumaturgical analysis and defusal of thaumaturgical countermeasures.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. Class-A thaumatologist.</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. Tendrils of bloody fungus firmly attached the cadaver to an office chair, most of the flooring in the flat, and significant portions of the walls. Review of the video shows fungal material slowly crawling up multiple surfaces, and exuding moist spores.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-5079">SCP-5079</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-5079">https://scpwiki.com/scp-5079</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> Fungus<br/>
+<strong>Author:</strong> Bernard Spragg<br/>
+<strong>License:</strong> Released into Public Domain<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Favolaschia_calocera_-_Orange_Pore_fungus,_(39152889430).jpg">Fungus</a><br/>
+<strong>Notes</strong>: Edited by me.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

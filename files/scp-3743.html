@@ -1,0 +1,686 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-3743</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-3743</h1>
+            <html><body><div id="page-content">
+
+<div style="display: none">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">relative</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> rgba(</span><span class="hl-number">176</span><span class="hl-code">,</span><span class="hl-number">16</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.7</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+ 
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">),</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.12</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.wiki-content-table</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumtitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.maintitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">x-large</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addenda-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">;
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">; 
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.object-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">align-self:</span><span class="hl-code"> flex-end</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.title-style</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">underline</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div-empty</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.computed</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.computed</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Computed </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-special">:before</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Raw </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.codebox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-code">,  </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">.75</span><span class="hl-string">em</span><span class="hl-code">; 
+        </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+        </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> gainsboro</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-reserved">background-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> unset</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><a href="/hecatoncheires-cycle-hub">Hecatoncheires Cycle Hub</a></strong><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<strong><a href="/grigori-karpin-s-author-page">More by this author</a></strong></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<h4 id="toc0"><span><strong><span style="text-decoration: underline;">Special Containment Procedures</span></strong>:</span></h4>
+<div class="scp-image-block block-right" style="width:300px;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-3743/wood"><img alt="wood" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-3743/wood/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>SCP-3743-A-1, approximately two kilometers from Site-91.</p>
+</div>
+</div>
+<p>SCP-3743-A-1 and -2 are to be under constant electronic surveillance. Any individuals arriving through either anomaly are to be detained, interrogated and potentially amnesticized.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup></p>
+<p>The Foundation has purchased the York Art Gallery and the land containing SCP-3743-A-1, closing them off from public access. Armed agents are to be stationed nearby on rotating shifts. Any movement towards either anomaly is to be impeded by the joint task force under the auspices of <a href="/looking-forward">Project Hecatoncheires</a>.</p>
+<p>Interferent thaumaturgical charms are to be placed around both anomalies to prevent their use. Members of MTF-Beta-777 (“Hecate’s Spear”)<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> shall evaluate the effectiveness of the charms every month.</p>
+<hr/>
+<h4 id="toc1"><span><strong><span style="text-decoration: underline;">Description</span></strong>:</span></h4>
+<p>SCP-3743 is a series of interconnected anomalies with ties to a Hellenistic-era cult known as the "Many Hands Society" (rough translation). SCP-3743-A-1 is a thaumaturgically powered portal<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> to an extradimensional space found within the greater Yorkshire area. SCP-3743-A-1 is located in a wooded area approximately two kilometers from Site-91’s perimeter. SCP-3743-A-1 is constructed with branches from the immediate area and thaumaturgically linked to an icon of Eros found hanging nearby.<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="scp-image-block block-right" style="width:300px;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-3743/ruins"><img alt="ruins" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-3743/ruins/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>Single structure found within SCP-3743-B.</p>
+</div>
+</div>
+<p>SCP-3743-B is a finite extra-dimensional space resembling the arid plains of Greece, measuring roughly eighty-eight square kilometers. Located within the boundaries of SCP-3743-B is a solitary man-made structure constructed from mud bricks, sitting atop a stone block foundation. The structure resembles the construction methods of the Hellenistic-era of ancient Greece. Due to thaumic pollution and relatively high levels of Akiva radiation present within SCP-3743-B, photographs invariably develop without any color present.</p>
+<p>SCP-3743-A-1, when activated, using thaumaturgical techniques common to Group of Interest ALPHA-019 (“Serpent’s Hand”), allows for transportation to SCP-3743-B.</p>
+<hr/>
+<p><strong><span style="text-decoration: underline;">Discovery</span></strong>: Routine reconnaissance around Site-91 by security personnel revealed SCP-3743-A-1 on 13 August, 1992. Members of MTF-Beta-777 examined the area and found the aforementioned icon to Eros. Concerned that the anomaly represented an attempted incursion into Site-91, Captain Zadeh of MTF-Beta-777 requested reinforcement from MTF-Tau-9 (“Bookworms”) as said MTF focuses on anomalies related to the Library and the Serpent’s Hand.</p>
+<p>Lieutenant Gilroy Laguerre<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup> of Tau-9 analyzed SCP-3743-A-1 and confirmed that it was an active Way leading to an extradimensional space. The proximity of the Way to Site-91 was ruled to be a clear and present danger. On 15 August, 1992, Director Varga ordered an joint task force exploration into SCP-3743-A-1.</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">▷ Exploration log of SCP-3743-B 15/08/1992</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Close File</a></div>
+<div class="collapsible-block-content">
+<div style="center no-repeat ; float: center; border: solid 2px #000000; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+
+<p><strong><span style="text-decoration: underline;">Exploration Log of SCP-3743-B by joint task force from MTF-Beta-777 and MTF-Tau-9</span></strong>.</p>
+<div class="scp-image-block block-right" style="width:300px;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-3743/eros"><img alt="eros" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-3743/eros/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>Thaumaturgically active icon linked to SCP-3743-A-1, found hanging nearby.</p>
+</div>
+</div>
+<p><strong>Personnel Mobilized</strong>:<br/>
+<em>Captain Sahara Zadeh</em>,<br/>
+<em>Sergeant Maria Waltham</em>,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup><br/>
+<em>Sergeant Gabriel Merced</em>,<br/>
+<em>Lieutenant Gilroy Laguerre</em>,<br/>
+<em>Sergeant Mark Kenoshi</em>.<br/>
+Accompanied by <em>Agent Rebekah Douglas, Level-3 psychometrist.</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup></p>
+<p><strong>Command</strong>: <em>Dr. Jocasta Rossi on comms</em></p>
+<p><strong>Preamble</strong>:<br/>
+Members of MTF-Beta-777 and MTF-Tau-9, along with Agent Douglas, will enter the Way designated as SCP-3743-A-1 and gather intelligence from the extra-dimensional space (designated SCP-3743-B) beyond. Captain Sahara Zadeh will have field command.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><em>Members of joint task force approach SCP-3743-A-1.</em></p>
+<p><strong>Zadeh</strong>: Check your weapons and body cameras.</p>
+<p><em>All present confirm their arms and comms units.</em></p>
+<p><strong>Douglas</strong>: What’s that?</p>
+<p><em>Approaches the icon of Eros.</em></p>
+<p><strong>Laguerre</strong>: It's linked to the Way.</p>
+<p><strong>Douglas</strong>: Do we need this? Why not destroy it?</p>
+<p><strong>Laguerre</strong>: Don’t know what effect that would have. It’s possible the icon is connected to the ritual that made the Way.</p>
+<p><em>Dr. Rossi transmits from Site-91.</em></p>
+<p><strong>Dr. Rossi</strong>: Also, we are not in the business of destroying anomalous artifacts if we can help it, Agent Douglas.</p>
+<p><em>Agent Douglas makes an indecipherable sound.</em></p>
+<p><strong>Rossi</strong>: What was that?</p>
+<p><strong>Douglas</strong>: It was a “grumble,” Doctor.</p>
+<p><em>Waltham chokes back a laugh. Zadeh sighs.</em></p>
+<p><strong>Rossi</strong>: Agent Douglas, if you’re done making jokes, I’d like you to try and read the icon.</p>
+<p><strong>Douglas</strong>: Laguerre, you think it’s safe to touch?</p>
+<p><strong>Laguerre</strong>: My official answer? I have no idea. Unofficially? I’m willing to risk it. Let Sergeant Waltham and I shield you from any hidden countermeasures.</p>
+<p><em>Waltham nods at Douglas and places a hand on her shoulder. Laguerre stands on Douglas’s other side and also places a hand on her shoulder. Both hold their free hands in front of their mouths and whisper indecipherably.</em></p>
+<p><em>Douglas lowers herself to her knees and wraps her fingers from both hands around the icon. For approximately sixty seconds Douglas is silent, then she opens her eyes and releases the icon. She stands to her feet and brushes clean her jeans.</em></p>
+<p><strong>Douglas</strong>: This has only been here a day or two, the impression is incredibly fresh. I can’t say who placed it… I can tell you the blood is human. Someone in incredible pain.</p>
+<p><strong>Zadeh</strong>: Someone still alive?</p>
+<p><strong>Douglas</strong>: Maybe, there’s not much blood. The pain seems less like immediate trauma and more like a disability? Like it’s a constant and persistent pain. Pain that colors your perception over the long term.</p>
+<p><strong>Rossi</strong>: How can you tell?</p>
+<p><strong>Douglas</strong>: <em>[snorts]</em> Look, I know you’re new to the Site. But this is what I do.</p>
+<p><strong>Rossi</strong>: For the record, please.</p>
+<p><strong>Douglas</strong>: Underlying sense of frustration and disillusionment with the world at large. This is someone who’s been in pain for a long time.</p>
+<p><strong>Zadeh</strong>: Let’s get back on mission, folks. Lieutenant, if you please.</p>
+<p><em>Laguerre walks towards SCP-3743-A-1 and paces around three quarters of the circle before crossing it, then turning and repeating in reverse. The Way opens, appearing to be a glowing pool of light on the ground within the wooden circle of the anomaly.</em></p>
+<p><strong>Laguerre</strong>: It'll only stay open for a few moments, so let’s not dawdle.</p>
+<p><em>Laguerre enters the Way, followed by the other five members of the expedition. Upon entering, video feeds from personnel cut off immediately.</em></p>
+<p><strong>Dr. Rossi</strong>: Zadeh, we’ve lost all video feeds from your team. Confirm your status?</p>
+<p><em>Fifteen seconds of static follow from this request.</em></p>
+<p><strong>Zadeh</strong>: Confirmed, we’ve all made it through. Something strange about the air here. Feels charged with static electricity, but with thaumaturgy. Readings of significantly higher Akiva radiation as well. Are you receiving?</p>
+<p><strong>Dr. Rossi</strong>: Partially: we have voice coming through with some artifacting, but no video.</p>
+<p><strong>Zadeh</strong>: Shall we proceed?</p>
+<p><strong>Dr. Rossi</strong>: Yes, please provide regular updates.</p>
+<p><strong>Zadeh</strong>: Understood.</p>
+<p><strong>Rossi</strong>: Describe your surroundings, please.</p>
+<p><strong>Kenoshi</strong>: It’s definitely not the Library.</p>
+<p><strong>Waltham</strong>: It’s a dry plain, like a desert but mostly rocks and dirt… not like the Sahara.</p>
+<p><em>Zadeh snorts a laugh before speaking.</em></p>
+<p><strong>Zadeh</strong>: Reminds me of arid plains in Greece, or maybe the high desert in Southern California.</p>
+<p><strong>Waltham</strong>: There’s nothing here other than a bronze circle roughly ten meters in diameter, sunken into the ground. There's script engraved into the outer edge of the ring.</p>
+<p><strong>Kenoshi</strong>: It’s Old Attic, an Ancient Greek dialect in use in and around the Athens area until late fifth century BCE.</p>
+<p><strong>Rossi</strong>: Can any of you read it?</p>
+<p><strong>Kenoshi</strong>: I can, mostly. It’s a repetition of a single two-sentence phrase.</p>
+<p><strong>Rossi</strong>: What does it say?</p>
+<p><strong>Kenoshi</strong>: This is rough, but it says: “Behold the land of the Hundred Handed. Here there be Titans.”</p>
+<p><strong>Douglas</strong>: Ominous.</p>
+<p><strong>Rossi</strong>: Agent Douglas, do you think this is connected to GoI-8832?<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup></p>
+<p><em>Almost sixty seconds of silence.</em></p>
+<p><strong>Douglas</strong>: Hard to say for sure. Possibly. If it’s not, then it’ll be a hell of a coincidence.</p>
+<p><strong>Waltham</strong>: Do you hear that, Doctor?</p>
+<p><strong>Rossi</strong>: Nothing other than your voices. Describe the sound, please.</p>
+<p><strong>Waltham</strong>: Distant ringing of a bell, high pitch I think. Hard to say where it’s coming from.</p>
+<p><strong>Rossi</strong>: Making mention in the log. Anything else of note?</p>
+<p><strong>Merced</strong>: There’s a boundary here. The plain we can see is only a few dozen kilometers before a wall of mist or fog impedes all view.</p>
+<p><strong>Rossi</strong>: Right well, try to take notes of anything distinctive.</p>
+<p><strong>Zadeh</strong>: Alright, let’s head out. Keep your eyes peeled for anything moving.</p>
+<p><em>Extraneous thirty minutes of audio omitted.</em></p>
+<p><strong>Zadeh</strong>: Coming up on structure of some sort, Command.</p>
+<p><strong>Rossi</strong>: Describe it?</p>
+<p><strong>Zadeh</strong>: Still a half click out, but it looks white and multiple stories.</p>
+<p><strong>Rossi</strong>: Proceed.</p>
+<p><em>Extraneous ten minutes of audio omitted.</em></p>
+<p><strong>Kenoshi</strong>: We’re closer now, Command. Looks like it’s whitewashed mud bricks. Three stories, lots of curves. Almost looks like an ant hill. Lots of doors, and a few stone staircases on the exterior.</p>
+<p><strong>Rossi</strong>: Still no contact with any people?</p>
+<p><strong>Douglas</strong>: None. It’s eerily quiet. Not even any wind. The bell is louder though.</p>
+<p><strong>Zadeh</strong>: Okay, we’re going to breach. Kenoshi and Douglas with me on the right side of the first floor. Laguerre, Merced and Waltham on the left. Stay in contact. Let’s go.</p>
+<p><em>Extraneous three minutes of audio omitted.</em></p>
+<p><strong>Zadeh</strong>: Command, the structure appears empty. At least over here. Laguerre, anything?</p>
+<p><strong>Laguerre</strong>: It’s clearly been lived in. Wood stove and sleeping bags. The stove is still warm. Negative contact though.</p>
+<p><strong>Zadeh</strong>: Same here. Let’s clear the other floors before we start looking around.</p>
+<p><em>Extraneous seventeen minutes of audio omitted. MTF members clear the structure and find none of the occupants. Items found included over twenty sleeping bags, three portable wooden stoves, cooking supplies, some electric lights on extension cords plugged into anomalous power sources, and a small library of scrolls.</em></p>
+<p><strong>Rossi</strong>: When you say “anomalous” power source, what do you mean?</p>
+<p><strong>Merced</strong>: Looks organic, like polyps on coral, all built one on the other. There’s at least eight of them, and the plugs for the stringed lighting are plugged directly into an organic “socket.” They each stand maybe a meter in height.</p>
+<p><strong>Rossi</strong>: Can you take one back with you?</p>
+<p><strong>Zadeh</strong>: Let’s belay that, for now. No sense letting the locals know someone is messing with their house while they’re away.</p>
+<p><strong>Douglas</strong>: Kenoshi, you said you read Greek right?</p>
+<p><strong>Kenoshi</strong>: Yeah, I'm proficient but not an expert. Why do you ask?</p>
+<p><strong>Douglas</strong>: The scrolls I've seen are all covered in the same script as the bronze ring when we entered this place. Second floor, towards the front of the building on the right. Come take a look?</p>
+<p><strong>Kenoshi</strong>: Just a mo.</p>
+<p><em>Extraneous five minutes of audio omitted.</em></p>
+<p><strong>Zadeh</strong>: Found the bell. It's in the upper most chamber. It's just ringing constantly. Command, you can’t hear that?</p>
+<p><strong>Rossi</strong>: Negative, Captain Zadeh.</p>
+<p><strong>Zadeh</strong>: Very fucking weird.</p>
+<p><strong>Rossi</strong>: Is there a mechanism powering the bell?</p>
+<p><strong>Zadeh</strong>: Well, sort of. One of those polyp generators is here and it's connected by biological material to a sigil above the bell. Bell itself is only ten centimeters in height, but it's not typical brass. Pretty sure this is beryllium bronze. More sigils etched into its surface.</p>
+<p><strong>Rossi</strong>: Any idea what the purpose is?</p>
+<p><strong>Zadeh</strong>: Could be an alarm we tripped by coming through the Way, or it could be very annoying music. I have no idea.</p>
+<p><strong>Rossi</strong>: I assume interfering with it would be a bad idea?</p>
+<p><strong>Zadeh</strong>: Given I have no idea what it does, yes, I’d say it’s a bad idea.</p>
+<p><em>Kenoshi has rendezvoused with Douglas near the scroll library.</em></p>
+<p><strong>Kenoshi</strong>: What have you got here?</p>
+<p><em>Sounds of rustling paper for a few moments.</em></p>
+<p><strong>Kenoshi</strong>: Holy shit, these are old. Wait… they don’t <em>feel</em> old though.</p>
+<p><strong>Rossi</strong>: What do you mean?</p>
+<p><strong>Kenoshi</strong>: The parchment seems almost new. Although I don’t think I've ever handled actual new parchment.</p>
+<p><strong>Rossi</strong>: Why did you say they were old?</p>
+<p><strong>Kenoshi</strong>: The Greek these are written in, it's contemporaneous with the script on the bronze ring at our entry point. Why would someone transcribe Ancient Greek so painstakingly onto new parchment?</p>
+<p><strong>Rossi</strong>: Can you read them?</p>
+<p><strong>Kenoshi</strong>: Not easily, I’m going to suggest we take a few so I can study and translate back at base.</p>
+<p><strong>Rossi</strong>: Good idea. Agent Douglas, were you able to read anything off these scrolls?</p>
+<p><strong>Douglas</strong>: They’ve been handled recently but that’s about it.</p>
+<p><em>Extraneous five minutes of audio deleted.</em></p>
+<p><strong>Merced</strong>: You’re all going to want to come out here.</p>
+<p><strong>Zadeh</strong>: Out where?</p>
+<p><strong>Merced</strong>: Lieutenant Laguerre and I came around the back of the structure and we found something.</p>
+<p><strong>Zadeh</strong>: What?</p>
+<p><strong>Laguerre</strong>: Better just come and see. Kenoshi, you too.</p>
+<p><strong>Kenoshi</strong>: Okay, let me store these scrolls in a protective container. Be right out.</p>
+<p><em>The six MTF members gather together, presumably behind the building.</em></p>
+<p><strong>Douglas</strong>: What is it?</p>
+<p><strong>Zadeh</strong>: A cave of some sort?</p>
+<p><strong>Rossi</strong>: Please describe what you're seeing.</p>
+<p><strong>Merced</strong>: It’s a hillside, fairly low, behind the structure. In the hillside is a recession with a large stone block over the entrance. The opening is man-made, reinforced with small stone blocks.</p>
+<p><strong>Kenoshi</strong>: More to the point, the large rock over the entrance is a stele.</p>
+<p><strong>Rossi</strong>: A what?</p>
+<p><strong>Kenoshi</strong>: Stone slab, usually upright, with some sort of commemorative relief or a message inscribed. This has more Ancient Greek, and a lot of it.</p>
+<p><strong>Rossi</strong>: Can you read it?</p>
+<p><strong>Kenoshi</strong>: Like the scrolls, I would need time to decipher it. Gonna take some pictures to help translation back at Site.</p>
+<p><strong>Zadeh</strong>: While he’s doing that, let’s see what’s in this cave. Douglas, you and Waltham are with me. Rest of you hang here and watch Kenoshi’s back.</p>
+<p><strong>Merced</strong>: Yes, Captain.</p>
+<p><em>Thirty seconds of silence as the three presumably enter the recession.</em></p>
+<p><strong>Rossi</strong>: See anything?</p>
+<p><strong>Douglas</strong>: Sarcophagi, thirteen of them. Roughly made but full slabs of stone. No writing on them whatsoever.</p>
+<p><strong>Zadeh</strong>: I don’t think anyone has been in here for a long time. Lots of cobwebs and dust coating every surface.</p>
+<p><strong>Waltham</strong>: Look at this.</p>
+<p><strong>Rossi</strong>: What is it?</p>
+<p><strong>Zadeh</strong>: Bas relief of some kind carved into the central stone block of the tomb. Approximately two meters in height and three in length.</p>
+<p><strong>Rossi</strong>: Depicting what?</p>
+<p><strong>Douglas</strong>: Seems to be arms, dozens of them. They’re thrusting through the earth towards the sky. They’re wrong, though.</p>
+<p><strong>Rossi</strong>: Wrong how?</p>
+<p><strong>Waltham</strong>: Way more than five fingers, its crudely sculpted but I’d say they have upwards of eight to ten fingers each. Something in their palms, but the details aren’t clear based on the crudeness of the carving.</p>
+<p><em>Multiple gunshots are heard from outside the tomb.</em></p>
+<p><strong>Zadeh</strong>: Laguerre, what’s going on out there?</p>
+<p><strong>Laguerre</strong>: We’ve got company!</p>
+<p><em>More gunshots are heard.</em></p>
+<p><strong>Zadeh</strong>: Outside, now!</p>
+<p><em>Gunshots continue to sound on the recording.</em></p>
+<p><strong>Laguerre</strong>: Fuck, where are they even coming from?</p>
+<p><strong>Rossi</strong>: What’s happening, Captain?</p>
+<p><strong>Zadeh</strong>: Command, I don’t have time to explain!</p>
+<p><em>Gunshots from multiple firearms drown out all other sound.</em></p>
+<p><strong>Douglas</strong>: Jesus, there’s ten of them! What the fuck are those things!</p>
+<p><strong>Kenoshi</strong>: No idea, but they’re flying all over the place. Started launching arrows at us, but some of them have swords of some kind.</p>
+<p><strong>Zadeh</strong>: Group your shots, they’re moving too fast!</p>
+<p><strong>Douglas</strong>: No effect!</p>
+<p><strong>Waltham</strong>: How do you know? I can’t tell if I’ve hit any!</p>
+<p><strong>Merced</strong>: I’ve hit three, they’re wounded but not out. Also, there aren’t ten of them, there’s thirteen.</p>
+<p><strong>Douglas</strong>: Fuck, you don’t think….?</p>
+<p><strong>Zadeh</strong>: Okay, calling the retreat. We’re getting the fuck out of here.</p>
+<p><em>The next fifteen minutes are full of sounds of exertion and the occasional gunshot. Multiple expletives were called out but are not preserved here.</em></p>
+<p><strong>Zadeh</strong>: Laguerre, open the damn portal!</p>
+<p><strong>Laguerre</strong>: I’m trying! It’s distracting out here.</p>
+<p><strong>Zadeh</strong>: Cover him! Waltham, smoke!</p>
+<p><em>Waltham begins chanting in Aramaic and a wind is heard.</em></p>
+<p><strong>Douglas</strong>: Goddamn that fucking bell! I can still hear it!</p>
+<p><strong>Zadeh</strong>: Doesn’t matter now, we just need to keep these bastards off our backs.</p>
+<p><em>Waltham screams and stops chanting. The wind dies down.</em></p>
+<p><strong>Douglas</strong>: Maria!</p>
+<p><strong>Zadeh</strong>: Merced, help Douglas with Waltham. Any time Lieutenant Laguerre!</p>
+<p><strong>Douglas</strong>: She’s bleeding bad. Fuck. Fuck!</p>
+<p><strong>Laguerre</strong>: Got it!</p>
+<p><em>Video feeds are restored as the team exits SCP-3743-B. Through the open Way, several winged humanoids can be seen. Their skin resembles texture of ocean organisms like sea sponges or sea cucumbers. They have no faces. The wings are transparent and insectile. Each is carrying a spear or sword and racing towards the open gate.</em></p>
+<p><em>Kenoshi is repeating the pattern of steps used to open the gate in reverse when a spear is thrown from one of the winged entities and slices across his chest, flinging him to the ground.</em></p>
+<p><strong>Douglas</strong>: Fuck this!</p>
+<p><em>Agent Douglas levels her pistol at the icon of Eros and fires twice at point blank range. The surveillance cameras around SCP-3743-A-1 show the portal closing suddenly in a small explosion of amber light, catching one of the winged entities as it was exiting. The area is covered in gore and viscera as the entity is disintegrated from the explosion.</em></p>
+<p><strong>- End Log -</strong></p>
+<blockquote>
+<p>After-action note: I want it on the record that Agent Douglas’ quick thinking saved the lives of our entire team today. It is my most strenuous suggestion that she be commended and not censured for the destruction of the anomalous icon.<br/>
+- Captain Sahara Zadeh</p>
+</blockquote>
+<p>Lieutenant Laguerre and Sergeant Waltham were transferred to the medical center at Site-91. They are both in critical but stable condition.</p>
+<p>The winged entities are designated SCP-3743-C. The tissues recovered from the explosion at SCP-3743-A-1 show a mixture of genetic profiles: human, coral, sea sponge and some unrecognizable genetic patterns.</p>
+<p>Blood collected from the ruined icon match tissue samples taken from the neutralized SCP-3743-C.</p>
+</div>
+</div>
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Close File</a></div>
+</div>
+</div>
+<hr/>
+<div class="scp-image-block block-right" style="width:300px;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-3743/stele"><img alt="stele" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-3743/stele/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>Stele and burial chamber discovered in SCP-3743-B.</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+Sergeant Kenoshi’s translation of the stele and the scrolls found in SCP-3743-B are ongoing. A preliminary series of excerpts are below:<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="note">
+<p><span style="font-size:125%;"><strong><span style="text-decoration: underline;">Scrolls found in SCP-3743-B – Excerpts</span></strong>:</span><br/>
+“And again, three other sons were born of Earth and Heaven, great and doughty beyond telling, Cottus and Briareos and Gyes, presumptuous children. From their shoulders sprang a hundred arms, not to be approached, and fifty heads grew from the shoulders upon the strong limbs of each, and irresistible was the stubborn strength that was in their great forms. For of all the children that were born of Earth and Heaven, these were the most terrible, and they were hated by their own father from the first.”<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup></p>
+<p>“Great was Zeus, son of Cronus and Rhea, but not so great as to conquer the Titans alone. A great prophecy was known to him, that the Many Handed were necessary for the success of his war.”<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-9')">9</a></sup></p>
+<p>“Once the battle was finished and the celestial city of the gods was founded on Mount Olympus, the Many Handed crafted the known world. Briareos pooled the blood of the dead Titans and formed the seas. Cottus shaped the formless Earth into plains, mountains and forests. Gyes blew with all his might and shaped the clouds and Sky. The Many Handed together lit a great fire and flung the embers into the Night sky and formed the Stars.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-10" onclick="WIKIDOT.page.utils.scrollToReference('footnote-10')">10</a></sup> When Zeus and the Olympians wished to form mortals, the Many Handed shaped their blood and bodies with their many fingers.”</p>
+<p>“Their Many Hands guide us in this life. We honor their creation with our blood and bodies. We are their many hands, shaping society in their image.”</p>
+</div>
+<div class="note">
+<p><span style="font-size:125%;"><strong><span style="text-decoration: underline;">Stele found in SCP-3743-B – Excerpt</span></strong>:</span><br/>
+"In the year of the Battle of Sphacteria, the Many Hands Society retreated from the world of the Hellenes. After the retreat, the Kings of Sparta took offense at the Society’s implied insult by leaving Hellenic society. It was in the following year that Sparta sent a fighting force, one thousand shields strong, led by the Cursed Brasidas,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-11" onclick="WIKIDOT.page.utils.scrollToReference('footnote-11')">11</a></sup> to wipe the temple of the Society from the plains of Greece. The Kings of Sparta desired of our strength and would not allow the Society to exist if it was not within their control.</p>
+<p>Our great leader Euboea, Son of Briareos, fought with our congregation against the Spartan aggression, killing hundreds with his spear. When Euboea’s spear broke on the Spartan general’s shield, Euboea performed a great sacrifice of his life’s blood. Our temple was moved to this place outside the Fates’ graces, and so Euboea did treat his surviving followers. Of the hundred priests and priestesses of the Society, only thirteen survived the battle. And yet, despite Euboea’s great will and power, one by one they succumbed to the wounds given by the despicable Spartans.</p>
+<p>Here, they lie buried, the thirteen last philosopher kings of the Many Hands Society. Their lights unfairly snuffed out by the aggression of man’s politics. May they rise again one day, to serve the hands of the Hecatoncheires.”</p>
+</div>
+<p>Director Varga suggested the scrolls retrieved from SCP-3743-B be radiocarbon dated. Despite Sergeant Kenoshi’s assertion that the parchment was new, the scrolls were all dated to approximately 425 BCE +/- 30 years.<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Access SCiPNET Email? One (1) new message!</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Re: UPDATE to SCP-3743</a></div>
+<div class="collapsible-block-content">
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> Director Iona Varga<br/>
+<strong>From:</strong> Dr. Jocasta Rossi<br/>
+<strong>Subject:</strong> Update to SCP-3743’s File</p>
+</div>
+<hr/>
+<p>We're going to have to <span style="text-decoration: underline;">update</span> the SCP-3743 file:</p>
+<p><strong><span style="text-decoration: underline;">Update</span></strong> as of <em>18/11/1992</em>:<br/>
+<strong>Description</strong>: <em>SCP-3743-A-2 is a thaumaturgically empowered Way taking the form of an art piece displayed at the York Art Gallery, located within the city limits of York, England. The Way is constructed from dozens of standing shale rocks, arrayed in a circle within the gallery. SCP-3743-A-2 also leads to SCP-3743-B.</em></p>
+<div class="scp-image-block block-right" style="width:300px;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-3743/rock1"><img alt="rock1" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-3743/rock1/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>SCP-3743-A-2, as displayed in the York Art Gallery beginning on 8 November, 1992.</p>
+</div>
+</div>
+<p><strong>Discovery</strong>: <em>Thaumaturgical scanning of SCP-3743-A-1 allowed for the discovery of SCP-3743-A-2, only fourteen kilometers south of Site-91.</em><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+It’s my opinion that whoever was on the other side of those ways, wants access to this site very badly.</p>
+<p>Let me know what you want to do,</p>
+<p><em>Jocasta Rossi, PhD</em><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+<div style="text-align: center;">
+<p><strong><a href="/hecatoncheires-cycle-hub">Hecatoncheires Cycle</a></strong><br/>
+<span style="font-size:80%;"><strong><a href="/cleaning-house">&lt;&lt; Cleaning House</a></strong> | <strong>SCP-3743: Euboea, Son of Briareos</strong> | <strong><a href="/repatriation">Repatriation &gt;&gt;</a></strong></span></p>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Depending on their susceptibility to amnestics.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Specializing in thaumaturgical ritual analysis and countermeasures, including thaumaturgical combat.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Colloquially called <a href="/serpent-s-hand-hub">Ways</a>, these primarily serve as entrances to the Wanderer's Library, but have been known to open to other anomalous locations as well.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Thaumatologist specializing in studying and disarming Ways.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Both Zadeh and Waltham are Class-A thaumatologists.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Perceptional ability to experience associations, images and other sensory information by tangibly manipulating an object of unknown history. Individuals assessed by Psionics Division as Level-3 Psychometrics can read surface emotions and history from individuals they touch.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. The Second Haptic Assembly.</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. Hesiod, <em>Theogony</em> 147–153, trans. Hugh G. Evelyn-White. Direct quote from the historical work, unmodified.</div>
+<div class="footnote-footer" id="footnote-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-9')">9</a>. Although similar in language to the <em>Theogony</em>, this passage does not appear in the original work. Any of the following quotes, if unattributed, are not direct quotes from the known <em>Theogony</em>.</div>
+<div class="footnote-footer" id="footnote-10"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-10')">10</a>. In fact, this passage explicitly contradicts the Hesiodic <em>Theogony</em> as we know it, wherein Sea and Mountain and Sky predated the Titanomachy episode as described in the <em>Theogony</em> entirely.</div>
+<div class="footnote-footer" id="footnote-11"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-11')">11</a>. Brasidas did lead a march north from Sparta in the year after the Battle of Sphacteria in order to counterbalance the debilitating loss of that conflict.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-3743">SCP-3743</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-3743">https://scpwiki.com/scp-3743</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename</strong>: Ruins<br/>
+<strong>Author</strong>: Piotr Mamnaimie<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/mamnaimie/3892997626/in/photolist-6W1CyJ-Cuz4b7-8QFbRd-pMkBkP-a4Hcz8-owM8B4-pv8rbC-7vSxHx-51bBPe-51bBGM-2iqhaAV-51bByk-durdEA-6RTdDs-GKvYxq-4c7TCR-pNNh4F-4hsjMS-y9bJY-4Qv2qE-7BgQ9T-6BNBZC-Hu3QXa-7BkDj1-5gSTc7-dWMaG7-2d7sFxd-D11nYi-SKBGf2-WZboU5-dWMbgS-Sn5q5E-cCoPwd-6vnyoT-bwwh8Y-e6FeSb-q7ZRSW-8aqs4g-2iqg2uA-64euyq-eCqYzf-q7Geji-9cPHeS-pQtwD7-63bvU1-pv8rbY-xHro3q-2bGEVaj-bsdCsj-cW7yg3">Link</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: wood<br/>
+<strong>Author</strong>: Me<br/>
+<strong>License</strong>: CC BY-SA 3.0<br/>
+<strong>Source</strong>: I took this picture</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: eros<br/>
+<strong>Author</strong>: Me<br/>
+<strong>License</strong>: CC BY-SA 3.0<br/>
+<strong>Source</strong>: I took this picture</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Rock Circle<br/>
+<strong>Author</strong>: Jean-Pierre Dalbera<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/dalbera/48233354492/in/photolist-2gudxSd-hDhJbN-q3Q9fv-2iLz5Rf-mhp6RR-2h6uEAh-2hn7fHj-2bgU2Bm-2hnqFEX-8x7Huf-2htwTHJ-HU2nQJ-2hvCUqf-HCjbS1-2351cdH-koRVes-2iw5FMA-2ghfvhL-2htAy3c-HCjcff-HCjbq9-2eHXe4A-27sKbAA-HU2oq1-k2XZFP-2awQm2J-HU2mHJ-koNKtk-HU2mCo-d49mjS-Umf7Wo-SXw6bE-HCjczo-2351c6D-HWnieB-yDc3bZ-2hv9puE-H7T45A-2hvaryt-AUh7cY-ReRYGr-y6MM6p-z7dnCi-2351bJr-HU2oDs-2jfvM5g-2hddP36-28us2pd-2hKR7UK-HU2oNW">Link</a><br/>
+<strong>Note</strong>: Edited by myself and <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;"><img alt="HarryBlank" class="small" src="https://www.wikidot.com/avatar.php?userid=6479803&amp;amp;size=small&amp;amp;timestamp=1756042898" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6479803)"/></a><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;">HarryBlank</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: stele<br/>
+<strong>Author</strong>: Klearchos Kapoutsis<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/klearchos/4955706882/in/photolist-8xVi17-8xVfj9-8xVfE7-8xVgE9-8xSdU2-Kf4tg1-KhJMCv-9vezFS-HKXqJ-8EzgJ-2bXWF8S-Waltham6Xyg-5bmWNu-88AmfZ-bynUd9-AbJ8ut-2cVqoJ1-bMhwNv-KmMhi3-Jtxjhz-Jtd87M-bMhytR-KhK4zR-eKQExT-Kfs47y-KpDqi8-QshmP-zm3DwS-Jtfs5d-zm3E5W-JbAEwt-yrywkc-73LDDG-8WoDmf-7MG43C-yrfL1p-291cRz-8Fy8Gp-JtkTRH-JXFHDu-z6WjBr-z6JSEQ-ei3QNM-JZPsQS-JYLWM5-2W53Ay-6hJNpn-KhFHPz-Jtw4fH-QsgTF">Link</a></p>
+</blockquote>
+<blockquote>
+<p>Quotes from the <em>Theogony</em> by Hesiod, 147-153<br/>
+Translation by Hugh G. Evelyn-White, 1914<br/>
+<strong>Source</strong>: <a href="https://www.sacred-texts.com/cla/hesiod/theogony.htm">https://www.sacred-texts.com/cla/hesiod/theogony.htm</a><br/>
+<strong>License</strong>: Public Domain</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

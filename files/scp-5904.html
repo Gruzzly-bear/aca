@@ -1,0 +1,532 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-5904</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-5904</h1>
+            <html><body><div id="page-content">
+
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=3&amp;theme=https://scp-wiki.wdfiles.com/local--code/theme%3Ascp-offices-theme/1&amp;css={$css}" style="display: none"></iframe></p>
+<div style="display: none">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">relative</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> rgba(</span><span class="hl-number">176</span><span class="hl-code">,</span><span class="hl-number">16</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.7</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+ 
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">),</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.12</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.wiki-content-table</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumtitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.maintitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">x-large</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addenda-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">;
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">; 
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.object-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">align-self:</span><span class="hl-code"> flex-end</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.title-style</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">underline</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div-empty</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.computed</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.computed</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Computed </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-special">:before</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Raw </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.codebox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-code">,  </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">.75</span><span class="hl-string">em</span><span class="hl-code">; 
+        </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+        </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> gainsboro</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-reserved">background-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> unset</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media Hub</a><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><a href="https://scp-wiki.wikidot.com/grigori-karpin-s-author-page">More by Grigori Karpin</a></p>
+</div>
+
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<div class="scp-image-block block-right" style="width:300px;"><img alt="Tape3-corrected" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/Tape3-corrected"/>
+<div class="scp-image-caption">
+<p>SCP-5904-C</p>
+</div>
+</div>
+<h4 id="toc0"><span><span style="text-decoration: underline;">Special Containment Procedures</span>:</span></h4>
+<p>Instances of SCP-5904 are to be archived in High-Yield Data Storage Facility 3 at Site-43.</p>
+<p>I/O METATRON is to search online listings for any Vikander-Kneed Technical Media-labelled VHS tapes. Such listings are to be shut down and all those with working knowledge of the tapes are to be amnesticized.</p>
+<p>Investigation into the origins of SCP-5904 is given high priority, in order to stymie production of the anomaly.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div style="border:solid 2px #000000; color:#000000; border-radius: 10px; background: #ECF0CA; padding:5px; margin-bottom: 10px; padding:10px; font-family: ‘Constantia’">
+<h4 id="toc1"><span><span style="text-decoration: underline;">Description</span></span></h4>
+<p>SCP-5904 is the collective designation for a series of instructional VHS tapes entitled “Human Resources Orientation,” produced and distributed by <strong><em><span style="text-decoration: underline;"><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media</a></span></em></strong> (GoI-5889).</p>
+<p>Currently three instances are known to the Foundation, designated as SCP-5904-A through -C. SCP-5904’s anomalous effects are only triggered when an instance is played for at least one individual. Subjects who watch an instance of SCP-5904 develop increased suggestibility and are amenable to following any instruction that would not endanger their lives. The effect is cumulative; the more content an individual watches, the more open to suggestion they will become.</p>
+<p>Additionally, subjects who watch the entire series of tapes report insomnia, apathy, lack of appetite, and an increase in anxiety.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup></p>
+<p>The suggestibility and other psychological effects fade with time, but recollections of the content of an SCP-5904 instance are highly resistant to amnesticization.</p>
+<p>The content of SCP-5904 instances cannot be copied through any known technology, whether digital or analog. Any attempts to duplicate an instance will produce only static.</p>
+<p>Various items of information concerning the viewing subject will be incorporated into the content contained within an instance of SCP-5904. The host of the series (designated SCP-5904-1) is never completely shown on camera but appears to be male. At most the bottom fifty percent of SCP-5904-1’s face will be visible on camera at any given time, his eyes are never visible. SCP-5904-1 self-identifies as Charlie Fiero, senior Vice President of GoI-5889’s human resources division.</p>
+<p><strong><span style="text-decoration: underline;">Discovery</span></strong>:<br/>
+SCP-5904 was discovered after an individual in Everett, Washington, purchased the tapes at a rummage sale. Ms. Martha Gutierrez, a student at University of Washington, age 20, claims no memory of the location or event of the purchase. Foundation personnel were made aware after posts on Parawatch.net were discovered by dedicated AiCs:</p>
+<div class="parawatch">
+<blockquote>
+<p><span style="color: blue">MGparanoid</span> 13/06/16 (Thu) 20:17:52 #6749253</p>
+<hr/>
+<p>So, the other day I bought these videotapes at a rummage sale in my parents’ neighborhood. I got them so I could show my AV class, basically as a joke. But there was some drama right after I started the tape – my girlfriend wanted to get her sweater from my dorm and my roommate wouldn’t let her in (b1tch) – so I left for a few minutes. When I came back, my classmates were all staring at the screen. The VHS had stopped and the old CRT was just static.</p>
+<p>Screwed up thing? Here’s this group of six people, totally independent college students, various issues and intellectual abilities, right? They just start following orders. I tell them to fuck off – because they didn’t pause the tape for me – they all get up and start leaving. I tell them to “wait a minute!” – they all turn around and look at me. It was fucking eerie!</p>
+<p>I figure they were pulling a joke on me… but the next day, I found one of them watching another of the tapes in the AV lab and she was freaking out. Turns out, the video was addressed to someone with her name (Emily isn’t that strange of a name, I think she was being a bit extra)… so she’s having a full on panic attack (she’s normally really chill). I tell her she needs to calm down, and she sorta does. Like, I could see in her eyes that she was still freaked but she stopped pacing and stopped cursing up a storm. She just listened immediately.</p>
+<p>They’re just HR training videos, wtf?</p>
+</blockquote>
+</div>
+<p>Ms. Gutierrez was interviewed but she failed to provide any information concerning the origins of SCP-5904. She was amnesticized along with her classmates.</p>
+</div>
+<hr/>
+<hr/>
+<div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;">
+<div style="text-align: center;">
+<h4 id="toc2"><span>NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION</span></h4>
+<p>Reading transcripts of the video files contained within SCP-5904-A through -C has the same effect as viewing the videos themselves. The following excerpts<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> should present minimal anomalous effects, but this is not guaranteed. Please have emergency anti-cognitohazard agents present while reviewing these transcripts.</p>
+<p>— Maria Jones, Director, RAISA</p>
+</div>
+</div>
+<p>Researcher William Wettle performed the initial anomaly review and produced the below transcripts:</p>
+<div style="border:solid 3px #000000; color:#000000; border-radius: 10px; background: #D9E6CC; padding:5px; margin-bottom: 10px; padding:10px">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Tape #1</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div style="border:solid 1px #000000; color:#000000; border-radius: 10px; background: #DDDEDC; padding:5px; margin-bottom: 10px; padding:10px; font-family: 'Constantia'">
+<p><em>Following is a transcript of one section of Human Resources Orientation tape #1</em>:</p>
+<div class="blockquote">
+<p><em>[SCP-5904-1 takes off a suit coat, starts rolling up its sleeves. The setting is a classroom with a large blackboard. Written on the blackboard are the words: “Interviews: Framing the Narrative.”]</em></p>
+<p><strong>SCP-5904-1</strong>: The thing is, you don’t really ever want them to be too comfortable. Make it a little too hot, a little too cold, something. Get ‘em antsy. Establish who’s in charge early on. If they want those health benefits, they’re gonna have to impress you. William impressed his interviewer when he came to work there, that’s how he got this important job. Isn’t that right Willie?</p>
+<p><em>[SCP-5904-1 waits for thirty seconds.]</em></p>
+<p><strong>SCP-5904-1</strong>: Right right, still… it <em>is</em> a funny joke. Then again, I wasn’t really listening. <em>That’s</em> the other thing: only half listen to the interviewee. You don’t get to make the call if they’re hired or not, so what does it matter what they say? Besides, you don’t want to set a precedent… If you started listening to people when they came to your office, they’d probably start coming a lot more. Who wants that?</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Tape #2</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div style="border:solid 1px #000000; color:#000000; border-radius: 10px; background: #DDDEDC; padding:5px; margin-bottom: 10px; padding:10px; font-family: 'Constantia'">
+<p><em>Following is a transcript of one section of Human Resources Orientation tape #2</em>:</p>
+<div class="blockquote">
+<p><em>[SCP-5904-1 is sweeping a pile of bloody rags and human organs off the table in front of it and into a trash can. The trash can is overflowing with bones, viscera and other biological material.]</em></p>
+<p><strong>SCP-5904-1</strong>: And that’s the end of the Conflict Resolution chapter. Who’s ready for a break?</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Tape #3</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div style="border:solid 1px #000000; color:#000000; border-radius: 10px; background: #DDDEDC; padding:5px; margin-bottom: 10px; padding:10px; font-family: 'Constantia'">
+<p><em>Following is a transcript of one section of Human Resources Orientation tape #3</em>:</p>
+<div class="blockquote">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="scp-image-block block-center" style="width:400px;"><img alt="frametape3" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/frametape3"/>
+<div class="scp-image-caption">
+<p>SCP-5904-1 in front of Researcher Wettle’s bedroom closet approximately five minutes into the runtime of SCP-5904-C.</p>
+</div>
+</div>
+<p><em>[SCP-5904-1 opens a bedroom door, the camera following closely behind. It turns and gestures towards a bed containing Researcher Wettle. SCP-5904-1 adjusts the blanket on top of Researcher Wettle so the blanket covers his shoulders. It turns to the camera and brings a finger to its lips. The entity gestures the camera away and walks over to Wettle’s open closet, before standing in front of it and facing the camera.]</em></p>
+<p><strong>SCP-5904-1</strong>: Now, let’s talk about hostile work environments. How do you make them? And how to escalate?</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong><em>Approximately ten minutes cut for brevity.</em></strong></p>
+</div>
+<p><em>[SCP-5904-1 is standing in front of Researcher Wettle’s open refrigerator. It is bending over and looking inside, its upper body entirely hidden behind the open appliance door. The entity noisily rummages while continuing to speak.]</em></p>
+<p><strong>SCP-5904-1</strong>: See, what we need to do is make sure that when someone complains of a hostile working environment, we don’t solve the problem. If HR solved hostile work environments, what would the labor attorneys do for money? No, our job is different and has three parts: minimize the complaint, alienate the worker complaining, and make sure the one guilty of creating the hostile environment benefits in some noticeable way.</p>
+<p><em>[SCP-5904-1 throws a jar of pickles out of the refrigerator.]</em></p>
+<p><strong>SCP-5904-1</strong>: We’re not <em>[chewing noises]</em> conflict resolution managers. We’re human resources, we manage the humans. I always say, keep your goal reasonable and keep your role in the company firmly entrenched in your mind. Otherwise, you’re just filling out forms and solving problems for employees every waking hour. That’s not helping anyone!</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong><em>Approximately twelve minutes cut for brevity.</em></strong></p>
+</div>
+<p><em>[The entity has moved to Wettle’s living room and sits in a Lay-Z-Boy recliner, foot dangling off the right arm of the chair. SCP-5904-1 is smoking a cigarette and ashing onto the shag carpeting of Wettle’s home. It is also drinking directly from a bottle of wine taken from Wettle’s cabinets.]</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup></p>
+<p><strong>SCP-5904-1</strong>: Now let's cover the most challenging aspect of your HR career: medical benefits questions. What a pain in the butt, right? The secret is, don’t read the documents. Always say “I’ll have to look into it” when someone comes to you with questions and then, if possible, don’t get back to them. If they’re persistent, find a way to ruin their day, just a little. Who are they to ask such questions? What, are medical benefits a human right?</p>
+<p><em>[SCP-5904-1 inhales a long drag from the cigarette and then exhales.]</em></p>
+<p><strong>SCP-5904-1</strong>: What is this, Cuba? They should be fucking happy we give them benefits. Read your own damn documents. It’s 1992, this ain’t a fantasy story, people should be content with what they get.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+<p><em>[The entity rises from the recliner, grinds out the cigarette into the carpet, and drains the mostly full bottle of wine in twenty seconds. SCP-5904-1 turns its back to the camera and approaches a potted ficus tree in the corner of Wettle’s living room. The sound of a zipper and then a stream of liquid hitting plastic leaves is audible on the recording.]</em></p>
+<p><strong>SCP-5904-1</strong>: What else… what else? Oh, I know. Sexual Harassment. The best subject. Not because of sex, don’t look at me that way, Willie. I mean because of the harassment. People being unhappy is my thing.</p>
+<p><em>[The sounds of liquid cease and the zipper is heard again. SCP-5904-1 walks to Wettle’s sliding glass door leading to a small, enclosed backyard. The entity opens the door and walks through, the camera following.]</em></p>
+<p><strong>SCP-5904-1</strong>: So, part of our job in HR is to take complaints and file them with the appropriate people, when an employee makes a complaint of sexual harassment. This is especially important because we don’t want the corporation sued. The bottom line is literally your god, we didn’t get into HR because we were humanitarians, am I right? <em>[SCP-5904-1 chuckles softly.]</em> So, make sure you tell the boss and the appropriate steps are taken when such a complaint is made. I might like it when people are miserable, but abusers can take a long walk off a short pier, you get me?</p>
+<p><em>[SCP-5904-1 stretches and yawns, looking up at the night sky. As it turns around to face the camera again, the view is shifted down so only the bottom 50% of the entity’s face is visible. Blood starts to run down its face in twin rivulets, presumably from the area of its eyes. The blood stains the entity’s shirt and continues to flow as it speaks.]</em></p>
+<p><strong>SCP-5904-1</strong>: Right well, that’s about all the time we have today. Don’t forget to write those letters with any questions to Vikander-Kneed Technical Media Human Resources Orientation at the address provided in tape number one. We’re here to help… well, not the employees obviously, but otherwise we’re here to help. You know what I mean. Say Goodnight, Willie!</p>
+<p><em>[SCP-5904-1 starts waving in an animated fashion and continues for fifteen seconds.]</em></p>
+<p><strong>SCP-5904-1</strong>: Thanks, Willie! Same from us, at Vikander Kneed, g’nite!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="vhsarchive" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/vhsarchive"/>
+<div class="scp-image-caption">
+<p>Additional instances of SCP-5904.</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+On 3 December, 2016, a rentable storage-space was discovered by searching out properties in the area owned by any entities labelling themselves as Vikander-Kneed.</p>
+<p>The storage-space had been rented out for the last thirty-five years, paid entirely in advance in cash. Hundreds of VHS tapes were discovered within, labelled as Vikander-Kneed Technical Media. Over 50% were copies of the Human Resources Orientation series.</p>
+<p>Classification has been changed to Keter, and research is being formulated to discern the nature of the VHS tapes not covered by the SCP-5904 designation.<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/></p>
+
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Regardless of their mental health history.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Any personnel wishing to review the original video files may present written request for approval to Director McInnis. Researcher Wettle is still recovering.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. The wine is an inexpensive and common vintage.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Researcher Wettle did not live in that residence in 1992. In fact, he did not live in the country that residence is located within.</div>
+</div>
+
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-5904">SCP-5904</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-5904">https://scpwiki.com/scp-5904</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> VHS tape three<br/>
+<strong>Author:</strong> [[*Grigori Karpin]]<br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong><br/>
+<strong>Additional Notes:</strong> Edited with the below two pictures</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> VHS<br/>
+<strong>Author:</strong> bart everson<br/>
+<strong>License:</strong> CC BY 2.0<br/>
+<strong>Source Link:</strong> <a href="https://www.flickr.com/photos/editor/8272068467/in/photolist-RZxp6y-2hGipnb-RZxxrw-6fZwgd-6fVn7t-6fVw4a-4VU7VK-6fZGtY-dAYvL8-6fZK9q-6fZNuG-6fVDPx-6fVsVp-6fZwTW-6fVDuH-6fVsYx-6fVh5X-6fVC6V-6fVxdP-6fZE2h-2y1DX4-2j7at4W-6fZEHW-6fZGE5-6fZKVb-6fZQ7N-573Bfw-6fZxK3-6fZxa3-6fZGYm-6fVAwZ-zG4wP5-6fVyfx-6fVnr4-6fVuCg-6fZF5Y-6fVAVH-z2Dwiq-6fVx5e-6fVkHg-6fVEHk-6fZF9m-6fVhgc-zGaFi6-zWnMb7-6fZxdG-6fVCge-6fVnht-6fZErE-6fVBZR">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;"><img alt="Grigori Karpin" class="small" src="https://www.wikidot.com/avatar.php?userid=4558017&amp;amp;size=small&amp;amp;timestamp=1758133752" style="background-image:url(https://www.wikidot.com/userkarma.php?u=4558017)"/></a><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Astaroth’s seal<br/>
+<strong>Author:</strong> CabronDeOz<br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://en.wikipedia.org/wiki/Astaroth#/media/File:Astaroth.svg">Link</a></p>
+</blockquote>
+<hr/>
+<blockquote>
+<p><strong>Filename:</strong> frame of tape 3<br/>
+<strong>Author:</strong> tim<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://www.flickr.com/photos/antisocialiting/103800381/in/photolist-ab1eK-nRKqH3-8SoBpc-8oJ5U-cp7FD-KHHeH-6wjGCz-MUPQ9V-4gdE8M-m2WrHH-qD7WRT-copSF-iAxTod-sE2ovV-dz8nLe-dz8o7T-tYekry-8NRz77-3Ui7C8-X3nw-9WE8ef-dz8oqP-8gCfKd-Qb2a5-9bbGGu-9ASASB-ffpyw2-9DKD1s-ei5ZvK-ahmmJL-7gpERX-6Xm14-kYdQt4-4TTAd5-qYBuDK-X3op-9mxG8a-X3p8-p3ZJo7-3Pt1oc-dnSBS4-X3qj-DfdKFH-dzdShw-rNG79T-zw4cdf-dnSC58-copSu-3iPhJ-dzdRYE">LINK</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Videotape Archive<br/>
+<strong>Author:</strong> DRs Kulturavsprojekt<br/>
+<strong>License:</strong> CC BY-SA-2.0<br/>
+<strong>Source Link:</strong> <a href="https://www.flickr.com/photos/kulturarvsprojektet/6498650083/in/photolist-aUghg6-vFFv-aUggtF-25YHPvu-YMFqQE-FVLGqF-pLVPf9-FVLKbF-2b95Cx9-aUgdnB-dt1gEB-7fNe4U-eGsdqP-aEfB5u-4Ppmmu-eyiGf6-5HgvD-EggP3-61EiAs-6fZjLN-64mjP-4PnMSV-6GEdEB-JFB5MR-7FdgHX-FUpJmG-LKxNsN-6Yon7c-6fVn9F-pBwjwv-aUg3Qn-2dSWHMG-aUg4hP-6fVzcD-4eFpZ4-6HDCV4-6fV9kr-8T6g1L-5GzRTK-6fZNfo-aUg2da-6fZDTJ-6fV9wM-6fZGXb-6fZk4C-6fZk95-6fZjWY-6fV9BV-6fV9q8-2kG97Bx">LINK</a><br/>
+<strong>Additional Notes:</strong> Edited by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;"><img alt="Grigori Karpin" class="small" src="https://www.wikidot.com/avatar.php?userid=4558017&amp;amp;size=small&amp;amp;timestamp=1758133752" style="background-image:url(https://www.wikidot.com/userkarma.php?u=4558017)"/></a><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> 5904 logo<br/>
+<strong>Author:</strong> <span class="printuser"><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;">HarryBlank</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/5904%20logo.png">LINK</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

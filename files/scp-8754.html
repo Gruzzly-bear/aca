@@ -1,0 +1,542 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-8754</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-8754</h1>
+            <div class='image-header'><img alt="Anyar" class="small" src="https://www.wikidot.com/avatar.php?userid=5274479&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5274479)"/>
+<img alt="AstralNavigator" class="small" src="https://www.wikidot.com/avatar.php?userid=9716469&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9716469)"/>
+<img alt="P4TR1CK07" class="small" src="https://www.wikidot.com/avatar.php?userid=7817017&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7817017)"/>
+<img alt="mattam" class="small" src="https://www.wikidot.com/avatar.php?userid=9530570&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9530570)"/>
+<img alt="Mahalayati" class="small" src="https://www.wikidot.com/avatar.php?userid=9704626&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9704626)"/>
+<img alt="zoempaws" class="small" src="https://www.wikidot.com/avatar.php?userid=9507357&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9507357)"/>
+<img alt="mxsinister" class="small" src="https://www.wikidot.com/avatar.php?userid=7735264&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7735264)"/>
+<img alt="WunderPuma" class="small" src="https://www.wikidot.com/avatar.php?userid=9802945&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9802945)"/>
+<img alt="Tactical_Galaxy" class="small" src="https://www.wikidot.com/avatar.php?userid=9408144&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9408144)"/>
+<img alt="penumbralchoir" class="small" src="https://www.wikidot.com/avatar.php?userid=9790345&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9790345)"/>
+<img alt="Athlonfer" class="small" src="https://www.wikidot.com/avatar.php?userid=5552814&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5552814)"/>
+<img alt="Uncle Nicolini" class="small" src="https://www.wikidot.com/avatar.php?userid=3487700&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=3487700)"/>
+<img alt="Zera27" class="small" src="https://www.wikidot.com/avatar.php?userid=5659099&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5659099)"/>
+<img alt="xpossum" class="small" src="https://www.wikidot.com/avatar.php?userid=9743437&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9743437)"/>
+<img alt="UniqueName" class="small" src="https://www.wikidot.com/avatar.php?userid=9536195&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9536195)"/></div><div class='text-content'>Item#:</span> <span class="number">SCP-8754</span></div>
+
+<div class="top-right-box">
+<div class="level">Level3</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">euclid</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">{$secondary-class}</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">vlam</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">critical</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<div class="log">
+<div class="scp-image-block block-center" style="width:100%;"><img alt="SCP-8754.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-8754/SCP-8754.png"/>
+<div class="scp-image-caption">
+<p>Inside the Inner Duat Belt, SCP-8754.</p>
+</div>
+</div>
+<hr/>
+<p><span class="h-span">Special Containment Procedures:</span><br/>
+All travel to the Proxima Centauri system is strictly prohibited. Any vessels deviating toward SCP-8754 are to be remotely disabled.</p>
+<p><span class="h-span">Description:</span><br/>
+SCP-8754 is an abnormally dense asteroid field surrounding the Proxima Centauri system, commonly known as the Inner Duat Belt. The belt encompasses a region of icy planetary bodies, notably Ptah. Objects and individuals entering SCP-8754 cannot exit through any known propulsion or navigational means.</p>
+<p>Due to limited data, whether the entire belt exhibits this effect or if it originates from a central body, such as Ptah, is unknown.</p>
+<p><span class="h-span">Discovery:</span><br/>
+SCP-8754 was initially discovered following the disappearance of the Mars EAD<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> <em>Peregrine</em>, a Foundation vessel equipped with a von Braun wheel<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> and experimental technology. The shuttle was en route to the ice giant Anubis for the first full test of Project HERMES—an initiative designed to establish real-time, extrasolar communications across vast interstellar distances. The crew of the <em>Peregrine</em> was comprised of Zoey Frakes (Captain), Nevyn Ducote (Pilot), Avery Russo (Copilot), Nadia Zaitseva (Engineer), and Tyrel Adler (Medical Officer). Subsequent analysis of onboard transmissions revealed the presence of an anomalous spatiotemporal boundary.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc0"><span><span class="h-span">Addendum SCP-8754-1:</span> <em>Peregrine</em> Flight Log</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2024-05-02<br/>
+<span class="h-span">Elapsed Mission Time (EMT):</span> 07:04:55<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Nevyn Ducote, Avery Russo, Zoey Frakes, Tyrel Adler</p>
+<hr/>
+<p><span class="h-span">NADIA:</span> Expedition Log, Mars EAD <em>Peregrine</em>, May 2, 2049. It's official. We're on our way out of the Sol System. Everybody, say, "Goodbye, Sol!"</p>
+<p><span class="h-span">NEVYN:</span> Turn that shit off, kid. Bad enough that I have to fly this piece of garbage. Last thing I need is a damn documentary crew in my—</p>
+<p><span class="h-span">AVERY:</span> Goodbye, Sol! C'mon, gramps, lighten up. We're stuck with each other for the next few months, anyway. Might as well pretend to get along.</p>
+<p><em>Nevyn scoffs. He turns back to the flight controls, fiddling with the control sticks, despite the shuttle being on autopilot.</em></p>
+<p><span class="h-span">NADIA:</span> Mission objective! I'll pass this one to you, Captain.</p>
+<p><span class="h-span">ZOEY:</span> To test the extrasolar real-time communications array. Our first full-system deployment. Where are we now, Nevyn?</p>
+<p><span class="h-span">NEVYN:</span> Skimming Neptune's orbit. We'll swing by Pluto in a couple days, slingshot off its orbit, then it's straight to Proxima Centauri.</p>
+<p><span class="h-span">ZOEY:</span> Good. Nadia, check with the onboard AIC and make sure the Bifrost Engines are online and cycling for the jump.</p>
+<p><span class="h-span">NADIA:</span> Yes, ma'am. Er—Captain!</p>
+<p><span class="h-span">ZOEY:</span> Avery—make sure our pilot doesn't forget to compensate for Ptah's gravitational pull. The last thing I want is to wind up slingshotting into the outer dark.</p>
+<p><span class="h-span">NEVYN:</span> Damnit, Zoey, how many times have you flown with me?</p>
+<p><span class="h-span">ZOEY:</span> There's a first for everything, Nev.</p>
+<p><em>Tyrel approaches the cockpit and crosses his arms.</em></p>
+<p><span class="h-span">ZOEY:</span> Excited to finally get out of the system, Ty?</p>
+<p><span class="h-span">TYREL:</span> Not as excited as you'd think. I'd much rather be on Mars right now, relaxing with my wife.</p>
+<p><span class="h-span">ZOEY:</span> Why'd you volunteer then?</p>
+<p><span class="h-span">TYREL:</span> I didn't. Foundation said this was part of my contract.</p>
+<p><span class="h-span">NEVYN:</span> Bastards pulled out their bureaucrats on ya, eh?</p>
+<p><span class="h-span">TYREL:</span> Unfortunately. Sign up for five years of service, and you wind up with ten.</p>
+<p><span class="h-span">NEVYN:</span> Try twenty-five, then we can talk.</p>
+<p><span class="h-span">ZOEY:</span> Not all of us age like a fine wine, Nev.</p>
+<p><em>Nevyn rolls his eyes before waving Avery over.</em></p>
+<p><span class="h-span">NEVYN:</span> Get your ass over here, boy. How many times have you initiated Bifrost jumps? If it's below 30, it's not enough to do it on your own.</p>
+<p><span class="h-span">AVERY:</span> Out of the six months I've been under your wing, just once…</p>
+<p><span class="h-span">NEVYN:</span> Jesus. What am I teaching this kid? Here's your chance to make it twice.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc1"><span><span class="h-span">Addendum SCP-8754-2:</span> <em>Peregrine</em> Flight Log</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-08-01<br/>
+<span class="h-span">EMT:</span> 91:12:37<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Avery Russo, Zoey Frakes, Tyrel Adler</p>
+<hr/>
+<p><em>Alarm klaxons blare before Nadia enters, poking at a console to silence them.</em></p>
+<p><span class="h-span">NADIA:</span> Expedition Log, Mars EAD <em>Peregrine</em>, August 1, 2049. Location, Avery?</p>
+<p><span class="h-span">AVERY:</span> Not completely sure. I think… this might be the Inner Duat Belt? Could be wrong, but that looks like Ptah over there.</p>
+<p><em>Avery gestures towards an icy blue planet visible beyond the asteroid field.</em></p>
+<p><span class="h-span">NADIA:</span> Right. Inner Duat Belt. We've come under attack and initial diagnostics show that the communications array is offline. Nevyn's injured—Tyrel's doing what he can. Pirates showed up just after we completed the jump to Proxima Centauri. Nevyn says they probably followed us all the way from the Kuiper Belt.</p>
+<p><em>Zoey enters the cockpit. She scans the room, scowling at a scuff mark and a faint red smear on the surface of the cockpit glass.</em></p>
+<p><span class="h-span">ZOEY:</span> Avery, it's been over three hours. We should be clear. Nev managed to get us in here—can you get us out?</p>
+<p><span class="h-span">AVERY:</span> Might take some finagling, but… I think I can manage. Biggest issue right now is asteroid debris. I have no clue how Nevyn threaded us through what he did. I was pretty sure we were dead.</p>
+<p><span class="h-span">ZOEY:</span> Nev's been flying longer than most of us have been alive. He knows what he's doing. Probably would have handled it even smoother if we'd given him a shuttle built in his own damn decade.</p>
+<p><span class="h-span">AVERY:</span> Well, I'm at least thirty years younger than Nevyn, so maybe I'll make up the difference… I hope. How's he doing?</p>
+<p><span class="h-span">ZOEY:</span> Unconscious for now. He should've double-checked the harness before we left Mars. Turns out the glass is thicker than his skull—honestly, very surprising.</p>
+<p><em>Tyrel storms into the cockpit.</em></p>
+<p><span class="h-span">TYREL:</span> I <em>told</em> you this was a bad call. Who the hell in their right mind flies <em>into</em> an asteroid belt? Nevyn's in critical condition, the <em>Peregrine</em> is fucked seven ways to hell, and we can't even call for help. What the <em>fuck</em> were you thinking, Zoey?</p>
+<p><span class="h-span">ZOEY:</span> I made the call we <em>all</em> had to make. What did you want us to do, Ty—stay and fight? With what weapons?</p>
+<p><span class="h-span">TYREL:</span> We didn't need to fight! We didn't need to <em>hide</em>! Nevyn said we were faster! We could've outrun them!</p>
+<p><span class="h-span">ZOEY:</span> I didn't want to take that risk.</p>
+<p><span class="h-span">TYREL:</span> And <em>this</em> is better? You Foundation fucks are all the same.</p>
+<p><em>Tyrel turns sharply after gesturing to each of them, exiting the cockpit. As he passes through the hatch, he kicks the edge of the airlock hard enough to echo.</em></p>
+<p><span class="h-span">ZOEY:</span> Avery—get us the hell out of here.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc2"><span><span class="h-span">Addendum SCP-8754-3:</span> <em>Peregrine</em> Flight Log</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-08-02<br/>
+<span class="h-span">EMT:</span> 92:01:12<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Avery Russo, Zoey Frakes</p>
+<hr/>
+<p><span class="h-span">NADIA:</span> Expedition Log, Mars EAD <em>Peregrine</em>, August 2, 2049. We've been flying for hours. We're still not out.</p>
+<p><span class="h-span">AVERY:</span> Twelve hours and thirty-five minutes, to be exact. This place is like a maze. There's no way Nevyn got us this deep into the belt. Is it possible we drifted?</p>
+<p><span class="h-span">NADIA:</span> I've been watching our sensors the entire time. No movement. No drift. No rotation. As far as our charts are concerned, we haven't moved an inch since we entered.</p>
+<p><span class="h-span">AVERY:</span> That… doesn't make sense?</p>
+<p><span class="h-span">NADIA:</span> I didn't say it was supposed to.</p>
+<p><em>The cockpit hisses as the airlock cycles. Zoey steps inside. Her sudden entrance causes both Avery and Nadia to turn abruptly.</em></p>
+<p><span class="h-span">ZOEY:</span> This wasn't the plan, but at this point, we don't have much of a choice. Head toward Ptah. Use the dwarf planet as a fixed vector and burn steady. Follow it and don't let off the throttle.</p>
+<p><span class="h-span">AVERY:</span> Aye-aye, Captain.</p>
+<p><span class="h-span">NADIA:</span> Do you need any help?</p>
+<p><span class="h-span">AVERY:</span> The one person that could help me is out cold right now… But I wouldn't mind another pair of eyes on our scanners.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc3"><span><span class="h-span">Addendum SCP-8754-4:</span> <em>Peregrine</em> Medbay Log</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-08-02<br/>
+<span class="h-span">EMT:</span> 92:01:18<br/>
+<span class="h-span">Personnel:</span> Zoey Frakes, Tyrel Adler</p>
+<hr/>
+<p><em>Tyrel stands over Nevyn's unconscious body. He leans against the bed, supporting himself with two gloved hands, sweat beading on his forehead when Zoey enters the medbay.</em></p>
+<p><span class="h-span">TYREL:</span> What, are you here to apologize?</p>
+<p><span class="h-span">ZOEY:</span> No, I'm here to check on my pilot.</p>
+<p><span class="h-span">TYREL:</span> Well, I'm afraid you're not going to get much out of him.</p>
+<p><span class="h-span">ZOEY:</span> How is he, Ty?</p>
+<p><span class="h-span">TYREL:</span> As stable as I can get him.</p>
+<p><span class="h-span">ZOEY:</span> That's all I can ask for.</p>
+<p><span class="h-span">TYREL:</span> That's all you'll get.</p>
+<p><em>There is a moment of silence between them before Zoey speaks again.</em></p>
+<p><span class="h-span">ZOEY:</span> What the hell is your problem?</p>
+<p><span class="h-span">TYREL:</span> <em>My</em> problem? <em>My</em> problem is that our pilot just had a stroke, we've had pirates on our ass, and we can't seem to get the hell out of this damn belt! Forgive me if I'm a little on edge, <em>Captain</em>.</p>
+<p><span class="h-span">ZOEY:</span> We're <em>all</em> in this situation, Tyrel. None of us <em>want</em> to be here. If you want to bitch about it, find a place in line.</p>
+<p><span class="h-span">TYREL:</span> Who do <em>you</em> have waiting for you at home, Zoey? Do you even have a home to go back to? You <em>did</em> volunteer. It's in your personnel dossier. You've volunteered for every expedition with the EAD for the last 12 years. I'm bitching because I have a reason to. What about you?</p>
+<p><em>Zoey doesn't respond. Tyrel shakes his head and peels off his gloves, throwing them down on the operating table next to him. He stalks out of the room, decontamination cycling as he exits.</em></p>
+<p><em>Zoey positions a stool next to the bed and sits, running her thumb over Nevyn's forehead, making sure to avoid the line of stitches zigzagging up his scalp. His skin is stained pink around each stitch.</em></p>
+<p><span class="h-span">ZOEY:</span> You better wake up… Our copilot's only done two jumps, remember? He's still got 28 more to go before he can do it alone… We need you, Nev. I need you.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc4"><span><span class="h-span">Addendum SCP-8754-5:</span> <em>Peregrine</em> Flight Log</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-08-05<br/>
+<span class="h-span">EMT:</span> 94:16:06<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Avery Russo, Zoey Frakes</p>
+<hr/>
+<p><span class="h-span">NADIA:</span> Expedition Log, Mars EAD <em>Peregrine</em>, August 5, 2049. It's been two days.</p>
+<p><span class="h-span">AVERY:</span> Two days, fourteen hours and fifty-four minutes… But who's counting?</p>
+<p><span class="h-span">NADIA:</span> The belt just keeps going. Endlessly. We should have made some headway toward Ptah by now, but our long-range sensors still show it at the same distance. We haven't closed the gap. Not even by an inch. It doesn't make sense.</p>
+<p><span class="h-span">ZOEY:</span> It doesn't need to make sense. What matters is it's not working. We need to fix our communications array and get Foundation assistance.</p>
+<p><span class="h-span">AVERY:</span> Captain, this isn't a normal asteroid field. It's abnormally dense. There's probably… hundreds—if not thousands of asteroids surrounding us. We've been avoiding going outside because of them.</p>
+<p><span class="h-span">ZOEY:</span> We're running out of options. Nadia, you're the only one who can help us right now. If you can get our extrasolar comms back up, we might be able to reach the Foundation. The signal will reach them.</p>
+<p><span class="h-span">NADIA:</span> It's experimental technology! I haven't seen what kind of damage it's sustained, and even if I did, I've never accessed its housing! I don't even know if I have the tools to—</p>
+<p><em>Zoey exhales sharply. She stands and turns to face the airlock, stopping in the hatch. She speaks in a hushed tone, and her voice cracks.</em></p>
+<p><span class="h-span">ZOEY:</span> Nev's not doing well. Tyrel's done what he can, but it's not enough. He needs a proper surgeon. We need to do something.</p>
+<p><em>Avery grips the control stick until his knuckles turn white. He looks at Nadia, his eyes pleading. Nadia opens her mouth to protest, but nothing comes out.</em></p>
+<p><span class="h-span">ZOEY:</span> I'll prep your EVA<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup>. Avery, keep the <em>Peregrine</em> away from those asteroids.</p>
+<p><em>Avery loosens his grip on the control stick and exhales slowly. He nods to Zoey.</em></p>
+<p><span class="h-span">AVERY:</span> I'll do my best.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc5"><span><span class="h-span">Addendum SCP-8754-6:</span> Zaitseva - EMU<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup> EVA Recording</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-08-05<br/>
+<span class="h-span">EMT:</span> 94:17:03<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Avery Russo, Zoey Frakes</p>
+<hr/>
+<p><span class="h-span">NADIA:</span> Tether secured. Open the airlock.</p>
+<p><em>The airlock hisses. Sound cuts as the oxygen is expelled. The asteroid field stretches infinitely in all directions, drifting slow and silent beyond the shuttle.</em></p>
+<p><span class="h-span">AVERY:</span> Nadia, can you hear me?</p>
+<p><span class="h-span">NADIA:</span> Copy, I read you.</p>
+<p><span class="h-span">AVERY:</span> Assuming our scanners are at least somewhat accurate, you've got about thirty minutes before any debris trajectories intersect your path.</p>
+<p><span class="h-span">NADIA:</span> Thirty minutes isn't much time.</p>
+<p><span class="h-span">AVERY:</span> Then use it wisely.</p>
+<p><span class="h-span">NADIA:</span> Very reassuring.</p>
+<p><span class="h-span">AVERY:</span> Did I forget to mention this is my first time piloting during an EVA?</p>
+<p><em>Nadia disengages from the airlock and drifts upward along the hull, hand-over-hand. It takes approximately five minutes for her to reach the comms array.</em></p>
+<p><span class="h-span">NADIA:</span> I made it. Running diagnostics now.</p>
+<p><em>A long pause follows as Nadia inspects the damage. Sparks briefly arc from a frayed coil. She begins field repairs. This takes nearly 10 minutes.</em></p>
+<p><span class="h-span">NADIA:</span> Avery, try it now.</p>
+<p><span class="h-span">AVERY:</span> Attempting signal… now.</p>
+<p><em>A light at the array's base flickers on, but only briefly.</em></p>
+<p><span class="h-span">NADIA:</span> Any luck?</p>
+<p><span class="h-span">AVERY:</span> No, nothing.</p>
+<p><em>Nadia makes additional adjustments. Five more minutes pass.</em></p>
+<p><span class="h-span">NADIA:</span> Okay. Try it.</p>
+<p><em>The light flickers and finally stabilizes.</em></p>
+<p><span class="h-span">NADIA:</span> Avery? Are we good?</p>
+<p><span class="h-span">AVERY:</span> … Nadia, you need to move. We've got two asteroids on a bisecting vector—collision in ETA 90 seconds.</p>
+<p><span class="h-span">NADIA:</span> Copy, I'm on my way back now.</p>
+<p><em>Nadia closes the panel and uses her tether to pull herself back toward the airlock. Behind her, two asteroids collide—one ricocheting off the other, redirecting on a collision course with the Peregrine.</em></p>
+<p><span class="h-span">AVERY:</span> Faster, Nadia! We need to move! I don't know if I can maneuver the <em>Peregrine</em> in time!</p>
+<p><em>Nadia reaches the airlock. The hatch seals and the hiss of depressurization returns to the cabin. Alarm klaxons are audible.</em></p>
+<p><span class="h-span">AVERY:</span> Brace!</p>
+<p><em>Nadia clings to the wall as the shuttle begins to accelerate. Outside the narrow viewport, the asteroid passes by, just meters away. Interior cockpit feed resumes. Nadia enters, unsealing her helmet. Avery and Zoey are seated. Avery is sweating and trembling.</em></p>
+<p><span class="h-span">NADIA:</span> The array—any luck?</p>
+<p><em>Zoey turns to Nadia, shaking her head slowly.</em></p>
+<p><span class="h-span">NADIA:</span> What?</p>
+<p><span class="h-span">AVERY:</span> No response. We don't think the transmission is getting out. If it is, it's not happening in real-time.</p>
+<p><span class="h-span">NADIA:</span> I saw the indicator light. It <em>should</em> be working!</p>
+<p><em>Zoey stands and approaches Nadia, placing a comforting hand on her shoulder.</em></p>
+<p><span class="h-span">ZOEY:</span> It's not your fault, Nadia. The array was always experimental. We knew it might not work.</p>
+<p><span class="h-span">NADIA:</span> Then why didn't we bring a backup? Even a standard array. Why <em>just</em> that one?</p>
+<p><em>Zoey hesitates before answering.</em></p>
+<p><span class="h-span">ZOEY:</span> Because… I—I don't know.</p>
+<p><span class="h-span">NADIA:</span> What are you… What do you mean you "don't know?" We've put all our bets on <em>you</em>, Zoey! You're our <em>captain</em>, how can you not know?</p>
+<p><span class="h-span">ZOEY:</span> I just don't, Nadia! I don't have the answers! I don't know what to say. I just don't—</p>
+<p><span class="h-span">AVERY:</span> Guys…</p>
+<p><em>Zoey and Nadia turn to face Avery, who is staring out the viewport. A body—frozen, unprotected, limbs rigid—drifts past.</em></p>
+<p><span class="h-span">AVERY:</span> Not just that. Look back there.</p>
+<p><em>He gestures. In the shadow of a nearby asteroid, shuttle debris is barely visible. Fragmented hull plating is painted with scorch marks.</em></p>
+<p><span class="h-span">ZOEY:</span> What the hell is that?</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc6"><span><span class="h-span">Addendum SCP-8754-7:</span> Zaitseva-Russo - EMU EVA Recording</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-08-05<br/>
+<span class="h-span">EMT:</span> 94:19:28<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Avery Russo</p>
+<hr/>
+<p><span class="h-span">AVERY:</span> The hull is damaged beyond repair. The cockpit's just… gone. Nothing left forward of frame six.</p>
+<p><span class="h-span">NADIA:</span> Copy. Captain, we're moving into the breach now.</p>
+<p><span class="h-span">ZOEY:</span> Affirm. Be quick. Scanners are clear for now.</p>
+<p><em>Nadia and Avery drift into the ruptured hull. Inside, several bodies are visible—twisting slowly in zero gravity. None are wearing EMUs. Firearms and debris float freely throughout the wreckage.</em></p>
+<p><span class="h-span">NADIA:</span> Are these—</p>
+<p><span class="h-span">AVERY:</span> Pirates. Yeah. They must've followed the <em>Peregrine</em> into the belt. Obviously, they didn't account for… this place.</p>
+<p><em>They continue forward through collapsed corridors and shredded bulkheads.</em></p>
+<p><span class="h-span">NADIA:</span> Their comms array's still online—partially. The dish is intact. Power cells are low, but it's functional. We might be able to make contact.</p>
+<p><span class="h-span">AVERY:</span> "Contact" might be pushing it. We have a narrow window—enough for a burst transmission, maybe. And even then, this isn't going to be real-time. It will be a while before the Foundation catches wind of it. We'll be lucky if it even pings a relay.</p>
+<p><span class="h-span">NADIA:</span> A distress signal is better than nothing.</p>
+<p><em>The two quickly rig the wreck's power to initiate a short-range transmission. After 90 seconds of calibration, the array activates. A low ping confirms a signal has been sent.</em></p>
+<p><span class="h-span">AVERY:</span> Coordinates broadcasted. Tagged for Foundation long-range intercept. No handshake, but… it’s out there.</p>
+<p><em>The two exit the wreck and return to the Peregrine via EVA tether.</em></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc7"><span><span class="h-span">Addendum SCP-8754-8:</span> <em>Peregrine</em> Flight Log</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-08-10<br/>
+<span class="h-span">EMT:</span> 99:06:47<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Avery Russo, Zoey Frakes, Tyrel Adler</p>
+<hr/>
+<p><span class="h-span">NADIA:</span> How long has it been?</p>
+<p><em>Avery doesn't answer, ignoring Nadia's usual query. After a moment, he inhales sharply and sits up in his seat as if preparing himself for impact.</em></p>
+<p><span class="h-span">AVERY:</span> We have the Bifrost Engines. With their anomalous properties… If I could try a jump, they could be our tickets out of here, Captain.</p>
+<p><span class="h-span">ZOEY:</span> Jump? Straight into the surface of an asteroid? Don't get me wrong… I don't doubt your abilities, Ne—Avery. But you've only ever initiated two jumps, and we're in the middle of an asteroid field. It's not happening.</p>
+<p><span class="h-span">ZOEY:</span> We've transmitted our coordinates. If the Foundation is coming, we can't risk shifting position. They won't be able to find us if we do.</p>
+<p><span class="h-span">NADIA:</span> <em>If</em> they're coming? Captain—with all due respect, we've heard <em>nothing</em>. No pingback, no signal lock. How do we even know they received our distress signal?</p>
+<p><span class="h-span">ZOEY:</span> We just have to wait.</p>
+<p><span class="h-span">AVERY:</span> Nevyn doesn't have that kind of time—</p>
+<p><em>The hatch opens, and Tyrel enters, latex gloves stained deep crimson. His face is blank.</em></p>
+<p><em>The room falls silent. Nadia looks at Avery. He has turned pale, tears welling in his eyes. Nadia's voice is barely audible.</em></p>
+<p><span class="h-span">NADIA:</span> Avery… I'm sorry.</p>
+<p><em>Avery does not respond. Tyrel walks forward. He grabs Zoey by the collar and shoves her against the bulkhead, knocking the breath out of her.</em></p>
+<p><span class="h-span">TYREL:</span> <em>This</em> is on <em>you</em>. All of it. "Captain" my ass.</p>
+<p><em>He drags his gloved hand down her uniform, smearing blood across her chest.</em></p>
+<p><span class="h-span">ZOEY:</span> We didn't have a choice, Tyrel. This weighs on me just as much as it does you, but what would you have had me do? Move? Wander aimlessly in the dark? It wouldn't have changed <em>anything</em>.</p>
+<p><span class="h-span">TYREL:</span> Don’t you <em>dare</em> talk to me about weight. You didn’t watch him fall apart. You didn’t cut open his brain to stop his bleeding. You didn’t feed him through a tube when he couldn't even open his mouth. You didn’t hold his hand when his fever spiked for the last time. You ordered him into his own body bag. And who had to clean up the mess?</p>
+<p><span class="h-span">ZOEY:</span> I did what I thought was right.</p>
+<p><span class="h-span">TYREL:</span> No, you didn't. You did <em>nothing</em>. Instead of wasting away, we could have <em>tried</em>. We could have done <em>something</em>. Fucking <em>anything</em> would have been better than this, but you wanted us to run out the clock.</p>
+<p><span class="h-span">TYREL:</span> I didn't ask for this! I was supposed to be <em>done</em> with the Foundation. The day they called me for this job was the day my contract expired. I'll probably never get to see Trish again because of you and your fucking Foundation!</p>
+<p><em>Tyrel yanks her forward and hurls her into the opposite wall. A scuffle ensues. Tyrel and Zoey exchange blows, forcing Avery and Nadia to retreat into the corner of the cockpit. Nadia shouts at them to stop fighting. Zoey is soon pinned, shielding herself from blow after blow.</em></p>
+<p><em>Another shout echoes throughout the cockpit. Avery attempts to pull Tyrel away from her, but receives a blow to the nose and stumbles backwards, falling. Moments later, a single gunshot echoes throughout the cabin. Nadia screams.</em></p>
+<p><em>Tyrel slumps to the side. Nadia stands behind him—blood spattered across her cheeks. A sidearm is clutched in one shaking hand. Smoke curls from the muzzle.</em></p>
+<p><em>Zoey rises to her feet, bloodied and beaten. She looks back and forth between Nadia and Tyrel's body, cautiously stepping toward Nadia. With a single outstretched hand, she gently takes the pistol from Nadia. After a moment, Nadia collapses into Zoey's arms, and both begin to cry.</em></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc8"><span><span class="h-span">Addendum SCP-8754-9:</span> <em>Peregrine</em> Flight Log</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-08-11<br/>
+<span class="h-span">EMT:</span> 99:12:59<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Avery Russo, Zoey Frakes</p>
+<hr/>
+<p><span class="h-span">AVERY:</span> Don't even ask. I've lost track.</p>
+<p><span class="h-span">NADIA:</span> No one's coming, are they?</p>
+<p><span class="h-span">AVERY:</span> …Probably not.</p>
+<p><span class="h-span">NADIA:</span> So what? We just die out here? Wither away into nothing?</p>
+<p><em>Avery doesn't answer. He reclines back in his seat, eyes fixed on a distant asteroid past the cockpit's viewport. Tyrel's body drifts slowly against its surface, pinned in place.</em></p>
+<p><span class="h-span">NADIA:</span> We can't stay here.</p>
+<p><span class="h-span">AVERY:</span> No. We can't.</p>
+<p><em>The two speak softly for a moment, then stand and leave the cockpit. They find Zoey in the medbay, seated beside an empty bed. The bed where Nevyn once lay. The cuts on her cheek, chin, and forehead are untreated. She begins to speak before the others have a chance to.</em></p>
+<p><span class="h-span">ZOEY:</span> You want to move. What good will it do? Where do you plan to go? This is an anomaly. This isn't an asteroid belt to be navigated and exited. It's reality bent around us. It's beyond our understanding. There is no way out. No fix.</p>
+<p><em>Nadia and Avery say nothing. Zoey's voice falters. She lowers her head into her hands.</em></p>
+<p><span class="h-span">ZOEY:</span> I'm sorry, Avery. Nevyn was my friend, too. I've flown with him for 12 years. We've been to every planet in the Sol system together. Did you know that?</p>
+<p><em>Avery balls his fists, gulping hard.</em></p>
+<p><span class="h-span">ZOEY:</span> I'm sorry, Nadia. You should never have had to do something like that. But staying was our only option. If we moved, we would vanish. That's why I—That's why Tyrel…</p>
+<p><span class="h-span">ZOEY:</span> The Foundation isn't coming. I know that. It's been in the back of my mind for days. Maybe I should have listened to you from the beginning, Nadia. So why do I keep pushing for us to stay? Loyalty? To the Foundation that left us to die here?</p>
+<p><span class="h-span">NADIA:</span> That's not… You just hoped that someone was listening, Zoey.</p>
+<p><span class="h-span">ZOEY:</span> But they're not. And because I couldn't see that… Tyrel was right. Nev is gone because of me.</p>
+<p><em>Nadia can't find words to say. After some time, Avery steps forward.</em></p>
+<p><span class="h-span">AVERY:</span> We're leaving. We're done waiting, Zoey. We're going to try <em>something</em>—<em>anything</em>. Because doing nothing has already killed two of us.</p>
+<p><em>Zoey doesn't look up. She just nods faintly. Her shoulders tremble as she begins to cry.</em></p>
+<p><em>Avery and Nadia exit. Back in the cockpit, they settle into their seats, waiting for a long time in silence. A gunshot. Nadia stifles a cry, covering her mouth with her hand. Avery doesn't flinch.</em></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc9"><span><span class="h-span">Addendum SCP-8754-10:</span> <em>Peregrine</em> Flight Log</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-08-12<br/>
+<span class="h-span">EMT:</span> 99:18:26<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Avery Russo</p>
+<hr/>
+<p><span class="h-span">AVERY:</span> There's a very low probability of this working, but it's our only chance.</p>
+<p><span class="h-span">NADIA:</span> The onboard AIC shows our Bifrost Engines are primed and ready for the jump.</p>
+<p><span class="h-span">AVERY:</span> I never thought I'd have to choose between rotting away in an endless asteroid field or potentially scattering myself across 12 dimensions. Do or die, right?</p>
+<p><span class="h-span">NADIA:</span> Or do <em>and</em> die. Not much control over that last part, though.</p>
+<p><span class="h-span">AVERY:</span> I'll try my best to limit our options to just "or."</p>
+<p><em>Avery adjusts the controls, guiding the Peregrine into alignment. The nav systems flicker, then stabilize.</em></p>
+<p><span class="h-span">NADIA:</span> What are the chances we jump right into an asteroid?</p>
+<p><span class="h-span">AVERY:</span> Assuming this belt is as infinite as it seems? Pretty damn high.</p>
+<p><span class="h-span">NADIA:</span> The belt is anomalous. The engines are anomalous. Which wins in a fight?</p>
+<p><span class="h-span">AVERY:</span> No clue. Anomalies are beyond our understanding, remember? I can only bet on the one we brought with us.</p>
+<p><em>They exchange a final glance before stepping away from the cockpit. They make their way to the sensory deprivation chambers<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup>.</em></p>
+<p><span class="h-span">AVERY:</span> I'll see you on the other side, Nadia.</p>
+<p><span class="h-span">NADIA:</span> Or you won't. On the bright side, if we die, we won't feel a thing.</p>
+<p><span class="h-span">NADIA:</span> Oh—Avery. Nevyn would be proud of you.</p>
+<p><em>Avery smiles softly. The sensory deprivation chamber lids hiss shut, sealing around them. Within moments, both are stripped of all sensory input. Silence. Darkness.</em></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc10"><span><span class="h-span">Addendum SCP-8754-11:</span> <em>Peregrine</em> Flight Log</span></h3>
+</div>
+<hr/>
+<p><span class="h-span">Date:</span> 2049-12-24<br/>
+<span class="h-span">Elapsed Mission Time (EMT):</span> 233:19:32<br/>
+<span class="h-span">Personnel:</span> Nadia Zaitseva, Avery Russo</p>
+<hr/>
+<p><span class="h-span">NADIA:</span> Expedition Log, Mars EAD <em>Peregrine</em>, December 24, 2049. Say "cheese," Avery!</p>
+<p><span class="h-span">AVERY:</span> Cheese!</p>
+<p><span class="h-span">NADIA:</span> It's official! Not an asteroid in sight! Clear skies! What's our heading, Captain?</p>
+<p><span class="h-span">AVERY:</span> Coordinates locked for home. We should hit Pluto orbit in… let's call it a month.</p>
+<p><span class="h-span">NADIA:</span> Please just detour around the Kuiper Belt. I could go my whole life without ever seeing an asteroid.</p>
+<p><em>Avery laughs.</em></p>
+<p><span class="h-span">AVERY:</span> You got it.</p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="log">
+<div style="text-align: center;">
+<h3 id="toc11"><span><span class="h-span">Addendum SCP-8754-12:</span> Project HERMES After Action Assessment</span></h3>
+</div>
+<hr/>
+<p>All preceding flight and EVA recordings were received via transmissions relayed through the experimental real-time extrasolar communications array installed aboard the <em>Peregrine</em>.</p>
+<p>Communications are still being received. Response is not possible. It is unclear whether or not the inability to respond to these transmissions is due to a side effect of the spatiotemporal anomaly that is SCP-8754 or a malfunction of the extrasolar communications array.</p>
+<p>The crew of the Peregrine continues to report navigational progress and survival status, though the vessel's transmitted position remains fixed within the Inner Duat Belt, from whence the communications are transmitting. No confirmed movement has been observed. No return trajectory has been verified. Elapsed mission time is 335 days and 14 hours at the time of writing.</p>
+<p>Despite frequent requests for assistance via transmissions from the remaining crew of the <em>Peregrine</em>, the Foundation has deemed any rescue or recovery operation infeasible due to the extreme spatiotemporal anomalies associated with the Inner Duat Belt. A vote to authorize Mission Retrieval Protocols was brought before the O5 Council and denied unanimously.</p>
+<p>Project HERMES has been deemed a failure.</p>
+<p>No further transmissions will be acknowledged.</p>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Extrasolar Activities Division.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. A rotating ring that simulates gravity.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Extravehicular activity, i.e. spacewalk.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Extravehicular Mobility Unit, i.e. spacesuit.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Standard protocol to prevent exposure to cognitohazardous phenomena during Bifrost transit.</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-8754">SCP-8754</a>" by GeminidStrix, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-8754">https://scpwiki.com/scp-8754</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Filename:</strong> SCP-8754.png<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;"><img alt="GeminidStrix" class="small" src="https://www.wikidot.com/avatar.php?userid=8209757&amp;amp;size=small&amp;amp;timestamp=1769638942" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8209757)"/></a><a href="http://www.wikidot.com/user:info/geminidstrix" onclick="WIKIDOT.page.listeners.userInfo(8209757); return false;">GeminidStrix</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wdfiles.com/local--files/scp-8754/SCP-8754.png">SCP Foundation Wiki</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+</div></body></html></div>
+        </body>
+        </html>
+        

@@ -1,0 +1,701 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-6677</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-6677</h1>
+            <html><body><div id="page-content">
+
+<div style="display: none">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Show component code</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide component code</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc(var(--base-font-size) * (</span><span class="hl-number">266</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">))</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (min-width: 56.25</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem))</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) </span><span class="hl-number">0</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> / </span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> -webkit-sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">grid-area:</span><span class="hl-code"> side-bar</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">2.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">scroll</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-color </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                padding </span><span class="hl-number">300</span><span class="hl-code">ms linear,
+                margin </span><span class="hl-number">300</span><span class="hl-code">ms linear</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-tertiary-color, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">rtl</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-width:</span><span class="hl-code"> </span><span class="hl-string">thin</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-scroll-chaining:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+                </span><span class="hl-reserved">overscroll-behavior:</span><span class="hl-code"> contain</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(var(--swatch-primary-darker), </span><span class="hl-number">0.1</span><span class="hl-code">) /* Thumb */
+                rgba(var(--swatch-tertiary-color), </span><span class="hl-number">0.05</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-secondary-color, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">), </span><span class="hl-number">0.8</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-corner</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw + </span><span class="hl-number">100</span><span class="hl-code">vh)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-style:</span><span class="hl-code"> </span><span class="hl-string">inset</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-right:</span><span class="hl-code"> </span><span class="hl-number">2.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-primary-darker), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">1</span><span class="hl-code">rem) - var(--sidebar-width-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(</span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)  /* Thumb */
+                rgba(</span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgb(var(--swatch-primary-darker, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">) /* Thumb */
+                rgb(var(--swatch-menubg-color, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;  /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> url("https://scp-wiki.wdfiles.com/local--files/component%</span><span class="hl-number">3</span><span class="hl-code">Acollapsible-sidebar/sidebar-tab.svg")</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-attachment:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem </span><span class="hl-number">12.875</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">em</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">9</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> var(--final-header-height-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--final-header-height-on-desktop, </span><span class="hl-number">0.688</span><span class="hl-code">rem) - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> calc(var(--final-header-height-on-desktop, -</span><span class="hl-number">2.313</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--swatch-alternate-color, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> + </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.scpnet-interwiki-wrapper</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Print</span><span class="hl-code"> </span><span class="hl-identifier">Friendly</span><span class="hl-code"> </span><span class="hl-identifier">Formatting</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">Estrella</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code"> 
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p>⚠️ <strong>Content warning:</strong> This article contains a representation of <span style="text-decoration: underline;">Police Violence</span></p>
+<hr/>
+<p><strong><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media Hub</a></strong><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<strong><a href="https://scp-wiki.wikidot.com/grigori-karpin-s-author-page">More by Grigori Karpin</a></strong></p>
+
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+<div class="content-warning creditRate">⚠️ content warning <span class="content-warning-arrow"><span style="white-space: pre-wrap;"> </span></span></div>
+
+<div class="scp-image-block block-center" style="width:100%;"><img alt="VKTM%20Puppet%20-%20Finn%27s%20Hollow%20Title%20PageA " class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20Finn%27s%20Hollow%20Title%20PageA" style="width:100%;"/>
+<div class="scp-image-caption" style="width:100%;">
+<p>Title Card of SCP-6677.</p>
+</div>
+</div>
+<h4 id="toc0"><span><span style="text-decoration: underline;">Special Containment Procedures</span></span></h4>
+<p>SCP-6677 will be stored in High-Yield Data Storage Facility 1 at Site-43.</p>
+<p>METATRON.aic will scan servers associated with entertainment producers, networks, and distributors for any sign of SCP-6677. Individuals who are confirmed to have received the anomaly will be amnesticized.</p>
+<p>MTF Kappa-43 (“The Mediators”) will work on countermeasures to prohibit emails from SCP-6677’s source and attempt to track their IP address.</p>
+<hr/>
+<h4 id="toc1"><span><span style="text-decoration: underline;">Description</span></span></h4>
+<p>SCP-6677 is the digital file of the pilot of children’s show entitled “Finn’s Hollow”, produced and distributed by GOI-5889 (“<strong><a href="https://scp-wiki.wikidot.com/vikander-kneed-technical-media-hub">Vikander-Kneed Technical Media</a></strong>”) and shot using several puppets.</p>
+<p>The puppets on screen appear to feature much more articulation than one would expect from marionettes or hand puppets. No digital effects have been confirmed in the production. It is believed the puppets are animate, if not fully sapient. No evidence of these potential entities has been found outside of SCP-6677. The location and the existence of the sets used in SCP-6677’s production are unclear at this time.</p>
+<p>When an individual watches SCP-6677, there is no immediate anomalous effect. However, within twenty-four to forty-eight hours the subject will develop significant aversion to open spaces (despite any lack of history with the condition) and will experience panic attacks if forced into such environments. Additionally, subjects will experience significant face blindness, finding it nearly impossible to recognize individuals even with prior personal knowledge. These effects last for anywhere between seventy-two hours and a week. There is no lasting anomalous effect beyond this period.</p>
+<p><strong>Discovery</strong>:<br/>
+Dr. W. Wettle received the following email at his SCiPNET account concerning a new release by Vikander-Kneed Technical Media:</p>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> William Wettle, PhD, Site-43<br/>
+<strong>From:</strong> Marian McPhaerson, Vikander-Kneed Public Outreach</p>
+<p><strong>Subject:</strong> Thought you might find this interesting!<br/>
+<strong>Date</strong>: 30/09/2021</p>
+</div>
+<hr/>
+<p>William! Hope you’re doing well. We were all really impressed with your feedback on the survey after our <a href="/scp-6123">seminar</a> a few months back and some of the folks in creative were wondering if you had any thoughts on this new thing we’re shopping around.</p>
+<p>Take a look and let me know what you think!</p>
+<p>– Mari</p>
+<p>P.S. No need to report this to your superiors, it can be our secret!</p>
+<p>P.P.S Gonna send these to a bunch of network people, maybe even Netflix! Isn’t this streaming future so exciting? We ain’t stuck to <a href="/scp-5889">radio shows</a> no more!</p>
+
+</div>
+<p>The only known copy of SCP-6677 was found attached to the above email. Dr. Wettle reported it to Director McInnis and research into any potential anomalous effects began.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<h4 id="toc2"><span><span style="text-decoration: underline;">Addendum 6677.1</span>: Transcript of SCP-6677</span></h4>
+<div style="border: solid 5px #000000; padding: 1px 15px; background: #D9F1FC; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<p><strong>Foreword</strong>: The following is a full transcript of the only known copy of SCP-6677.</p>
+<p><strong>Cast of Characters</strong>:<br/>
+<em>Frank, the Demon</em><br/>
+<em>Sadie</em><br/>
+<em>Mayor Bennings</em><br/>
+<em>Charlemagne Kepler III</em><br/>
+<em>Officer Cochon</em><br/>
+<em>Ms. Frizits</em><br/>
+<em>Boethius, The Philosopher</em><br/>
+<em>Rusty Skeleton, Esq.</em><br/>
+&amp;<br/>
+<em>The Profane Chorus</em><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM%20Puppet%20-%20Frank" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20Frank"/>
+<div class="scp-image-caption">
+<p>Frank, the Demon.</p>
+</div>
+</div>
+<p><em>[Scene opens on rural barn doors; a tumbleweed rolls past the camera’s view, followed by the doors opening. The puppet named Frank steps out from behind the door, brushing at his head with his free hand, trying to get straw out of his fur.]</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup></p>
+<p><strong>Frank</strong>: God [CENSORED] damn it.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup></p>
+<p><em>[Frank bends over and shakes out the fur on his head until all the straw has been freed. He dusts himself off with both hands and then picks up his sword which was leaned against the outside of the barn.]</em></p>
+<p><strong>Frank</strong>: <em>[Looking up into the camera with wide eyes]</em> Oh [CENSORED], sorry kids. Didn’t see you there. You ‘bout gave me a [CENSORED] heart attack! What brings you out to Finn’s Hollow<sup>TM</sup>?<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+<p><em>[Frank listens attentively, occasionally nodding and offering prompts such as "uh huh" and "go on." It is unclear what the entity is listening to. This continues for approximately three minutes.]</em></p>
+<p><strong>Frank</strong>: Oh, well, I’m the right one to ask! Everyone says so, “Frank is the best tour guide in this here hollow!” Come on!</p>
+<p><em>[Frank walks towards a motorcycle with a side car and the camera follows. The strings coming off the puppet continue on off camera towards the sky, but from the camera’s view, it is clear they are several meters in length at least. The property is dry scrub land, with a farmhouse a few hundred yards away, painted in earth tones. The structure is in an advanced state of disrepair, as is the barn. Frank gets on his motorcycle and puts on a helmet, then indicates the side car. He produces another helmet and apparently affixes it to the camera – the view is framed by the helmet.]</em></p>
+<p><strong>Frank</strong>: <em>[Flashing a thumbs up to the camera]</em> Always wear a helmet, kids!</p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM%20Puppet%20-%20The%20Profaned%20Chorus" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20The%20Profaned%20Chorus"/>
+<div class="scp-image-caption">
+<p>The Profane Chorus.</p>
+</div>
+</div>
+<p><em>[The ride into town is accompanied by a trio of singing voices, performing an aria in Swedish. At first, it seems as if the singing is part of a soundtrack, but then Frank points off to the right side of the motorcycle. There are three puppets floating along while singing and keeping pace with the motorcycle just a few feet away. Each is vaguely reminiscent of an animal, but very stylized.]</em></p>
+<p><em>[Frank waves.]</em><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<div style="text-align: center;">
+<p><strong><em>The scene cuts ahead to a set of a rural town.</em></strong></p>
+</div>
+<p><em>[Frank pulls the motorcycle over in front of a general store and gets off. The camera follows him into the store. Behind the counter is a middle-aged female puppet, in the shadows.]</em></p>
+<p><strong>Frank</strong>: Let me introduce Ms. Frizits, the local shopkeep. We ain’t got one of them big box stores around here, so if you want to buy it’s from the Frizz.</p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM%20Puppet%20-%20Ms.%20Frizits" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20Ms.%20Frizits"/>
+<div class="scp-image-caption">
+<p>Ms. Frizits.</p>
+</div>
+</div>
+<p><strong>Ms. Frizits</strong>: <em>[Grumbling]</em> Told you to stop calling me that, you heathen.</p>
+<p><strong>Frank</strong>: Oh, sorry Frizzy. <em>[Turns back to the camera]</em> If you need anything while you’re here in town, from groceries to duct tape to the means to defend yourself under the Second Amendment, it’s here at Frizits’ Frugal Buys.</p>
+<p><em>[Frizits begins animatedly tapping her foot; the sound of her tapping is in tempo with the muted singing from the Profane Chorus visible through the window to the street. Frizits crosses her arms and narrows her eyes, following Frank’s movements closely with her eyes.]</em></p>
+<p><strong>Ms. Frizits</strong>: What are you even in here for? Your kind don’t even eat <em>human food</em>.</p>
+<p><strong>Frank</strong>: That’s just not true, Frizz. I like devil dogs and angel’s food cake.</p>
+<p><em>[Frank chuckles and winks into the camera.]</em></p>
+<p><strong>Ms. Frizits</strong>: What are you even doing with these kids? They shouldn’t be around your type. You’re a corrupting influence, ain’t ya?</p>
+<p><strong>Frank</strong>: That’s just [CENSORED] ridiculous! <em>[Frank laughs again]</em> Who else would show a new arrival around town? Ain’t I the Ambassador of Finn’s Hollow<sup>TM</sup>?</p>
+<p><strong>Ms. Frizits</strong>: I don’t remember Mayor Bennings giving you no Ambassadorship.</p>
+<p><strong>Frank</strong>: <em>[Lowered voice]</em> It's a [CENSORED] honorary title…</p>
+<p><em>[Frizits looks into the camera.]</em></p>
+<p><strong>Ms. Frizits</strong>: Now children, if he gives you any trouble whatsoever, you just call me, Karen Frizits.</p>
+<p><em>[Frank leads the camera back out onto the street but stops to wave towards Frizits.]</em></p>
+<p><strong>Frank</strong>: Bye Karen!</p>
+<p><em>[The Profane Chorus start singing a slower, more somber song.]</em></p>
+<p><strong>Frank</strong>: You boys are killing it today, you know that?<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><em>[Frank points across the street at a post office.]</em></p>
+<p><strong>Frank</strong>: Let’s head on in there next!</p>
+<p><em>[Camera follows Frank across a dilapidated blacktop road to the post office. In front of the office, sitting in a rocking chair situated on a porch is a degraded female puppet.]</em></p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM%20Puppet%20-%20Sadie" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20Sadie"/>
+<div class="scp-image-caption">
+<p>Sadie</p>
+</div>
+</div>
+<p><strong>Frank</strong>: This here is Sadie, our one-woman postal service for the whole [CENSORED] Hollow!</p>
+<p><em>[Sadie coughs for a few seconds before lighting a cigarette.]</em></p>
+<p><strong>Sadie</strong>: Hey, Frank. What’s your demon [CENSORED] doing out here with them kids?</p>
+<p><strong>Frank</strong>: Hey, Sadie! I’m showing ‘em around the Hollow, duh.</p>
+<p><strong>Sadie</strong>: What you showed them so far?</p>
+<p><strong>Frank</strong>: Um… my place, sorta and then Frizzy’s.</p>
+<p><strong>Sadie</strong>: How’s that hag doing?</p>
+<p><strong>Frank</strong>: Doesn’t like me much.</p>
+<p><strong>Sadie</strong>: Well, you’re a demon and she’s a Presbyterian, what do you expect? Just ignore her.</p>
+<p><strong>Frank</strong>: Just ‘cuz I’m a demon? Not my fault I was born this way.</p>
+<p><em>[Sadie shrugs and stubs out her cigarette. She then lights another.]</em></p>
+<p><strong>Sadie</strong>: Don’t worry about that closeminded idiot, you don’t hurt nobody and before you that farm wasn’t doing nothing but gathering spiders. You’re an alright demon in my book.</p>
+<p><strong>Frank</strong>: Thanks, Sadie.</p>
+<p><em>[Frank starts to turn around, but then quickly turns back towards Sadie.]</em></p>
+<p><strong>Frank</strong>: Wait a minute, shouldn’t you be delivering the mail?</p>
+<p><strong>Sadie</strong>: <em>[Yelling]</em> Do I tell you how to demon? No? That’s because I mind my own business and don’t pretend to know what you demons do… so don’t pretend you know how to deliver the mail. [CENSORED].</p>
+<p><em>[Frank holds up his hands in surrender. The Profane Chorus start singing a raucous Irish drinking song. Sadie gives them a thumbs up.]</em></p>
+<p><strong>Sadie</strong>: Get the [CENSORED] outta here and keep showing these kids the town.</p>
+<p><strong>Frank</strong>: <em>[Laughing]</em> Yes, ma’am!<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM%20Puppet%20-%20Mr.%20PiggyA" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20Mr.%20PiggyA"/>
+<div class="scp-image-caption">
+<p>Officer Cochon.</p>
+</div>
+</div>
+<p><em>[Frank walks away from the Post Office and the camera follows. As they pass by a brick building Frank stops to look in the window. There a puppet of a police officer is assaulting another puppet in a jail cell. Frank pounds on the window.]</em></p>
+<p><strong>Frank</strong>: Hey, Mr. Cochon, come out and meet the newcomers!</p>
+<p><em>[The police officer waves at Frank to go away as he throws the prisoner down onto the bench in a cell and restrains him. When the prisoner continues to resist, the police officer strikes the puppet and then puts him in handcuffs. The officer dusts off his hands and then moves towards the entrance to the police station, exiting and approaching Frank and the camera.]</em></p>
+<p><strong>Officer Cochon</strong>: What you want, demon?</p>
+<p><em>[Frank cringes and takes a step backwards in response to the officer’s tone.]</em></p>
+<p><strong>Frank</strong>: I just thought you’d like to get to know the newcomers, I’m showing them around.</p>
+<p><em>[Officer Cochon looks at the camera.]</em></p>
+<p><strong>Officer Cochon</strong>: Shouldn’t you kids be in school?</p>
+<p><em>[Frank steps in between the camera and the police officer.]</em></p>
+<p><strong>Frank</strong>: Now hold on, Officer Cochon! I’m just showing them around town.</p>
+<p><strong>Officer Cochon</strong>: I wasn’t talking to you, creature. Get outta my way.</p>
+<p><em>[The police officer pushes Frank away, who stumbles and falls onto his back.]</em></p>
+<p><strong>Officer Cochon</strong>: <em>[Staring right into the camera at close quarters]</em> I asked you a question!</p>
+<p><em>[The police officer grumbles for a few minutes then nods once.]</em></p>
+<p><strong>Officer Cochon</strong>: Alright, I’ll let you off with a warning this time. But next time you’re hanging around town on a school day, I’m taking you in for truancy. You understand me?</p>
+<p><em>[The police officer moves back towards the station and shouts over his shoulder.]</em></p>
+<p><strong>Officer Cochon</strong>: Take your charcoal demon and get lost!</p>
+<p><em>[Frank gets up and dusts himself off.]</em></p>
+<p><strong>Frank</strong>: …. let’s keep moving.</p>
+<p><em>[The Profane Chorus have stopped singing and can be seen over the police station, hanging their heads.]</em><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM%20Puppet%20-%20Mayor%20Bennings" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20Mayor%20Bennings"/>
+<div class="scp-image-caption">
+<p>Mayor Bennings.</p>
+</div>
+</div>
+<p><em>[Frank leads the camera towards a run down building with a sign that reads <strong>City Hall</strong>. Out in front of the building sits an old man puppet at a card table. He appears to be begging and there is a bottle of alcohol sitting on the table. His clothes look rough and his hair is ragged.]</em></p>
+<p><strong>Frank</strong>: Good morning, Mayor Bennings!</p>
+<p><strong>Mayor Bennings</strong>: <em>[Mumbling indecipherably]</em></p>
+<p><strong>Frank</strong>: Well, these are some new arrivals in town, and I thought I’d show them around. You know, be the Ambassador of Finn’s Hollow<sup>TM</sup>.</p>
+<p><em>[Mayor Bennings does not respond, but instead picks up the bottle and takes a drink of the alcohol.]</em></p>
+<p><strong>Frank</strong>: Anything you want to say to the visitors, Mayor? Maybe some words of wisdom?</p>
+<p><em>[Mayor Bennings grunts, takes another swallow from his bottle and then looks into the camera. He nudges the collection bowl in front of him and nods at it.]</em></p>
+<p><strong>Frank</strong>: Sure, Mayor, I’ll contribute! What are we raising funds for today?</p>
+<p><em>[Mayor Bennings taps the half empty bottle on his table.]</em></p>
+<p><strong>Frank</strong>: Um… <em>[turns to the camera]</em> maybe we should move along now.</p>
+<p><em>[Frank drops a few coins into the bowl and then hurries the camera down the street.]</em></p>
+<p><strong>Frank</strong>: <em>[Speaking in a hushed tone]</em> Jesus, Mayor… that was pretty [CENSORED] up.</p>
+<p><strong>Unknown</strong>: Well, what do you expect from Finn’s Hollow<sup>TM</sup>, Frank?</p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM%20Puppet%20-%20Rusty%20Skeleton%2C%20Esq." class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20Rusty%20Skeleton%2C%20Esq."/>
+<div class="scp-image-caption">
+<p>Rusty Skeleton, Esq.</p>
+</div>
+</div>
+<p><em>[Frank jumps in surprise and turns around, the camera following his gaze. Floating above the street is a humanoid animate skeleton constructed of metal that is noticeably oxidized.]</em></p>
+<p><strong>Frank</strong>: [CENSORED] you, Rusty! Scared the <em>hell</em> outta me. <em>[Frank turns to the camera and chuckles.]</em></p>
+<p><strong>Rusty</strong>: Introduce me, you horrible hellspawn.</p>
+<p><strong>Frank</strong>: Oh right, kids, this is Rusty Skeleton, Esquire – legal advisor to the dead and damned of the Hollow.</p>
+<p><em>[Rusty bows in a flourish, flakes of oxidized metal falling off him and towards the floor, but disappearing before striking the road. The entity is floating nearly half a meter off the ground, so the camera tilts up to take him all in.]</em></p>
+<p><strong>Rusty</strong>: Hmmm, I wonder how you can see me. Tell me, children… would you happen to be dead?</p>
+<p><strong>Frank</strong>: No no no! They’re not dead, they’re just special! And newcomers so we need to put on our best faces.</p>
+<p><em>[Rusty looks off back towards Mayor Bennings.]</em></p>
+<p><strong>Rusty</strong>: Tell that to the fossil! I’m the dead one around here, you’d think he’d show more gumption than me.</p>
+<p><strong>Frank</strong>: <em>[Turns to the camera]</em> Only the dead or the infernal can usually see or hear Rusty… then again, I guess the divine would too, but who cares about them?</p>
+<p><em>[Rusty turns back to the camera, then approaches the camera so close that only his skull is visible.]</em></p>
+<p><strong>Frank</strong>: Jesus Christ, Rusty. You trying to [CENSORED] scare the kids to death?</p>
+<p><strong>Rusty</strong>: Would that work? Hmmm…</p>
+<p><em>[Rusty continues to train his empty sockets directly into the camera for over a minute.]</em></p>
+<p><strong>Rusty</strong>: Anyway, I’m looking to see if any of them are dead. Or damned. I’m not picky.</p>
+<p><strong>Frank</strong>: They’re not dead or damned, don’t you think I’d know?</p>
+<p><em>[Rusty scratches as his cranium and backs up from the camera.]</em></p>
+<p><strong>Rusty</strong>: Guess you would, at that. So, what’s left on your tour?</p>
+<p><strong>Frank</strong>: Going to head down the rest of main street and then hit the hilltop.</p>
+<p><strong>Rusty</strong>: Saving the best for last, I like it. Alright, you convinced me. I’m coming.</p>
+<p><strong>Frank</strong>: Okay, but don’t you bother our guests no more. You hear me?</p>
+<p><em>[Rusty holds up his hands in surrender and floats ahead.]</em></p>
+<p><strong>Rusty</strong>: Coming?<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><em>[Frank and Rusty continue to walk along the street, seemingly ignoring the camera they’re giving the tour to.]</em></p>
+<p><strong>Frank</strong>: Okay, but what I’m saying is that if Uriel really wanted to make sure we were stuck in the pit, he would have built a better wall. That thing has been falling apart for [CENSORED] centuries, man!</p>
+<p><strong>Rusty</strong>: Right, sure. I’m not saying that Uriel wasn’t also at fault but if Raziel hadn’t dropped the ball during the rebellion in the first place, then–</p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM%20Puppet%20-%20The%20Philosopher%20Boethius" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20The%20Philosopher%20Boethius"/>
+<div class="scp-image-caption">
+<p>The Philosopher, Boethius.</p>
+</div>
+</div>
+<p><em>[The camera stops following them and focuses on a man sitting on the concrete in front of an abandoned store front. He is looking up at the camera with a vacant look.]</em></p>
+<p><strong>Boethius</strong>: I turn the wheel that spins. I delight to see the high come down and the low ascend.</p>
+<p><em>[From off camera Frank can be heard chuckling at something Rusty has said.]</em></p>
+<p><strong>Boethius</strong>: Thou hast bitterly complained of the injustice of the senate. Thou hast grieved over my calumniation, and likewise hast lamented the damage to my good name.</p>
+<p><em>[From off camera Frank can be heard shouting, getting louder as he approaches from a decent distance.]</em></p>
+<p><strong>Boethius</strong>: '<em>Ask what thou wilt</em>,' said I, '<em>for I will answer whatever questions thou choosest to put.</em>' Then said she: '<em>This world of ours—thinkest thou it is governed haphazard and fortuitously, or believest thou that there is in it any rational guidance?</em>' ‘<em>Nay,</em>’ says I.</p>
+<p><em>[Frank runs up next to the camera and bends over at the waist, catching his breath, just barely visible on the left hand side of the video. Boethius continues to stare vacantly at the camera.]</em></p>
+<p><strong>Boethius</strong>: Whence it comes to pass that for the wise no place is left for hatred.</p>
+<p><strong>Frank</strong>: <em>[Breathing hard]</em> Guess you met, Boethius huh? <em>[gasps]</em> The Philosopher Boethius, meet our newest arrivals in Finn’s Hollow<sup>TM</sup>.</p>
+<p><strong>Boethius</strong>: <em>Yet 'gainst their brothers' lives men point the murderous steel;</em><br/>
+<em>Unjust and cruel wars they wage,</em><br/>
+<em>And haste with flying darts the death to meet or deal.</em><br/>
+<em>No right nor reason can they show</em>.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup></p>
+<p><strong>Rusty</strong>: <em>[Yelling from down the street]</em> What’s that weirdo talking about now?</p>
+<p><em>[Frank makes a dismissive gesture by waving his hand at Rusty, all the while looking down at Boethius and trying to catch his breath.]</em></p>
+<p><strong>Boethius</strong>: For if vicious propensity is, as it were, a disease of the soul like bodily sickness, even as we account the sick in body by no means deserving of hate, but rather of pity, so, and much more, should they be pitied whose minds are assailed by wickedness, which is more frightful than any sickness.</p>
+<p><strong>Frank</strong>: Boethius, I gotta say, I have no [CENSORED] idea what you’re talking about my man. Which is par for the [CENSORED] course.</p>
+<p><strong>Boethius</strong>: <em>Weak-minded folly magnifies</em><br/>
+<em>All that is rare and strange,</em><br/>
+<em>And the dull herd's o'erwhelmed with awe</em><br/>
+<em>At unexpected change.</em><br/>
+<em>But wonder leaves enlightened minds,</em><br/>
+<em>When ignorance no longer blinds.</em></p>
+<p><strong>Frank</strong>: <em>[Turns towards the camera and starts leading it away]</em> Let’s keep going okay? He’s not all there.<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><em>[Frank and Rusty lead the camera up the hill and to the top, which isn’t very high but gives a good vantage of the small town. It is clearly a set built for puppets, and yet there are many more buildings beyond those used in the scenes taking place before this section of the log.]</em></p>
+<p><em>[Frank and Rusty stop under an oak tree near the crest of the hill and sit down facing the town. Rusty is still floating a half meter in the air, just in a sitting position.]</em></p>
+<p><strong>Frank</strong>: Just look at all that goodness, man what a great town.</p>
+<p><strong>Rusty</strong>: <em>[Making the “crazy” gesture on his skull out of Frank’s eye line]</em> Sure is, pal.</p>
+<p><strong>Frank</strong>: I can’t wait to see them all down in Hell.</p>
+<p><strong>Rusty</strong>: Wait, wha–</p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="VKTM%20Puppet%20-%20Charlemagne%20Kepler%20III" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/VKTM%20Puppet%20-%20Charlemagne%20Kepler%20III"/>
+<div class="scp-image-caption">
+<p>Charlemagne Kepler III, local ne’er-do-well.</p>
+</div>
+</div>
+<p><em>[The sound of laughing can be heard coming from off camera. Frank gets up and looks around the back of the tree. Standing there against the trunk is a squat puppet with wild, unruly hair.]</em></p>
+<p><strong>Frank</strong>: Charlie, what are you doing here?</p>
+<p><strong>Charlemagne</strong>: <em>[Growls like a dog]</em> That. Is. Not. My. Name.</p>
+<p><strong>Frank</strong>: Fine, Charlemagne. What do you want?</p>
+<p><strong>Charlemagne</strong>: Introduce me to your friends.</p>
+<p><strong>Rusty</strong>: This guy is such a pain.</p>
+<p><strong>Frank</strong>: <em>[Putting a hand up towards Rusty]</em> Sure, kids this is Charlemagne Kepler the III. He’s a relative newcomer to the Hollow.</p>
+<p><strong>Charlemagne</strong>: Yeah, I sure am, and boy did they welcome me!</p>
+<p><strong>Rusty</strong>: Maybe if you were a little less high strung…</p>
+<p><strong>Frank</strong>: Listen, buddy. I didn’t know, how could I?</p>
+<p><strong>Charlemagne</strong>: That your tour around the town would associate you with me? That they’d think that I was half demon because of the way your hair looks and the similarities with mine? That no one in town would help me adjust or find me a place to live or work… I’ve basically been on my own!</p>
+<p><strong>Frank</strong>: I offered to help.</p>
+<p><strong>Charlemagne</strong>: How the [CENSORED] could you help me? Live in that shit house? Fix up your farm with you? Then they’d be right, I <em>would</em> be associated with you and look at the way you get treated!</p>
+<p><strong>Frank</strong>: The Hollow folks just don’t know me well yet, they’re adjusting to my presence. To be fair to them, they’d never met a demon before!</p>
+<p><strong>Charlemagne</strong>: Sure, Frank. Any moment, they’ll take you in.</p>
+<p><strong>Frank</strong>: <em>[Speaking in a low tone]</em> Sadie likes me.</p>
+<p><strong>Charlemagne</strong>: Who gives a [CENSORED]? You ruined everything for me, Frank. I’m not like you, I’m not a demon!</p>
+<p><strong>Frank</strong>: Yeah okay. I get it. What do you want then?</p>
+<p><strong>Charlemagne</strong>: <em>[Turns to the camera]</em> Kids, if you know what’s good for you, you won’t hang around this demonic trash. He’ll ruin your whole stay here. You need to be careful who you associate with, otherwise, they’ll just think you’re damned like him.</p>
+<p><strong>Frank</strong>: Okay, Charlie. You said your piece, why don’t you get outta here?</p>
+<p><em>[Charlemagne picks up a backpack full of fireworks, with a bottle of liquor showing through the open zipper. He closes the zipper and slings it over his shoulder.]</em></p>
+<p><strong>Charlemagne</strong>: Yeah yeah, just stay away from me Frank.</p>
+<p><em>[Frank hangs his head and leans against the tree. Rusty pats him on the shoulder. The Profane Chorus sings a somber melody from the upper branches.]</em></p>
+<p><strong>Rusty</strong>: You can’t help what people believe, Frank. All you can do is live your life and they’ll see you’re a good person and not just a demon.</p>
+<p><em>[Frank nods and wipes at his eyes.]</em></p>
+<p><strong>Frank</strong>: Let’s head back to the bike. Hey, Rusty, you coming over to my place?</p>
+<p><strong>Rusty</strong>: Be by later, but right now I have to meet with some clients.</p>
+<p><em>[Rusty is pointing in the direction away from town and the camera turns to see a small graveyard with a line of ghosts approaching towards Mr. Skeleton.]</em></p>
+<p><strong>Frank</strong>: Kay, see you later.<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<div style="text-align: center;">
+<p><em><strong>The footage cuts to Frank pulling up on his motorcycle outside his farmhouse. As before the camera seems to have sat in the sidecar.</strong></em></p>
+</div>
+<p><em>[Frank leans against his front porch.]</em></p>
+<p><strong>Frank</strong>: Well I hope your first day in the Hollow was a good one, and my tour was informative. You have any feedback?</p>
+<p><em>[Frank listens attentively again for a few seconds.]</em></p>
+<p><strong>Frank</strong>: Well sure, adjusting to small town life is hard but I think it’s been pretty rewarding overall. Plus, I’m fixing up this farm and I’ve got a few pigs and cows, it’s sorta great. Trust me, way better than living in Hell. Anyway, I got work to do. See you later, kids.</p>
+<p><em>[Frank starts walking over to the barn and the camera follows. He turns around when he gets to the barn door and screams when he makes eye contact with the camera.]</em></p>
+<p><strong>Frank</strong>: Holy [CENSORED]! I thought you’d have left. Tour’s over kids. I got stuff to do here. Like I said before, this is a farm.</p>
+<p><em>[Frank stares into the camera for a few seconds.]</em></p>
+<p><strong>Frank</strong>: You want to stay? With me? Well… are you sure? You heard what that dweeb on the hill said.</p>
+<p><em>[Franks pauses, presumably to hear a response.]</em></p>
+<p><strong>Frank</strong>: Well, okay, but only if you’re sure. And there’s no freeloading here, we got to get this farm in working order. The townsfolk may not approve of me, but this is our land and we’re gonna get it in the best shape of its life!</p>
+<p><em>[Frank turns towards the barn doors and starts to open them, then he turns back to the camera and smiles for a few seconds before heading inside. The barn doors close and the credits begin to roll.]</em></p>
+<div style="text-align: center;">
+<p><strong>End of Transcript</strong></p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Wettle was formally reprimanded for engaging with members of GOI-5889, but he claimed he had never done so and records from his SCiPNET account confirmed this.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. The puppets universally exhibit range of movement that would be impossible to recreate with marionette strings, which are still visible on Frank and many others of the cast.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. All redactions are on the part of the production, as swearing is censored despite its heavy presence in some dialogue.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Recording did not actually register the phrase “TM” but invariably, transcripts have included it and the notation cannot be deleted for unknown reasons.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. This and the lyrics included below were actually sung in Latin, with the Profane Chorus harmonizing in support of Boethius.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-6677">SCP-6677</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-6677">https://scpwiki.com/scp-6677</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename</strong>: Rural ruins<br/>
+<strong>Author</strong>: Bernard Spragg. NZ<br/>
+<strong>License</strong>: Public Domain<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/volvob12b/50927414286/">LINK</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: old man puppet<br/>
+<strong>Author</strong>: Beatrice Murch<br/>
+<strong>License</strong>: CC BY-SA 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/blmurch/365346788/">LINK</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Puppet Avatar<br/>
+<strong>Author</strong>: Andrew Comings<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://flickr.com/photos/brazilnut72/2781553686/in/photolist-5eNc1b-Xgir67-6eHd2K-4Dw8Tg-6eMkBE-LaybF-6eMmmw-hRq8A-t3Dfi-3JQst-6eMkQw-3CaRj-p7e1Qq-Qopk8U-tTT8w7-4J97cz-G8vKc9-5qenga-2BmMKx-4NnfRD-Fnd4g1-6rAeFn-5URBXA-7rnCn-7MQANE-t7ega-2h194zt-9aCerF-4MQa6j-6SpqWL-6Spr4y-8xmGfs-oDh5Z7-S6ZHeR-k7eXP-7rnzF-5MUkf-Wm22m-7azyX1-oVJynE-7ERgE4-x5Qq-8Rroiy-7azzvy-2heBrwK-7Zg5Ty-dNQ8uH-7avLiX-52ASyP-fLRddW">LINK</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Odd Puppet<br/>
+<strong>Author</strong>: Erin Perry<br/>
+<strong>License</strong>: CC BY-SA 2.0<br/>
+<strong>Source</strong>: <a href="https://flickr.com/photos/pips/306060913/in/photolist-t3Dfi-3JQst-6eMkQw-3CaRj-p7e1Qq-Qopk8U-tTT8w7-4J97cz-G8vKc9-5qenga-2BmMKx-4NnfRD-Fnd4g1-6rAeFn-5URBXA-7rnCn-7MQANE-t7ega-2h194zt-9aCerF-4MQa6j-6SpqWL-6Spr4y-8xmGfs-oDh5Z7-S6ZHeR-k7eXP-7rnzF-5MUkf-Wm22m-7azyX1-oVJynE-7ERgE4-x5Qq-8Rroiy-7azzvy-2heBrwK-7Zg5Ty-dNQ8uH-7avLiX-52ASyP-fLRddW-hRq6H-x3kDVr-fLyCta-fLRc9y-fLRcMG-pX8wMu-4ML2f4-BGXcEJ">LINK</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Scary odd puppet<br/>
+<strong>Author</strong>: Erin Perry<br/>
+<strong>License</strong>: CC BY-SA 2.0<br/>
+<strong>Source</strong>: <a href="https://flickr.com/photos/pips/306060856/">LINK</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Rusty Skeleton<br/>
+<strong>Author</strong>: Franco Folini<br/>
+<strong>License</strong>: CC BY-SA 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/livenature/2560223350/">LINK</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Demon Puppet<br/>
+<strong>Author</strong>: Indi Samarajiva<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/indi/5153390309/">https://www.flickr.com/photos/indi/5153390309/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Barcelona Puppet of Woman<br/>
+<strong>Author</strong>: Kippelboy<br/>
+<strong>License</strong>: CC BY-SA 3.0<br/>
+<strong>Source</strong>: <a href="https://commons.wikimedia.org/wiki/File:El_Paral%C2%B7lel_1894-1939-_exhibit_at_CCCB_in_Barcelona_(41)Caps_de_ninos_utilitzats_en_ventril%C3%B2quia.JPG">LINK</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: bail bond puppets<br/>
+<strong>Author</strong>: Charity Davenport<br/>
+<strong>License</strong>: Public Domain<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/162338887@N06/26339289738/">https://www.flickr.com/photos/162338887@N06/26339289738/</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename</strong>: Puppets (trio)<br/>
+<strong>Author</strong>: Shehal Joseph<br/>
+<strong>License</strong>: CC BY 2.0<br/>
+<strong>Source</strong>: <a href="https://www.flickr.com/photos/shehal/2109789008/">https://www.flickr.com/photos/shehal/2109789008/</a></p>
+</blockquote>
+<hr/>
+<blockquote>
+<p><strong>Filename</strong>: The Consolation of Philosophy<br/>
+<strong>Author</strong>: Boethius<br/>
+<strong>License</strong>: CC 0 (public domain)<br/>
+<strong>Source</strong>: <a href="https://www.gutenberg.org/ebooks/14328">https://www.gutenberg.org/ebooks/14328</a><br/>
+<strong>Additional Notes</strong>: Each quote from the Boethius puppet is a quote from this book, in order: (Book I, II); (Book I, V); (Book I, VI); (Book IV , IV); (Book IV, Song IV); (Book IV, IV) again; and (Book IV, Song V) – additionally, the book is offered as part of Project Guttenberg, which endeavors to make accessible eBooks of classic works in the Public Domain.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> 6677 Logo<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;"><img alt="HarryBlank" class="small" src="https://www.wikidot.com/avatar.php?userid=6479803&amp;amp;size=small&amp;amp;timestamp=1762023304" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6479803)"/></a><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;">HarryBlank</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/6677%20Logo">Link</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

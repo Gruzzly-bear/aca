@@ -1,0 +1,783 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-7324</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-7324</h1>
+            <html><body><div id="page-content">
+
+<div class="preview">
+<p>Like the virginal blood that flows from a woman the first time she is penetrated — only much tastier. And much cheaper. Come on down for a delicious family meal.</p>
+</div>
+
+<p><iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=1&amp;theme=https://scp-wiki.wdfiles.com/local--code/theme%3Aminimal/1&amp;css={$css}" style="display: none"></iframe></p>
+<div style="display: none">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-code">/</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">These</span><span class="hl-code"> </span><span class="hl-identifier">two</span><span class="hl-code"> </span><span class="hl-identifier">arguments</span><span class="hl-code"> </span><span class="hl-identifier">are</span><span class="hl-code"> </span><span class="hl-identifier">in</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">quirked-up</span><span class="hl-code"> </span><span class="hl-identifier">CSS</span><span class="hl-code"> </span><span class="hl-identifier">Module</span><span class="hl-code"> (</span><span class="hl-identifier">rather</span><span class="hl-code"> </span><span class="hl-identifier">than</span><span class="hl-code"> </span><span class="hl-identifier">the</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-code"> </span><span class="hl-identifier">code</span><span class="hl-code"> </span><span class="hl-identifier">block</span><span class="hl-code">) </span><span class="hl-identifier">so</span><span class="hl-code"> </span><span class="hl-identifier">users</span><span class="hl-code"> </span><span class="hl-identifier">can</span><span class="hl-code"> </span><span class="hl-identifier">feed</span><span class="hl-code"> </span><span class="hl-identifier">Wikidot</span><span class="hl-code"> </span><span class="hl-identifier">variables</span><span class="hl-code"> </span><span class="hl-identifier">into</span><span class="hl-code"> </span><span class="hl-identifier">them</span><span class="hl-code">. </span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code"> "SCP Foundation"</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code"> "Secure, Contain, Protect"</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+<div style="display: none">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Show component code</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide component code</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc(var(--base-font-size) * (</span><span class="hl-number">266</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">))</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (min-width: 56.25</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem))</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) </span><span class="hl-number">0</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> / </span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> -webkit-sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">grid-area:</span><span class="hl-code"> side-bar</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">2.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">scroll</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-color </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                padding </span><span class="hl-number">300</span><span class="hl-code">ms linear,
+                margin </span><span class="hl-number">300</span><span class="hl-code">ms linear</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-tertiary-color, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">rtl</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-width:</span><span class="hl-code"> </span><span class="hl-string">thin</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-scroll-chaining:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+                </span><span class="hl-reserved">overscroll-behavior:</span><span class="hl-code"> contain</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(var(--swatch-primary-darker), </span><span class="hl-number">0.1</span><span class="hl-code">) /* Thumb */
+                rgba(var(--swatch-tertiary-color), </span><span class="hl-number">0.05</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-secondary-color, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">), </span><span class="hl-number">0.8</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-corner</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw + </span><span class="hl-number">100</span><span class="hl-code">vh)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-style:</span><span class="hl-code"> </span><span class="hl-string">inset</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-right:</span><span class="hl-code"> </span><span class="hl-number">2.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-primary-darker), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">1</span><span class="hl-code">rem) - var(--sidebar-width-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(</span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)  /* Thumb */
+                rgba(</span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgb(var(--swatch-primary-darker, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">) /* Thumb */
+                rgb(var(--swatch-menubg-color, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;  /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> url("https://scp-wiki.wdfiles.com/local--files/component%</span><span class="hl-number">3</span><span class="hl-code">Acollapsible-sidebar/sidebar-tab.svg")</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-attachment:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem </span><span class="hl-number">12.875</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">em</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">9</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> var(--final-header-height-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--final-header-height-on-desktop, </span><span class="hl-number">0.688</span><span class="hl-code">rem) - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> calc(var(--final-header-height-on-desktop, -</span><span class="hl-number">2.313</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--swatch-alternate-color, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> + </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.scpnet-interwiki-wrapper</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Print</span><span class="hl-code"> </span><span class="hl-identifier">Friendly</span><span class="hl-code"> </span><span class="hl-identifier">Formatting</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">Estrella</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code"> 
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pseudocrumbs">
+<p><strong><a href="/canon-hub">Canon Hub</a> » <a href="/the-trashfire">The Trashfire</a> »</strong> <sub><em>you're worth it, i promise</em></sub></p>
+</div>
+
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="blockquote">
+<p><strong>DATABASE ID:</strong> SCP-7324</p>
+<p><strong>Anomaly Class:</strong> Keter</p>
+<p><strong>Containment Status:</strong> Uncontained</p>
+<p><strong>CONTAINMENT PROCEDURES:</strong> As far as the general public is aware, SCP-7324 is a standard, non-anomalous off-menu item which can be purchased at select locations. A majority of individuals who know of SCP-7324 are either unaware of its properties or already part of groups which make their claims appear dubious.</p>
+<p>The ability to monitor all establishments utilizing food service in the continental United States is beyond the capability of the Foundation. As such, the External Affairs Department and the Foundation's internal Intelligence Agency will economically pressure as many of these establishments into joining the Foundation's <a href="/scp-2897">surveillance body</a> as possible. Most of the major food service corporations have been accounted for, with some exceptions, but a number of small or independent businesses have also yet to be assimilated. Suppressing information on SCP-7324 itself, while technically possible, is not yet a priority due to the relatively small size of the population aware of it.</p>
+<div class="carousel-container right" style="width: calc(400px + 34px);"><iframe align="" class="" frameborder="" height="" scrolling="no" src="https://scp-wiki.wikidot.com/local--code/component%3Acarousel/1#?images=20230729_143932.jpg,C19D77A5-72B4-47FF-9836-8456EF3E6A6E.jpg,20230810_205215.jpg,IMG_6546.jpg&amp;links={$links}&amp;wiki=scp-wiki&amp;page=SCP-7324&amp;interval=4&amp;background=white&amp;options=yes&amp;style={$style}" style="width: calc(400px + 34px); height: calc(340px + 6px);" width=""></iframe>
+<div class="carousel-caption-wrapper">
+<div class="carousel-caption false" style="width: calc(400px);">
+<p>Selected photographs of SCP-7324.</p>
+</div>
+</div>
+</div>
+<p>Efforts are currently focused on investigating illicit substance trading in the anomalous underground, particularly pertaining to associations with The Coca-Cola Company or Keurig Dr. Pepper, Inc.</p>
+<p>Para-criminals in the custody of the Foundation or allied organizations, specifically incarcerated for the selling or creation of anomalous drugs — particularly narcotics or performance-enhancing drugs — are to be routinely brought in for questioning by the SCP-7324 containment group. Any individual who exposes information pertaining to its usage will be given full immunity in their further proceedings.</p>
+<p><strong>DESCRIPTION:</strong> SCP-7324 is a drink item served in restaurants and entertainment centers across the continental United States of America, though primarily within the region known as the Deep South. SCP-7324 can be ordered at any restaurant as long as the individual ordering knows the item's exact name, with variations from location to location.</p>
+<p>Usually, SCP-7324 is made with the following ingredients:</p>
+<ul>
+<li>3/4 cup (177 g) of whole milk;</li>
+<li>3 large scoops of strawberry ice cream;</li>
+<li>4 teaspoons of strawberry syrup;</li>
+<li>3 teaspoons of syrup;</li>
+<li>A full cup of sugar sweetener;</li>
+<li>Sprite or Starry soft drinks;</li>
+<li>A tablespoon of vanilla extract;</li>
+<li>Whipped cream;</li>
+<li>Sprinkles.</li>
+</ul>
+<p>All the ingredients are then placed in a blender, and blended for 30 seconds to a minute. It is typically chilled in a freezer or refrigerator afterwards, though the exact time and machine used to do so varies, if the mixture is chilled at all.</p>
+<p>At this point, the ingredients coalesce into the ordered item, SCP-7324.</p>
+<hr/>
+
+<p><strong>Foreword:</strong> The following log was taken via CCTV from a McDonald's in Gulfport, Mississippi. It demonstrates the process of ordering SCP-7324.</p>
+<p><strong>&lt;Begin Log&gt;</strong></p>
+<p><em>[A father and daughter sit at a booth near the front of the establishment. The father has his wallet out on the table in front of him and is sorting through change. The daughter runs around the lobby. Aside from two employees visible near the back, the location is otherwise empty.]</em></p>
+<p><em>[The daughter runs towards her father and grabs his knee. He drops his change back on the table, scattering them. He freezes up, but then laughs, leaning over the side of the table to look at her.]</em></p>
+<p><strong>Father:</strong> Hey there. Can I help you?</p>
+<p><em>[The daughter hits his knee with her open palm, then climbs onto the seat beside him. She leans back and forth. He follows suit. She abruptly stops, as does he.]</em></p>
+<p><strong>Daughter:</strong> Could I.</p>
+<p><strong>Father:</strong> Could you?</p>
+<p><em>[The daughter's face scrunches.]</em></p>
+<p><strong>Father:</strong> Sorry, sorry. Go on.</p>
+<p><em>[She looks down at the pile of change, then back up at him. She puts her palms together in a silent clapping motion.]</em></p>
+<p><strong>Daughter:</strong> Could we get the shake? Please?</p>
+<p><em>[The father's smile falters. He grimaces, looking down at the change, then back at her face.]</em></p>
+<p><strong>Father:</strong> Well, hon, money is a little tight right now.</p>
+<p><strong>Daughter:</strong> Please? I'll order it myself.</p>
+<p><strong>Father:</strong> <em>[He laughs.]</em> Everywhere we go, you want that shake. Are you sure?</p>
+<p><strong>Daughter:</strong> I'm sure, I'm sure— I'll never ask for anything ever again.</p>
+<p><strong>Father:</strong> Even on your birthday?</p>
+<p><strong>Daughter:</strong> Until my birthday?</p>
+<p><em>[He leans back in thought, scratching his chin and puffing out his lips. He looks around the restaurant. She giggles, watching. He looks down at her, then leans forward, smiling.]</em></p>
+<p><strong>Father:</strong> It's a deal. Here. <em>[He hands her a 20 dollar bill.]</em> You remember what it's called?</p>
+<p><strong>Daughter:</strong> The, the super-strawberry-surprise-shake.</p>
+<p><strong>Father:</strong> Very good. Make sure you say it a little bit slower when you get up there, okay?</p>
+<p><strong>Daughter:</strong> Okay. Thank you, thank you, thank you…</p>
+<p><em>[She continues mumbling as she takes the 20 dollar bill. She climbs out of the booth, then runs around the side of the lobby up towards the front counter. An employee stands there, tapping at the screen of the register. The employee looks up as the daughter approaches.]</em></p>
+<p><strong>Employee:</strong> Aw, hi. Come back for a second round?</p>
+<p><strong>Daughter:</strong> Nuh-uh. I want to order a shake.</p>
+<p><em>[The employee begins tapping at the screen of the register again. She looks back up at the daughter.]</em></p>
+<p><strong>Employee:</strong> Sure thing, sweetheart. What kind of shake? Vanilla, chocolate, strawberry, uh, mint…</p>
+<p><strong>Daughter:</strong> The— the— the, um, <span style="color: pink">Super Strawberry Surprise Shake</span>. Um. Please.</p>
+<p><strong>Employee:</strong> Uh-huh, uh-huh…</p>
+<p><em>[The employee types in the order. She then takes off her hat, wiping her forehead, before putting it back on.]</em></p>
+<p><strong>Employee:</strong> That'll be 15 dollars, please.</p>
+<p><em>[The daughter hands her the 20 dollar bill. The employee then places it in the register; she then produces a 5 dollar bill, handing it back to the daughter. The daughter seems surprised.]</em></p>
+<p><strong>Employee:</strong> That'll be coming right up. Thank you for your patronage.</p>
+<p><strong>&lt;End Log&gt;</strong></p>
+<hr/>
+
+<p><strong>Foreword:</strong> The following log was taken via CCTV footage from a <a href="/how-to-remove-kerosene-from-a-polyester-dress">Spicy Crust Pizza</a> in <a href="/scp-4370">Apopache, Texas</a>.</p>
+<p>Notably, Foundation front-companies are capable of supplying SCP-7324 to customers, despite employees not being trained in its creation.</p>
+<p>The following log demonstrates differences in the creation of SCP-7324 between locations. The ingredients and methods used to create SCP-7324 within Spicy Crust Pizza parlors will be included in the log.</p>
+<p><strong>&lt;Begin Log&gt;</strong></p>
+<p><em>[A group of teenagers enter the restaurant, giggling and speaking inaudibly. Aside from the employee behind the counter, and a family sitting silently in a corner booth, the parlor is empty.]</em></p>
+<p><strong>Employee:</strong> <em>[Ze smiles.]</em> Hi, welcome to Spicy Crust Pizza. Just letting you know, we do close in 30 minutes— if I can get you started with anything, let me know.</p>
+<p><strong>Teenager 1:</strong> Yeah, alright.</p>
+<p><strong>Teenager 3:</strong> Thanks.</p>
+<p><em>[The group sits in a booth nearby the family, chatting amongst themselves. Teenager 4 and 5 look through Teenager 6's phone with her. They are on Spicy Crust Pizza's digital menu. They point at items, look at each other for approval, then nod.]</em></p>
+<p><em>[Teenager 1 waves at the employee. Ze stares back, confused. She waves again, then makes a "come here" motion. Ze sighs and comes out from the back of the counter, walking up to their booth.]</em></p>
+<p><strong>Employee:</strong> Hey, everyone. What can I get for you?</p>
+<p><strong>Teenager 6:</strong> Um, we, <em>[She gestures to Teenagers 4 and 6.]</em> are gonna get a large Dinosaur's Delight.</p>
+<p><strong>Employee:</strong> Mhm.</p>
+<p><em>[Ze turns to Teenagers 1-3.]</em></p>
+<p><strong>Teenager 2:</strong> I'll have the vegan pizza on naan, with extra sauce.</p>
+<p><strong>Employee:</strong> Mhm.</p>
+<p><strong>Teenager 3:</strong> I want the, uh. A pepperoni pizza with extra spicy crust.</p>
+<p><strong>Employee:</strong> Mhm.</p>
+<p><em>[Ze produces a notepad, and begins writing their orders down in pencil. Ze glances back up, and smiles.]</em></p>
+<p><strong>Employee:</strong> Will that be all?</p>
+<p><em>[Teenager 1, on the far end of the table, almost hidden behind the rest of the group, raises her hand.]</em></p>
+<p><strong>Employee:</strong> Oh, uh, yeah? Yes?</p>
+<p><strong>Teenager 1:</strong> I'll have the <span style="color: pink">Super Strawberry Surprise Shake</span>.</p>
+<p><em>[The group begins to laugh, woop, and holler, some even banging on the table and screaming. Teenager 4 hides her face in embarrassment, while Teenagers 2 and 5 grab each other, shaking one another. Teenager 1 straightens herself, smiling proudly to the group. The employee stares at them in confusion. The family behind them collectively looks up; their young son smiles.]</em></p>
+<p><strong>Employee:</strong> Uh. <em>[Ze writes on the notepad.]</em> Yeah, sure. I'll be right back with your food.</p>
+<p><em>[The group returns to whispering to one another or playing on their phones. The family behind them finishes their meal and throws away their items, as well as the trays they were served on. The employee does not notice this as ze turns away, going behind the counter towards the kitchen. There are two chefs there.]</em></p>
+<p><strong>Employee:</strong> Hey.</p>
+<p><em>[One of the chefs leaves out the back door, lighting a cigarette. The remaining chef glares at the employee.]</em></p>
+<p><strong>Chef:</strong> You can't be fucking serious.</p>
+<p><strong>Employee:</strong> I know. I know.</p>
+<p><strong>Chef:</strong> We close in 30 minutes.</p>
+<p><strong>Employee:</strong> I know. I'm sorry.</p>
+<p><em>[The chef sighs, and holds out her hand. Ze hands the notepad paper to her, but she snatches it away. She reads it, then scowls, shaking her head.]</em></p>
+<p><strong>Chef:</strong> You know how to make the shake?</p>
+<p><strong>Employee:</strong> The, uh, strawberry one? Yeah.</p>
+<p><strong>Chef:</strong> You… do that. I'll handle the, fucking, food. Thanks.</p>
+<p><strong>Employee:</strong> Yeah.</p>
+<p><em>[The chef leaves towards the back. Crackling from the oven is audible. The employee sighs, rubs zir face, then turns towards the refrigerator. Ze sorts through, then procures a number of items. Ze struggles to balance them as ze moves towards the counter, the blender unplugged on top of it. Ze places the items down beside the blender.]</em></p>
+<ul>
+<li>3/4 cup (177 g) of whole milk;</li>
+<li>2 large scoops of strawberry ice cream;</li>
+<li>4 teaspoons of strawberry syrup;</li>
+<li>2 teaspoons of syrup;</li>
+<li>A full cup of Coca-Cola Cherry;</li>
+<li>A tablespoon of vanilla extract;</li>
+<li>Whipped cream.</li>
+</ul>
+<p><em>[Ze places the scoops of ice cream in the blender first. Ze then drizzles the strawberry syrup on top, followed by the unflavored syrup. Ze sprays the whip cream in a circle on the ice cream, then pours the vanilla extract on top. Ze places zir hands on zir hips and stands back, then remembers the Coca-Cola Cherry, which ze pours onto the mixture.]</em></p>
+<p><em>[Ze plugs the blender in. Ze places the lid on the blender, then sets it for 1 minute. As it begins to stir, ze goes through the drawers underneath the counter.]</em></p>
+<p><em>[After about 20 seconds, ze reemerges.]</em></p>
+<ul>
+<li>Brownie chunks.</li>
+</ul>
+<p><em>[Ze waits for the blender to finish stirring. Once it does, ze grabs a large plastic spoon, and begins to stir zirself while sprinkling the brownie chunks inside. Once the chunks are evenly dispersed throughout, ze takes the blender glass, disconnects it from the base, and pours it in a plastic cup.]</em></p>
+<p><em>[Ze takes the cup, places a lid on it, then returns to the refrigerator. Ze opens the top half, revealing the freezer. Ze places the cup inside. Ze takes zir phone out, and sets a timer for 5 minutes. Ze closes the freezer, and leans against its door.]</em></p>
+<p><strong>Employee:</strong> I fucking hate this shake. Honestly.</p>
+<p><em>[The chef grunts from the other room.]</em></p>
+<p><strong>&lt;End Log&gt;</strong></p>
+<hr/>
+
+<p><strong>Foreword:</strong> The following log was taken via CCTV footage from a <a href="/scp-5963">ShowBiz Pizza Place</a> entertainment center (now Chuck E. Cheese's) in Marionette, Wisconsin. No further anomalous activity has been detected in this location.</p>
+<p>The context of the interaction is unknown.</p>
+<p><strong>&lt;Begin Log&gt;</strong></p>
+<p><em>[Pieces of animatronics are neatly tucked on shelves. Beside a shelf is a door with a sign on it, but the text is illegible. On a table in the middle of the room is the head of the animatronic "Billy Bob Brockali," a brown bear. There are footsteps.]</em></p>
+<p><strong>Voice:</strong> I'm coming in, Liam, you better not be messing 'bout with them—</p>
+<p><em>[The doorknob jiggles. With some difficulty, the door opens. A janitor in grey overalls stands in the doorway.]</em></p>
+<p><strong>Janitor:</strong> Mm, good lad.</p>
+<p><em>[In the janitor's hand is a plastic cup half full of pink liquid. It has a bendy straw, which has apparently been partially chewed through. The janitor steps into the room, and crosses towards the table. He bends down, and pulls a trash can out from underneath it, before realizing the animatronic head is there. He pauses.]</em></p>
+<p><strong>Janitor:</strong> You want a little drinky?</p>
+<p><em>[The janitor holds out the cup towards the head, shaking it.]</em></p>
+<p><strong>Janitor:</strong> You want a little drinky, big bear?</p>
+<p><em>[He smiles, and slides the straw between the head's jaw-plates. He moves the cup back and forth, making slurping noises with his mouth. He pulls the straw out of the head, giggling.]</em></p>
+<p><strong>Janitor:</strong> <em>[Doing a stereotypical "hillbilly" accent.]</em> Thank you mister janitor, you're always so nice to me. <em>[Normal voice.]</em> 'Course, Billy Bob. You're my favorite bear in the whole world.</p>
+<p><em>[He chuckles again, before looking at the cup and falling silent.]</em></p>
+<p><strong>Janitor:</strong> What the hell am I doing?</p>
+<p><em>[He attempts to toss the cup into the trash, but misses. It splatters on the floor, the lid coming off. Pink liquid spills in three different lines down the room's length.]</em></p>
+<p><strong>Janitor:</strong> God— I'm getting too old for this. I pulled a Liam. Damn it.</p>
+<p><em>[He turns away from the head, bending over to pick up the cup. He holds it with both hands, frowning. He turns towards the table, and drops the cup into the trash can. He kicks it back under the table. He steps into the doorway, closing the door behind him. There are footsteps for some time.]</em></p>
+<p><em>[The eyes of the "Billy Bob Brockali" head narrow. It stares down at the spilled drink on the floor. Its eyes then turn towards the camera. It looks towards the door, then back at the spillage. Its jaw-plates creak as it opens, then closes them.]</em></p>
+<p><strong>Billy Bob Brockali:</strong> A <span style="color: pink">Super Strawberry Surprise Shake</span>.</p>
+<p><em>[It growls. Its eyes flick back towards the camera. It remains motionless for almost 40 seconds.]</em></p>
+<p><strong>Billy Bob Brockali:</strong> Things can’t keep going the way they are, kiddo. From here on out, there will be consequences.</p>
+<p><em>[Its eyes return to their neutral position, and its jaw-plates go slack. There are footsteps. The door opens, revealing the janitor, holding stain-remover and a pink rag. He gets on the floor, then crawls along towards the three lines of pink liquid. He begins to scrub. The liquid is smeared across the floor. He sprays it with the stain-remover, then scrubs again. The liquid is absorbed by the towel. He continues to scrub, then spray, in a repeating motion, until the liquid is gone.]</em></p>
+<p><em>[He twists his body, and throws the rag in the trash can. He places the stain-remover on the ground, then stands, facing the head. He puts his hands on his hips, and sighs loudly.]</em></p>
+<p><strong>Janitor:</strong> Well. Night, Bob.</p>
+<p><em>[He turns and leaves, closing the door behind him. The stain-remover remains on the ground. The lights outside click off. There are footsteps, then silence.]</em></p>
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+<p><strong>HISTORY:</strong> SCP-7324 has existed as a niche interest in public life for at least 2 decades, the first recorded order occurring at a Chick-fil-A in College Park, Georgia, in 2003. However, due to a lack of visibly anomalous phenomena surrounding the item, normalcy organizations paid little attention to its existence.</p>
+<p>As of 2023, SCP-7324 has come under investigation due to the increasing amount of chemically-neutralized "<a href="/speed-demon-hub">demonarcotics</a>" discovered within the drinks.</p>
+<p>"Demonarcotics" are a form of performance-enhancing drug created from the entrails and/or body parts of deceased <a href="/scp-2336">tartarean entities</a>, commonly referred to as demons. Though these drugs have been discovered within SCP-7324, they appear to have been stripped of their performance-enhancing abilities — effectively, while tartarean (or demonic) energies still build up within the individual who drinks SCP-7324, they do not experience physical or mental alterations, nor the formation of anomalous capabilities.</p>
+<p>The exact method to how "demonarcotics" are introduced to the SCP-7324 recipe depends on the region and establishment.</p>
+<p>In the Midwest region, where restaurants more commonly use fresh strawberries instead of strawberry ice cream, the organic components of the drug were found grown into, or connected with, the inside of the strawberry. It is unknown how this is achieved, and investigation into the strawberry farms these restaurants source from has proven difficult due to the global nature of the strawberry industry.</p>
+<p>Similarly, in the Southwest, PepsiCo has reported numerous contaminations of tartarean energy in its Starry shipments to restaurants. These occur sporadically, and Foundation-assisted investigations have similarly found little results.</p>
+<p>Investigations into restaurants in the remaining regions of the United States are ongoing.</p>
+<p>It is presently theorized that SCP-7324 was a preexisting anomaly which is being altered by an entity/group. The ultimate goal of these alterations is unknown.</p>
+<hr/>
+<p><strong>ADDENDUM 7324.6 | INCIDENT 006 (VIDEO RECORD OF ON-SITE COUNSELING SESSION)</strong></p>
+<div class="blockquote">
+<p><strong>Therapist:</strong> Good to see you back here. I was getting a little worried. Apopache is a hard place to live, and Spicy Crust is a hard place to work.</p>
+<p><em>[The therapist chuckles, leaning back in his chair. He clicks his pen absentmindedly.]</em></p>
+<p><strong>Therapist:</strong> So, what's on your mind? What brings you in today.</p>
+<p><strong>Employee:</strong> <em>[Ze fidgets.]</em> Well. It's complicated. I didn't know who else to report to. You're the closest thing I have to a regular Foundation contact.</p>
+<p><strong>Therapist:</strong> I see.</p>
+<p><strong>Employee:</strong> It's, uh, about SCP-7324.</p>
+<p><em>[The therapist leans forward, pressing his hands together inquisitively.]</em></p>
+<p><strong>Therapist:</strong> I see. Are you giving me permission to pass this along to the containment team?</p>
+<p><strong>Employee:</strong> Yeah. Yes. Absolutely. Yeah.</p>
+<p><strong>Therapist:</strong> Excellent. Tell me, then.</p>
+<p><strong>Employee:</strong> The pizza place is kind of a hotspot for, uh, kids to come around— most of the time none of them stay for long. They kind of just, order their food and fuck off. But lately, kids have been pouring in by the fucking, hundreds, man. And they all want the same thing.</p>
+<p><strong>Therapist:</strong> SCP-7324.</p>
+<p><strong>Employee:</strong> Yeah. Apparently, it's like, a meme. A normal meme. They'll come by and they'll buy it, and they'll be giggling, kicking their feet, fucking, whatever, and they go outside and record a little dance with it. But, like, dude, I've been googling it. And literally nothing comes up about this. There's no hashtag <span style="color: pink">Super Strawberry Surprise Shake</span>. No, super strawberry dance. Nothing. The only stuff that comes up is still just that <a href="/parawatch-hub">usual conspiracy weirdo shit</a>. At first, I had no idea why these kids were doing this. It didn't, like, freak me out, but it definitely weirded me out, right?</p>
+<p>Then— one, one time, I asked. Just straight up. "I can't find anything on TikTok about this," I said, "Why are you doing this?" And the girl who was ordering, she just rolled her eyes.</p>
+<p>She said to me, something like, "It's not a TikTok thing, it's exclusive. It's different." Whatever. And when I asked her what she meant by that, she just, uh, said I was old.</p>
+<p>But she took her shake, so did her friends, and they walked out of the joint, and they did their little dance out in front, the whole thing.</p>
+<p>They piled on into their car together, and they started driving off. But, real, really slowly. I don't know.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup></p>
+<p>And just— I just got up and followed them. The chefs were mad, obviously, you probably saw that in my manager's report last week, but, I just walked out and followed the car. It was easier 'cause it was night. So I just walked along the trees and bushes on the side of the road while they drove downtown.</p>
+<p>But they took this weird left, where there isn't any road. So I kind of had to jump out of the way— I'm sure they saw me, but they probably didn't recognize me. Not that it matters now, I guess.</p>
+<p><strong>Therapist:</strong> What do you mean by that?</p>
+<p><strong>Employee:</strong> I'm getting there, hold on.</p>
+<p>So, I followed the car through the woods. It, was, uh, still moving really slowly. And as we went, uh, through the thicket, there was a, a big stone bridge. I've never seen it before, and I've lived in Apopache pretty much my whole life. The car, though, it just kept cruising along. It went under the bridge. It was a tight fit, though, I heard it get scraped on the way in.</p>
+<p>I knew I couldn't follow them anymore, because they'd totally see me if I tried to go in, the whole thing was so narrow, but I just… Walked up to the entry-hole. Kept cover behind the bushes and everything, but as I came up to it, I touched it, and… there wasn't a hole at all.</p>
+<p>It was like a fucking Looney Tunes. It was a fake bridge painted onto a fucking rock. It was a flaky kind of oil painting one, too.</p>
+<p><em>[Ze looks down at the floor, before looking back at zir therapist.]</em></p>
+<p><strong>Employee:</strong> Like, the kind of, vintage, 1920s style paintings that they always hang up at restaurants. "Lovely day for a Guinness" toucan stuff.</p>
+<p><em>[Both are silent for some time.]</em></p>
+<p><strong>Therapist:</strong> That's concerning. You should've come to us as soon as this happened.</p>
+<p><strong>Employee:</strong> I know. I'm sorry. <em>[Ze puts zir hands between zir thighs.]</em> I know. But, this, uh, this happened at midnight, so, only a couple hours ago. I just. I didn't know the protocol. I'm sorry.</p>
+<p><strong>Therapist:</strong> I see. I'll get this to the supervisor as soon as I can. Thank you for sharing with us. Do you think you could provide directions to that neck of the woods?</p>
+<p><strong>Employee:</strong> Oh, uh, definitely.</p>
+<p><strong>Therapist:</strong> Okay. The containment team will more than likely call for you then. Stay on the site until they do.</p>
+<p><strong>Employee:</strong> You, you got it.</p>
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+<p><strong>After-Action Report:</strong> A group of field agents (including the employee) were deployed to investigate the painting in the forest the next day. As Spicy Crust Pizza was closed for the 4th of July weekend celebrations, no cover story was necessary — despite this, the employee failed to appear for briefing.</p>
+<p>The group elected to split evenly in two, one to investigate the alleged area of anomalous activity, the other to investigate the home of the employee. Their efforts are summarized below.</p>
+<script src="https://d3g0gp89917ko0.cloudfront.net/v--7690939296dc/common--javascript/yahooui/tabview-min.js" type="text/javascript"></script>
+<div class="yui-navset" id="wiki-tabview-d46ae8bfae435510495cb9f517ee581f">
+<ul class="yui-nav">
+<li class="selected"><a href="javascript:;"><em>Area of anomalous activity</em></a></li>
+<li><a href="javascript:;"><em>Home of missing Foundation employee</em></a></li>
+</ul>
+<div class="yui-content">
+<div id="wiki-tab-0-0">
+<p>Beginning at the Spicy Crust Pizza parlor, the agents followed the path described by the employee (with further aid from the building's security footage). This took them approximately three miles out of town, into a nearby forest.</p>
+<p>A tow truck was seen in a nearby river, as was a <span style="color: pink">pink Corvette</span>. Both appeared to have been abandoned for years, as they had been almost entirely overgrown by plant matter. The objects are now in Foundation custody.</p>
+<p>Initially, the described painting could not be found. The team, while investigating the automobiles, had accidentally walked in the opposite direction of the main anomaly — on their way back, one member spotted a large cube composed of cobblestone in the thicket, with the image of a bridge painted on its west side in oil pastel.</p>
+<p>No further insight could be gained. The painting's base has been disassembled, and is now in Foundation custody with the other objects. At this point, the team returned to Spicy Crust Pizza to await the rest of the squad.</p>
+</div>
+<div id="wiki-tab-0-1" style="display:none">
+<p>Beginning at Spicy Crust Pizza, the agents followed the employee's usual route back from work. This took them to downtown Apopache, then to an apartment building on the city limits. The building was empty at the time.</p>
+<p>The agents immediately discovered the presence of SCP-7324 in the building: on the stairs leading up to the employee's unit, there was a continuous, dripping line of the liquid.</p>
+<p>Upon finding the employee's unit, the team forced their way inside. It was reported the unit was in disarray, with signs of a struggle. SCP-7324 was found smeared on the floors and walls. The bedroom door was found with a hole through it; a "humanoid shape" was seen under the blankets on the bed. Upon entering the bedroom, the humanoid shape did not respond to commands — upon lifting the blankets, a 1.8 meter pepperoni and salami calzone in the shape of a human was discovered. The chest cavity had been carved out.</p>
+<p>The team were beginning to leave the premises, when it was pointed out that the SCP-7324 smear marks were leading away from, not into, the unit. They followed the trail down to the basement, then towards the communal laundry area.</p>
+<p>There, an instance of SCP-7324 with active tartarean energy was discovered — it had burnt a chasm of indeterminate depth through the floor of the laundry room, making further investigation impossible. Small samples of this instance were taken. The team intended to turn back at this point, but reported the sounds of human crying from the chasm.</p>
+<p>Attempting to investigate further, an agent was partially lowered into the chasm. Though unable to ascertain the presence of humans or humanoids inside the chasm, the agent reported that a message was drawn in marinara sauce on the wall. It read:</p>
+<blockquote>
+<p>RED RIGHT HAND OF GOD HEAR ME — SAVE ME FROM HER GAPEHOLE —</p>
+</blockquote>
+<p>The agents then exited the basement, and returned to the first floor. While there, the back door was noted to be open when it possibly was not before — as a precaution, they vacated the premises immediately. The team reunited with the others back at Spicy Crust Pizza.</p>
+<p>The apartment building has been condemned, and the SCP-7324 instance (now designated <strong>SCP-7324-Prime</strong>) has been brought into containment.</p>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+OZONE.dom.onDomReady(function(){
+        var tabViewd46ae8bfae435510495cb9f517ee581f = new YAHOO.widget.TabView('wiki-tabview-d46ae8bfae435510495cb9f517ee581f');
+                }, "dummy-ondomready-block");
+        
+//]]>
+</script>
+<hr/>
+<p><strong>Item Description:</strong> A thick, pink, dairy-based liquid, primarily based around strawberry and strawberry-flavored ingredients. Includes an abundance of tartarean energy, allowing it to melt through most materials. Individual instance of the SCP-7324 phenomenon, given the designation SCP-7324-Prime.<br/>
+<strong>Date of Recovery:</strong> ██-██-████<br/>
+<strong>Location of Recovery:</strong> Apopache, Texas, US<br/>
+<strong>Current Status:</strong> Kept in cold storage at <a href="/secure-facility-dossier-reliquary-area-27">Reliquary Area-27</a>, H Wing (High Value Storage).<br/>
+<em>Notes: A former dealer for a Polish "demonarcotics" ring has been brought in for questioning. Financial records indicate several sales to unspecified parties throughout the Deep South region of the United States. He has been informed of the benefits of cooperating with the investigation.</em></p>
+<div class="blockquote">
+<p><strong>&lt;Begin Log (translated from Polish)&gt;</strong></p>
+<p><strong>Interrogator:</strong> Mr. Białecki, good to see you again.</p>
+<p><strong>Dealer:</strong> Pleasure.</p>
+<p><em>[The dealer strains against his handcuffs, attempting to readjust his shoulders. The interrogator, standing across the table from him, crosses his arms in a disappointed manner.]</em></p>
+<p><strong>Interrogator:</strong> You've been up to some serious, no-good malfeasance— just no good at all. You understand that?</p>
+<p><strong>Dealer:</strong> Sure.</p>
+<p><strong>Interrogator:</strong> People are getting hurt real bad right now.</p>
+<p><strong>Dealer:</strong> I've heard.</p>
+<p><strong>Interrogator:</strong> You might be able to help us. If you can answer some questions for me, that'll offset a little of the hurt. A little of it. And what goes around, comes around— you'll get a little reward. But only if you're willing to help. Does that sound good?</p>
+<p><strong>Dealer:</strong> That's why I'm here.</p>
+<p><strong>Interrogator:</strong> You're very to the point. Well, let's start off, yeah.</p>
+<p><em>[The interrogator pulls out the chair and sits down. He places a wad of paper, a pencil, and a black leather book to his left.]</em></p>
+<p><strong>Interrogator:</strong> I need you to tell me—</p>
+<p><em>[He produces an instance of SCP-7324, placing it between himself and the dealer. The dealer's eyes widen, and he shifts, but he does not speak.]</em></p>
+<p><strong>Interrogator:</strong> —If you recognize this.</p>
+<p><strong>Dealer:</strong> Ah. It's an, American, drink. Of some kind. Yes?</p>
+<p><strong>Interrogator:</strong> Is that your guess?</p>
+<p><strong>Dealer:</strong> Sure. Yeah. Well, yes. Of course. I'm not familiar with American fast food.</p>
+<p><strong>Interrogator:</strong> Sure, but they have McDonald's where you're from, right?</p>
+<p><em>[The interrogator picks up his pencil, and uses it to push the SCP-7324 item closer to the dealer. The dealer attempts to scoot farther away.]</em></p>
+<p><strong>Interrogator:</strong> Sobótka? Right? They have McDonald's in Sobótka?</p>
+<p><strong>Dealer:</strong> Yes, uh, yes. They do.</p>
+<p><em>[The interrogator stops, putting his pencil down. SCP-7324 is now perched at the edge of the table, almost touching the dealer.]</em></p>
+<p><strong>Interrogator:</strong> Have you ever ordered this in Sobótka?</p>
+<p><strong>Dealer:</strong> Never.</p>
+<p><strong>Interrogator:</strong> I see. Whenever you're visiting America, do you ever order this?</p>
+<p><strong>Dealer:</strong> I've never been to America.</p>
+<p><strong>Interrogator:</strong> But, Mr. Białecki, you've sold demonarcotics in America?</p>
+<p><strong>Dealer:</strong> Yes. That's correct.</p>
+<p><strong>Interrogator:</strong> But you've never been to America.</p>
+<p><strong>Dealer:</strong> Yes. Yes.</p>
+<p><strong>Interrogator:</strong> I see. You have someone in America who sells for you.</p>
+<p><strong>Dealer:</strong> Uh, yes.</p>
+<p><strong>Interrogator:</strong> Well, that's all you had to say. We'll just need his name, then.</p>
+<p><strong>Dealer:</strong> His name?</p>
+<p><strong>Interrogator:</strong> Yes, his name. If you please.</p>
+<p><em>[The interrogator smiles. The dealer looks at the ground. Both sit in silence.]</em></p>
+<p><strong>Interrogator:</strong> Is there something wrong? You know, uh, if he's younger, or a civilian, you know, if he doesn't know what he's doing. We won't rough him up. We're not like the <a href="/paramax">UIU</a>, I can promise you that. Seriously.</p>
+<p><strong>Dealer:</strong> No, of course. I understand.</p>
+<p><em>[They resume sitting in silence.]</em></p>
+<p><strong>Interrogator:</strong> What's up?</p>
+<p><strong>Dealer:</strong> I lied.</p>
+<p><strong>Interrogator:</strong> That's okay, champ.</p>
+<p><strong>Dealer:</strong> I can't tell you anything about this.</p>
+<p><strong>Interrogator:</strong> This is what we need to know about, though.</p>
+<p><strong>Dealer:</strong> I can't help you. I'm sorry. I'd like to return to my cell.</p>
+<p><strong>Interrogator:</strong> Well, well, hold on a minute, before you go much further, uh, maybe you can work around the information. Leave out whatever makes you feel safer, but paint the silhouettes for us. How does that sound?</p>
+<p><strong>Dealer:</strong> That'd be getting too close to it.</p>
+<p><strong>Interrogator:</strong> What does that mean?</p>
+<p><em>[The dealer suddenly begins thrashing around in his chair. He kicks the table, slams his feet on the ground, and begins to holler, pushing away as far as he can. The SCP-7324 spills on the floor beneath him.]</em></p>
+<p><strong>Dealer:</strong> It means you're getting too close to it! You're getting too close!</p>
+<p><em>[The interrogator quickly stands from his seat, going around the table. He grabs the dealer's arm with one hand, using his free hand to push the dealer down. After some struggling, the interrogator is able to make the dealer stop moving. He stares at the dealer, frowning.]</em></p>
+<p><strong>Interrogator:</strong> Borys Niedźwiedź Białecki, I am incredibly disappointed in you.</p>
+<p><strong>Dealer:</strong> Shut up. No one will talk to you about this. We're too close already.</p>
+<p><strong>Interrogator:</strong> I need you to understand me. This is causing a lot of hurt. Demonic energy is building up everywhere, in everyone. Kids are ingesting this stuff by the dozens. Kids! Your craft, it's not just for who you're selling to anymore. People are putting this stuff wherever they can stash it. We need to figure out how, and why.</p>
+<p><strong>Dealer:</strong> I can't tell you anything. I swear to God.</p>
+<p><strong>Interrogator:</strong> I want to show you something. Not to alarm you, but we're going to shut off the lights for a moment. I just have to show you something, real quick.</p>
+<p><em>[He waves to the door. The dealer turns his head to watch. The lights shut off, and he gasps, jolting. The interrogator walks to the door, and opens it. An agent outside hands him a canister full of SCP-7324-Prime. The interrogator closes the door, and then returns to the table.]</em></p>
+<p><em>[He places the canister on the table, scooting it near the dealer. The dealer watches silently. The interrogator slowly unscrews the lid, a purple light emanates from the opening. Slowly, the light envelopes the entire room as the canister is fully opened.]</em></p>
+<p><em>[The interrogator places the lid next to the book.]</em></p>
+<p><strong>Interrogator:</strong> My men found this in Apopache, a city in Texas. That's pure, active demonic energy. I want to know why it's being filtered this way, why it's being placed where it is, and what it's being used for.</p>
+<p><strong>Dealer:</strong> I swear to God, I can't help you.</p>
+<p><strong>Interrogator:</strong> Please. Please, just try.</p>
+<p><em>[The purple light shimmers, a shadow flickering across the entire room. The dealer looks down into the liquid, then up at the ceiling. He appears to notice the camera in the corner of the room.]</em></p>
+<p><em>[The dealer's breath hitches.]</em></p>
+<p><strong>Interrogator:</strong> Champ?</p>
+<p><em>[The dealer's chair suddenly lurches. He screams. The chair's legs begin to disintegrate, purple smoke rising from the ground beneath each leg; the melting metal rapidly transforms into SCP-7324 liquid, spreading across the floor. It mixes with the spilled SCP-7324 liquid from earlier.]</em></p>
+<p><strong>Dealer:</strong> Help! Help, oh my God, please, help!</p>
+<p><em>[The interrogator runs to the other side of the table, but a plume of smoke comes up into his face, causing him to slip on the liquid, hitting the back of his head on the ground. He groans, using the wall to get up, as the smoke grows larger and the puddle spreads farther.]</em></p>
+<p><strong>Dealer:</strong> Oh my fucking God! Oh my fucking god!</p>
+<p><em>[The interrogator backs away from the plumes, bracing himself against the corner of the room. The lights flicker back on, but they are a deep purple. The dealer continues to scream.]</em></p>
+<p><strong>Interrogator:</strong> Someone— Someone— Someone get in here, please! Quickly!</p>
+<p><em>[The door opens, and several guards filter in. The lights flicker again, but return to normal, the purple light receding. They form a protective perimeter between the interrogator and growing plumes, their firearms trained. The dealer stops screaming, now whimpering; wet slaps are audible.]</em></p>
+<p><em>[The flow of liquid has outpaced the smoke. It pools past the feet of the guards and the interrogator, then stops. They all adjust their footing due to the new stickiness.]</em></p>
+<p><em>[The whimpering ceases. The smoke begins to clear.]</em></p>
+<p><strong>Dealer:</strong> Straw… strawberry…</p>
+<p><em>[The smoke is fully cleared. On the ground, where the chair used to be, is the head of the dealer. His eyes dart around several times, and he appears to attempt to take a breath. When he attempts exhaling, pink liquid shoots from his nostrils and mouth.]</em></p>
+<p><em>[His eyes narrow. He stares down at the spilled drink on the floor. His eyes then turn towards the camera. He looks towards the door, then back at the spillage. His jaw creaks as he closes his mouth.]</em></p>
+<p><em>[His face returns to a neutral expression. The interrogator pushes through the crowd, then sits on his haunches beside the head. He looks around the room wildly.]</em></p>
+<p><strong>Interrogator:</strong> Jesus Christ almighty.</p>
+<p><em>[The guards begin to file out. Radio chatter is audible as an agent files a report on the situation. The interrogator raises his hand, and snaps his fingers.]</em></p>
+<p><strong>Interrogator:</strong> Wait, just one more thing—</p>
+<p><em>[A guard returns, leaning in through the doorway. The interrogator gestures to the table.]</em></p>
+<p><strong>Interrogator:</strong> Prime is gone.</p>
+<p><em>[SCP-7324-Prime is missing from its place on the table. The other objects are undisturbed.]</em></p>
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>ADDENDUM 7324.10 | INCIDENT 008 (CCTV FOOTAGE OF UNCLEAR INCIDENT)</strong></p>
+<div class="blockquote">
+<p><strong>&lt;Begin Log&gt;</strong></p>
+<p><em>[Tables and booths are assembled beside a play area, featuring a tube-based playground structure and several arcade machines. Past the play area is a stage with velvet curtains. Between the curtains are the animatronics "Chuck E. Cheese," "Jasper J. Jowls," "Pasqually," and "Sally Sashay." They perform a waltz. A man stands near the edge of the stage, obscured by darkness.]</em></p>
+<p><strong>Chuck E. Cheese:</strong> …And sometimes, I whisper, what I'm thinking of…</p>
+<p><em>[There are children in the booths and tables, and some are running around holding swaths of tickets. Adults sit about eating pizza or talking amongst themselves.]</em></p>
+<p><em>[A girl stands in front of the stage, holding her hand in her mouth. She stares up at Chuck E. Cheese, apparently nervous.]</em></p>
+<p><strong>Chuck E. Cheese:</strong> …My cup runneth over, with love.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup></p>
+<p><em>[Her father, behind her, smiles and finishes chewing his pizza. He leans forward, and taps her on the back of the head. She turns around slowly, hand still in her mouth.]</em></p>
+<p><strong>Father:</strong> You like Chucky?</p>
+<p><em>[She turns to face the animatronic, then back to him. She runs to the booth, crawling up beside him.]</em></p>
+<p><strong>Daughter:</strong> No.</p>
+<p><strong>Father:</strong> No?</p>
+<p><strong>Daughter:</strong> No.</p>
+<p><strong>Father:</strong> How come? Me and Chucky, we were best friends when I was a kid.</p>
+<p><strong>Daughter:</strong> He's scary.</p>
+<p><strong>Father:</strong> What's so scary about him?</p>
+<p><em>[She points to Chuck E. Cheese's eyes. The animatronic continues singing, and the rest of the band joins in for a doo-wop bridge.]</em></p>
+<p><strong>Father:</strong> Well, I think if you gave him a fair chance, you'd think he's really, really nice.</p>
+<p><em>[The daughter presses her head into his arm. He puts a hand on the back of her head, nodding. He continues watching the stage. Purple stage lights fade in, shimmering over the group as "Sally Sashay" takes over singing. Children continue running around, yelling, laughing, and playing. A man stands near the edge of the stage, obscured by darkness. He smiles, his teeth reflected in the purple light. As the band comes to another doo-wop bridge, he begins to walk to the center of the stage. The father nudges his daughter to look; she does so.]</em></p>
+<p><em>[The man is now in clear view of the audience, a purple spotlight directly on him. He is <a href="/scp-1832">Father Jonathan Barker</a>, a Pentecostal elder working for the pan-denominational <a href="/cotsk-hub">Christian Ministries of America</a>. He is wearing a beige suit and red tie.]</em></p>
+<p><em>[The adults quickly gather up and silence their children, though some of the children gather in front of the stage silently themselves. Mr. Barker clasps his hands together and steps forward.]</em></p>
+<p><strong>Barker:</strong> Hiya, boys and girls. I'd like to thank Mr. Cheese and his wonderful band back here for hosting us tonight, everyone, please, a round of applause!</p>
+<p><em>[The sound of clapping is audible behind the audience.]</em></p>
+<p><strong>Barker:</strong> The Lord has gifted us an incredible year. <em>[He gestures to the adults in the audience.]</em> You all should be very proud. Kids, <em>[He approaches the edge of the stage,]</em> I can't say I've ever seen a team that works as hard as you. Part of my job as director of the CMA Youth League is making sure every kid has an equal opportunity to participate in sports and exercise, but, well, sometimes kids don't appreciate the opportunities presented to them. But all of you — all of you! — have gone above and beyond both my expectations, and the expectations set by the League.</p>
+<p><em>[He puts his hand over his heart, smiling warmly.]</em></p>
+<p><strong>Barker:</strong> You've had an incredible season, and I'm so proud. Everybody, please, let's hear it for the Evangelical Little League of Gulfport! Put your hands together, give yourself a pat on the back, kids, you've earned it.</p>
+<p><em>[The establishment erupts into applause. Adults carry their children, swinging them around, tossing them, cheering for them, smiling at them, holding them. The father turns to his daughter and ruffles her hair. The children cheer for themselves because they are proud. The children dance and applaud as well. They gather out on the floor, all of them running around in circles and cheering.]</em></p>
+<p><strong>Barker:</strong> Pardon me, kids, I've got one more announcement to make.</p>
+<p><em>[Silence.]</em></p>
+<p><strong>Barker:</strong> Thanks to your generous donations, I was able to get everyone — everybody — a <span style="color: pink">Super Strawberry Surprise Shake</span>.</p>
+<p><em>[The father gasps, and points to his daughter, who stands in front of the stage. She turns to look at him, smiling.]</em></p>
+<p><strong>Father:</strong> Your favorite!</p>
+<p><strong>Daughter:</strong> Yay, yay, yay!</p>
+<p><em>[Cheering and applause erupts around the room again. Barker smiles proudly, and steps away from the spotlight. The band continues their song, the Chuck E. Cheese animatronic resuming his role as vocalist.]</em></p>
+<p><em>[A group of men in beige suits emerge from the staff breakrooms, and align themselves around a table near the back of the establishment. Barker approaches them, and they begin to set up a tablecloth bearing the image of pink crosses. In time, they set up numerous SCP-7324 items, enough for each person in attendance. They emit a purple shimmer.]</em></p>
+<p><em>[A line of children forms. One by one, Barker hands each boy and girl a shake, smiling. He tells each of them he's proud of them, and that God is proud of them too. The adults stay in their booths, unaware.]</em></p>
+<p><em>[They suck on their straws, and a purple light shines in their mouths. All the kids are tuckered out, but no one wants to stop playing.]</em></p>
+<p><em>[No one wants to be alone.]</em></p>
+<p><em>[They gather in front of the stage, just sipping. They watch the fuzzy animals play in their big band. No one is afraid anymore. The daughter, she looks back at her father and smiles. He smiles back because he doesn't know.]</em></p>
+<p><em>[The lights begin to dim, one by one. Click, click, click.]</em></p>
+<p><em>[The children become translucent. Light bounces right through them. They become gray and hazy like ghosts. They smile and bob their heads. They are unaware. This happens to the adults, too. They don't know either. Then come the men in beige suits. Then comes Father Barker.]</em></p>
+<p><em>[The establishment is dark now, except for the stage. The velvet curtains flutter as the wind picks right off the ground. Chuck sings.]</em></p>
+<p><strong>Chuck E. Cheese:</strong> …In only a moment, we both will be old… we won't even notice the world turning cold…</p>
+<p><em>[The daughter turns to look at her father again. He smiles at her, then tilts his head. She smiles back. She disappears. He keeps smiling. He doesn't know. He still sees her. She's still there. The father disappears.]</em></p>
+<p><em>[The crowd dissipates one by one. The children vanish into thin air, the glow-in-the-dark stars on the carpet shining up through them. The adults are all gone too. The men in beige suits are nowhere to be seen.]</em></p>
+<p><em>[A woman's hand reaches out from behind the curtain. She curls her pretty red nails in a "come here" motion towards Jonathan Barker. He shakes his head.]</em></p>
+<p><em>[He walks into the darkness and vanishes. The establishment is so dark, now, it's almost hard to tell it's there. The only thing left in the world is the stage. They keep swinging. The woman's hand hangs limply. They keep dancing.]</em></p>
+<p><strong>Chuck E. Cheese:</strong> …My cup runneth over, with love.</p>
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: center;"><img alt="Field_lit_by_flashlight_in_Israel.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-7324/Field_lit_by_flashlight_in_Israel.jpg"/>
+<p><sub><em><a href="/she-s-worth-it-i-promise">they say you can still hear the kids playing under the ground</a></em></sub></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-7324">SCP-7324</a>" by FLOORBOARDS, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-7324">https://scpwiki.com/scp-7324</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> Inside_Hoot%27s_Ultimate_Party_Zone_-_panoramio_(4).jpg<br/>
+<strong>Author:</strong> Jordan Meeter<br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Inside_Hoot%27s_Ultimate_Party_Zone_-_panoramio_(4).jpg">https://commons.wikimedia.org/wiki/File:Inside_Hoot%27s_Ultimate_Party_Zone_-_panoramio_(4).jpg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Happy-planet-3ma.jpg<br/>
+<strong>Author:</strong> HAPPY PLANET<br/>
+<strong>License:</strong> Copyleft/Public Domain<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Happy-planet-3ma.jpg">https://commons.wikimedia.org/wiki/File:Happy-planet-3ma.jpg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> File:Abenteuer Jungle Verden - panoramio (16).jpg<br/>
+<strong>Author:</strong> Sami The Jaguar<br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Abenteuer_Jungle_Verden_-_panoramio_(16).jpg">https://commons.wikimedia.org/wiki/File:Abenteuer_Jungle_Verden_-_panoramio_(16).jpg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Liminal_space_Indonesia.jpg<br/>
+<strong>Author:</strong> Fitrah 193<br/>
+<strong>License:</strong> CC-BY-SA 4.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Liminal_space_Indonesia.jpg">https://commons.wikimedia.org/wiki/File:Liminal_space_Indonesia.jpg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Field_lit_by_flashlight_in_Israel.jpg<br/>
+<strong>Author:</strong> Yitzilitt<br/>
+<strong>License:</strong> CC-BY-SA 4.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Field_lit_by_flashlight_in_Israel.jpg">https://commons.wikimedia.org/wiki/File:Field_lit_by_flashlight_in_Israel.jpg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> IMG_6546.jpg<br/>
+<strong>Author:</strong> dave761<br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://cdn.discordapp.com/attachments/1133538356513493002/1133538425673367582/IMG_6546.jpg">https://cdn.discordapp.com/attachments/1133538356513493002/1133538425673367582/IMG_6546.jpg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> C19D77A5-72B4-47FF-9836-8456EF3E6A6E.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/lovemarginal" onclick="WIKIDOT.page.listeners.userInfo(7918431); return false;"><img alt="LOVEMARGINAL" class="small" src="https://www.wikidot.com/avatar.php?userid=7918431&amp;amp;size=small&amp;amp;timestamp=1763932475" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7918431)"/></a><a href="http://www.wikidot.com/user:info/lovemarginal" onclick="WIKIDOT.page.listeners.userInfo(7918431); return false;">LOVEMARGINAL</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://cdn.discordapp.com/attachments/522788422184730634/1134176638947565661/C19D77A5-72B4-47FF-9836-8456EF3E6A6E.jpg">https://cdn.discordapp.com/attachments/522788422184730634/1134176638947565661/C19D77A5-72B4-47FF-9836-8456EF3E6A6E.jpg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> 20230729_143932.jpg<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/ironshears" onclick="WIKIDOT.page.listeners.userInfo(7577471); return false;"><img alt="IronShears" class="small" src="https://www.wikidot.com/avatar.php?userid=7577471&amp;amp;size=small&amp;amp;timestamp=1763932475" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7577471)"/></a><a href="http://www.wikidot.com/user:info/ironshears" onclick="WIKIDOT.page.listeners.userInfo(7577471); return false;">IronShears</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://cdn.discordapp.com/attachments/522789244406595584/1134964759519834213/20230729_143932.jpg">https://cdn.discordapp.com/attachments/522789244406595584/1134964759519834213/20230729_143932.jpg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> 20230729_143932.jpg<br/>
+<strong>Author:</strong> Friend of <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/troutmaskreplica" onclick="WIKIDOT.page.listeners.userInfo(5346544); return false;"><img alt="TroutMaskReplica" class="small" src="https://www.wikidot.com/avatar.php?userid=5346544&amp;amp;size=small&amp;amp;timestamp=1763932475" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5346544)"/></a><a href="http://www.wikidot.com/user:info/troutmaskreplica" onclick="WIKIDOT.page.listeners.userInfo(5346544); return false;">TroutMaskReplica</a></span><br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://cdn.discordapp.com/attachments/1128047684780044420/1139287308286304397/20230810_205215.jpg">https://cdn.discordapp.com/attachments/1128047684780044420/1139287308286304397/20230810_205215.jpg</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Evidence corroborates that ze had left the establishment to follow a car, but recovered footage revealed three discrepancies: (1) Ze had informed the other employees of zir suspicions due to all personnel present being aware of the Foundation — this is not reflected in zir record of the event here; (2) The car was not being driven, it was being towed for parking in a residential space; (3) The group of teenagers, while seen entering, were not seen exiting the building.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. "My Cup Runneth Over," written by Harvey Schmidt and Tom Jones.</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

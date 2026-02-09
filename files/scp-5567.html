@@ -1,0 +1,944 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-5567</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-5567</h1>
+            <html><body><div id="page-content">
+
+<div style="display: none">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">relative</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> rgba(</span><span class="hl-number">176</span><span class="hl-code">,</span><span class="hl-number">16</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.7</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow-wrap:</span><span class="hl-code"> </span><span class="hl-string">break-word</span><span class="hl-code">;
+ 
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> dimgrey</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">5</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">),</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.12</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.01</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">16</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-bottom:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> lightgrey </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.16</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.material-box</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.wiki-content-table</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumbox</span><span class="hl-code"> </span><span class="hl-identifier">blockquote</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">double</span><span class="hl-code"> </span><span class="hl-var">#999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addendumtitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.maintitle</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+   </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">x-large</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-var">#b01</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.addenda-header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">;
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.scp-info-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code">flex</span><span class="hl-code">; 
+    </span><span class="hl-reserved">justify-content:</span><span class="hl-code">space-between</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.object-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-var">black</span><span class="hl-code">;
+    </span><span class="hl-reserved">align-self:</span><span class="hl-code"> flex-end</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.title-style</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#b01</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">large</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">underline</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div-empty</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> lightgrey</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.update-div</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-string">x-small</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.computed</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.computed</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Computed </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+</span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.rawcode</span><span class="hl-special">:before</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">content:</span><span class="hl-code">"Raw </span><span class="hl-string">Code</span><span class="hl-code">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-string">bold</span><span class="hl-code">;
+</span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+</span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.codebox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">inline-block</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-code">,  </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">.75</span><span class="hl-string">em</span><span class="hl-code">; 
+        </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+        </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">gray</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> gainsboro</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-decoration:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-reserved">background-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-brackets">{</span><span class="hl-code">
+</span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> unset</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-unfolded-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-folded</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.licensebox</span><span class="hl-code"> </span><span class="hl-identifier">.collapsible-block-link</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p>SCP-5567 <em>Poorly Loved, Poorly Lived</em> by: <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/mew-ltiverse" onclick="WIKIDOT.page.listeners.userInfo(5271378); return false;"><img alt="Mew-ltiverse" class="small" src="https://www.wikidot.com/avatar.php?userid=5271378&amp;amp;size=small&amp;amp;timestamp=1765596651" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5271378)"/></a><a href="http://www.wikidot.com/user:info/mew-ltiverse" onclick="WIKIDOT.page.listeners.userInfo(5271378); return false;">Mew-ltiverse</a></span> &amp; <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/anorrack" onclick="WIKIDOT.page.listeners.userInfo(4188420); return false;"><img alt="Anorrack" class="small" src="https://www.wikidot.com/avatar.php?userid=4188420&amp;amp;size=small&amp;amp;timestamp=1765596651" style="background-image:url(https://www.wikidot.com/userkarma.php?u=4188420)"/></a><a href="http://www.wikidot.com/user:info/anorrack" onclick="WIKIDOT.page.listeners.userInfo(4188420); return false;">Anorrack</a></span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<a href="http://scp-wiki.wikidot.com/dr-mews-personnel-file">Read more of Mew's stuff</a><br/>
+<a href="http://scp-wiki.wikidot.com/anorrack-s-author-page">Read more of Anorrack's stuff</a></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<div class="material-box">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc0"><span><span style="text-decoration: underline;"><strong>Special Containment Procedures</strong></span></span></h5>
+</div>
+</div>
+<p>Site-23 web crawler Delta-500 ("Discover-Bot") is to continuously monitor the web for mentions of SCP-5567. Should mentions be discovered, they are to be promptly removed.</p>
+<p>Any discovered copies of SCP-5567 are to be kept in Site-23 anomalous storage Unit-12. Personnel wishing to access SCP-5567 with clearance level below SCP-5567/2 must gain permission from project director Researcher Oliver Crane or project lead Senior Researcher Kelly Apple.</p>
+<p><strong>Post 19/12/2019 Additions:</strong> No physical changes may be made to any copy of SCP-5567 upon discovery without direct permission from project director Researcher Crane. Any person found guilty of doing so will be removed from working with SCP-5567, and reported to Site Director Lilith Miles.</p>
+<p><strong>Update 25/09/2019:</strong> Due to the unknown nature of SCP-5567-1's anomalous development, testing has been temporarily suspended. Only the aforementioned personnel may access SCP-5567.</p>
+</div>
+<div class="material-box">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc1"><span><span style="text-decoration: underline;"><strong>Description</strong></span></span></h5>
+</div>
+</div>
+<div class="scp-image-block block-right" style="width:300px;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-5567/Pic"><img alt="Pic" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-5567/Pic/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>SCP-5567 title card.</p>
+</div>
+</div>
+<p>SCP-5567 is a direct-to-video, subtitled, pilot episode of a Japanese anime titled <em>"海辺の謎"</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup>. A label on the back cover claims it was distributed by a believed-to-be nonexistent "East Blue Productions"; investigation is ongoing.</p>
+<p>The plot of SCP-5567 involves a detective named Toshiro Arikawa (SCP-5567-1) investigating a spike in missing person cases in the fictional seaside town of Michikomio, Japan. Although locals claim a yokai<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> is responsible, Toshiro remains skeptical. Every twenty-four-hours following the previous successful viewing of SCP-5567, the culprit of the disappearances changes, along with corresponding scenes and other details relating to the mystery.</p>
+<p><strong>Discovery of SCP-5567-1</strong></p>
+<p>SCP-5567-1 is an emergent awareness embedded in the character of Detective Arikawa, which developed upon repetitive viewing during preliminary Foundation testing.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup></p>
+<p>During testing, SCP-5567-1 gradually became aware of its status as a fictional character. Evidence of this included:</p>
+<ul>
+<li>Dialogue by SCP-5567-1, considered unfitting to the scene</li>
+<li>SCP-5567-1 appearing late to scenes</li>
+<li>SCP-5567-1 not appearing in scenes</li>
+<li>SCP-5567-1 responding to remarks made by Foundation personnel in the room<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></li>
+<li>SCP-5567-1 failing to speak for extended periods of time</li>
+</ul>
+<p>Testing has revealed SCP-5567-1 is aware of when SCP-5567 is being watched, its place as a character in a direct to video anime, and the year SCP-5567 was supposedly created.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> Additionally, testing has revealed that SCP-5567-1 is aware of previous iterations of itself, interactions with viewers, and plot resolutions. For more information uncovered during testing with SCP-5567-1, see the addendums below.</p>
+</div>
+<div class="material-box">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Interview Log 01</a><a href="javascript:;">Close Interview</a></div>
+</div>
+<div class="colmod-content">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc2"><span><span style="text-decoration: underline;"><strong>SCP-5567-1 Interview Log 01</strong></span></span></h5>
+</div>
+</div>
+<blockquote>
+<p><strong>Interviewed:</strong> SCP-5567-1</p>
+<p><strong>Interviewer:</strong> Dr. Kelly Apple, Researcher Daichi Fox</p>
+<p><strong>Objective:</strong> To learn what exactly SCP-5567-1 knows about itself, its creation, and the world around it.</p>
+<p><strong>Note:</strong> As SCP-5567-1 can only communicate in Japanese, Researcher Fox, fluent in English and Japanese, translated for both parties.</p>
+<div style="text-align: center;">
+<p><strong>&lt;Begin Log&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>Dr. Apple:</strong> I am only going to say this once. Detective Arikawa, you will now be known as SCP-5567-1. Do you understand me?</p>
+<p><em>[SCP-5567-1 leans back in his chair and looks to the sky.]</em></p>
+<p><strong>SCP-5567-1:</strong> The voices in my head seem quite active today. Maybe I should go to a shrink like Aoi tells me to.</p>
+<p><strong>Dr. Apple:</strong> My name is Dr. Apple, and I'm here to interview you. Next to me is Researcher Fox. Please be more responsive to the questions.</p>
+<p><strong>SCP-5567-1:</strong> Can't right now, doc. My schedule is a bit backed up at the moment, what with the murders and all.</p>
+<p><em>[SCP-5567-1 taps his pen against his notepad, and sighs.]</em></p>
+<p><strong>SCP-5567-1:</strong> The murders…</p>
+<p><strong>Dr. Apple:</strong> SCP-5567-1, I need you to answer me—</p>
+<p><strong>SCP-5567-1:</strong> I was not alive before. I would have appreciated some company within Michikomio. Outside company is not unwanted, but you seem quite incompetent and a bore to listen to. Talk to me when you get a better doctor to do it for you. And please, my name is Toshiro Arikawa.</p>
+<p><em>[At this point, SCP-5567-1 looks at the camera and gently pushes it away. By the next perspective shift, SCP-5567-1 has disappeared from the frame.]</em></p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+<p><strong>Observations:</strong> SCP-5567-1 does not appear to be capable of viewing observers. How it knows that it is being watched is currently unknown.</p>
+</blockquote>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<div class="material-box">
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Access SCiPNET Email? One (1) new message!</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">SCP-5567-1 Interview</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> kellyapple@SCiPnet<br/>
+<strong>From:</strong> daichifox@SCiPnet<br/>
+<strong>Subject:</strong> SCP-5567-1 Interview</p>
+</div>
+<hr/>
+<p>Hello Kelly! I'm still landing my footing here, but a useful phrase we have around the office in my division is "a content anomaly is a contained anomaly". Maybe try using his name, many anomalies cooperate simply by hearing their given name. We need to gain his trust, as he seems very wary around us.</p>
+<p>See you tomorrow!</p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> daichifox@SCiPnet<br/>
+<strong>From:</strong> kellyapple@SCiPnet<br/>
+<strong>Subject:</strong> Re:SCP-5567-1 Interview</p>
+</div>
+<hr/>
+<p>Daichi, I appreciate the incentive, but trust me in this. We can use its name if necessary, but we do not need to bend to the anomaly's will. Try to learn from me.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="material-box">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Interview Log 02</a><a href="javascript:;">Close Interview</a></div>
+</div>
+<div class="colmod-content">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc3"><span><span style="text-decoration: underline;"><strong>SCP-5567-1 Interview Log 02</strong></span></span></h5>
+</div>
+</div>
+<blockquote>
+<p><strong>Interviewed:</strong> Detective Arikawa</p>
+<p><strong>Interviewer:</strong> Researcher Daichi Fox</p>
+<p><strong>Objective:</strong> To gain the trust of Arikawa to facilitate understanding of the underlying anomaly. To this end, Researcher Fox is conducting the interview.</p>
+<p><strong>Note:</strong> Interview conducted in Japanese.</p>
+<div style="text-align: center;">
+<p><strong>&lt;Begin Log&gt;</strong></p>
+</div>
+<hr/>
+<p><em>[Detective Arikawa is sitting on a piece of driftwood on the beach, attempting to light a cigarette. A stormfront is brewing, though the sunset is beautiful.]</em></p>
+<p><strong>Fox:</strong> Hello, Detective Arikawa, I was wondering if I could speak with you.</p>
+<p><strong>Arikawa:</strong> Jesus, can a man take a smoke in peace? I already told you doc, I don't want nothing to do—</p>
+<p><strong>Fox:</strong> No, no, you misunderstand, sir. I was merely a translator for my supervisor, Apple. My name is Daichi Fox.</p>
+<p><strong>Arikawa:</strong> Ah. I suppose I could give someone new a chance. Especially since you're using my name. My <em>real</em> name.</p>
+<p><em>[Arikawa takes a deep drag of the cigarette and exhales, watching the cloud drift away.]</em></p>
+<p><strong>Arikawa:</strong> Now go on, say your piece. I'll leave when I'm done with this cigarette.</p>
+<p><strong>Fox:</strong> Oh… okay, ah…. How did you feel when you first gained— first became aware of your surroundings.</p>
+<p><strong>Arikawa:</strong> Shitty.</p>
+<p><strong>Fox:</strong> Okay… what do you want to do with your life?</p>
+<p><strong>Arikawa:</strong> Well, I would kill myself, but I wouldn't know what to do after that. <em>[takes a drag]</em></p>
+<p><strong>Fox:</strong> Not that much of a planner, eh?</p>
+<p><strong>Arikawa:</strong> What can I say, I'm more of an action man than a thinking man.</p>
+<p><em>[Thundering is heard in the distance.]</em></p>
+<p><strong>Fox:</strong> Not a bad way to be. Aren't you afraid it's going to rain?</p>
+<p><strong>Arikawa:</strong> Nah, it never rains around here this time. A little further down the coast, maybe, but never went out that far.</p>
+<p><strong>Fox:</strong> Why not?</p>
+<p><strong>Arikawa:</strong> Heh, I'm suicidal, not insane. Traveled down the coast for a shopping trip one time, halfway to the next town I started unravelling. <em>[takes a drag]</em> Could feel ink dripping from my back, the car almost falling apart from the weight of an animator's pencil pressing against it. I didn't feel… finished. Turned around like a <em>[chuckles]</em> fox with its tail between its legs.</p>
+<p><strong>Fox:</strong> You say that so casually. That you're suicidal.</p>
+<p><strong>Arikawa:</strong> It's nothing to make a fuss of, not to me.</p>
+<p><em>[Arikawa takes one final drag of his cigarette, and crushes it beneath his heel.]</em></p>
+<p><strong>Arikawa:</strong> Well, there's that. Nice talking to you, kid.</p>
+<p><strong>Fox:</strong> You too. See you around.</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+<p><strong>Observations:</strong> The anomaly appears capable of aiming the camera to focus on it at all times.</p>
+</blockquote>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<div class="material-box">
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Access SCiPNET Email? One (1) new message!</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">– hide block</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> daichifox@SCiPnet<br/>
+<strong>From:</strong> kellyapple@SCiPnet<br/>
+<strong>Subject:</strong> SCP-5567-1 Interview Conduct</p>
+</div>
+<hr/>
+<p>I read your interview with SCP-5567-1 yesterday. You were not productive, Daichi, and very unprofessional transcript at that. Flowery language does not make a transcript. Talking to a construct about its feelings is getting us nowhere. We need to learn exactly what it can do, and what it knows about it.</p>
+<p>You are poisoning the well of research before we can try and take a drink. Watch and learn from me, Fox.</p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> kellyapple@SCiPnet<br/>
+<strong>From:</strong> daichifox@SCiPnet<br/>
+<strong>Subject:</strong> Re:SCP-5567-1 Interview Conduct</p>
+</div>
+<hr/>
+<p>Kelly, you're being quite cold. If we gain his trust, he's more likely to cooperate, at least from what I have picked up on. If I see him closing up, I'll try to smooth things out next interview you do.</p>
+<p>See you tomorrow!</p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> daichifox@SCiPnet<br/>
+<strong>From:</strong> kellyapple@SCiPnet<br/>
+<strong>Subject:</strong> Re:Re:SCP-5567-1 Interview Conduct</p>
+</div>
+<hr/>
+<p>Fox, I need you to trust me.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="material-box">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Interview Log 03</a><a href="javascript:;">Close Interview</a></div>
+</div>
+<div class="colmod-content">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc4"><span><span style="text-decoration: underline;"><strong>SCP-5567-1 Interview Log 03</strong></span></span></h5>
+</div>
+</div>
+<blockquote>
+<p><strong>Interviewed:</strong> SCP-5567-1</p>
+<p><strong>Interviewer:</strong> Researcher Kelly Apple, Researcher Daichi Fox</p>
+<p><strong>Objective:</strong> To fully understand the origin and abilities of SCP-5567-1.</p>
+<div style="text-align: center;">
+<p><strong>&lt;Begin Log&gt;</strong></p>
+</div>
+<hr/>
+<p><em>[SCP-5567-1 is within the Michikomio Library, reading at a wooden desk. A radio is playing a muted jazz tune in the background.]</em></p>
+<p><strong>Apple:</strong> Hello, SCP-5567-1.</p>
+<p><strong>SCP-5567-1:</strong> <em>[eyes not leaving the book]</em> I'm guessing this is Apple speaking?</p>
+<p><strong>Apple:</strong> Yes, I want to ask you questions about yourself.</p>
+<p><strong>SCP-5567-1:</strong> I suppose I could indulge in conversation. You'll hear me out like that Fox kid, eh?</p>
+<p><strong>Apple:</strong> I don't have to— <em>[Fox does not translate this dialogue to SCP-5567-1.]</em></p>
+<p><strong>Apple:</strong> <em>(…)</em> Fine, yes, I will.</p>
+<p><strong>SCP-5567-1:</strong> Wonderful. <em>[Snapping the book shut and staring into camera.]</em> What do you want to know?</p>
+<p><strong>Apple:</strong> I—We would like to know when you were created, preferably who created you, as well.</p>
+<p><strong>SCP-5567-1:</strong> What it says on the title card. 1985 and "East Blue" Productions, I believe.</p>
+<p><strong>Apple:</strong> You only know what is on the title card?</p>
+<p><strong>SCP-5567-1:</strong> You asked me what I know, and I told you what I know. Now if you don't mind, I have to figure out what in the hell skinned this little girl, or else her father promised to kill me.</p>
+<p><em>[Several other library patrons shush SCP-5567-1, who becomes more withdrawn. He sighs, rubs his face with his hands, and pulls out his cigarette box, only to reveal it to be empty.]</em></p>
+<p><strong>SCP-5567-1:</strong> Damn, I always forget this is where I have to refill my cigs. Nice talking to you, Fox. Apple, you've grown on me.</p>
+<p><em>[SCP-5567-1 leaves the frame, and the camera remains centered on the book it left on the table, entitled</em> 日出ずる国の民間伝承.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup><em>]</em></p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+</blockquote>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<div class="material-box">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">Interview Log 04</a><a href="javascript:;">Close Interview</a></div>
+</div>
+<div class="colmod-content">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc5"><span><span style="text-decoration: underline;"><strong>SCP-5567-1 Interview Log 04</strong></span></span></h5>
+</div>
+</div>
+<blockquote>
+<p><strong>Interviewed:</strong> SCP-5567-1</p>
+<p><strong>Interviewer:</strong> Researcher Daichi Fox</p>
+<p><strong>Objective:</strong> To learn about SCP-5567-1's understanding of the yokai within SCP-5567.</p>
+<div style="text-align: center;">
+<p><strong>&lt;Begin Log&gt;</strong></p>
+</div>
+<hr/>
+<p><em>[Detective Arikawa is sitting on the steps of the back porch of his home. He is holding a lit cigarette between his fingers.]</em></p>
+<p><strong>Fox:</strong> Hello Detective Arikawa. How are you today?</p>
+<p><strong>Arikawa:</strong> <em>[looks at the screen]</em>. Ah, Fox. Hey kid.</p>
+<p><strong>Fox:</strong> You know, you only look a few years older than me, but you call me kid. And please, call me Daichi.</p>
+<p><strong>Arikawa:</strong> I can't see you, remember.</p>
+<p><strong>Fox:</strong> I'm thirty.</p>
+<p><strong>Arikawa:</strong> Thirty-five going on fifty.</p>
+<p><strong>Fox:</strong> See? We're about the same age.</p>
+<p><em>[Fox shuffles in his seat.]</em></p>
+<p><strong>Fox:</strong> Anyways, to the point. I would like to ask you about the yokai that you encounter.</p>
+<p><strong>Arikawa:</strong> <em>[takes a drag of his cigarette]</em> What about em'?</p>
+<p><strong>Fox:</strong> For starters, <em>[flips through notes]</em> the lady with a thousand faces, she was just the shop keep, right? When you see the shopkeep after that, how do you think of her?</p>
+<p><em>[Arikawa closes his eyes, taking a deep sigh.]</em></p>
+<p><strong>Arikawa:</strong> I can't think anything. If I thought anything special, it would interfere with my ability to go on.</p>
+<p><strong>Fox:</strong> Why do you continue to solve the mysteries? What is making you?</p>
+<p><strong>Arikawa:</strong> Justice.</p>
+<p><em>[Arikawa takes another drag of his cigarette, then throws it to the ground, crushing it beneath his heel.]</em></p>
+<p><strong>Arikawa:</strong> I know everyone in Michikomio is an empty shell of themselves. But that doesn't mean I'm gonna let them suffer 'cause I am.</p>
+<p><strong>Fox:</strong> Do you feel as if solving these mysteries gives you a sense of belonging?</p>
+<p><strong>Arikawa:</strong> <em>[chuckles]</em> Would you believe me if I said no?</p>
+<p><strong>Fox:</strong> I'm curious, why?</p>
+<p><strong>Arikawa:</strong> If I don't solve a case, twenty-four-hours later, there's a new one. A little girl is ripped apart in front of me and I'll watch her buy candy from a vendor the next day. All I do is give them a temporary good ending.</p>
+<p><strong>Fox:</strong> Then why do you still do it?</p>
+<p><strong>Arikawa:</strong> Just because I'm suffering doesn't mean these husks have to. It doesn't feel right to leave things because <em>I'm</em> upset. The least I can do is avenge them, maybe fulfill their spirits' need for vengeance, if only for a little while.</p>
+<p><strong>Fox:</strong> That's very admirable.</p>
+<p><strong>Arikawa:</strong> I suppose.</p>
+<p><em>[As he says that, a female figure appears on the top of a hill in the distance, waving to Akiwara. He tiredly raises his hand in response.]</em><br/>
+<br/>
+<strong>Akiwara:</strong> That's my cue, we're almost at the climax. See you later, Daichi.</p>
+<p><strong>Fox:</strong> Good luck.</p>
+<p><strong>Akiwara:</strong> <em>[chuckles and shakes his head.]</em> Don't need it, but thanks.</p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+</blockquote>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<div class="material-box">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc6"><span><span style="text-decoration: underline;"><strong>Archive Notice</strong></span></span></h5>
+</div>
+</div>
+<p>The containment team of SCP-5567 has unanimously decided to archive interview logs five, six, and seven, as the information within has been deemed irrelevant.. For the archived logs, see <span style="color: firebrick">SCiP-ARC/5567 Interviews</span>.</p>
+</div>
+<div class="material-box">
+<div style="border:solid 1px #999999; background-color: #F5D8E0; padding:5px; margin-bottom: 10px; margin-top: 20px;">
+<div style="text-align: center;">
+<h4 id="toc7"><span>NOTICE FROM THE FOUNDATION HUMAN RESOURCES DEPARTMENT</span></h4>
+<p>Multiple unnamed sources have claimed that the recipient of this memo, <em>DAICHI FOX</em>, has been conducting interviews deemed unproductive in the development of an anomaly under their care, <em>SCP-5567-1</em>.</p>
+<p>This memo is to be considered a warning. Any further complaints made towards you will be referred to your supervisor for further resolution.</p>
+<p>Additional: To increase productivity, <em>DAICHI FOX</em> will be accompanied with every interview with <em>SCP-5567-1</em> until given approval to act independently.</p>
+</div>
+</div>
+</div>
+<div class="material-box">
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Access SCiPNET Email? One (1) new message!</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Stepping Back</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> kellyapple@SCiPnet<br/>
+<strong>From:</strong> daichifox@SCiPnet<br/>
+<strong>Subject:</strong> Stepping back</p>
+</div>
+<hr/>
+<p>I believe it is in the best interest of the case for me to distance myself from SCP-5567-1. After receiving the memo, I was forced to realize that I have been <em>too</em> focused on trying to gain his trust. Although I'd like to be there to watch the progression of the anomaly and be there for him if he needs it, it seems like he's willing to cooperate without my advice at this point. I'll let you take the reins again. Contact me if he shuts down, if you'd like.</p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> daichifox@SCiPnet<br/>
+<strong>From:</strong> kellyapple@SCiPnet<br/>
+<strong>Subject:</strong> Re:Stepping back</p>
+</div>
+<hr/>
+<p>Noted. I'll inform Oliver of your decision ASAP. I was only ever trying to look out for you, Daichi. I'll be sure to let SCP-5567-1 know as well. And I'll ask for your help if it's needed.</p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> kellyapple@SCiPnet<br/>
+<strong>From:</strong> daichifox@SCiPnet<br/>
+<strong>Subject:</strong> Re:Re:Stepping Back</p>
+</div>
+<hr/>
+<p>Thanks. Do stick to calling him Arikawa, it will do wonders to his cooperation. Trust me.</p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> daichifox@SCiPnet<br/>
+<strong>From:</strong> kellyapple@SCiPnet<br/>
+<strong>Subject:</strong> Re:Re:Re:Stepping Back</p>
+</div>
+<hr/>
+<p>Right.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="material-box">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc8"><span><span style="text-decoration: underline;"><strong>Addendum 5567 Status Update</strong></span></span></h5>
+</div>
+</div>
+<p><strong>Observer:</strong> Dr. Kelly Apple, Dr. Marvin Waters</p>
+<p><strong>Interview(s) Summary:</strong> SCP-5567-1 initially expressed irritation that Researcher Fox was no longer interviewing it. It was reluctantly explained that Researcher Fox chose to stop directly interacting with SCP-5567-1. It appeared to take comfort in the fact that Researcher Fox had not been forced to stop interacting with it, finding his reasoning "noble" which aided in its further cooperation.<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<strong>Progress as of 09/09/2019:</strong> SCP-5567-1 has been observed to have gained full/near full control of itself and its surroundings. Sapience and anomalous properties seem to be progressing at a steady pace, relative to number of interations SCP-5567 has undergone.</p>
+<p>— Dr. Marvin Waters</p>
+<p><strong>Update as of 12/09/2019:</strong> SCP-5567-1's sapience and anomalous properties seem to be progressing in larger amounts than previously documented.</p>
+<p>New properties include:</p>
+<ul>
+<li>The ability to change which predetermined scene is occurring at will (if it chooses to partake in such scene)<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup></li>
+<li>The ability to make objects appear</li>
+</ul>
+<p>Additionally, SCP-5567-1's physical appearance has been altered. It now looks disheveled, opposed to the clean-cut appearance seen previously.</p>
+<p>— Dr. Kelly Apple<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<strong>Updates as of 25/09/2019:</strong> SCP-5567-1 has become almost non-responsive to Foundation personnel. Although no current threat to containment has been made, it has been decided that SCP-5567-1 testing will be brought to an indefinite halt. Contact Researcher Crane or Dr. Apple for any questions regarding this decision.</p>
+</div>
+<div class="material-box">
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">+ Security Log 5567-TEST-D 29/11/2019</a><a href="javascript:;">- Close Log</a></div>
+</div>
+<div class="colmod-content">
+<blockquote>
+<div style="text-align: center;">
+<p><strong>&lt;Begin Log&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>12:25</strong> <em>[Researcher Kelly Apple is seen walking purposefully down the hall containing the testing chamber used for SCP-5567, holding an autotranslator and SCP-5567. She flashes her ID to the guards, who let her pass.]</em></p>
+<p><strong>12:26</strong> <em>[Apple enters the chamber, and loads SCP-5567-1 into the dedicated television within the chamber.]</em></p>
+<p><strong>12:27</strong> <em>[She attempts to play SCP-5567, but it only shows the credits. Apple has a look of annoyance as she rewinds the tape and plays it.]</em></p>
+<p><strong>12:28</strong> <em>[After the introduction, she forwards SCP-5567 to a scene showing SCP-5567-1 in the Michikomio Library. SCP-5567-1 appears disheveled, with wrinkled clothing and greasy, stringy hair.]</em></p>
+<p><strong>12:29</strong> <em>[Apple attempts to get the attention of SCP-5567-1, but is ignored. Apple angrily attempts to tap on the television screen, to the same response.]</em></p>
+<p><strong>12:30</strong> <em>[Apple looks around for a moment, and starts talking to SCP-5567-1, quietly at first but gets more animated as she continues. SCP-5567-1 tries to ignore her still but something Apple says catches his attention.]</em></p>
+<p><strong>12:33</strong> <em>[SCP-5567-1 and Apple begin a back-and-forth conversation, talking and gesturing. As Apple speaks SCP-5567-1 becomes more withdrawn.]</em></p>
+<p><strong>12:34</strong> <em>[Apple looks worried, and asks SCP-5567-1 a question. After a moment of hesitation, SCP-5567-1 tells her something. Apple sits ramrod straight, says one last thing to SCP-5567-1, ejects SCP-5567 and walks out of the chamber.]</em></p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+</blockquote>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+<div class="material-box">
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Access SCiPNET Email? One (1) new message!</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">SCP-5567-1 I'm Sorry</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> kellyapple@SCiPnet<br/>
+<strong>From:</strong> daichifox@SCiPnet<br/>
+<strong>Subject:</strong> I'm Sorry</p>
+</div>
+<hr/>
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">+ Security Log 5567-TEST-D 02/12/2019</a><a href="javascript:;">- Close Log</a></div>
+</div>
+<div class="colmod-content">
+<blockquote>
+<div style="text-align: center;">
+<p><strong>&lt;Begin Log&gt;</strong></p>
+</div>
+<hr/>
+<p><strong>01:05</strong> <em>[During a guard shift exchange, Researcher Fox is seen walking down the hall. He attempts to walk casually, but looks nervous.]</em></p>
+<p><strong>01:06</strong> <em>[Fox enters the chamber, closes the blinds and locks the door. He reaches into his breast pocket and pulls out a VHS tape.]</em></p>
+<p><strong>01:07</strong> <em>[The television blares the intro music and title card for SCP-5567, which causes Fox to hastily lunge towards the television to hit the pause button, before lowering the volume and unpausing SCP-5567.]</em></p>
+<p><strong>01:07</strong> <em>[Fox fast forwards through the establishing shots of SCP-5567, stopping at the first shot including SCP-5567-1, where he is sleeping in his house.]</em></p>
+<p><strong>01:08</strong> <em>[Fox taps on the screen, waking SCP-5567-1 up. Fox begins to talk animatedly to SCP-5567-1 in Japanese.]</em></p>
+<p><strong>01:10</strong> <em>[After a while, Fox stops talking, and looks concerned, he asks a question. SCP-5567-1 replies in a snappy tone of voice.]</em></p>
+<p><strong>01:11</strong> <em>[Fox attempts to respond, his shoulders slumping as he does so, but is interrupted by SCP-5567-1, who launches in a tirade against Fox. ]</em></p>
+<p><strong>01:13</strong> <em>[SCP-5567-1 ends his tirade, and Fox tries talking to him in a soft tone.]</em></p>
+<p><strong>01:15</strong> <em>[The video cassette is forcibly ejected from the television set, landing in Fox's lap. He puts his face in his hands and doesn't move for several minutes, before getting out of his chair and exiting the chamber.]</em></p>
+<hr/>
+<div style="text-align: center;">
+<p><strong>&lt;End Log&gt;</strong></p>
+</div>
+</blockquote>
+</div>
+
+</li>
+</ul>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> daichifox@SCiPnet<br/>
+<strong>From:</strong> kellyapple@SCiPnet<br/>
+<strong>Subject:</strong> Re:I'm Sorry</p>
+</div>
+<hr/>
+<p>I told you not to get close to him, why did you have to push it?</p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> kellyapple@SCiPnet<br/>
+<strong>From:</strong> daichifox@SCiPnet<br/>
+<strong>Subject:</strong> Re:Re:I'm Sorry</p>
+</div>
+<hr/>
+<p>I just tried talking to him, and I don't know.</p>
+<p>He just seemed so brave and kind. I wanted him to know he wasn't alone. That he didn't have to go through life alone.</p>
+<p>I didn't want him to live in a world where no one cared.</p>
+<p>I wanted him to know I cared.</p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> daichifox@SCiPnet<br/>
+<strong>From:</strong> kellyapple@SCiPnet<br/>
+<strong>Subject:</strong> Re:Re:Re:I'm Sorry</p>
+</div>
+<hr/>
+<p>Did you ever consider that you were putting him in more pain than he deserved? All those times you forced him to talk to you, forcing the tape to play, you forced him to see his friends turn into horrible monsters and ghouls. He saw his friends die over and over.</p>
+<p>You made him miserable.</p>
+</div>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> kellyapple@SCiPnet<br/>
+<strong>From:</strong> daichifox@SCiPnet<br/>
+<strong>Subject:</strong>Re:Re:Re:Re:I'm Sorry</p>
+</div>
+<br/>
+I didn't mean to.
+<p>I tried distancing myself from him as if that would help, but it didn't. I didn't want him to be lonely anymore, I thought I could fix that.</p>
+<p>Fix him, at least.</p>
+<p>I just wanted to help him.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="material-box">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc9"><span><span style="text-decoration: underline;"><strong>Incident Log 5567-19/12/2019</strong></span></span></h5>
+</div>
+</div>
+<br/>
+On the 19th of December, 2019, during an unrelated containment breach, the entire site experienced a cascading power failure. After power was restored, it was discovered that substantial modifications had been made to SCP-5567, including the physical removal of a portion of the tape, which included the timestamp that the murders occurred within. It is unknown who, if anyone, is responsible for this vandalism. The emergent intelligence has been unaffected by the alteration.</div>
+<div class="material-box">
+<div class="title-style">
+<div style="text-align: center;">
+<h5 id="toc10"><span><span style="text-decoration: underline;"><strong>Post Incident 19/12/2019</strong></span></span></h5>
+</div>
+</div>
+<p>Researcher Fox put in for a transfer after the above incident, which was granted. Upon vacating his lodgings at the Site, the following correspondence was found.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup></p>
+<blockquote>
+<p>Arikawa-San</p>
+<p>While I am sure you won’t get to read this, possibly some member of the research staff will take pity on me and read it to you. I won’t take too much of your time.</p>
+<p>I sincerely apologize to you. While I understand I violated your boundaries, at the time, I felt as if I was doing so for the right reasons. Please be assured that I am no longer a part of the research staff here, and you won't have to interact with me anymore. I am transferring because I feel I have lost my objective, and want to give you peace of mind.</p>
+<p>I hope someday you will come to forgive me.</p>
+<p>All my love,</p>
+<p>Daichi Fox</p>
+</blockquote>
+<p>Upon locating this correspondence, Dr. Apple requested a full enquiry be made into Researcher Fox’s behavior. The letter was not read to SCP-5567-1.</p>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Umibe no Nazo; Seaside Mystery.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Monsters, usually ghosts or demons in Japanese folklore.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. As little is known of emergent awareness within the Foundation, study of SCP-5567-1 is considered to be higher priority than of SCP-5567.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. As SCP-5567-1 only understands Japanese, responses primarily consisted of confusion.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. 1985</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Folklore from the Land of the Rising Sun.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. This will physically rewind the VHS</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. Translated from Japanese.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-5567">SCP-5567</a>" by Mew-ltiverse, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-5567">https://scpwiki.com/scp-5567</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<blockquote>
+<p><strong>Filename:</strong> pic<br/>
+<strong>Name:</strong> Umibe no Nazo<br/>
+<strong>Author:</strong> Mew-ltiverse<br/>
+<strong>License:</strong> cc-by-sa 3.0<br/>
+<strong>Source Link:</strong> <a href="http://scp-wiki.wdfiles.com/local--files/scp-5567/Pic">http://scp-wiki.wdfiles.com/local--files/scp-5567/Pic</a><br/>
+<strong>Derivative of:</strong> <a href="https://commons.m.wikimedia.org/wiki/File:%E4%B8%89%E6%B5%A6%E6%B5%B7%E5%B2%B8%E3%81%AE%E6%97%A5%E3%81%AE%E5%87%BA,_Sunrise_over_the_Uraga_waterway_-_panoramio.jpg">https://commons.m.wikimedia.org/wiki/File:三浦海岸の日の出,_Sunrise_over_the_Uraga_waterway_-_panoramio.jpg</a></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        

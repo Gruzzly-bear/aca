@@ -1,0 +1,745 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-3504</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-3504</h1>
+            <html><body><div id="page-content">
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<p><strong>SCP-3504</strong>: "<em>And how will we know you are one of us?</em>"</p>
+<p><strong>Authors:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/othellothecat" onclick="WIKIDOT.page.listeners.userInfo(3213383); return false;"><img alt="OthellotheCat" class="small" src="https://www.wikidot.com/avatar.php?userid=3213383&amp;amp;size=small&amp;amp;timestamp=1740332961" style="background-image:url(https://www.wikidot.com/userkarma.php?u=3213383)"/></a><a href="http://www.wikidot.com/user:info/othellothecat" onclick="WIKIDOT.page.listeners.userInfo(3213383); return false;">OthellotheCat</a></span> and <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/rimple" onclick="WIKIDOT.page.listeners.userInfo(2320004); return false;"><img alt="Rimple" class="small" src="https://www.wikidot.com/avatar.php?userid=2320004&amp;amp;size=small&amp;amp;timestamp=1740332961" style="background-image:url(https://www.wikidot.com/userkarma.php?u=2320004)"/></a><a href="http://www.wikidot.com/user:info/rimple" onclick="WIKIDOT.page.listeners.userInfo(2320004); return false;">Rimple</a></span></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ More by Othello</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Hide list</a></div>
+<div class="collapsible-block-content"><div class="list-pages-box">
+<table class="wiki-content-table">
+<tr>
+<th colspan="2">SCPs</th>
+</tr>
+<tr>
+<td><a href="/scp-3774">SCP-3774</a></td>
+<td>Rating: 522</td>
+</tr>
+<tr>
+<td><a href="/scp-3287">SCP-3287</a></td>
+<td>Rating: 387</td>
+</tr>
+<tr>
+<td><a href="/scp-pingas-j">SCP-8==D-J</a></td>
+<td>Rating: 302</td>
+</tr>
+<tr>
+<td><a href="/scp-4734-ex">SCP-4734-EX</a></td>
+<td>Rating: 300</td>
+</tr>
+<tr>
+<td><a href="/scp-4080">SCP-4080</a></td>
+<td>Rating: 252</td>
+</tr>
+<tr>
+<td><a href="/scp-3323">SCP-3323</a></td>
+<td>Rating: 197</td>
+</tr>
+<tr>
+<td><a href="/scp-2541">SCP-2541</a></td>
+<td>Rating: 196</td>
+</tr>
+<tr>
+<td><a href="/scp-4269">SCP-4269</a></td>
+<td>Rating: 181</td>
+</tr>
+<tr>
+<td><a href="/scp-4599">SCP-4599</a></td>
+<td>Rating: 156</td>
+</tr>
+<tr>
+<td><a href="/scp-3995">SCP-3995</a></td>
+<td>Rating: 142</td>
+</tr>
+<tr>
+<td><a href="/scp-3430">SCP-3430</a></td>
+<td>Rating: 140</td>
+</tr>
+<tr>
+<td><a href="/scp-3177">SCP-3177</a></td>
+<td>Rating: 127</td>
+</tr>
+<tr>
+<td><a href="/scp-3811">SCP-3811</a></td>
+<td>Rating: 124</td>
+</tr>
+<tr>
+<td><a href="/scp-4725">SCP-4725</a></td>
+<td>Rating: 123</td>
+</tr>
+<tr>
+<td><a href="/scp-4360">SCP-4360</a></td>
+<td>Rating: 119</td>
+</tr>
+<tr>
+<td><a href="/scp-5784">SCP-5784</a></td>
+<td>Rating: 112</td>
+</tr>
+<tr>
+<td><a href="/scp-3677">SCP-3677</a></td>
+<td>Rating: 92</td>
+</tr>
+<tr>
+<td><a href="/scp-4907">SCP-4907</a></td>
+<td>Rating: 89</td>
+</tr>
+<tr>
+<td><a href="/scp-4111">SCP-4111</a></td>
+<td>Rating: 89</td>
+</tr>
+<tr>
+<td><a href="/scp-7772">SCP-7772</a></td>
+<td>Rating: 88</td>
+</tr>
+</table>
+<div class="pager"><span class="pager-no">page 1 of 2</span><span class="current">1</span><span class="target"><a href="/scp-3504/p/2">2</a></span><span class="target"><a href="/scp-3504/p/2">next »</a></span></div>
+</div><div class="list-pages-box">
+<table class="wiki-content-table">
+<tr>
+<th colspan="2">Tales</th>
+</tr>
+<tr>
+<td><a href="/populated-control-led">Population Control(led)</a></td>
+<td>Rating: 325</td>
+</tr>
+<tr>
+<td><a href="/a-romantic-comedy-starring-a-dead-mosquito-guest-starring-th">Let Her Heart DEET Once More</a></td>
+<td>Rating: 123</td>
+</tr>
+<tr>
+<td><a href="/una-comedia-romantica-protagonizada-por-un-mosquito">La Marcha GrenaDEETa</a></td>
+<td>Rating: 88</td>
+</tr>
+<tr>
+<td><a href="/eat-your-greenes">Eat Your Greenes</a></td>
+<td>Rating: 83</td>
+</tr>
+<tr>
+<td><a href="/an-action-movie-with-romantic-sub-plots-starring-a-mosquito">I am Become DEET, Destroyer of Worlds</a></td>
+<td>Rating: 76</td>
+</tr>
+<tr>
+<td><a href="/daddy-s-hands">Daddy's hands weren't always gentle but I've come to understand, there was always love in Daddy's hands</a></td>
+<td>Rating: 59</td>
+</tr>
+<tr>
+<td><a href="/spock-the-rock-doc-ock-and-hulk-hogan">The Ultimate Showdown of Ultimate DEETstiny</a></td>
+<td>Rating: 45</td>
+</tr>
+<tr>
+<td><a href="/a-bit-more-of-a-plan">A Bit More of a Plan</a></td>
+<td>Rating: 42</td>
+</tr>
+<tr>
+<td><a href="/half-of-a-plan">Half of a Plan</a></td>
+<td>Rating: 40</td>
+</tr>
+<tr>
+<td><a href="/the-five-year-anniversary">The Five Year Anniversary of the Most Important Day of Achebe Okoro's Life</a></td>
+<td>Rating: 39</td>
+</tr>
+<tr>
+<td><a href="/an-actual-plan">An Actual Plan</a></td>
+<td>Rating: 37</td>
+</tr>
+<tr>
+<td><a href="/moving-on">Moving On</a></td>
+<td>Rating: 23</td>
+</tr>
+<tr>
+<td><a href="/behind-the-scenes-of-reeling-in-the-crocosquid">Behind the Scenes of "Reeling in the Crocosquid"</a></td>
+<td>Rating: 14</td>
+</tr>
+</table>
+</div><div class="list-pages-box">
+<table class="wiki-content-table">
+<tr>
+<th colspan="2">GoI Formats</th>
+</tr>
+<tr>
+<td><a href="/new-buteo-series-mechanical-exoskeleton">Anderson Robotics' Installation Guide: Your New Buteo Series Mechanical Exoskeleton!</a></td>
+<td>Rating: 275</td>
+</tr>
+<tr>
+<td><a href="/weissman-model-assistance-clones">'Weissman Model Assistance Clones' (ET796/IH249/W3336)</a></td>
+<td>Rating: 102</td>
+</tr>
+<tr>
+<td><a href="/arson-activism-and-mustaches">Nobody's Observations on Arson, Activism, and Mustaches</a></td>
+<td>Rating: 66</td>
+</tr>
+</table>
+</div>
+<table class="wiki-content-table">
+<tr>
+<th colspan="2">With other authors</th>
+</tr>
+<tr>
+<td><strong>Page</strong></td>
+<td><strong>Author</strong></td>
+</tr>
+<tr>
+<td><a href="/scp-3504">SCP-3504</a></td>
+<td><span class="printuser"><a href="http://www.wikidot.com/user:info/rimple" onclick="WIKIDOT.page.listeners.userInfo(2320004); return false;">Rimple</a></span></td>
+</tr>
+<tr>
+<td><a href="http://www.scp-wiki.net/the-foundation-wants-a-robot-army">Tales Of The Ethics Committee: 5 Reasons The Foundation Wants A Robot Army</a></td>
+<td><span class="printuser"><a href="http://www.wikidot.com/user:info/captain-kirby" onclick="WIKIDOT.page.listeners.userInfo(3440103); return false;">Captain Kirby</a></span>, <span class="printuser"><a href="http://www.wikidot.com/user:info/veiedhimaedhr" onclick="WIKIDOT.page.listeners.userInfo(3737554); return false;">Veiedhimaedhr</a></span>, <span class="printuser"><a href="http://www.wikidot.com/user:info/croquembouche" onclick="WIKIDOT.page.listeners.userInfo(2893766); return false;">Croquembouche</a></span></td>
+</tr>
+<tr>
+<td><a href="/scp-4405">SCP-4405</a></td>
+<td><span class="printuser"><a href="http://www.wikidot.com/user:info/dolphinslugchugger" onclick="WIKIDOT.page.listeners.userInfo(1969477); return false;">DolphinSlugchugger</a></span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ More by Rimple</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide list</a></div>
+<div class="collapsible-block-content"><div class="list-pages-box">
+<table class="wiki-content-table">
+<tr>
+<th colspan="2">SCPs</th>
+</tr>
+<tr>
+<td><a href="/scp-2338">SCP-2338</a></td>
+<td>Rating: 394</td>
+</tr>
+<tr>
+<td><a href="/scp-3880">SCP-3880</a></td>
+<td>Rating: 354</td>
+</tr>
+<tr>
+<td><a href="/scp-2779">SCP-2779</a></td>
+<td>Rating: 342</td>
+</tr>
+<tr>
+<td><a href="/scp-948">SCP-948</a></td>
+<td>Rating: 301</td>
+</tr>
+<tr>
+<td><a href="/scp-2559">SCP-2559</a></td>
+<td>Rating: 272</td>
+</tr>
+<tr>
+<td><a href="/scp-3772">SCP-3772</a></td>
+<td>Rating: 203</td>
+</tr>
+<tr>
+<td><a href="/scp-6774">SCP-6774</a></td>
+<td>Rating: 110</td>
+</tr>
+<tr>
+<td><a href="/scp-5663">SCP-5663</a></td>
+<td>Rating: 102</td>
+</tr>
+<tr>
+<td><a href="/scp-3559">SCP-3559</a></td>
+<td>Rating: 100</td>
+</tr>
+<tr>
+<td><a href="/scp-3224">SCP-3224</a></td>
+<td>Rating: 95</td>
+</tr>
+</table>
+</div><div class="list-pages-box">
+<table class="wiki-content-table">
+<tr>
+<th colspan="2">Tales</th>
+</tr>
+<tr>
+<td><a href="/you">And You Are?</a></td>
+<td>Rating: 132</td>
+</tr>
+<tr>
+<td><a href="/that-buzzing-behind-your-eye">Headache</a></td>
+<td>Rating: 106</td>
+</tr>
+<tr>
+<td><a href="/i-am-going-to-make-it-through-this-year-if-it-kills-me">This Year</a></td>
+<td>Rating: 41</td>
+</tr>
+</table>
+</div><div class="list-pages-box">
+<table class="wiki-content-table">
+<tr>
+<th colspan="2">Uhhh</th>
+</tr>
+<tr>
+<td><a href="/operation-overmeta">Operation ÓverMeta</a></td>
+<td>Rating: 298</td>
+</tr>
+<tr>
+<td><a href="/draft-swap-hub">Draft Swap Hub</a></td>
+<td>Rating: 46</td>
+</tr>
+</table>
+</div>
+<table class="wiki-content-table">
+<tr>
+<th colspan="2">With other authors</th>
+</tr>
+<tr>
+<td><strong>Page</strong></td>
+<td><strong>Author</strong></td>
+</tr>
+<tr>
+<td><a href="/scp-3500">SCP-3500</a></td>
+<td><span class="printuser"><a href="http://www.wikidot.com/user:info/drbleep" onclick="WIKIDOT.page.listeners.userInfo(2887044); return false;">DrBleep</a></span></td>
+</tr>
+<tr>
+<td><a href="/scp-3504">SCP-3504</a></td>
+<td><span class="printuser"><a href="http://www.wikidot.com/user:info/othellothecat" onclick="WIKIDOT.page.listeners.userInfo(3213383); return false;">OthellotheCat</a></span></td>
+</tr>
+<tr>
+<td><a href="/scp-3373">SCP-3373</a></td>
+<td><span class="printuser"><a href="http://www.wikidot.com/user:info/lordstonefish" onclick="WIKIDOT.page.listeners.userInfo(2527320); return false;">LordStonefish</a></span></td>
+</tr>
+</table>
+<p><span style="font-size:0%;"><br/>
+<strong>Hey, the stuff below is just for testing some stuff, please ignore for now</strong></span></p>
+<span style="font-size:0%;"><div class="backlinks-module-box">
+<ul>
+<li>
+<a href="/news-03-2018">News for March 2018</a>
+</li>
+<li>
+<a href="/operation-overmeta">Operation ÓverMeta</a>
+</li>
+<li>
+<a href="/scp-2338">SCP-2338</a>
+</li>
+<li>
+<a href="/scp-2559">SCP-2559</a>
+</li>
+<li>
+<a href="/scp-2779">SCP-2779</a>
+</li>
+<li>
+<a href="/scp-3224">SCP-3224</a>
+</li>
+<li>
+<a href="/scp-3503">SCP-3503</a>
+</li>
+<li>
+<a href="/scp-3504">SCP-3504</a>
+</li>
+<li>
+<a href="/scp-3505">SCP-3505</a>
+</li>
+<li>
+<a href="/scp-3559">SCP-3559</a>
+</li>
+<li>
+<a href="/scp-3772">SCP-3772</a>
+</li>
+<li>
+<a href="/scp-3880">SCP-3880</a>
+</li>
+<li>
+<a href="/scp-3995">SCP-3995</a>
+</li>
+<li>
+<a href="/scp-5663">SCP-5663</a>
+</li>
+<li>
+<a href="/scp-948">SCP-948</a>
+</li>
+<li>
+<a href="/scp-series-4">SCP Series 4</a>
+</li>
+<li>
+<a href="/i-am-going-to-make-it-through-this-year-if-it-kills-me">This Year</a>
+</li>
+</ul>
+</div></span></div>
+</div>
+</div>
+<hr/>
+<p>This article is a collaboration between Othello and Rimple, from an original idea by Othello.</p>
+<p>Thanks to <span class="printuser"><a href="http://www.wikidot.com/user:info/randomini" onclick="WIKIDOT.page.listeners.userInfo(1379080); return false;">Randomini</a></span>, <span class="printuser"><a href="http://www.wikidot.com/user:info/cadavercommander" onclick="WIKIDOT.page.listeners.userInfo(3187823); return false;">CadaverCommander</a></span> and <span class="printuser"><a href="http://www.wikidot.com/user:info/peppersghost" onclick="WIKIDOT.page.listeners.userInfo(1553042); return false;">PeppersGhost</a></span>.</p>
+<p>Images are from Wikidot Commons. Map generated with <a href="https://www.redblobgames.com/maps/mapgen2">Red Blob Games'</a> free use map generator, and edited by <span class="printuser"><a href="http://www.wikidot.com/user:info/peppersghost" onclick="WIKIDOT.page.listeners.userInfo(1553042); return false;">PeppersGhost</a></span></p>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+<div class="scp-image-block block-right" style="width:300px;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-3504/Resin"><img alt="Resin" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-3504/Resin/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>A tree on Namejs island being harvested for resin.</p>
+</div>
+</div>
+<p><strong>Item #</strong>: SCP-3504</p>
+<p><strong>Object Class</strong>: Safe</p>
+<p><strong>Special Containment Procedures</strong>: Any information or imagery in regards to Namejs Island is to be censored. Outpost Wallace has been established on Namejs Island for research and observation, with two additional lookout posts around the island's perimeter (see map in Exploration Log EX-3504-43). Assigned personnel wishing to construct their own living quarters may do so in the southeast village with permission from the outpost captain. Regular boat patrols of the island are to be maintained, with the cover story that the island is a missile testing facility.</p>
+<p>Resin produced by the trees found on Namejs Island is to be examined for anomalous properties. Resin judged likely to possess the qualities of SCP-3504 is to be stored for testing. When testing, personnel are not to consume more than 300 grams of SCP-3504 in a 24-hour period, due to risk of information overload. Testing personnel reporting dizziness or confusion after testing are to be brought to the medical bay.</p>
+<p><strong>Description</strong>: SCP-3504 is the resin produced by certain spruce trees native to Namejs Island, which can store and transfer basic concepts. Specifically, the resin produced contains the memories, experiences and emotions of the Patiesian<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> people who lived on the island in the 14th century. These memories can be passed on to humans via ingestion.</p>
+<p>The island is a 170 km<sup>2</sup> land mass located in the Baltic Sea, and has only recently been discovered<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> despite evidence of its existence for more than seven centuries. It supports a substantial variety of flora and fauna, and most areas of the island are relatively diverse, save for its coastline, which is populated almost entirely by Norwegian Spruce Trees and their resin, which have formed tens of thousands of tall resin shards around the border. While most shards are non-anomalous, a small percentage, identifiable by a slight luminescence, are instances of SCP-3504.</p>
+<div class="scp-image-block block-right" style="width:300px;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-3504/bread"><img alt="bread" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-3504/bread/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>A loaf of bread made using resources found on the island following test T-3504-508.</p>
+</div>
+</div>
+<p>Examples of information gathered from ingested resin include songs, dances, poems, and phrases, commonly paired with the cultural connotation and the typical emotional response associated with a given experience. Continual ingestion may also grant a subject the basics of a skillset to execute tasks received, such as the creation of certain foods or clothing items. Notably, all supplies to create these items can be found naturally occurring on the island itself, with no need for outside resources. Information is not limited to one particular piece of resin, and the same information may be ingested repeatedly.</p>
+<p>People who ingest the resin itself report a feeling of euphoria in addition to the gathered information, with some comparing the feeling to certain stimulating recreational drugs. Over-ingestion, particularly in single sittings, can lead to states of delirium, overstimulation and catatonia, leading to strict sanctions on ingestion testing.</p>
+<p><strong>Abbreviated Test Log, T-3503:</strong></p>
+<table class="wiki-content-table">
+<tr>
+<th>Information Gathered</th>
+<th>Researcher Comments</th>
+</tr>
+<tr>
+<td>The taste of a beverage typically drunk during celebratory ceremonies, and the ingredients to create it. When asked to demonstrate this knowledge, Researcher Kulkarni listed the ingredients for “Balzams”, an alcoholic beverage made of flowers and berries, known for its potency.</td>
+<td>“If I’m being honest, I feel a little drunk just thinking about it; this is a strong drink.” - Dr. Kulkarni<br/>
+<br/>
+"I've been fermenting this stuff all Summer - we'll be having a, uh, a testing night at my hut on the 3rd. You wanna come?" - Intern Ozols</td>
+</tr>
+<tr>
+<td>The instructions for constructing a suitable living space out of resin and other materials found naturally on the island.</td>
+<td>“For immersion purposes, Schrader and myself have requested to use these techniques to create temporary living quarters on the island.” - Dr. Kulkarni<br/>
+<br/>
+"It's more than a little bit wonderful - when I picked up the materials today, I <em>knew</em> how to do it, not just in theory, but as if I'd been doing it all my life." - Dr. Bērziņš</td>
+</tr>
+<tr>
+<td>A poem in regards to a demigod called “The Bear Slayer”. It is known for its strength and its diligence to protect its country. There are many similarities to the Latvian demigod of the same name.</td>
+<td>“There are plenty of mentions involving invaders trying to kill The Bear Slayer, so my guess is this poem was made to potentially rebel in a subtle way from some sort of invader.” - Dr. Schrader</td>
+</tr>
+<tr>
+<td>The words for “rye”, “wheat” and “bread”. Appears to be a derivative from modern-day Latvian. Along with the words, Researcher Kulkarni gained knowledge regarding many different uses for them.</td>
+<td>“Apparently, they really liked grains in this society. Their bread was darker than soot and they spread butter all over it, and despite all that, they seemed to enjoy it. Must have been a staple in their diet despite an abundance of other nutritional resources on the island.” - Dr. Kulkarni<br/>
+<br/>
+"Sunny and I spent the afternoon baking bread for the Song Festival - I worried I'd be bored out of my mind, but it ended up being really nice!" - Intern Bridge</td>
+</tr>
+<tr>
+<td>A folk dance involving a large group of people holding hands and moving clockwise and counterclockwise in a circle. Typically performed during weddings or holidays.</td>
+<td>“I tried to do this on my own, got a lot of laughs from the others. This needs <em>lots</em> of people, you know? It's mesmerising, hectic, wonderful.” - Dr. Schrader</td>
+</tr>
+<tr>
+<td>The technique for proper and efficient resin harvesting, and images of various symbols carved out of the harvested material. Symbols are apparently religious in nature.</td>
+<td>“I think we might have a basis as to how these people might have done this ritual. Seems like the stuff was already a huge part of their society in the first place.” - Dr. Kulkarni</td>
+</tr>
+<tr>
+<td>How to sew and dye traditional clothing from materials found on the island. Researcher Schrader was asked to display their newfound knowledge, and, over the course of 36 hours, successfully created a dress dyed with various patterns and a pair of slippers using materials only found on the island.</td>
+<td>“Yes, I’m wearing these now.” - Dr. Schrader</td>
+</tr>
+<tr>
+<td>The phrases “We are a family.”, “It’s time for dinner.”, “I wish to go hunting.”, “Help.” and “I don’t want this.” in the language previously discovered.</td>
+<td>“I don’t know why these specific phrases were recorded, but the word ‘Help’… It's unpleasant to speak. My stomach drops. Does that make any sense?” - Dr. Kulkarni</td>
+</tr>
+<tr>
+<td>A religious hymn involving fruitful harvests, protection of the family, and a prosperous future.</td>
+<td>“It seems to have a unique property about it. It evokes joy, desperation, determination… It's a lot to process.” - Dr. Kulkarni<br/>
+<br/>
+"Yeah, Ish had us sing this last week while we were planting crops, printed out lyrics and stuff. Dork. There's a lot more to it than I got from the words alone! I see why he was so insistent." - Dr. Zamelis</td>
+</tr>
+<tr>
+<td>A religious burial ceremony, and the process in preparing it.</td>
+<td>“No comment.” - Dr. Kulkarni</td>
+</tr>
+<tr>
+<td>A poem about Namejs Island, and its “great gifts within”. Describes the island as merciful and kind, even going so far as personifying it towards the end.</td>
+<td>“This feels significant; this feels like a message that was supposed to be found. I’m going to work with Kulkarni to see if we can’t extrapolate anything from this.” - Dr. Schrader</td>
+</tr>
+</table>
+<p>On 25/9/2015, research heads Ishvi Schrader and Sunitha Kulkarni were not present at the 9am village meeting. When their huts were found empty, Outpost Captain Suresh Kulkarni was contacted at Outpost Wallace and a search party was assembled. At 4am, 26/9/15, Sunitha Kulkarni was found semi-conscious in the Southwestern river<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup>, clothes and hair drenched in sap. Found in her satchel was a letter, a camcorder and a braided amber ring. Of the two tapes found with the camcorder, one was found to be recoverable.</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Access Exploration Log EX-3504-43</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Access granted</a></div>
+<div class="collapsible-block-content"><img alt="map.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-3504/map.png"/>
+<blockquote>
+<p><strong>Exploration Log EX-3504-43</strong><br/>
+<strong>Date</strong>:25/9/15<br/>
+<strong>Foreword:</strong> <em>Dialogue put between double brackets<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup> were spoken in the language Immersion Researchers learned on the island.</em></p>
+<p><strong>[BEGIN LOG]</strong></p>
+<p><em>Dr. Ishvi Schrader stands in front of the mouth of the cave, fiddling with a mic attached to hand-sewn clothing.</em></p>
+<p><strong>Dr. Schrader</strong>: Uh, log start. We’re up? Ok, cool. So, um, Dr. Ishvi Schrader here, head researcher on -</p>
+<p><strong>Dr. Kulkarni (<em>off-camera</em>)</strong>: Co-head.</p>
+<p><strong>Dr. Schrader</strong>: Co-head, yes, on SCP-3504. Sorry, Sunny. We’ve been talking, over the last few weeks, about the things we’ve been getting from the resin.</p>
+<p><em>Dr. Schrader turns the camera to Dr. Sunitha Kulkarni as he speaks. She is wearing similar garb, and sits on a rock, her walking stick over her knees.</em></p>
+<p><strong>Dr. Kulkarni</strong>: Darker stuff. The impressions of a dying culture.</p>
+<p><em>Kulkarni smiles slightly as Schrader hops back into frame, squatting beside her.</em></p>
+<p><strong>Dr. Schrader</strong>: Not just dying but being killed, actively. Brutal invaders sweeping the land, the oppression of their language and their folklore-</p>
+<p><strong>Dr. Kulkarni</strong>: They killed the Bear Slayer.</p>
+<p><strong>Dr. Schrader</strong>: Right! Or, a representation of the Bear Slayer at least. With the impressions we get about the function of the resin, I’m thinking -</p>
+<p><em>Kulkarni rolls her eyes dramatically.</em></p>
+<p><strong>Dr. Kulkarni</strong>: Right, this.</p>
+<p><strong>Dr. Schrader</strong>: - I’m thinking it could be, like, an anomalous way to preserve tradition? We could be looking at shattered statues, temples, built to represent them not just aesthetically but narratively, memory constructs trapped in resin shapes-</p>
+<p><strong>Dr. Kulkarni</strong>: You’re going off track, Ishvi.</p>
+<p><strong>Dr. Schrader</strong>: Right. So, we’ve been seeing safety, warmth, protection, preservation, the impression of some sort of fortress or safe place, a secret place the invaders wouldn’t know.</p>
+<p><strong>Dr. Kulkarni</strong>: The island’s belly.</p>
+<p><strong>Dr. Schrader</strong>: Kuņsala, yeah. It’s - we think we might know where the mouth is.</p>
+<p><em>Schrader hops up from his position beside Kulkarni and disconnects the camera from its tripod. He steps back with it to reveal the mouth of a cave, hidden behind a curtain of vines and moss, where Kulkarni is sitting.</em></p>
+<p><strong>Dr. Schrader</strong>: There’s - this is all intuition, but we agree on this fully.</p>
+<p><em>Kulkarni nods quickly, serious.</em></p>
+<p><strong>Dr. Kulkarni</strong>: Fully. The hill, the markings, the way the sun flows into it in the mornings -</p>
+<p><strong>Dr. Schrader</strong>: The markings. The markings!</p>
+<p><em>Schrader runs over to the cave mouth and carefully moves aside some brush obscuring the entrance to show faded markings in the stone.</em></p>
+<p><strong>Dr. Schrader</strong>: They’re faint, but there’s definite pictures here that relate back to not just the Bear Slayer, but the island itself, ((God’s Root)), song and dance, the ((word relating to cultural lifeblood/the core of a community)) of the people.</p>
+<p><strong>Dr. Kulkarni (<em>off camera</em>)</strong>: Plus the teeth.</p>
+<p><strong>Dr. Schrader</strong>: Right, yeah, and the impression of teeth carved around the top here. A literal mouth, relating to how they viewed the island as a deity-</p>
+<p><strong>Dr. Kulkarni (<em>off camera</em>)</strong>: Well, we don’t know that it’s not.</p>
+<p><em>Schrader turns back to face Kulkarni. Her face is calm, but challenging.</em></p>
+<p><strong>Dr. Schrader</strong>: Well, ok, let’s not have that discussion right now. The point is that while much of their oral tradition could be interpreted simply as myth, looking into them as factual, useful records leads to-</p>
+<p><strong>Dr. Kulkarni</strong>: This cave.</p>
+<p><strong>Dr. Schrader</strong>: It’s very exciting.</p>
+<p><strong>Dr. Kulkarni</strong>: Should we head in?</p>
+<p><strong>Dr. Schrader</strong>: Definitely!</p>
+<p><em>Schrader helps Kulkarni up, and they proceed into the cave, Schrader holding the camera and Kulkarni holding a powerful flashlight.</em></p>
+<p><strong>Dr. Schrader</strong>: For the record, we should probably talk about the Bear Killer, right?</p>
+<p><strong>Dr. Kulkarni</strong>: ((The Knights Who Angered the Sun and the Ground)) is most relevant, I feel.</p>
+<p><strong>Dr. Schrader</strong>: Yes, yes. So, the tale starts, as many do, with Lāčplēsis sharpening his sword on the beach.</p>
+<p><strong>Dr. Kulkarni</strong>: Classic Lāčplēsis.</p>
+<p><em>Schrader laughs lightly.</em></p>
+<p><strong>Dr. Schrader</strong>: This is, as far as we can ascertain, well after the events of Pumpurs’ epic, after they found his body washed up on the shores and the island chose to bring him back. He’s the island guardian at this point, watching over them silently, blah blah. And as he stares out at the waves, the sun changes, turning red. The whole sky changes colour! As he looks at the setting sun, he sees dark shapes on the horizon, riding on its edge.</p>
+<p><strong>Dr. Kulkarni</strong>: The Bear Knights!</p>
+<p><strong>Dr. Schrader</strong>: Exactly! They’re back to get revenge on the island folks for chasing them out during the events of ((The Song of Small Sorrows)). Hopped right on their bear mounts and rode them across the ocean, full of rage and fire. No boats for these men!</p>
+<p><strong>Dr. Kulkarni</strong>: The impression you get of the knights in the tales, they’re these tall, dark shadows. Armour as black as night, faces unseen beneath their cowls. Barely even men.</p>
+<p><strong>Dr. Schrader</strong>: And their alliance with the bears only compounds that, obviously, since these aren’t just any bears.</p>
+<p><strong>Dr. Kulkarni</strong>: Huge things, with bright fur, enormous steel claws, eyes that ((burn into your heart))…</p>
+<p><strong>Dr. Schrader</strong>: Right. Which only makes Lāčplēsis’ achievements in the poem even more impressive, right? What great warrior could rip one of these monsters in half??</p>
+<p><strong>Dr. Kulkarni</strong>: Only the Bear Slayer, of course.</p>
+<p><em>Schrader laughs.</em></p>
+<p><strong>Dr. Schrader</strong>: Right there in the name, I guess. But the proof is in the action, and rise to that action he did! The bears were fast, faster than any thing should be, fueled by the knight’s fiery anger, and they would be there in minutes. Lāčplēsis ran as fast as he could to the house of his good friend the ((weaver)), and he told her to tell all the village that they were once again in danger. The ((weaver)) knocked on every door of every house and told them ((“The Bear Knights are come! Lāčplēsis once again risks his life for our safety!”)). As she did this, he ran back to the beach. The first of the bear knights has already landed, and they’ve taken his sword and shield and broken them all in five.</p>
+<p><strong>Dr. Kulkarni</strong>: Five pieces, we think, being generally indicative of great and irreversible destruction.</p>
+<p><strong>Dr. Schrader</strong>: Tying back to the broken pot and how Staburadze lost her child in other island myths. It definitely held significance. You can feel the power of that statement when you eat the resin for these tales, this is something terrible and foreboding. But Lāčplēsis isn’t one to give up for any reason, so he ((runs to the first bear, takes its throat in his hands, and rips straight down)).</p>
+<p><strong>Dr. Kulkarni</strong>: Does that kill it?</p>
+<p><strong>Dr. Schrader</strong>: No! Lāčplēsis thinks it will, as it always has, but when he turns his back to face its rider, ((the bear gashes its great iron claws across his back, cracking his golden skin!)). Lāčplēsis falls, and the first knight tries to strike him with his greatsword, but Lāčplēsis strikes out and buckles his armour with a single punch. He rips the man’s head off, then turns and grabs the bear, tackling it to the ground and swinging the knight’s greatsword at his head!</p>
+<p><em>Schrader is at this point very animated, acting out the scene with his free hand in front of the camera as they continue down the cave. He alternates between walking forward and walking sideways to face Kulkarni.</em></p>
+<p><strong>Dr. Schrader</strong>: The great bear still does not go down, and now the other bears are also landing on the beach.</p>
+<p><em>Kulkarni smiles affectionately.</em></p>
+<p><strong>Dr. Kulkarni</strong>: You really get excited at this point, don’t you?</p>
+<p><strong>Dr. Schrader</strong>: Come on, it’s an exciting part! Lāčplēsis, back against the wall, no weapons, and who comes to save him? It’s the ((weaver))! She rushes to his aid, picking up the hilt of his shattered sword, and charges at the army! Despite her stature, she’s not going to be one to let Lāčplēsis and her people fall to the invaders!</p>
+<p><strong>Dr. Kulkarni</strong>: But even in the end, the ((weaver)) falls.</p>
+<p><strong>Dr. Schrader</strong>: But Lāčplēsis has one last trick up his sleeve, something he can do for the ((weaver)) even in death. He summons the power of the Old Gods themselves, and fuses the ((weaver))’s spirit with the island! The island’s sands rise and swell, the trees and grass morphing, and the island becomes this monolithic golem! It swallows up everything; the ((weaver)), Lāčplēsis, the invaders, even the villagers. And once everyone is taken, the island returns to its resting state. Now, with the ((weaver))’s soul in the island and Lāčplēsis and her people safe, she can lay to rest, her oath to Lāčplēsis honoured and the villagers safe in the chresins of her heart.</p>
+<p><strong>Dr. Kulkarni</strong>: So, they win? The Bear Knights can’t get them?</p>
+<p><strong>Dr. Schrader</strong>: That’s where the story gets somewhat unclear. There’s something missing, maybe in resin we haven’t consumed yet. It <em>could</em> be that-</p>
+<p><em>Schrader stops talking as they round a corner to enter a small chresin. It is dimly lit by glowing pools of resin in small wells embedded in the walls, and in the centre stands a lifesize resin figure on a pedestal.</em></p>
+<p><strong>Dr. Kulkarni</strong>: Oh, my.</p>
+<p><strong>Dr. Schrader</strong>: Is… is that him?</p>
+<p><strong>Dr. Kulkarni</strong>: Check for the missing ears.</p>
+<p><em>Schrader is heard fumbling around in a bag before taking out a small flashlight and shining it on the figure’s head, revealing a lack of ears.</em></p>
+<p><strong>Dr. Schrader</strong>: I can’t see any!</p>
+<p><strong>Dr. Kulkarni</strong>: Whoever made this sculpture must have put in months of effort into making it as detailed as it is…</p>
+<p><em>Kulkarni is seen approaching the statue, placing a hand on one of its arms, before pulling back.</em></p>
+<p><strong>Dr. Schrader</strong>: Something wrong, Sunny?</p>
+<p><strong>Dr. Kulkarni</strong>: It’s still wet, the resin is fresh.</p>
+<p><strong>Dr. Schrader</strong>: It- what?</p>
+<p><em>Schrader turns downwards to see a small pool of resin being formed at the statue’s feet.</em></p>
+<p><strong>Dr. Kulkarni</strong>: That means that this was made recently! Or at the very least repaired recently. In either case, that means we’re close!</p>
+<p><em>Schrader bends down and cups some of the liquid resin in his hand and brings it to his mouth.</em></p>
+<p><strong>Dr. Kulkarni</strong>: Ishvi, I don’t feel like we should be consuming outside of the confines of testing hours. We’re already stretching the rules enough as-is. Ishvi?</p>
+<p><em>Schrader has gone quiet, lost in thought. Though the footage is unclear, he may be rapidly mouthing words under his breath, a common behaviour when processing input from other sources of resin on the island. Though visibly concerned, Kulkarni waits for him to come back to his senses.</em></p>
+<p><strong>Dr. Schrader</strong>: Sunny, this is… you’re not going to fucking believe this.</p>
+<p><strong>Dr. Kulkarni</strong>: Tell me.</p>
+<p><strong>Dr. Schrader</strong>: I can’t, I can’t, just lemme…</p>
+<p><em>Schrader dashes back toward the statue, stumbling on a rock in haste. He clasps his hands together and bows his head briefly. Schrader stands between the camera and the statue, blocking the view.</em></p>
+<p><strong>Dr. Schrader</strong>: ((Hello, Lāčplēsis.))</p>
+<p><em>There is a pause.</em></p>
+<p><strong>Dr. Schrader</strong>: ((Oh, I’m so sorry.))</p>
+<p><em>Schrader turns and switches off the camera.</em></p>
+<p><strong>[END LOG]</strong></p>
+</blockquote>
+</div>
+</div>
+</div>
+<p>Following her discovery, Dr. Sunitha Kulkarni was brought to Outpost Wallace's medical bay to recover. Once she was deemed fit, she was brought for interview with Suresh Kulkarni<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup>.</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Access Interview Log 3504-1</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Password Accepted</a></div>
+<div class="collapsible-block-content">
+<blockquote>
+<p><strong>Date:</strong> 28/9/15<br/>
+<strong>Interviewed:</strong> Dr. Sunitha Kulkarni<br/>
+<strong>Interviewer:</strong> Outpost Captain Suresh Kulkarni<br/>
+<strong>Foreword:</strong> For the sake of clarity, participants are marked with their forenames in this version of the transcript, edited for overview documentation.</p>
+<p><strong>[BEGIN LOG]</strong></p>
+<p><em>Sunitha looks up as Suresh enters the room and stiffens momentarily as she sees him. After a second, she lets out a sigh and stands to embrace Suresh.</em></p>
+<p><strong>Sunitha:</strong> Suresh! You’re… aren’t you supposed to-</p>
+<p><strong>Suresh:</strong> I pulled some strings. Convinced Adileh that this was, uh, too personal for anyone else to lead the interview. Plus, we don’t exactly have to go through formalities if we know each other personally. Makes paperwork easier.</p>
+<p><strong>Sunitha:</strong> Not for legal.</p>
+<p><em>Suresh pulls out of the hug, holding Sunitha by the shoulders.</em></p>
+<p><strong>Suresh:</strong> Fuck that, I needed to see you. You’re such an idiot, running off into the caves by yourself.</p>
+<p><em>Sunitha lightly punches Suresh in the arm.</em></p>
+<p><strong>Sunitha:</strong> I had Ish, you dork.</p>
+<p><strong>Suresh:</strong> That - yeah, ok, you did. We don’t actually, uh… Ishvi isn’t responding, and the footage, the - the cameras are fucked, and basically we have no idea what happened.</p>
+<p><strong>Sunitha:</strong> Right. Right, of course.</p>
+<p><strong>Suresh:</strong> So, hopefully, you can explain everything and we can fill in the blanks. We have up to the statue you found, then it cuts. Do you remember…?</p>
+<p><strong>Sunitha:</strong> Yeah. No, uh, recollection issues. The statue wasn’t a statue. We - Ishvi realised it first, I didn’t realise it until he moved.</p>
+<p><strong>Suresh:</strong> He? The statue was alive?</p>
+<p><em>Sunitha sits as Suresh speaks, rubbing her throat.</em></p>
+<p><strong>Sunitha:</strong> Sentient, at the very least. Moving, talking. Ishvi thought it was Lāčplēsis himself, which would be… well, a lot to process.</p>
+<p><strong>Suresh:</strong> Do you believe that it was Lāčplēsis himself?</p>
+<p><em>Sunitha considers for a time, slowly rubbing around the base of her neck in small circles.</em></p>
+<p><strong>Sunitha:</strong> I think… I think the line is blurry. I think what matters here isn’t exact truths.</p>
+<p><strong>Suresh:</strong> Huh.</p>
+<p><em>Suresh pauses, waiting for more.</em></p>
+<p><strong>Suresh:</strong> Are you good to continue, or..?</p>
+<p><strong>Sunitha:</strong> Sorry, sorry, yeah. We, once we greeted Lāčplēsis, he talked. He gave us a formal greeting back, or as formal as Patiesian gets, and something… opened up. Not like, physically, but… it removed a mental block, I guess, and we finally <em>saw</em> the cave, you know? Everything we’d been missing, the meanings of the carvings on the walls, the hidden passages.</p>
+<p><strong>Suresh:</strong> Like a resin hit? Sudden flow of knowledge?</p>
+<p><strong>Sunitha:</strong> Exactly, but <em>bigger</em>. And important. This wasn’t knowledge we stole, but knowledge we were given, you know? We followed the path we hadn’t seen, so cleverly hidden, and… we found them, down in the deepest cavern.</p>
+<p><strong>Suresh:</strong> You found people in the cave?</p>
+<p><strong>Sunitha:</strong> Not just people, Suresh, <em>the</em> people. The whole ancient civilisation, in the amber.</p>
+<p><strong>Suresh:</strong> Fuck, they were frozen in resin? Alive? That’s… centuries of torture. How could they do that to themselves?</p>
+<p><strong>Sunitha:</strong> No, no, they weren’t frozen, that’s what’s so wonderful. They were moving! Working, running, playing. The amber cracked and flowed with them. It’s so hard to explain, but it was beautiful.</p>
+<p><strong>Suresh:</strong> This is - you realize that communicating with an ancient civilization without authorisation is a serious offense, right?</p>
+<p><strong>Sunitha:</strong> Like you said earlier, fuck that. It’s not like we even meant to. I can deal with whatever slap on the wrist they give me.</p>
+<p><em>Suresh glances nervously at the camera.</em></p>
+<p><strong>Suresh:</strong> I… ok.</p>
+<p><em>Suresh slowly breathes in, then out.</em></p>
+<p><strong>Suresh:</strong> This is crazy. What did they say? Did they say anything?</p>
+<p><strong>Sunitha:</strong> They were scared of us, initially. I think they particularly thought Ish was an attacker.</p>
+<p><em>Sunitha mimics a bear growling.</em></p>
+<p><strong>Sunitha:</strong> White man equals bear knight, you know? We know <em>miers</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup>, obviously, so we were yelling that, keeping our palms open and toward the ground. That helped, but it wasn’t til Ish started singing that they calmed down.</p>
+<p><strong>Suresh:</strong> Why didn’t you just come back immediately once you found them?</p>
+<p><em>Sunitha snorts derisively.</em></p>
+<p><strong>Sunitha:</strong> As if you would, in our shoes. Discovery of the damn year. Ishvi and I both wanted to know more. You know what we can be like after resin hits - heightened, excited, wanting to dive in farther. This was unbelievable, more than we’d ever considered, ever fantasised.</p>
+<p><em>Suresh frowns and reaches across the table to hold Sunitha’s hand.</em></p>
+<p><strong>Suresh:</strong> Your curiosity could have gotten you killed, Sunny.</p>
+<p><em>Sunitha pulls her hand away and rests it on her collarbone.</em></p>
+<p><strong>Sunitha:</strong> Well, it didn’t, so there’s no need to worry about it.</p>
+<p><em>Suresh bites his lip, considering something.</em></p>
+<p><strong>Suresh:</strong> Sunny, I have to - did they kill Ishvi?</p>
+<p><strong>Sunitha:</strong> What?! No! No…</p>
+<p><em>Sunitha looks away from Suresh.</em></p>
+<p><strong>Sunitha:</strong> Ishvi stayed.</p>
+<p><strong>Suresh:</strong> Stayed?</p>
+<p><strong>Sunitha:</strong> There was just… so much there, so much of the people in the cave, in the air. Dancing, singing, food, all these things we’ve only ever <em>remembered</em>, we were actually able to <em>experience</em> now. This wasn’t a people just surviving, they were thriving in their own way, content with the lives they led and so, so happy to be with people who loved and respected their culture. You could feel it everywhere, their excitement. At the end of the night, we sat around a great fire in the centre of the cavern and just sang. Sang and sang and sang. Ish and I knew some of the words, but we didn’t know all of them, and the people would scoop up resin out of, I don’t know, out of nowhere, and when we drank it we’d know it perfectly. We drank so much - I have no idea how long passed down there, but by the time things were winding down Ishvi’s beard was caked in amber, cracked open with his big wide smile. I’ve never seen him quite like that.</p>
+<p><strong>Suresh:</strong> And Ishvi just… he just gave up everything to stay?</p>
+<p><strong>Sunitha:</strong> I mean, you know Ish. He never really felt like he belonged here, did he?</p>
+<p><em>Suresh frowns to himself. He speaks quietly.</em></p>
+<p><strong>Suresh:</strong> We tried.</p>
+<p><strong>Sunitha:</strong> We did, but he was always more in tune with the people of the island. We knew that from day one. At the end of the singing, there were just a few of us left. Ish, me, a couple of people I got the sense were important folk. They didn’t say it directly, but… the whole thing, that night, we were being invited, gently. I don’t think Ish ever even considered the alternative. He, uh…</p>
+<p><em>Sunitha shifts in her seat and reaches into her pocket to retrieve a piece of paper. She hands the paper to Suresh.</em></p>
+<p><strong>Sunitha:</strong> He wrote this, when I was leaving. Told me to give it to his Mom. I haven’t read it, but I’m pretty sure that’s goodbye.</p>
+<p><em>Suresh turns the letter over in his hands, then slides it into his binder.</em></p>
+<p><strong>Suresh:</strong> We’ll have to make a copy of this for the records. You know the deal.</p>
+<p><strong>Sunitha:</strong> I know. I’m sure he knew too.</p>
+<p><strong>Suresh:</strong> Alright.</p>
+<p><em>There is a pause. Suresh tilts his head.</em></p>
+<p><strong>Suresh:</strong> Why, uh, why didn’t you stay?</p>
+<p><em>There is a moment of silence before Sunitha responds.</em></p>
+<p><strong>Sunitha:</strong> Because of you. You’re… you’re too important to me. Can’t let my brother live the rest of his life without a sister.</p>
+<p><strong>Suresh:</strong> I… um… <em>Suresh sighs.</em> Thank you, Sunny. I think that’s all we need to know for right now.</p>
+<p><strong>Sunitha:</strong> Alright. Good.</p>
+<p><em>Sunitha looks away from Suresh.</em></p>
+<p><strong>Sunitha:</strong> Will I be able to visit Ishvi?</p>
+<p><strong>Suresh:</strong> I’m sure something can be arranged.</p>
+<p><strong>Sunitha:</strong> Ok… Ok, yeah.</p>
+<p><em>Sunitha rubs her eye with the heel of her hand.</em></p>
+<p><strong>Suresh:</strong> You're exhausted.</p>
+<p><strong>Sunitha:</strong> Mmm.</p>
+<p><strong>Suresh:</strong> I cleaned out my room before coming here. You can take my bed, rather than going to medical.</p>
+<p><strong>Sunitha:</strong> That sounds <em>so</em> good.</p>
+<p><em>Suresh stands and moves around the table to help Sunitha out of her chair. They move out of the room together, Sunitha leaning against Suresh for support.</em></p>
+<p><strong>[END LOG]</strong></p>
+</blockquote>
+</div>
+</div>
+</div>
+<p><strong>Addendum</strong>:<br/>
+The second tape found in Dr. Kulkarni's satchel, previously deemed unrecoverable, contained some viable footage. Review of the viable footage verified the majority of Dr. Kulkarni's report in the above interview - however, a major discrepancy was found at the end, showing Dr. Kulkarni choosing to stay along with Dr. Schrader, but being tasked by Dr. Schrader with delivery of the letter to his mother. Dr. Kulkarni’s involvement with SCP-3504 has been discontinued permanently due to the withholding of information. Outpost Captain Suresh Kulkarni has declined to comment on the matter in any official capacity.</p>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. /pʌ.'ti.ə.zi.ən/</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. See <em>Investigation, possible anomaly, 9/12/09: Lettonie Island</em>, Huever et al.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Referred to by immersion researchers as the Diegava river.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. (())</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. This has been noted as a minor infraction on relevant paperwork, but otherwise no repercussions have been judged necessary.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Latvian for <em>peace</em>.</div>
+</div>
+
+</div></body></html>
+        </body>
+        </html>
+        

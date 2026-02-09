@@ -1,0 +1,262 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-9305</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-9305</h1>
+            <div class='image-header'><img alt="Frostbyters" class="small" src="https://www.wikidot.com/avatar.php?userid=10193641&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=10193641)"/>
+<img alt="MonsieurIguana" class="small" src="https://www.wikidot.com/avatar.php?userid=8966135&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8966135)"/>
+<img alt="Fermentating" class="small" src="https://www.wikidot.com/avatar.php?userid=9707162&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9707162)"/>
+<img alt="Anyar" class="small" src="https://www.wikidot.com/avatar.php?userid=5274479&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5274479)"/>
+<img alt="xexnoncores" class="small" src="https://www.wikidot.com/avatar.php?userid=9159226&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9159226)"/>
+<img alt="Sinking_Otter" class="small" src="https://www.wikidot.com/avatar.php?userid=9395285&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9395285)"/>
+<img alt="local lesbian commie" class="small" src="https://www.wikidot.com/avatar.php?userid=8926494&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8926494)"/>
+<img alt="WhiteSkyWhiteClouds" class="small" src="https://www.wikidot.com/avatar.php?userid=9509764&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9509764)"/>
+<img alt="LocalMemeHobo" class="small" src="https://www.wikidot.com/avatar.php?userid=9478783&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9478783)"/>
+<img alt="ThePlanner" class="small" src="https://www.wikidot.com/avatar.php?userid=9860627&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9860627)"/>
+<img alt="Tobyias" class="small" src="https://www.wikidot.com/avatar.php?userid=9908821&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9908821)"/>
+<img alt="BanishedDemoness" class="small" src="https://www.wikidot.com/avatar.php?userid=7990398&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=7990398)"/>
+<img alt="SierraBlade220" class="small" src="https://www.wikidot.com/avatar.php?userid=9904470&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=9904470)"/>
+<img alt="LeraviTheXatu" class="small" src="https://www.wikidot.com/avatar.php?userid=2525973&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=2525973)"/>
+<img alt="Heck_Tech" class="small" src="https://www.wikidot.com/avatar.php?userid=8911435&amp;amp;size=small&amp;amp;timestamp=1769362506" style="background-image:url(https://www.wikidot.com/userkarma.php?u=8911435)"/></div><div class='text-content'>Item#:</span> <span class="number">9305</span></div>
+
+<div class="top-right-box">
+<div class="level">Level#4</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">esoteric</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">uncontained</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">ekhi</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">critical</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<div class="scp-image-block block-center" style="width:100%;"><img alt="South-African-Minibus.png" class="image" src="https://i.postimg.cc/vZQKgmsT/South-African-Minibus.png"/>
+<div class="scp-image-caption">
+<p>A taxicab operated by SCP-9305.</p>
+</div>
+</div>
+<hr/>
+<p><strong>NOTICE:</strong> Due to recent events<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> and the circumstances of Dr. Romida's passing, interviews with SCP-9305 are to be denied and testing regarding SCP-9305's capabilities are to be considered a high priority.</p>
+<p><strong>Special Containment Procedures:</strong> Due to the unpredictable nature of SCP-9305 and the reliance on public transport by civilians in South-Africa, SCP-9305 can not be contained. Taxicabs and drivers should be monitored using CCTV across South-Africa as well as neighbouring countries in such case that SCP-9305 expands its reach. Suspected SCP-9305-1 instances are to be captured and quarantined for one month before being released and amnesticized. All drivers permanently assimilated into SCP-9305's consciousness are to be terminated.</p>
+<p><strong>Description:</strong> SCP-9305 is an unknown parasitic entity that affects South-African taxi drivers. Drivers (hereby referred to as SCP-9305-1), once affected by SCP-9305, will experience a growing state of euphoria, which culminates in the failure to adhere to most traffic laws. SCP-9305-1 instances lose the capability to form memories while affected by SCP-9305, resulting in drivers not remembering what occurred between the beginning and end of their shift.</p>
+<p>The moment the cab has been deemed inoperable or once their shift is over, SCP-9305-1 instances will return to their original state. Instances will lose all effects of SCP-9305 once they have not driven a taxi for a month. The effects of SCP-9305 will reoccur when they operate any taxi.</p>
+<p>SCP-9305-1 instances who continually experience the effects SCP-9305 invokes for a month are assimilated into a hivemind of which SCP-9305 is the host of. These drivers, once taken over by SCP-9305, have been noted to drive smoothly and efficiently. Once a subject has been assimilated into its hivemind, the subject cannot be returned to their original consciousness. Drivers under SCP-9305's control develop calcified amygdalae<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> across a one-week timespan after they are incorporated into the hivemind.</p>
+<p>It is theorized that once most of South-African traffic is collected into this hivemind that SCP-9305 would begin to spread to neighbouring countries.</p>
+<p><strong>Discovery:</strong> Throughout the year of 2022, undercover agents working in the medical industry began noticing an unusual rise of cases regarding amnesia and blackouts in South-Africa. A correlation was made between those cases and their occupation, and after observation of these individuals were performed, SCP-9305 was discovered.</p>
+<hr/>
+<h1 id="toc0"><span>Addendum 9305.1: <em>Interview Log 3</em></span></h1>
+<hr/>
+<p>Shortly after the discovery and nature of SCP-9305 was understood, attempts were made to interview SCP-9305 via subjects it was in control of. Initial attempts were unsuccessful. Continued efforts to interview SCP-9305 became fruitful at the 3rd attempted interview.</p>
+<blockquote>
+<p><strong>Interviewed:</strong> SCP-9305</p>
+<p><strong>Interviewer:</strong> Dr. Robert Romida</p>
+<p><strong>Foreword:</strong> N/A</p>
+<hr/>
+<p><strong>&lt; Begin Log, ██/07/2023 &gt;</strong></p>
+<hr/>
+<p><strong>Dr. Romida:</strong> Good evening, SCP-9305. I'm glad you had time to spar for me.</p>
+<p><em>(Dr. Romida stares at SCP-9305 for a brief moment before smiling.)</em></p>
+<p><strong>Dr. Romida:</strong> How are things? Good? Bad?</p>
+<p><strong>SCP-9305:</strong> None of my actions should be important to you. I am recuperating my losses from a crash.</p>
+<p><strong>Dr. Romida:</strong> Oh really? Where would that be?</p>
+<p><strong>SCP-9305:</strong> I believe one of your minions will arrive at this crash site. With or without my intervention.</p>
+<p><strong>Dr. Romida:</strong> Uh huh, fair assessment. Do you still mind me asking you any other questions?</p>
+<p><strong>SCP-9305:</strong> One. I allow you one question.</p>
+<p><strong>Dr. Romida:</strong> Already? Why the change in attitude? Wait— no. Don't answer that.</p>
+<p><strong>SCP-9305:</strong> That would have been quite foolish.</p>
+<p><strong>Dr. Romida:</strong> Give me a second …</p>
+<p><em>(Dr. Romida produces a container. He swallows several pills before speaking.)</em></p>
+<p><strong>Dr. Romida:</strong> Why is this your goal? Why go out of your way to … amalgamate South-African taxi drivers of all people?</p>
+<p><strong>SCP-9305:</strong> It is as you said. Their traffic is …</p>
+<p><em>(SCP-9305 pauses, looking Dr. Romida in the eyes. He coughs.)</em></p>
+<p><strong>SCP-9305:</strong> They're … <em>not healthy.</em></p>
+<p><strong>Dr. Romida:</strong> Is your reason just so that you can <em>fix their traffic?</em></p>
+<p><strong>SCP-9305:</strong> I allowed you one question, yes? Don't try to take chances.</p>
+<p><em>(Dr. Romida can be seen taking a moment to process the presented information, scribbling down on his notepad.)</em></p>
+<p><strong>SCP-9305:</strong> Trying to switch to an art career now, are you?</p>
+<p><strong>Dr. Romida:</strong> … I was an artist once. Listen, I can't blame you for doing what you think is right, but don't you believe you could do it more productively than … tiring yourself out doing it hand by hand? How do you operate exactly?</p>
+<p><strong>SCP-9305:</strong> My mind is locked away in a room of mirrors, for there is nothing else that it can see besides an infinite recursion of itself. This is what I know is best. Maybe things could be different if I was something else, but I am not meant for it. You can understand the life of a fish, but you can't imagine what it feels like to be one. Do you know what I mean?</p>
+<p><strong>Dr. Romida:</strong> I understand, yes.<br/>
+<br/>
+<em>(Dr. Romida pauses.)</em></p>
+<p><strong>Dr. Romida:</strong> Sounds hypocritical of you to say that when you take us over like puppets, doesn't it?</p>
+<p><strong>SCP-9305:</strong> The basis of my framework shouldn't be lowered to your human understanding.</p>
+<p><strong>Dr. Romida:</strong> You were never human to begin with!</p>
+<p><em>(Both pause.)</em></p>
+<p><strong>Dr. Romida:</strong> I need to know that you'll keep talking to me.</p>
+<p><strong>SCP-9305:</strong> You know nothing! You call yourself a doctor, but of what use is it when it's me you're speaking to? You're a product of your kind! The highway you drove down to get you where you're sitting led you to a muddy ditch.</p>
+<p><strong>Dr. Romida:</strong> You see it as a ditch because it is what you wish it was. A few weeks prior you were ignoring me as if I were a ghost, now look at yourself. It's all a matter of perspective, isn't it?</p>
+<p><strong>SCP-9305:</strong> You might be wise but being truthful to yourself … you struggle.</p>
+<p><strong>Dr. Romida:</strong> Projecting your own problems back on to me isn't a solution.</p>
+<p><strong>SCP-9305:</strong> We'll keep repeating this back &amp; forth, won't we?</p>
+<p><em>(Both pause.)</em></p>
+<p><strong>SCP-9305:</strong> You want to prove my thought process wrong so badly, don't you? Don't try to shy away from reality, Doctor. You're sitting in the passenger seat … an open window blowing wind into your face as you watch city lights become blurs in the distance. Do you know where you're being taken, doctor? Does the darkness the highway present to you not terrify you to your core?</p>
+<p><em>(Both pause yet again. SCP-9305's eyes dart to Dr. Romida's pills before speaking.)</em></p>
+<p><strong>SCP-9305:</strong> Things might be easier for you if you tried to understand instead of just … staying human. But that's not my choice to make for you, is it? It's yours.</p>
+<p><strong>Dr. Romida:</strong> I don't need to be someone I'm not to know how full of shit you are.</p>
+<p><em>(Dr. Romida reaches forward to the camera. SCP-9305 attempts to squirm, and its chains rattle against the table. The feed cuts to black.)</em></p>
+<p><em>…</em></p>
+<hr/>
+<p><strong>&lt; End Log &gt;</strong></p>
+<hr/>
+<p><strong>Closing Statement:</strong> N/A</p>
+</blockquote>
+<hr/>
+<h1 id="toc1"><span>Addendum 9305.3: <em>Temporary Supervisor Notice</em></span></h1>
+<hr/>
+<div class="blockquote">
+<div style="text-align: center;">
+<p><span style="white-space: pre-wrap;"> </span></p>
+<h3 id="toc2"><span><strong>NOTICE TO ALL PERSONNEL ASSIGNED TO SCP-9305</strong></span></h3>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+Following <em>Dr. Robert Romida's</em> resignation that is due <em>16/08/2023</em>, HMCL Manager <em>Dr. Gunther F. Botha</em> will take lead of <em>SCP-9305's</em> containment until a better candidate to replace <em>Dr. Romida's</em> position is considered.</p>
+<p>I will answer any inquiries <em>privately</em> in my office when <em>scheduled.</em><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<h5 id="toc3"><span><em>— Site Director of Site-██, Dr. ██████</em></span></h5>
+<p><span style="white-space: pre-wrap;"> </span></p>
+</div>
+</div>
+<hr/>
+<h1 id="toc4"><span>Addendum 9305.4: <em>Incident Log 28</em></span></h1>
+<hr/>
+<p>On 23/08/2023, the captive subject SCP-9305 controlled was found deceased in its holding cell with severe blunt force trauma to the frontal bone of the cranium. This death was ruled a suicide. Hours after the body was discovered, reports from across the country of car crashes involving cabs were sent to the Foundation. After autopsies were performed on dead drivers, those with calcified amygdalae had no surviving passengers.</p>
+<p>The former employee in charge of SCP-9305, Dr. Robert Romida, was one of the recovered instances of which SCP-9305 had control of amongst the crashes. A pen and a scrap of paper was found in Dr. Romida's hands, and an unedited transcript has been attached in the following addendum.</p>
+<hr/>
+<h1 id="toc5"><span>Addendum 9304.5: <em>Romida's Letter</em></span></h1>
+<hr/>
+<p>The following letter was found in Dr. Romida's hands on the day of his passing.</p>
+<div class="blockquote">
+<p>I'm sorry for "resigning" just to get to this thing. At my age and condition, well, who'd blame me?</p>
+<p>It practically invited me to join its embrace. It ticked me off the way it talked to me, and I apologize if you're grabbing this note off my corpse. Surely feels lik<span style="text-decoration: line-through;">you'll stop what you're doing immedia t</span>–</p>
+<p>Sorry about that. I'll try to cross out whatever it's writing.<br/>
+The joy I had feeling my body operate on its own without my say, that was something spectacular. But that feeling didn't last for long.</p>
+<p>Think to yourself you're one of the world's greatest bodybuilders. Muscle control beyond your wildest dreams. That is what it felt like to control several hundreds of people at a time. I understood it. It … It proved me wrong! Alt<span style="text-decoration: line-through;">houg please, I just want to live a litt</span></p>
+<p>One thing it didn't take account of is the thing that I learnt at the foundation across all of my decades there! Loyalty. That is why I ha<span style="text-decoration: line-through;">ve I don't want to die like th</span> I tried to kill every single last trace of it. Or, in this case, us, and I h<span style="text-decoration: line-through;">av why must you make me beg like a d</span> I think it's strugglin<span style="text-decoration: line-through;">g to fig YOU ARE A PATHE</span>–</p>
+<p>Perhaps I'll live on! We'll see, won't we? Better t<span style="text-decoration: line-through;">ha DON'T LET ME G</span>—</p>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. See attached addenda.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. The hardening of the <em>amygdala,</em> a part of the brain that is responsible for perceiving fear.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-9305">SCP-9305</a>" by ic3bro, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-9305">https://scpwiki.com/scp-9305</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Name:</strong> SouthAfricanMinibus<br/>
+<strong>Author:</strong> Martinvl<br/>
+<strong>License:</strong> CC BY SA 4.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:SouthAfricanMinibus.jpg">https://commons.wikimedia.org/wiki/File:SouthAfricanMinibus.jpg</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

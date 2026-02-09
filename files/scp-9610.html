@@ -1,0 +1,792 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-9610</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-9610</h1>
+            <html><body><div id="page-content">
+<div style="display: none">
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ CODE</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- CODE</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-code">/</span><span class="hl-identifier">*</span><span class="hl-code">
+    </span><span class="hl-identifier">BLANKSTYLE</span><span class="hl-code"> </span><span class="hl-identifier">CSS</span><span class="hl-code">
+    </span><span class="hl-brackets">[</span><span class="hl-var">2021</span><span class="hl-code"> </span><span class="hl-var">Wikidot</span><span class="hl-code"> </span><span class="hl-var">Theme</span><span class="hl-brackets">]</span><span class="hl-code">
+    </span><span class="hl-identifier">By</span><span class="hl-code"> </span><span class="hl-identifier">Placeholder</span><span class="hl-code"> </span><span class="hl-identifier">McD</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> </span><span class="hl-identifier">HarryBlank</span><span class="hl-code">
+    </span><span class="hl-identifier">Based</span><span class="hl-code"> on:
+       </span><span class="hl-identifier">Paperstack</span><span class="hl-code"> </span><span class="hl-identifier">Theme</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">EstrellaYoshte</span><span class="hl-code">
+       </span><span class="hl-identifier">Penumbra</span><span class="hl-code"> </span><span class="hl-identifier">Theme</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">EstrellaYoshte</span><span class="hl-code">
+</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-var">@import</span><span class="hl-code"> </span><span class="hl-identifier">url</span><span class="hl-code">('</span><span class="hl-identifier">https</span><span class="hl-code">://</span><span class="hl-identifier">fonts.googleapis.com</span><span class="hl-code">/</span><span class="hl-identifier">css2</span><span class="hl-code">?</span><span class="hl-identifier">family</span><span class="hl-code">=</span><span class="hl-identifier">Montserrat</span><span class="hl-special">:ital</span><span class="hl-code">,</span><span class="hl-identifier">wght</span><span class="hl-var">@0</span><span class="hl-code">,800;1,800&amp;</span><span class="hl-identifier">display</span><span class="hl-code">=</span><span class="hl-identifier">swap</span><span class="hl-code">');
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">.9</span><span class="hl-code">rem</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> -</span><span class="hl-number">1.6</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.2</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">div#container-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">div#header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code">, </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">margin-left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; </span><span class="hl-reserved">float:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code">, </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">, </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+    </span><span class="hl-reserved">letter-spacing:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">font-family:</span><span class="hl-code"> 'Montserrat', </span><span class="hl-string">sans-serif</span><span class="hl-code"> !important</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">content:</span><span class="hl-code"> var(--header-title, "R\</span><span class="hl-number">0026</span><span class="hl-code"> C SITE-43")</span><span class="hl-code">;
+  </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-number">400</span><span class="hl-code">;
+  </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">1.3</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">content:</span><span class="hl-code"> var(--header-subtitle, "SUBVERTING COMMON PRACTICE")</span><span class="hl-code">;
+  </span><span class="hl-reserved">font-weight:</span><span class="hl-code"> </span><span class="hl-number">700</span><span class="hl-code">;
+  </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">1.2</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 707</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-reserved">a:</span><span class="hl-code">:before {
+        font-size: </span><span class="hl-number">1.6</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+}
+ 
+</span><span class="hl-identifier">#login-status</span><span class="hl-code">,
+</span><span class="hl-identifier">#login-status</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-title</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#footer</span><span class="hl-code">, </span><span class="hl-identifier">#footer</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#search-top-box-input</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-input</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-input</span><span class="hl-special">:focus</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-form</span><span class="hl-code"> </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-var">submit</span><span class="hl-brackets">]</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-form</span><span class="hl-code"> </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-var">submit</span><span class="hl-brackets">]</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">#search-top-box-form</span><span class="hl-code"> </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-var">submit</span><span class="hl-brackets">]</span><span class="hl-special">:focus</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#efefef</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-identifier">input.empty</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#999999</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">2.3</span><span class="hl-code">rem!important</span><span class="hl-code">;
+    </span><span class="hl-reserved">right:</span><span class="hl-code"> </span><span class="hl-number">8</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#top-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+   </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+   </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+   </span><span class="hl-reserved">right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+   </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">7.9</span><span class="hl-code">rem</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#top-bar</span><span class="hl-code">, </span><span class="hl-identifier">#top-bar</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">h1</span><span class="hl-code">,
+</span><span class="hl-identifier">h2</span><span class="hl-code">,
+</span><span class="hl-identifier">h3</span><span class="hl-code">,
+</span><span class="hl-identifier">h4</span><span class="hl-code">,
+</span><span class="hl-identifier">h5</span><span class="hl-code">,
+</span><span class="hl-identifier">h6</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-family:</span><span class="hl-code"> 'Montserrat', </span><span class="hl-string">sans-serif</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+    </span><span class="hl-reserved">letter-spacing:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">1.45</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">div#extra-div-1</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">160</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> url('https://scp-wiki.wdfiles.com/local--files/theme%</span><span class="hl-number">3</span><span class="hl-code">Ablankstyle/</span><span class="hl-number">43</span><span class="hl-code">Head.png')</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-size:</span><span class="hl-code"> contain</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 707</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">div#extra-div-1</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">15</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-image:</span><span class="hl-code"> linear-gradient(
+        to </span><span class="hl-string">bottom</span><span class="hl-code">,
+        </span><span class="hl-var">#e0e0e0</span><span class="hl-code">, </span><span class="hl-var">#e0e0e0</span><span class="hl-code"> </span><span class="hl-number">90</span><span class="hl-string">px</span><span class="hl-code">,
+        </span><span class="hl-var">#e0e0e0</span><span class="hl-code"> </span><span class="hl-number">90</span><span class="hl-string">px</span><span class="hl-code">, </span><span class="hl-var">#ffffff</span><span class="hl-code"> </span><span class="hl-number">200</span><span class="hl-string">px</span><span class="hl-code">,
+        </span><span class="hl-var">#ffffff</span><span class="hl-code"> </span><span class="hl-number">200</span><span class="hl-string">px</span><span class="hl-code">, </span><span class="hl-var">#ffffff</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  --</span><span class="hl-reserved">timeScale:</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-code">;
+  --</span><span class="hl-reserved">timeDelay:</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-code">s</span><span class="hl-code">;
+  --</span><span class="hl-reserved">posX:</span><span class="hl-code"> calc(</span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> - </span><span class="hl-number">358</span><span class="hl-string">px</span><span class="hl-code"> - </span><span class="hl-number">13</span><span class="hl-code">rem)</span><span class="hl-code">;
+  --</span><span class="hl-reserved">fnLinger:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">s</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">hr</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">6</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">td</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">12</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">line-height:</span><span class="hl-code"> </span><span class="hl-number">1.4</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.sidebox</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">td</span><span class="hl-code">, 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.sidebox</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0.35</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border-right:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#DDD</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#top-bar</span><span class="hl-code"> </span><span class="hl-identifier">div.open-menu</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 767</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">target</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">black</span><span class="hl-code">;
+        </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#FDF6D7</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block.media</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-var">#D7EFE7</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block.resources</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-var">#F5D8E0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.creditRate</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">4</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-identifier">.fa-info</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-identifier">.fa-info</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-identifier">.cancel</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">PAGE</span><span class="hl-code"> </span><span class="hl-identifier">RATING</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> unset</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">4</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">div.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.rate-points</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.rateup</span><span class="hl-code">,
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.ratedown</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-top:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-bottom:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.rateup</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.ratedown</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.rateup</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.ratedown</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.cancel</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.cancel</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-identifier">.cancel</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.rate-box-with-credit-button</span><span class="hl-code"> </span><span class="hl-identifier">.page-rate-widget-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.anchor</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+    </span><span class="hl-reserved">height:</span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-identifier">.sidebox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.14</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> </span><span class="hl-number">8</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> calc((</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">870</span><span class="hl-string">px</span><span class="hl-code">)/</span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">max-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - </span><span class="hl-number">18</span><span class="hl-code">rem)</span><span class="hl-code">;
+    </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+    </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">103.5</span><span class="hl-string">%</span><span class="hl-code">;
+    </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">5</span><span class="hl-code">;
+    </span><span class="hl-reserved">overflow:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 1290</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">.sidebox</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-reserved">visibility:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-reserved">h2:</span><span class="hl-code">:before {
+        font-size: </span><span class="hl-number">0.9</span><span class="hl-string">em</span><span class="hl-code"> !important</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+}
+ 
+</span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">YUI</span><span class="hl-code"> </span><span class="hl-identifier">TAB</span><span class="hl-code"> </span><span class="hl-identifier">BASE</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">{</span><span class="hl-reserved">background-color:</span><span class="hl-string">inherit</span><span class="hl-code">;</span><span class="hl-reserved">background-image:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-brackets">{</span><span class="hl-reserved">background:</span><span class="hl-string">inherit</span><span class="hl-code">;</span><span class="hl-reserved">text-decoration:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-brackets">{</span><span class="hl-reserved">color:</span><span class="hl-string">inherit</span><span class="hl-code">;</span><span class="hl-reserved">background:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code">,</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-brackets">{</span><span class="hl-reserved">border-color:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-brackets">{</span><span class="hl-reserved">line-height:</span><span class="hl-string">inherit</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">YUI</span><span class="hl-code"> </span><span class="hl-identifier">TAB</span><span class="hl-code"> </span><span class="hl-identifier">CUSTOMIZATION</span><span class="hl-code"> ----</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+     </span><span class="hl-reserved">flex-wrap:</span><span class="hl-code"> wrap</span><span class="hl-code">;
+     </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - </span><span class="hl-number">.125</span><span class="hl-code">rem)</span><span class="hl-code">;
+     </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+     </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+     </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">, /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Link</span><span class="hl-code"> </span><span class="hl-identifier">Modifier</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+    /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Tab</span><span class="hl-code"> </span><span class="hl-identifier">Background</span><span class="hl-code"> </span><span class="hl-identifier">Colour</span><span class="hl-code"> | [</span><span class="hl-identifier">UNSELECTED</span><span class="hl-code">] ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#efefef</span><span class="hl-code">;
+     </span><span class="hl-reserved">border:</span><span class="hl-code"> unset</span><span class="hl-code">;
+     </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+     </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:hover</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Tab</span><span class="hl-code"> </span><span class="hl-identifier">Background</span><span class="hl-code"> </span><span class="hl-identifier">Colour</span><span class="hl-code"> | [</span><span class="hl-identifier">HOVER</span><span class="hl-code">] ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code">, /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Listitem</span><span class="hl-code"> </span><span class="hl-identifier">Modifier</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">relative</span><span class="hl-code">;
+     </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+     </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+     </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+     </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+     </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+     </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+     </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset-bottom</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+     </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+     </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+     </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">border:</span><span class="hl-code"> unset</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.35</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">.75</span><span class="hl-string">em</span><span class="hl-code">;
+ 
+     </span><span class="hl-reserved">text-overflow:</span><span class="hl-code"> ellipsis</span><span class="hl-code">;
+     </span><span class="hl-reserved">overflow:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+     </span><span class="hl-reserved">white-space:</span><span class="hl-code"> </span><span class="hl-string">nowrap</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code">, /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Selection</span><span class="hl-code"> </span><span class="hl-identifier">Modifier</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+     </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+     </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    /</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">Tab</span><span class="hl-code"> </span><span class="hl-identifier">Background</span><span class="hl-code"> </span><span class="hl-identifier">Colour</span><span class="hl-code"> | [</span><span class="hl-identifier">SELECTED</span><span class="hl-code">] ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-identifier">em</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:focus</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-nav</span><span class="hl-code"> </span><span class="hl-identifier">.selected</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-special">:active</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+     </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#333333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#ffffff</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-shadow:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-content</span><span class="hl-code">,
+ </span><span class="hl-identifier">.yui-navset</span><span class="hl-code"> </span><span class="hl-identifier">.yui-navset-top</span><span class="hl-code"> </span><span class="hl-identifier">.yui-content</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">.5</span><span class="hl-string">em</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code">---- </span><span class="hl-identifier">SCROLLBAR</span><span class="hl-code"> ----</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#FFF</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#CCC</span><span class="hl-code">;
+     </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#333</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-var">#EEE</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code">---- </span><span class="hl-identifier">CENTER</span><span class="hl-code"> </span><span class="hl-identifier">IMAGES</span><span class="hl-code"> </span><span class="hl-identifier">ON</span><span class="hl-code"> </span><span class="hl-identifier">MOBILE</span><span class="hl-code"> </span><span class="hl-identifier">courtesy</span><span class="hl-code"> </span><span class="hl-identifier">of</span><span class="hl-code"> </span><span class="hl-identifier">EstrellaYoshte</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> </span><span class="hl-identifier">PeppersGhost</span><span class="hl-code"> ----</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-identifier">.imagediv</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">float:</span><span class="hl-code"> </span><span class="hl-string">right</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">15</span><span class="hl-string">px</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> (max-width: 540</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-identifier">.imagediv</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">float:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">text-align:</span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (max-width: 600</span><span class="hl-identifier">px</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">.scp-image-block.block-right</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">float:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code">---- </span><span class="hl-identifier">ACS-COLORED</span><span class="hl-code"> </span><span class="hl-identifier">TABLE</span><span class="hl-code"> </span><span class="hl-identifier">DIVS</span><span class="hl-code"> ----</span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table1</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table1</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#D7EFE7</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table2</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table2</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#D8ECF4</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table3</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table3</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#FDF6D7</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table4</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table4</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#FFDABF</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table5</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table5</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-var">#F5D8E0</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table6</span><span class="hl-code"> </span><span class="hl-identifier">tr</span><span class="hl-code"> </span><span class="hl-identifier">th</span><span class="hl-code">,
+</span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-identifier">.table6</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(</span><span class="hl-number">146</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.tableb</span><span class="hl-code"> </span><span class="hl-identifier">.wiki-content-table</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border-collapse:</span><span class="hl-code"> </span><span class="hl-string">separate</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-spacing:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.tableb</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.tableb</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">img</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.tableb</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-block</span><span class="hl-code"> </span><span class="hl-identifier">.scp-image-caption</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-string">px</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-var">#000</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">solid</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.top-left-box</span><span class="hl-code"> &gt; </span><span class="hl-identifier">.item</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> ---- </span><span class="hl-identifier">WORDS</span><span class="hl-code"> </span><span class="hl-identifier">NO</span><span class="hl-code"> </span><span class="hl-identifier">LONGER</span><span class="hl-code"> </span><span class="hl-identifier">BROKEN</span><span class="hl-code">, </span><span class="hl-identifier">THE</span><span class="hl-code"> </span><span class="hl-identifier">CROQUEMBOUCHE</span><span class="hl-code"> </span><span class="hl-identifier">HAS</span><span class="hl-code"> </span><span class="hl-identifier">SPOKEN</span><span class="hl-code"> ---- </span><span class="hl-identifier">*</span><span class="hl-code">/
+</span><span class="hl-identifier">span</span><span class="hl-code">, </span><span class="hl-identifier">a</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">word-break:</span><span class="hl-code"> </span><span class="hl-string">normal</span><span class="hl-code"> !important </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.avatar-hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code"> !important</span><span class="hl-code">; </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#breadcrumbs</span><span class="hl-code">, </span><span class="hl-identifier">.pseudocrumbs</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding-top:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">px</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-identifier">.page-tags</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+/</span><span class="hl-identifier">*</span><span class="hl-code"> -- </span><span class="hl-identifier">FANCY</span><span class="hl-code"> </span><span class="hl-identifier">THINGS</span><span class="hl-code"> </span><span class="hl-identifier">from</span><span class="hl-code"> </span><span class="hl-identifier">Woedenaz</span><span class="hl-code">'</span><span class="hl-identifier">s</span><span class="hl-code"> </span><span class="hl-identifier">Dustjacket</span><span class="hl-code"> </span><span class="hl-identifier">Theme</span><span class="hl-code"> -- </span><span class="hl-identifier">*</span><span class="hl-code">/
+ 
+</span><span class="hl-identifier">.fancyhr</span><span class="hl-code"> </span><span class="hl-identifier">hr</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">border-top:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">vw </span><span class="hl-string">solid</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+    </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--bright-accent), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-source:</span><span class="hl-code"> url('https://scp-wiki.wdfiles.com/local--files/theme%</span><span class="hl-number">3</span><span class="hl-code">Aflopstyle-dark/wl_hr.png')</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-repeat:</span><span class="hl-code"> round round</span><span class="hl-code">;
+    </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-slice:</span><span class="hl-code"> </span><span class="hl-number">80</span><span class="hl-code"> </span><span class="hl-number">500</span><span class="hl-code"> </span><span class="hl-number">80</span><span class="hl-code"> </span><span class="hl-number">500</span><span class="hl-code"> fill</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-width:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">80</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-string">em</span><span class="hl-code"> </span><span class="hl-number">80</span><span class="hl-string">em</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-identifier">.fancyborder</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+    </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">vw </span><span class="hl-string">solid</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0.5</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image:</span><span class="hl-code"> url('https://scp-wiki.wdfiles.com/local--files/theme%</span><span class="hl-number">3</span><span class="hl-code">Aflopstyle-dark/wl_border.png') </span><span class="hl-number">600</span><span class="hl-code"> round</span><span class="hl-code">;
+    </span><span class="hl-reserved">border-image-width:</span><span class="hl-code"> </span><span class="hl-number">6</span><span class="hl-code">;
+    </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">vw</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span></div>
+
+<div class="preview">
+<p>Where are they all? They should be here. Unless this place isn't really the end?</p>
+</div>
+
+
+<p><strong>Item #</strong>: SCP-9610</p>
+<p><strong>Object Class</strong>: Keter</p>
+<p><strong>Special Containment Procedures</strong>: An AIC assigned to the Foundation must continuously monitor the global Internet to detect and remove any digital references to SCP-9610-1 or SCP-9610-2.</p>
+<p>Any printed media intended for public release that reference SCP-9610-1 or SCP-9610-2 shall be intercepted and revised to conceal any details regarding SCP-9610-1 and SCP-9610-2. Revised material must conform to standard health and well-being publications available to the general public.</p>
+<p>Individuals with knowledge of SCP-9610-1 must be apprehended immediately and amnesticized before returning to civilian life. Individuals confirmed to possess knowledge of SCP-9610-2 shall be terminated; causes of death are to be masked as natural or accidental.</p>
+<p><strong>Description</strong>: SCP-9610-1 is an altered state of consciousness that can occur in any human being. The process by which SCP-9610-1 emerges is still not fully understood, but the following factors have been identified as contributing to its occurrence:</p>
+<ul>
+<li>Meditation<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> and contemplation practice.</li>
+<li>A high level of self-awareness, measurable by clinical scales such as the Self-Consciousness Revised Scale.</li>
+<li>Repeated experimentation with hallucinogenic substances.</li>
+</ul>
+<p>The emergence of SCP-9610-1 is gradual and overlays ordinary human consciousness rather than replacing it. The initial phase is characterised by psychic slowing<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> and depersonalisation/derealisation-type dissociation; symptoms are initially intermittent but become progressively pervasive.</p>
+<p>In the advanced phase of the process, affected subjects describe a partial dilution of the Self, confusing their own identity with that of surrounding people and objects, and an increased capacity for empathy. This phase often causes confusion in the subjects, who are no longer able to perceive themselves fully or feel their vital needs. The final stage of SCP-9610-1's manifestation is the awareness of SCP-9610-2.</p>
+<p>SCP-9610-2 is an extra-dimensional spiritual space, accessible only to the psyche of living or spectral conscious beings. It corresponds to the conscious representation of [DATA EXPUNGED]. It is an undefined, colourless space<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup>, usually devoid of any presence.</p>
+<p>It appears that SCP-9610-2 is a common space for all conscious beings. Any living being psychically accessing SCP-9610-2 is able to sense the presence of other conscious beings simultaneously present there, and can exchange information with them regardless of distance.</p>
+<p><strong>Addendum N<sup>o</sup>1: Discovery report</strong></p>
+<p>The SCP Foundation was alerted to SCP-9610 by the Department of Spectral Affairs after the department detected significant disturbances within spectral communities across multiple cemeteries, and the disappearance of several ghosts known to and monitored by the Department.<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="blockquote" style="border-radius: 10px; width: 96.5%;">
+<p>Supervisor,</p>
+<p>We are returning to you with preliminary informations concerning the disturbances observed within the various entities and communities of ghosts under our department's jurisdiction. As you know, for several months now, we have been detecting unexplained disappearances and migrations from these communities to mostly unknown terrestrial locations.</p>
+<p>In other words, they're hiding, and we don't yet know why. As you know, most spectres acquire a pronounced taste for palaver over the course of their non-life, according to their adage "Let's kill time better than it killed us." which generally makes them uncooperative. The emergence of this threat has deeply divided them between those who want to flee, those who want to fight back, and finally the majority, who have become apathetic to everything due to the passage of time.</p>
+<p>Nevertheless, there is still a clue. One of them, more loquacious than his congeners, has agreed to inform us, on condition to be interviewed by "an important figure". Although this could be a trap for reasons unknown to us, the disappearance of spectres represents an outrage to the abnormal world, and doing nothing would be contrary to SCP Foundation policy. We therefore recommend accepting his proposal, provided that the meeting takes place on our premises for security reasons.</p>
+<p>Yours sincerely,</p>
+<div style="text-align: right;">
+<p><strong>— The Department of Spectral Affairs</strong></p>
+</div>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+Following acceptance of the above proposal, the meeting was organised in an annex of Site-██ specially equipped with anti-spectral security measures.<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="blockquote" style="border-radius: 10px;">
+<p><strong>[BEGIN TRANSCRIPT]</strong></p>
+<p><strong>Researcher Penberton:</strong> Hello, I am Researcher Penberton from the Department of Spectral Affairs. Please state your identity.</p>
+<p><strong>Archibald T. Hunferth:</strong> Penberton? I knew a Penberton back in the day, but I can't say much more than that now; he was someone quite forgettable. Are you just a researcher? Didn't I mention that I wanted to speak with someone important?</p>
+<p><strong>Penberton:</strong> You did mention that. But important people are often very busy, so you'll have to make do with me. Identity?</p>
+<p><strong>A.T. Hunferth:</strong> Ah, how I envy them! You know, the life of a spectre, if you'll pardon the pun, is not without a certain monotony. So I agree to talk to you if you are kind enough to entertain me sufficiently. My name is Archibald Tabor Hunferth, a merchant specialising in exotic spices. At least I used to be, I hung up my hat three or four centuries ago now.</p>
+<p><strong>Penberton:</strong> Very well. I suggest we get straight to the point, if you are inclined. We would like to know more about the unusual phenomena that have been affecting the ghost community for several months.</p>
+<p><strong>A.T. Hunferth:</strong> The disappearances? You are right to use the word "unusual", because although we ghosts are able to make ourselves invisible at will without effort, this is a very different phenomenon. We're being hunted like ordinary slaves, like wild beasts! They have caught some of us, so those of us who still have our wits about us are making arrangements to be able to remain here below.</p>
+<p><strong>Penberton:</strong> Here below? You mean you are being exorcised? Who exactly is hunting you down?</p>
+<p><strong>A.T. Hunferth:</strong> Exorcism is merely an invention for theatre, or cinema, as you call it now. They can chase us from one place, but that will only drives us further away. You see…</p>
+<p><strong>Penberton:</strong> [interrupting] Get to the point, please.</p>
+<p><strong>A.T. Hunferth:</strong> Yes, of course, you're right, young man, facts require speed, so I’ll get straight to the point. However, I need to give you some preliminary details so that you understand, because this has to do with death and afterlife. What exactly do you know about the afterlife?</p>
+<p><strong>Penberton:</strong> That's a difficult question. Many cultures and beliefs have theorised about the afterlife in very different ways.</p>
+<p><strong>A.T. Hunferth:</strong> I'm not talking about that nonsense, but about the real afterlife. At the moment of death, it is revealed to us, or rather it comes to us. Because it's both a place and a state. And it's absolutely terrifying. Imagine suddenly being transported to an old house whose occupant has suddenly left, taking all their belongings with them.</p>
+<p><strong>Penberton:</strong> Could you elaborate?</p>
+<p><strong>A.T. Hunferth:</strong> It's empty, excruciatingly empty. Soundless, colourless, there is nothing. Only the feeling that its occupant left hastily without finishing the job.<br/>
+Try to imagine eternity in a place like that. Well, I couldn't, and neither could the other spectres. So we turned back, which is why we're still here.</p>
+<p><strong>Penberton:</strong> I'm inclined to believe you, but there is something I still don't understand. If the afterlife is as you describe it, why aren't there more ghosts? That must mean that most of them stay there, right?</p>
+<p><strong>A.T. Hunferth:</strong> That brings us to the heart of the matter. You see, dead people are not the only ones who can access the afterlife. Some living people manage to enter it, spiritually speaking. This is because our souls, the source of life, all come from there originally, and migrated long ago to the material world. So, there is a path to this place within each of us. And when a living person experiences this place, it leaves a lasting impression.</p>
+<p><strong>Penberton:</strong> Meaning?</p>
+<p><strong>A.T. Hunferth:</strong> When you arrive at this place, something happens, a kind of intuitive understanding of what it is. Then the living become afraid, because they know what awaits them at the end of the road. These spiritual journeys have been taking place since time immemorial. And travellers have taken measures to ensure that the afterlife doesn't become depopulated, and that a semblance of life persists in the afterlife, if I may say so. They became shamans, priests, healers, spiritual guides. And they instilled in their clans, their villages, their communities the idea of a posthumous reward, of a god who awaits the faithful. And time did the rest of the work. So when death comes, most accept their fate and await their judgement, which is why we don't all come back.</p>
+<p><strong>Penberton:</strong> Is that what disappearances are? Shamans who send you back to the afterlife? Is that who you're running from?</p>
+<p><strong>A.T. Hunferth:</strong> That's right. Even though they're really more like common spiritualists than shamans, all this talk about the powers of nature is just smoke and mirrors to hide their true motives from the living. Before, they operated on a local level, so we could come to agreements. We pretended to be cursed souls, which reinforced their message, and they didn't force us to go back there. It was a win-win situation for everyone. But over time, they've joined forces, got in touch with each other and are coordinating everywhere.</p>
+<p><strong>Penberton:</strong> A great shamanic conspiracy, sort of? But how do they force you? You can't touch a ghost, as far as I know?</p>
+<p><strong>A.T. Hunferth:</strong> That's kind of how it is. They even call themselves the Diaspora. I told you, souls all come from this place, and They consider themselves exiles, intent on reshaping this world before they return. And they're clever. They can't touch us, but they can see us with the naked eye, even when we're invisible, it's a side effect of spiritual travel. So they can spot us easily. They started by using sweet words, reviving our old memories, talking to us about our loved ones who are waiting for us. They're very good at tugging at our heartstrings. Some people were convinced, but not all of them. You know, as a former merchant, I know when someone is trying to sell me rubbish. So they moved on to the next step.</p>
+<p><strong>Penberton:</strong> Tell me more.</p>
+<p><strong>A.T. Hunferth:</strong> They threatened to harm our descendants, then ransacked our graves to disturb our peace. But worst of all, they turned some of our own. In exchange for leaving their descendants alone, they ask them to capture us and forcibly bring us back to the afterlife, because a spectre can touch a spectre. So we have to be careful of everything and everyone, which is why many hide. For now, it works, because as you know, many of us have been rendered lethargic by the long time, so all they have to do is bend down to pick them up, but at this rate, soon there will only be a handful of us left, hunted like beasts.</p>
+<p><strong>Penberton:</strong> Very well, thank you. If you've told us everything, we'll now end…</p>
+<p><strong>A.T. Hunferth:</strong> [interrupting] Wait! One last thing, please. I don't know what you're going to do with all this, but I have a request to make. Hiding in the wild isn't really my style; I'm a city man. But fighting them is beyond my strength. That's why I'd like to request asylum from the Foundation. They won't dare attack here, and I'll be safe.</p>
+<p><strong>Penberton:</strong> We don't usually take in refugees, but in exchange of some additional information, it could be organised. I'll have to consult my superiors on the matter.</p>
+<p><strong>[END TRANSCRIPT]</strong></p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+Following approval by the Director of the Spectral Affairs Department, A.T. Hunferth has been placed under the protection of the Foundation, subject to the following conditions:<br/>
+- Remain visible at all times.<br/>
+- Only converse with staff members when requested to do so.<br/>
+- Not leave the rooms assigned to him without prior authorization.<br/>
+- Teach the technique necessary to access SCP-9610-2 to a few selected members of MTF Mu-13 "Ghostbusters" for Operation Hermes.
+<p><strong>Addendum N<sup>o</sup>2: Operation Hermes</strong></p>
+<p>The prospect of SCP-9610-2's existence, and especially A.T. Hunferth's suggestion that any human being could spontaneously access it, as well as the threat it posed to the maintenance of the Veil, led to the organisation of Operation Hermes.</p>
+<p>Its primary objective was to uncover the necessary steps for accessing SCP-9610-2, with the aim of developing adequate containment measures against this phenomenon.</p>
+<p>Secondary objectives were to verify the complete accuracy of the information reported by A.T. Hunferth, to learn more about the group referred as the Diaspora, and to assess the possibility of establishing an outpost within SCP-9610-2. Five members of MTF Mu-13 "Ghostbusters" were selected to take part in this operation. Their first access to SCP-9610-2 took place three months after the start of training.</p>
+<p>Following the fourth exploration mission within SCP-9610-2, the four agents on the mission did not regain consciousness at the scheduled end of the exploration. Agent Heracles was detected by the security system in spectre form ten minutes later, above his physical body. Based on his behaviour, it is assumed that he was initially unaware of this apparition or his condition, his movements representing a struggle against an enemy not perceived by the security system.</p>
+<p>In the final seconds before his definitive disappearance<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup>, Agent Heracles was recorded uttering Hunferth's name.</p>
+<div class="blockquote" style="border-radius: 10px;">
+<p><strong>[BEGIN TRANSCRIPT]</strong></p>
+<p><strong>Researcher Penberton:</strong> I can't say I'm pleased that we have to talk again, especially under these tragic circumstances, but too many questions need answers. Do you know why we're here?</p>
+<p><strong>Archibald T. Hunferth:</strong> Well, young man, what's gotten into you today? It seems that all your manners have evaporated since last time. Did something happen to you? Are you unwell? You're probably working too hard! When I was alive, I didn't count hours, and it happened to me several times to…</p>
+<p><strong>Penberton:</strong> I don't have time to discuss anecdotes today. I suppose you know what happened to the SCP-9610 exploration team?</p>
+<p><strong>A.T. Hunferth:</strong> Those poor boys? Yes, I was informed of the tragedy that befell them. They had followed all my teachings, but the afterlife is a dangerous place. I had warned them of the dangers I knew about, and of the likely presence of others unknown to me.</p>
+<p><strong>Penberton:</strong> Mm-hmm… Tell me, do you know what Agent Heracles's last words were when he returned?</p>
+<p><strong>A.T. Hunferth:</strong> He returned? I thought they were all dead! But why wasn't I told? You and your culture of secret. You know, spectres have feelings too, at least some of them, of whom I flatter myself to be one. You could be more empathetic.</p>
+<p><strong>Penberton:</strong> I didn't say he came back alive. Only his ghost returned briefly, before disappearing again, as if swallowed up. And the last word he uttered was your name. So you'll be happy because I'm going to grant your request: no more secrets between us. You're going to tell us everything now.</p>
+<p><strong>A.T. Hunferth:</strong> But surely you're not questioning my word? You should know, Mr Penberton, that the Hunferth family has always been renowned for its uncompromising code of honour. That's how we've prospered in business. As my grandfather always said, a good businessman offers as much trust as he sells goods.</p>
+<p><strong>Penberton:</strong> Then perhaps you would like to read this first? It is a journal that Agent Heracles kept on the progress of his mission. Take a few minutes to read it, I will wait patiently.</p>
+<blockquote>
+<p><em>Training is going well so far, despite our instructor being extremely talkative. He talks incessantly, about everything and nothing. But luckily, the sessions with him are short, which leaves time to practise meditation</em>.<br/>
+<em>I know we're not there yet, but the lads and I all feel that something is happening. To describe it accurately, I feel as if my entire being is out of sync. I feel that part of me has already crossed the line that separates us from SCP-9610-2. It leaves me empty, unable to think about anything else. But Hunferth warned us, it's a sign that we're on the right path</em>.<br/>
+<em>I say "we" because I feel that the others are in the same state. They talk less, but I feel like I understand them better. Overall, we seem to be coping, but I'm going to report back to keep an eye on Orpheus<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup>, as I sense he is more anxious than the others</em>.</p>
+</blockquote>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<blockquote>
+<p><em>It has been two months since the operation began, and we are finally nearing our goal. According to Hunferth, our affinity with the spectral world and his valuable (sic) advice have allowed us to progress faster than normal</em>.<br/>
+<em>He may still be as intrusive as ever, but it's true that his advice has helped us a lot. That feeling of emptiness has also faded. Or rather, it's not as bothersome anymore. The presence of others helps. Sometimes I feel as if they were me. Apparently this is normal, because as we separate from our bodies, our boundaries blur. But they are not there. Personally, I think it's a sign of our determination to move forward as one. Otherwise, we would all have given up with Psyche</em>.</p>
+</blockquote>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<blockquote>
+<p><em>We've finally made it. It's been a week since we accessed SCP-9610-2. After the first time, it's much easier to return, as if we were marked by this place</em>.<br/>
+<em>I write this without any enthusiasm, however. This place is both as Hunferth described it, and different at the same time. There is nothing, no sound, no colour, it's almost as if nothing exists. But there is this lingering feeling. It's quite strange to describe, there's a nostalgic aspect to it, a bit like standing at the grave of an elderly relative. It's easy to move around inside, but there is nothing there, no matter how far we go. And despite emptiness, we all have this feeling of being stuck inside something. It's hard to describe, as if this place were empty and full at the same time</em>.</p>
+</blockquote>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<blockquote>
+<p><em>Still nothing. Or rather, nothing clear. From time to time, we come across newly arrived deceased people. They sense us too, it happens instantly. Some of them think we're angels or creatures from the afterlife. Sometimes we can sense it, even when we avoid direct contact.</em><br/>
+<em>We're all asking ourselves the same question: why have we encountered so few souls so far? If this place really is afterlife, it should be full. Millions of people die every year, and tens of billions of human beings have walked the Earth since the species came into existence. Where are they all? They should be here. Unless this place isn't really the End?</em></p>
+</blockquote>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<strong>A.T. Hunferth:</strong> Well? Reading his words rekindles my sadness at knowing he is gone. He was a good man, the kind you rarely meet, in life as in death. But he himself recognises the value of my teachings, and I see nothing that would cast doubt on my good faith.</p>
+<p><strong>Penberton:</strong> That is for me to decide. For now, I would like to address some points that Heracles mentions in his journal. Why haven't we encountered more souls?</p>
+<p><strong>A.T. Hunferth:</strong> But I don't know! I told you, I didn't stay there long, just long enough to realise where I was and leave. When people die, their souls are transported there, that's all I know.</p>
+<p><strong>Penberton:</strong> Transported?</p>
+<p><strong>A.T. Hunferth:</strong> Transported, moved, conveyed, whatever term you want to use, it's figurative.</p>
+<p><strong>Penberton:</strong> That's very interesting. Yet you mentioned earlier that SCP-9610-2 came to you, not that you went to it. What should I understand? That you happened to return there?</p>
+<p><strong>A.T. Hunferth:</strong> Don’t play word games with me, it's intellectual nonsense unworthy of our discussions. Transported, came, whatever, I don't think carefully about every word I say. If you doubt me, keep me prisoner, I assure you I won't run away.</p>
+<p><strong>Penberton:</strong> I'm sure of that. Why run away when you're where you want to be? Whether you're our guest or our captive, as long as you're here, you're better protected from this Diaspora than anywhere else in the world, am I wrong? But what about your descendants?</p>
+<p><strong>A.T. Hunferth:</strong> You see evil everywhere. Sometimes that's a good thing, but not in our case, I assure you. I came here because you were looking for an informant, remember? As for my descendants, they no longer bear my name for several generations now. Diaspora won't connect them to me.</p>
+<p><strong>Penberton:</strong> Diaspora may not, but we can. Your descendants are quite wealthy, I believe? The fortune you accumulated during your lifetime has allowed them to prosper over time, it seems to me. And by means that are sometimes less honest than you claim. What would happen if the authorities obtained evidence of certain… fraudulent operations, shall we say?</p>
+<p><strong>A.T. Hunferth:</strong> You… You wouldn't dare!</p>
+<p><strong>Penberton:</strong> That depends on you. I need the whole truth. And without any palaver, please.</p>
+<p><strong>A.T. Hunferth:</strong> Fine… I don't really have any other choice anyway. Yes, I went back, several times. But not since I've been in your offices, that was before. The Diaspora left us alone at first, I mean the spectres that were still active. But once the amorphous ones became scarce, we became their primary target. I told you, I don't enjoy life in the wild. And I couldn't stand their harassment. So I… I collaborated. I hunted down my fellow men for them. I brought them back to the afterlife, sometimes by force. But I never liked it, so when your men came looking for answers, I saw it as a lifeline to get me out of this situation.</p>
+<p><strong>Penberton:</strong> Hence your desire to remain here. As a traitor to your kind and to the Diaspora, you would not last long outside. But there are still unknowns. Where are these ghosts now, and the dead people of humanity? Our team encountered only a few spectres in SCP-9610-2.</p>
+<p><strong>A.T. Hunferth:</strong> Yet they are there. But in another form. They have returned to what they were before, long before, and have merged with the substance of SCP-9610-2. For SCP-9610-2 is not a place, strictly speaking. It's a husk, a spiritual corpse.</p>
+<p><strong>Penberton:</strong> A spiritual corpse? What do you mean?</p>
+<p><strong>A.T. Hunferth:</strong> To put it simply, let's say that the material and spiritual worlds were not always interconnected as they are now. As I have already told you, the soul as a concept originates from SCP-9610-2. But at that time, souls were not separated into multiple individualities as they are today within living beings. They were grouped together into a single being, the Great Spirit, much like your cells are only a part of your body.</p>
+<p><strong>Penberton:</strong> Yet we haven't found anything resembling a great spirit either.</p>
+<p><strong>A.T. Hunferth:</strong> Heracles intuitively touched upon it in his journal, even if he didn't fully understand it. The feeling he describes, of being stuck, is what remains of the Great Spirit. We know that one day, he left SCP-9610-2 for the material world, perhaps intentionally, perhaps accidentally. And that he disappeared as an entity at the same moment. Imagine every cell in your body breaking away to follow its own path, leaving only a skeleton behind, and you'll have a good idea of what happened to him. His life energy became life as we know it, and his spiritual body is the afterlife, an empty shell in which one feels trapped forever.</p>
+<p><strong>Penberton:</strong> So if I understand correctly, the dead merge with the carcass… with SCP-9610-2?</p>
+<p><strong>A.T. Hunferth:</strong> That's right, they return to their original place, so to speak. That's Diaspora's ultimate goal, to return all life energy to awaken the Great Spirit and regain a kind of original paradise. But they're fanatics, they don't realise that their plan is like sending electricity through a corpse to resurrect it… It's a dead end.</p>
+<p><strong>Penberton:</strong> I imagine they're the ones who attacked our men? Do you have any idea why they attacked? Were they trying to send us a message?</p>
+<p><strong>A.T. Hunferth:</strong> It's possible, but I think the warning was mainly for me. But that's not all. When I was still with them, I sensed a lot of doubt among them. Their members' greatest fear is to die before they manage to resurrect the Great Spirit. Of course, they become ghosts themselves, but with the spectral community becoming increasingly scarce, they risk being hunted down as well. So some of them, and their numbers are growing over time, no longer limit themselves to spectres, in order to speed up the process and feed Great Spirit's carcass more quickly.</p>
+<p><strong>Penberton:</strong> Meaning?</p>
+<p><strong>A.T. Hunferth:</strong> It's quite simple. Or do you believe that souls exist outside of spectres?</p>
+<p><strong>Penberton:</strong> I see. So if I understand you correctly, what should we expect? Killings, massacres? Heracles was taken by surprise because he was on their turf, but on Earth, we have ample means to stop the danger they pose. Unless you're telling me there are millions of them.</p>
+<p><strong>A.T. Hunferth:</strong> Don't make the mistake of underestimating them! Admittedly, their living numbers are not that great, but death is just another state for them, and external spectres join them every day. Some just want to save their descendants from threat, others think they can escape Diaspora by diverting them to the living, and finally, the last ones, traumatized by their experience of the afterlife, join them voluntarily, clinging to the idea of changing it.</p>
+<p>And while we, as spectres, cannot touch you, but that does not mean we are powerless against the living. We can follow you, spy on your conversations and your actions without you knowing. Even now, some of your agents are surely already under the spectral surveillance of Diaspora. Yours, as well as those of all organisations dangerous to them. And that's not all. We can possess your minds, haunt you, instil in you the idea of death, until you rush to offer yourselves to the Great Spirit. Or open the way, SCP-9610-1 as you call it, and make the living aware of what awaits them. Of course, it won't happen instantly, but it has already begun, and it will only grow. For time and death will reduce your numbers as surely as they will increase theirs.</p>
+<p><strong>Penberton:</strong> [his pupils gradually turn blue, while his movements become slower] You're right. And don't think you can escape us forever, traitor. We're giving you a temporary reprieve, but don't get used to it.</p>
+<p><strong>[END TRANSCRIPT]</strong></p>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. whether denominational or atheist.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Anhedonia, abulia, emotional anaesthesia and gradual loss of vitality.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. The term space is used here for the sake of simplicity, as the relevance of the concepts of space and geometry within a non-material dimension is currently being debated within the Department of Spectral Affairs.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Attested by the death of Agent Heracles's physical body shortly after this incident.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Code name given to one of mission members. The others are Heracles, Ulysses, Theseus and Psyche.</div>
+</div>
+
+</div></body></html>
+        </body>
+        </html>
+        

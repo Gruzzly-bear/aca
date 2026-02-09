@@ -1,0 +1,616 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-9216</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-9216</h1>
+            <div class='text-content'><strong>Item #:</strong> SCP-9216</p>
+<p><strong>Object Class:</strong> Thaumiel</p>
+<p><strong>Special Containment Procedures:</strong> SCP-9216 is to be contained in standard humanoid living quarters at Field Site W-8, and provided with a Foundation computing station with level 3 privileges. Any requests it makes for amenities are to be reviewed and potentially approved by Head Researcher Mary Vollard. Any researcher on site may contact Doctor Vollard to request SCP-9216's assistance with their current case file.</p>
+<p><strong>Description:</strong> SCP-9216 is a sapient organic biomass. The individual tissues and cells that make up SCP-9216 resemble those of a human, and it often maintains a nearly human figure. Its actual anatomy is highly fluid, such that its organs, their number, and their relative placement around its body are highly variable; it is not uncommon for fully-formed facial features to emerge from the dermal layers of SCP-9216 over the course of several minutes, move across the surface of its skin, and then disappear in a similar manner. SCP-9216 is able to influence these "fluctuations" to some degree, and it is usually able to maintain at least one matching pair of eyes, one nose, and one mouth on its face.</p>
+<p>SCP-9216 is a strong supporter of the Foundation and its mission, and has been contributing to the containment of other SCP objects since it was first brought to Field Site W-8, leading to its current Thaumiel designation. As Field Site W-8 is a "first destination" site for many objects of interest after being acquired by the Foundation, it is not uncommon to discover that new research subjects harbor lethal threats during initial testing. SCP-9216, with its redundant anatomy and willingness to serve the Foundation, makes an ideal examiner for new objects processed at the site, and has saved countless lives with its service.</p>
+<p>A full list of the SCP objects that SCP-9216 assisted with is available upon request from Site Director Graham.</p>
+<p><strong>Addendum 1: Biological test logs</strong><br/>
+Basic format:</p>
+<table style="border-collapse:collapse; max-width: 800px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 20%;">Test performed</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black">Observations</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Dr. Vollard's notes</em></td>
+</tr>
+</table>
+<p><strong>Test 1:</strong></p>
+<table style="border-collapse:collapse; max-width: 800px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 20%;">Dermal tissue collection</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black">Organic matter was collected by Dr. Vollard via cutting a 0.72g piece of flesh off the subject's arm with a scalpel. No bleeding was observed from the wound, which quickly widened and converted into a nostril-like aperture in the subject's flesh. The collected sample was semi-solid, deforming readily like soft putty. Under a microscope, the cells making up the sample resembled malignant cancer cells.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>There do not appear to be any of the more nasty pathogens that I might worry about from a Sarkic anomaly, which is a relief.</em></td>
+</tr>
+</table>
+<p><strong>Test 2:</strong></p>
+<table style="border-collapse:collapse; max-width: 800px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 20%;">Cohabitation</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black">In order to test if the subject has any deleterious effects on other organisms, a series of cohabitation trials were held, in which SCP-9216 shared its living quarters with various creatures of increasing similarity to humans. The creatures which SCP-9216 cohabited with (and their span of cohabitation) were, in order:<br/>
+-Five lab mice. Time: 2 weeks.<br/>
+-One rooster, one hen, and all eggs produced over the cohabitation period. Time: 2 weeks.<br/>
+-D-3469. Time: 1 month.<br/>
+After each trial, the cohabiting creature(s) were quarantined for a month. No creature displayed any negative effects from the cohabitation trials.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>All creatures panicked like mad the first day. I can't say I think that is an anomalous effect. The D class, especially, did not like the idea of sharing a cell with a monster, but they calmed down when they realized it was a month of leave from regular testing. At the end, they even said they'd miss SCP-9216 — apparently, it was the best cellmate they've had at the Foundation. Hah!</em></td>
+</tr>
+</table>
+<p><strong>Test 3:</strong></p>
+<table style="border-collapse:collapse; max-width: 800px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 20%;">Malleability</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black">The subject was presented with a square wire mesh, with holes approximately 1cm to a side, and was asked to press their hand through the mesh. The subject complied, and was able to pass the mesh through the flesh of their hand. Then, the subject was given a wooden dowel, 0.2m long, and 3cm in diameter. They were asked to pass the dowel through the midpoint of their forearm, as a means to probe the rigidity of their internal structure. The subject attempted to pass the dowel through their forearm, but this caused their arm to detach from their body past the dowel. The wad of flesh immediately lost its shape upon contact with the table, "splattering" in a viscous, semi-fluid manner, and causing the subject visible discomfort. The mass of flesh surged back towards the subject after a moment, rejoining the arm and reforming the missing appendage. The test was aborted due to the emotional response of the subject.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>The subject was unused to parts of their flesh separating, and quickly panicked. The test did establish that we have a subject who can pass through fine meshes, and it suggested they are malleable enough to squeeze into small gaps as well. If we want to keep this subject contained, it may serve us to earn compliance from them. That is likely cheaper than sealing off every crack in their cell so they can't slither out.</em></td>
+</tr>
+</table>
+<p><br/>
+<br/>
+<strong>[Automated alert: This file has been randomly selected for routine auditing by RAISA. This message will be automatically cleared once the audit concludes.]</strong></p>
+<p><strong>[Automated alert: RAISA has determined this file needs further review. Edits have been locked, and a RAISA case specialist has been dispatched to resolve any issues. We apologize for any inconvenience this may cause.]</strong></p>
+<p><span style="color: red">You are accessing this file from a privileged device, and are cleared to view the current RAISA investigation log for this file.</span></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Open RAISA investigation log 9216-A</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Welcome, Agent Ambrose.</a></div>
+<div class="collapsible-block-content">
+<div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;">
+<div style="text-align: center;">
+<h4 id="toc0"><span>NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION</span></h4>
+<p>This file has been heavily tampered with, with almost all supplementary files displaying some signs of forgery, dissembly, or post-facto alteration of important details.</p>
+<p>This investigation is no longer just an audit. It concerns the ability of RAISA to maintain the integrity of Foundation records in the face of a malicious internal actor, and as such, is both core to our mission statement, and a display of our skills as a department.</p>
+<p>To the newcomers to this case: read through the items below, in their entirety, before reporting for duty to Agent Ambrose. Pay particular intention to item 0, which was recovered from Field Site W-8's security systems. It should make clear the nature of this investigation.</p>
+<p>— Maria Jones, Director, RAISA</p>
+</div>
+</div>
+<p><span style="font-size:xx-large;">ITEM 0: Inciting evidence</span><br/>
+Surveillance from Theory Room 3, Field Site W-8.</p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Video Log Transcript</strong></p>
+<p><strong>Start time:</strong> 20:36:53, 12 Mar 2018</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><em>The room is a modified break room, with several blackboards covering the walls, and a central conference table. The blackboards are full of writing, and there are papers spread across the table. There are two entities in the room, seated at the table a few chairs apart, each near a different stack of papers. The first is Sr. Researcher Angela Heinz, while the second is SCP-9216. Both are dressed in standard issue attire for researchers. Such attire is forbidden for SCP objects.</em></p>
+<p><em>At the beginning of the recording, Heinz is scribbling on a piece of paper, while SCP-9216 is reading a printout. SCP-9216 maintains the components of a general facial expression on the front of its head for the entire recording, and appears to display the same amount of focus as Researcher Heinz. After some time, SCP-9216 crumples up their paper and tosses it at Heinz, making a frustrated grunt. Its voice is roughly human.</em></p>
+<p><strong>SCP-9216:</strong> Heinz, that's another dud. I'm telling you that this won't be on SCiPNET. It's conventional science.</p>
+<p><em>Heinz looks up, scowling.</em></p>
+<p><strong>HEINZ:</strong> Already? We usually finish the internal review before you start moaning.</p>
+<p><strong>SCP-9216:</strong> Internal review is for nonstandard science. This is plastics. I think they use plastics out in the real world.</p>
+<p><em>Heinz snorts, and looks back at her scratchwork, muttering.</em></p>
+<p><strong>HEINZ:</strong> Fine, if you want to trawl civilian journals, then do it. I feel like I'm on to something here.</p>
+<p><em>SCP-9216 looks at them for a moment, before getting up and exiting theory room 3. It returns roughly thirty seconds later, carrying a Foundation-issue laptop. Heinz does not look up as it sits back down, instead staring at her own page. SCP-9216 opens the laptop, and begins tapping the table impatiently as it starts up. After several minutes, it glances at Heinz.</em></p>
+<p><strong>SCP-9216:</strong> Your approach is working, you said?</p>
+<p><em>HEINZ tosses her pencil down the table.</em></p>
+<p><strong>HEINZ:</strong> I said I thought I was on to something.</p>
+<p><strong>SCP-9216:</strong> Something changed, then?</p>
+<p><strong>HEINZ:</strong> Fine. Fine! I'll get my laptop, Vollard.</p>
+<p>[END LOG]</p>
+</div>
+<p><span style="font-size:xx-large;">Item 1: AIC alert to Maria Jones</span></p>
+<div class="dyna-email-container">
+<div class="dyna-email">
+<div class="header-box">
+<div class="top-left-box cc-none">
+<div class="from-box">From:</div>
+<div class="to-box">To:</div>
+<div class="cc-box cc-none">CC:</div>
+<div class="subject-box">Subject:</div>
+</div>
+<div class="top-middle-box cc-none">
+<div class="from-name-box"><span style="white-space: pre-wrap;">wilbur.aic@scp.int</span></div>
+<div class="to-name-box"><span style="white-space: pre-wrap;">jones@scp.int</span></div>
+<div class="cc-text-box cc-none"><span style="white-space: pre-wrap;">none</span></div>
+<div class="subject-text-box">ALERT: Compromised documentation, SCP-9216</div>
+</div>
+
+</div>
+<div class="content-box">
+<hr/>
+<p>Director Jones,</p>
+<p>A routine audit of footage at Field Site W-8 has revealed evidence that documentation related to SCP-9216, an anomalous humanoid contained at the site, is of questionable integrity. I recommend RAISA personnel be sent to the site immediately. To re-establish the integrity of documents surrounding SCP-9216, I suggest agents be directed to answer the resolve the following issues I have found during my audit:</p>
+<ol>
+<li>The subject is designated as Thaumiel, but the only listed reason for this in extant documentation is that the subject is cooperative, and has somewhat unusual physiology. This does not meet the standard 'Three-Step' Thaumiel criteria, and is at best a major error in classification by the subject's head researcher.</li>
+<li>The supplementary files available to me are missing any record of the anomaly's acquisition. While some older anomalies simply have not digitized the physical paperwork and the Foundation allows physical copies to suffice, in this particular case I would like the copies digitized.</li>
+<li>While there are abundant logs of SCP-9216's efforts in helping to contain other anomalous objects, tests of its own safety are minimal, which raises concerns when given the amount of exposure it has to other researchers, as well as to other anomalous objects. Were such tests ever done?</li>
+<li>In footage from 12 March 2018, an employee, Senior Researcher Heinz, was observed referring to SCP-9216 as "Vollard." This is the surname of Senior Researcher Mary Vollard, who is also the head researcher on file for SCP-9216. In the same footage, SCP-9216 is seen to exit and re-enter theory room 3 using a Foundation key card at time 20:41:15. Site security logs confirm that SCP-9216 did so using Senior Researcher Mary Vollard's keycard. Why was SCP-9216 referred to with this surname, and why did a Foundation researcher permit an anomalous object to use a Level 3 keycard?</li>
+</ol>
+</div>
+<div class="footer-box name-Wilbur.aic">
+<div class="bottom-left-box title-RAISA automated search construct">
+<div class="name-box name-Wilbur.aic">Wilbur.aic</div>
+<div class="title-box title-RAISA automated search construct">RAISA automated search construct</div>
+<div class="sign-off-box">Secure, Contain, Protect</div>
+</div>
+
+</div>
+</div>
+</div>
+<p><span style="font-size:xx-large;">Item 2: Field Site W-8, new researcher Q&amp;A</span><br/>
+Agent Will Ambrose arrived at Field Site W-8 on 14 March 2018, with a microphone and camera concealed on his person. His visit was unannounced, and was meant to gather information without alerting anyone to the active investigation. When he arrived, he found the site was holding an orientation for new employees, and opted to attend in order to learn more about the work culture on-site. When the various personnel were split into groups, Agent Ambrose chose to follow the session for new research staff.</p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Video Log Transcript</strong></p>
+<p><strong>Start time:</strong> 10:03:22, 14 Mar 2018</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><em>The room is clearly meant for presentations, and at least fifty people are seated in rows before a projector. Agent Ambrose is standing by the rear door to the auditorium, and has a vantage of the whole room. He is facing the projector screen, which rolls up as people politely clap at the end of the "Site Clearances and You" presentation. Director Graham, a portly, balding man in his fifties, approaches the podium. He beams at the audience.</em></p>
+<p><strong>GRAHAM:</strong> Alright, everyone, we are coming up on the end of our orientation, and tomorrow you'll all be receiving your lab assignments. I know many of you are recent hires, and maybe you are nervous about jumping into lab work with the Foundation. Maybe you are curious about some of the differences I mentioned in how a field site is different from regular sites they taught you about in onboarding. Maybe you just have a question about site culture here.</p>
+<p>Well, whatever it is, we have this last hour reserved for a "no stupid questions" Q&amp;A. I mean it. I'll explain the Foundation handbook if you want. We want you comfortable with the general stuff, because you would not believe the specifics you have to deal with at a Field Site.</p>
+<p><em>A hand rises near the front of the room. Graham calls out to them.</em></p>
+<p><strong>GRAHAM:</strong> You, there. Speak up, now!</p>
+<p><strong>ATTENDEE:</strong> Um, during the tours, our guide told us we can test dangerous stuff on an SCP we have here. Is that true? I thought cross-testing SCPs was banned.</p>
+<p><em>Graham laughs, and turns to an agent by the front door. Graham motions at them, and the agent exits the room.</em></p>
+<p><strong>GRAHAM:</strong> Oh boy, that's the first question… five years running now! So, no, we do not test on an SCP, although, SCP-9216 is one of our most treasured containment assets at this site, and they are involved in testing here. Not tested on, though!</p>
+<p><em>The agent returns to the room, and there are scattered gasps as SCP-9216 enters the room behind them. As before, it is dressed in standard Foundation researcher attire. It walks up to Graham's side, hands thrust in its pockets.</em></p>
+<p><strong>GRAHAM:</strong> Everyone, this is SCP-9216. She has assisted with more files than some of you will see in your entire careers here. Do you have anything you want to say to them?</p>
+<p><strong>SCP-9216:</strong> Eh, hello everyone. I'm SCP-9216. You can call me that, it's fine, and yes, I tested, you can't catch… whatever I've got. I have been here a long time, doing research work, and I really don't want to see anyone get hurt. If you get something strange in your lab, or you just want some extra help, Director Graham put me on the site directory, somehow, and you can just message me there to ask if I can collaborate. Don't be shy. Is that good?</p>
+<p><strong>GRAHAM:</strong> It's perfect. I'd recommend every one of you to consider her offer, there are a lot of researchers that owe their careers here to SCP-9216. Does anyone have any questions for her? … no? Well, alright, you can go. Thank you for coming.</p>
+<p><strong>SCP-9216:</strong> Of course. I'm sure I'll see some of you around.</p>
+<p>[END LOG]</p>
+</div>
+<p><span style="font-size:xx-large;">Item 3: Excerpt from the personnel file of Sr. Researcher Mary Vollard, Director Graham's comments</span></p>
+<blockquote>
+<p><strong>Annual review, 2010</strong><br/>
+Another year of exemplary output from M. Vollard. She celebrated her 25th anniversary with the Foundation this past October, and it took some urging to get her to take a week off to enjoy the milestone. I am thankful she came back so quickly, though; one of the new hires had improperly stored what he failed to recognize as some Maxwellist tech in an unsecured server room, and M. Vollard caught it in her first hour back. Poor kid got his ear shouted off, but I can't say I can blame her. That's a good segue:</p>
+<p>We received three workplace complaints about M. Vollard since last year, down significantly from the seven we received when we lost H. Vollard in 2002. Two of the complaints came from younger, more inexperienced researchers, new enough to the site to get blindsided by her temper, and one came from A. Heinz. The latter was resolved with a third-party mediator, but I suspect it was just a stunt from A. Heinz to get under M. Vollard's skin, as per usual. Both parties declared the issue resolved, though, and the mediator signed off, so no disciplinary action was taken.</p>
+<p>M. Vollard also completed a training course on stewardship of sentient anomalous objects, as mandated by the Ethics Committee, following the loss of object B-2332 in a breach due to what the investigators termed "an overzealous containment response." I will not comment on the appropriateness of her response, but I stand behind M. Vollard as one of our most senior and trusted researchers, and stress to the committee the need for rapid action at a Field Site. I have faith she will continue to uphold Foundation principles going forward.</p>
+</blockquote>
+<p><span style="font-size:xx-large;">Item 4: Interview 1 with Director Graham</span><br/>
+Prior to this interview, Agent Ambrose had flagged a small assortment of files related to Field Site W-8 for review in order to conceal his interest in SCP-9216 specifically. Agent Ambrose claimed the files were flagged automatically by an outdated .AIC, and said he wished to confirm several details of the files with the director as a bureaucratic formality. The only relevant portion of the interview relates to SCP-9216 itself, which is excerpted below.</p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Video Log Transcript</strong></p>
+<p><strong>Start time:</strong> 1:23:57, 14 Mar 2018</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>AMBROSE:</strong> … very good. Thank you for your patience so far, Director Graham. Now, next, I see… SCP-9216. Oh, yes, the Thaumiel. Between you and me, the file was probably just fine, but admin recently pushed out some new regulations, and now Wilbur is flagging anything that doesn't comply with a two-week old code.</p>
+<p><strong>GRAHAM:</strong> Again? That must be on us, really sorry. We have been running lean for some time now, so it must have slipped by some of the researchers. I'll need to—</p>
+<p><strong>AMBROSE:</strong> It's fine, Director Graham. I'm here now, so why don't we step through the checklist together, and see what needs to be corrected?</p>
+<p><strong>GRAHAM:</strong> By all means.</p>
+<p><strong>AMBROSE:</strong> Wonderful. Now, let's see… First, Wilbur seems to have a problem with the Thaumiel designation itself, says it does not meet the Three-Step criterion. Are you familiar with that?</p>
+<p><strong>GRAHAM:</strong> Can't say I am. Back when I was in the lab, I never did work on anything above Euclid.</p>
+<p><strong>AMBROSE:</strong> That's quite alright. It just means that there is not enough information in the file about why SCP-9216 should be Thaumiel. It seems like the object has a talent for containment, but it isn't anomalous, and Thaumiels need to be anomalously good at containment, if that makes sense.</p>
+<p><strong>GRAHAM:</strong> Oh, oh, yes, I see.</p>
+<p><strong>AMBROSE:</strong> So, what is the anomalous skill SCP-9216 has for containment? It is fine if there is none, it just means the object was filed back when we were more lax, and we can reevaluate it as needed, so—</p>
+<p><strong>GRAHAM:</strong> Oh, no, doesn't it say, in the file? It's very good, very good at Sarkic anomalies, you see.</p>
+<p><strong>AMBROSE:</strong> Good at?</p>
+<p><strong>GRAHAM:</strong> Oh, sorry, good at handling. I mean that, well, the anomaly is Sarkic itself — perfectly safe of course, that should be in the logs —</p>
+<p><strong>AMBROSE:</strong> It is, yes.</p>
+<p><strong>GRAHAM:</strong> — and that makes it very resilient to other Sarkic anomalies. If you're already made out of putty, they can't really, ah, warp you more.</p>
+<p><strong>AMBROSE:</strong> I see. Is there a reason this is not in the file?</p>
+<p><strong>GRAHAM:</strong> It isn't? I'll have a word with the head researcher after this.</p>
+<p><strong>AMBROSE:</strong> Senior Researcher Mary Vollard?</p>
+<p><strong>GRAHAM:</strong> Yes, her. Excellent, wonderful employee, but not the best at administrative work. Some of the other files you asked me about are hers as well. She must have been getting worn out lately. I should have her workload lightened.</p>
+<p><strong>AMBROSE:</strong> That would be a good idea. That aside, Wilbur also flagged the file as missing an acquisition record. He is being rather stubborn with it, so would it be possible for you to upload a copy of it?</p>
+<p><strong>GRAHAM:</strong> Of course, it should be in storage somewhere. I'll ask Mary to handle that too.</p>
+<p><strong>AMBROSE:</strong> Should I speak to her? That's two issues now that we can trace to her, so I could just walk her through the updated guidelines myself.</p>
+<p><strong>GRAHAM:</strong> If you are still here when she has recovered, then sure. She's been out all week with a sprained ankle.</p>
+<p><strong>AMBROSE:</strong> I see. Then please speak to her about those two issues, and also ask her to upload any remaining testing logs she has on SCP-9216 as addenda to the object file. Thaumiels now need a bit more information than is currently online, mainly to confirm the safety of the object, <em>especially</em> if the object will be interacting with other SCP objects.</p>
+<p><strong>GRAHAM:</strong> Of course, I'll note that.</p>
+<p><strong>AMBROSE:</strong> Thank you. Now, moving on…</p>
+<p>[END LOG]</p>
+</div>
+<p><span style="font-size:xx-large;">Item 5: Conversation 1 between Director Graham and SCP-9216</span><br/>
+The following conversation was picked up by the security system of Field Site W-8, immediately following the conversation of Item 4. Director Graham was observed to enter SCP-9216's living quarters, and begin a conversation; due to SCP-9216's record of good behavior, no cameras were present within its living quarters. Accordingly, only parts of the resultant conversation were audible.</p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Video Log Transcript</strong></p>
+<p><strong>Start time:</strong> 13:54:11, 14 Mar 2018</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><em>The dialogue is inaudible at first. Approximately 107 seconds after Director Graham entered, the subjects move closer to the doorway, and their conversation is picked up by a camera in the hallway.</em></p>
+<p><strong>GRAHAM:</strong> Well, he said it was just a formality, and we drew up a list of desired changes.</p>
+<p><strong>SCP-9216:</strong> Even my file?</p>
+<p><strong>GRAHAM:</strong> He had a few more things to say there, but otherwise, yes. He wanted a bit more information. Phrased it as their construct being finicky.</p>
+<p><strong>SCP-9216:</strong> It's possible that's true, RAISA cares more about training specialists than getting the best software. They use Vim on the older machines there, I've heard… That can't be all.</p>
+<p><strong>GRAHAM:</strong> He did ask to speak to Senior Researcher Mary Vollard. He wanted to help her make his requested edits.</p>
+<p><strong>SCP-9216:</strong> Horseshit. I've never heard of an auditor going out of their way to speak to a researcher. Did you see his badge?</p>
+<p><strong>GRAHAM:</strong> No first name listed.</p>
+<p><strong>SCP-9216:</strong> Oh, oh no, that could be bad. The regular accountant types, they're level 2, I think. Full credentials on site visits for those. If he had a redacted card, he could be an actual investigator…</p>
+<p><strong>GRAHAM:</strong> Really? Mary, paranoia isn't going to help here.</p>
+<p><strong>SCP-9216:</strong> Two days after I get a lock on my file that I have never seen in my life, an agent from RAISA shows up. That's cause for paranoia!</p>
+<p><strong>GRAHAM:</strong> And there's not a damn thing you can do about it. Just calm down, I'm on edge too and you're making me feel worse. Listen, I'll go talk to Angela. She's responsible for some of the flagged files, and she'll start making some edits to get everything on our end in order. I think we ought to fix everything we can, and give Mister Ambrose, whoever he is, no reason to stick around.</p>
+<p><strong>SCP-9216:</strong> You're… you're right. Yes, you're right. Okay. I just need to make some edits… pace them out, get everything done timely, but not too timely.</p>
+<p><strong>GRAHAM:</strong> That's all there is to it.</p>
+<p><strong>SCP-9216:</strong> Yes… it's just strange to remember you can be an effective manager, when you need to be.</p>
+<p><strong>GRAHAM:</strong> You're lucky I don't like writing people up, you know?</p>
+<p><em>Graham exits SCP-9216's living unit, and calls back to it.</em></p>
+<p><strong>GRAHAM:</strong> We'll make it through this, Mary. See you tomorrow.</p>
+<p>[END LOG]</p>
+</div>
+<p><span style="font-size:xx-large;">Item 6: Interview with Sr. Researcher Heinz</span></p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Audio Log Transcript</strong></p>
+<p><strong>Start time:</strong> 12:08:13, 15 Mar 2018</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>AMBROSE:</strong> I appreciate your fast response, Dr. Heinz. All of your entries seem to be fine now, and Wilbur should have lifted the edit lock by now.</p>
+<p><strong>HEINZ:</strong> He did, a bit before I arrived. It makes me curious what this is about, Agent Ambrose.</p>
+<p><strong>AMBROSE:</strong> Well, the number of flagged SCP entries for this site were a bit higher than normal. There can be any number of reasons for this. I wanted to check with a more experienced researcher to make sure that this was just random chance, and not, shall we say, symptomatic of some larger problem at the site.</p>
+<p><strong>HEINZ:</strong> What? Agent, are you insinuating something?</p>
+<p><strong>AMBROSE:</strong> Dr. Heinz, I am being open with you about concerns that RAISA has with your site — concerns, I want to stress, that do not extend to you. You have a sterling record, and when I look at the site roster, Wilbur floated your name as one of the most loyal to the Foundation mission. If there is something unusual happening on site, I thought that you were one of the people here who would be be able to help us resolve it.</p>
+<p><strong>HEINZ:</strong> Loyalty? Hah. I like doing research and having a secure place to do it. The Foundation provides that, so I like it here. I'm a bug happy with its nest, that's all. That said, what are you talking about with these… unusual happenings? All these flags were from those new regulations your people pushed out recently. People don't do paperwork fast, Agent Ambrose. That's not anomalous, so I don't know what you expect to hear. I think the lab rats down here collectively kicked their cans, but now we're caught up. That's all.</p>
+<p><strong>AMBROSE:</strong> That's not true of all of Wilbur's flags.</p>
+<p><strong>HEINZ:</strong> Ah? What's that mean?</p>
+<p><strong>AMBROSE:</strong> Some files were in conflict with regulations as old as five years, and they all appear to be files belonging to Dr. Mary Vollard.</p>
+<p><strong>HEINZ:</strong> Oh, of course she'd be making mistakes.</p>
+<p><strong>AMBROSE:</strong> She is your colleague, correct?</p>
+<p><strong>HEINZ:</strong> Oh, I babysit her from time to time, yes, when I have to catch her mistakes. I've been working with her since she transferred here, back in '92. You're saying we have this nice visit from RAISA because she forgot to format correctly?</p>
+<p><strong>AMBROSE:</strong> In a way. It's rare for Wilbur to have strong reactions to existing files, but he even recommended a few of hers for Level 4 oversight.</p>
+<p><strong>HEINZ:</strong> Hah! You know, we have a shared file, and she had the gall to tell me it was my fault it was flagged. My fault! She kept that up after I brought up the edit history, and showed her when she deleted Appendix D by accident. She's incorrigible.</p>
+<p><strong>AMBROSE:</strong> Do you think the flags on her other files were due to similar accidents?</p>
+<p><strong>HEINZ:</strong> Oh, likely. If you tell me which files Wilbur fingered, I could tell you more.</p>
+<p><strong>AMBROSE:</strong> I cannot. Do you mind telling me the last time you spoke to Doctor Vollard in person?</p>
+<p><strong>HEINZ:</strong> Oh. Heh. I get it now.</p>
+<p><strong>AMBROSE:</strong> Doctor Heinz?</p>
+<p><strong>HEINZ:</strong> Agent Ambrose, I have my problems with Mary, but I liked working with her husband. Have you ever read his file?</p>
+<p><strong>AMBROSE:</strong> Is this relevant?</p>
+<p><strong>HEINZ:</strong> Yes. He got posthumous honors, you know. It was a big deal. We have a plaque on site, dedicated to Henry Vollard for his heroism.</p>
+<p><strong>AMBROSE:</strong> I was not aware.</p>
+<p><strong>HEINZ:</strong> That's a shame. I would think a RAISA investigator would do some reading on the site they are assigned to beyond the case file.</p>
+<p><strong>AMBROSE:</strong> I am just a —</p>
+<p><strong>HEINZ:</strong> Let me finish. This was back in the Omega-7 days, and every site had some related special project happening. I think if you had a few projects under your belt and submitted a proposal that had the word "cross-testing" in the abstract, you would get funding more often than not. Well, there was some prick on site, Roubel, who was gunning for the outgoing director's spot. He sent in this flimsy proposal that got greenlit. No idea what was in it, and Roubel waved us off whenever we asked for the details. He just kept getting shipments, level 4 classified, need-to-know. I was ready to start a fight with that grandstanding piece of shit when something got loose. It sent the whole site into lockdown. I just stayed put when the site security started blaring. I was on the other end of the site. Henry and Mary, though, they were right next to Roubel. I heard from others that Mary took the other researchers and went one way, while Henry went into Roubel's lab, and never came out. Neither did Roubel.</p>
+<p><strong>AMBROSE:</strong> Riveting. What are you trying to tell me, Doctor Heinz?</p>
+<p><strong>HEINZ:</strong> I'm just letting you know that Mary is a bitch, but her husband is better than a saint, he's a martyr. Whatever Roubel had in there was foul. They were forced to call in an MTF, and they started shooting as soon as they got in the lab. Whatever Henry did in there, O5 said he saved us all. He probably saved me. And despite all of that, Mary took a week of bereavement, and then came back to tend to her and Henry's projects.</p>
+<p><strong>AMBROSE:</strong> Her husband sounds like an impressive man, but that does not exempt Mary Vollard from being investigated. There are genuine problems with her files, Doctor Heinz.</p>
+<p><strong>HEINZ:</strong> Like with SCP-9216?</p>
+<p><strong>AMBROSE:</strong> Would you care to explain why that file, in particular, comes to mind?</p>
+<p><strong>HEINZ:</strong> No, I would not. Are you holding me for further questioning?</p>
+<p><strong>AMBROSE:</strong> … no, I am not.</p>
+<p><strong>HEINZ:</strong> Then I believe our conversation is over.</p>
+<p>[END LOG]</p>
+</div>
+<p><span style="font-size:xx-large;">Item 7: SCiPNET message from Angela Heinz</span><br/>
+The following message was sent approximately one hour after Agent Ambrose's interview with Angela Heinz.</p>
+<div class="dyna-email-container">
+<div class="dyna-email">
+<div class="header-box">
+<div class="top-left-box cc-none">
+<div class="from-box">From:</div>
+<div class="to-box">To:</div>
+<div class="cc-box cc-none">CC:</div>
+<div class="subject-box">Subject:</div>
+</div>
+<div class="top-middle-box cc-none">
+<div class="from-name-box"><span style="white-space: pre-wrap;">afheinz49@scp.int</span></div>
+<div class="to-name-box"><span style="white-space: pre-wrap;">maryvollard@scp.int</span></div>
+<div class="cc-text-box cc-none"><span style="white-space: pre-wrap;">none</span></div>
+<div class="subject-text-box">re:re:re:re:re:fix supplement c dammit</div>
+</div>
+
+</div>
+<div class="content-box">
+<hr/>
+<p>Vollard,</p>
+<p>I just pushed new updates to the file. Read them and take them seriously. I just had a meeting with a RAISA agent who came by telling me you had terrible formatting in your other files, and that my formatting is much better. Maybe you should listen to me.</p>
+He mentioned SCP-9216 is your worst. Just thought you should know where your failings are. Maybe you should pay special attention to it.</div>
+<div class="footer-box name-Angela Heinz">
+<div class="bottom-left-box title-Senior Researcher, Field Site W-8">
+<div class="name-box name-Angela Heinz">Angela Heinz</div>
+<div class="title-box title-Senior Researcher, Field Site W-8">Senior Researcher, Field Site W-8</div>
+<div class="sign-off-box">Secure, Contain, Protect</div>
+</div>
+
+</div>
+</div>
+</div>
+<p>It was detected by Wilbur.aic shortly after being sent, who forwarded it to Agent Ambrose over suspicions of collusion; the message was not intercepted, since Wilbur.aic did not deem it to meet RAISA standards for actionable collusion. Agent Ambrose had Doctor Heinz placed on administrative leave for the remainder of the investigation, with her access to her accounts revoked in the interim.</p>
+<p>Agent Ambrose disputes that the above message did not constitute actionable collusion, and believes that Wilbur.aic is misreading RAISA bylaw 17.4.23. He has notified Director Maria Jones of the bylaw's imprecise wording, and Agent Ambrose recommends that it be rephrased, or that an internal memo be circulated clarifying its meaning.</p>
+<p><span style="font-size:xx-large;">Item 8: Interview 1 with SCP-9216</span></p>
+<p>After Sr. Researcher Heinz contacted Sr. Researcher Vollard, it was decided that Agent Ambrose should interview SCP-9216 as soon as was possible. As site administrators were suspected to be complicit in the database tampering, the interview was held before most site personnel arrive for work.</p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Video Log Transcript</strong></p>
+<p><strong>Start time:</strong> 6:33:02, 15 Mar 2018</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><em>The video feed shows a type-II humanoid interview room, painted black as per code, with a single table and two chairs in the center. A door opens, out of view, and SCP-9216 enters, dressed in standard researcher attire, visibly upset. It takes a seat while scanning the room. Agent Ambrose follows it in, and takes the other chair. He pulls a legal pad out of his suit jacket along with a pen. SCP-9216 stares at him intensely.</em></p>
+<p><strong>AMBROSE:</strong> Now, let me say it again for the record: SCP-9216, my name is Agent Ambrose, and I am here from the Foundation's recordkeeping department. There have been some anomalies with the files at the site, and yours in particular has made us a bit confused. All I want to do is ask you a few questions about yourself, and get this all sorted out.</p>
+<p><strong>SCP-9216:</strong> Okay.</p>
+<p><strong>AMBROSE:</strong> Good. Let's go down your file. The first thing I see is the creation date, which is near the end of 2011. Is that when you first arrived here?</p>
+<p><strong>SCP-9216:</strong> I think that's right.</p>
+<p><strong>AMBROSE:</strong> Can you tell me about how you entered Foundation custody?</p>
+<p><strong>SCP-9216:</strong> What do you mean by that?</p>
+<p><strong>AMBROSE:</strong> I would like you to narrate the experience to me, SCP-9216. Modern regulations state that every file needs to have an acquisition record, and yours does not have one.</p>
+<p><strong>SCP-9216:</strong> Do regulations allow you to just put down an SCP's word for their acquisition record?</p>
+<p><strong>AMBROSE:</strong> They do not, but your word is a start.</p>
+<p><strong>SCP-9216:</strong> There is not much to say. The Foundation is here and the GOC is all over this area. I needed some place to stay. That's all.</p>
+<p><strong>AMBROSE:</strong> That's all?</p>
+<p><strong>SCP-9216:</strong> What do you want me to say? How they gave me a room and started running tests? I complied. Of course I did. Every guard here has guns and tasers.</p>
+<p><strong>AMBROSE:</strong> Well, then, may I ask what you were doing before you arrived here?</p>
+<p><strong>SCP-9216:</strong> How long before?</p>
+<p><strong>AMBROSE:</strong> Let's say the previous week.</p>
+<p><strong>SCP-9216:</strong> I would prefer not to.</p>
+<p><strong>AMBROSE:</strong> … interesting. As a follow-up, I would like to ask another question about your past. Is this the physiology you were born with, or were you the victim of some sort of anomalous effect?</p>
+<p><strong>SCP-9216:</strong> W-what?</p>
+<p><strong>AMBROSE:</strong> Director Graham referred to you as a "sarkic anomaly" in conversation. That term raises some eyebrows, you see.</p>
+<p><strong>SCP-9216:</strong> … no, I was not born like this.</p>
+<p><strong>AMBROSE:</strong> I see. Can you tell me about how your body came to be like this?</p>
+<p><strong>SCP-9216:</strong> You're asking about something very unpleasant. Please, can we not discuss it?</p>
+<p><strong>AMBROSE:</strong> We can come back to it. Instead, can you tell me what you did with your life before your body was like this?</p>
+<p><strong>SCP-9216:</strong> Why are you doing this?</p>
+<p><strong>AMBROSE:</strong> We need to complete your file, SCP-9216. It is missing so much right now.</p>
+<p><strong>SCP-9216:</strong> Stop it. Do you think I'm an idiot? All these years and you can't even say what you mean to my face? I gave you bastards <em>decades.</em> Spit it out.</p>
+<p><em>Ambrose puts his pen down and notepad down, and audibly sighs. Then, he stiffens, and stands.</em></p>
+<p><strong>AMBROSE:</strong> Pull your hands off the table. Now.</p>
+<p><strong>SCP-9216:</strong> Huh?</p>
+<p><strong>AMBROSE:</strong> Now!</p>
+<p><em>SCP-9216 complies. Ambrose stares at the tabletop, and SCP-9216 follows his eyes.</em></p>
+<p><strong>SCP-9216:</strong> Oh, um, wait, this table is—</p>
+<p><em>Ambrose speaks into a microphone in his lapel; inaudible. The door opens, and site security enters. SCP-9216 is escorted from the room, as Ambrose remains; the anomalous entity does not resist.</em></p>
+<p><em>He waits for fifteen minutes before a field specialist in hazmat attire arrives in the room. The specialist takes several samples, and checks Ambrose for contamination. Until he is cleared to leave, Ambrose stares at the tabletop. Visible on the surface are two uneven handprints, freshly etched into the surface, on the far side of the table.</em></p>
+<p>[END LOG]</p>
+</div>
+<p><span style="font-size:xx-large;">Item 9: Summary of chemical findings</span></p>
+<p>After the preceding interview, SCP-9216's cell was examined. It contains several metal surfaces with which SCP-9216 makes frequent contact. Each displayed signs of chemical etching consistent with exposure to a weak acid, such as dilute hydrogen chloride. The site employs metal door handles, and in areas which SCP-9216 frequents, the same signs of etching were visible.</p>
+<p>Security footage from the interview was scoured, and it was verified that the table had no visible defects before the interview. The damage incurred was very shallow, only stripping the top layer of metal, but was still visible to the naked eye. Environmental testing determined this to be the result of a dilute solution of hydrochloric acid, with some organic compounds found in the human stomach mixed in.</p>
+<p>There are no mentions of chemical excretions in SCP-9216's file.</p>
+<p><span style="font-size:xx-large;">Item 10: Transcript of Mary Vollard on 7 August 2008, regarding Foundation policy</span></p>
+<p>Wilbur.aic discovered the following security footage of Field Site W-8's break room, which includes Sr. Researcher Vollard speaking about news from a sister site. Agent Ambrose deemed it relevant to the current investigation.</p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Video Log Transcript</strong></p>
+<p><strong>Start time:</strong> 12:19:11, 7 Aug 2008</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><em>Sr. Researcher Vollard and Director Graham are alone at a table. They are both still eating, and speak between bites of food. Graham taps a printout on the table in front of them with his knuckles, drawing attention to it, while biting into his sandwich.</em></p>
+<p><strong>GRAHAM:</strong> Look at this. Remember Greeley, from before you transferred?</p>
+<p><strong>VOLLARD:</strong> Mmm? Oh, him. Yeah, the xenobiologist. What is this? … honored, employee of the month? Who'd he pay off?</p>
+<p><strong>GRAHAM:</strong> No, no bribes. Just luck. I heard he got something classed Thaumiel.</p>
+<p><strong>VOLLARD:</strong> Idiotic. He didn't even do anything. They bring the objects to you!</p>
+<p><strong>GRAHAM:</strong> Well, it's still a Thaumiel. It's not easy to recognize the potential for one, that takes an eye.</p>
+<p><strong>VOLLARD:</strong> An eye for recklessness?</p>
+<p><strong>GRAHAM:</strong> What?</p>
+<p><strong>VOLLARD:</strong> Did I stutter?</p>
+<p><strong>GRAHAM:</strong> I get the feeling you aren't just talking about Greeley.</p>
+<p><strong>VOLLARD:</strong> I'm not. Thaumiel was a mistake. It makes people look for magic bullets instead of doing honest science. It doesn't help when O5 lavishes the few good examples with praise. Oh, look at this, I don't know, indestructible box. Isn't it grand? If you ignore all the failures and the damage 76 did, then sure. I'm just afraid we're going to atrophy our research branches in favor of 'talent spotters' like Greeley.</p>
+<p><strong>GRAHAM:</strong> So you'd never push for Thaumiel, huh?</p>
+<p><strong>VOLLARD:</strong> You know, one of the junior researchers asked me that, back… oh, it must've been twenty years ago.</p>
+<p><strong>GRAHAM:</strong> I'm surprised one of them wanted to talk to you.</p>
+<p><strong>VOLLARD:</strong> He was new. Didn't know better yet. I had him amnesticized for using terms way above his clearance level, but before I did, I tore into him. I told him these things aren't his friends, never will be. Keep it behind the glass; don't let it <em>be</em> the glass. I thought that would be common sense…</p>
+<p>[END LOG]</p>
+</div>
+<p><span style="font-size:xx-large;">Item 11: Interview 2 with Director Graham</span></p>
+<p>Agent Ambrose had an interview with himself inserted into Director Graham's schedule in order to discuss what had been discovered about SCP-9216. The site secretary was told to inform him of the meeting as soon as he arrived.</p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Video Log Transcript</strong></p>
+<p><strong>Start time:</strong> 9:00:14, 16 Mar 2108</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><em>Director Graham's office. The director is sitting at his desk, staring ahead, when Agent Ambrose opens the door without knocking. He takes the seat in front of the director.</em></p>
+<p><strong>AMBROSE:</strong> Hello, director.</p>
+<p><strong>GRAHAM:</strong> Agent Ambrose.</p>
+<p><strong>AMBROSE:</strong> I wanted to talk to you about SCP-9216, as I am sure you're aware. Your cooperation will reflect well on you during the follow-up investigation.</p>
+<p><strong>GRAHAM:</strong> I'm sure.</p>
+<p><strong>AMBROSE:</strong> Indeed. Why isn't it recorded anywhere in SCP-9216's documentation that it can secrete a corrosive acid?</p>
+<p><strong>GRAHAM:</strong> I'm not sure.</p>
+<p><strong>AMBROSE:</strong> You are aware that this visit is a courtesy, correct? RAISA will learn the answer to that question, as well as any other question I might ask you. I am merely offering you the chance to offer it up and be acknowledged accordingly. I would urge anyone in a situation like yours to take advantage of such generosity.</p>
+<p><strong>GRAHAM:</strong> I'm not being evasive. I didn't know she could do that.</p>
+<p><strong>AMBROSE:</strong> Doubtful.</p>
+<p><strong>GRAHAM:</strong> H-hey, listen here, I am being serious! Mary said she was sure there was no danger to anyone else, and I trust her! Why the hell would I go asking her for— for a physical, or something?</p>
+<p><strong>AMBROSE:</strong> Then, am I to believe that SCP-9216 is unaware of having such a capability?</p>
+<p><strong>GRAHAM:</strong> Well…</p>
+<p><strong>AMBROSE:</strong> Director Graham, are you about to say something reckless?</p>
+<p><strong>GRAHAM:</strong> F-fine. There's… no way. She'd know. When she… when she first got like this, she spent months running all these tests. Every day, that was all she did. She wanted to make sure she was safe. I'm sure she would've learned something like that about herself.</p>
+<p><strong>AMBROSE:</strong> Then, why are there only three entries on the testing logs for SCP-9216?</p>
+<p><strong>GRAHAM:</strong> Because she isn't stupid. She…</p>
+<p><strong>AMBROSE:</strong> Continue, Director Graham. You're doing a wonderful job.</p>
+<p><strong>GRAHAM:</strong> She didn't want the file to have… rough edges. Nothing to make people want to double check it. Secreting acid, that sounds like it would raise eyebrows. Not that many, but, you know, maybe one person would take a second look. So she pared back the testing logs to the things that helped the… ah, the story she wanted to tell.</p>
+<p><strong>AMBROSE:</strong> I see. As for yourself, director, why did you allow this?</p>
+<p><strong>GRAHAM:</strong> Allow… Mary is one of the finest researchers we've ever had here. She's given her life to the Foundation. Are you asking… why I covered for her?</p>
+<p><strong>AMBROSE:</strong> More or less. Regardless of how much I appreciate your cooperation, I am sure you realize this will, almost certainly, cost you your position. I also doubt that is a surprise to you. I am then asking why you bore such a risk.</p>
+<p><strong>GRAHAM:</strong> Agent Ambrose, I've gotten so much from my career already. More than I deserve. If it happens, I won't see it as losing my job; I'll say I spent my job to give Mary eight years of security. The woman deserves it.</p>
+<p><strong>AMBROSE:</strong> I see. That will be all, for now. Another agent will likely be in touch soon.</p>
+<p><strong>GRAHAM:</strong> Whatever you say.</p>
+<p>[END LOG]</p>
+</div>
+<br/>
+Agent Ambrose had all privileges belonging to Senior Researcher Mary Vollard revoked, and had Director Graham placed on administrative leave for the remainder of the investigation, both effective immediately. He scheduled a meeting with SCP-9216 for the following day.
+<p><span style="font-size:xx-large;">Item 12: Conversation 2 between Director Graham and SCP-9216</span><br/>
+Before he could be escorted out, Director Graham left his office, and met with SCP-9216 in its cell. The following conversation was recorded.</p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Video Log Transcript</strong></p>
+<p><strong>Start time:</strong> 9:27:29, 16 Mar 2108</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><em>SCP-9216 is sitting at its desk, visibly frustrated, staring at a computer screen. It turns to see Director Graham approaching its cell.</em></p>
+<p><strong>SCP-9216:</strong> Richard, is SCiPNET down? This damn thing isn't working.</p>
+<p><strong>GRAHAM:</strong> Oh, they already got to you.</p>
+<p><strong>SCP-9216:</strong> What? What do…</p>
+<p><strong>GRAHAM:</strong> I'm sorry, Mary.</p>
+<p><strong>SCP-9216:</strong> Oh. I see. It's over?</p>
+<p><strong>GRAHAM:</strong> I think so. He said I'll lose my job once this is all over, and he was splitting hairs over your documentation. You don't say stuff like that until the noose is good and tight.</p>
+<p><strong>SCP-9216:</strong> I'm… I'm so sorry, Richard.</p>
+<p><strong>GRAHAM:</strong> Don't worry about me right now. I just came to let you know. I also think I know the answer, but if there was a loss of power here, would you slip out?</p>
+<p><strong>SCP-9216:</strong> Hah. This again?</p>
+<p><strong>GRAHAM:</strong> Yes. Once they come for you, it's too late to leave.</p>
+<p><strong>SCP-9216:</strong> It was too late to leave the first time my face melted off. I can't… buy groceries. I can't walk in the park. People would get called, and I'd hope it was the Foundation. Anyone else would be worse.</p>
+<p><strong>GRAHAM:</strong> I thought so.</p>
+<p><strong>SCP-9216:</strong> So don't do something stupid like throwing a breaker. They won't kill me.</p>
+<p><strong>GRAHAM:</strong> It sounds like you wish they would.</p>
+<p><strong>SCP-9216:</strong> What if I did? Do you think that will change things? You know how the— how <em>we</em> work. Now it's all up to code.</p>
+<p><em>Graham turns around, squinting.</em></p>
+<p><strong>GRAHAM:</strong> Did someone post guards here?</p>
+<p><strong>SCP-9216:</strong> Of course they did, this is an active investigation. Leave, you idiot!</p>
+<p><strong>GRAHAM:</strong> It's always been a pleasure, Mary. Goodbye.</p>
+<p><em>Graham exits, and footsteps pass outside. SCP-9216 stands, glancing at a passing guard, and then returns to its bed. It closes all its eyes.</em></p>
+<p>[END LOG]</p>
+</div>
+<br/>
+By noon, Acting Director Stephen Goff had taken control of the site.
+<p><span style="font-size:xx-large;">Item 13: Interview 2 with SCP-9216</span></p>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Video Log Transcript</strong></p>
+<p><strong>Start time:</strong> 8:05:22, 17 Mar 2108</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><em>SCP-9216 is led into the same interview room as used in Item 8 of this investigation, with the same damaged table in place. It stares at the handprints on the surface, before settling into its chair. Soon after, Agent Ambrose enters, and seats himself opposite.</em></p>
+<p><strong>SCP-9216:</strong> Hello.</p>
+<p><strong>AMBROSE:</strong> Hello, SCP-9216. I am hopeful this interview is the last piece of evidence I will need for my report, if you can just follow along with a few formal steps. Your compliance, of course, will be noted in the final report.</p>
+<p><strong>SCP-9216:</strong> Okay.</p>
+<p><strong>AMBROSE:</strong> Wonderful. Now, first, I suspect you have a Foundation keycard in your possession. May I have it?</p>
+<p><strong>SCP-9216:</strong> Oh. You're very direct.</p>
+<p><strong>AMBROSE:</strong> Is there any point to discretion anymore?</p>
+<p><strong>SCP-9216:</strong> I suppose not.</p>
+<p><em>SCP-9216 reaches into its pocket, pulling out a card which it places on the table. Ambrose holds it up, in view the camera.</em></p>
+<p><strong>AMBROSE:</strong> Let the record show that this is the keycard belonging to Senior Researcher Mary Vollard. Now, SCP-9216, I am already certain of the answer, but could you state on the record why you have this keycard?</p>
+<p><strong>SCP-9216:</strong> Because it's mine. Is that what you want to hear?</p>
+<p><strong>AMBROSE:</strong> That seems to imply that you were previously in Foundation employ as Senior Researcher Mary Vollard. Are you claiming that to be the case?</p>
+<p><strong>SCP-9216:</strong> Yes, I am.</p>
+<p><strong>AMBROSE:</strong> That is very troubling, SCP-9216. Do you have proof of this fact? If not, you should be aware that impersonating a Foundation official is tantamount to an escape attempt, and will be treated accordingly.</p>
+<p><strong>SCP-9216:</strong> It's… there should be footage. Of the… the event. Check, oh, the security cameras from… August, mid August of 2011. Testing room 7. I think.</p>
+<p><em>Ambrose stands and walks to the door of the interrogation room. He opens it, leaning out to talk to a guard stationed outside, and then returns to his seat opposite SCP-9216.</em></p>
+<p><strong>AMBROSE:</strong> We're going to have the footage combed. It should take a few hours at most to find this incident, assuming you are telling the truth. However, I would like you to tell me what we are going to find.</p>
+<p><strong>SCP-9216:</strong> W-what? Why?</p>
+<p><strong>AMBROSE:</strong> To verify it is you we will see in the footage, and not some other impostor, with improbable anatomy. I do want to say that compliance will reflect well on you.</p>
+<p><strong>SCP-9216:</strong> Oh, fine. Just… give me a moment.</p>
+<p><strong>SCP-9216:</strong> Okay. Alright. There was a new researcher, Evans. Pale, not even thirty, wispy blonde hair. He was anxious… I think he was only starting to realize what we do here. The new ones tended to come to me and Heinz. The other old boys were too intimidating, I guess. Evans was nicer than the others, always said please, very meek…</p>
+<p><strong>SCP-9216:</strong> Anyways, he came to me one day, panicking. He was assigned to intake, which was a mistake: junior researchers can't onboard new objects without a supervisor. That meant Graham f—… that meant Graham made a mistake, since he was still getting used to the scheduling software. I was mad, and just about stormed up to Graham's office, but Evans said that wasn't the issue. The kid had started unboxing anomalous objects, thinking he was supposed to know enough to handle it, and dropped something. He was about to puke, and could barely choke out that he chipped a statue.</p>
+<p><strong>SCP-9216:</strong> Technically, you know, he shouldn't have left the room. There are intercoms in there, and if anything happens, you radio out, and someone is supposed to come help you. Evans… well, he couldn't have known that. He was a junior researcher! He wasn't trained to do intake, so how the hell would he know what we do? I sent him off to decontamination, maybe raising my voice a bit too much, but I was focused on getting to the testing room so I could do cleanup.</p>
+<p><strong>SCP-9216:</strong> I rushed in there, and like Evans said, there was a half-unloaded box on the table, and a little marble statue on the ground, with a few shards chipped off of it. It looked Greek. It was this figure on a square base, and it looked so ugly. A bunch of limbs and flesh, it just screamed sarkic, and it was done in a classical, detailed style. Like Michaelangelo. There was something written on the base, and I looked it up a long time later: it was a quote from Heraclitus. "Everything flows."</p>
+<p><strong>AMBROSE:</strong> Did you spend a long time studying the object?</p>
+<p><strong>SCP-9216:</strong> Oh, no. It was a few seconds, but this was a memorable day for me.</p>
+<p><strong>AMBROSE:</strong> Alright, please continue.</p>
+<p><strong>SCP-9216:</strong> Well, I only had a few seconds because my arm started tingling, and then it started to bend where I thought there should be bone. My forearm must have already gone, by that point, and I wasn't used to holding myself together. I threw the statue back on the table, and I already knew this was very bad. Chipping the statue must have exposed something, I remember thinking. I also remember something splattering against the ground to the side of me, at the same time my arm felt a lot lighter.</p>
+<p><strong>SCP-9216:</strong> I didn't really want to look. You might think I was panicking, but I wasn't, though what was going through my head wasn't much better. It was rage. I thought, wow, this is it? Some anomaly is going to take the last things I had left from me? I am going to die in here, a puddle of… something, and that's it?</p>
+<p><strong>AMBROSE:</strong> You didn't realize the anomaly wouldn't kill you?</p>
+<p><strong>SCP-9216:</strong> No, not at all. Whenever I'd seen something that extreme happen to a colleague, I lost that colleague. I thought the same thing would happen to me. I thought those were my last moments. I saw Evans had left out his flasks, and one of them was decently high molar hydrochloric acid, so with the little time I thought I had… heh, it sounds so stupid. I grabbed that flask with my good arm, and I knocked it over, on the statue. At least it would be a draw that way: we'd both be slurry. Then my legs turned to mush, and before my ears went, I heard the sizzle of the marble being eaten away.</p>
+<p><strong>AMBROSE:</strong> Is that all?</p>
+<p><strong>SCP-9216:</strong> Oh, more or less. I was ooze when they found me. They put me in a container, and then assigned me to Heinz. They weren't sure I was still in there until I figured out how to respond to sensory tests a few days later.</p>
+<p><strong>AMBROSE:</strong> That sounds to be beyond what the footage will include, so you can stop there. What about this junior researcher, Evans? Was he affected?</p>
+<p><strong>SCP-9216:</strong> No. They checked the footage, and he was running for the door before the statue hit the ground. Whatever was in it didn't have time to disseminate while he was still there.</p>
+<p><strong>AMBROSE:</strong> Sounds reasonable. Well, that's the last box I needed to check to conclude the investigation. Thank you very much for you cooperation.</p>
+<p><em>Ambrose begins to stand.</em></p>
+<p><strong>SCP-9216:</strong> What is going to happen to me?</p>
+<p><strong>AMBROSE:</strong> Hm? Isn't that obvious? You'll be reclassified properly, and recontained somewhere else. Likely with restricted privileges.</p>
+<p><strong>SCP-9216:</strong> Is there any chance I can remain here, and keep working?</p>
+<p><strong>AMBROSE:</strong> Someone with as much experience as yourself should know better than to ask that. Besides, it is not Foundation policy to explain our containment protocols to the objects we contain.</p>
+<p><strong>SCP-9216:</strong> After all I've been through, can't you humor me?</p>
+<p><em>Ambrose sits back down.</em></p>
+<p><strong>AMBROSE:</strong> After all you've been through? Do you mean transgressing for eight years against Foundation codes that you yourself once followed? Or, do you mean creating a tangled mess that I have spent the past week teasing apart? If you wanted preferential treatment, you should not have falsified your file.</p>
+<p><strong>SCP-9216:</strong> You really think that would have made any difference?</p>
+<p><strong>AMBROSE:</strong> Pardon?</p>
+<p><strong>SCP-9216:</strong> I really doubt the Foundation would have treated me any different if I had surrendered at the start. I think they would've boxed me up and shipped me off just the same. There's an old Ethics Committee guideline about that: attacking staff should be punished, but the Committee recommended forgiveness, and lighter sentences, when there's a peaceful containment breach.</p>
+<p><strong>AMBROSE:</strong> … I have, perhaps, read that guideline.</p>
+<p><strong>SCP-9216:</strong> So, if you're saying it's not worth even thinking about me staying here now… there was never a hope. In fact, my chances should be better, since I've proven that I can still do the work like this, but you still think it's not going to happen.</p>
+<p><strong>AMBROSE:</strong> That was only my opinion. My involvement with your future is only to file this report.</p>
+<p><strong>SCP-9216:</strong> You could make a recommendation, couldn't you?</p>
+<p><strong>AMBROSE:</strong> Why should I? If I may be direct, you selfishly put this entire facility at risk because you wanted to pretend your life was the same as before. You compromised a slew of Foundation documents, and through this investigation, are wasting resources on cleaning up your mess. You seem like a drain on the Foundation, not an asset.</p>
+<p><strong>SCP-9216:</strong> You fucking worm.</p>
+<p><strong>AMBROSE:</strong> Again, you are not endearing yourself to the —</p>
+<p><strong>SCP-9216:</strong> You have the gall to say <em>I'm</em> a drain on the Foundation? I gave more to the Foundation than you ever will! No, I let the Foundation <em>take</em> more from me than you ever will, because I <em>believed</em> in it! My youth, my— my family, my chance at kids, no hobbies, no more love, no more sun on my skin, even the… the face in the mirror. Gone. All because I wanted to spare others. Because I wanted to keep them from what I had to face. I was locking up monsters, and because the Foundation made a <em>mistake</em>, and let some poor kid in a room with something scary, now I get caged up too? You don't think they should have shame? You wretched sack of shit. I gave more than my life to this place, and even when that life was gone, I kept giving, and giving, and giving!</p>
+<p><strong>AMBROSE:</strong> You compromised the entire site.</p>
+<p><strong>SCP-9216:</strong> What the hell does that even mean? I bet the Foundation won't change a single word of what I put in all those files I made, because it's damn good work and they know it! They'll just try and paper over me, so they can pretend they didn't just throw me away like a fucking candy wrapper when I needed them!</p>
+<p><strong>AMBROSE:</strong> SCP-9216, you are out of line! Be quiet!</p>
+<p><em>SCP-9216 glares at Agent Ambrose, but goes silent. He stares back at her.</em></p>
+<p><strong>AMBROSE:</strong> The Foundation is not a storefront. It does not trade labor for recognition, or respect. It trades it for money, as every employer does. You tell me that you "gave" many things to the Foundation? That's called a job. You were compensated for everything you gave. In fact, you will be compensated one more time, as your Foundation life insurance policy will pay out to your next of kin as soon as the investigation concludes.</p>
+<p><strong>SCP-9216:</strong> You, you—!</p>
+<p><em>SCP-9216 grimaces, and clenches its misshapen hands. It trembles, and pulls them close to its chest.</em></p>
+<p><strong>SCP-9216:</strong> Oh, this is pointless, isn't it?</p>
+<p><strong>AMBROSE:</strong> Pardon?</p>
+<p><strong>SCP-9216:</strong> Fighting. I really should know better. I know what I did when objects resisted like I just did: more bars, less amenities. Never more freedom.</p>
+<p><strong>AMBROSE:</strong> Treating anomalous objects like that sounds like a violation of Foundation guidelines. Thankfully for you, the Foundation will not punish you over transgressions from when you were in Foundation employ. Is that reassuring?</p>
+<p><strong>SCP-9216:</strong> You know, Agent Ambrose, you really are a model employee. Ah…</p>
+<p><em>SCP-9216 looks down, placing its hands on the table. It fiddles with its digits; it has eleven, at the time of the recording.</em></p>
+<p><strong>SCP-9216:</strong> … this reminds me of when Henry died. I inherited all his projects, you know. It was a lot of paperwork, getting the names changed on everything. At the end, I had to meet with a RAISA agent to certify everything, and get the new cards. I remember he acted a lot like you. When I told him I was sorry for taking so long to finish, since I was handling the funeral, he just said, "it's fine." Not a word more about me, not sorry for my loss, nothing. I think I understand him now. He was just there to complete his job, and it didn't need him to understand or feel a thing about me. To him, there may as well have been nothing there in the chair opposite him.</p>
+<p><em>Agent Ambrose shifts in his chair.</em></p>
+<p><strong>AMBROSE:</strong> He was likely from accounting, not investigations. A different department.</p>
+<p><strong>SCP-9216:</strong> He's probably been promoted by now. He seemed like a good worker, focused on the job. The kind the Foundation likes.</p>
+<p><strong>AMBROSE:</strong> I think we're done here.</p>
+<p><em>Ambrose stands, pausing when he sees SCP-9216 is crying. It is staring at him.</em></p>
+<p><strong>SCP-9216:</strong> Agent Ambrose, I bet you'll be up for promotion soon. This investigation, you've managed it so well. I really had no chance. It'll reflect well on you.</p>
+<p><strong>AMBROSE:</strong> Perhaps. There's no way of knowing.</p>
+<p><strong>SCP-9216:</strong> Other people will ask you about this case, at least.</p>
+<p><strong>AMBROSE:</strong> Likely. Why do you mention it?</p>
+<p><strong>SCP-9216:</strong> Well, I just wanted to ask a stupid favor. If someone asks what the case was about, please don't tell them it was about SCP-9216. Just… say it was about Mary Vollard.</p>
+<p><strong>AMBROSE:</strong> I don't think I can—</p>
+<p><strong>SCP-9216:</strong> Please.</p>
+<p><strong>AMBROSE:</strong> … once it is revised, I will leave a note on your file about how you prefer to be addressed. Goodbye, SCP-9216.</p>
+<p><em>Agent Ambrose exits the room. SCP-9216 remains seated, staring at the door, until site security arrive to take it away.</em></p>
+<p>[END LOG]</p>
+</div>
+<p><strong>SUBMITTED TO RAISA DIRECTOR MARIA JONES ON 22 MARCH 2018</strong><br/>
+<strong>PENDING RECLASSIFICATION</strong></p>
+</div>
+</div>
+</div>
+
+</div></body></html></div>
+        </body>
+        </html>
+        

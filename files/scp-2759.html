@@ -1,0 +1,559 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-2759</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-2759</h1>
+            <div class='image-header'><div class="scp-image-block block-center" style="width:100%;"><img alt="bloodmoon.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-2759/bloodmoon.jpg"/>
+<div class="scp-image-caption">
+<p>Moon of SCP-2759-E-2.</p>
+</div>
+<div class="scp-image-block block-right" style="width:300px; margin-top: 1.2em;"><a href="https://scp-wiki.wdfiles.com/local--files/scp-2759/zigzag2"><img alt="zigzag2" class="image" src="https://scp-wiki.wdfiles.com/local--resized-images/scp-2759/zigzag2/medium.jpg"/></a>
+<div class="scp-image-caption">
+<p>The Ziggurat of Ur.</p>
+</div></div><div class='text-content'>ITEM#:</span> <span class="number">2759</span></div>
+
+<div class="top-right-box">
+<div class="level">LEVELΩ</div>
+<div class="clearance">ESSENTIAL PRSNS.</div>
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">euclid</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">thaumiel</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">dark</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">warning</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="display: none;">
+<div class="anom-bar-container item-{$item-number} clear-Ω {$container-class} {$secondary-class} {$disruption-class} {$risk-class} {$american}">
+<div class="anom-bar">
+<div class="top-box">
+<div class="top-left-box"><span class="item">Item#:</span> <span class="number">{$item-number}</span></div>
+
+<div class="top-right-box">
+<div class="level">LevelΩ</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">{$container-class}</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">{$secondary-class}</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">{$disruption-class}</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">{$risk-class}</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="acs-extra column-1 84, 78, 104 {$class-color-2} {$class-color-3} {$class-color-4} Protection Class: Providence">
+<div class="acs-extra-1" style="background-color: rgba(84, 78, 104,0.15); border-left: 0.5rem solid rgba(84, 78, 104,1);">
+<div class="class-category">Protection Class:</div>
+<div class="class-text">Providence</div>
+
+</div>
+<div class="acs-extra-2" style="background-color: rgba({$class-color-2},0.15); border-left: 0.5rem solid rgba({$class-color-2},1);">
+<div class="class-category">{$class-category-2}</div>
+<div class="class-text">{$class-text-2}</div>
+
+</div>
+<div class="acs-extra-3" style="background-color: rgba({$class-color-3},0.15); border-left: 0.5rem solid rgba({$class-color-3},1);">
+<div class="class-category">{$class-category-3}</div>
+<div class="class-text">{$class-text-3}</div>
+
+</div>
+<div class="acs-extra-4" style="background-color: rgba({$class-color-4},0.15); border-left: 0.5rem solid rgba({$class-color-4},1);">
+<div class="class-category">{$class-category-4}</div>
+<div class="class-text">{$class-text-4}</div>
+
+</div>
+</div>
+<div style="text-align: left;">
+<p><strong>OBJECT CLASS:</strong> Euclid-Thaumiel</p>
+<p><strong>SPECIAL CONTAINMENT PROCEDURES:</strong> Due to its size and location, SCP-2759 is to be surrounded with 4.5-meter barbed wire fencing and patrolled by security personnel until a better form of containment is established. Additionally, remote audiovisual surveillance should be strategically installed around the perimeter and throughout the containment area.</p>
+<p>The surrounding desert within visual range of SCP-2759 is extremely large and arid, making foot traffic in the general vicinity an uncommon occurrence. Therefore, any individuals coming within 5 km are to be detained, questioned and amnesticised.</p>
+<p>SCP-2759-1 is to be kept on location in a hermetically sealed provisional containment area designated Site-2759. Any unauthorized activity should be immediately reported to Site Command.</p>
+<p>In order to prevent unnecessary distress in subjects utilized for experimentation purposes, research personnel are discouraged from discussing details regarding the testing process and the nature of the anomaly as a whole.</p>
+<p><strong>UPDATE:</strong> All information relating to SCP-2759 is now restricted to Foundation personnel aside from select individuals and thus is currently designated <span class="bigtext"><strong><tt>NON-ESSENTIAL</tt></strong></span>. This includes knowledge of related items, locations, quantitative and experimental data, personnel records and all other relevant documentation. If you are reading this file in error, terminate your connection and proceed to the nearest medical bay for Class-A amnestic application.</p>
+<p>A small group of individuals selected by the O5 Council are to be given access to Site-2759 and resources for use in study and experimentation. All personnel assigned to SCP-2759 are to be screened daily for fluctuations by an approved Cognition Integration Testing (<a href="http://www.scp-wiki.net/your-future-is-bright">CIT</a>) Proctor.</p>
+<p><strong>DESCRIPTION:</strong> SCP-2759 refers to former Location of Interest and Unexplained Environment 54701. SCP-2759 appears to be an exact replica of the Ziggurat of Ur, found to have materialized in White Sands, New Mexico. Given the significance of the original Ziggurat, <em>Etemenniguru</em>,<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> the complex has been contained and is under heavy scrutiny and analysis by Foundation historians and archaeologists.</p>
+<p>Although the temple is inactive at most times, there have been multiple unverified reports of "moving shadows" seen cast on the walls and floor of the temple interior. It is unknown if this phenomenon is hallucinogenic or otherwise, as claims vary between individuals and the phenomena is not detectable via video surveillance or photography. Additionally, evidence suggests an anomalous connection may exist between SCP-2759 and the original temple complex, with meteorological fluctuations and occasional noises that resemble those reported in the vicinity of Tell el-Muqayyar, Iraq. This, combined with the difficulty of containment, led to its official classification as Euclid on 07/12/1995.</p>
+<p>SCP-2759-1 refers to a clay brick altar recovered from within the central shrine of SCP-2759. The object was discovered with the intact skeletal remains of an unknown individual laying on its surface. Carbon dating places the remains at ~60,000 years old, a significant anachronism and the upper bound of current detection capabilities. Thus, the exact age of the remains may far exceed that limit.</p>
+<p>Unlike the expected design of Mesopotamian sacrificial altars detailed in historical record, SCP-2759-1 features atypical iconography, including several large cuneiform symbols engraved into the sides of the object.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup></p>
+<p>SCP-2759-1's primary anomalous nature becomes apparent when an individual dies while laying atop the surface of the altar in the correct orientation. The subject does not need to be awake for this <span style="text-decoration: line-through;">and therefore sedation is to be administered during testing</span>.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> Once death has occurred, the altar will vibrate with a low hum for approximately 15 seconds, after which the cuneiform symbol for "TRANSPORT/MOVEMENT" will flash briefly and emit a soft tone. The altar will then cease action.</p>
+<p><strong>INCIDENT 2759-03:</strong></p>
+<p>During evaluative testing of SCP-2759-1, Sr. Researcher Rowena Scully reportedly left her work-provided cell phone on the surface of SCP-2759-1 while administering inert gas (nitrogen) to D-8821. Twenty minutes later, Dr. Rosenberg received a call from Researcher Scully's number, despite her phone having been accounted for. Dr. Rosenberg was then able to speak to the deceased D-8821 via an unknown means. The transcript of the call can be found below:</p>
+<blockquote>
+<p style="text-align: center;">[BEGIN TRANSCRIPT]</p>
+<p><strong>Dr. Rosenberg:</strong> [sighing] Hello, yes?</p>
+<p><strong>D-8821:</strong> Doc? Are you there?</p>
+<p><strong>Dr. Rosenberg:</strong> Wh- Rowena-? Who is this?</p>
+<p><strong>D-8821:</strong> What do you mean? Is this part of the test? I know you guys mess with some weird stuff, but this one hell of a trip.</p>
+<p><strong>Dr. Rosenberg:</strong> Wait… D-8821?</p>
+<p><strong>D-8821:</strong> Yeah. Last thing I remember was you guys knocking me out? Now I'm… here.</p>
+<p><em>A brief period of silence is heard as Dr. Rosenberg sets up a recording device and places the call on speakerphone.</em></p>
+<p><strong>Dr. Rosenberg:</strong> Understood. Can you describe your surroundings?</p>
+<p><strong>D-8821:</strong> Well, uh, it looks a lot like that temple you showed me. The one from New Mexico? I woke up, half naked on the steps out here. I found the phone shortly afterward. Your name is the only one I recognize from the contacts.</p>
+<p><em>At this time, SCP-2759 was searched and monitored for signs of D-8821; none were found.</em></p>
+<p><strong>D-8821:</strong> I'm definitely not in New Mexico. Too cold. Foggy. I think I see trees?</p>
+<p><strong>Dr. Rosenberg:</strong> We're not picking you up at either complex. Do you see any identifying landmarks?</p>
+<p><strong>D-8821:</strong> Too much fog, I can't see maybe ten feet in any direction outside the temple. I bet I'll see something from the top. Give me a second.</p>
+<p><em>Silence, followed by sounds of movement for approximately ten seconds.</em></p>
+<p><strong>D-8821:</strong> Oh- Oh boy.</p>
+<p><strong>Dr. Rosenberg:</strong> What do you see?</p>
+<p><strong>D-8821:</strong> Well, uh, it just seems to go on forever. The fog. There is only this place. Where the hell am I, Doc?</p>
+<p><strong>Dr. Rosenberg:</strong> I don't know. We are trying to locate you.</p>
+<p><strong>D-8821:</strong> Damn it, the battery is dying. I could've sworn it was at like sixty percent when I got here… Uh, shit. What should I do?</p>
+<p><strong>Dr. Rosenberg:</strong> Stay where you are for now. We will try to send someone to aid you.</p>
+<p><strong>D-8821:</strong> Please do. Have them bring me a sweatshirt, if you could.</p>
+<p><strong>Dr. Rosenberg:</strong> I think we can do that. Good luck, D-8821.</p>
+<p><strong>D-8821:</strong> Yeah, thank y-</p>
+<p style="text-align: center;">[END TRANSCRIPT]</p>
+<p><em>Note: Following this call, all contact with D-8821 was lost.</em></p>
+</blockquote>
+<p><strong>ADDENDUM 2759-1:</strong></p>
+<p>After the events of Incident 2759-03, it has been determined that SCP-2759-1 is not wholly sacrificial in purpose, but instead an ancillary tool used for interstellar or trans-dimensional travel.</p>
+<p>Subjects report a brief period of unconsciousness following death that lasts between 5-15 mins. After this period, the subject's consciousness will be translocated to the relative location on another copy of SCP-2759 not present on Earth, designated SCP-2759-E-1. Subjects retain a portion of the items and clothing they died with, however, man-made materials have been shown to degrade at a variable accelerated rate. Through extensive testing, the following factors have been found to influence what will ultimately be transferred to SCP-2759-E-1:</p>
+<ul>
+<li>Size and shape of the item (With a preference for smaller and rounder objects)</li>
+<li>Complexity of the item<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></li>
+<li>How the item relates to the concept of "tool", "instrument" or "weapon"<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup></li>
+<li>How the item relates to the concept of "clothing" vs. "belongings"</li>
+<li>Attachment to item (sentimental or otherwise)</li>
+</ul>
+<p>GPS positioning systems fail to trace the location of SCP-2759-E-1, however, audiovisual transmissions can still be received with decent clarity when receivers are placed within .4 km of SCP-2759, SCP-2759-1, or the original temple complex. SCP-2759-1 operates regardless of its distance from SCP-2759, however, test subjects sent via SCP-2759-1 when it is located outside of the courtyard perimeter are unrecoverable.</p>
+<p>The composition of SCP-2759-E-1's environment and atmosphere are both unknown. It is presumably breathable and generally considered cold, humid and subject to a dense fog that surrounds the complex proper. Unlike SCP-2759, SCP-2759-E-1 is the only temple complex with architectural deviations from the original Ziggurat of Ur, including a spatial anomaly at the center that is defined as SCP-2759-E-2.</p>
+<p>It is believed that the dimension or region of space containing SCP-2759-E-1 and SCP-2759-E-2 has cognitohazardous effects on sentient beings, the strength of which increases linearly with exposure time. The exact consequence and cause of these effects are not currently known to Foundation research staff.</p>
+<p><strong>EXPLORATION 2759-ENLIL:</strong></p>
+<blockquote>
+<div class="scp-image-block block-right" style="width:300px; margin-top: 1.2em;"><img alt="bloodmoon.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-2759/bloodmoon.jpg"/>
+<div class="scp-image-caption">
+<p>Moon of SCP-2759-E-2, enlarged.</p>
+</div>
+</div>
+<br/>
+<br/>
+<strong>Abstract:</strong> Exploration 2759-Enlil was approved and took place two days after contact with D-8821 was lost. D-3733 was sent through SCP-2759-1 with shoulder-mountable audiovisual recording gear, one hooded sweatshirt, and a small kit containing a flashlight, three flares, extra batteries and two granola bars, establishing contact eighteen minutes after death.
+<hr/>
+<p style="text-align: center;">[BEGIN LOG]</p>
+<p><strong>D-3733:</strong> Did one of you take my pants? What the hell guys, it is <em>really</em> cold and-</p>
+<p><strong>Control:</strong> [coughs] -Okay, D-3733. Let's get started. You should have a mountable camera in your pack. Please take it out and activate it.</p>
+<p><strong>D-3733:</strong> Ugh, alright. Let me just tie the sweatshirt around my waist.</p>
+<p><em>After approximately one minute, camera feed comes live, revealing a full frame of gray fog. Camera view is jostled as D-3733 is seen scaling the side of the temple complex. As they approach the zenith, subject pans camera around, revealing the expanses of fog to stretch on around SCP-2759-E-1 in all directions. The fog line terminates abruptly just outside the perimeter. Sky is dark and purple in color. No celestial bodies are present, but area is dimly lit and appears desaturated.</em></p>
+<p><strong>D-3733:</strong> I'll be damned. No stars. Where is this?</p>
+<p><strong>Control:</strong> That's what we're hoping to find out.</p>
+<p><strong>D-3733:</strong> This place- I'm going to die here, aren't I?</p>
+<p><strong>Control:</strong> What makes you say that?</p>
+<p><strong>D-3733:</strong> A feeling, I don't know. There's this weight, this heavy, empty feeling in my stomach. It feels like sorrow, like death.</p>
+<p><strong>Control:</strong> Just try and remain calm, if you need a minute to adjust, we can wait.</p>
+<p><strong>D-3733:</strong> I'm calm, I'm calm.</p>
+<p><em>Subject stops for a moment and is heard taking a deep breath. After a period of silence, a voice is heard off-camera that resembles a small child.</em></p>
+<p><strong>D-3733:</strong> Huh-? Wait, hey! Hey!</p>
+<p><em>Camera swings around as the subject turns, the feed showing brief movement coming from the entrance to the interior of the central temple.</em></p>
+<p><strong>D-3733:</strong> Someone just went inside. Should I follow?</p>
+<p><strong>Control:</strong> Affirmative, but make sure to keep an eye out for any signs of D-8821. You'll find a flashlight and some flares in your kit.<br/>
+<br/>
+<em>Brief silence, some wind and rustling is heard.</em></p>
+<p><strong>D-3733:</strong> Found the flares. No flashlight.</p>
+<p><strong>Control:</strong> At least it's something.</p>
+<p><em>D-3733 is seen approaching the threshold at the top of SCP-2759-1. Subject lights a torch, which bathes the corridor in red light.</em></p>
+<p><strong>D-3733:</strong> Hello? Anyone?</p>
+<p><em>D-3733 proceeds down the hall, into the central shrine, or cella, which contains several connecting pathways. The walls are lined with cuneiform symbols and imagery, and a group of clayware pots litter the ground in pieces of varying size. Post analysis revealed much of the symbols relate to Ereshkigal, Sumerian goddess of the Underworld.</em></p>
+<p><strong>D-3733:</strong> I hear something.</p>
+<p><em>Audio feed picks up the sounds of whispers coming from the hallways. As D-3733 passes by, figures are seen moving in the shadows.</em></p>
+<p><strong>D-3733:</strong> There are people… They're hiding just outside of view. I don't know how many.</p>
+<p><em>Subject takes a second before choosing a direction. The red light reveals the hall to be empty and slopes downward. The ceiling drops swiftly and turns sharply right. After a few seconds, a distant scream is heard.</em></p>
+<p><strong>D-3733:</strong> This place is freaking me out. The walls are cold, I'm cold. Everything is cold.</p>
+<p><strong>Control:</strong> Noted. Please continue.</p>
+<p><em>D-3733 descends into the heart of the temple. The camera picks up further signs of distress and unintelligible vocalizations.</em></p>
+<p><strong>D-3733:</strong> No, No- I don't think so, nope. I'm done. Go ahead and pull me out now, please. <em>Please</em>.</p>
+<p><strong>Control:</strong> That is not possible at this time. Your mission is to locate D-8821.</p>
+<p style="text-align: center;">[EXTRANEOUS DIALOGUE REMOVED]</p>
+<p><strong>D-3733:</strong> Fine, but don't expect me to be happy about it.</p>
+<p><strong>Control:</strong> Understandable. Now, if you would.</p>
+<p><em>D-3733 sighs and continues on. Coming to a small intersection, subject lights up the left pathway, revealing it to be a dead end. Three emaciated, naked humanoids are crouched in the corner and sharing a single tattered blanket. They do not look up at D-3733, but are heard whimpering and speaking in an unknown language. One figure appears to be albino in pigmentation, the entire group possessing injuries of variable severity.</em></p>
+<p><strong>D-3733:</strong> I'm not going up to them.</p>
+<p><strong>Control:</strong> Fine by us.</p>
+<p><em>Subject chooses the right hand path, which continues to slope downward as it angles back towards the center of the temple. D-3733 says nothing for several minutes, stopping multiple times to look behind him. The flare starts to burn out, D-3733 proceeds to light another. Upon closer inspection, the used flare appears aged and worn, burning out five minutes earlier than expected.</em></p>
+<p><strong>D-3733:</strong> At this rate I'm going to be out of light in no time. <em>Ina etuti absu.</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup> What? Was that me? Did I say that?</p>
+<p><strong>Control:</strong> We believe that the environment may be exerting some effects on your mental state and cognitive faculties. How do you feel right now?</p>
+<p><em>Mild static interference overtakes the audio feed for two seconds.</em></p>
+<p><strong>D-3733:</strong> -[stu]pid question. I feel like I'm walking into my grave.</p>
+<p><strong>Control:</strong> I understand that this is not an optimal situation. The sooner you find D-8821, the sooner we can find a way to get you back.</p>
+<p><em>Subject does not respond and moves along the now bare walls. D-3733 proceeds for two minutes before the hallway terminates sharply in a 180° turn that continues down into darkness.</em></p>
+<p><strong>D-3733:</strong> [muttering] <em>Ana harrani sa alaktasa la tarat, eli baltuti ima'idu mituti</em>.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup></p>
+<p><strong>Control:</strong> I'm sorry?</p>
+<p><strong>D-3733:</strong> I didn't say anything.</p>
+<p><em>The pathway begins to widen out, another right turn is seen at the bottom of the landing.</em></p>
+<p><strong>D-3733:</strong> There's light up ahead.</p>
+<p><em>As D-3733 rounds the corner, an archway is seen roughly 30 m away. Waves are heard, crashing against unseen shores. Several voices are discerned, drowned out by the other noise.</em></p>
+<p><strong>D-3733:</strong> I feel a breeze. Is that the sky?</p>
+<p><em>Subject approaches the area now designated as SCP-2759-E-2, the microphone picking up sounds of more voices. As D-3733 emerges from the archway, ruins of an amphitheater-esque complex come into focus. The "seats" of the structure grow larger and steeper as they move outward, becoming impossible to peer over and reaching an unknown height. One wall of the structure seems to have collapsed, and waves from a dark ocean on one side roll in, pooling in the opposite, across from the door back into SCP-2759-E-1. Humanoid figures are seen in abundance, easily a hundred. All individuals appear emaciated and vary widely in physical characteristics. A few possess additional limbs or mutations. All appear to be sapient and intelligent to a degree, conversing with one another in various unknown languages ranging from heavily distorted Sumerian to hisses and clicks. Similar to the previous group, nearly all entities possess injuries, ranging from minor scrapes and bruises to severe puncture wounds and amputations. No sign of D-8821 is found.</em></p>
+<p><strong>D-3733:</strong> This just keeps getting weirder. Look.</p>
+<p><em>Subject points the camera upwards to reveal a small moon, orange-red in color, lingering in the violet sky.</em></p>
+<p><strong>D-3733:</strong> No moon outside the temple, as far as I could tell.</p>
+<p><em>A group of entities are seen loitering down by the shore. D-3733 proceeds to the pool to investigate.</em></p>
+<p><strong>D-3733:</strong> These guys don't seem hostile. They all seem quite sad, actually.</p>
+<p><em>Approaching the waterline, D-3733 keeps to himself, although several figures are seen looking at him and speaking to one another.</em></p>
+<p><strong>D-3733:</strong> Hi, guys.</p>
+<p><em>Figures say nothing but continue to stare. Minor interference is detected on both audio and visual equipment.</em></p>
+<p><strong>D-3733:</strong> Oh, I know.</p>
+<p><em>Subject checks his kit and retrieves a granola bar, the second having not survived transfer. D-3733 unwraps it, breaking the snack into small pieces and offering them to the creatures in an outstretched hand.</em></p>
+<p><strong>D-3733:</strong> You guys eat? Like food? Food? Sorry about the raisins, but it's all I have.</p>
+<p><em>Entities step back cautiously as D-3733 approaches. With some convincing, one individual, possessing scales and a flat, widened forehead, tentatively reaches out and accepts a piece. The being sniffs the item and eats it, expressing approval. The humanoid says something to the others, one of them is heard saying "akalum", or "food". Several others approach in interest, including two which appear to have chitinous carapaces and large insect-like mandibles. They make noise like cicadas as they snatch bits of granola and consume them voraciously.</em></p>
+<p><strong>D-3733:</strong> Whoa, slow down, there's not enough for everyone-</p>
+<p><em>D-3733 is interrupted by a distressed vocalization. Camera turns to show a humanoid with equine features, writhing on the ground, howling in apparent agony. Several other figures crowd around the entity in with a mix of concern and curiosity. A few moments later, the crowd grabs their troubled peer and drag it, screaming, to the dark shoreline. They pause for a moment, as if reluctant, and then push the entity into the ocean waters below. It disappears beneath and does not resurface. No signs of struggle are seen, and the screaming ceases instantly. At this point, an unknown Sumerian dialect is detected among the chatter. POI-2759-A, an antlered humanoid, is seen speaking to D-3733. A Foundation historian with linguistics experience is brought in to help with translation.</em></p>
+<p><strong>POI-2759-A:</strong> [Are] you the <em>Annunaki</em>? The ones who know the stars? They who birthed the [unknown]?</p>
+<p><strong>D-3733:</strong> [in Sumerian] They are the child of <em>Ningishzidda</em>, Lord of the Artifact of Life. They see through the eyes and ears of all children.</p>
+<p><strong>POI-2759-A:</strong> We are those without light, those which wait at the feet of <em>Anu</em>. Eternal [unknown] of the gateway, the [firmament/world] of twilight.</p>
+<p><strong>Control:</strong> Please ask the individual where you are located.</p>
+<p><strong>D-3733:</strong> I don't think they understand English.</p>
+<p><strong>POI-2759-A:</strong> Have you come to pay rites to the Mistress of the Underworld?</p>
+<p><strong>D-3733:</strong> [in Sumerian] They are the souls of the Damned, open the gate so they may enter the Valley.</p>
+<p><em>POI-2759-A frowns and appears to step aside, allowing D-3733 a full view of the ocean, which stretches as far as the eye can see. No fog is present.</em></p>
+<p><strong>D-3733:</strong> I don't like the look of this.</p>
+<p><em>Control decides not to tell the subject about their conversation with POI-2759-A. D-3733 stares into the depths of the ocean as the surface slowly ripples.</em></p>
+<p><strong>D-3733:</strong> I feel nauseous. I need a minute.</p>
+<p><em>Subject sets the camera down and sits on the pathway. Thirty seconds of silence pass, D-3733 is seen sitting with his head in his hands. Subject looks out at the water, which is still black in color.</em></p>
+<p><strong>D-3733:</strong> There- There's something down there. In the water.</p>
+<p><em>D-3733 picks up the camera and angles it downward. Small specks are seen in the distance, shining. The dark liquid is abnormally clear, view disrupted minimally by smooth, rolling waves which appear almost velvet in nature. Due to worsening static distortion, it is impossible to discern what the objects are.</em></p>
+<p><strong>D-3733:</strong> <em>Tiamatu.</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup> [pause] That's what it is called, I think. The Valley of the Lost. What? Stop it.<br/>
+<br/>
+<strong>Control:</strong> Are you alright?</p>
+<p><strong>D-3733:</strong> Sorry, yes, it's this- thing. It's trying to talk to me, to talk through me. Filling my head with knowledge and… oh.</p>
+<p><em>D-3733 pauses and appears to be listening.</em></p>
+<p><strong>D-3733:</strong> I-I see. I'm on my way.<br/>
+<br/>
+<em>Subject hesitates before facing the ocean, bending over to look down.</em></p>
+<p><strong>Control:</strong> What? Who is talking to you?</p>
+<p><strong>D-3733:</strong> <em>Reflected in the mirror, as within, so without. For each sin, the soul incurs greater debt upon the route.</em> Forgive me.</p>
+<p><strong>Control:</strong> Please exit through the archway, D-3733.</p>
+<p><em>D-3733 says nothing, takes a breath, and jumps from the edge into the dark waters below. Camera remains unaffected by exposure to the liquid, although all light is quickly extinguished.</em></p>
+<p><strong>Control:</strong> D-3733, do you copy?</p>
+<p><em>Silence is recorded for thirty seconds. No sounds of water are present.</em></p>
+<p><strong>Control:</strong> D-3733, please respond.</p>
+<p><em>D-3733 does not respond and is considered lost. However, over the next fourteen hours, D-3733's voice is picked up sporadically before static distortion overwhelms the feed. Unfortunately, subject remained unwilling to engage in meaningful conversation, expressing extreme mental anguish for the entirety of the remaining transmission.</em></p>
+<p style="text-align: center;">[END LOG]</p>
+</blockquote>
+<p><strong>INCIDENT 2759-04:</strong></p>
+<p>On 04/04/2005, personnel on site at SCP-2759 reported the activation of SCP-2759-1 without external manipulation. No one was observed leaving from or arriving to SCP-2759-1, <span style="text-decoration: line-through;">it is unknown at this time who or what may have caused the artifact to activate.</span></p>
+<p><strong>EXPLORATION 2759-ERIBU:</strong></p>
+<blockquote>
+<p><strong>Abstract:</strong> Exploration 2759-Eribu was approved after the events of Incident 2759-04. The goal of the exploration was to ascertain the possible cause of SCP-2759-1's activation. Several attempts were made to send D-Class personnel through with surveillance equipment, but all failed to reconnect with Site Command post transversal. D-1212 was the next individual who successfully transitioned to SCP-2759-E-1 with the equipment needed to remain in contact. The whereabouts of the other subjects are unknown.</p>
+<p>D-1212 was administered inert gas (nitrogen) while laying across the surface of SCP-2759-1, equipped with the same gear as in the previous log, plus an extra set of mountable cameras, one handheld camcorder, an extra flashlight and additional provisions. Audio contact was established twenty-one minutes after death.</p>
+<hr/>
+<p style="text-align: center;">[BEGIN LOG]</p>
+<p><em>Once more, the camera's activation reveals SCP-2759-E-1 and its fog-lined perimeter. The quality and unsteadiness of the feed implies the mountable cameras did not survive traversal into the anomaly. D-1212 is instructed to observe the rest of the temple exterior before entering the cella. Subject's breath is seen as they circumnavigate the center of the temple.</em></p>
+<p><strong>D-1212:</strong> This place is giving me the spins.</p>
+<p><strong>Control:</strong> Take as much time as you need.</p>
+<p><em>D-1212 rests for a moment before continuing onward.</em></p>
+<p><strong>D-1212:</strong> You'll get me out of here if things go south?</p>
+<p><strong>Control:</strong> We'll do everything we can to keep you safe.</p>
+<p><strong>D-1212:</strong> Thank you.</p>
+<p><em>Coming around the side, another entrance into the temple is visible, farther down and out of view. In the video feed, a dark silhouette is seen peering out of the entrance. Subject starts towards it, wordlessly, and the entity disappears into the structure. D-1212 approaches the entryway and points the camera into the darkness. She pauses, then pulls off her pack and looks inside, taking out a flashlight and switching it on.</em></p>
+<p><em>The hallway is wide but low, dipping down before ending at a left turn. More cuneiform imagery is observed on the walls, the symbols "mul" and "ki"<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-9')">9</a></sup> are predominant, seen carved over the relief sculptures that were present before. The reason for this vandalism is still under debate.</em></p>
+<p><strong>D-1212:</strong> I don't know what these symbols are, but they feel.. loud? Familiar too. Hello?</p>
+<p><strong>Control:</strong> Noted. We are analyzing the writing now. Please continue.</p>
+<p><em>Subject takes the left as it terminates in a small room of unknown purpose. In the center is a clay altar that resembles SCP-2759-1. D-1212 approaches the object and lays a hand on it.</em></p>
+<p><strong>D-1212:</strong> Warm. Is this another one of those tables that you put me on?</p>
+<p><strong>Control:</strong> It appears to be.</p>
+<p><strong>Unknown:</strong> It is.</p>
+<p><em>D-1212 panics and swings around, dropping the camera. View is clouded with dust and lays askew, with two pairs of legs seen struggling. After a moment, the scuffle subsides.</em></p>
+<p><strong>Unknown:</strong> Wait, stop- stop-Just- calm down!</p>
+<p><strong>D-1212:</strong> The hell I will. Who are you?</p>
+<p><strong>Unknown:</strong> [quiet, inaudible]</p>
+<p><strong>D-1212:</strong> Thank goodness, but how? Why are you even here?</p>
+<p><strong>Unknown:</strong> [quiet, inaudible] -number of dead folk that end up here, I mean wouldn't <em>you</em>? It's crowded enough here as is. [louder] Is Site Command in your ear? Can you tell them to contact O5-11, tell him MacLaughlin wants to speak with him. He'll know who I am.</p>
+<p><strong>D-1212:</strong> Sure, but- wait, dead folk? Am I-?</p>
+<p><em>Subject is seen hyperventilating. Control attempts to contact O5-11 about the matter; no response is given. The entity<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-10" onclick="WIKIDOT.page.utils.scrollToReference('footnote-10')">10</a></sup> is seen moving into view of the camera and approaching. He brushes the lens and sets the device on a ledge, facing the two, with the altar in plain view.</em></p>
+<p><strong>MacLaughlin:</strong> They didn't tell you? Jesus. Short answer is yes, but it's never that simple. What you are right now is an informational construct. It's what we all are, really- information. Most likely, anyway. There are theories. At present moment, your 'information' is on a different substrate, or plane of existence, or whatever you want to call it. If it makes you feel any better, you won't be dead forever. At least, you won't be stuck here forever, which is ostensibly worse. Death is a blessing, don't take it for granted.</p>
+<p><strong>D-1212:</strong> What do you mean?</p>
+<p><strong>MacLaughlin:</strong> It- It's nothing to you. This is what you want, right here.</p>
+<p><em>MacLaughlin is seen producing a clay disk, roughly 15 cm across. The object, now classified as SCP-2759-2, possesses a carving of an isosceles triangle but appears otherwise unremarkable.</em></p>
+<p><strong>D-1212:</strong> And what is that?</p>
+<p><strong>MacLaughlin:</strong> The way back. Well, it makes the way back, the right way back.</p>
+<p><strong>D-1212:</strong> The right way?</p>
+<p><strong>MacLaughlin:</strong> Trust me. We've been looking for this for a while.</p>
+<p><strong>D-1212:</strong> We? How many more of you are there?</p>
+<p><strong>MacLaughlin:</strong> Forty-something.</p>
+<p><em>MacLaughlin is seen approaching the altar and laying the disk flat on its surface. The altar hums, the symbol for "HALL/VESTIBULE" glowing bright. O5-11 arrives onsite unannounced and assumes administrative control of the situation.</em></p>
+<p><strong>MacLaughlin:</strong> Not where we want to go. Look here though.</p>
+<p><em>He turns the object like a dial, and as he does so, the light switches to "GARDEN", then to a new symbol where "UNDERNEATH" was present on SCP-2759-1, with the frequency of the hum audibly changing with each.</em></p>
+<p><strong>MacLaughlin:</strong> There we are.</p>
+<p><strong>D-1212:</strong> That'll take me back?</p>
+<p><strong>MacLaughlin:</strong> Yeah. You go first.</p>
+<p><em>D-1212 scrambles onto the altar and lays down.</em></p>
+<p><strong>MacLaughlin:</strong> This journey is much easier if you're already dead. Sorry I can't be more helpful.</p>
+<p><strong>D-1212:</strong> What do you mean?</p>
+<p><strong>MacLaughlin:</strong> It'll be quick, I promise.</p>
+<p><em>MacLaughlin is seen pulling out a small knife. Before D-1212 can react, he is seen pulling the subject's head back and slicing her carotid artery in one motion. D-1212 quickly dies via blood loss, the altar reacting as expected not long after.</em></p>
+<p><strong>MacLaughlin:</strong> It doesn't get easier. Now, for me.</p>
+<p><em>Once the altar stops function, MacLaughlin is seen moving towards the camera and disappears out of view, presumably looking into the LCD screen as it is jostled. View remains trained on the altar. After a moment of silence, the camera is set back down.</em></p>
+<p><strong>MacLaughlin:</strong> Interesting. Let's hope this works, then.</p>
+<p><em>He moves back over to the altar again and is seen pulling the corpse of D-1212 off the surface. The late agent lays atop surface and is observed falling unconscious immediately, with the altar once again activating as expected.</em></p>
+<p><em>Sixteen minutes later, D-1212 is found unconscious on the grounds of SCP-2759, SCP-2759-2 laying beside her. MacLaughlin is not found, and O5-11 <a href="/scp-2718">debriefs several Level 5 members of Site Command</a>.</em></p>
+<p style="text-align: center;">[END LOG]</p>
+</blockquote>
+<p><strong>ADDENDUM 2759-2:</strong></p>
+<p>After the events of Exploration 2759-Eribu and with the assistance of O5-11, personnel assigned to the project were screened and reassigned as necessary. Select Foundation staff assigned to SCP-2759 were kept on the project and debriefed on the existence of a heretofore unknown Mobile Task Force consisting exclusively of <span style="text-decoration: line-through;">incorporeal entities</span> <a href="/scp-2111">informational construct facsimiles</a> of deceased Foundation agents. These beings are able to freely travel via SCP-2759-1's anomalous properties utilizing cameras placed within the containment area, though it is unclear why this function does not operate the same way upon return.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-11" onclick="WIKIDOT.page.utils.scrollToReference('footnote-11')">11</a></sup> Using SCP-2759-E-1 as a focal point, the O5 Council is now able to communicate with the deceased <a href="/task-forces#omega-0">Mobile Task Force Omega-Zero</a> ("Ará Orún") with relative ease to corroborate, plan and execute missions in a discreet and effective manner.</p>
+<p>Reclassified as Euclid-Thaumiel on 04/10/2012 per request of O5-11.</p>
+<p><strong>EXPLORATION 2759-ANZU:</strong></p>
+<p><strong>Abstract:</strong> On 09/13/2012, an exploration of SCP-2759-E-1 and SCP-2759-1's alternate destinations was approved by O5-11. A team of five members from MTF ω-0 were selected to travel to SCP-2759-E-1, set up a small short-term camp, then split up into teams to explore both remaining destinations and, if possible, find another instance of SCP-2759-1 to return with. Kits packed with standard Mobile Task Force gear and redundant sets of audiovisual surveillance equipment were placed on SCP-2759-1 during transport.</p>
+<p>After one hour of radio silence, it was assumed that none of the broadcast equipment successfully transferred to SCP-2759-E-1. Two weeks after the start of the exploration, a personal log book of the late agent Richard Larenz was discovered on the grounds of SCP-2759.</p>
+<p style="text-align: center;"><a href="/richard-larenz-personal-log">VIEW PERSONAL LOG OF LATE AGENT RICHARD LARENZ</a></p>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. A name which translates roughly to "Temple whose foundation emanates aura".</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Translated roughly as "TRANSPORT/MOVEMENT, GARDEN, HALL/VESTIBULE, UNDERNEATH"</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Inert gases will now be used for ease of testing and subject comfort, per review of the Ethics Committee.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Audio broadcasting equipment averages at a 27% rate of success, cameras/video equipment 18%, with more sensitive equipment yielding an average 10% chance of transference.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Average rate of transference for a basic weapon (Tactical knife): 3.4%</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Sumerian for "[To] live in darkness".</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. Sumerian. Roughly "On this road, whose course has no way back, the dead will outnumber the living."</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. "The Abyss".</div>
+<div class="footnote-footer" id="footnote-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-9')">9</a>. "Mulki" meaning "A celestial body which has been separated/cleaved/broken.</div>
+<div class="footnote-footer" id="footnote-10"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-10')">10</a>. Later identified as Agent Andrew MacLaughlin, determined KIA 9/12/1999 as a result of a large scale containment breach at Site-19.</div>
+<div class="footnote-footer" id="footnote-11"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-11')">11</a>. Recovered materials suggest SCP-2759-E-1 is likely entirely construct in nature, however, the "realness" of its reality is still subject of debate, <a href="https://scp-wiki.wikidot.com/narrativistics-and-you">as well as our own</a>, for that matter.</div>
+</div>
+</div>
+<p style="text-align: center;">END OF FILE</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="warp">
+<div class="collection">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">More From This Author</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">More From This Author</a></div>
+<div class="collapsible-block-content">
+<table style="1px solid black; width: 100%;">
+<tr>
+<th class="namerow" colspan="2"><div class="list-pages-box"> <div class="list-pages-item">
+<p>Billith's Works</p>
+</div>
+</div></th>
+</tr>
+<tr>
+<th class="titlecolumn">SCPs</th>
+<th class="articlecolumn"><div class="list-pages-box"> <div class="list-pages-item">
+<p><a href="/scp-8190">SCP-8190</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-8808">SCP-8808</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-8868">SCP-8868</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-7646">SCP-7646</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-2798">SCP-2798</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-1256-j">SCP-1256-J</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-6549">SCP-6549</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-6768">SCP-6768</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-8909">SCP-NaN</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-5140-j">SCP-5140-J</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-6183">SCP-6183</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-8878">SCP-8878</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-8180">SCP-8180</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-2853">SCP-2853</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scp-3335">SCP-3335</a> <span class="collectiondot">•</span></p>
+</div>
+</div></th>
+</tr>
+<tr>
+<th class="titlecolumn">Tales/GoI Formats</th>
+<th class="articlecolumn"><div class="list-pages-box"> <div class="list-pages-item">
+<p><a href="/narrativistics-and-you">Narrativistics and You: Abandoning the Notion of Fiction vs. Non-Fiction</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/your-future-is-bright">Your Future is Bright</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/redact-your-life">Redact Your Life</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/a-place-to-call-your-home">A Place To Call Your Home</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/the-last-oasis">THE LAST OASIS - POWERED BY HEXAGON os</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/spiral-the-drain">SPIRAL THE DRAIN</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/scranton-encabulator">A Recording of Prometheus Innovations' Pitch for the Scranton Encabulator Mk VI, and the Ramifications of its Existence</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/on-the-nature-of-conscious-experience">On The Nature Of Conscious Experience or How I Learned to Love Myself</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/open-the-gate">OPEN THE GATE</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/holes">Holes</a> <span class="collectiondot">•</span></p>
+</div>
+<div class="list-pages-item">
+<p><a href="/opulence">OPULENCE</a> <span class="collectiondot">•</span></p>
+</div>
+</div></th>
+</tr>
+<tr>
+<th class="titlecolumn">Other</th>
+<th class="articlecolumn"><div class="list-pages-box"> <div class="list-pages-item">
+<p><a href="/sr-researcher-james-a-harkness-personnel-file">Sr. Researcher James A. Harkness' Personnel File</a> <span class="collectiondot">•</span></p>
+</div>
+</div></th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

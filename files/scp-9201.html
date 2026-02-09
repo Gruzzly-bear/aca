@@ -1,0 +1,186 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-9201</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-9201</h1>
+            <div class='image-header'><img alt="aismallard" class="small" src="https://www.wikidot.com/avatar.php?userid=4598089&amp;amp;size=small&amp;amp;timestamp=1760875051" style="background-image:url(https://www.wikidot.com/userkarma.php?u=4598089)"/>
+<img alt="stormbreath" class="small" src="https://www.wikidot.com/avatar.php?userid=3075960&amp;amp;size=small&amp;amp;timestamp=1760875051" style="background-image:url(https://www.wikidot.com/userkarma.php?u=3075960)"/>
+<img alt="Yossipossi" class="small" src="https://www.wikidot.com/avatar.php?userid=2199269&amp;amp;size=small&amp;amp;timestamp=1760875051" style="background-image:url(https://www.wikidot.com/userkarma.php?u=2199269)"/>
+<img alt="Tufto" class="small" src="https://www.wikidot.com/avatar.php?userid=3337265&amp;amp;size=small&amp;amp;timestamp=1760875051" style="background-image:url(https://www.wikidot.com/userkarma.php?u=3337265)"/>
+<img alt="atomicity.svg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-9201/atomicity.svg"/>
+<img alt="consistency.svg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-9201/consistency.svg"/>
+<img alt="isolation.svg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-9201/isolation.svg"/>
+<img alt="durability.svg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-9201/durability.svg"/></div><div class='text-content'><strong>Item #:</strong> SCP-9201</p>
+<p><strong>Object Class:</strong> Thaumiel</p>
+<p><strong>Special Containment Procedures:</strong> Access to SCP-9201-A units is restricted per the Foundation Paratechnology Equipment Policy. Field agents who are Level-3 and above are eligible for access, as are anomaly researchers when overseen by Level-4 oversight staff.</p>
+<p>Use of SCP-9201-A is governed by Foundation Containment Policy. As a piece of standard equipment, approval of containment actions is managed by the Containment Command System (CCS).</p>
+<p>Installation and management of SCP-9201-B units is overseen by the <a href="/secure-facility-dossier-site-7">RAISA Records &amp; Archival Office</a>.</p>
+<p><strong>Description:</strong> SCP-9201 is the Foundation Reality Transaction Manager (FRTM), a piece of paratechnology which enables ACID transaction processing on a piece of local reality. Due to its immense power requirements and the difficulty of properly determining conceptual parameters, effective use for Foundation operations is challenging.</p>
+<p>The primary use of the FRTM is in SCP-9201-A, the Foundation Field Anomaly Analyzer (FFAA). This 47 kilogram device interfaces with an internally-installed limited-use SCP-9201 instance. The FFAA has been programmed to accept nearby spatial coordinates and generic conceptual information, or alternatively, an SCP database number.</p>
+<p>When provided input data and activated, the device initializes a transaction on the specified parameters: any changes to reality proceed as expected, until SCP-9201-A closes the transaction with one of two possible actions:</p>
+<ul>
+<li><strong>Commit</strong> — If committed, then any changes made within the region are preserved. This "accepts" the changes to reality since the start of the transaction.</li>
+<li><strong>Rollback</strong> — If rolled back, then reality within the inputted parameter region is reset to the state it was at the time the transaction was initiated. However, note that <em>only</em> the reality captured by the transaction is rolled back. For instance, if a transaction is programmed to capture only biological entities and metals, then any destruction to nearby non-metallic infrastructure will remain after rollback.</li>
+</ul>
+<p>Partial commits and rollbacks are not possible due to the atomicity guarantee of SCP-9201. Instead, operators should fine-tune which aspects of reality are captured (and thus, resettable) and which are unaffected through use of precise parameter specification.</p>
+<blockquote>
+<p>Oh, you've never seen a debugger in-person before now, huh? Nah, nobody calls it the "Field Anomaly Analyzer", and "FAA" is too confusing with that one agency.</p>
+<p>Have you used one before? No I mean the normal kind, for computers. I guess it makes sense, seeing as you studied memetics. Well, uh let's see, how to explain it…</p>
+<p>It's kind of like this, right? You're studying a car crash. Something in the design of the vehicle was flawed or insufficient as it went over this particular road.</p>
+<p>So what a debugger does is it lets you replay the car crash, but in slow motion. You can pause it, look around, change stuff: see how hot the engine's burning, tweak the axle strength, and oh hey you found it! One instant where there's too much weight on a slightly deflated tire.</p>
+<p>Now unfortunately we don't have any gizmo you can just point out a skip that tells you about its guts, let alone change it however you want. But by capturing it in a transaction and retrying again and again, crashing that car over and over, we can learn an awful lot.</p>
+</blockquote>
+<p>SCP-9201's transactional capture ability also applies to itself. If an SCP-9201-A unit is present within a conceptual capture at the time of transaction start, then any actions taken by that unit (including the creation of sub-transactions) can themselves be committed or reverted.</p>
+<p>Due to its isolation guarantee, the events from one transaction are not able to affect events in an unrelated, non-intersecting transaction. The way this will manifest for observers outside both transactions can be difficult to predict and can lead to anomalous manifestations or bodily harm. For this reason, such configurations are not recommended.</p>
+<p>When utilized properly, SCP-9201-A is useful for a variety of containment-related tasks. Common tasks include initial containment operations, performing extended experimentation, and limiting or negating the effects of containment breaches.</p>
+<blockquote>
+<p>Initial containment is a motherfuck, that's for sure. All we get are vague reports, mostly-useless sensor readings, and if we're lucky, <em>maybe</em> a decent picture or audio snip. But I've survived a lot of them and I'll tell you we wouldn't contain half the shit we do without these things.</p>
+<p>Here's how it's usually laid out. We have a wide net, covering everything in the spacetime region. This transaction is only rolled back if things go <em>really</em> south. Then there's the outer inner one, just inside the main cordon. Then the inner inner one. This gets the suspect scene but also all the agents who are going to go into the danger area.</p>
+<p>So you're saying — I mean that sounds like a good idea but it doesn't work. If you put the agents in their own transaction, separate from the transaction holding the skip, and reset them if they get fucked up by it. Bad idea. They might not be able to see the anomaly. Or maybe they can but they create a "different version" of it in their little world. Or other weird stuff. Don't mess with anomalies like that. It's just not good unless you want a second, even more complicated skip to clean up.</p>
+</blockquote>
+<p>To facilitate determination of an anomaly's full properties, stationary versions of SCP-9201-A units have been installed in many containment and research chambers, with pre-tuning for the anomaly being studied. Through use of the Keppler-Gray methodology, 43% of SCP items and 98% of <a href="/log-of-anomalous-items">miscellaneous anomalous objects</a> have known SCP-9201 conceptual parameters.</p>
+<p>Once an anomaly's loose conceptual parameter space is known, comprehensive testing can be performed at much lower risk than without SCP-9201 use. A contained object can be exposed to a variety of stimuli, forms of sapient interaction, and other tests within the Foundation's extensive test battery and reset after each experiment. For more social anomalies, rollbacks might occur less frequently, to determine how its behavior varies with its treatment and containment conditions.</p>
+<blockquote>
+<p>You know, I'm thinking, your point about resetting people — not like that but it's actually pretty normal for a lot of task forces, including ours. We got these perfect conceptual definitions for regular humans, non-anomalous materials, and most of the Foundation's standard equipment. So sometimes we've got these live fire exercises where everyone is put inside a transaction, we blow each other up, and it all gets reset at the end. Except for memories, because those can be excluded. More experience.</p>
+<p>Yeah. It's why most agents are jaded fucks.</p>
+</blockquote>
+<p>Permanent SCP-9201-A installations are also invaluable for avoiding and analyzing containment breaches. With a precise conceptual capture, escaped anomalies can simply be rolled back to their pre-breach state, leaving only facility damage. In situations where a looser capture is maintained, some anomalous residue may be left, which can be studied during the cleanup process. Occasionally, such study yields insights on determining more precise conceptual bounds on the SCP object.</p>
+<p>However, note that improper bounding is often worse than no transactional containment at all. Most conceptual specifications for SCP-9201 are incredibly complex and their myriad interactions even more so. Capturing an anomaly using an incomplete definition means that, when rolled back or committed, any of its effects on reality may be uncompensated for or doubly-compensated for. This can cause objects to become inaccessible, duplicated, split, imperceivable, excessively-perceivable, and risks outright containment breaches or the formation of new anomalies.</p>
+<blockquote>
+<p>God, yeah, I remember that incident. No you're exactly right — if you ask me, this is the most important thing to understand about our debuggers. Finding out the exact parameters is a pain in the ass, and in some cases we just can't.</p>
+<p>Like we've given up trying to use 'em on Daevite stuff. Maybe because it's retroactive like 9201 is, or <a href="/scp-6140">maybe it's something else we don't know yet</a>, but it never goes well. They also aren't super great for memetics too, which is why I'm glad you're joining the team. They can reset people just like amnestics reset their memories, but that's mostly it.</p>
+<p>Oh yeah, here's the handbook. It actually has a huge-ass list of prohibited anomalies and concepts. Includes some weird ones too, like a few brands of natto and dreams about Neptune's moons. Those require site director approval.</p>
+<p>Anyways. Welcome to the force. You seem like a good kid, I look forward to seeing where you end up in twenty years.</p>
+</blockquote>
+<p>For comprehensive information on proper operation of SCP-9201-A, see the Foundation Containment Operations Handbook.</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ INFORMATION RESTRICTED TO CLEARANCE LEVEL 5/9201</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">Welcome, O5-10.</a></div>
+<div class="collapsible-block-content">
+<p>SCP-9201-B is the Foundation Global Anomaly Analyzer (FGAA). Its effective range is not known to be limited.</p>
+<p>When activated, it is capable of resetting all known reality (or any subset thereof, as specified by its input parameters) to any saved checkpoint, as stored within the SCP database.</p>
+<p>Invocation requires one of the following:</p>
+<ul>
+<li>O5 Council majority vote.</li>
+<li>Site Directors' Executive Committee of the Whole (SDECotW) supermajority vote, if the O5 Council is compromised or incapacitated.</li>
+<li>LASTRESORT.aic, when the SDECotW-approved automatic activation conditions are met.</li>
+</ul>
+<p>To date, SCP-9201-B has successfully reverted 807 K-class events and 525,931,281 severe containment breaches.</p>
+</div>
+</div>
+</div>
+<hr/>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-9201">SCP-9201</a>" by aismallard, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-9201">https://scpwiki.com/scp-9201</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Filename:</strong> atomicity.svg<br/>
+<strong>Name:</strong> Bootstrap boxes.svg<br/>
+<strong>Author:</strong> twbs<br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Bootstrap_boxes.svg">https://commons.wikimedia.org/wiki/File:Bootstrap_boxes.svg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> consistency.svg<br/>
+<strong>Name:</strong> Bootstrap ui-checks.svg<br/>
+<strong>Author:</strong> twbs<br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Bootstrap_ui-checks.svg">https://commons.wikimedia.org/wiki/File:Bootstrap_ui-checks.svg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> isolation.svg<br/>
+<strong>Name:</strong> Bootstrap snow3.svg<br/>
+<strong>Author:</strong> twbs<br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Bootstrap_snow3.svg">https://commons.wikimedia.org/wiki/File:Bootstrap_snow3.svg</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> durability.svg<br/>
+<strong>Name:</strong> Bootstrap hdd-network.svg<br/>
+<strong>Author:</strong> twbs<br/>
+<strong>License:</strong> CC-BY-SA 3.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Bootstrap_hdd-network.svg">https://commons.wikimedia.org/wiki/File:Bootstrap_hdd-network.svg</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

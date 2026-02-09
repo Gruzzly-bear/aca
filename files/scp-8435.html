@@ -1,0 +1,939 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-8435</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-8435</h1>
+            <div class='image-header'><div class="scp-image-block block-right" style="width:180px;"><img alt="consequences.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-8435/consequences.jpg"/>
+<div class="scp-image-caption">
+<p>SCP-8282-1 instance used in ritual.</p>
+</div></div><div class='text-content'>ITEM#:</span> <span class="number">SCP-8435</span></div>
+
+<div class="top-right-box">
+<div class="level">LEVEL?</div>
+<div class="clearance">Irrelevant</div>
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">CONTAINMENT CLASS:</div>
+<div class="class-text">euclid</div>
+</div>
+<div class="second-class">
+<div class="class-category">SECONDARY CLASS:</div>
+<div class="class-text">lambda gephyra</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">DISRUPTION CLASS:</div>
+<div class="class-text">vlam</div>
+</div>
+<div class="risk-class">
+<div class="class-category">RISK CLASS:</div>
+<div class="class-text">warning</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="display: none;">
+<div class="anom-bar-container item-{$item-number} clear-0 {$container-class} {$secondary-class} {$disruption-class} {$risk-class} {$american}">
+<div class="anom-bar">
+<div class="top-box">
+<div class="top-left-box"><span class="item">Item#:</span> <span class="number">{$item-number}</span></div>
+
+<div class="top-right-box">
+<div class="level">Level0</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">{$container-class}</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">{$secondary-class}</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">{$disruption-class}</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">{$risk-class}</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<div class="vwib">
+<div class="scp-image-block block-center" style="width:80%;"><img alt="sigil.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-8435/sigil.png"/>
+<div class="scp-image-caption">
+<p>SCP-8435 (partial).</p>
+</div>
+</div>
+</div>
+<p><span class="dosshead"><strong>Special Containment Procedures:</strong></span> At least once every two years, two people must visit the Esoteric Assembly chamber and perform Procedure 8435-Muhlenberg. The next visit is scheduled for: <span class="hand">13 February 2016</span>.</p>
+<p>Other than the above, interaction with SCP-8435 is not recommended.<span class="fnnum">.</span><span class="fncon">The Lambda Gephyra object class is used for items that are not your problem.</span></p>
+</div>
+<div class="notation">
+<p><strong>Ellbridge:</strong> Um.</p>
+<p><strong>Dr. Lassila:</strong> I have seen more helpful conprocs, to be honest.</p>
+<p><strong>Dr. Memphis:</strong> I think 'Lambda Gephyra' is supposed to be Greek for 'Ellbridge'.</p>
+<p><strong>Dr. Flood:</strong> Of course you'd know that.</p>
+<p><strong>Ellbridge:</strong> He never told me about this. Not once.</p>
+<p><strong>Dr. Flood:</strong> That date that's written down is exactly two years ago.</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Dr. Flood:</strong> We need to do whatever this Muhlenberg procedure is.</p>
+<p><span class="sd">[The doors unlock with a loud click and swing open spontaneously. Behind them is a large corridor, in a similar state of disrepair to the atrium.]</span></p>
+<p><strong>Dr. Flood:</strong> I guess we go through?</p>
+<p><strong>Dr. Lassila:</strong> You may proceed.</p>
+<p><span class="sd">[All five individuals move forward. Ellbridge continues to read from the file.]</span></p>
+</div>
+<div class="dossier">
+<p><span class="dosshead"><strong>Description:</strong></span> SCP-8435 is an anomaly complex affecting the Esoteric Assembly, a defunct collective of thaumaturges and scholars of the anomalous. The Assembly was founded in 1849, and rendered effectively inoperative in 1868 due to internal political conflicts; several of its members went on to be involved in the formation of the SCP Foundation, while many others founded or joined other anomalous groups.</p>
+<p>The official legislative chamber of the Esoteric Assembly is an extradimensional space accessible through numerous different Ways; the primary point of ingress, however, is a house in Lexington, Kentucky originally belonging to Leopold de Haas, one of the founders of the Assembly and its inaugural Chair.</p>
+</div>
+<div class="notation">
+<p><strong>Dr. Lassila:</strong> Ollie, do we have anything on Leopold de Haas?</p>
+<p><strong>Dr. Memphis:</strong> Yeah, he shows up in references to the Assembly. Not much, because our records mostly consider the whole thing a minor historical footnote, and they're a little fuzzy on this whole period anyway. From what we know, he was a fairly competent thaumaturge with… unclear political views. Says he "became inactive" in the anomalous community after a while. Doesn't say why.</p>
+<p><strong>Beta-3:</strong> Can we check in any of these side rooms? See if any of them are still furnished, and if that furniture looks like it's from the 1860s?</p>
+<p><span class="sd">[Ellbridge, Dr. Flood and the MTF agents proceed through the corridor, attempting to open various side doors as they do.]</span></p>
+<p><strong>Dr. Flood:</strong> OK, most of these doors are locked. The only ones that aren't are the ones marked 'vacant', and those rooms are just fully empty.</p>
+<p><span class="sd">[Ellbridge steps on some broken glass, and looks up at the ceiling.]</span></p>
+<p><strong>Ellbridge:</strong> Oh, there's a shattered skylight here. That implies there's a sky, at least.</p>
+<p><strong>Dr. Flood:</strong> Moving forward, there's a T-junction at the end of this corridor. The right is… completely blocked by rubble — looks to be a lot of destroyed chairs and desks — so I guess we're going left.</p>
+<p><strong>Beta-2:</strong> There's a lot of markings on the walls here that look like magical symbols, very similar to the sigil in the file photo. I'm guessing some of that's the wards you mentioned. The symbols are very extensive, though.</p>
+<p><strong>Ellbridge:</strong> I think the wards go a lot further than we assumed.</p>
+</div>
+<div class="dossier">
+<p>de Haas, aided by some of his colleagues, imbued the Assembly building with a complex and expansive system of thaumaturgic wards and protections, here referred to as SCP-8435,<span class="fnnum">.</span><span class="fncon">SCP-8435 is sometimes colloquially named "Leopold" in recognition of its creator.</span> tasked with maintaining order in the Assembly. The practical effect of SCP-8435 is as follows: it is impossible for the Assembly's constitution (known as the <em>Principatus</em>) or its standing rules to be violated. For example:</p>
+<ul>
+<li>Members speaking out of turn in the Assembly chamber (e.g. speaking when not called on by the Chair, engaging in personalities<span class="fnnum">.</span><span class="fncon">i.e. levying personal insults or threats against other members of the Assembly.</span>, or invoking curses, certain entities' True Names, or other phrases whose utterance might bring about dangerous magical effects) are made inaudible;</li>
+<li>Office doors can be opened by the office's owner without a key, but are locked shut to everyone else;</li>
+<li>Individuals ineligible for membership in the Assembly (i.e. non-thaumaturges) are incapable of entering the premises;</li>
+<li>Works of thaumaturgy intended to bypass, block or destroy SCP-8435 will fail.</li>
+</ul>
+<p>This effect has persisted even after the organisation's collapse. It will respect amendments to the Assembly's standing rules, so long as such amendments do not violate the <em>Principatus</em>. However, the <em>Principatus</em>:</p>
+<ul>
+<li>mandates the existence of SCP-8435;</li>
+<li>describes no process for the dissolution of the Assembly;</li>
+<li>describes no process for its own amendment.</li>
+</ul>
+<p>SCP-8435 is therefore effectively permanent, as the entrenched laws of the Assembly require it to actively prevent its own removal.</p>
+</div>
+<div class="notation">
+<p><strong>Ellbridge:</strong> Oh, for god's sake.</p>
+<p><strong>Dr. Flood:</strong> They didn't think that through, did they?</p>
+<p><strong>Dr. Memphis:</strong> Legal Department's going to have a fit when this reaches them.</p>
+<p><strong>Beta-1:</strong> So it's saying that there's a web of magic woven into this place that cannot be extricated?</p>
+<p><strong>Ellbridge:</strong> And one of the only things it does is kick out civilians and non-magic field agents.</p>
+<p><strong>Dr. Flood:</strong> They've built an unkillable police officer. That's what these guys have done.</p>
+<p><strong>Dr. Lassila:</strong> <span class="sd">[distorted]</span> What was that, Lewis?</p>
+<p><strong>Dr. Flood:</strong> Uh. Control, you're breaking up, I can't hear you.</p>
+<p><strong>Dr. Lassila:</strong> <span class="sd">[unintelligble]</span></p>
+<p><span class="sd">[Radio contact with Control is lost.]</span></p>
+<p><strong>Ellbridge:</strong> Oh, no.</p>
+<p><strong>Beta-1:</strong> We need to go back. Protocol.</p>
+<p><span class="sd">[All five individuals return to the atrium where they arrived.]</span></p>
+<p><strong>Beta-3:</strong> Uh, problem. Gateway's gone. There's no exit.</p>
+<p><strong>Ellbridge:</strong> <em>Shit.</em></p>
+<p><strong>Beta-1:</strong> We do have an emergency teleport back.</p>
+<p><strong>Dr. Flood:</strong> Try it, but I think 8435 might block it.</p>
+<p><span class="sd">[Beta-1 removes a portable Way generator from her suit and attempts to activate it. It has no effect.]</span></p>
+<p><strong>Beta-1:</strong> Nope.</p>
+<p><strong>Dr. Flood:</strong> It said there was an exit to somewhere in Kentucky. Can we get to that?</p>
+<p><strong>Ellbridge:</strong> Let me have a look.</p>
+</div>
+<div class="dossier">
+<p>When rule violations occur that cannot be straightforwardly prevented, SCP-8435 will act in an erratic and sometimes dangerous fashion, including by manipulating the Assembly building's layout or the exits therefrom. Occasionally, it may also exert limited and unpredictable influence on the outside world. The current containment procedures are intended to prevent this from occuring.</p>
+</div>
+<div class="notation">
+<p><strong>Ellbridge:</strong> Fuck.</p>
+<p><strong>Dr. Flood:</strong> <em>What</em> containment procedures? What are they doing? What is Muhlenberg?</p>
+<p><span class="sd">[A structural column in the atrium suddenly collapses, bringing a portion of the roof with it.]</span></p>
+<p><strong>Beta-3:</strong> Back!</p>
+<p><span class="sd">[All five individuals run back towards the main doors.]</span></p>
+<p><strong>Dr. Flood:</strong> We need to keep moving and figure out what the hell's going on. I don't see how we get out otherwise.</p>
+<p><strong>Ellbridge:</strong> Yeah, let me finish reading the file, alright?</p>
+<p><strong>Dr. Flood:</strong> We can do that, but I get the impression that your dad is going to tell us as little as he can get away with. He's clearly not fond of the Foundation.</p>
+<p><strong>Ellbridge:</strong> Alright. Fine. Let's keep going, I guess.</p>
+<p><span class="sd">[The team begins to move back through the main corridor.]</span></p>
+</div>
+<div class="dossier">
+<p><span class="dosshead"><strong>Addendum 1, History of the Assembly:</strong></span> Throughout much of the early 19th century, there were discussions of formalising the worldwide thaumaturgic community and the numerous groups therein into a single, unified organisation. Many efforts were made to this end; the most successful was in the late 1840s, when Dutch-American thaumaturge Leopold de Haas and a number of his acquaintances established the Esoteric Assembly. de Haas wrote:</p>
+<div class="blockquote table1">
+<p>The occultists, the thaumaturges, the practitioners and scholars of magic today occupy a strange position. They constitute a group, in principle, possessing power in quantities unknown, indeed unimagined, by the rest of society — and yet, the exercise of this power toward any end is spoken of only in theoretical terms, and checks on such power even more so. There have been five Occult Wars in recorded history; should there be a sixth, should the performers of these arts ally against each other with sufficient numbers and motive, it is not hard to see how open hostilities would quickly infect general society like a plague, perhaps leading to a collapse of the entire world order.</p>
+<p>It is evident that this community, such as it is, must be unified in its goals and in its methods. The establishment of a governing authority over affairs of an esoteric nature is needed, and needed with urgency. Magic has been proliferating around the world for several decades now; the powers vested in us as occultists must be exercised in service of humanity, not in service of an endless spiral of fury and destruction.</p>
+</div>
+</div>
+<div class="notation">
+<p><strong>Dr. Flood:</strong> So much for preventing occult wars. Half of the anomalous groups we know of are out to get the other half.</p>
+<p><strong>Ellbridge:</strong> I was going to say, that sounds… optimistic.</p>
+<p><span class="sd">[The MTF agents continue inspecting the various side doors.]</span></p>
+<p><strong>Beta-2:</strong> We definitely can't get into any of these rooms?</p>
+<p><strong>Ellbridge:</strong> It said that 'offices' are locked. I think all those doors we tried are still technically people's offices.</p>
+<p><strong>Beta-2:</strong> There's a storage room here. That should be fine?</p>
+<p><strong>Ellbridge:</strong> Try it.</p>
+<p><span class="sd">[Beta-2 successfully opens a door marked "STORAGE". He enters, followed by Dr. Flood and Ellbridge. The room has no lighting of its own, so all individuals enable their flashlights.]</span></p>
+<p><strong>Beta-2:</strong> OK, I'm seeing some magical reagents on the shelves here. Lots of glass jars full of different powders and liquids. This stuff wouldn't look amiss in an alchemy lab.</p>
+<p><strong>Beta-3:</strong> Probably because the next room over <em>is</em> an alchemy lab, according to the sign.</p>
+<p><strong>Dr. Flood:</strong> Yeah, a lot of items of occult significance in here. Talismans from a bunch of different faiths. Shelf full of books, probably spellbooks or similar. Not going to read them, I don't trust them not to be full of cognitos. I think the folks at 91 could spend weeks just looking through this one room.</p>
+<p><strong>Ellbridge:</strong> There's also a human skeleton back here.</p>
+<p><span class="sd">[Dr. Flood walks over to Ellbridge, who is pointing at a heap of dust-covered bones on the floor.]</span></p>
+<p><strong>Dr. Flood:</strong> Fairly old human skeleton, by the looks of it.</p>
+<p><strong>Ellbridge:</strong> Well, yeah. We're assuming most of this stuff is from the 1860s.</p>
+<p><strong>Dr. Flood:</strong> Anything in that file about why there'd be a dead body dumped in here?</p>
+</div>
+<div class="dossier">
+<p>The Esoteric Assembly was established in November 1849 with the initial agreement of 58 signatories. The concept of a magical governing authority was immediately met with a mix of skepticism at its feasibility and indignation at its apparent imposition on the world, both based on the general notion that thaumaturges are not typically inclined towards large-scale collaboration or adherence to legal structures.<span class="fnnum">.</span><span class="fncon">This is still true and you know it.</span></p>
+<p>de Haas attempted to address this criticism by creating what he termed the "de Haas Legislative Warding System". The first phase of this plan, conducted over much of 1849 and 1850, was the construction of SCP-8435: a complex system of magical effects seeded into the entire Assembly building, with the purpose of upholding the authority's internal standards while taking on some of its menial administrative and archival duties. In de Haas' words:</p>
+<div class="blockquote table1">
+<p>A law is, by nature, only worth as much as its enforcement — and many occultists have an active disregard for the law, even insofar as that a number of national governments have no awareness that we exist. We seek to solve this by making the law — the law, at least, of the Esoteric Assembly — practically impossible to bend or break. It will be not only legally binding but <span style="text-decoration: underline;">physically</span> binding also — the two terms will be one and the same.</p>
+</div>
+<p>The second phase would have expanded SCP-8435's area of effect to the entire Earth, and bound it to all resolutions passed by the Assembly rather than just its internal rules. No major work on this project was ever completed, and it likely would be impossible under the known laws of thaumaturgy.</p>
+</div>
+<div class="notation">
+<p><strong>Ellbridge:</strong> No, so far it's just talking about Leopold de Haas being a complete fucking idiot. Are we done in this room?</p>
+<p><span class="sd">[Distant creaking and rumbling noises are audible.]</span></p>
+<p><strong>Beta-3:</strong> What was that?</p>
+<p><strong>Dr. Flood:</strong> Didn't the file say that 8435 would manipulate the building layout?</p>
+<p><strong>Ellbridge:</strong> Yeah— oh. Oh, no.</p>
+<p><strong>Dr. Flood:</strong> I think that's the corridors shifting.</p>
+<p><strong>Beta-1:</strong> We should keep moving. And make sure we're sticking together.</p>
+<p><span class="sd">[Ellbridge, Dr. Flood and Beta-2 leave the storage room.]</span></p>
+<p><strong>Beta-1:</strong> This way.</p>
+<p><strong>Beta-3:</strong> Hang on. Shifting room layout, we should mark down a field code.</p>
+<p><span class="sd">[Beta-3 retrieves a can of spray paint, and attempts to draw a symbol on the wall. A sudden gust of air blows the paint back in his face, and he shouts in confusion.]</span></p>
+<p><strong>Dr. Flood:</strong> If its job is to maintain order, that might extend to keeping the premises clean.</p>
+<p><strong>Ellbridge:</strong> Clean?! The other end of this corridor is blocked by a giant pile of broken furniture!</p>
+<p><strong>Beta-1:</strong> The file also says it can behave erratically. Suggest we make as few disturbances to the building as possible from here on out.</p>
+<p><span class="sd">[Several metres further down the corridor, the wall to the alchemy lab explodes violently in a cloud of fumes. A <a href="/scp-6643">translucent orange pseudopod</a> snakes out of the hole and begins writhing around in the hallway.]</span></p>
+<p><strong>Dr. Flood:</strong> Stay back!</p>
+<p><strong>Beta-1:</strong> And don't breathe any of that stuff in.</p>
+<p><span class="sd">[All five personnel run backwards. The pseudopod begins to absorb some of the gas, before the surrounding wall and ceiling melt outwards and appear to start attacking it. This continues for approximately fifteen seconds, before the pseudopod is sucked back into the lab, and the hole is sealed by an irregular mass of slowly solidifying bubbled plaster and paint.]</span></p>
+<p><strong>Ellbridge:</strong> What the fuck?</p>
+<p><strong>Dr. Flood:</strong> <em>That thing</em> is only meant to show up during AcroAbate disasters.</p>
+<p><strong>Ellbridge:</strong> AcroAbate?</p>
+<p><strong>Dr. Flood:</strong> Acroamatic abatement. Esoteric waste processing.</p>
+<p><strong>Ellbridge:</strong> Oh. I mean, if that's an alchemy lab, maybe people were doing that AcroAbate stuff here, back in the 1860s? And then they accidentally left something running, or spilled some chemicals, or something?</p>
+<p><strong>Dr. Flood:</strong> I don't think that makes sense.</p>
+<p><strong>Ellbridge:</strong> Why not?</p>
+<p><strong>Beta-1:</strong> Because AcroAbate wasn't invented until the 1900s.</p>
+</div>
+<div class="dossier">
+<p>Much of the anomalous community was unimpressed by de Haas' designs. Thaumaturge and merchant Percival Darke wrote in 1850:</p>
+<div class="blockquote table5">
+<p>So now this Mr. de Haas, spurred on by the bizarre cult of personality surrounding him, thinks it is his God-given duty to direct the affairs of every mage on this Earth. He has supposedly constructed some grand work of magic to make his word law and his law, truth, and is hiding behind appeals to "democracy" and "consensus" as a defense for this incredible imposition. It is abhorrent to the nature of the occult, and it must be stopped.</p>
+</div>
+<p>The membership of the Assembly rapidly splintered into an assortment of loosely-organised warring ideological factions. These included:</p>
+<ul>
+<li><strong>"Loyalists"</strong>: Members aligned with Leopold de Haas, many of whom advocated for the growth of the Assembly and its expansion into an all-powerful world order, facilitated by the continual development of SCP-8435;</li>
+<li><strong>"Protectionists"</strong>: Members who advocated for what would eventually become the Veil of Normalcy, believing that magic ought to be hidden from the world at large and practised only by a small group of authorised, "qualified" individuals;</li>
+<li><strong>"Libertines"</strong>: Members directly opposed to the Protectionists, who believed in the full publicisation of magic and the transformation of the Assembly into a chamber of democratically elected representatives;</li>
+<li><strong>"Nationalists"</strong>: Members who believed that magic should be brought under the control of national governments instead of a centralised entity;</li>
+<li><strong>"Humanitarians"</strong>: Members who advocated for the exclusive usage of magic towards charitable ends, seeking to serve the interests of humanity at large;</li>
+<li><strong>"Anti-Establishment"</strong>: Members opposed to the existence of the Esoteric Assembly or any similar organisation, who believed that thaumaturges should be allowed to operate independently and without interference;</li>
+<li>Numerous independent members, many of whom were ideologically aligned with one of the other movements while refusing to openly associate with them, presumably in an effort to appear neutral and unbiased.</li>
+</ul>
+<p>Several of these groups engaged in political obstructionism to prevent the passage of any meaningful resolutions, and the fractured nature of the membership meant that the Assembly was frequently unable to elect a Chair, much less achieve any notable legislative accomplishments. The closest any group ever came to holding a majority was a brief period from 1862-63 in which the Loyalists, Protectionists and Nationalists successfully formed a governing coalition. This coalition was deeply unstable, with members in several cases attempting to levy threats of violence against each other. The interference of SCP-8435 prevented the worst of this discourse from taking place within the Assembly chamber itself, though several members accused it (and de Haas by extension) of stifling legitimate debate; a motion to abolish SCP-8435 was introduced in 1862, and received a narrow majority in favour but not the two thirds required to amend the standing rules.</p>
+</div>
+<div class="notation">
+<p><span class="sd">[The expedition team continues through the building.]</span></p>
+<p><strong>Ellbridge:</strong> Come on, is this file actually going to be any help? Historical context is lovely and all, but how the hell do we actually fix this?</p>
+<p><span class="sd">[The team reaches another T-junction.]</span></p>
+<p><strong>Beta-2:</strong> Left or right?</p>
+<p><strong>Beta-1:</strong> Well, left is lined with unmarked gravestones and leads into an endless red haze, and right has been rotated ninety degrees about its length so that the wall is now the floor.</p>
+<p><strong>Beta-2:</strong> Right, then?</p>
+<p><strong>Beta-1:</strong> Right.</p>
+<p><span class="sd">[Beta-1 heads right, stumbling as she is pulled sideways onto the carpeted wall.]</span></p>
+<p><strong>Beta-1:</strong> Oh, local gravity's sideways as well. Careful.</p>
+<p><span class="sd">[The other four members of the team cautiously enter the rotated corridor before continuing onwards.]</span></p>
+<p><strong>Beta-2:</strong> Seems as though there's more markings on the walls here than in the last hall.</p>
+<p><strong>Dr. Flood:</strong> That might be good. Might mean we're getting closer to the middle.</p>
+<p><strong>Beta-3:</strong> <em>Is</em> that good?</p>
+<p><strong>Dr. Flood:</strong> I have no idea.</p>
+<p><span class="sd">[The MTF agents continue to try various side doors, all of which are locked. After another left turn, the hallway leads to a large room with multiple exits and a spiral staircase. The floor is littered with fragments of shattered ceiling tiles.]</span></p>
+<p><strong>Ellbridge:</strong> None of these doors out are marked. Do we try them, or do we try the stairs?</p>
+<p><span class="sd">[Beta-2 opens the nearest door, then immediately slams it shut with a disgusted shout.]</span></p>
+<p><strong>Ellbridge:</strong> Is that a— ugh. That's a no, isn't it? The hell is that smell?</p>
+<p><strong>Beta-2:</strong> That's the smell of a room filled entirely with rotting meat.</p>
+<p><strong>Ellbridge:</strong> <em>Why?</em> Why is that in here?</p>
+<p><strong>Beta-1:</strong> Stairs, then.</p>
+<p><strong>Ellbridge:</strong> Up or down?</p>
+<p><span class="sd">[Beta-1 begins to descend the stairs, then returns.]</span></p>
+<p><strong>Beta-1:</strong> Looking down, the stairs just stop in mid-air over a crater. So up.</p>
+<p><span class="sd">[All five team members begin to ascend the stairs. Beta-3, at the rear of the group, looks over the handrail and notices the lower steps falling away behind them.]</span></p>
+<p><strong>Beta-3:</strong> Quickly!</p>
+<p><span class="sd">[The team runs upwards into another short hallway. Moments after Beta-3 reaches the upper floor, the entire spiral staircase collapses behind him.]</span></p>
+<p><strong>Dr. Flood:</strong> That's not great.</p>
+<p><strong>Ellbridge:</strong> No, it's not. But <em>this</em> room looks very interesting. Give me a second to keep reading.</p>
+</div>
+<div class="dossier">
+<p>In early 1863, de Haas found himself running into financial trouble. In addition to regularly spending extravagant amounts on rare magical artifacts for no clear reason, he was also nearly the sole benefactor of the Assembly, having provided over 90% of its funding since its inception.</p>
+<p>To alleviate this problem, he proposed the introduction of a nontrivial membership fee for anyone attending the Assembly, which had previously been freely open to any persons capable of practicing thaumaturgy. This suggestion was met with uproar from many members, including individuals from both the Protectionist and Anti-Establishment factions; a number of these people led other groups and organisations within the magical community, and had allegedly been artificially increasing their support in the Assembly by offering their employees nominal thaumaturgic training, then paying them to attend sessions and vote on motions as ordered. de Haas' budgetary resolution eventually passed by a narrow margin (though was later repealed in 1866); upon its passage, the Protectionists immediately withdrew from the governing coalition, causing it to collapse. In subsequent weeks, a number of Protectionist members abandoned the Assembly outright.</p>
+<p>In late 1864, Leopold de Haas disappeared without trace. The reason for this is unclear; it has been variously suggested that he went bankrupt due to his spending habits, that he was funding said habits by embezzling from the Assembly's membership fees and feared gettng caught, that he suffered from deteriorating mental health,<span class="fnnum">.</span><span class="fncon">Supposedly evidenced by his frequent references to a non-existent individual named Philip.</span> or that he left for reasons connected to the Sixth Occult War, which began around the same time. The start of this war coinciding with de Haas' sudden absence destroyed any notion that the Assembly could effectively function as a magical peacekeeping project. Its attendance rapidly dwindled, with numerous splinter groups forming from its previous members; those who remained spent ever more time arguing over whether or not the Assembly ought to act to try and stop the war, and indeed whether or not it should continue existing. Assembly Chair Joseph Burford wrote in 1865:</p>
+<div class="blockquote" style="border-left: 5px solid #4462f4;">
+<p>It has been argued by several members of the House that this war was brought about, in part, by us. They have indicated that a project such as the Esoteric Assembly, whose objective was to unify the entire magical world under a common goal, was always destined to bring about bitter resentment in anyone who dissented against its supposedly singular voice. It appears deeply unlikely that we are the sole cause of the hostilities — this House's current or former attendees apparently make up a minimal fraction of the belligerents — but we represent one component of the discord that has been taking root in the magical world for decades.</p>
+<p>Rumours suggest that much of the war is centered on the city of Esterberg. Perhaps we ought to count ourselves fortunate that the Ways between that city and these chambers have spontaneously collapsed in the former Chair's absence.</p>
+</div>
+<p>In addition to providing the vast majority of the Assembly's funding, de Haas had been almost singlehandedly responsible for the maintenance of SCP-8435, and had failed to document the mechanisms by which it operated. Problems with the warding system therefore began to accumulate after his disappearance, causing deterioration of the Assembly building, the failure of some Ways into it, and unpredictable effects on thaumaturgy conducted therein. Individuals seeking to fix these problems encountered an incomprehensible array of disparate ritual constructions interacting with each other in a chaotic fashion, and experienced erratic and sometimes violent resistance from SCP-8435 when trying to modify or repair its workings.</p>
+</div>
+<div class="notation">
+<p><span class="sd">[The expedition team enters a circular room of similar size to the atrium. Every visible surface is densely inscribed with sigils. In the centre, there is a complex ritual circle roughly five metres across. It is composed primarily of pillars linked by glowing threads and paper ribbons, topped with assorted occult objects and clockwork components. The contents of the circle's interior are obscured and difficult to discern, but close analysis of the video footage suggests the presence of multiple concentric rings spinning at various angles. Thirteen beams of light emanate from the circle towards points high on the surrounding walls.]</span></p>
+<p><strong>Ellbridge:</strong> I <em>think</em> this is 8435. Or at least the heart of it.</p>
+<p><strong>Dr. Flood:</strong> I assume if we touch it, it'll throw a tantrum.</p>
+<p><strong>Ellbridge:</strong> Probably.</p>
+<p><strong>Beta-2:</strong> If this is the heart of it, then probably the actual floor of the House is nearby.</p>
+<p><strong>Dr. Flood:</strong> I don't think we can make any assumptions about the geography of this place.</p>
+<p><span class="sd">[All five individuals walk slowly around the construction, attempting to inspect it from various angles.]</span></p>
+<p><strong>Ellbridge:</strong> It's interesting, though. Because—</p>
+<p><span class="sd">[The entire room suddenly starts rotating. Subsequent footage analysis has confirmed that this movement coincides with Ellbridge blocking one of the beams of light, presumably inadvertently.]</span></p>
+<p><strong>Ellbridge:</strong> Fuck!</p>
+<p><span class="sd">[After exactly six seconds, the room stops turning. Ellbridge, Dr. Flood and Beta-3 regain their balance. Beta-1 and -2 are not visible.]</span></p>
+<p><strong>Dr. Flood:</strong> Uh.</p>
+<p><strong>Beta-1:</strong> <span class="sd">[over radio]</span> Beta-3, come in?</p>
+<p><strong>Beta-3:</strong> Roger, Beta-1. Where are you?</p>
+<p><strong>Beta-1:</strong> <span class="sd">[over radio]</span> Beta-2 and I were in one of the outer hallways, trying to get a view from further back. The entrance to the room is now blocked off by a solid wall.</p>
+<p><strong>Beta-3:</strong> Right. The three of us are still in the room. The whole thing just spun around by… maybe one-eighty degrees? Hard to tell. But I guess it took the walls and doorways with it.</p>
+<p><strong>Beta-1:</strong> <span class="sd">[over radio]</span> Understood. Do we know what triggered the rotation?</p>
+<p><strong>Beta-3:</strong> Any ideas?</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Beta-3:</strong> Unclear.</p>
+<p><strong>Beta-1:</strong> <span class="sd">[over radio]</span> Roger that. Do you have an exit from the room?</p>
+<p><strong>Ellbridge:</strong> Yes, several.</p>
+<p><strong>Beta-1:</strong> <span class="sd">[over radio]</span> Alright. Suggest the three of you leave through one of those, and we'll continue through this hallway, and hopefully we meet up again.</p>
+<p><strong>Ellbridge:</strong> Yeah, alright.</p>
+<p><strong>Dr. Flood:</strong> Fine by me.</p>
+<p><strong>Beta-3:</strong> Confirmed, Beta-1.</p>
+<p><span class="sd">[Ellbridge points at one of the hallways leading out of the room.]</span></p>
+<p><strong>Ellbridge:</strong> This exit?</p>
+<p><strong>Beta-3:</strong> Seems as good as any other.</p>
+<p><span class="sd">[Ellbridge, Dr. Flood and Beta-3 leave through the indicated exit, and proceed into another carpeted corridor lined with doors.]</span></p>
+<p><strong>Beta-3:</strong> This door says 'archives'. Is that worth checking out?</p>
+<p><strong>Ellbridge:</strong> Yes, definitely. Maybe there'll be more details on what 8435's actually doing.</p>
+<p><span class="sd">[Beta-3 enters the room, follows by Ellbridge and Dr. Flood. It contains a single bookcase, of which only two shelves are filled.]</span></p>
+<p><strong>Ellbridge:</strong> Some archive.</p>
+<p><span class="sd">[Dr. Flood inspects the books.]</span></p>
+<p><strong>Dr. Flood:</strong> <em>Resolutions of the Esoteric Assembly</em>. <em>Standing Rules of the Esoteric Assembly</em>. Oh, hello. <em>Transcripts of the Esoteric Assembly</em>, broken down by year. Only goes up to 1868.</p>
+<p><span class="sd">[Dr. Flood retrieves the last book on the shelf.]</span></p>
+<p><strong>Dr. Flood:</strong> Oh. Subtitle is "Compiled by the de Haas Legislative Warding System".</p>
+<p><strong>Ellbridge:</strong> 8435.</p>
+<p><strong>Dr. Flood:</strong> Yep.</p>
+<p><strong>Ellbridge:</strong> Anything interesting in it?</p>
+<p><span class="sd">[Dr. Flood turns to the final page of the book.]</span></p>
+</div>
+<div class="jotting table1 housescript">
+<p><span class="sd">(Chair JOSEPH BURFORD gavels the House to order.)</span></p>
+<p><strong>JOSEPH BURFORD:</strong> The House will come to order. Over the last week, this House has debated the question of whether or not this institution ought to continue to exist; whether it is and must remain a vital pillar of the occult community, or whether it has deteriorated to the point that it can no longer serve its founding purpose. It appears we have reached the end of useful debate on this matter, and the time has come to hold a vote. Are there any objections to invoking cloture on the motion at this time?</p>
+<p><span class="sd">(There is no response.)</span></p>
+<p><strong>JOSEPH BURFORD:</strong> The question is on the motion to amend the rules and adjourn the House indefinitely. The vote will be conducted by a show of hands and counted by the warding system. All those in favour of the motion?</p>
+<p><span class="sd">(The Yeas vote.)</span></p>
+<p><strong>JOSEPH BURFORD:</strong> All those opposed?</p>
+<p><span class="sd">(The Nays vote.)</span></p>
+<div class="modal nohs" style="background-color:#08281c">
+<div style="text-align: center;"><strong>On the Motion to Adjourn</strong><br/>
+<table class="wiki-content-table">
+<tr>
+<th><strong>YEA</strong></th>
+<th><strong>NAY</strong></th>
+<th><strong>ABS.</strong></th>
+</tr>
+<tr>
+<td style="text-align: center;">74</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">17</td>
+</tr>
+</table>
+<p>Result: <strong>NOT APPLICABLE</strong></p>
+</div>
+</div>
+<p><strong>JOSEPH BURFORD:</strong> On this vote, the Yeas are 74. The Nays are 26. A two-thirds majority having voted in favour, the House stands adjourned indefinitely. The Esoteric Assembly is henceforth to be considered inoperative. Thank you, everyone.</p>
+<p><span class="sd">(Chair JOSEPH BURFORD gavels the House closed.)</span></p>
+</div>
+<div class="notation">
+<p><strong>Ellbridge:</strong> "Result: not applicable".</p>
+<p><strong>Dr. Flood:</strong> Mm.</p>
+<p><strong>Ellbridge:</strong> Guess nobody noticed.</p>
+<p><strong>Dr. Flood:</strong> It might be that—</p>
+<p><span class="sd">[A loud noise resembling a siren sounds.]</span></p>
+<p><strong>Dr. Flood:</strong> We need to move.</p>
+<p><span class="sd">[Dr. Flood returns the book, and all three exit.]</span></p>
+</div>
+<div class="dossier">
+<p>In August 1868, shortly before the Sixth Occult War <a href="https://scp-wiki.wikidot.com/esterberg-city-wikipedia#toc3" target="_blank">ended</a> with the killing of the Demiurge, the remaining Esoteric Assembly membership voted 74-26 to dissolve the organisation. As one of the basic stipulations of the <em>Principatus</em> is that the Assembly must exist, SCP-8435 did not accept this vote as valid; official records written by the warding system describe the outcome of the vote as "not applicable" rather than "motion passed" as expected. The membership of the House was unaware of this fact; none of them appear to have read the relevant portion of the record, and SCP-8435 made no further indication of the motion's invalidity before Burford declared the session closed.</p>
+</div>
+<div class="notation">
+<div class="scp-image-block block-right" style="width:200px;"><img alt="dehaas.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-8435/dehaas.png"/>
+<div class="scp-image-caption">
+<p>Image of Leopold de Haas found in the Esoteric Assembly building.</p>
+</div>
+</div>
+<p><span class="sd">[Ellbridge, Dr. Flood and Beta-3 enter a semicircular room; the curved side is lined with named portraits. A plaque high on the wall reads "CHAIRS OF THE ESOTERIC ASSEMBLY".]</span></p>
+<p><strong>Ellbridge:</strong> Huh. So that's what Leopold de Haas looked like. Wonder where that picture came from.</p>
+<p><strong>Dr. Flood:</strong> Must be 8435, right? Or some other magically-sourced rendering. How else would there be a colour photo of someone from the 1860s?</p>
+<p><strong>Ellbridge:</strong> Yeah, that checks out.</p>
+<p><strong>Beta-3:</strong> Um, Ms. Ellbridge?</p>
+<p><strong>Ellbridge:</strong> What?</p>
+<p><span class="sd">[Beta-3 is standing on the opposite side of the room. He points at the rightmost three portraits: James Ellbridge, Hazel Ellbridge and Thomas Ellbridge.]</span></p>
+<p><strong>Ellbridge:</strong> What the fuck?</p>
+<p><span class="sd">[Ellbridge hurries over to the three portraits, and points at each one in turn.]</span></p>
+<p><strong>Ellbridge:</strong> Granddad. Grandma. Dad. But not me. Why didn't you tell me?</p>
+<p><span class="sd">[She stares at the final portrait. All three individuals remain silent and unmoving for roughly twenty seconds. A low rumbling noise interspersed with occasional distant banging sounds remains audible throughout.]</span></p>
+<p><strong>Ellbridge:</strong> Alright, let's keep going.</p>
+<p><span class="sd">[Dr. Flood and Beta-3 follow Ellbridge out of the room.]</span></p>
+<p><strong>Dr. Flood:</strong> So, he was—</p>
+<p><strong>Ellbridge:</strong> Yes.</p>
+<p><strong>Dr. Flood:</strong> How?</p>
+<p><strong>Ellbridge:</strong> How should I fucking know, Lewis? How do I follow the logic of an animate, angry labyrinth with delusions of being a legislative chamber?</p>
+<p><span class="sd">[A loud crack is heard. The corridor suddenly tears itself into two, and the halves pull apart from each other, revealing black void between them. Ellbridge and Dr. Flood are on one side of the divide, while Beta-3 is stuck on the other.]</span></p>
+<p><strong>Dr. Flood:</strong> Woah!</p>
+<p><strong>Beta-3:</strong> <span class="sd">[shouting]</span> I can't— that's too far to jump!</p>
+<p><span class="sd">[Before Ellbridge or Dr. Flood can respond, their half of the corridor lurches violently upwards. Both begin to shout.]</span></p>
+<hr/>
+<div style="text-align: center;">
+<p><span class="sd">[Audiovisual corruption on Ellbridge and Dr. Flood's camera feeds lasting approximately one minute.]</span></p>
+</div>
+<hr/>
+<p><span class="sd">[Ellbridge and Dr. Flood stumble forwards into a pair of heavy wooden doors marked 'DEBATING CHAMBER'. They gradually come to their feet, both out of breath, and lean against the walls. The distant rumbling noises remain, but are quieter and less distinct.]</span></p>
+<p><strong>Dr. Flood:</strong> You okay?</p>
+<p><strong>Ellbridge:</strong> Yeah, I think so. You?</p>
+<p><span class="sd">[Dr. Flood nods, then activates his radio.]</span></p>
+<p><strong>Dr. Flood:</strong> This is Dr. Flood, come in.</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Dr. Flood:</strong> This is Dr. Lewis Flood of the SCP Foundation. Is there anyone there? Does anyone read me?</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><span class="sd">[Ellbridge looks toward the far end of the corridor. It terminates in shattered fragments of stone, floating in a black void. She tries to open the doors to the debating chamber, but finds them locked.]</span></p>
+<p><strong>Ellbridge:</strong> Uh-oh.</p>
+<p><strong>Dr. Flood:</strong> No exit, and no exit.</p>
+<p><strong>Ellbridge:</strong> We might be fucked.</p>
+<p><strong>Dr. Flood:</strong> Unless we can figure out what this thing's actual containment procedures are.</p>
+<p><strong>Ellbridge:</strong> We won't.</p>
+<p><strong>Dr. Flood:</strong> Hm?</p>
+<p><strong>Ellbridge:</strong> You were right. He doesn't want to tell anyone anything. My entire family knew about this shit and I didn't, and he trusts you less than he trusts me. This whole file so far is him criticising an idiotic power grab disguised as altruism, for the attention of a <em>different</em> power grab disguised as altruism.</p>
+<p><strong>Dr. Flood:</strong> Are you sure you want that comment on record?</p>
+<p><strong>Ellbridge:</strong> That's his view of the Foundation. It's what he taught me. I'm still trying to figure out whether it's worth unlearning.</p>
+<p><strong>Dr. Flood:</strong> <span class="sd">[sighs]</span> I don't know why he didn't tell you about the Assembly. But he wrote this file for people who had already found this place on their own. At that point, it stops making sense to keep secrets, and starts making sense to ensure that whoever else is here doesn't fuck stuff up even worse than it already is, or get themselves killed in the process.</p>
+<p><strong>Ellbridge:</strong> I'm like ten pages in, and he hasn't even explained why this place is still an active problem, much less how to contain it.</p>
+<p><strong>Dr. Flood:</strong> No offence to him, but is it possible he was just a bad writer?</p>
+<p><span class="sd">[Ellbridge laughs quietly.]</span></p>
+<p><strong>Ellbridge:</strong> Surely anything we need to do is gonna be in that room, though? And if he wants us to keep well away, do we really think he's written down how we get in?</p>
+<p><strong>Dr. Flood:</strong> We may as well check. Not like we've got anything else to do. How many more pages?</p>
+<p><span class="sd">[Ellbridge flicks through the sheaf of papers.]</span></p>
+<p><strong>Ellbridge:</strong> Oh, quite a few.</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Ellbridge:</strong> Alright, fine.</p>
+</div>
+<div class="dossier">
+<p><span class="dosshead"><strong>Addendum 2, Containment History:</strong></span> The <em>Principatus</em> requires that the Assembly must hold a session at least once every two calendar years. This stipulation, combined with SCP-8435's inability to recognise that the Assembly is now defunct, is the reason why this anomaly still requires active containment. Procedure 8435-Muhlenberg is the holding of a minimal <em>pro-forma</em> session to placate SCP-8435 and prevent it from manifesting anomalous effects outside the Assembly building.</p>
+</div>
+<div class="notation">
+<p><strong>Dr. Flood:</strong> You're kidding.</p>
+<p><strong>Ellbridge:</strong> Way to bury the fucking lede, Dad.</p>
+<p><strong>Dr. Flood:</strong> Oh, I think this file is gonna get rewritten.</p>
+<p><strong>Ellbridge:</strong> So the house isn't angry at us. It's just… what, lonely?</p>
+<p><strong>Dr. Flood:</strong> It's neither. It's just a broken robot. I'm not convinced we can assign sentience to it.</p>
+<p><strong>Ellbridge:</strong> So… okay. We need to go into the main chamber, just the two of us, sit down like it's an actual meeting, and say: "The House is now in session. The House is no longer in session." And that counts?</p>
+<p><strong>Dr. Flood:</strong> I think that counts. It did say the procedure only needs two people.</p>
+<p><strong>Ellbridge:</strong> Oh, there's a timeline. Does that say anything useful?</p>
+</div>
+<div class="dossier">
+<p>The following is a complete history of interactions with SCP-8435 since the Assembly's last proper meeting on 27 August 1868. <strong>Any new visits to the Assembly building should be added to this list.</strong></p>
+<div style="text-align: center;">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ EXPAND</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- CLOSE</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<p><strong>1870-08-27:</strong> All living members who attended the final vote of the 1868 session are teleported into the Assembly chamber simultaneously and without warning, resulting in several minor injuries. All members exit the chamber witout incident.</p>
+<p><strong>1872-08-27:</strong> All living members who attended the previous meeting are teleported into the Assembly chamber simultaneously and without warning. All Ways out of the chamber are closed. Joseph Burford — the Chair of the 1868 session — gavels the House to order, briefly runs through the required procedures for opening a session,<span class="fnnum">.</span><span class="fncon">Burford later wrote that, upon arrival in the chamber, he felt an inexplicable compulsion to proceed as though he was presiding over an ordinary session of the Assembly.</span> and leads a brief discussion on the present situation, after which point the Ways reopen. Members vote 87-21 to dissolve the Assembly with immediate effect; Burford then declares the session closed. SCP-8435 considers this resolution null and void on the grounds that shutting down the Assembly would effectively override the <em>Principatus</em>; this fact is not communicated to the members in any way.</p>
+<p><strong>1874-08-27:</strong> All living members who attended the previous meeting are teleported into the Assembly chamber simultaneously and without warning. All Ways out of the chamber are closed. Burford is absent, having died in the interceding two years; senior member Martin Alderney instead takes charge as presiding officer. Members vote 85-14 to dissolve the Assembly. Immediately upon this resolution's passage, the chamber doors violently slam shut; a section of masonry is subsequently detached from the ceiling and fatally strikes Alderney in the head. Lloyd Slater is reluctantly elected as the new Chair. Members vote 54-44 to repeal the previous resolution, and the exits reopen. They fail to formally close the session before leaving the chamber.</p>
+<p><strong>1874-09-04:</strong> All living members who attended the previous meeting are teleported into the Assembly chamber simultaneously and without warning, due to a stipulation of the <em>Principatus</em> that an improperly closed session must meet again within one week. Members vote 86-12 to find and capture Leopold de Haas, with the intention of forcing him to disable SCP-8435. They then formally close the session.</p>
+<p><strong>1876-08-06:</strong> Having failed to locate de Haas, a group of 15 members attempt to remove the SCP-8435 effect themselves. All spontaneously fall unconscious before the procedure can be completed. In Olympia Springs, Kentucky, 70 miles from de Haas's Lexington residence, <a href="https://en.wikipedia.org/wiki/Kentucky_meat_shower">chunks of unidentified red meat briefly fall from the sky</a>.</p>
+<p><strong>1876-09-02:</strong> 41 members gather in the Assembly chamber. They unanimously elect Slater as the Chair and adopt a set of standing rules before immediately closing the session. No further anomalous effects are noted, and the remaining membership does not manifest.</p>
+<p><strong>1878-08-31:</strong> Lloyd Slater and Isaac Barnum meet in the Assembly chamber. They unanimously elect Slater as the Chair and adopt a set of standing rules before immediately closing the session. No further anomalous effects are noted, and the remaining membership does not manifest.</p>
+<p><strong>1880-08-30:</strong> Lloyd Slater and Isaac Barnum successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1882-08-29:</strong> Lloyd Slater and Isaac Barnum successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1884-08-29:</strong> No members gather in the Assembly chamber, as Slater and Barnum had both died in the interceding two years, and failed to delegate their duties to anyone else. An earthquake occurs in Lexington, Kentucky.</p>
+<p><strong>1886-08-29:</strong> All living members who attended the 1876 session are teleported into the Assembly chamber simultaneously and without warning. Members elect Ralph Ellis as Chair, and then vote 20-2 to adopt an amended set of standing rules, declaring that the requirement for members to meet every two years is no longer necessary. Upon the adoption of these rules, the paper upon which the amendment was written bursts into flames. Members unanimously adopt a new amendment to the rules stating that the Chair may, at any time, summon Leopold de Haas to the Assembly chamber. Ellis immediately exercises this power, unaware that de Haas died five years prior; de Haas's decayed skeleton instantly materialises on the House floor. Members vote 10-12 against adopting further rule amendments with the objective of reanimating de Haas, opting instead to leave him in a disused storage room in the Assembly building. The session is then declared closed.</p>
+<p><strong>1888-08-28:</strong> Ralph Ellis and James Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1890-08-27:</strong> Ralph Ellis and James Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1892-08-26:</strong> Ralph Ellis and James Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1894-08-25:</strong> Ralph Ellis and James Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1896-08-25:</strong> No members gather in the Assembly chamber, as all 289 individuals who had ever attended a session at any point are now dead.<span class="fnnum">.</span><span class="fncon">Unconfirmed and implausible. Some of the people in question are believed to have established the Foundation and therefore may be immortal, depending on the exact timeline of the discovery of their alleged life extension magic. This is impossible to verify for obvious reasons.</span> de Haas's former residence, abandoned since his death due to legal complications, reportedly begins emitting a faint red glow from the windows. In a single day, 289 unidentified corpses wash up in Lexington.<span class="fnnum">.</span><span class="fncon">There is no river in Lexington.</span></p>
+<p><strong>1898-08-25:</strong> Several large boulders materialise inside the Kentucky State Capitol building. State lawmakers allegedly experience severely impaired language function for the entire workday. Over the following days, numerous reports are made of the moon appearing in vivid and garish colours; all such reports originate from within a 100-mile radius of the city of Lexington.</p>
+<p><strong>1900-08-25:</strong> A large explosion occurs in Lexington. The origin is believed to be de Haas's former residence, though the building itself is entirely unharmed.</p>
+<p><strong>1902-08-25:</strong> William Ellis and Francis Trubridge, the eldest children of Ralph Ellis and James Trubridge respectively, are teleported into the Assembly chamber simultaneously and without warning. The front row of desks contains copies of the <em>Principatus</em>, the standing rules of the House as of 1894, the Assembly's journals dating back to 1849, and a letter from Leopold de Haas detailing the nature of SCP-8435. After some time reviewing these documents, Ellis and Trubridge conclude that a <em>pro-forma</em> session must be held in the Assembly every two years to prevent the SCP-8435 complex behaving erratically. After holding such a session, they draft a document roughly resembling the current iteration of Procedure 8435-Muhlenberg, with specific instructions for its distribution whenever one of the required individuals must be replaced.</p>
+<p><strong>1904-08-24:</strong> William Ellis and Francis Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1906-08-24:</strong> William Ellis and Francis Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1908-08-24:</strong> William Ellis and Francis Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1910-08-24:</strong> William Ellis and Francis Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1912-08-24:</strong> William Ellis and Mitchell Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1914-08-24:</strong> William Ellis and Mitchell Trubridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1916-06-01:</strong> Mitchell Trubridge and Oscar Hubbell successfully hold a <em>pro-forma</em> session.<br/>
+(Session held early due to fears of schedule disruptions brought about by World War I.)</p>
+<p><strong>1918-05-12:</strong> Mitchell Trubridge and Oscar Hubbell successfully hold a <em>pro-forma</em> session.<br/>
+(Session held early due to fears of schedule disruptions brought about by World War I.)</p>
+<p><strong>1920-05-12:</strong> Mitchell Trubridge and William Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1922-05-12:</strong> Mitchell Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1924-05-12:</strong> Mitchell Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1926-05-12:</strong> Mitchell Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1928-05-12:</strong> Mitchell Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1930-05-12:</strong> Mitchell Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1932-05-12:</strong> Mitchell Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1934-05-12:</strong> Mitchell Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1936-05-12:</strong> Mitchell Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1938-05-12:</strong> Mitchell Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session. They then make another attempt to remove SCP-8435, reasoning that as it effectively now constitutes thaumic detritus, it might be susceptible to acroamatic abatement. This fails, and the resulting chemical explosion severely injures both Trubridge and Ellis.</p>
+<p><strong>1940-05-12:</strong> James Trubridge and Edward Ellis successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1942-04-24:</strong> James Trubridge and Hazel Ellis successfully hold a <em>pro-forma</em> session.<br/>
+(Session held early due to fears of schedule disruptions brought about by World War II and the Seventh Occult War.)</p>
+<p><strong>1944-03-14:</strong> James Trubridge and Hazel Ellis successfully hold a <em>pro-forma</em> session.<br/>
+(Session held early due to fears of schedule disruptions brought about by World War II and the Seventh Occult War.)</p>
+<p><strong>1946-03-14:</strong> James Ellbridge and Hazel Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1948-03-14:</strong> James Ellbridge and Hazel Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1950-03-14:</strong> James Ellbridge and Hazel Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1952-03-14:</strong> James Ellbridge and Hazel Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1954-03-14:</strong> James Ellbridge and Hazel Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1956-03-14:</strong> James Ellbridge and Hazel Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1958-03-14:</strong> James Ellbridge and Hazel Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1960-03-14:</strong> Hazel Ellbridge and Marianne Hagan successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1962-03-14:</strong> Hazel Ellbridge and Marianne Hagan successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1964-03-14:</strong> Hazel Ellbridge and Marianne Hagan successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1966-03-14:</strong> Hazel Ellbridge and Marianne Hagan successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1968-02-25:</strong> Hazel Ellbridge and Marianne Hagan successfully hold a <em>pro-forma</em> session. (Session held early due to Hagan's availability.)</p>
+<p><strong>1970-02-25:</strong> Hazel Ellbridge and Thomas Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1972-02-25:</strong> Hazel Ellbridge and Thomas Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1974-02-25:</strong> Hazel Ellbridge and Thomas Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1976-02-25:</strong> Hazel Ellbridge and Thomas Ellbridge successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1978-02-25:</strong> Thomas Ellbridge and Alex Forrestall successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1980-02-25:</strong> Thomas Ellbridge and Alex Forrestall successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1982-02-25:</strong> Thomas Ellbridge and Caitlin Fox successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1984-02-25:</strong> Thomas Ellbridge and Robert Moorhead successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1986-02-25:</strong> Thomas Ellbridge and Robert Moorhead successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1988-02-25:</strong> Thomas Ellbridge and Robert Moorhead successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1990-02-25:</strong> Thomas Ellbridge and Robert Moorhead successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1992-02-25:</strong> Thomas Ellbridge and Robert Moorhead successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1994-02-25:</strong> Thomas Ellbridge and Robert Moorhead successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>1996-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session. (Session held early due to Crane's availability.)</p>
+<p><strong>1998-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>2000-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>2002-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>2004-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session.</p>
+<div class="hand">
+<p><strong>2006-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>2008-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>2010-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>2012-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>2014-02-13:</strong> Thomas Ellbridge and Elliot Crane successfully hold a <em>pro-forma</em> session.</p>
+<p><strong>2016-02-13:</strong></p>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="notation">
+<p><strong>Ellbridge:</strong> Oh, no. No no no no no no…</p>
+<p><strong>Dr. Flood:</strong> That's bad. That's very, very bad.</p>
+<p><strong>Ellbridge:</strong> So he tried to come here in 2016, something went wrong and it killed him.</p>
+<p><strong>Dr. Flood:</strong> That's one of the bad parts. There's another one.</p>
+<p><strong>Ellbridge:</strong> What?</p>
+<p><strong>Dr. Flood:</strong> Elliot Crane is a known alias of Richard Sterling.</p>
+<p><span class="sd">[Ellbridge puts her head in her hands and begins laughing despondently.]</span></p>
+<p><strong>Ellbridge:</strong> Of <em>course</em> he's fucking involved.</p>
+<p><strong>Dr. Flood:</strong> And of course he hasn't bothered to tell us about this, even though we've had him in custody for two full days.</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Ellbridge:</strong> You got a pen?</p>
+<p><strong>Dr. Flood:</strong> Why?</p>
+<p><strong>Ellbridge:</strong> I'm doing what he says.</p>
+<p><span class="sd">[Dr. Flood retrieves a pen from his labcoat and gives it to Ellbridge. She begins writing at the bottom of the page.]</span></p>
+</div>
+<div class="dossier jhand">
+<p><span class="hand"><strong>2016-02-13:</strong></span> Containment fails. Thomas Ellbridge is killed.</p>
+<p><strong>2018-02-13:</strong> Jemima Ellbridge and Lewis Flood discover this file and attempt to hold a <em>pro-forma</em> session.</p>
+</div>
+<div class="notation">
+<p><strong>Dr. Flood:</strong> Not getting ahead of yourself there?</p>
+<p><strong>Ellbridge:</strong> I've had an idea. Wild speculation, but it's all we've got.</p>
+<p><strong>Dr. Flood:</strong> Go on.</p>
+<p><span class="sd">[Ellbridge turns to face the door, and speaks loudly into it.]</span></p>
+<p><strong>Ellbridge:</strong> Jemima Ellbridge.</p>
+<p><span class="sd">[The door swings open, and Ellbridge walks through. It slams shut in Dr. Flood's face.]</span></p>
+<p><strong>Dr. Flood:</strong> Uh. Lewis Flood?</p>
+<p><span class="sd">[The door opens again. Dr. Flood enters the debating chamber.]</span></p>
+<p><strong>Dr. Flood:</strong> How'd you figure that out?</p>
+<p><strong>Ellbridge:</strong> If all those transcripts are being written by 8435, same as the portrait gallery, then it has to know what everyone's name is.</p>
+<p><strong>Dr. Flood:</strong> Surely it could know that anyway. It's magic.</p>
+<p><strong>Ellbridge:</strong> Some people use multiple. How does it know which one to write unless you tell it? If our friend "Elliot Crane" didn't let the name Richard Sterling appear in this file, there's no way he let it show up in the transcripts.</p>
+<p><strong>Dr. Flood:</strong> Is this when we discover that we're actually inside <strong><span style="color: #55cc33">the woods where they steal your name</span></strong>?</p>
+<p><strong>Ellbridge:</strong> Let's see. My name is Jemima Ellbridge. No, I think we're fine.</p>
+<p><strong>Dr. Flood:</strong> God, can you imagine if they'd found the place, though?</p>
+<p><strong>Ellbridge:</strong> Probably if they had, it wouldn't be this destroyed.</p>
+<p><span class="sd">[Ellbridge and Dr. Flood observe their surroundings. They are in a grandiose legislative chamber in a state of advanced disrepair. A large, twisting oak tree occupies the centre of the room; its roots are destroying the surrounding floor and its upper branches have grown through the ceiling. The sunlight streaming through the damaged roof is a rich orange colour, and fallen masonry and glass is scattered over the floor and furniture. The far wall is broken by several stone pillars resting at various angles, one of which has smashed a portion of the speaker's daïs. Most of the remaining wall surfaces are covered in assorted magical glyphs, runes and sigils, some of which are glowing in various colours. The entire back row of seats is perfectly black. Miscellaneous rumbles, groans, creaks, sirens and distant bells are audible in all directions.]</span></p>
+<p><strong>Dr. Flood:</strong> We're in the belly of the beast.</p>
+<p><strong>Ellbridge:</strong> By any chance, do the front desks still have a copy of the rules on them?</p>
+<p><span class="sd">[Both individuals walk towards the front of the room.]</span></p>
+<p><strong>Dr. Flood:</strong> Yes, seemingly. I hope we don't have to read through them all.</p>
+<p><strong>Ellbridge:</strong> Better idea.</p>
+<p><span class="sd">[Ellbridge picks up a book from the daïs, and shows Dr. Flood the cover. It reads "Transcripts of the Esoteric Assembly, 27 August 1870 -". She opens the book and flicks to the last page.]</span></p>
+</div>
+<div class="jotting table1 housescript">
+<p><strong>LEWIS FLOOD:</strong> We're in the belly of the beast.</p>
+<p><strong>JEMIMA ELLBRIDGE:</strong> By any chance, do the front desks still have a copy of the rules on them?</p>
+<p><strong>LEWIS FLOOD:</strong> Yes, seemingly. I hope we don't have to read through them all.</p>
+<p><strong>JEMIMA ELLBRIDGE:</strong> Better idea.</p>
+<p><strong>LEWIS FLOOD:</strong> Oh, look through those and see what the last successful containment looked like?</p>
+</div>
+<div class="notation">
+<p><strong>Dr. Flood:</strong> Oh, look through those and see what the last successful containment looked like?</p>
+<p><strong>Ellbridge:</strong> Yep. Oh, that's weird.</p>
+<p><strong>Dr. Flood:</strong> What's weird?</p>
+<p><strong>Ellbridge:</strong> It's real-time. The words appear on the page as we're saying them.</p>
+<p><strong>Dr. Flood:</strong> Huh. Wait, shouldn't it only transcribe when the House is in session? In the ones we read, it starts and stops writing the moment the Chair bangs the gavel.</p>
+<p><strong>Ellbridge:</strong> <em>That</em> is a very good point. Give me a sec.</p>
+<p><span class="sd">[Ellbridge flips backwards several pages.]</span></p>
+</div>
+<div class="jotting table1 housescript">
+<p><span class="sd">(Chair THOMAS ELLBRIDGE gavels the House to order.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> The House will be in order. The date is the 13th of February, 2014. The House is now in session. The floor is open. Mr. Crane?</p>
+<p><strong>ELLIOT CRANE:</strong> I move to adjourn for a period of two years, seeking unanimous consent.</p>
+<p><strong>THOMAS ELLBRIDGE:</strong> The question is on the motion to adjourn. All those opposed will rise.</p>
+<p><span class="sd">(There is no response.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> By unanimous consent, the motion is adopted. Under the previous order, the House stands adjourned until the 13th of February, 2016.</p>
+<p><span class="sd">(Chair THOMAS ELLBRIDGE gavels the House closed.)</span></p>
+</div>
+<div class="notation">
+<p><strong>Dr. Flood:</strong> Oh, that actually is it.</p>
+<p><strong>Ellbridge:</strong> I mean, there's probably extra steps if we have to elect a new Chair. Which I guess we do.</p>
+<p><strong>Dr. Flood:</strong> Check that giant timeline? See when the last handover was, and cross-reference in there?</p>
+<p><strong>Ellbridge:</strong> Will do. But, uh, that's not the end of the book. There's a couple more pages.</p>
+</div>
+<div class="jotting table1 housescript">
+<p><span class="sd">(Chair THOMAS ELLBRIDGE gavels the House to order.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> The House will be in order. The date is the 13th of February, 2016. The House is now in session. The floor is open.</p>
+<p><span class="sd">(There is no response.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> This is a last resort. I hope this counts. You hear me, Leopold? I'm doing the best I can. But it's been two hours, and the other guy hasn't shown up. I'm the only one here. We've amended the standing rules to make this process as easy as possible within the bounds of the <em>Principatus</em>, but it still needs two people as an absolute minimum. That part's unavoidable.</p>
+<p><span class="sd">(There is no response.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> Actually, you know what? <span class="sd">(COMMENT STRUCK FROM RECORD)</span>. Right. Of course. Can't say that, that's going to be engaging in personalities, isn't it? OK.</p>
+<p><span class="sd">(There is no response.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> If anyone's reading this, his other name is Richard Sterling. I'm not allowed to say what I want to happen to him. But I bet you can guess.</p>
+<p><span class="sd">(There is no response.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> Fuck it, let's try it. By unanimous consent, the House stands adjourned until the 13th of February, 2018.</p>
+<p><span class="sd">(Chair THOMAS ELLBRIDGE gavels meaninglessly. He does not have the authority.)</span></p>
+<p><span class="sd">(Chair THOMAS ELLBRIDGE leaves the daïs. He fails to hand over control of the House. He remains the Chair.)</span></p>
+<p><span class="sd">(Chair THOMAS ELLBRIDGE is not permitted to leave.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> Come on. No. No, no, no, no, no. Don't do this. No fucking phone signal in here. RICHARD!</p>
+<p><span class="sd">(Chair THOMAS ELLBRIDGE returns to the daïs.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> Listen to me, you idiot. There is no-one else, you understand? No-one's coming! No-one knows this place exists! Just me, and some <span class="sd">(COMMENT STRUCK FROM RECORD)</span>, FUCK OFF!, some <em>other person</em> who has refused to show up. Or he's dead, I don't know. That'd be <span class="sd">(COMMENT STRUCK FROM RECORD)</span>.</p>
+<p><span class="sd">(Chair THOMAS ELLBRIDGE fails to resume his duties.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> Let me leave, right? Let me find someone, let me tell someone, someone outside! Outside is where all the people are! I'll bring someone in, and we can do this little re-enactment, and you can pretend you're a real government or whatever the fuck. I can tell someone.</p>
+<p><span class="sd">(Chair THOMAS ELLBRIDGE is wrong.)</span></p>
+<p><span class="sd">(The House is collapsing.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> No! No, not that!</p>
+<p><span class="sd">(The House is collapsing.)</span></p>
+<p><strong>THOMAS ELLBRIDGE:</strong> JEMIMA!</p>
+<p><span class="sd">(There is no response.)</span></p>
+<p><span class="sd">(THOMAS ELLBRIDGE dies.)</span></p>
+<p><span class="sd">(There is no response.)</span></p>
+<p><span class="sd">(THOMAS ELLBRIDGE is incapable of magic and is removed from the premises.)</span></p>
+<p><span class="sd">(There is no response.)</span></p>
+<p><span class="sd">(The House has not been properly adjourned.)</span></p>
+<p><span class="sd">(The House has not been properly adjourned.)</span></p>
+<p><span class="sd">(The House has not been properly adjourned.)</span></p>
+<p><span class="sd">(The House has not been properly adjourned.)</span></p>
+</div>
+<div class="notation">
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Ellbridge:</strong> Lewis?</p>
+<p><strong>Dr. Flood:</strong> Yeah?</p>
+<p><strong>Ellbridge:</strong> Is Richard Sterling still at Site-91?</p>
+<p><strong>Dr. Flood:</strong> Yes.</p>
+<p><strong>Ellbridge:</strong> When we get back there, I'm going to—</p>
+<p><span class="sd">[Ellbridge continues attempting to speak, but briefly becomes inaudible.]</span></p>
+<p><strong>Ellbridge:</strong> What the…?</p>
+<p><strong>Dr. Flood:</strong> Oh, I guess that's what "comment struck from record" means.</p>
+<p><strong>Ellbridge:</strong> Whatever. Fill in the gaps on your own time. What's the procedure when there's no Chair?</p>
+<p><span class="sd">[Dr. Flood hands Ellbridge a piece of paper. She reads it quickly.]</span></p>
+<p><strong>Ellbridge:</strong> Well, that seems simple enough.</p>
+<p><span class="sd">[Dr. Flood sits on a seat in the front row. Ellbridge ascends the daïs, sits in the Speaker's chair, and gavels the House to order.]</span></p>
+<p><strong>Ellbridge:</strong> The House will be in order. The date is the 13th of February, 2018. The House is now in session. The first order of business is on the election of a Chair. All those wishing to stand for election will rise.</p>
+<p><span class="sd">[Ellbridge stands, and sits down again after two seconds.]</span></p>
+<p><strong>Ellbridge:</strong> The candidates for Chair are: Jemima Ellbridge. End of list. The election will take place by show of hands. All those voting for Jemima Ellbridge?</p>
+<p><span class="sd">[Ellbridge and Dr. Flood raise their hands.]</span></p>
+<p><strong>Ellbridge:</strong> All those voting to reopen nominations?</p>
+<p><span class="sd">[Ellbridge and Dr. Flood lower their hands.]</span></p>
+<p><strong>Ellbridge:</strong> The votes for Jemima Ellbridge are two. The votes to reopen nominations are zero. Jemima Ellbridge is elected Chair of the Esoteric Assembly.</p>
+<p><span class="sd">[Ellbridge gavels.]</span></p>
+<p><strong>Ellbridge:</strong> The floor is open.</p>
+<p><span class="sd">[Dr. Flood stands.]</span></p>
+<p><strong>Ellbridge:</strong> Dr. Flood?</p>
+<p><strong>Dr. Flood:</strong> I move to adjourn for a period of two years, seeking unanimous consent.</p>
+<p><span class="sd">[Dr. Flood sits.]</span></p>
+<p><strong>Ellbridge:</strong> The question is on the motion to adjourn. All those opposed will rise.</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Ellbridge:</strong> By unanimous consent, the motion is adopted. Under the previous order, the House stands adjourned until the 13th of February, 2020.</p>
+<p><span class="sd">[Ellbridge gavels the House closed.]</span></p>
+<p><strong>Ellbridge:</strong> And it can bloody well stay that way.</p>
+<p><span class="sd">[The distant noises abruptly cease.]</span></p>
+<p><strong>Dr. Flood:</strong> Did— did we do it?</p>
+<p><strong>Ellbridge:</strong> Hm?</p>
+<p><strong>Dr. Flood:</strong> Check the last line in the transcript.</p>
+</div>
+<div class="jotting table1 housescript">
+<p><strong>JEMIMA ELLBRIDGE:</strong> By unanimous consent, the motion is adopted. Under the previous order, the House stands adjourned until the 13th of February, 2020.</p>
+<p><span class="sd">(Chair JEMIMA ELLBRIDGE gavels the House closed.)</span></p>
+</div>
+<div class="notation">
+<p><span class="sd">[Ellbridge flashes Dr. Flood a thumbs-up. He returns it with a nod, then reaches for his radio.]</span></p>
+<p><strong>Dr. Flood:</strong> This is Lewis Flood, come in.</p>
+<p><strong>Beta-3:</strong> <span class="sd">[over radio]</span> This is Beta-3. Reading you loud and clear, Dr. Flood. Describe your whereabouts.</p>
+<p><strong>Dr. Flood:</strong> Ellbridge and I are in the main debating chamber. I think we fixed the problem.</p>
+<p><strong>Ellbridge:</strong> I'm sorry, did we?</p>
+<p><strong>Beta-3:</strong> <span class="sd">[over radio]</span> Well, your portrait has just appeared in the hall, ma'am, so I assume you've done <em>something</em>.</p>
+<p><strong>Ellbridge:</strong> We've smothered the problem for a couple years. We didn't fix shit.</p>
+<p><strong>Dr. Flood:</strong> I mean—</p>
+<p><strong>Ellbridge:</strong> Read that transcript from 2016, Lewis, and then tell me any of this is fixable.</p>
+<p><strong>Dr. Flood:</strong> Look, I'm sorry. I—</p>
+<p><strong>Ellbridge:</strong> I don't particularly give a shit. Respectfully. This system's never going to be fixed so long as it's defining itself into existence, and lashing out at anyone who tries to tell it it's fucked. And now this fucking zombie building has my face on it.</p>
+<p><strong>Dr. Flood:</strong> Hold on a moment.</p>
+<p><span class="sd">[Dr. Flood deactivates his radio.]</span></p>
+<p><strong>Dr. Flood:</strong> Listen. When this place existed, it was hopelessly disorganised, but the Founda— no, actually, it is. <em>Site-91</em> isn't, though. An entire Site focused on thaumaturgy, and we're way ahead of some retired legislators from the 1870s. We can figure something out. We can do something with this.</p>
+<p><strong>Ellbridge:</strong> By 'do something', you mean get rid of it.</p>
+<p><strong>Dr. Flood:</strong> <span class="sd">[sighs]</span> Neutralising anomalies isn't standard procedure…</p>
+<p><strong>Ellbridge:</strong> So no. What does 'do something' mean? It means use it for stuff, right? 'Cause if you started this place up again, if you tried to use 8435 to do more than just open and close the House every two years, I can think of a million ways to exploit it. Is that what you're going to do?</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Ellbridge:</strong> You don't know.</p>
+<p><strong>Dr. Flood:</strong> I don't know whether that decision will be above my pay grade.</p>
+<p><strong>Ellbridge:</strong> 'Course you don't.</p>
+<p><strong>Dr. Flood:</strong> I mean, Director Varga is usually pretty reasonable about this stuff, but…</p>
+<p><span class="sd">[Dr. Flood trails off.]</span></p>
+<p><strong>Ellbridge:</strong> But her superiors aren't. Right?</p>
+<p><strong>Dr. Flood:</strong> No comment.</p>
+<p><strong>Ellbridge:</strong> The fact that you can't even agree to that on record does not make them or you look better. I don't like being subject to two criticism-silencing machines at the same time, and I <em>really</em> don't want one of them to control the other.</p>
+<p><strong>Dr. Flood:</strong> Point taken.</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Dr. Flood:</strong> Out of interest, was that giant timeline the end of the file? Or was there anything after?</p>
+<p><strong>Ellbridge:</strong> There's a little bit more.</p>
+<p><strong>Dr. Flood:</strong> What's it say?</p>
+<p><strong>Ellbridge:</strong> <span class="sd">[shrugs]</span> I gave it a quick glance, I don't think it's really part of the main file. Gonna read it when we get back.</p>
+<p><strong>Dr. Flood:</strong> Not while you're still here? While it might be relevant?</p>
+<p><strong>Ellbridge:</strong> It won't be relevant. Not to this. I don't think his useful advice goes any further than he does.</p>
+<p><span class="sd">[Log ends.]</span></p>
+<hr/>
+<p><strong>Notes:</strong> Remainder of mission omitted for brevity. Ellbridge and Dr. Flood reunited with MTF Beta-777 in the main atrium with only minor navigational issues; the SCP-8282 gateway remained absent, but Beta-1's portable Way returned all five individuals safely to Site-91. Debriefing conducted without incident; new documentation for SCP-8435 is currently being written. Ellbridge is noted to have made one further addition to the version of the file retrieved from the Assembly building.</p>
+</div>
+<div class="dossier jhand">
+<p><strong>2018-02-13:</strong> Jemima Ellbridge and Lewis Flood discover this file and <span style="text-decoration: line-through;">attempt to</span> hold a <em>pro-forma</em> session.</p>
+<p><em>Recommend we stop writing "successfully" from now on. This isn't what success looks like.</em></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<hr/>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="notation">
+<p><strong>Interview Log</strong></p>
+<p><strong>Date:</strong> 14 February 2018</p>
+<p><strong>Subject:</strong> Dr. Richard Sterling, former Director, Site-128</p>
+<p><strong>Interviewer:</strong> Dr. Oliver Memphis, Co-Chair, Research Liaison Team</p>
+<hr/>
+<p><span class="sd">[Dr. Memphis enters, holding Thomas Ellbridge's SCP-8435 file.]</span></p>
+<p><strong>Dr. Sterling:</strong> Oh, hello. You again.</p>
+<p><strong>Dr. Memphis:</strong> What's this?</p>
+<p><strong>Dr. Sterling:</strong> It would seem to be an SCP file.</p>
+<p><strong>Dr. Memphis:</strong> It's an SCP file written by someone who's never worked for the Foundation. How do you suppose that happened?</p>
+<p><strong>Dr. Sterling:</strong> I don't know.</p>
+<p><strong>Dr. Memphis:</strong> Really, Mr. Crane?</p>
+<p><span class="sd">[Dr. Sterling opens his mouth to protest, but Dr. Memphis interrupts him.]</span></p>
+<p><strong>Dr. Memphis:</strong> Don't play dumb. We know that's a name you've used. My colleagues just went into that nightmare of a building and did the job you didn't bother with last time round.</p>
+<p><strong>Dr. Sterling:</strong> Hm?</p>
+<p><strong>Dr. Memphis:</strong> They found the official transcript from 2016. It's just Thomas Ellbridge, trapped alone in that room, trying to figure out why you didn't show up. Why <em>didn't</em> you show up?</p>
+<p><strong>Dr. Sterling:</strong> I was probably busy.</p>
+<p><strong>Dr. Memphis:</strong> <em>Probably.</em> You were <em>probably</em> busy.</p>
+<p><strong>Dr. Sterling:</strong> Mhm.</p>
+<p><strong>Dr. Memphis:</strong> What were you busy with? Actually, don't answer that, we checked. You were in Oregon, moving bundles of cash between a bunch of money laundering fronts. I guess that was more important?</p>
+<p><span class="sd">[Silence on recording.]</span></p>
+<p><strong>Dr. Memphis:</strong> You killed your friend, Richard.</p>
+<p><strong>Dr. Sterling:</strong> We weren't really friends by that point. I assumed he'd found someone else to say my lines.</p>
+<p><strong>Dr. Memphis:</strong> You didn't think to check?</p>
+<p><strong>Dr. Sterling:</strong> We hadn't spoken in well over a year.</p>
+<p><strong>Dr. Memphis:</strong> And you just figured he was on the same page as you?</p>
+<p><span class="sd">[Dr. Sterling shrugs.]</span></p>
+<p><strong>Dr. Memphis:</strong> Do you know what I've been doing for the last year and a half?</p>
+<p><strong>Dr. Sterling:</strong> What have you been doing?</p>
+<p><strong>Dr. Memphis:</strong> I've been cleaning up after the mess you left behind. Untangling all your scandals and cover-ups from when you were Director. Chasing down loose threads. And in the process, I had to deal with a truly ungodly number of abject failures of communication. There's an entire skip that's just missing, you know that? Got lost in the paperwork somewhere between Site transfers, and no-one wants to help anyone else track it down.</p>
+<p><strong>Dr. Sterling:</strong> Lovely. What's your point?</p>
+<p><strong>Dr. Memphis:</strong> My point is that <em>not talking</em> is not how you get on the same page as someone. This is how you get on the same page as someone: you are the worst person I've ever met, Richard Sterling, and you should count yourself very lucky that we have an Ethics Committee.</p>
+<p><strong>Dr. Sterling:</strong> Noted.</p>
+<p><span class="sd">[Dr. Memphis stands up to leave.]</span></p>
+<p><strong>Dr. Memphis:</strong> Though for what it's worth, ETHCOM doesn't technically prohibit me from sending Tom Ellbridge's daughter in to have a chat with you. I'm sure she'll tell you exactly what she thinks of you. Very loudly. Into your ear.</p>
+<p><span class="sd">[Dr. Memphis grins, and leaves the room.]</span></p>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<div class="dossier">
+<p><span class="dosshead"><strong>Addendum 3, Postscript:</strong></span> If the date when you found this file is later than the date written on the conprocs, it means that something has gone badly wrong. It means that I am probably dead, that I have failed to appoint a successor, and that the same is true of my colleague. This is very much within the realm of possibility; there are people I hold dear who ought to know about this task, and I have failed to tell them. I will likely continue to fail, either out of vain hope that the problem will eventually resolve itself, or fear that it will remain a burden for the rest of eternity.</p>
+<p>For better or worse, that means that the job of containing this thing now falls to you. Assuming that <em>you</em> are in fact the SCP Foundation, I do not trust you to take the right lessons from this document. In general, I trust you to do very little right; my own failings do not prevent me from noticing yours, and you have plenty to go around. This is why I am not pleased at the prospect of you making this anomaly your responsibility.</p>
+<p>Below is a letter I found on the floor of the Assembly some years ago, presumably written circa 1868. I don't know who wrote it, but they managed to explain my reasoning better than I ever could.</p>
+<div class="blockquote" style="border-left: 5px solid #ffd700;">
+<p>The Esoteric Assembly has in effect collapsed, and its members have dispersed themselves into various groups — some newly-founded, some already centuries old. A great number of them have begun journeying west and east, where they intend to establish an exclave of free esoteric activity — the same one, in both directions. Some have apparently returned home to Salzburg, though I was quite unclear on whether they planned to bring about order or eliminate it altogether. There are three rather unpleasant gentlemen who intend to make themselves the middlemen for all trading of occult objects across the Earth. Some are travelling to Germany and Poland, in hopes that they might finally end this bloody war. Multiple religious sects are being established, mostly under extreme secrecy. Most closely to me, a dozen or so of the former Protectionists have run off with as many artifacts as they can get their hands on, claiming that they will start an organisation working for the good of humanity by keeping these objects under lock and key. These are merely the examples that spring to mind; I have undoubtedly omitted a great many others.</p>
+<p>I myself am uncertain of where to go from here. I have never been firmly affiliated with any of these groups, and I would rather not become a pariah amongst them all. Perhaps, instead, I will join one of them and quietly try to temper its worst impulses. I know not which of these groups will survive long enough to become powerful — more so than the Assembly ever was — but I firmly believe that at least one will. Whichever it is, I fear that they will not recognise the lessons that the failures of this institution taught us.</p>
+<p>Leopold de Haas was both one of the finest thaumaturges of our age, and a small-minded moron; the latter, it is evident, does not preclude the former. He sought to enforce his view of how things ought to be run by defining the Assembly's actions (conveniently based on principles he himself wrote) as unquestionable Truth, and then twisting reality in knots to match it, making any deviation from the <em>status quo</em> utterly impossible. This idea is already ill-advised in its present form, but all the factions that used to occupy this chamber have now separated and become insular, and I fear that many of these new associations will implement Mr. de Haas' vision with greater ease absent any dissenting voices.</p>
+<p>And if — or more likely, <span style="text-decoration: underline;">when</span> — they succeed, God help us all.</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+
+<div style="text-align: center;">
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-8435">SCP-8435</a>" by OliverMemphis, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-8435">https://scpwiki.com/scp-8435</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<div style="text-align: left;">
+<div class="blockquote">
+<p><strong>consequences.jpg</strong><br/>
+by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/olivermemphis" onclick="WIKIDOT.page.listeners.userInfo(6623086); return false;"><img alt="OliverMemphis" class="small" src="https://www.wikidot.com/avatar.php?userid=6623086&amp;amp;size=small&amp;amp;timestamp=1769811566" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6623086)"/></a><a href="http://www.wikidot.com/user:info/olivermemphis" onclick="WIKIDOT.page.listeners.userInfo(6623086); return false;">OliverMemphis</a></span><br/>
+License: CC BY-SA 3.0</p>
+</div>
+<div class="blockquote">
+<p><strong>dehaas.png</strong><br/>
+Source: <em>19th century man</em> by Cassowary Colorizations, from <a href="https://www.flickr.com/photos/cassowaryprods/34752077791" target="_blank">Flickr</a><br/>
+License: CC BY 2.0</p>
+</div>
+<div class="blockquote">
+<p><strong>sigil.png</strong><br/>
+by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/olivermemphis" onclick="WIKIDOT.page.listeners.userInfo(6623086); return false;"><img alt="OliverMemphis" class="small" src="https://www.wikidot.com/avatar.php?userid=6623086&amp;amp;size=small&amp;amp;timestamp=1769811566" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6623086)"/></a><a href="http://www.wikidot.com/user:info/olivermemphis" onclick="WIKIDOT.page.listeners.userInfo(6623086); return false;">OliverMemphis</a></span><br/>
+License: CC BY 2.0</p>
+<p>Composite of:</p>
+<hr/>
+<p>Source: <em>Oil Slick</em> by Judith Jackson, from <a href="https://www.flickr.com/photos/130010035@N04/52604732817" target="_blank">Flickr</a><br/>
+License: CC BY 2.0</p>
+<hr/>
+<p>Source: <em>Textura pared / wall texture</em> by Sergio Sánchez, from <a href="https://www.flickr.com/photos/sergioavatara/34141291350" target="_blank">Flickr</a><br/>
+License: CC BY-SA 2.0</p>
+<hr/>
+<p>The superimposed design is by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/olivermemphis" onclick="WIKIDOT.page.listeners.userInfo(6623086); return false;"><img alt="OliverMemphis" class="small" src="https://www.wikidot.com/avatar.php?userid=6623086&amp;amp;size=small&amp;amp;timestamp=1769811566" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6623086)"/></a><a href="http://www.wikidot.com/user:info/olivermemphis" onclick="WIKIDOT.page.listeners.userInfo(6623086); return false;">OliverMemphis</a></span>. It incorporates the <a href="/scp-5109">SCP-5109</a> script created by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;"><img alt="HarryBlank" class="small" src="https://www.wikidot.com/avatar.php?userid=6479803&amp;amp;size=small&amp;amp;timestamp=1769811566" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6479803)"/></a><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;">HarryBlank</a></span> (license CC BY 3.0) and the Translunary Shorthand script created by cryptotheism (<a href="https://www.tumblr.com/cryptotheism/767359604431667200/" target="_blank">used with permission</a>).</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

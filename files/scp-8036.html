@@ -1,0 +1,879 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-8036</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-8036</h1>
+            <div class='image-header'><div class="scp-image-block block-center" style="width:100%;"><img alt="Dolby_Cinema_in_Hilversum.jpg" class="image" src="https://scp-wiki.wdfiles.com/local--files/scp-8036/Dolby_Cinema_in_Hilversum.jpg"/>
+<div class="scp-image-caption">
+<p>SCP-8036 interior; Auditorium Eight.</p>
+</div></div><div class='text-content'><strong>Item #:</strong> SCP-8036</span></td>
+<td style="text-align: right;"><span style="font-size:125%;"><span style="color: #990000"><strong>Level 1/8036</strong></span></span></td>
+</tr>
+<tr>
+<td><span style="font-size:125%;"><strong>Object Class:</strong> Exempt</span></td>
+<td style="text-align: right;"><span style="font-size:125%;"><span style="color: #990000"><strong>Classified</strong></span></span></td>
+</tr>
+</table>
+<hr/>
+<p><strong>Object Relations Procedures:</strong> Containment measures or surveillance operations for SCP-8036 are not authorized. However, SCP-8036 has agreed to willingly remain in the city of Puerto Montt, Chile, near Site-53, on the conditions that it receives a regular audience and remains open to the public. Bi-weekly attendance to SCP-8036 is mandatory for all Class-C and Class-D personnel at Site-53.</p>
+<p>Special Task Force Zeta-C2 ("Film Buffers,") formerly assigned to observe, research, and propose potential long-term containment measures for SCP-8036, has been formally disbanded. In the event that SCP-8036 relocates away from Puerto Montt, Field Agent Marcela Reale must be dispatched within seven days to negotiate its return. SCP-8036 is expected to demand additional patronage during negotiations, and the Foundation has authorized patronage demands to be met unconditionally. If further demands are made, Site Director Caroline Vasquez must report to the Anomalous Entity Engagement Division.</p>
+<p><strong>Description:</strong> SCP-8036 is a 29,000-square meter, two-story, 1880-guest capacity modern movie theater, operating under the name "Living Pictures Theater." It is comprised of one lobby, two concession stands, an arcade space with four games, two restrooms, and eight auditoriums<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup>. Notably absent are any employee-only areas, kitchens, storage areas, or access points to upstairs projection rooms. SCP-8036 has remained in one fixed location since August 9th, 2016. However, prior to Foundation intervention, the theater would spontaneously de-manifest every Tuesday at exactly 12:00 A.M. relative to its initial location's time zone, re-manifesting in a new, seemingly random location and changing its film and concession offerings in the process. Following Foundation intervention, while SCP-8036 has not yet re-located, its films and concessions still change along the same schedule.</p>
+<p>While SCP-8036 typically shows at least one film per week in line with other international theaters<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup>, it primarily shows films which are otherwise non-existent, unfinished, or cancelled.</p>
+<p>Humanoid entities acting as "employees" of SCP-8036 exist throughout the building. These entities have not been observed cycling through shifts, entering, or exiting, and appear to spontaneously manifest and de-manifest as needed. "Employee manifestations" freely admit to being mere components of SCP-8036, as opposed to independent actors in their own right. By speaking through these "employees," SCP-8036 has demonstrated itself both sentient and sapient. Generally, SCP-8036 is compliant and amicable, but it has demonstrated extreme resistance to explaining its own anomalous properties or to undergoing extended observation.</p>
+<p>The first stage of Foundation intervention took place from June 7, 2016 to July 11, 2016. Initially, a single tracking beacon was planted behind a trash can in SCP-8036's front lobby, both to see whether SCP-8036's change in location could be effectively tracked and to see whether items left in the building remain after a relocation event. When this experiment proved successful, Foundation agent Marcela Reale was tasked with repeatedly staying in one of SCP-8036's lobbies overnight during relocation events, tracking its movement, interviewing its "employee" manifestations when possible, and documenting its film and concession offerings. The results of this experiment can be seen in Report 8036.</p>
+<p style="text-align: center;"></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ View Report 8036-A: Week One</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p style="text-align: center;"><strong>WEEK ONE: JUNE 7 - 13</strong></p>
+<hr/>
+<p><strong>Location:</strong> Vancouver, Canada</p>
+<p style="text-align: center;"></p>
+<table style="border-collapse:collapse; max-width: 600px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 44%;">Films Available:</td>
+<td style="font-weight:bold; padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver;"></td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Teenage Mutant Ninja Turtles:<br/>
+Out of the Shadows</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Normative; Action/Adventure Comedy.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Alice Through the Looking Glass</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Normative; Fantasy Adventure.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>X-Men: Apocalypse</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Normative; Superhero/Action.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>The Day the Clown Cried</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unreleased/Cancelled; Historical Drama.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Forest House:<br/>
+The House is a Forest</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Comedy.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Pill Bug Penny</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Animation.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Rapid Onset Parachute Failure</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Horror.</td>
+</tr>
+</table>
+<p><strong>Concessions:</strong> Buttered Popcorn, Hot Dogs, Nachos, Soft Drinks, Chocolate-Covered Raisins, Fruit-Flavored Candies, Frozen Broccoli Florets, Baked Beans.</p>
+<hr/></div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Audio Log 8036-A-A</strong></p>
+<p><strong>Date:</strong> June 7, 2016</p>
+<p><strong>Agent on Scene:</strong> Marcela Reale</p>
+<p><strong>Subject:</strong> SCP-8036 - "Box Office Employee" Manifestation</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>SCP-8036:</strong> Hi, there! What can I get for you today?</p>
+<p><strong>Agent Reale:</strong> Hello, I was actually wondering if you could answer a few questions for me?</p>
+<p><strong>SCP-8036:</strong> …I suppose so, since there's no line.</p>
+<p><strong>Agent Reale:</strong> Thank you. First and foremost, could I get your name?</p>
+<p><strong>SCP-8036:</strong> Right now, I'm Living Pictures Theater Vancouver.</p>
+<p><strong>Agent Reale:</strong> <em>Your</em> name. Not the name of the theater.</p>
+<p><strong>SCP-8036:</strong> Living Pictures. I, ah, am the theater. Who else would I be?</p>
+<p><strong>Agent Reale:</strong> An employee.</p>
+<p><strong>SCP-8036:</strong> I mean, I <em>have</em> employees. They're how I hand out popcorn and talk to people and stuff. …Hey, look at what this one can do!</p>
+<p><em>Heavy thud.</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup> <em>Agent Reale stifles a laugh.</em></p>
+<p><strong>Agent Reale:</strong> I see. And… who was this employee of yours <em>before</em> it… started working for you, as it were?</p>
+<p><strong>SCP-8036:</strong> What? Nobody. I made it myself. I'm sorry, did you think I <em>abducted someone?</em></p>
+<p><strong>Agent Reale:</strong> Oh. …I apologize. I think I just made some incorrect assumptions.</p>
+<p><strong>SCP-8036:</strong> Do most theaters you go to kidnap people?</p>
+<p><strong>Agent Reale:</strong> Most theaters I go to aren't alive.</p>
+<p><em>Brief silence.</em></p>
+<p><strong>SCP-8036:</strong> Then how do they know what movies to show?</p>
+<p><strong>Agent Reale:</strong> …Right. On that topic, I have a few questions about this theater in specific. You mentioned that, <em>right now</em>, you're Living Pictures Theater Vancouver.</p>
+<p><strong>SCP-8036:</strong> That's what it says on GPS.</p>
+<p><strong>Agent Reale:</strong> But, yesterday, you were located in Brazil.</p>
+<p><em>Brief silence.</em></p>
+<p><strong>SCP-8036:</strong> How did you know about that?</p>
+<p><strong>Agent Reale:</strong> I'm a traveling film student. I've heard word about a magic movie theater, and I've been trying to cross paths with it for a while.</p>
+<p><strong>SCP-8036:</strong> <em>A film student!</em> Of course! It all makes sense now. And you've heard of me?</p>
+<p><strong>Agent Reale:</strong> I have. I know you move in the middle of the night once a week, but I don't know how or why.</p>
+<p><strong>SCP-8036:</strong> The <em>how</em> is a bit personal, if I'm honest. The <em>why</em>, though… I just haven't found an audience to call home. I try to go where the people are, but nothing's stuck yet.</p>
+<p><strong>Agent Reale:</strong> I suppose that makes sense. In that case, could I just get one ticket to <em>The Day the Clown Cried</em>, please?</p>
+<p><strong>SCP-8036:</strong> You really are a film student, aren't you? That'll be in Auditorium Six! Right that way!</p>
+<p>[END LOG]</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Audio Log 8036-A-B</strong></p>
+<p><strong>Date:</strong> June 8, 2016</p>
+<p><strong>Agent on Scene:</strong> Marcela Reale</p>
+<p><strong>Subject:</strong> SCP-8036 - "Box Office Employee" Manifestation</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>Agent Reale:</strong> I'm back, baby!<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+<p><strong>SCP-8036:</strong> Film student!</p>
+<p><strong>Agent Reale:</strong> Movie theater!</p>
+<p><em>Sharp exhale.</em></p>
+<p><strong>SCP-8036:</strong> Here two days in a row, huh?</p>
+<p><strong>Agent Reale:</strong> Well, you're only here for a week, yeah? Let's go with… <em>Ninja Turtles</em> this time.</p>
+<p><strong>SCP-8036:</strong> No problem!</p>
+<p><em>Sound of a ticket printer.</em></p>
+<p><strong>SCP-8036:</strong> By the way, I never got <em>your</em> name!</p>
+<p><strong>Agent Reale:</strong> Oh! Marcela. Marcela Reale.</p>
+<p><strong>SCP-8036:</strong> Well, Marcela, <em>Turtles</em> is in the IMAX auditorium - closest one to you!</p>
+<p><strong>Agent Reale:</strong> Thanks!</p>
+<p><em>Brief silence.</em></p>
+<p><strong>Agent Reale:</strong> Can I ask another question?</p>
+<p><strong>SCP-8036:</strong> Besides the one you just did? Sure.</p>
+<p><strong>Agent Reale:</strong> Where do you <em>get</em> your movies, exactly? <em>Ninja Turtles</em> is in most theaters right now, but I've never heard of <em>Pill Bug Penny</em> or <em>Rapid Onset Parachute Failure</em>, and the movie I saw yesterday, I can't find anywhere else.</p>
+<p><strong>SCP-8036:</strong> …Oh. <em>(Stammering.)</em> That's… that's a bit of a personal question, isn't it?</p>
+<p><strong>Agent Reale:</strong> Is it?</p>
+<p><strong>SCP-8036:</strong> It's a bit like asking where you get your emotions. Or, more like… where subconscious thoughts come from.</p>
+<p><strong>Agent Reale:</strong> Interesting. Thank you for your time.</p>
+<p><strong>SCP-8036:</strong> Thank you for your patronage!</p>
+<p>[END LOG]</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Journal Log: Marcela Reale</strong></p>
+<p><strong>June 8, 2016</strong></p>
+<p>We've already learned a few things. First, this movie theater is <em>one sapient entity,</em> or at the very least behaves like one. There's no way for me to be sure, of course, but I honestly don't think it's lying to me about anything - it seems to be pretty upfront about what it is, even if it's disappointingly hesitant to answer the "how" question. Maybe that'll get better with time?</p>
+<p>The good news is, it buys my cover story completely, and it's probably not going to be very difficult to get it to talk in the near future. The bad news is, there's no way I'm going to be able to sleep in the lobby Tuesday night without it realizing what I'm doing. I'm going to have to figure out some way to spin that.</p>
+<p>I've got seven days before this place jumps again, and I want to try to watch all seven of its current movies in this time. So far, I've seen <em>The Day the Clown Cried</em>, which made <em>me</em> cry, and <em>Teenage Mutant Ninja Turtles: Out of the Shadows</em>, which there was nothing wrong with. Nothing the Foundation would be interested in, I mean. It's a <em>bad</em> movie.</p>
+<p>Touch back soon!</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Journal Log: Marcela Reale</strong></p>
+<p><strong>June 10, 2016</strong></p>
+<p>Hey, it's Marcela again. New info on the theater: the thing's a <em>total dork.</em> I don't think it's very used to repeat visitors, and everything it knows, it knows through movies. I'm having a lot of fun.</p>
+<p>I've now watched two of the titles we can't find anywhere else - <em>Pill Bug Penny</em> and <em>Rapid Onset Parachute Failure.</em> Both were… charmingly amateur? I don't know how else to say it; they felt like they were made by somebody who really loves movies but hasn't had any formal schooling in the craft. The edit was sloppy, the dialogue a bit stiff, but everything came across <em>earnest.</em> Really funny, too. I think the theater might be making them on its own, somehow.</p>
+<p>I'm halfway to Tuesday. I think I'm just going to have to be straightforward with it; let it know I want to stay the night and travel with it. I'll touch back with you then.</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Audio Log 8036-A-C</strong></p>
+<p><strong>Date:</strong> June 13, 2016</p>
+<p><strong>Agent on Scene:</strong> Marcela Reale</p>
+<p><strong>Subject:</strong> SCP-8036 - "Box Office Employee" Manifestation</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>SCP-8036:</strong> Marcela! Welcome back! A whole seven days in a row; you did it!</p>
+<p><strong>Agent Reale:</strong> I did it! Do you know where you'll go next, Living Pictures?</p>
+<p><strong>SCP-8036:</strong> No clue! I usually just decide on something in the moment. Wherever it is, though, I'll miss seeing you around.</p>
+<p><em>Brief silence.</em></p>
+<p><strong>Agent Reale:</strong> Actually, about that, I was wondering… if something stayed here in the lobby overnight, it would travel with you, right?</p>
+<p><strong>SCP-8036:</strong> …Huh. I guess I never thought about it. Probably? Why?</p>
+<p><strong>Agent Reale:</strong> Can I come with you?</p>
+<p><em>Extended silence.</em></p>
+<p><strong>SCP-8036:</strong> Oh. Oh, wow. I've never… I mean, sure! But… you know how this works. We could go anywhere.</p>
+<p><strong>Agent Reale:</strong> Wherever it is, I'll book a hotel.</p>
+<p><strong>SCP-8036:</strong> …Thank you, Marcela.</p>
+<p>[END LOG]</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Journal Log: Marcela Reale</strong></p>
+<p><strong>June 13, 2016</strong></p>
+<p>That was easier than I thought. Truth be told, I think Living Pictures is just lonely, more than anything. It wants a friend.</p>
+<p>I've got a sleeping bag set up in the lobby. Who knows where I'm going to wake up! It's exciting, honestly! And it's a pretty sweet gig, getting paid Foundation money to watch movies all day and hang out with a new friend. I feel like I'm scamming you guys.</p>
+<p>Not much else to report tonight, but I suspect I'll have a lot to say tomorrow.</p>
+</div>
+</div>
+</div>
+</div>
+<p style="text-align: center;"></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ View Report 8036-B: Week Two</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p style="text-align: center;"><strong>WEEK TWO: JUNE 14 - 20</strong></p>
+<hr/>
+<p><strong>Location:</strong> Turin, Italy</p>
+<p style="text-align: center;"></p>
+<table style="border-collapse:collapse; max-width: 600px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 44%;">Films Available:</td>
+<td style="font-weight:bold; padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver;"></td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Alice Through the Looking Glass</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Normative; Fantasy Adventure.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Now You See Me 2</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Normative; Heist Thriller.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>WarCraft</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Normative; Action Fantasy.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>The Works</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unreleased/Cancelled; Animation.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Revenge of the Nerds (2007)</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unreleased/Cancelled; Comedy.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>The Bob and Larry Movie</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unreleased/Cancelled; Religious Animation.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Napoleon</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unreleased/Cancelled; Historical Drama.</td>
+</tr>
+</table>
+<p><strong>Concessions:</strong> Buttered Popcorn, Buttered Mashed Potatoes, Pretzels with Cheese Dip, Nachos, Soft Drinks, Chocolate Drops, Chocolate-Covered Peanuts, Chocolate-Covered Garlic Cloves, "Applesauce Loose in a Paper Bag."</p>
+<hr/></div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Audio Log 8036-B-A</strong></p>
+<p><strong>Date:</strong> June 14, 2016</p>
+<p><strong>Agent on Scene:</strong> Marcela Reale</p>
+<p><strong>Subject:</strong> SCP-8036 - "Janitor Employee" Manifestation</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>SCP-8036:</strong> Good morning from Italy, Marcela!</p>
+<p><strong>Agent Reale:</strong> <em>(Audibly startled)</em> Who are you?</p>
+<p><strong>SCP-8036:</strong> Hey, hey, it's just me! Living Pictures! The theater!</p>
+<p><strong>Agent Reale:</strong> Right, right, sorry. I haven't seen this "employee" of yours yet.</p>
+<p><strong>SCP-8036:</strong> Were you reaching for a gun in your pocket just now?</p>
+<p><strong>Agent Reale:</strong> No, I'm just happy to see you. You said we're in Italy?</p>
+<p><strong>SCP-8036:</strong> Yep! Turin! The closest hotel should be the Principi di Piemonte, but it's… expensive. There's also a Best Western pretty close.</p>
+<p><strong>Agent Reale:</strong> Oh, thanks. You sure know the area pretty well.</p>
+<p><strong>SCP-8036:</strong> I have to! Can't show up where a building already is, or where nobody would be able to find me!</p>
+<p><strong>Agent Reale:</strong> I guess so. By the way, I was meaning to ask, you really tend to jump to a lot of different countries.</p>
+<p><strong>SCP-8036:</strong> Travel's fun!</p>
+<p><strong>Agent Reale:</strong> Do you speak the languages? Like, do you speak Italian? All the signage in here's still in English.</p>
+<p><strong>SCP-8036:</strong> Sí! Well, some, at least. Mostly I know English and French. Everything else, I sorta know just enough to… do… movie theater stuff? Can't really hold a conversation that well. What about you; are you multilingual?</p>
+<p><strong>Agent Reale:</strong> Sólo inglés y español.</p>
+<p><strong>SCP-8036:</strong> ¡Oh! ¡Español! ¡Conozco algunas frases en español!</p>
+<p><strong>Agent Reale:</strong> …¿Por ejemplo?</p>
+<p><strong>SCP-8036:</strong> "El auditorio dos estará a su izquierda."</p>
+<p><em>Laughter.</em></p>
+<p><strong>Agent Reale:</strong> I guess we're sticking with English, then.</p>
+<p><strong>SCP-8036:</strong> Sure thing!</p>
+<p>[END LOG]</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Journal Log: Marcela Reale</strong></p>
+<p><strong>June 15, 2016</strong></p>
+<p>What's up, I'm back. This is the easiest mission I've ever done, and I get to do it from <em>Italy.</em> Practically a vacation!</p>
+<p>Living Pictures Theater's still affable, and at this point I think it's safe to say it poses absolutely no danger of any kind whatsoever. A few of its concession offerings are <em>weird</em>, but they've all tested safe for human consumption so far. I've been having popcorn for lunch for three days.</p>
+<p>So, yeah, harmless, but I'm also not sure exactly how we're going to contain the thing. Haven't been able to get it to share how it teleports around yet, and at this point I feel sorta rude for asking, so I'm going to give it a rest for a while. Also, I'm pretty sure the building exterior is <em>actually indestructible.</em> All the wear and tear seems entirely cosmetic, and I haven't been able to so much as pick up a rock by the front door. It's like it's glued in place. I'm not going to test that any further, though; someone else can handle that. But please don't.</p>
+<p>I've measured the thing, too. 29,000 square meters; pretty small for a theater. Thing is, Living Pictures <em>noticed me doing it</em>, and asked what was up. I panicked, and said I wanted to draw it. So… now I gotta go out and get some nice sketch paper and pencils. I don't even really know where to <em>start</em> with that, but I'm writing it off as an expense of the trip.</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Journal Log: Marcela Reale</strong></p>
+<p><strong>June 17, 2016</strong></p>
+<p>I did the drawing! I'm not an artist, but I think Living Pictures appreciated it anyways.</p>
+<p>Still no ideas on containment measures, but relations are going real well. I've decided that this theater is my friend now. Maybe we could get it to stay at Site-53 willingly? I'm sure it would understand if I asked!</p>
+<p>In the meantime, though, don't worry, I have a cover story and I'm still sticking to it. Ciao!</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Audio Log 8036-B-B</strong></p>
+<p><strong>Date:</strong> June 20, 2016</p>
+<p><strong>Agent on Scene:</strong> Marcela Reale</p>
+<p><strong>Subject:</strong> SCP-8036 - "Janitor Employee" Manifestation</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>Agent Reale:</strong> Cleaning up all by yourself?</p>
+<p><strong>SCP-8036:</strong> Oh, hey, Marcie. Didn't see you come in. Yeah, this week's been a pretty busy one.</p>
+<p><strong>Agent Reale:</strong> I can tell. Hand me a broom.</p>
+<p><strong>SCP-8036:</strong> You- you don't have to help me with this.</p>
+<p><strong>Agent Reale:</strong> But I will!</p>
+<p><strong>SCP-8036:</strong> If you're sure!</p>
+<p><em>Extended silence. Sound of two brooms sweeping.</em></p>
+<p><strong>SCP-8036:</strong> Okay, you <em>definitely</em> don't have to help me dig popcorn out of the seats.</p>
+<p><strong>Agent Reale:</strong> Trust me; I've cleaned up worse. Just… dig them out, throw them to the floor, then sweep them up, yeah?</p>
+<p><em>SCP-8036 sighs.</em></p>
+<p><strong>SCP-8036:</strong> Yeah. Do you want some gloves?</p>
+<p><strong>Agent Reale:</strong> You're not wearing any gloves.</p>
+<p><strong>SCP-8036:</strong> That's because this isn't my only pair of hands.</p>
+<p><strong>Agent Reale:</strong> Alright. If you have any, I'll take them.</p>
+<p><em>Extended silence. Sound of a person putting on rubber gloves. Sound of two brooms sweeping.</em></p>
+<p><strong>Agent Reale:</strong> Can I ask another question?</p>
+<p><strong>SCP-8036:</strong> <em>(Audibly disappointed)</em> It's not another question about how I do things, is it?</p>
+<p><strong>Agent Reale:</strong> No, actually, it's about your gender situation.</p>
+<p><strong>SCP-8036:</strong> Oh. Oh!</p>
+<p><strong>Agent Reale:</strong> Most, but not all, of your employees appear female, and… you're a <em>theater.</em></p>
+<p><strong>SCP-8036:</strong> Right. I guess I'm… mostly, but not entirely, a woman? I don't know; what genders do <em>movies</em> have?</p>
+<p><strong>Agent Reale:</strong> Are you… movies?</p>
+<p><strong>SCP-8036:</strong> I don't know.</p>
+<p><em>Extended silence. Sound of two brooms sweeping.</em></p>
+<p><strong>SCP-8036:</strong> Hey, what's your favorite film?</p>
+<p><strong>Agent Reale:</strong> <em>The Little Shop of Horrors!</em></p>
+<p><strong>SCP-8036:</strong> Really!</p>
+<p><strong>Agent Reale:</strong> Really really! We had a lot of old B-movie tapes laying around the house when I was a kid, and that one was always my favorite. Truth be told, I think watching that movie over and over again when I was a kid was what got me interested in- <em>(Stammering.)</em> …Film.</p>
+<p><strong>SCP-8036:</strong> Makes sense! It's a fun one! And you seem like you really appreciate cheese.</p>
+<p><strong>Agent Reale:</strong> I am a cheese connoisseur. What about you; what's your favorite?</p>
+<p><strong>SCP-8036:</strong> I'm not sure! <em>Grand Budapest Hotel</em>? I feel like it changes for me every couple of years.</p>
+<p><strong>Agent Reale:</strong> I can see that. You probably watch a lot more than anyone else does.</p>
+<p><em>Brief silence.</em></p>
+<p><strong>Agent Reale:</strong> You're not offering <em>milk</em> in the concession stand this week, right?</p>
+<p><strong>SCP-8036:</strong> No, but that does sound like it would be funny. Why?</p>
+<p><strong>Agent Reale:</strong> Somebody left <em>milk</em> in this cup holder.</p>
+<p><strong>SCP-8036:</strong> Oh. <em>(Laughing)</em> Gross!</p>
+<p><strong>Agent Reale:</strong> <em>(Laughing)</em> Who <em>does</em> this!</p>
+<p>[ENG LOG]</p>
+</div>
+</div>
+</div>
+</div>
+<p style="text-align: center;"></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ View Report 8036-C: Week Three</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p style="text-align: center;"><strong>WEEK THREE: JUNE 21 - 27</strong></p>
+<hr/>
+<p><strong>Location:</strong> Nairobi, Kenya</p>
+<p style="text-align: center;"></p>
+<table style="border-collapse:collapse; max-width: 600px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 44%;">Films Available:</td>
+<td style="font-weight:bold; padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver;"></td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Finding Dory</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Normative; Animation.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Kingdom of the Sun</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unreleased/Cancelled; Animation.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Flora Plum</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unreleased/Cancelled; Romance.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Climbing Mt. Mountain</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Buddy Comedy.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>I Bought us an Aquarium!</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Buddy Comedy.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Captain Mack: Clown Crew</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Science Fiction.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>The Little Shop of Horrors</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Extant; Horror Comedy.</td>
+</tr>
+</table>
+<p><strong>Concessions:</strong> Buttered Popcorn, Ugali Fries, Frozen Lemonade, Vanilla Ice Cream, Chocolate Ice Cream, Root Beer, Fruit and Cheese Platter, Bacon-Wrapped Gumballs, Roasted Turkey Leg, "Edible Chalk."</p>
+<hr/></div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Audio Log 8036-C-A</strong></p>
+<p><strong>Date:</strong> June 21, 2016</p>
+<p><strong>Agent on Scene:</strong> Marcela Reale</p>
+<p><strong>Subject:</strong> SCP-8036 - "Concessions Employee" Manifestation</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>Agent Reale:</strong> <em>(Yawning)</em> Morning, Liv!</p>
+<p><strong>SCP-8036:</strong> Morning, Marcie! Ugali fry?</p>
+<p><strong>Agent Reale:</strong> What's an ugali fry?</p>
+<p><strong>SCP-8036:</strong> It's like… kind of a fried cornmeal porridge type situation.</p>
+<p><strong>Agent Reale:</strong> Oh, sure!</p>
+<p><em>Chewing.</em></p>
+<p><strong>Agent Reale:</strong> Where are we now, anyways?</p>
+<p><strong>SCP-8036:</strong> Nairobi, Kenya! The nation's capital, and a centerpiece of finance and culture!</p>
+<p><strong>Agent Reale:</strong> If you weren't a building, you'd make a pretty good travel guide.</p>
+<p><strong>SCP-8036:</strong> Maybe if I could figure out how to <em>move</em> more than once a week.</p>
+<p><strong>Agent Reale:</strong> Right, right. I keep forgetting you're the whole building, and not, like, a human being with multiple faces.</p>
+<p><strong>SCP-8036:</strong> I know the feeling. Sometimes I forget you <em>are</em> a human. I picture you as a library - you'd make a great one.</p>
+<p><strong>Agent Reale:</strong> Aw, you think so?</p>
+<p><strong>SCP-8036:</strong> I know so! You're smart, you're curious, you're kind, you're cute-</p>
+<p><strong>Agent Reale:</strong> What was that?</p>
+<p><strong>SCP-8036:</strong> Hm?</p>
+<p><strong>Agent Reale:</strong> What was that last one?</p>
+<p><strong>SCP-8036:</strong> I- <em>(Stammering)</em> I don't know what you're talking about.</p>
+<p><strong>Agent Reale:</strong> Mm-hm.</p>
+<p><em>Brief Silence.</em></p>
+<p><strong>Agent Reale:</strong> You, too.</p>
+<p>[END LOG]</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Journal Log: Marcela Reale</strong></p>
+<p><strong>June 21, 2016</strong></p>
+<p>Okay, I know how this <em>looks</em>, but seriously, I don't think Liv is even enough of a threat to warrant calling this a conflict of interest. She's just <em>nice</em>. She's just a nice theater.</p>
+<p>Can we nominate anomalies for recruitment? Honestly, I don't think it would be a good idea to enact containment procedures for Liv, assuming we even could. She's a cool teleporting theater with an endless string of movies and a pretty impressive knowledge of world geography we could actually take advantage of.</p>
+<p>…Or maybe that's wishful thinking; I don't know.</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Audio Log 8036-C-B</strong></p>
+<p><strong>Date:</strong> June 24, 2016</p>
+<p><strong>Agent on Scene:</strong> Marcela Reale</p>
+<p><strong>Subject:</strong> SCP-8036 - "Concessions Employee" Manifestation</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>Agent Reale:</strong> Hey, I've never seen on of your "employees" on break before.</p>
+<p><strong>SCP-8036:</strong> I'm trying something new!</p>
+<p><strong>Agent Reale:</strong> Mind if I sit down next to you?</p>
+<p><strong>SCP-8036:</strong> Of course!</p>
+<p><em>Sound of a barstool creaking.</em></p>
+<p><strong>Agent Reale:</strong> How's the cigarette?</p>
+<p><strong>SCP-8036:</strong> Oh, this is just something I figured people are supposed to do on breaks; I don't even know if this body has lungs.</p>
+<p><strong>Agent Reale:</strong> <em>(Laughing)</em> Well, it's the thought that counts, I guess.</p>
+<p><em>Brief silence.</em></p>
+<p><strong>Agent Reale:</strong> …Thanks for putting on <em>Little Shop of Horrors</em> for me.</p>
+<p><strong>SCP-8036:</strong> You haven't even gotten to see it yet!</p>
+<p><strong>Agent Reale:</strong> I know, I know, I'm just looking for the perfect time to.</p>
+<p><strong>SCP-8036:</strong> Well, I'll show it any week you want to see it.</p>
+<p><strong>Agent Reale:</strong> …How about seeing it with me?</p>
+<p><strong>SCP-8036:</strong> Come again?</p>
+<p><strong>Agent Reale:</strong> You're taking breaks now, right? Do you wanna catch it tonight?</p>
+<p><strong>SCP-8036:</strong> …I'd really like that.</p>
+<p><strong>Agent Reale:</strong> Then it's a date!</p>
+<p><em>Extended silence.</em></p>
+<p><strong>SCP-8036:</strong> You know… I think you're my favorite guest I've ever had.</p>
+<p><strong>Agent Reale:</strong> How about that. You're my favorite theater I've ever been to.</p>
+<p>[END LOG]</p>
+</div>
+</div>
+</div>
+</div>
+<p style="text-align: center;"></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ View Report 8036-D: Week Four</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<p><strong>Foreward:</strong> It is believed that, on the morning of June 28, before Agent Reale awoke, SCP-8036 discovered the tracking device that had been planted on it when an employee manifestation was performing a monthly cleaning of the lobby.</p>
+<div class="blockquote">
+<p style="text-align: center;"><strong>WEEK FOUR: JUNE 28 - JULY 4</strong></p>
+<hr/>
+<p><strong>Location:</strong> Upernavik, Greenland</p>
+<p style="text-align: center;"></p>
+<table style="border-collapse:collapse; max-width: 600px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 44%;">Films Available:</td>
+<td style="font-weight:bold; padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver;"></td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>The Little Shop of Horrors</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Extant; Horror Comedy.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Steamboat Willie</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Extant; Animation.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Night of the Living Dead</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Extant; Horror.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Made For Each Other</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Extant; Romance.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Living Pictures</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Documentary.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Infestation!</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Horror.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black">[No Title Available]</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Abstract.</td>
+</tr>
+</table>
+<p><strong>Concessions:</strong> None.</p>
+<hr/></div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Audio Log 8036-D</strong></p>
+<p><strong>Date:</strong> June 20, 2016</p>
+<p><strong>Agent on Scene:</strong> Marcela Reale</p>
+<p><strong>Subject:</strong> SCP-8036 - Auditorium and Lobby Sound System</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>SCP-8036:</strong> <em>(Distorted orchestral music)</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup></p>
+<p><strong>Agent Reale:</strong> Wh- Liv, it's just…</p>
+<p><em>(Distorted orchestral music rapidly increases in volume)</em></p>
+<p><strong>Agent Reale:</strong> ¡Santa Madre!</p>
+<p><strong>SCP-8036:</strong> <em>Bugs on me! Stop putting bugs on me!</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup> <em>No more, please, I can't anymore! No, no!</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup></p>
+<p><strong>Agent Reale:</strong> Liv, are you okay?</p>
+<p><strong>SCP-8036:</strong> <em>(Screaming; Indecipherable)</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup></p>
+<p><strong>Agent Reale:</strong> …You're not okay. Alright, hold on, hold on, I'm gonna find out what's wrong -</p>
+<p><strong>SCP-8036:</strong> Nothing's the matter with me! I'm fine!<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-9')">9</a></sup> Fine! Who am I to argue with science!?<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-10" onclick="WIKIDOT.page.utils.scrollToReference('footnote-10')">10</a></sup></p>
+<p><strong>Agent Reale:</strong> Liv, you're scaring me.</p>
+<p><strong>SCP-8036:</strong> And please- And please- And <strong><em>Please</em></strong>, no recording devices in the theater. <strong><em>No recording devices in the theater.</em></strong> [Unintelligible] is a crime!<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-11" onclick="WIKIDOT.page.utils.scrollToReference('footnote-11')">11</a></sup></p>
+<p><strong>Agent Reale:</strong> What are you- Liv, talk to me. What's going on?</p>
+<p><strong>SCP-8036:</strong> How could you- How could you- How could you-<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-12" onclick="WIKIDOT.page.utils.scrollToReference('footnote-12')">12</a></sup> <em>You… lied… to… me.</em><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-13" onclick="WIKIDOT.page.utils.scrollToReference('footnote-13')">13</a></sup></p>
+<p><strong>Agent Reale:</strong> I don't understand.</p>
+<p><strong>SCP-8036:</strong> She said she was a film student, and she was kind enough that the theater believed her. But the theater couldn't see… that she was tracking her every move. Writing it all down. Reporting it to God-knows-who.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-14" onclick="WIKIDOT.page.utils.scrollToReference('footnote-14')">14</a></sup></p>
+<p><strong>Agent Reale:</strong> …Oh. <em>Oh.</em></p>
+<p><em>Sound of footsteps, rapidly increasing in speed.</em></p>
+<p><strong>SCP-8036:</strong> How much was a lie? How much was genuine? And who was Marcela really working for? We may never know.</p>
+<p><em>Agent Reale is breathing heavily.</em></p>
+<p><strong>SCP-8036:</strong> This isn't the first time someone's come after Living Pictures Theater. This isn't the first time somebody's tried to hurt her. It probably won't be the last. But it <em>was</em> the time that stung the hardest.</p>
+<p><em>Sound of a door swinging open.</em></p>
+<p><strong>SCP-8036:</strong> <em>Ow.</em></p>
+<p><strong>Agent Reale:</strong> Oh! Oh, I… I kind of thought the door was going to be locked.</p>
+<p><strong>SCP-8036:</strong> <strong><em>Get out of here.</em></strong><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-15" onclick="WIKIDOT.page.utils.scrollToReference('footnote-15')">15</a></sup></p>
+<p>[END LOG]</p>
+</div>
+</div>
+</div>
+</div>
+<p style="text-align: center;"></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ View Report 8036-E: Week Five</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p style="text-align: center;"><strong>WEEK FIVE: JUNE 5 - JULY 11</strong></p>
+<hr/>
+<p><strong>Location:</strong> Unknown</p>
+<p>Week Five's film listing was not documented.</p>
+<p><strong>Concessions:</strong> Presumed none.</p>
+<hr/></div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Journal Log: Marcela Reale</strong></p>
+<p><strong>July 5, 2016</strong></p>
+<p>What's up. Still in Greenland.</p>
+<p>I've holed up in the local church, and I'm sending this whole report early through an encoded radio transmission. Hopefully somebody back at Site-53 catches this and comes to pick me up.</p>
+<p>I don't know where Liv is. Mark this mission a failure and get me off the project.</p>
+</div>
+</div>
+</div>
+</div>
+<p>On July 13th, 2016, Site Director Caroline Vasquez received a relevant phone call from astronomy analyst Jackson Hall. A transcript of this call is attached below.</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ View Transcript</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Recorded Phone Conversation</strong></p>
+<p><strong>Date:</strong> July 13, 2016</p>
+<p><strong>Caller:</strong> Mr. Jackson Hall</p>
+<p><strong>Receiver:</strong> Director Caroline Vasquez</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>Mr. Hall:</strong> Hello, can I speak with Director Vasquez, Site-53?</p>
+<p><strong>Director Vasquez:</strong> Speaking.</p>
+<p><strong>Mr. Hall:</strong> Your site's the one that got assigned the jumpy movie theater, yes?</p>
+<p><em>Director Vasquez sighs.</em></p>
+<p><strong>Director Vasquez:</strong> Yes. I assure you, finding SCP-8036 and resuming intelligence operations is a Delta-level priority, and we will report our findings as soon as we have them-</p>
+<p><strong>Mr. Hall:</strong> Yeah, yeah. That's not why I'm calling. Do you have the theater's dimensions on you, by any chance?</p>
+<p><strong>Director Vasquez:</strong> Oh. One second.</p>
+<p><em>Sound of a computer mouse double-clicking. Sound of typing.</em></p>
+<p><strong>Director Vasquez:</strong> 29,000 square meters.</p>
+<p><strong>Mr. Hall:</strong> I see. Perfect square, or rectangle?</p>
+<p><strong>Director Vasquez:</strong> I don't know. I could ask Agent Reale, but I don't think she's willing to talk about her mission right now. Why?</p>
+<p><strong>Mr. Hall:</strong> My name is Jackson Hall; I'm with the Astronomy department. We've recently detected an unknown object blocking an almost imperceptible amount of sunlight, and it seems to have apparated <em>exactly</em> at midnight, Greenland Summer time, on July 5th. Current estimations also place it at roughly 29,000 square meters.</p>
+<p><strong>Director Vasquez:</strong> In outer space.</p>
+<p><em>Short silence.</em></p>
+<p><strong>Mr. Hall:</strong> …<em>Yes.</em></p>
+<p><strong>Director Vasquez:</strong> Can I ask <em>where</em> in outer space?</p>
+<p><strong>Mr. Hall:</strong> The, uh… the surface of the Sun.</p>
+<p><em>Lengthy silence. Sound of fingernails tapping against a desk.</em></p>
+<p><strong>Director Vasquez:</strong> You mean to tell me you think SCP-8036 relocated to the <em>Sun.</em></p>
+<p><strong>Mr. Hall:</strong> That's… Our best theory, cross-referencing any entities we know of which may be able to withstand the Sun's heat <em>and</em> are known to spontaneously materialize.</p>
+<p><em>Director Vasquez sighs again.</em></p>
+<p><strong>Director Vasquez:</strong> Well, if that's true, then let it have its tantrum. The thing is as good as contained for now. If SCP-8036 manifests again on this planet, we'll send Agent Reale back out to finish what she started.</p>
+<p><strong>Mr. Hall:</strong> Thank you. I'll let you know when it de-materializes again.</p>
+<p><strong>Director Vasquez:</strong> Can't wait.</p>
+<p>[END LOG]</p>
+</div>
+</div>
+</div>
+</div>
+<p>SCP-8036 remained missing until August 1st, when it was re-discovered in Dhaka, Bangladesh. At this point, Caroline Vasquez contacted Agent Reale concerning a negotiation assignment. A transcript of the following calls are attached below.</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ View Transcript</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Recorded Phone Conversation</strong></p>
+<p><strong>Date:</strong> August 1st, 2016</p>
+<p><strong>Caller:</strong> Director Caroline Vasquez</p>
+<p><strong>Receiver:</strong> Agent Marcela Reale</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>Agent Reale:</strong> Hello?</p>
+<p><strong>Director Vasquez:</strong> Agent Reale?</p>
+<p><em>Agent Reale exhales.</em></p>
+<p><strong>Agent Reale:</strong> Director Vasquez?</p>
+<p><strong>Director Vasquez:</strong> You're on assignment again. Dhaka, Bangladesh. It's low-priority, so I can give you the details now and you can just go.</p>
+<p><em>Sound of a bedframe creaking.</em></p>
+<p><strong>Agent Reale:</strong> Great. Great. Bangladesh? I can… I can do that. What's the mission?</p>
+<p><strong>Director Vasquez:</strong> It's SCP-8036.</p>
+<p>[END LOG]</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Recorded Phone Conversation</strong></p>
+<p><strong>Date:</strong> August 1st, 2016</p>
+<p><strong>Caller:</strong> Director Caroline Vasquez</p>
+<p><strong>Receiver:</strong> Agent Marcela Reale</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>Director Vasquez:</strong> Did you hang up on me?</p>
+<p><strong>Agent Reale:</strong> Yes.</p>
+<p>[END LOG]</p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Recorded Phone Conversation</strong></p>
+<p><strong>Date:</strong> August 1st, 2016</p>
+<p><strong>Caller:</strong> Director Caroline Vasquez</p>
+<p><strong>Receiver:</strong> Agent Marcela Reale</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>Director Vasquez:</strong> Agent Reale, your participation in this assignment is not optional.</p>
+<p><em>Lengthy silence.</em></p>
+<p><strong>Agent Reale:</strong> …<em>Fine.</em> Tell me what you have in mind.</p>
+<p><strong>Director Vasquez:</strong> You're the only person who's even remotely likely to be able to talk to SCP-8036.</p>
+<p><strong>Agent Reale:</strong> I don't think that's true.</p>
+<p><strong>Director Vasquez:</strong> I don't care what you <em>think</em>, the fact is, that theater's on edge, and the next person we send out, it's going to see coming. Our only hope for getting anywhere is if you go down and <em>patch things up.</em></p>
+<p><em>Director Vasquez sighs.</em></p>
+<p><strong>Director Vasquez:</strong> We might have <em>found</em> it in Bangladesh, but it's… closed. Doors are locked, movies aren't playing. It's… I think it's just as upset about this as you are.</p>
+<p><em>Lengthy silence.</em></p>
+<p><strong>Agent Reale:</strong> Alright, fine. I think I know what to do. But I'm going to need you to get me something.</p>
+<p><strong>Director Vasquez:</strong> Whatever you need.</p>
+<p><strong>Agent Reale:</strong> Are we recording this right now?</p>
+<p><strong>Director Vasquez:</strong> That's… standard procedure, yes.</p>
+<p><strong>Agent Reale:</strong> I need to talk about it off the record.</p>
+<p><strong>Director Vasquez:</strong> That's not normally how we do things.</p>
+<p><strong>Agent Reale:</strong> And what other part of this <em>is</em> normal?</p>
+<p><em>Long pause.</em></p>
+<p><strong>Director Vasquez:</strong> …Fine.</p>
+<p>[END LOG]</p>
+</div>
+</div>
+</div>
+</div>
+<p>Agent Reale returned to SCP-8036 on August 3rd to negotiate with the entity and complete her report.</p>
+<p style="text-align: center;"></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ View Report 8036-F: Week Six</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p style="text-align: center;"><strong>WEEK SIX: AUGUST 2 - 8</strong></p>
+<hr/>
+<p><strong>Location:</strong> Dhaka, Bangladesh</p>
+<p>Week Six did not feature any listed films.</p>
+<p><strong>Concessions:</strong> None.</p>
+<hr/></div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Transcript: Audio Log 8036-F</strong></p>
+<p><strong>Date:</strong> August 3, 2016</p>
+<p><strong>Agent on Scene:</strong> Marcela Reale</p>
+<p><strong>Subject:</strong> SCP-8036</p>
+<hr/>
+<p>[BEGIN LOG]</p>
+<p><strong>Agent Reale:</strong> Hey, Liv… it's… it's me again. Marcie.</p>
+<p><em>Silence.</em></p>
+<p><strong>Agent Reale:</strong> I know… how do I say this. I know I probably shouldn't have even come back, but…</p>
+<p><em>Silence.</em></p>
+<p><strong>Agent Reale:</strong> I didn't know. I didn't know… that you… are who you are. If I did, I wouldn't have <em>lied</em> to you. I… I don't <em>think</em> I would have lied to you.</p>
+<p><em>Silence.</em></p>
+<p><strong>Agent Reale:</strong> …You're right. No excuses. Okay, look, I'm not here to patch things up. Really. I know I hurt you, and if you never want to see me again after this, I… I understand. I respect that.</p>
+<p><em>Silence.</em></p>
+<p><strong>Agent Reale:</strong> I'm here for the Foundation - the people I work for - and… I'm here to formally offer you exemption.</p>
+<p><em>Silence.</em></p>
+<p><strong>Agent Reale:</strong> I can't undo what I did, but… I've made sure nobody will ever do it again. We won't bother you, we won't come near you, you can just… keep being who you are. I'll be okay, I think, even if I never see you again, as long as you keep being who you are.</p>
+<p><em>Silence.</em></p>
+<p><strong>Agent Reale:</strong> I…</p>
+<p><em>Silence.</em></p>
+<p><strong>Agent Reale:</strong> I love you, Liv.</p>
+<p><em>Sound of a door unlocking. Sound of a door opening.</em></p>
+<p><strong>Agent Reale:</strong> …Liv?</p>
+<p><strong>SCP-8036:</strong><sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-16" onclick="WIKIDOT.page.utils.scrollToReference('footnote-16')">16</a></sup> Maybe… we can start over.</p>
+<p><strong>Agent Reale:</strong> I- …Yeah. Maybe we can.</p>
+<p><strong>SCP-8036:</strong> Nice to meet you. I'm Living Pictures Theater. I'm closed right now, but… I hope I can open up again soon.</p>
+<p><strong>Agent Reale:</strong> I'm Agent Marcela Reale. I work for a place called The Foundation, in a site down in Puerto Montt, Chile. We… deal with anomalies.</p>
+<p><strong>SCP-8036:</strong> Deal with as in <em>fix</em>, or deal with in as in <em>destroy</em>?</p>
+<p><strong>Agent Reale:</strong> We secure, we contain, and we protect.</p>
+<p><strong>SCP-8036:</strong> Hm.</p>
+<p><em>Silence.</em></p>
+<p><strong>SCP-8036:</strong> Puerto Montt, huh? That's a beach town, right?</p>
+<p><strong>Agent Reale:</strong> Every town in Chile is a beach town.</p>
+<p><strong>SCP-8036:</strong> Heh, true. …Maybe I could stop by for a while.</p>
+<p><strong>Agent Reale:</strong> That would be nice.</p>
+<p>[END LOG]</p>
+</div>
+</div>
+</div>
+</div>
+<p style="text-align: center;"></p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ View Report 8036-G: Week Seven</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p style="text-align: center;"><strong>WEEK SEVEN: AUGUST 9 - 15</strong></p>
+<hr/>
+<p><strong>Location:</strong> Puerto Montt, Chile</p>
+<p style="text-align: center;"></p>
+<table style="border-collapse:collapse; max-width: 600px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 44%;">Films Available:</td>
+<td style="font-weight:bold; padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver;"></td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Teenage Mutant Ninja Turtles:<br/>
+Out of the Shadows</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Extant; Action/Adventure Comedy.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>The Little Shop of Horrors</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Extant; Horror Comedy</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Pill Bug Penny</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Animation.</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: .3em .7em; border: 1px solid black"><em>Fresh Start</em></td>
+<td style="border: 1px solid black; padding: .3em .7em;">Unknown/Nonexistent; Atmospheric.</td>
+</tr>
+</table>
+<p><strong>Concessions:</strong> Buttered Popcorn, Root Beer, Ugali Fries, Milk, Chocolate-Covered Raisins, Bacon-Wrapped Gumballs, White Lily Arrangement.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-17" onclick="WIKIDOT.page.utils.scrollToReference('footnote-17')">17</a></sup></p>
+<hr/></div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p><strong>Journal Log: Marcela Reale</strong></p>
+<p><strong>August 15, 2016</strong></p>
+<p>This is, finally, <em>actually</em>, my last journal entry for Report 8036. No more surveillance or documentation is going to be done on Liv from here on out, thank God, but if anyone has any movie suggestions, I could take it up with her.</p>
+<p>Agent Reale, signing off.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Following the completion of Report 8036, SCP-8036's exemption was finalized and its Object Relations Procedures were codified.</p>
+<div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;">
+<div style="text-align: center;">
+<h4 id="toc0"><span>NOTICE OF EXEMPTION</span></h4>
+<p><em>To be appended to SCP-8036.</em></p>
+</div>
+<p>To say Agent Reale's suggestion has been a controversial one is an understatement - the Foundation, generally speaking, does not <em>do</em> exemptions. And yet, the longer her proposed "Object Relations Procedures" have sat at my desk, the longer I have found myself wondering who or what we are actually meant to be protecting. Who benefits from our interference on SCP-8036? Is our role here to incarcerate that which is dangerous, or is it merely to hide that which we cannot yet explain? And why is it so difficult to accept that there may be a difference?</p>
+<p>SCP-8036's anomalous properties pose no clear threat to itself, the Foundation, or humanity. With that in mind, all containment procedures are now unauthorized. I understand some may question my authority to make this decision. To them I would like to say: it was difficult enough for you to find one person willing to run this place; I don't think you want to risk having to go for a second.</p>
+<p>All of us here, to varying extents, love that which is alien to us. You almost have to, to dedicate your life to the Foundation's cause. The only difference I see between Agent Reale and the rest of us is that, in her case, the love is reciprocal.</p>
+<p>I'm very happy for you, Marcela. Please never make me pull something like this again.</p>
+<p>— Caroline Vasquez, Director, Site-53</p>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Seven standard and one <em>IMAX</em>.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Such films hereafter referred to as "normative."</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Agent Reale later reported that, at this point in the interview, SCP-8036's employee manifestation stood back and performed a backflip.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Spoken in a poor impression of the character "Bender" from the animated American sitcom <em>Futurama.</em></div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Audio matched to <em>Steamboat Willie.</em></div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. Audio source likely from <em>Infestation!</em>.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. Audio matched to <em>The Little Shop of Horrors.</em></div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. Audio source unknown.</div>
+<div class="footnote-footer" id="footnote-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-9')">9</a>. Audio matched to <em>Made For Each Other</em>.</div>
+<div class="footnote-footer" id="footnote-10"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-10')">10</a>. Audio matched to <em>The Little Shop of Horrors.</em></div>
+<div class="footnote-footer" id="footnote-11"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-11')">11</a>. Audio matched to SCP-8036's standard pre-show reel, albeit heavily distorted.</div>
+<div class="footnote-footer" id="footnote-12"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-12')">12</a>. Audio matched to <em>The Little Shop of Horrors</em>, albeit heavily distorted.</div>
+<div class="footnote-footer" id="footnote-13"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-13')">13</a>. Audio source unknown; clips possibly taken from multiple sources.</div>
+<div class="footnote-footer" id="footnote-14"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-14')">14</a>. Audio source likely from the documentary <em>Living Pictures</em>.</div>
+<div class="footnote-footer" id="footnote-15"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-15')">15</a>. Audio matched to <em>Night of the Living Dead.</em></div>
+<div class="footnote-footer" id="footnote-16"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-16')">16</a>. Voice matched to a "concession stand employee" manifestation.</div>
+<div class="footnote-footer" id="footnote-17"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-17')">17</a>. Only one white lily arrangement was available in stock. Item was free of charge.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-8036">SCP-8036</a>" by DS al Coda, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-8036">https://scpwiki.com/scp-8036</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Filename:</strong> Dolby_Cinema_in_Hilversum.jpg<br/>
+<strong>Name:</strong> Dolby Cinema in Hilversum<br/>
+<strong>Author:</strong> Thomasmachtel<br/>
+<strong>License:</strong> Creative Commons Attribution-Share Alike 4.0 International<br/>
+<strong>Source Link:</strong> <a href="https://commons.m.wikimedia.org/wiki/File:Dolby_Cinema_in_Hilversum.jpg">https://commons.m.wikimedia.org/wiki/File:Dolby_Cinema_in_Hilversum.jpg</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

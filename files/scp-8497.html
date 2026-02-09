@@ -1,0 +1,542 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-8497</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-8497</h1>
+            <div class='text-content'>Item#:</span> <span class="number">8497</span></div>
+
+<div class="top-right-box">
+<div class="level">Level5</div>
+
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">esoteric</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">thaumiel</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">amida</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">warning</div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="/classification-committee-memo">link to memo</a><br/>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+<div style="text-align: center;">
+<div style='background: url("https://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png") center no-repeat; float: center; border: solid 2px #000; padding: 15px 20px; box-shadow: 0 1px 3px rgba(0,0,0,.2);'>
+<h1 id="toc0"><span>NOTICE OF INFORMATION CONTROL</span></h1>
+<hr/>
+<h3 id="toc1"><span>THIS DOCUMENT IS TO BE MAINTAINED BY THE FOUNDATION LOGISTICS DEPARTMENT, UNDER SUPERVISION FROM THE RECORDKEEPING AND INFORMATION SECURITY ADMINISTRATION</span></h3>
+</div>
+</div>
+<p><strong>Special Containment Procedures:</strong> SCP-8497 is to be housed in a standard Foundation Executive Office at Logistical Site-3. The office is to be fitted with an RFID keycard reader and a variating password authenticator-activated security door. Access codes and valid RFID keycards will only be issued to the Administrative Department Director, Recordkeeping and Information Security Administration Director, and Logistics Department Overseeing Foreman.</p>
+<p>The Logistics Department's Overseeing Foreman is to receive direction and training on how to operate SCP-8497 safely as part of their induction brief (See Incident Report 8497-1). For this reason, they are the only one out of the three who is authorized to make changes to SCP-8497.</p>
+<p>Important information is to always be copied into a paper format and filed within the Foundation Physical Archive's 8497 Annex at Site-3 to maintain continuity of information if SCP-8497 ceases to function or SCP-8497 is undergoing a hardware update (See P-8497-A and P-8497-B). RAISA is also charged with maintaining the FS-8497-B system. It is a copy of SCP-8497 built with conventional technology and left empty. In the event of a failure of SCP-8497, this system is to be activated to replace SCP-8497 at the predicted cost of a 400% loss in efficiency.</p>
+<p><strong>Description:</strong> SCP-8497 is a 52EB SSD containing a modified copy of the program Microsoft Excel 2007 (v12.0) as well as a single file titled "Foundation Management System V183". This SSD is currently loaded into a modified Foundation computer built to support the size and power requirements of the SSD.</p>
+<p>The Foundation Management System V183 file is a spreadsheet containing several live self-updating tables with information pertaining to Foundation logistics services, security deployments, ███ agent rosters, SCP locations, containment cell grading, janitorial work schedules, and the Foundation's financials, among hundreds of others<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup>. Though the computer housing SCP-8497 has no means of internet connection, all tables update autonomously with accurate information pulled from an unknown source. Edits or additions made in any of these tables will result in these changes being reflected on all Foundation systems no matter encryption levels, with the exclusion of printed data. The Scientific Department has determined that under SCP-8497's management, the Foundation has seen a 230% rise in efficiency in background operations, logistics and information management, allowing for further Foundation reach and operations.</p>
+<p>The system containing what would become SCP-8497 has been in Foundation service since ████ with the pivot from paper-based sources to a more digital approach. Originally operating on Lotus 1-2-3 and Multiplan, the Foundation shifted to Microsoft Excel 3.0 in ████. It is unknown what gave SCP-8497 its anomalous effects, but in ████ the Foundation Management System began to self-update all tables and cells, self-populating hundreds of sheets touching on all operational areas of the Foundation. Foundation Personnel confirmed with members of the Microsoft company that this was not an intended feature before giving the computer an SCP designation and moving it to containment at Site-15 for further testing. With SCP-8497 being given a "Thaumiel" designation and the Foundation's efficiency severely dwindling across all sites and operational areas, SCP-8497 was moved from Site-15 to a newly founded Logistical Site-3 in Anchorage, Alaska, and reinstated as the Foundation's main logistical and bureaucratic management system, designated as "The Foundation Management System" (FMS). Seemingly self-connecting to all digital Foundation systems, including logistics management systems, SCiPNET, personnel databases, security rosters, and financial management software, among many others, SCP-8497 began making changes to these systems in accordance with its own data and information.</p>
+<p><strong>Addendums:</strong></p>
+<div class="email-example">
+<div style="text-align: center;">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Access SCiPNET Email? Two (2) new messages!</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">SCP-8497 Janitorial Incident</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> All Foundation Site Directors<br/>
+<strong>From:</strong> Logistics Department Communications<br/>
+<strong>Subject:</strong> SCP-8497 Janitorial Incident</p>
+</div>
+<hr/>
+<p>Good morning all,</p>
+<p>As I'm sure you are all aware there was a major mishap with the janitorial schedules across all Foundation sites. The table for janitorial scheduling was unknowingly deleted by the former Logistics Department Overseeing Foremen, resulting in all sites losing access to a proper janitorial schedule. We understand that without routine cleaning and repairs, sites become dysfunctional<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> quickly, and for this, we apologize. We have reinstated the janitorial schedule. This change will reflect on all Foundation databases. The Overseeing Foreman has been dismissed from his position pending an investigation into the incident. If any issues come about with these schedules, please do not hesitate to contact me.</p>
+<p>Regards,</p>
+<p>Tanya Simone<br/>
+Overseeing Forewoman, Logistics Department</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> Logistics Department Communications<br/>
+<strong>From:</strong> Internal Tribunal Department<br/>
+<strong>Subject:</strong> Re: Incident 8497-1 Investigation</p>
+</div>
+<hr/>
+<p>Good afternoon,</p>
+<p>I hope this email finds you well. The investigation into Incident 8497-1 has been reviewed by the Internal Tribunal Department. Our findings and follow-up actions will be expanded on below.</p>
+<p>On May 15 ████, Overseeing Foreman Alex Rodriguez did delete a table on SCP-8497 titled "Foundation Wide Janitorial Schedules". Due to SCP-8497's nature, this deletion resulted in all Foundation systems being wiped of all janitorial scheduling. This action went unnoticed for two weeks before complaints arose and the deletion was found, resulting in the reinstatement of the Foundation-Wide Janitorial Schedules table. The Internal Tribunal Department finds no reason to believe that this action was taken intentionally and so does not violate sections I, III, or VI of the Legal Codex. However, this show of incompetence and unpreparedness cannot be overlooked. The Internal Tribunal Department has seen fit to issue the following actions be taken to resolve the situation and prevent similar mistakes.</p>
+<ul>
+<li>Alex Rodriguez will be demoted in rank and reassigned according to Foundation needs<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup>.</li>
+<li>The addition of an SCP-8497 usage guide to the Overseeing Foremen's briefing package including materials to reference for its operation.</li>
+<li>Further monitoring and oversight by the Recordkeeping and Information Security Administration to prevent similar incidents in the future.</li>
+</ul>
+<p>Should you have any questions regarding the new installment of procedures, please contact the Internal Tribunal Department or your direct supervisors for more information.</p>
+<p>Sincerely,<br/>
+Ryan Jacobs<br/>
+Chair, Incident 8497-1 Investigation Committee</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ P-8497-A</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p>[THIS DOCUMENT IS TO BE COPIED TO A PRINT SOURCE IN ACCORDANCE WITH SPECIAL CONTAINMENT PROCEDURES]</p>
+<hr/>
+<p>Protocol Designation: P-8497-A</p>
+<p>Creation Date: 04/02/2003</p>
+<p>Date of Last Edit: 04/28/2015</p>
+<p>Date of Last Use: 07/06/2007</p>
+<p>Description: Due to the Foundation's ever-growing catalog of anomalies, sites, and personnel, SCP-8497's supporting hardware must be updated to cope with the ever growing demand from the amount of data catalogued on SCP-8497's self-expanding SSD. For this reason and for short periods of time, SCP-8497 must be temporarily deactivated to fit or exchange new parts to keep SCP-8497 in full working order. Before initiating P-8497-A, several conditions must be satisfied to ensure minimal intrusion into the Foundation's operations. They are as follows:</p>
+<ul>
+<li>The deactivation must be authorized by the respective directors of the Administrative Department, Logistics Department, and RAISA.</li>
+<li>A Foundation-wide memo is to be circulated no later than two weeks prior informing personnel of the outage in information services.</li>
+<li>Important documentation is to be reviewed by RAISA agents to ensure that all vital information is up to date and printed out.</li>
+</ul>
+<p>Once these conditions are satisfied, SCP-8497 may be deactivated for a period <strong><span style="text-decoration: underline;">no longer than 24 hours</span></strong> to preform the necessary repairs or replacements.</p>
+<p>Note: As of December 13th, 1992, all personnel working on the repair or replacement of SCP-8497's parts must hold Level 3 Clearance.</p>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ P-8497-B</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p>[THIS DOCUMENT IS TO BE COPIED TO A PRINT SOURCE IN ACCORDANCE WITH SPECIAL CONTAINMENT PROCEDURES]</p>
+<hr/>
+<p>Protocol Designation: P-8497-B</p>
+<p>Creation Date: 06/04/2001</p>
+<p>Date of Last Edit: 09/16/2018</p>
+<p>Date of Last Use: N/A</p>
+<p>Description: In the event that SCP-8497 ceases its functionality, several fail-safes have been created to ensure the continuity of information and functionality of the Foundation. On a yearly cycle or in the event of a major administrative change, RAISA will review all Foundation documentation to ensure that sensitive or vital information is printed and stored within the Foundation's physical archives at Site-3. Should SCP-8497 fall into a state of disrepair, these documents are to be copied and circulated via SCiPNET and mail alongside instructions for all site and departmental commands on how to proceed. Concurrently, RAISA personnel must activate the FS-8497-B system and port the most important documents saved in the Foundation Archives, vital to site operation, including the physical backups of the SCP database, security clearances, logistics sheets, and employee databases</p>
+<p>Note: A more detailed guide can be found within the RAISA Operations Handbook.</p>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Logistics Department Overseeing Foreman Guide (excerpts)</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<blockquote>
+<p>"Always double-check edits or additions to ensure they are accurate. If you are unsure, check with the assigned RAISA supervisor."</p>
+<p>- Page 20, Chapter 4 "Additions and Edits"</p>
+</blockquote>
+<blockquote>
+<p>"Vigilance is important; should extra-anomalous behavior be found in SCP-8497, contact the assigned researcher via the number or email found in Chapter 33, Page 432."</p>
+<p>- Page 55, Chapter 12 "Anomalous Awareness"</p>
+</blockquote>
+<blockquote>
+<p>"Control Z is your FRIEND! If you mess something up, use it to revert your mistake as it still works."</p>
+<p>- Page 12, Chapter 3 "SCP-8497's Capabilities"<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+</blockquote>
+<blockquote>
+<p>"Do not under any circumstance minimize SCP-8497, instead close SCP-8497 and re-open as required. For more information see Incident Report 8497-4-A"<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup></p>
+<p>- Page 108, Chapter 31 "Lessons Learned"</p>
+</blockquote>
+<blockquote>
+<p>"Logistics is behind everything the Foundation does. Ever wonder how the Foundation manages its vast resources or how it can undertake such great feats? SCP-8497 is the answer to the Foundation's logistical monster, and now you are tasked with maintaining its operation as Overseeing Foreman."</p>
+<p>- Page 2, Chapter 1 "Welcome Overseeing Foreman"</p>
+</blockquote>
+<blockquote>
+<p>"For obvious reasons, food and drink are not permitted around SCP-8497 in order to maintain its functionality."</p>
+<p>- Page 5, Chapter 2 "Basic Rules of Use"</p>
+</blockquote>
+</div>
+</div>
+</div>
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ SCP-8497 Major Sheets (2007)</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Close</a></div>
+<div class="collapsible-block-content">
+<p>Below is a list of major sheets that can be found on SCP-8497. There are hundreds of "lesser" sheets which work alongside the major sheets which will not be detailed here.</p>
+<table style="border-collapse:collapse; max-width: 600px;">
+<tr>
+<td style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 20%;">Sheet Name</td>
+<td style="font-weight:bold; padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver;">Description</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">Foundation Wide Janitorial Schedules</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Foundation wide janitorial scheduling sheets.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">SCP Classifications</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all SCP object designations and classifications as well as a link to each object's file.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">Security Roster</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing postings and schedules for members of the Security Department</td>
+</tr>
+<tr>
+<td style="text-align: center; border: 1px solid black">ScD Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all members of the Scientific Department, site postings, projects, clearance levels and positions within the department.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">AD Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all members of the Administrative Department, site postings, division, clearance levels and positions within the department.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">DEA Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all members of the Department of External Affairs, diplomatic assignments/postings, clearance levels and positions within the department.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">Recruitment Roster</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Details all potential recruits which the Foundation is intaking. Listing the recruiting department, intake group, former position, time to recruitment and status. The Recruitment Roster auto-updates the statuses of these personnel and so requires no direct interaction.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">Class D Intake</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all Class D personnel being recruited by the Foundation. Listing names, D Designation, assigned site and time until end of service.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">E&amp;TS Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all members of the Engineering and Technical Services, site postings, specialization, clearance levels and positions within the department.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">E&amp;TS Maintenance List</td>
+<td style="border: 1px solid black; padding: .3em .7em;">One of the longest sheets in SCP-8497's database, the maintenance list details all maintenance requests across the Foundation.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">LD Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all members of the Logistics Department, site postings, division, clearance levels and positions within the department.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">Logistics Tracking Sheet</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Tracking all official Logistics Department movements. Detailing payload, location of origin, destination, transporting supervisor, status and after action report.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">Anomalous Logistics Tracking Sheet</td>
+<td style="border: 1px solid black; padding: .3em .7em;">A separate list from the one before, this sheet tracks the transport of all anomalous or suspected anomalous objects. It details the object number (if applicable), object class, location of origin, destination, transporting supervisor, security escort (if applicable), status and after action reports.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">IA Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all members of the Intelligence Agency, postings, imbedded services, clearance levels and positions within the department.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">ISD Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">[DATA EXPUNGED]</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">MaD Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all members of the Manufacturing Department, site postings, projects, clearance levels and positions within the department.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">[DELETED]</td>
+<td style="border: 1px solid black; padding: .3em .7em;">[DELETED]</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">MD Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all members of the Medical Department, site postings, fields of specialty, clearance levels and positions within the department.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">MD Personnel Checkup Board</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Created in line with the Medical Department's required checkup program, this board tracks all Foundation employees and how long until their next mandatory medical checkup.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">MTF Employee Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all members of the Mobile Task Forces, task force postings, ranks, specializations, clearance levels and operational statuses.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">MTF &gt; Task Force Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">A list of all MTF units including the number of personnel, task force mission, action reports, operational statuses and containment track record (if applicable)</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">Foundation Financial</td>
+<td style="border: 1px solid black; padding: .3em .7em;">This sheet details all financial interactions the Foundation makes including employee pay, government spending, containment operation costs, income, casualty costs, etc.</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">O5 Council Database</td>
+<td style="border: 1px solid black; padding: .3em .7em;">[SEALED]<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup></td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .3em .7em; border: 1px solid black">Foundation Operations</td>
+<td style="border: 1px solid black; padding: .3em .7em;">Detailing all major Foundation operations, including involved departments/units, after action reports, casualties, cost and mission status.</td>
+</tr>
+</table>
+<p><em>Last Updated: November 5th, 2007</em></p>
+</div>
+</div>
+</div>
+<div class="email-example">
+<div style="text-align: center;">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Access SCiPNET Email? Four (4) new message!</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">SCP-8497 Chapter 12 Incident</a></div>
+<div class="collapsible-block-content">
+<div style="text-align: left;">
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> Dr. Evelyn Chevalier<br/>
+<strong>From:</strong> Overseeing Foreman Hayden Karp<br/>
+<strong>Subject:</strong> Chapter 12 Inquiry, possible extra-anomalous activities</p>
+</div>
+<hr/>
+<p>Good Morning, Doctor,</p>
+<p>I hope this email finds you well. I am sending you this message today because of a discrepancy I noticed in SCP-8497's Scientific Department database. I have a Junior Researcher named "James White" who has appeared within the database assigned to Site-15. Normally, this wouldn't be an issue; however, his date of hire is listed as two weeks from today. I double-checked with the division head at the site, and he informed me that they were looking at a candidate under the same name. I just wanted to keep you informed of this.</p>
+<p>Best,<br/>
+Hayden Karp<br/>
+Overseeing Foreman, Logistics Department</p>
+</div>
+<div class="blockquote">
+<p>Dr. White was hired on ██/██/████ at Site-15 as listed by SCP-8497</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> Dr. Evelyn Chevalier<br/>
+<strong>From:</strong> Overseeing Foreman Hayden Karp<br/>
+<strong>Subject:</strong> Re: Chapter 12 Inquiry, possible extra-anomalous activities</p>
+</div>
+<hr/>
+<p>Hello again, Doctor,</p>
+<p>Regarding my last email, I have come across another discrepancy in the system. This time, within the incident report sheet. I have an incident report dated ██/██/████, which again is about three weeks out from today. It's listing a containment breach at Area-14. This incident report is very fleshed out, including times, sub-reports, and other information. I've reached out to Security Chief Thomas in order to corroborate the report, but he's informed me that no such incident has occurred. Is this just a glitch in the system, or is there something I should be concerned about?</p>
+<p>Best,<br/>
+Hayden Karp<br/>
+Overseeing Foreman, Logistics Department.</p>
+</div>
+<div class="blockquote">
+<p>Area-14 experienced a partial containment failure on the date listed by SCP-8497; there were 22 casualties with a successful containment efforts being initiated. Security Chief Thomas's report mirrored the one already stored by SCP-8497.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> Overseeing Foreman Hayden Karp<br/>
+<strong>From:</strong> Dr. Evelyn Chevalier<br/>
+<strong>Subject:</strong> Re: Chapter 12 Inquiry, possible extra-anomalous activities</p>
+</div>
+<hr/>
+<p>Good evening, Mr. Karp,</p>
+<p>I apologize for my delayed response. Regarding your last two emails, I'm not entirely sure. They may be inputs with improper dates, but I will have my team look over the information in the morning. I think the only thing we can do is wait to see if either of these events come to fruition or if it's just a glitch in the system. Please continue monitoring the anomalies, and we will touch base soon.</p>
+<p>Thanks,<br/>
+Dr. Evelyn Chevalier<br/>
+Senior Researcher, SCP-8497 Support Cell.</p>
+</div>
+<br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> Overseeing Foreman Hayden Karp<br/>
+<strong>CC:</strong> AD Director Ma, RAISA Director Jones<br/>
+<strong>From:</strong> Dr. Evelyn Chevalier<br/>
+<strong>Subject:</strong> Chapter 12 Inquiry, 4 Week Touch Base</p>
+</div>
+<hr/>
+<p>Good evening, Mr. Karp,</p>
+<p>After reviewing the discrepancies and coordinating with research staff from Site-15 and Area-14, I have determined that this is a proper case of extra-anomalous capabilities manifesting within SCP-8497. I will be in tomorrow in order to take a better look at the object itself, though at this time it seems that the effects seem to be non-harmful to continue operation. Please keep an eye out for more anomalies within the tables, and I will deliver you a report when my research is complete. I have taken the liberty of CCing Directors Jones and Ma in order to inform them of the ongoing situation.</p>
+<p>Thanks,<br/>
+Dr. Evelyn Chevalier<br/>
+Senior Researcher, SCP-8497 Support Cell</p>
+</div>
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">+ SCP-8497 Chapter 12 Incident Report "Pre-records"</a><a href="javascript:;">- Close</a></div>
+</div>
+<div class="colmod-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p>[THIS DOCUMENT IS TO BE COPIED TO A PRINT SOURCE IN ACCORDANCE WITH SPECIAL CONTAINMENT PROCEDURES]</p>
+<hr/>
+<p><strong><span style="text-decoration: underline;">SCP-8497 Exta-Anomalous Capabilities Report</span></strong><br/>
+On August 17th ████, Overseeing Foreman Karp contacted me about possible extra-anomalous capabilities that had developed within SCP-8497. He first reported a researcher in the Scientific Department database whose hiring date was two weeks prior to that date. The same day, the Overseeing Foreman contacted me regarding another discrepancy relating to a containment breach report that was listed as three weeks in the future. Both the Overseeing Foreman and I contacted relevant authorities to find that no such event had taken place, thus nullifying the possibility that there were misinputs into SCP-8497. Several more incidents were reported after this, mostly hirings, terminations, and incidents being pre-recorded by SCP-8497. Each time, its predictions seemed to be correct down to the hour. At this time, I believe that SCP-8497 is able to make accurate, yet random predictions regarding Foundation logistics.</p>
+<p>I have already suggested several tests to be run regarding the accuracy and ability of SCP-8497 to make these predictions, all pending approval from higher authorities. Until this time, this is all the information I have on this subject.</p>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">+ SCP-8497 Chapter 12 Incident Report "Incident Prevention"</a><a href="javascript:;">- Close</a></div>
+</div>
+<div class="colmod-content">
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p>[THIS DOCUMENT IS TO BE COPIED TO A PRINT SOURCE IN ACCORDANCE WITH SPECIAL CONTAINMENT PROCEDURES]</p>
+<hr/>
+<p><span style="text-decoration: underline;"><strong>Attempted Incident Prevention At Site-██</strong></span><br/>
+██/██/████, SCP-8497 generated a new incident report titled "Site-██ Incident Report". In an attempt to prevent this event from going through, the Foundation authorized the deployment of several Mobile task Forces to Site-██ in order to assist onsite security to prepare for the incident to come, using the information given by SCP-8497. When the time of the incident came, SCP-8497's table changed the information previously presented to the overseeing foremen, now detailing a total containment failure. Casualties from this event were exactly as SCP-8497's original prediction. This attempt at prevention was repeated several times to similar effect, wherein SCP-8497 would make last-minute changes to its original information, resulting in the events matching up with its original outcome with small changes to how the incident plays out.</p>
+<p>From now on, any cells, sheets, or otherwise that house predictions by SCP-8497 are to be logged with their results, followed up on after the incident has occurred. <span style="text-decoration: underline;">Under no circumstances should <strong>anyone</strong> attempt to alter a prediction by SCP-8497</span></p>
+<blockquote>
+<p>"While SCP-8497's predicated outcomes seem immutable, the methods by which they come about are not always as conspicuous as they may seem. <span style="text-decoration: underline;"><strong>Do not assume</strong></span> every indicated outcome will come about as a result of one specific method."</p>
+<p>- Page 66, Chapter 12 "Anomalous Awareness"</p>
+</blockquote>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+<div class="colmod-block">
+<ul>
+<li class="folded">
+<ul>
+<li style="list-style: none">_</li>
+</ul>
+<div class="colmod-link-top">
+<div class="foldable-list-container"><a href="javascript:;">+ SCP-8497 Chapter 12 Incident Report "Death Ledgers"</a><a href="javascript:;">- Close</a></div>
+</div>
+<div class="colmod-content">
+<div style="background: url(https://kaktuskontainer.wdfiles.com/local--files/format-hell/scp_trans.png) bottom center no-repeat; text-align: center; width: 600px; margin: 0 auto; font-size: 20px; padding: 0px;">
+<p><span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div style="text-align: center;">
+<h2><span><span style="color: black">BY ORDER OF THE OVERSEER COUNCIL</span></span></h2>
+<p><span style="color: black">The following file is sealed. Unauthorized access is forbidden.</span></p>
+</div>
+<p style="text-align: center;"><strong><span style="color: black">8497</span></strong></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<p><span style="white-space: pre-wrap;"> </span></p>
+</div>
+<div class="blockquote" style="border-radius: 10px; margin: 10px">
+<p>[THIS DOCUMENT IS TO BE COPIED TO A PRINT SOURCE IN ACCORDANCE WITH SPECIAL CONTAINMENT PROCEDURES]</p>
+<hr/>
+<p><span style="text-decoration: underline;"><strong>SCP-8497 creates notices of death</strong></span><br/>
+On ██/██/████, SCP-8497 created a sub-table titled "Death Ledger" under the O5 Council Database sheet. Listing all former and current Councilors' dates and times of death,as well as recommended replacements. The Overseeing Foreman reported the incident to his RAISA supervisor, which quickly made its way into the preview of the O5 Council.</p>
+<p>In response, the O5 Council sealed the O5 Council Database entirely, with all involved personnel receiving amnestic treatment in order to maintain information security regarding the O5 Councilors' dates of death. From this point forward, the O5 Council Database is secured with a memetic seal to ensure no unauthorized access is granted to those outside of the O5 Council. This report, in turn, has been sealed to the same level of access.</p>
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr/>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. The current count of sheets is 742</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. It should be noted the damage from Incident 8497-1 cost the Foundation $8.3 Billion USD.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Alex Rodriguez was demoted to the rank of site supervisor and moved to Area-14.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. It should be noted that this quote has been manually written in by a former Overseeing Foreman. Due to its relevance, it has been kept in the document.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Data for Incident Report 8497-4-A lost in Incident 8497-5-B</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. This file has been sealed by order of the O5 Council and protected via memetic kill agents. Only personnel holding Level 5 Clearance can access this sheet.</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

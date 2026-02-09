@@ -1,0 +1,539 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-8087</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-8087</h1>
+            <div class='text-content'><strong>Item #:</strong> SCP-8087</span></td>
+<td style="text-align: right;"><span style="font-size:125%;"><span style="color: #990001"><strong>Level 4/8087</strong></span></span></td>
+</tr>
+<tr>
+<td><span style="font-size:125%;"><strong>Object Class:</strong> Uncontained</span></td>
+<td style="text-align: right;"><span style="font-size:125%;"><span style="color: #990001"><strong>Classified</strong></span></span></td>
+</tr>
+</table>
+<hr/>
+<div class="scp-image-block block-center" style="width:100%;"><img alt="Redwood%20Forest%20Cropped.jpg " class="image" src="https://scp-sandbox-3.wdfiles.com/local--files/jiwoahn/Redwood%20Forest%20Cropped.jpg" style="width:100%;"/>
+<div class="scp-image-caption" style="width:100%;">
+<p>Sagrario National Park, the locus of SCP-8087.</p>
+</div>
+</div>
+<hr/>
+<table style="width: 100%;">
+<tr>
+<td style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:90%;"><strong>Assigned Site</strong></span></td>
+<td style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:90%;"><strong>Site Director</strong></span></td>
+<td style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:90%;"><strong>Research Head</strong></span></td>
+<td style="border-bottom: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:90%;"><strong>Assigned Task Force</strong></span></td>
+</tr>
+<tr>
+<td style="border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:80%;">Site-48</span></td>
+<td style="border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:80%;">Linda Lutz</span></td>
+<td style="border-right: 1px solid #AAA; text-align: center; width: 25%;"><span style="font-size:80%;">Simon Naque</span></td>
+<td style="text-align: center; width: 25%;"><span style="font-size:80%;">O-24 "Brave New World"</span></td>
+</tr>
+</table>
+<hr/>
+<p><strong>Special Containment Procedures:</strong> SCP-8087 is currently located within Sagrario National Park, which has been closed to the public under the pretense of a budgetary shutdown. Mobile Task Force Omicron-24 ("Brave New World") is responsible for investigation and detainment of the anomaly. Following successful capture, it is to be transported to a specially prepared animal chamber in Site-48.</p>
+<p>Foundation agents are to dispel civilian rumors regarding the existence of SCP-8087 through standard media conditioning.</p>
+<p>SCP-8087-1 is contained within Site-48's morgue for study and preservation.</p>
+<p><strong>Description:</strong> SCP-8087 is an animal known colloquially as the "Huckmucker", located within Sagrario National Park, California, USA. Its physiology and appearance have been described as bipedal and possessing four arms, dark green fur, and sharp claws. Its existence was considered a local legend for an undetermined amount of time; whether SCP-8087 exists on its own, or multiple instances exist concurrently, is uncertain.</p>
+<p>SCP-8087-1 designates SCP-8087's only confirmed victim: an adult male named Carl Leese; 47 years old at the time of death. Aside from their method of death, SCP-8087-1 is physically non-anomalous, and did not display anomalous properties during their time alive.</p>
+<hr/>
+<p><strong>Addendum 01:</strong> On June 13, 2014, SCP-8087-1's corpse was discovered by a hiker, who reported it to the Los Cerdos County Sheriff's Department. Rumors spread amongst the population due to the brutality of SCP-8087-1's death, with many attributing it to SCP-8087. Foundation Site-48 dispatched Mobile Task Force Omicron-24 to Sagrario National Park for initial investigation.</p>
+<p>Interviews were conducted with the Los Cerdos County Sheriff's Department and the civilian population regarding SCP-8087.</p>
+<div class="blockquote">
+<p style="text-align: center;"><strong>Transcript 8087-1</strong></p>
+<p><strong>Interviewer:</strong> Lead Researcher Simon Naque</p>
+<p><strong>Interviewed:</strong> Witness Natalie Jimenez</p>
+<p><strong>Date:</strong> June 15, 2014</p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;Begin Log&gt;</strong></p>
+<hr/>
+<p><em>Jimenez is seated opposite of Researcher Naque in the makeshift interrogation chamber.</em></p>
+<p><strong>Naque:</strong> Ms. Jimenez, I need to ask you some questions about the… um… circumstances of-</p>
+<p><em>Jimenez begins to cough repeatedly.</em></p>
+<p><strong>Naque:</strong> You don't have to describe the state of the body, I just need the details about what you were doing before and after your discovery.</p>
+<p><strong>Jimenez:</strong> Do I… <em>&lt;coughs&gt;</em> do I really have to? I already made a statement to the police.</p>
+<p><strong>Naque:</strong> Um… unfortunately, our investigation needs a few more details regarding… what you saw right before and after you… looked at the…</p>
+<p><em>Jimenez quivers as she continues to cough and gag.</em></p>
+<p><strong>Naque:</strong> Firstly… did you hear anything before discovering the body?</p>
+<p><strong>Jimenez:</strong> Um… I was… walking down Sunrunner Trail at around… I think it was between 10:15 and 10:30 pm…</p>
+<p><strong>Naque:</strong> How come you were hiking outside so late?</p>
+<p><strong>Jimenez:</strong> What does that have to with… with the…</p>
+<p><strong>Naque:</strong> I haven't met anyone who'd hike by themselves so late at night.</p>
+<p><strong>Jimenez:</strong> I just wanted to see the night sky, without all the light pollution. I brought a flashlight with me.</p>
+<p><strong>Naque:</strong> I understand. Please continue your testimony.</p>
+<p><strong>Jimenez:</strong> Well, around that time was when I heard faint screaming. I thought maybe it was a hyena at first, but…</p>
+<p><strong>Naque:</strong> At that point, you travelled towards the source of the noise, correct?</p>
+<p><strong>Jimenez:</strong> Yes… I should've ran away, but I didn't. Morbid curiosity, maybe?</p>
+<p><strong>Naque:</strong> Did you see the figures of any sort of animal before you reached the body?</p>
+<p><em>Jimenez shakes her head "no".</em></p>
+<p><strong>Naque:</strong> Hmm… what about afterwards?</p>
+<p><strong>Jimenez:</strong> Oh, I think… <em>&lt;gags&gt;</em> I think I saw a shadow of… I'm not sure, but it was after I-</p>
+<p><em>Jimenez coughs violently as Researcher Naque hands her a vomit bag. She proceeds to utilize it.</em></p>
+<p><strong>Naque:</strong> Ms. Jimenez, I understand that this is very difficult, but I need you to please hang in there for one more minute. Can you remember what the shadow looked like?</p>
+<p><strong>Jimenez:</strong> Fucking- why the fuck does this matter so much to you?</p>
+<p><strong>Naque:</strong> Um… well… it's important to our investigation into the victim's death, to determine a cause of-</p>
+<p><strong>Jimenez:</strong> It was standing. The shadow was standing. That's all I remember.</p>
+<p><strong>Naque:</strong> You weren't able to shine your flashlight on the shadowed figure?</p>
+<p><strong>Jimenez:</strong> I tried, but… it was too far away at that point, and it scampered off just as quickly.</p>
+<p><em>Jimenez continues to cough and gag into the bag.</em></p>
+<p><strong>Naque:</strong> Thank you so much for your testimony, Ms. Jimenez. I promise it will not be in vain.</p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;End Log&gt;</strong></p>
+</div>
+<hr/>
+<div class="blockquote">
+<p style="text-align: center;"><strong>Transcript 8087-2</strong></p>
+<p><strong>Interviewer:</strong> Lead Researcher Simon Naque</p>
+<p><strong>Interviewed:</strong> LCCSD Lieutenant Brian Happ</p>
+<p><strong>Date:</strong> June 15, 2014</p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;Begin Log&gt;</strong></p>
+<hr/>
+<p><em>Researcher Naque approaches Lieutenant Happ, who is leaning on his police cruiser while adjusting a teal ribbon pin on his uniform.</em></p>
+<p><strong>Naque:</strong> Officer Happ? You wanted to give some insight into the death of Mr. Leese?</p>
+<p><strong>Happ:</strong> That's <em>Lieutenant</em> Happ, and yes, as unfortunate as it is, I believe that man was murdered by the Huckmucker that haunts Sagrario National Park.</p>
+<p><strong>Naque:</strong> I'm sorry, the Hug… Hugfug…</p>
+<p><strong>Happ:</strong> <em>Huckmucker</em>, it's a local legend around here. I've always put my faith in it, which's why I never go out into the forest at night.</p>
+<p><strong>Naque:</strong> It only comes out at night?</p>
+<p><strong>Happ:</strong> Yep, never during the day. That's how I've heard it ever since my Boy Scout counselor told me the legend as a campfire story, thirty years ago.</p>
+<p><strong>Naque:</strong> I see. Is there a consensus on what this creature looks like?</p>
+<p><strong>Happ:</strong> I've heard a lot of rumors, like that it's got moss-like fur and six limbs; two legs, four arms. Oh, and sharp claws that can tear a deer apart clean in two. Many of the townsfolk have gotten glimpses of it over the years, but it's always just a <em>little</em> too quick to photograph.</p>
+<p><strong>Naque:</strong> What about its face?</p>
+<p><em>Lieutenant Happ shrugs his shoulders.</em></p>
+<p><strong>Happ:</strong> Not quite sure. Again, it's too quick to take a good gander at.</p>
+<p><strong>Naque:</strong> Hmm… one last question: How can you tell it was this cryptid creature, and not, say, a bear?</p>
+<p><strong>Happ:</strong> Well… his body, as far as I've seen, it was… gruesomely destroyed. Devastated, even. I <em>have</em> seen bear maulings before, and while tragic, they don't compare at all to the damage the Huckmucker did to… could you remind me of his name?</p>
+<p><strong>Naque:</strong> The victim? It's "Carl Leese".</p>
+<p><em>Lieutenant Happ nods his head.</em></p>
+<p><strong>Happ:</strong> What a shame.</p>
+<p><strong>Naque:</strong> How much do you know about Mr. Leese?</p>
+<p><strong>Happ:</strong> Not that much, although it's still tragic what happened to him.</p>
+<p><em>Lieutenant Happ takes out a photograph of him with a woman, proceeding to stare at it.</em></p>
+<p><strong>Happ:</strong> But life goes on, you know? Can't dwell too much on the dead, they can't think of you in return.</p>
+<p><strong>Naque:</strong> Sure, but I don't see how that's relevant to-</p>
+<p><strong>Happ:</strong> It's just advice I thought I'd share with you, something I learned too late.</p>
+<p><strong>Naque:</strong> I see… I need to get going, thank you for your time.</p>
+<p><strong>Happ:</strong> Likewise, Mister…?</p>
+<p><strong>Naque:</strong> It's Simon.</p>
+<p><strong>Happ:</strong> Don't let that Huckmucker catch you, Simon!</p>
+<p><em>Researcher Naque turns around and walks towards his Foundation-issued vehicle. Lieutenant Happ continues to stare at the photograph.</em></p>
+<p><strong>Happ:</strong> Nancy…</p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;End Log&gt;</strong></p>
+</div>
+<hr/>
+<div class="blockquote">
+<p style="text-align: center;"><strong>Transcript 8087-3</strong></p>
+<p><strong>Interviewer:</strong> Lead Researcher Simon Naque</p>
+<p><strong>Interviewed:</strong> Norbert Ortiz</p>
+<p><strong>Date:</strong> June 15, 2014</p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;Begin Log&gt;</strong></p>
+<hr/>
+<p><em>Researcher Naque approaches Ortiz at a Reinhardt shooting range; the latter is cleaning his hunting rifle.</em></p>
+<p><strong>Naque:</strong> Excuse me, you're Mr. Ortiz, right? I've heard you have some insight into the local Huckmucker?</p>
+<p><strong>Ortiz:</strong> Oh yeah… of course. What'd you like to know?</p>
+<p><strong>Naque:</strong> Firstly, where would you say would be the area the Huckmucker lives in? Could you give an estimate?</p>
+<p><strong>Ortiz:</strong> Um… I know for sure it lives in the Sagrario forest.</p>
+<p><strong>Naque:</strong> Could you narrow it down for me?</p>
+<p><strong>Ortiz:</strong> I'd say the most sightings occur in the area… upstream of Hostie Falls, that's east of here. The Huckmucker runs pretty fast, faster than a human can, and it likes to hide against trees as a disguise mechanism, like… um…</p>
+<p><strong>Naque:</strong> Camouflage?</p>
+<p><strong>Ortiz:</strong> Basically, yeah. It's also nocturnal as well; I've spent many nights hiding in makeshift bushes, waiting for the Huckmucker to cross my path. A few of the homeowners who live around the forest even set up traps in their backyards; they were these pits in the ground that were covered with leaves and grass for the Huckmucker to fall into. They never managed to catch it, except for this one time a lost hiker fell into one of these traps. They sued the homeowner, and the traps disappeared after that. Regardless, I tried to-</p>
+<p><strong>Naque:</strong> Sir, as much as I'd like to chat, I'm a bit rushed for time. Do you have any ideas regarding the creature's diet?</p>
+<p><strong>Ortiz:</strong> Oh, I've tried everything to lure the Huckmucker into shooting position. Roast chicken, mutton, beef, eggplants, used truck tires, sugar cookies. I thought that perhaps it wants human-like flesh, so I've tried all sorts of pork products as well. Nothing happened except for my wife getting mad at me for "wasting food".</p>
+<p><strong>Naque:</strong> While we're on the topic, I'm sure you've heard of the death of Mr. Carl Leese?</p>
+<p><strong>Ortiz:</strong> "Carl Leese"? Christ…</p>
+<p><strong>Naque:</strong> How much did you know about Mr. Leese?</p>
+<p><strong>Ortiz:</strong> I met Carl about a year ago, he bought a brand new custom-built vacation home with his Big Pharma money, had a fancy new Blaser rifle with a leather grip that he'd wave around and show off to everyone. Terrible trigger discipline, too. No matter how many times we'd tell him to keep his rifle pointed away from other people, he'd still-</p>
+<p><strong>Naque:</strong> To summarize, he wasn't well liked?</p>
+<p><strong>Ortiz:</strong> I swear, this entire town's slowly being taken over by corporate bigwigs who see it as some sort of "escape from the big city", meanwhile, they buy up all our houses and rent them either back out to us, or to their other office cronies! At least Edward's pizzeria's making bank, he's charging them double for "gluten-free pizza", and they buy it all up.</p>
+<p><strong>Naque:</strong> Sir, to get back to my point, I wanted to mention that Mr. Leese's body was found near the Sunrunner hiking trail, which is-</p>
+<p><strong>Ortiz:</strong> <em>What?</em> He- he's not- he wasn't supposed to be hunting over there, that's where the hikers are. We specifically told him <em>not</em> to hunt in that area! Christ, was he really- was he really hunting over <em>there?</em></p>
+<p><strong>Naque:</strong> I bring this up because the location of death was <em>downstream</em> of Hostie Falls, and not the search area you were specifying.</p>
+<p><strong>Ortiz:</strong> Well… I've heard of sightings there too, and as I've said, you're not allowed to hunt in that area.</p>
+<p><em>Silence.</em></p>
+<p><strong>Ortiz:</strong> Fucker was hunting near hiking trails… he got what he deserved.</p>
+<p><strong>Naque:</strong> I wouldn't say that, Mr. Ortiz. No matter their background, no one deserves to die in such a cruel way.</p>
+<p><strong>Ortiz:</strong> I'm sorry, but you clearly don't understand how rich people like Carl are changing this town for the-</p>
+<p><strong>Naque:</strong> Do you have any more information about the Huckmucker, Mr. Ortiz?</p>
+<p><em>Ortiz shrugs his shoulders.</em></p>
+<p><strong>Ortiz:</strong> Not at the moment, no.</p>
+<p><strong>Naque:</strong> I must get going, then. Farewell.</p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;End Log&gt;</strong></p>
+</div>
+<p>Following these interviews, MTF Omicron-24 initiated standard research and containment attempts regarding SCP-8087.</p>
+<hr/>
+<p><strong>Addendum 02:</strong> Over the coming weeks, Omicrom-24 personnel accumulated the following data regarding their research into SCP-8087.</p>
+<div class="vdn">
+<div class="scp-image-block block-right" style="width:250px;"><img alt="319px-Gordon_Copeland_%28New_Zealand_politician%29.jpg" class="image" src="https://scpdsandbox.wdfiles.com/local--files/jiwoahn-v/319px-Gordon_Copeland_%28New_Zealand_politician%29.jpg"/>
+<div class="scp-image-caption">
+<p>SCP-8087-1 prior to their death.</p>
+</div>
+</div>
+<p style="text-align: center;"><strong>INVESTIGATION REPORT 8087-1</strong></p>
+<p><strong>Author:</strong> Lead Researcher Simon Naque</p>
+<hr/>
+<p>To summarize Dr. Yvette Brumm's autopsy report, Carl Leese's<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> date of death is estimated to be June 13, 2014 by acute blood loss.</p>
+<p>Leese's place of death is about twenty meters from the Sunrunner hiking trail; his torso was resting against a tree, the body having been torn into two with his legs scattered haphazardly on the ground. Many of his organs had been spilled, covered in soil from the messy dismemberment, preventing Dr. Brumm from determining any DNA on the corpse that wasn't Leese's. A total of 32 lacerations were found, 14 of them over his face; their quality indicated that a sharp edge was involved.</p>
+<p>I absolutely pity the hiker who found him like that, we administered amnestics to her for that reason.</p>
+<p>I took a look into Leese's background. He purchased a vacation house in Reinhardt, California in 2013 after receiving a five million dollar bonus from the Unity Healthcare Group, of which he was a member of their board of directors.</p>
+<div class="scp-image-block block-right" style="width:250px;"><img alt="640px-GMT800-Cadillac-Escalade-ESV.jpg" class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/GMT800-Cadillac-Escalade-ESV.jpg/640px-GMT800-Cadillac-Escalade-ESV.jpg"/>
+<div class="scp-image-caption">
+<p>SCP-8087-1's vehicle.</p>
+</div>
+</div>
+<p>On the night of Leese's death, security footage of his vacation home shows him leaving the property in his SUV at around 9pm. We eventually recovered his black 2006 Cadillac Escalade, it was parked on the side of Highway 499, approximately half a kilometer from his place of discovery. We found a Blaser R8 bolt action rifle in the back, as well as ammunition and a flyer for a casino that was a 30 minute drive from Reinhardt. Why he'd go out hunting at 9pm, and why he left his gun in his vehicle is not known to me.</p>
+<p>Due to the time of Leese's killing and the lack of other reported SCP-8087 killings, I'm starting to suspect that SCP-8087 follows a unique hibernation schedule, or more disturbingly, it's killed other victims whose carcasses haven't been discovered yet. This would explain why it's taken so long for one of its victims to have been found, and mostly through pure chance that someone happened to be passing by. I've arranged for investigation into missing persons reports in Los Cerdos County to determine if any of them would be potential SCP-8087 victims.</p>
+</div>
+<hr/>
+<div class="blockquote">
+<p style="text-align: center;"><strong>Containment Attempt 8087-1</strong></p>
+<p><strong>Method:</strong> A <a href="https://scp-wiki.wikidot.com/deer-college-hub">Deer College</a> zoologist<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup> was transported to the search area and tasked with aiding in the search for SCP-8087.</p>
+<p><strong>Result:</strong> Following field research and discussion, the zoologist suggested the following:</p>
+<ul>
+<li>SCP-8087 is a possible herbivore, only attacking animals when threatened, never consuming them.</li>
+<li>SCP-8087 may be sensitive to light, explaining its nocturnal nature and its aversion to attacking the hiker who discovered SCP-8087-1.</li>
+<li>SCP-8087 may be capable of running on all six limbs, demonstrating an evolutionarily anomalous, but technically physically non-anomalous running dexterity, resulting in increased speed.</li>
+</ul>
+<p>Following their research, the zoologist was transferred back into Foundation custody.</p>
+</div>
+<div class="blockquote">
+<p style="text-align: center;"><strong>Containment Attempt 8087-2</strong></p>
+<p><strong>Method:</strong> Multiple anomalous canines possessing advanced olfactory capabilities were brought into the search area to assist in the investigation. The canines were previously stored at <a href="https://scp-wiki.wikidot.com/wilson-s-wildlife-solutions-hub">Wilson's Wildlife Solutions</a>.</p>
+<p><strong>Result:</strong> The canines located a human skeleton hidden in dense shrubbery next to a cliffside. DNA testing of the bones identified the skeleton as that of an adult woman reported missing in 1985.</p>
+<p>Following further investigation, the cause of death was determined to have been a fatal neck injury caused by falling from the adjacent cliff, and not due to SCP-8087. The woman's family was notified of the discovery through a Foundation front charity; the remains were cremated per their wishes.</p>
+<p>The canines additionally located a number of animal carcasses; all were determined to have been victims of non-anomalous causes (starvation, fungal infection, etc.) and not SCP-8087.</p>
+</div>
+<div class="blockquote">
+<p style="text-align: center;"><strong>Containment Attempt 8087-3</strong></p>
+<p><strong>Method:</strong> Omicron-24 personnel would install a series of separate Hume detecting devices 1.5 kilometers apart from one another, covering the entire area of Sagrario National Park, to determine the approximate location of SCP-8087 at all times. All Hume detecting devices were equipped with security cameras to record footage.</p>
+<p><strong>Result:</strong> Installation of all devices required eight days. No abnormal Hume readings have been detected since, and no video evidence of SCP-8087 was ascertained.</p>
+</div>
+<hr/>
+<p><strong>Addendum 03:</strong> Standard investigation into SCP-8087 was halted on July 4, 2014 by the Lead Researcher due to the following email exchange.</p>
+<div class="email-example">
+<div style="text-align: left;">
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> <span class="wiki-email">pcs.84etis|euqannomis#pcs.84etis|euqannomis</span><br/>
+<strong>From:</strong> <span class="wiki-email">pcs.42norcimo|allivessivart#pcs.42norcimo|allivessivart</span><br/>
+<strong>Subject:</strong> SCP-8087 isn't real</p>
+</div>
+<hr/>
+<p>Dear Dr. Naque,</p>
+<p>My team and I have been talking about this for a few days now, we've tried every single method we've got. The only thing left is that experimental thaumaturgic device that we still haven't gotten approval to have shipped to our outpost for use.</p>
+<p>My team is absolutely demoralized at this point from the lack of progress. We've never been this slow at making any sort of discovery, and the constant all-night searches are messing with our health.</p>
+<p>Are you sure the residents of Reinhardt aren't making this thing up? I mean, a wealthy pharmaceutical executive dies in the forest and the locals blame it on a cryptid, and not, say, a bear. There must be an ulterior reason for that.</p>
+<p>Sincerely, Travis Sevilla<br/>
+Omicron-24 Team Captain</p>
+</div>
+<hr/>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> <span class="wiki-email">pcs.42norcimo|allivessivart#pcs.42norcimo|allivessivart</span><br/>
+<strong>From:</strong> <span class="wiki-email">pcs.84etis|euqannomis#pcs.84etis|euqannomis</span><br/>
+<strong>Subject:</strong> Re:SCP-8087 isn't real</p>
+</div>
+<hr/>
+<p>Travis,</p>
+<p>There are many such anomalies known to the Foundation that are "difficult to catch". Yet, when left alone, they continue to terrorize innocent people, cutting lives short. Should we let innocent civilians die to dangerous anomalies in gruesome manners, when we could have them contained safely in our facilities?</p>
+<p>I remember reading about such an anomaly in the Foundation newsletter a couple months ago. It was a <a href="https://scp-wiki.wikidot.com/scp-7565">clan of sauropod dinosaurs</a> hidden in Africa, hidden from the rest of the world. It's evaded capture for decades, yet they're still being hunted down by our colleagues stationed in that region.</p>
+<p>The Foundation does not give up that easily in our fight against the unknown. We <em>search continuously</em>, we <em>persevere</em> against that which refuses to come into the light.</p>
+<p>I don't believe in just giving up so easily when the going gets tough, and I hope you can come around to agreeing with me. Plus, you and your team are all getting hazard pay by working nights. That's not something I would personally complain about.</p>
+<p>Researcher Simon Naque, Site-48</p>
+</div>
+<hr/>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> <span class="wiki-email">pcs.84etis|euqannomis#pcs.84etis|euqannomis</span><br/>
+<strong>From:</strong> <span class="wiki-email">pcs.42norcimo|allivessivart#pcs.42norcimo|allivessivart</span><br/>
+<strong>Subject:</strong> Re:SCP-8087 isn't real</p>
+</div>
+<hr/>
+<p>Dear Dr. Naque,</p>
+<p>About those African sauropods, the newsletter specifically talked about how they've given up on finding them because they were a myth made up by the locals for tourism purposes, and designated as "Explained".</p>
+<p>I get you want to be known for capturing a weird freak of nature, but there are still reasons for legends to spread. Maybe, as the newsletter mentioned, it's to increase tourism. Perhaps it's to hide some sort of shameful event, whether done through anomalous means or not. Or it could be the result of a mass delusion, the cause of which is a different anomaly altogether.</p>
+<p>I only request that you consider alternative explanations regarding SCP-8087, so we're not stuck in a decades-long goose chase.</p>
+<p>Sincerely, Travis Sevilla<br/>
+Omicron-24 Team Captain</p>
+</div>
+<hr/>
+<div class="email">
+<div class="tofrom">
+<p><strong>To:</strong> <span class="wiki-email">pcs.42norcimo|allivessivart#pcs.42norcimo|allivessivart</span><br/>
+<strong>From:</strong> <span class="wiki-email">pcs.84etis|euqannomis#pcs.84etis|euqannomis</span><br/>
+<strong>Subject:</strong> Re:SCP-8087 isn't real</p>
+</div>
+<hr/>
+<p>Travis,</p>
+<p>I'll look into the suggestion by contacting the more outspoken civilians for further interrogation.</p>
+<p>Meanwhile, when we get approved to use that thaumaturgic device, you have my permission to set it up without me. We're going to find the truth behind SCP-8087 one way or another.</p>
+<p>Researcher Simon Naque, Site-48</p>
+</div>
+</div>
+</div>
+<p>Following this exchange, Researcher Naque reinitiated interviews with Reinhardt residents in an attempt to seek a potential suspect in the event that SCP-8087-1's death was not due to SCP-8087.</p>
+<div class="blockquote">
+<p style="text-align: center;"><strong>Transcript 8087-4</strong></p>
+<p><strong>Interviewer:</strong> Lead Researcher Naque</p>
+<p><strong>Interviewed:</strong> Norbert Ortiz</p>
+<p><strong>Date:</strong> July 5, 2014</p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;Begin Log&gt;</strong></p>
+<hr/>
+<p><em>Ortiz is seated with a drink at a local bar. Researcher Naque approaches and sits next to him.</em></p>
+<p><strong>Naque:</strong> Mr. Ortiz.</p>
+<p><strong>Ortiz:</strong> Hmm? Oh, it's you again… I never got your name…</p>
+<p><strong>Naque:</strong> It's Simon. We've been struggling with finding this "Huckmucker" for a few weeks now.</p>
+<p><strong>Ortiz:</strong> Try thirty years, that's how long I've been looking.</p>
+<p><strong>Naque:</strong> We have a bit of suspicion that it, um… might not be real?</p>
+<p><em>Ortiz stares at Researcher Naque with a look of confusion.</em></p>
+<p><strong>Ortiz:</strong> You're gonna give up <em>that</em> easily? You've only looked for two weeks and quit, and now you're gonna tell me it's not real?</p>
+<p><strong>Naque:</strong> Yes, but my team has a lot of scientific tools and resources, so if we still can't find it, that can only mean one thing…</p>
+<p><em>Ortiz shrugs his shoulders.</em></p>
+<p><strong>Ortiz:</strong> I'm not sure what to tell you, Simon.</p>
+<p><em>Ortiz takes a sip of his drink as Researcher Naque ponders to himself.</em></p>
+<p><strong>Naque:</strong> Now that I think of it, I'm curious about your relationship with Mr. Leese prior to his death. How much did you know about his background?</p>
+<p><strong>Ortiz:</strong> Why does that matter to your search?</p>
+<p><strong>Naque:</strong> Mr. Ortiz, answer the question, please.</p>
+<p><em>Ortiz takes a sigh.</em></p>
+<p><strong>Ortiz:</strong> I initially thought Carl worked in Hollywood, and my daughter wanted to be a movie star, so… I tried to befriend him for that industry connection, if you know what I mean.</p>
+<p><strong>Naque:</strong> Hold on, he wasn't-</p>
+<p><strong>Ortiz:</strong> I know he worked for Big Pharma, I found that out later. My daughter also has Reynaud's disease, so I thought he could… cut me a deal on her meds later down the line, I guess?</p>
+<p><strong>Naque:</strong> You wanted to befriend him for the potential benefits?</p>
+<p><strong>Ortiz:</strong> I <em>tried</em> to, but he kept getting on everyone's nerves. As I've said before, no trigger discipline, walked around like he owned the place, he-</p>
+<p><em>Ortiz gasps.</em></p>
+<p><strong>Ortiz:</strong> Wait, are you- are you accusing me of <em>murdering</em> Carl? Is that what this is about?</p>
+<p><strong>Naque:</strong> What? No no no, Of course not! That never crossed my mind. Again, my suspicion was that the-</p>
+<p><strong>Ortiz:</strong> Well, I would <em>never</em> kill anyone! Genuinely, why would you assume there's a murderer on the loose just because <em>you</em> can't find the Huckmucker with all your fancy science tools?</p>
+<p><strong>Naque:</strong> I'm just willing to explore alternative reasons, especially since a considerable amount of people in this town keeps insisting in this creature's existence.</p>
+<p><strong>Ortiz:</strong> See? I'm not- I'm not alone in that!</p>
+<p><strong>Naque:</strong> Come to think of it, <em>who</em> was the first person to insist on this creature's responsibility in Leese's death?</p>
+<p><strong>Ortiz:</strong> Well… um…</p>
+<p><strong>Naque:</strong> What is it?</p>
+<p><strong>Ortiz:</strong> I <em>do</em> remember the sheriff… he was the first to suggest that the Huckmucker killed Carl, the morning after he died. Not bullshitting you on that, I swear to Christ.</p>
+<p><strong>Naque:</strong> What was this sheriff's name?</p>
+<p><strong>Ortiz:</strong> It was… Happ. Sheriff Happ, I think.</p>
+<p><strong>Naque:</strong> <em>Lieutenant Happ?</em></p>
+<p><strong>Ortiz:</strong> Was he a lieutenant? He worked for the Sheriff's Department, that's what I know for sure.</p>
+<p><em>Researcher Naque stands up from his seat.</em></p>
+<p><strong>Naque:</strong> Thank you so much for this info, Mr. Ortiz. I need to get going.</p>
+<p><strong>Ortiz:</strong> Alright then. Good luck, Simon.</p>
+<p><em>Researcher Naque exits the bar.</em></p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;End Log&gt;</strong></p>
+</div>
+<p>Following this interview, Omicron-24 personnel performed a raid on LCCSD Lieutenant Brian Happ's apartment residence, discovering that it had been abandoned by Happ. Site-48 was notified of his disappearance, and Foundation operatives across the western United States were tasked with his rediscovery.</p>
+<hr/>
+<p><strong>Addendum 04:</strong> On July 7, 2014, Lieutenant Happ was discovered attempting to enter Mexico. He was detained by Foundation agents within US Customs and Border Protection, and transported to Site-48 for interrogation.</p>
+<div class="blockquote">
+<p style="text-align: center;"><strong>Transcript 8087-5</strong></p>
+<p><strong>Interviewer:</strong> Lead Researcher Naque</p>
+<p><strong>Interviewed:</strong> LCCSD Lieutenant Happ</p>
+<p><strong>Date:</strong> July 8, 2014</p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;Begin Log&gt;</strong></p>
+<hr/>
+<p><em>Lieutenant Happ is restrained in his chair as Researcher Naque enters the interrogation chamber.</em></p>
+<p><strong>Happ:</strong> Simon.</p>
+<p><strong>Naque:</strong> Lieutenant Happ, we've got a few more questions for you regarding this "Huckmucker".</p>
+<p><em>Lieutenant Happ begins to breathe heavily.</em></p>
+<p><strong>Happ:</strong> What the- what the fuck is- Is that why you kidnapped me at the Mexican border? Actually, who <em>are</em> you people anyway? FBI? CIA? Drug Cartel?</p>
+<p><strong>Naque:</strong> There are a few details about the Huckmucker case that don't line up, and since you're the authority figure who keeps claiming that Mr. Leese was murdered by this cryptid creature, we thought we'd ask you for more details.</p>
+<p><strong>Happ:</strong> Cause- cause it <em>was</em> the Huckmucker! Who else could it've been?</p>
+<p><strong>Naque:</strong> That's what I'm trying to figure out, sir.</p>
+<p><strong>Happ:</strong> I told you, I <em>told you</em> it was the Huckmucker! Why- why don't you believe me?</p>
+<p><strong>Naque:</strong> We've spent weeks looking for this thing, and nothing's come up. Over a dozen people are scouring Sagrario National Park every single night for this creature. Nothing. Now we're starting to call bluff on this creature's existence, that's why we're asking around again.</p>
+<p><strong>Happ:</strong> This isn't "asking around", this is kidnapping! Actually- I wanna see your badge! Who do you work for?</p>
+<p><strong>Naque:</strong> No one else we've asked has been of any help, and again, <em>you're</em> the one-</p>
+<p><strong>Happ:</strong> I'm sorry, there's <em>other people</em> in your custody? Like, people of Reinhardt?</p>
+<p><strong>Naque:</strong> Well…</p>
+<p><strong>Happ:</strong> Who the hell are you to detain the people of Reinhardt over the Huckmucker killing someone?</p>
+<p><strong>Naque:</strong> Sir, that's not relevant to this discussion.</p>
+<p><strong>Happ:</strong> Whoever they are, they're completely innocent. I- um…</p>
+<p><strong>Naque:</strong> Innocent of <em>what?</em></p>
+<p><em>Lieutenant Happ stares at Researcher Naque in silence.</em></p>
+<p><strong>Naque:</strong> Sir?</p>
+<p><em>More silence.</em></p>
+<p><strong>Happ:</strong> My wife… her name was Nancy. We tied the knot about eleven years ago.</p>
+<p><strong>Naque:</strong> Um… what does this have to do with-</p>
+<p><strong>Happ:</strong> Let me finish. So all's well, right? Until… she started to complain about pain in her abdomen. I thought, like all men do, that it was just a really bad period. Menopause, even. She was around that age at the time. But she kept insisting that she see the doctor, so I took her there. Doctor told her that she was just being anxious and sent her home.</p>
+<p><strong>Naque:</strong> I still fail to see how-</p>
+<p><strong>Happ:</strong> I said let me finish! Anyway, she kept complaining about the pain to the point that she couldn't get out of bed, so I found a different doctor, a lady, and took Nancy there instead. <em>This</em> doctor wanted to check for "the big C", as she called it. But to do that, we'd have to get my health insurance to approve the tests.</p>
+<p><strong>Naque:</strong> And then?</p>
+<p><strong>Happ:</strong> We got health insurance through my position with the Los Cerdos Sheriff, the company's called Unity Healthcare. So the doctor, the second one, she submits the paperwork, right? But the bastard health insurance says <em>no!</em></p>
+<p><em>Researcher Naque nods his head.</em></p>
+<p><strong>Happ:</strong> So I file an appeal on my wife's behalf, and I find out that they think it's not "medically necessary"! Never mind the fact that she's crying from the pain non-stop, they just fuckin' said "no", and they said "no" again! At that point, I decided to pay for the tests out of my own pocket. I dipped into my retirement fund and sold my truck, then got them done.</p>
+<p><strong>Naque:</strong> What did the tests say?</p>
+<p><em>A short pause.</em></p>
+<p><strong>Happ:</strong> <a href="https://ovarian.org/">Ovarian cancer.</a></p>
+<p><em>Lieutenant Happ begins to sob.</em></p>
+<p><strong>Happ:</strong> It'd already spread… the doctor referred us to a specialist to set up a treatment plan, but then… then I had to deal with that fucking health insurance again!</p>
+<p><strong>Happ:</strong> And- and you know what- you know what they said? They said I violated their policy by paying for the tests out of pocket! They said "no" <em>again!</em></p>
+<p><em>Lieutenant Happ coughs on his tears.</em></p>
+<p><strong>Happ:</strong> Once we finally reached the treatment stage, we found out each chemotherapy injection costs $11,000. Eleven thousand dollars! I ended up remortgaging my house to pay for it all. I couldn't risk fighting against the insurance company when her cancer was so widespread.</p>
+<p><em>Silence.</em></p>
+<p><strong>Happ:</strong> January 5th. I pulled the plug. She was… I didn't want to see her suffer anymore.</p>
+<p><em>Lieutenant Happ takes a sigh.</em></p>
+<p><strong>Happ:</strong> Didn't go to work for months after that… my house got foreclosed on. Not that it mattered, I had no one to share it with.</p>
+<p><em>Another silence.</em></p>
+<p><strong>Naque:</strong> Come to think of it, Mr. Leese work for Unity Health-</p>
+<p><strong>Happ:</strong> Not just "worked for"- he was- he was a fucking executive! A one-percenter corporate pig motherfucker! He- he <em>exploited</em> hard-working Americans like me and my wife! It's his fault she's dead! It's all <em>his fault!</em></p>
+<p><em>Researcher Naque stares down at Lieutenant Happ.</em></p>
+<p><strong>Naque:</strong> You killed Mr. Leese and blamed it on that creature, didn't you?</p>
+<p><em>Lieutenant Happ does not respond.</em></p>
+<p><strong>Naque:</strong> You probably tracked him down, pulled him over in your police car, and dragged him into the woods to kill him. Is that correct?</p>
+<p><strong>Happ:</strong> Don't… don't put it like <em>that.</em></p>
+<p><strong>Naque:</strong> Is that not what happened?</p>
+<p><strong>Happ:</strong> Was I supposed to let that man get away with everything?</p>
+<p><strong>Naque:</strong> Mr. Leese didn't kill your wife, her cancer did.</p>
+<p><strong>Happ:</strong> I fucking told you, he's <em>complicit</em> in her death! He made Unity Healthcare the stingy bastards they are! If they'd approved her tests the <em>first</em> time, the cancer wouldn't have spread as far, she would've had a much better chance at survival, and she'd probably be cancer-free by now.</p>
+<p><em>A short pause.</em></p>
+<p><strong>Happ:</strong> I'd still be happy, and she'd still be alive.</p>
+<p><em>Lieutenant Happ coughs uncontrollably.</em></p>
+<p><strong>Happ:</strong> I've got nothing left. I've got no <em>one</em> left. I… I was gonna go to Mexico, as you know, but… now that I think about it…</p>
+<p><strong>Naque:</strong> You lacked a plan on what to do once you got there?</p>
+<p><em>Lieutenant Happ nods his head "yes".</em></p>
+<p><em>Researcher Naque sighs in anguish.</em></p>
+<p><strong>Naque:</strong> You had me and my team go on this wild goose chase for <em>nothing.</em></p>
+<p><strong>Happ:</strong> Was I supposed to-</p>
+<p><strong>Naque:</strong> Just- I was so excited find this creature, this "Huckmucker". My team spent over two weeks searching for this animal whose existence <em>you</em> made up.</p>
+<p><strong>Happ:</strong> I had no way of knowing that your team would show up all gung ho about it. I thought it'd be forgotten after enough time had passed.</p>
+<p><em>Researcher Naque sighs again.</em></p>
+<p><strong>Naque:</strong> Come to think of it, one last question: What was the murder weapon you used to kill Mr. Leese?</p>
+<p><strong>Happ:</strong> It was… an axe. I threw it in the lake under Hostie Falls.</p>
+<p><strong>Naque:</strong> That's all I need to hear.</p>
+<p><em>Researcher Naque exits the interrogation chamber, leaving Lieutenant Happ alone in the room.</em></p>
+<p><em>Lieutenant Happ bows his head down and continues to sob.</em></p>
+<hr/>
+<p style="text-align: center;"><strong>&lt;End Log&gt;</strong></p>
+</div>
+<p>Following interrogation, Lieutenant Happ was transferred to civilian authorities, who formally arrested and charged him with first degree murder. A small-scale disinformation campaign has been established for the duration of time required to transfer the necessary files to said authorities.</p>
+<p>Investigation into SCP-8087 has concluded, and MTF Omicron-24 has been rescinded from the area. Reclassification to Explained is pending.</p>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. This report was written prior to the assignment of the SCP-8087-1 designation, and has been preserved as-is for posterity.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. The zoologist in question was placed into Foundation custody in relation to an unrelated phenomenon, and was offered clemency in exchange for assistance regarding SCP-8087 research.</div>
+</div>
+<hr/>
+
+<div style="text-align: center;">
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-8087">SCP-8087</a>" by Jiwoahn, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-8087">https://scpwiki.com/scp-8087</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+
+<div style="text-align: left;">
+<blockquote>
+<p><strong>Filename:</strong> Redwood Forest Cropped.jpg<br/>
+<strong>Name:</strong> Rockefeller Forest Sequoia sempervirens<br/>
+<strong>Author:</strong> Jason Sturner<br/>
+<strong>License:</strong> CC BY-SA 2.0<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Rockefeller_Forest_Sequoia_sempervirens.jpg">Wikimedia Commons</a><br/>
+<strong>Additional Notes:</strong> Cropped from original</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> huckiemuckie.jpg<br/>
+<strong>Name:</strong> Huckmucker Sketch by Ortiz<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jiwoahn" onclick="WIKIDOT.page.listeners.userInfo(5099163); return false;"><img alt="Jiwoahn" class="small" src="https://www.wikidot.com/avatar.php?userid=5099163&amp;amp;size=small&amp;amp;timestamp=1765434502" style="background-image:url(https://www.wikidot.com/userkarma.php?u=5099163)"/></a><a href="http://www.wikidot.com/user:info/jiwoahn" onclick="WIKIDOT.page.listeners.userInfo(5099163); return false;">Jiwoahn</a></span><br/>
+<strong>License:</strong> CC-BY-SA-3.0<br/>
+<strong>Source Link:</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Name:</strong> Gordon Copeland (New Zealand politician)<br/>
+<strong>Author:</strong> The Kiwi Party<br/>
+<strong>License:</strong> CC-BY-SA-3.0 DEED<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:Gordon_Copeland_(New_Zealand_politician).jpg">Wikimedia Commons</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Name:</strong> GMT800-Cadillac-Escalade-ESV<br/>
+<strong>Author:</strong> IFCAR<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source Link:</strong> <a href="https://commons.wikimedia.org/wiki/File:GMT800-Cadillac-Escalade-ESV.jpg">Wikimedia Commons</a></p>
+</blockquote>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></body></html></div>
+        </body>
+        </html>
+        

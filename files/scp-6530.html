@@ -1,0 +1,555 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SCP-6530</title>
+            <style>
+                body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background: #1a1a1a; color: #ccc; line-height: 1.7; }
+                a { color: #ff5252; text-decoration: none; font-weight: bold; transition: 0.2s; }
+                a:hover { text-decoration: underline; color: #ff8a80; }
+                
+                /* CENTERED IMAGE HEADER */
+                .image-header {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                }
+
+                .scp-image-block {
+                    display: block;
+                    border: 1px solid #444;
+                    background: #111;
+                    padding: 0;
+                    max-width: 400px; /* Max width for images */
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                }
+                
+                /* Force images to behave */
+                .scp-image-block img, img { 
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    max-width: 100%;
+                }
+                
+                .scp-image-caption {
+                    padding: 10px;
+                    background: #222;
+                    color: #888;
+                    font-size: 0.9em;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                }
+                
+                /* TEXT STYLING */
+                h1 { border-bottom: 3px solid #ff5252; padding-bottom: 15px; color: #fff; margin-bottom: 40px; font-size: 3em; text-align: center; letter-spacing: 2px; }
+                strong, b { color: #fff; font-weight: 700; }
+                
+                /* DOSSIER STYLE */
+                blockquote { 
+                    border-left: 4px solid #ff5252; 
+                    margin: 30px 0; 
+                    padding: 15px 25px; 
+                    background: #252525; 
+                    color: #ddd;
+                    border-radius: 0 8px 8px 0;
+                }
+                
+                /* HIDE JUNK CSS (Just in case regex missed it) */
+                .page-rate-widget-box, .meta-title, .creditRate, .info-container, .wd-ad-unit, .license-box { display: none !important; }
+            </style>
+        </head>
+        <body>
+            <h1>SCP-6530</h1>
+            <html><body><div id="page-content">
+
+<div style="display: none">
+<hr/>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+ Show component code</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">- Hide component code</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<div class="hl-main">
+<pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc(var(--base-font-size) * (</span><span class="hl-number">266</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">))</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-var">@media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (min-width: 56.25</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem))</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) </span><span class="hl-number">0</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> / </span><span class="hl-number">2</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> -webkit-sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> sticky</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">grid-area:</span><span class="hl-code"> side-bar</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">13.6</span><span class="hl-code">rem) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">2.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">scroll</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-color </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                padding </span><span class="hl-number">300</span><span class="hl-code">ms linear,
+                margin </span><span class="hl-number">300</span><span class="hl-code">ms linear</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-tertiary-color, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">13.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">rtl</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-width:</span><span class="hl-code"> </span><span class="hl-string">thin</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-scroll-chaining:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+                </span><span class="hl-reserved">overscroll-behavior:</span><span class="hl-code"> contain</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(var(--swatch-primary-darker), </span><span class="hl-number">0.1</span><span class="hl-code">) /* Thumb */
+                rgba(var(--swatch-tertiary-color), </span><span class="hl-number">0.05</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-track</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-secondary-color, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">, </span><span class="hl-number">244</span><span class="hl-code">), </span><span class="hl-number">0.8</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-thumb</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar-corner</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw + </span><span class="hl-number">100</span><span class="hl-code">vh)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-style:</span><span class="hl-code"> </span><span class="hl-string">inset</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-right:</span><span class="hl-code"> </span><span class="hl-number">2.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-color:</span><span class="hl-code"> rgba(var(--swatch-primary-darker), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--sidebar-bg-color, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">, </span><span class="hl-number">255</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">1</span><span class="hl-code">rem) - var(--sidebar-width-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgba(</span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)  /* Thumb */
+                rgba(</span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">; /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+            </span><span class="hl-reserved">scrollbar-color:</span><span class="hl-code"> 
+                rgb(var(--swatch-primary-darker, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">, </span><span class="hl-number">170</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">) /* Thumb */
+                rgb(var(--swatch-menubg-color, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">, </span><span class="hl-number">252</span><span class="hl-code">), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;  /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Track</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> url("https://scp-wiki.wdfiles.com/local--files/component%</span><span class="hl-number">3</span><span class="hl-code">Acollapsible-sidebar/sidebar-tab.svg")</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-attachment:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem </span><span class="hl-number">12.875</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                background-position </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-string">left</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">font-size:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">em</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">9</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> var(--final-header-height-on-desktop, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--final-header-height-on-desktop, </span><span class="hl-number">0.688</span><span class="hl-code">rem) - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-bottom:</span><span class="hl-code"> calc(var(--final-header-height-on-desktop, -</span><span class="hl-number">2.313</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> - </span><span class="hl-number">2.313</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                translate </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                opacity </span><span class="hl-number">300</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0.0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--swatch-alternate-color, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop, </span><span class="hl-number">14.5</span><span class="hl-code">rem) * -</span><span class="hl-number">1</span><span class="hl-code"> + </span><span class="hl-number">1</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">is</span><span class="hl-code">(:</span><span class="hl-identifier">hover</span><span class="hl-code">, :</span><span class="hl-identifier">active</span><span class="hl-code">, :</span><span class="hl-identifier">focus-within</span><span class="hl-code">) + </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">translate:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-left:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.scpnet-interwiki-wrapper</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">direction:</span><span class="hl-code"> </span><span class="hl-string">ltr</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">Print</span><span class="hl-code"> </span><span class="hl-identifier">Friendly</span><span class="hl-code"> </span><span class="hl-identifier">Formatting</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code"> </span><span class="hl-identifier">Estrella</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code"> 
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">body.print-body</span><span class="hl-code"> </span><span class="hl-identifier">#main-content</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">; 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="creditRate">
+<li class="rateBox folded">
+<div class="rate-box-with-credit-button">
+<div class="creditButton foldable-list-container">
+<p><a href="javascript:;"></a></p>
+</div>
+</div>
+<div id="u-credit-view">
+<div class="fader foldable-list-container"><a href="javascript:;">close</a></div>
+<div class="modalcontainer">
+<div class="modalbox">
+<div style="text-align: center;">
+<h2><span>Info</span></h2>
+</div>
+<hr/>
+<div class="close-credits foldable-list-container"><a href="javascript:;">X</a></div>
+<div class="credit first">
+<div style="text-align: center;">
+<p><strong><a href="/grigori-karpin-s-author-page">More by Grigori Karpin</a></strong></p>
+</div>
+</div>
+<hr/>
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+<h4 id="toc0"><span><span style="text-decoration: underline;">Special Containment Procedures</span>:</span></h4>
+<p>I/O HERMEIAS is to keep constant watch on new item postings on major online marketplaces. If SCP-6530 is confirmed as present, MTF-Theta-16 (“All the Little Things”) and assigned UIU personnel are to be informed immediately to take corrective action.</p>
+<p>Web architecture implemented in containment must be maintained on a regular basis.</p>
+<h4 id="toc1"><span><span style="text-decoration: underline;">Description</span>:</span></h4>
+<p>SCP-6530 is a memetic parasite transmitted through certain phrases contained in over 70% of all item descriptions on online marketplaces<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup> that primarily focus on sale of goods through the internet and in the UI of service-based app companies that focus on delivery of sundries and prepared food.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup></p>
+<p>Those susceptible to SCP-6530 infection are individuals from households with yearly gross income 30% over the poverty line. Once infected a subject will inadvertently pass along the memetic parasite to those within their household.</p>
+<p>Anomalous effects of SCP-6530 infection show the following signs:</p>
+<ul>
+<li>Subjects immediately exhibit reliance on online shopping, eschewing visiting stores in person, even when more convenient for personal necessity or when online prices are higher</li>
+<li>Subjects exhibit conviction that fees connected with online shopping are more convenient than personal expenses attached to visiting stores in person<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup>, even when such costs are cumulatively less than delivery fees</li>
+<li>Subjects regularly purchase large quantities of items even when in excess of subjects’ need for said item</li>
+<li>Subjects consistently try to convince others that online shopping is more efficient and cost-effective, even when the facts are in contradiction</li>
+<li>Subjects routinely spend leisure time scanning the reviews of items in online marketplaces and services</li>
+<li>Subjects exhibit reliance on ordering food through delivery services, even when subjects have experience preparing their own food and possess excessive supplies of foodstuffs from their online orders</li>
+</ul>
+<p><strong>Discovery</strong>: On 3 March, 2019, Director Skeates of Site-106 was informed that the office and laboratory supplies for the Site were significantly overstocked.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup> Director Skeates examined the stores and was presented with roughly 1000% of the usual stock of various supplies, more than could be safely stored for some chemicals. Director Skeates confronted Tim Ardeo, logistical manager of Site-106, and found him on his phone closely examining the Amazon app. When Dir. Skeates attempted to discuss the matter of the supplies, Ardeo asked why the Site had never before used Amazon to order office supplies. Ardeo stated “It just makes so much more sense to have the supplies come to us, instead of the usual ordering.”<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup></p>
+<p>Concerned about anomalous infection, Dir. Skeates ordered Ardeo detained and interviewed. Despite this, it was unclear what had caused this change in Ardeo’s behavior.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">6</a></sup></p>
+<p>Based on Ardeo’s actions when confronted, Dir. Skeates ordered I/O HERMEIAS<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">7</a></sup> to scan through Amazon.com for memetic infection. SCP-6530 was identified in over 70% of the item postings on the online marketplace, and then additionally on various other sites.</p>
+<p>Department of Procurement and Liquidation analyst Roxanne Dsouza theorized that the memetic parasite did not pass from one individual to another in a direct manner, infection requiring a subject to view item postings on online marketplaces or services exhibiting SCP-6530. This was confirmed by limited testing.</p>
+<p>Given the conflagrative spread of SCP-6530, Dir. Skeates requested approval from Overwatch Command to approach the UIU to assist in the investigation – hoping to obtain the legal legitimacy of the Federal Bureau of Investigation when trying to determine the corporations’ culpability in the proliferation of the anomalous memetic infection. This request was approved and the Department of Procurement and Liquidation began outreach to the local Miami, Florida officer of the UIU.</p>
+<div style="border: solid 3px #000000; padding: 1px 15px; background:#CEE2EF; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<div class="blockquote">
+<div style="text-align: center;">
+
+<p><strong>Transcript of UIU Meeting at Site-106 – 04/03/2019</strong></p>
+</div>
+<p><strong>Department Personnel Attending</strong>: <em>Director Jean Skeates</em>, <em>Agent Digby Du Bois</em>, <em>Senior Analyst Roxanna Dsouza</em>.</p>
+<p><strong>UIU Personnel</strong>: <em>Assistant Director Robert McCragge</em>, <em>Senior Field <a href="https://scp-wiki.wikidot.com/uiu-series-with-no-name-hub">Agent Quinn MacAllister</a></em>.</p>
+<hr/>
+<p><strong>Dir. Skeates</strong>: AD McCragge, Agent MacAllister, welcome to Miami. How was your flight?</p>
+<p><strong>McCragge:</strong> Uneventful, thankfully.</p>
+<p><strong>Dir. Skeates:</strong> Good. Onto business, then.</p>
+<p><strong>MacAllister</strong>: With all due respect, I'd prefer to not have another gag order put on me. Already had to update the general one twice this year.</p>
+<p><strong>Dir. Skeates</strong>: You don't need to sign anything, don't worry. No brain wipes, either.</p>
+<p><em>[AD McCragge turns to his agent with a frown. MacAllister shrugs.]</em></p>
+<p><strong>McCragge</strong>: We appreciate the invitation, Director. Your message was terse, but I take it your organization is also aware of the memetic anomaly?</p>
+<p><strong>Agent Du Bois</strong>: You were already investigating?</p>
+<p><strong>McCragge</strong>: We learned of it a week ago, it’s been hell isolating those infected in the office and keeping those unaffected from being influenced.</p>
+<p><strong>Dir. Skeates</strong>: Well, yes, we would like to share information and potentially work together.</p>
+<p><strong>MacAllister</strong>: Come down from Olympus to seek help from mere mortals, then?</p>
+<p><strong>McCragge</strong>: Agent MacAllister…</p>
+<p><strong>Dir. Skeates</strong>: <em>[Laughs]</em> No, it’s a legitimate question. We’ve got a reputation for moving in and taking over a situation on the basis of our organization’s influence. Agent, we need you because these are multi-billion-dollar corporations with significant influence themselves. Amazon alone is worth more than many countries’ GDP. The resources of the FBI and the legitimacy of your connection to the US Department of Justice will ease this investigation.</p>
+<p><strong>McCragge</strong>: The Director has most of the West Coast tied up with a massive paranarcotics case using 3ports for smuggling. This matter has been assigned to our office. We are the taskforce essentially. So, we’d be glad to work with you. <em>[Passing a document across the table]</em> We’ve outlined a list of services and marketplaces with confirmed presence of the anomaly.</p>
+<p><strong>Dsouza</strong>: <em>[Accepting the document]</em> Services? We’d identified a number of marketplaces with item descriptions exhibiting memetic infection.</p>
+<p><strong>McCragge</strong>: Things like Doordash, Grubhub and Instacart are the big ones. The UI's got a memetic contaminant in it. We're looking into whether or not it's affecting a few pizza chains as well.</p>
+<p><strong>Dir. Skeates</strong>: So, with the sources we’ve identified, that brings us to…?</p>
+<p><strong>Dsouza</strong>: Twelve services and marketplaces, none of which share parent companies.</p>
+<p><strong>Dir. Skeates</strong>: Thoughts?</p>
+<p><strong>Dsouza</strong>: Hard to say, but could be a hacker or anartist who’s working from outside the system and using an advanced AI to seed the different postings and apps with the anomaly. Or…</p>
+<p><strong>Du Bois</strong>: Or, these companies are trying to redefine their markets with anomalies.</p>
+<p><strong>MacAllister</strong>: We've been a bit too preoccupied to look into Amazon or the others but… if these companies have been using anomalies, then there has to have been activity before this. Right?</p>
+<p><strong>Dir. Skeates</strong>: Yes, that would seem likely.</p>
+<p><strong>Du Bois</strong>: Then again, everything starts somewhere.</p>
+<p><strong>McCragge</strong>: The scope implies this is either an independent contractor or the people involved are very familiar with utilizing the anomalous.</p>
+<p><strong>Dir. Skeates</strong>: First steps then: we need to nail down if this was intentional on the part of the corporations, and who was responsible, so that means talking with corporate representatives.</p>
+<p><strong>MacAllister</strong>: Which is where we come in.</p>
+<p><strong>Dir. Skeates</strong>: Exactly.</p>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span></p>
+<div class="scp-image-block block-right" style="width:300px;"><img alt="Dept%20Con%20Memetic%20Sales%20Man" class="image" src="https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/Dept%20Con%20Memetic%20Sales%20Man"/>
+<div class="scp-image-caption">
+<p>POI-6530</p>
+</div>
+</div>
+<p>An informal joint task force between personnel of the UIU and Department of Procurement and Liquidation began investigations into those corporations exhibiting SCP-6530 infection. With the connection of the UIU, the task force was able to obtain warrants to examine the business records and coding history of the various marketplaces and apps exhibiting the anomaly. It became clear that SCP-6530 had first appeared in language of item postings and app UI starting in early February 2019. Official discussions<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-8" onclick="WIKIDOT.page.utils.scrollToReference('footnote-8')">8</a></sup> with legal representatives of the subject corporations revealed nothing out of the ordinary, except for the universal retaining of an outside consulting firm by the name of Midas Consulting Services several weeks prior to the first appearance of SCP-6530 in item descriptions.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-9" onclick="WIKIDOT.page.utils.scrollToReference('footnote-9')">9</a></sup></p>
+<p>Midas Consulting Services is owned and operated by Alessandro Nichevo (designated POI-6530), a Russian expatriate living and working in Malé, Republic of Maldives. Given the lack of extradition treaty with the United States and other major world powers, Dsouza and MacAllister found this choice of headquarters intriguing. Dir. Skeates authorized a mobilization of MTF-Theta-16 to apprehend POI-6530 and investigate his activities in connection to SCP-6530.</p>
+<div style="border: solid 3px #000000; padding: 1px 15px; background:#CEE2EF; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<div class="blockquote">
+<div style="text-align: center;">
+
+<p><strong>Transcript of Mobilization</strong></p>
+</div>
+<p><em>MTF-Theta-16 (“All the Little Things”) T-alpha, -beta, -kappa</em><br/>
+<em>Agent Digby Du Bois</em><br/>
+<em>UIU Special Agent Quinn MacAllister</em></p>
+<p><strong>Foreword</strong>: MTF-Theta-16, along with Agent Du Bois and Agent MacAllister, were mobilized to investigate POI-6530’s company in the Republic of Maldives. Headquartered in the capital of Malé, Midas Consulting Services is housed in a single-story industrial warehouse.</p>
+<hr/>
+<p><em>[T-alpha, -beta, and -kappa approach a side entrance of the warehouse. Agents Du Bois and MacAllister observe from several meters away as the MTF agents breach the door with a handheld battering ram. The three MTF agents enter the building; Du Bois and MacAllister follow.]</em></p>
+<p><em>[The warehouse is mostly empty, with several server banks surrounding a workstation with multiple monitors. Seated on a raised stool in front of the workstation, holding an instant cup of noodles, is POI-6530.]</em></p>
+<p><strong>T-alpha</strong>: Freeze! Do not move!</p>
+<p><em>[POI-6530 drops the cup of noodles and hits a key on the keyboard in front of him. All the monitors begin to flash a spiraling fractal pattern of shifting colors. All three MTF agents cease movement. Agents Du Bois and MacAllister turn away from the screens and back out of the line of sight. When they turn back towards the POI, he is running away from the workstation and the main entrance.]</em></p>
+<p><strong>Du Bois</strong>: Freeze, you douc–</p>
+<p><em>[MacAllister fires her service weapon twice and POI-6530 falls forward screaming. Agent Du Bois and MacAllister approach the POI, who is bleeding from a left leg wound.]</em></p>
+<p><strong>POI-6530</strong>: Блядь!</p>
+<p><strong>MacAllister</strong>: Do you speak English?</p>
+<p><em>[POI-6530 nods frantically as he clutches at his lower leg.]</em></p>
+<p><strong>MacAllister</strong>: If you want medical attention, tell me how to reverse whatever you did to those men!</p>
+<p><strong>POI-6530</strong>: It’ll wear off in fifteen minutes, you crazy b–</p>
+<p><em>[Subject starts screaming as Agent Du Bois applies pressure to the wounded leg.]</em></p>
+<p><em>[MacAllister nods at Du Bois and calls in medical assistance.]</em></p>
+<hr/>
+<p><strong>Afterword</strong>: Subject was treated and stabilized and then transported with Foundation personnel to Site-106. Analysis confirmed that subject had used a cognitohazard that stifles cognition and physical mobility; MTF personnel did recover their senses and did not exhibit long term anomalous symptoms.</p>
+</div>
+</div>
+<p>POI-6530 was interviewed upon detainment at Site-106:</p>
+<div style="border: solid 3px #000000; padding: 1px 15px; background:#CEE2EF; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,.2);">
+<div class="blockquote">
+<div style="text-align: center;">
+
+<p><strong>Transcript of Interview</strong></p>
+</div>
+<p><strong>Interviewee</strong>: POI-6530 – Alessandro Nichevo<br/>
+<strong>Interviewers</strong>: Agent Digby Du Bois and UIU Special Agent Quinn MacAllister</p>
+<hr/>
+<p><strong>Du Bois</strong>: How you doing, Nichevo?</p>
+<p><strong>POI-6530</strong>: Хуй тебе!</p>
+<p><strong>MacAllister</strong>: Healthy enough to swear, healthy enough to talk. So, talk.</p>
+<p><strong>POI-6530</strong>: No extradition in Maldives! This is illegal.</p>
+<p><strong>Du Bois</strong>: We don’t really have to worry about extradition, Nichevo.</p>
+<p><strong>POI-6530</strong>: You are federal police!</p>
+<p><strong>Du Bois</strong>: Well, <em>she</em> is.</p>
+<p><strong>POI-6530</strong>: Big secrets worth shooting me?</p>
+<p><strong>MacAllister</strong>: You fled and immobilized several agents on your way out. You're lucky I just hit your leg.</p>
+<p><strong>POI-6530</strong>: Why don’t you fu–</p>
+<p><strong>Du Bois</strong>: Hey! Nichevo, seriously, stop playing hard to get. You mess with cognitohazards and memetics, you seriously pretending you don’t know who has you?</p>
+<p><strong>POI-6530</strong>: The Foundation, da?</p>
+<p><strong>Du Bois</strong>: That’s right. So, you know you’re in no position to act tough. You tell us what we need to know, and maybe at the end you’ll remember your own name.</p>
+<p><em>[POI-6530 huffs and crosses his arms, but nods.]</em></p>
+<p><strong>Du Bois</strong>: Good, so, you make memetic and cognitohazardous anomalies?</p>
+<p><strong>POI-6530</strong>: Among other things, I am an artist! Digital paintbrushes are the future, coding is the canvas, all that shit.</p>
+<p><strong>Du Bois</strong>: Alright, but you work for hire?</p>
+<p><strong>POI-6530</strong>: I need to eat, man.</p>
+<p><strong>Du Bois</strong>: <em>[Laughing]</em> Okay, fair enough. So, did you make the memetic anomaly attached to item descriptions and service apps? Makes you want to buy things online and only online, etc?</p>
+<p><strong>POI-6530</strong>: Yeah, some of my best work honestly.</p>
+<p><strong>MacAllister</strong>: What do you mean?</p>
+<p><strong>POI-6530</strong>: I had to balance these different compulsions without burning out the brain. You find anybody losing their shit or foaming at the mouth ‘cuz of my work? Don’t worry, you won’t.</p>
+<p><strong>Du Bois</strong>: Explain how you ended up in a position to do it in the first place.</p>
+<p><strong>POI-6530</strong>: They hired me.</p>
+<p><strong>MacAllister</strong>: Who did?</p>
+<p><strong>POI-6530</strong>: The companies I put it on.</p>
+<p><strong>MacAllister</strong>: Did they know what you were doing? Did they hire you specifically for that?</p>
+<p><strong>POI-6530</strong>: I mean… not explicitly.</p>
+<p><strong>MacAllister</strong>: So, what were you hired to do?</p>
+<p><strong>POI-6530</strong>: Streamlining UI – making the services and items look more appealing to a consumer, especially on mobile phone.</p>
+<p><strong>MacAllister</strong>: Then why the hell did you add the hazardous infection, you little shit?</p>
+<p><strong>POI-6530</strong>: I thought it would be funny. Fuck with capitalism by turning it up to 11.</p>
+<p><strong>MacAllister</strong>: How… exactly is that messing with capitalism? You just shifted it online.</p>
+<p><strong>POI-6530</strong>: I… okay, yeah now that you say it that way… I don’t know, seemed funny at the time.</p>
+<p><strong>Du Bois</strong>: Wait, individually?</p>
+<p><strong>POI-6530</strong>: Individually what?</p>
+<p><strong>Du Bois</strong>: Did the companies individually hire you? One at a time?</p>
+<p><strong>POI-6530</strong>: Nah, it was like a conference.</p>
+<p><strong>Du Bois</strong>: A conglomerate?</p>
+<p><strong>POI-6530</strong>: Yeah, sure. That.</p>
+<hr/>
+<p><strong>Afterword</strong>: POI-6530 assured the agents that the infection is not permanent and if the anomaly is stripped from the websites and apps, those affected should return to normal.</p>
+</div>
+</div>
+<p>The source of SCP-6530 identified, Director Skeates authorized AIAD to implement AIC countermeasures. Within 24 hours, all appearances of SCP-6530 were purged from the sites and services they had been exhibited on. Digital countermeasures were left in the companies’ servers to identify and block the inclusion of SCP-6530 infectious language in future posts.</p>
+<p>Monthly checks are to be made to this digital infrastructure by the AIC, so as to confirm their effectiveness.<br/>
+<span style="white-space: pre-wrap;"> </span></p>
+<h4 id="toc2"><span>Addendum-6530-1</span></h4>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">Restricted to 4/6530 Clearance Authorization</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">ACCESS GRANTED</a></div>
+<div class="collapsible-block-content">
+<div class="blockquote">
+<p>Given the information gleaned from POI-6530, UIU Deputy Director McCragge, along with Assistant US Attorney Raul Diaz<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-10" onclick="WIKIDOT.page.utils.scrollToReference('footnote-10')">10</a></sup> requested a meeting at UIU Regional Headquarters in Miami with representatives of all companies exhibiting SCP-6530.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-11" onclick="WIKIDOT.page.utils.scrollToReference('footnote-11')">11</a></sup></p>
+<p>The following transcript was released to Director Skeates and the O5 Council by Deputy Director McCragge.</p>
+<hr/>
+<p><strong>AUSA Diaz</strong>: Welcome gentlemen, I know this isn’t a common, but given the widespread nature of the actions by your corporations and the possible penalties, we thought it best to discuss things and hopefully get to the bottom of what’s going on. I’d like to introduce FBI Assistant Director Robert McCragge and Special Agent Quinn MacAllister.</p>
+<p><strong>McCragge</strong>: Good morning.</p>
+<p><strong>AUSA Diaz</strong>: Now, it’s important you understand that none of you are under oath. But we will be recording this session for internal FBI purposes. Although you are free to leave at any time, your companies will want to hear what is discussed in this room.</p>
+<p><strong>Amazon Representative</strong>: Why are we here?</p>
+<p><em>[Murmur of agreement from most of the corporate representatives.]</em></p>
+<p><strong>McCragge</strong>: Folks, you are here because you have worked together to hire the services of Midas Consulting Services to "streamline" your UI and item postings. You’ve all agreed to this statement of fact as a pre-condition of meeting here today. Does your conglomerate have a representative?</p>
+<p><strong>Amazon Representative</strong>: I’ll go ahead and speak for the group, if anyone doesn’t agree they can speak up. But we did this together, and there’s nothing illegal in anything we did.</p>
+<p><strong>McCragge</strong>: Good. We need to speak about Midas Consulting and its CEO, Alessandro Nichevo.</p>
+<p><strong>Amazon Representative</strong>: Director, none of us dealt with Midas directly. If we could get to the point? We’re all busy people.</p>
+<p><strong>McCragge</strong>: So much for the kid gloves. Alright, how many of you were aware of Mr. Nichevo’s expertise in memetics and cognitohazardous coding?</p>
+<p><em>[None of the representatives speak.]</em></p>
+<p><strong>McCragge</strong>: Look, we know he did it, we know he did it on your dime. There’s nothing to hide here.</p>
+<p><strong>Amazon Representative</strong>: As far as I know, none of our executives knew about Nichevo’s abilities prior to hiring him.</p>
+<p><strong>McCragge</strong>: Then why did you hire him? He’s all alone, in the Maldives, what attracted you to Midas Consulting in the first place?</p>
+<p><strong>Amazon Representative</strong>: He has a stellar reputation with coding systems and providing incredible results. Besides, who has ever heard of the word “cognitohazardous”?</p>
+<p><strong>McCragge</strong>: I bet you had, but that’s neither here nor there. You said none of you knew ahead of time. That implies you knew eventually.</p>
+<p><strong>Amazon Representative</strong>: I’m not at liberty to discuss that.</p>
+<p><strong>McCragge</strong>: If you want to make this as painless as possible, you’ll get on the horn with your executives – who I imagine will not be surprised at our discussions today – and get that authorization.</p>
+<div style="text-align: center;">
+<p><em><strong>[An hour is cut due to brevity – corporate representatives confer with their executives during this time.]</strong></em></p>
+</div>
+<p><strong>McCragge</strong>: Well?</p>
+<p><strong>Amazon Representative</strong>: Before we divulge anything, we think it would be only fair to discuss what brought you to this conclusion.</p>
+<p><strong>MacAllister</strong>: We can’t discuss an ongoing investigation.</p>
+<p><strong>McCragge</strong>: This time, we can make an exception. Go ahead Agent MacAllister.</p>
+<div style="text-align: center;">
+<p><strong><em>[Twenty minutes is cut for brevity – Agent MacAllister runs down the salient points of investigation.]</em></strong></p>
+</div>
+<p><strong>MacAllister</strong>: In conclusion, current estimates are that at least fifty million Americans have been subjected to an unconstitutional violation of privacy, several breaches of the Rudd-Holtmann Mental Sovereignty Act, and this whole debacle has pushed the Veil hard enough that the fabric has stretch marks. This could have led to panic not seen since the turn of the millennium, psychic damage on a massive scale, and a potential Spotlight Crisis.<sup class="footnoteref"><a class="footnoteref" href="javascript:;" id="footnoteref-12" onclick="WIKIDOT.page.utils.scrollToReference('footnote-12')">12</a></sup> And this was all done for a few dollars more in the pockets of your sharehol–</p>
+<p><strong>McCragge</strong>: That will be all, agent. We get the point.</p>
+<p><strong>MacAlister</strong>: But–</p>
+<p><strong>McCragge</strong>: Dismissed, agent.</p>
+<p><em>[MacAllister maintains a neutral expression as she gathers her materials, audibly snapping her folder shut and briskly walking out of the room.]</em></p>
+<p><strong>McCragge</strong>: Please excuse her behavior. She had to shoot Nichevo in the process of apprehending him, which takes a toll on anyone.</p>
+<p><strong>AUSA Diaz</strong>: So, where we at fellas? Ready to admit what’s going on here?</p>
+<p><strong>Amazon Representative</strong>: I only speak for Amazon, obviously, but yes, we are prepared to admit that we became aware of this scenario. To be clear we only recently discovered the effect of Mr. Nichevo’s work, and we were trying to audit internally before reporting it to your agency.</p>
+<p><strong>AUSA Diaz</strong>: Right. I’m sure you were each just about to call before we reached out.</p>
+<p><strong>Amazon Representative</strong>: Now, wait a minute.</p>
+<p><strong>AUSA Diaz</strong>: No, you wait a minute. If you’ll excuse my language, let’s just cut the bullshit. Each of your corporations is in violation of US ParaCode Title 13, section 8, subsection A, which comes with penalties in the billions and even potential jail sentences for not revealing it. These cognitohazards have affected millions of Americans and you have been profiting off of it. And as the Agent explained, we already have the proof. Some of these laws don’t require a jury trial – just convincing the judge, and then, billions of fines. I promise you, if this goes to court, I will pursue every single jail sentence I can get away with. Now , do you want to continue pretending this isn’t something your bosses are scared of, or we can talk about this without all the tiptoeing? Do you want to make a deal or not?</p>
+<p><strong>Amazon Representative</strong>: …what do you suggest?</p>
+<p><strong>AUSA Diaz</strong>: Let’s discuss that off the record, eh?</p>
+<div style="text-align: center;">
+<p><strong>End of Trancript</strong></p>
+</div>
+<hr/>
+<p><strong>Afterword</strong>: The DOJ agreed to penalties in excess of three billion dollars jointly from all the represented corporations. No jail sentences were pursued. The record has been sealed.</p>
+</div>
+<p>Six months after the countermeasures were put in place to prevent SCP-6530 from appearing, those affected by the anomaly no longer exhibit the vast majority of its effects.</p>
+<p>However, alterations to purchasing patterns have not been reversed.</p>
+</div>
+</div>
+</div>
+<p><span style="white-space: pre-wrap;"> </span><br/></p>
+
+<br/>
+<span style="white-space: pre-wrap;"> </span><br/>
+<span style="white-space: pre-wrap;"> </span>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. Such as Target.com, Walmart.com, Amazon.com, eBay.com, etc.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. Such as Instacart, DoorDash, Grubhub, etc.</div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Such as fuel expenditures for vehicles.</div>
+<div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Usually, such a concern would not be addressed by a Site Director, but several researchers had contacted Skeates directly about the situation.</div>
+<div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. This method of satisfying logistical concerns is atypical; typical methodology involves requisitioning supplies from internal channels which are then shipped to the Site. Required items are only occasionally purchased from retail businesses in emergency scenarios.</div>
+<div class="footnote-footer" id="footnote-6"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">6</a>. In hindsight, subject exhibited all signs of SCP-6530 memetic infection.</div>
+<div class="footnote-footer" id="footnote-7"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">7</a>. Designed and implemented by Department of Procurement and Liquidation to detect various anomalous effects in digital code, especially in digital transactions and financial records.</div>
+<div class="footnote-footer" id="footnote-8"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-8')">8</a>. Agent MacAllister took lead on these discussions and so no transcript was provided to Site-106 archives.</div>
+<div class="footnote-footer" id="footnote-9"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-9')">9</a>. The company provides “creative business solutions” according to their website, including a motto of “Everything we touch, turns to gold.”</div>
+<div class="footnote-footer" id="footnote-10"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-10')">10</a>. Assigned to the Paralaw District Court in Washington DC.</div>
+<div class="footnote-footer" id="footnote-11"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-11')">11</a>. Including Amazon, Wal-Mart Inc., Target, eBay, Facebook, Doordash, Grubhub, and Instacart.</div>
+<div class="footnote-footer" id="footnote-12"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-12')">12</a>. UIU Terminology equivalent for a Broken Veil scenario.</div>
+</div>
+
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">‡ Licensing / Citation</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">‡ Hide Licensing / Citation</a></div>
+<div class="collapsible-block-content">
+<p>Cite this page as:</p>
+<div class="list-pages-box"> <div class="list-pages-item">
+<blockquote>
+<p>"<a href="/scp-6530">SCP-6530</a>" by Grigori Karpin, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-6530">https://scpwiki.com/scp-6530</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+</blockquote>
+</div>
+</div>
+<p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+<blockquote>
+<p><strong>Filename:</strong> Site106 Logo<br/>
+<strong>Author:</strong> <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;"><img alt="HarryBlank" class="small" src="https://www.wikidot.com/avatar.php?userid=6479803&amp;amp;size=small&amp;amp;timestamp=1756042901" style="background-image:url(https://www.wikidot.com/userkarma.php?u=6479803)"/></a><a href="http://www.wikidot.com/user:info/harryblank" onclick="WIKIDOT.page.listeners.userInfo(6479803); return false;">HarryBlank</a></span><br/>
+<strong>License:</strong> CC BY-SA 3.0<br/>
+<strong>Additional Notes</strong>: Edited by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;"><img alt="Grigori Karpin" class="small" src="https://www.wikidot.com/avatar.php?userid=4558017&amp;amp;size=small&amp;amp;timestamp=1756042901" style="background-image:url(https://www.wikidot.com/userkarma.php?u=4558017)"/></a><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span> for sizing.</p>
+</blockquote>
+<blockquote>
+<p><strong>Filename:</strong> Man<br/>
+<strong>Author:</strong> Busworld<br/>
+<strong>License:</strong> Public Domain<br/>
+<strong>Source Link:</strong> <a href="https://www.flickr.com/photos/61252770@N06/24023094678/">Link</a><br/>
+<strong>Additional Notes</strong>: Edited by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;"><img alt="Grigori Karpin" class="small" src="https://www.wikidot.com/avatar.php?userid=4558017&amp;amp;size=small&amp;amp;timestamp=1756042901" style="background-image:url(https://www.wikidot.com/userkarma.php?u=4558017)"/></a><a href="http://www.wikidot.com/user:info/grigori-karpin" onclick="WIKIDOT.page.listeners.userInfo(4558017); return false;">Grigori Karpin</a></span> for sizing.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+        </body>
+        </html>
+        
